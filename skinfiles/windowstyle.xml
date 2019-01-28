@@ -1,0 +1,16 @@
+﻿<windowstyle type="skinned" id="0">
+  <!-- Main screen colors (id=0 Framebuffer) -->
+  <title offset="24,15" font="Regular;40" />
+  <color name="Background" color="windowBackground" />
+  <color name="LabelForeground" color="foreground" />
+  <color name="ListboxBackground" color="windowBackground" />
+  <color name="ListboxForeground" color="listForeground" />
+  <color name="ListboxSelectedBackground" color="listSelectedBackground" />
+  <color name="ListboxSelectedForeground" color="listSelectedForeground" />
+  <color name="ListboxMarkedBackground" color="unff0000" />
+  <color name="ListboxMarkedForeground" color="foreground" />
+  <color name="ListboxMarkedAndSelectedBackground" color="una00000" />
+  <color name="ListboxMarkedAndSelectedForeground" color="foreground" />
+  <color name="WindowTitleForeground" color="foreground" />
+  <color name="WindowTitleBackground" color="windowBackground" />
+</windowstyle>

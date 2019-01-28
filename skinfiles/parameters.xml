@@ -1,0 +1,157 @@
+﻿<parameters>
+  <!-- ChannelSelection - Einzeilig -->
+  <parameter name="ServicelistAdvertismentIconPixmap" value="0,10,30,60" />
+  <parameter name="ServicelistServiceNumberOffsetNormal" value="80" />
+  <parameter name="ServicelistOffset" value="100" />
+  <parameter name="ServicelistServiceNumberOffset" value="80" />
+  <parameter name="ServicelistServiceNumber" value="0,0,57,0" />
+  <parameter name="ServicelistRecordServicePixmap" value="0,9,46,45" />
+  <parameter name="ServicelistDoubleSpacedMinHeight" value="88" />
+  <parameter name="ServicelistCustomPreViewPicSize" value="141,88" />
+  <!-- ChannelSelection - Zweizeilig -->
+  <parameter name="Servicelist100Picon" value="10,10,100,60" />
+  <parameter name="ServicelistServiceTypePixmap100" value="0,10,40,40" />
+  <parameter name="ServicelistServiceEventProgressbar100" value="25,0,52,0" />
+  <parameter name="ServicelistServiceNumber100" value="20,0,57,0" />
+  <parameter name="ServicelistRecordServicePixmap100" value="0,7,40,40" />
+  <parameter name="ServicelistServiceName100" value="5,0,800,40" />
+  <parameter name="ServicelistServiceInfo100" value="5,0,800,40" />
+  <!-- Kanalliste - Horizontal -->
+  <parameter name="ServicelistHorServiceTypeIcon" value="0,0,0,0" />
+  <parameter name="ServicelistHorServiceTime" value="0,0,0,0" />
+  <parameter name="ServicelistHorProgressbar" value="50,210,135,10" />
+  <parameter name="ServicelistHorPreViewPic" value="0,0,0,0" />
+  <parameter name="ServicelistHorPicon" value="7,23,220,132" />
+  <parameter name="ServicelistHorNumber" value="0,0,0,0" />
+  <parameter name="ServicelistHorName" value="5,160,225,40" />
+  <parameter name="ServicelistHorServiceInfo" value="5,225,225,70" />
+  <parameter name="ServicelistHorCustomPiconSize" value="220,132" />
+  <!-- ChannelSelection - epglist-->
+  <parameter name="EPGServicelistText0OffSet" value="10, 0" />
+  <parameter name="EPGServicelistText1OffSet" value="-10, 0" />
+  <parameter name="EPGServicelistText2OffSet" value="-10, 0" />
+  <parameter name="EPGServicelistRecImageOffset" value="-30, 5" />
+  <parameter name="EPGServicelistRecTextOffset" value="-30, 0" />
+  <parameter name="EPGServicelistNonRecTextOffset" value="-20, 0" />
+  <parameter name="PluginBrowserName" value="130, 5, 28" />
+  <parameter name="PluginBrowserDescr" value="130, 33, 20" />
+  <parameter name="PluginBrowserIcon" value="10, 10, 100, 40" />
+  <parameter name="PluginBrowserDownloadName" value="130, 3, 32" />
+  <parameter name="PluginBrowserDownloadDescr" value="130, 35, 22" />
+  <parameter name="PluginBrowserDownloadIcon" value="10, 0, 100, 50" />
+  <parameter name="FileListName" value="65, 3, 800, 50" />
+  <parameter name="FileListIcon" value="10, 8, 35, 35" />
+  <parameter name="FileListMultiName" value="70, 10, 900, 50" />
+  <parameter name="FileListMultiIcon" value="30, 7, 35, 35" />
+  <parameter name="FileListMultiLock" value="0, 7, 35, 35" />
+  <parameter name="PlayListName" value="25, 1, 520, 28" />
+  <parameter name="PlayListIcon" value="5, 3, 16, 16" />
+  <parameter name="HelpMenuListHlp" value="6, 6, 800, 32" />
+  <parameter name="HelpMenuListExtHlp0" value="6, 6, 800, 32" />
+  <parameter name="HelpMenuListExtHlp1" value="6, 33, 800, 24" />
+  <parameter name="ConfigListSeperator" value="300" />
+  <parameter name="SelectionListDescription" value="55,9,1000,50" />
+  <parameter name="SelectionListIcon" value="0,0,50,50" />
+  <!-- MultiQuickButton -->
+  <parameter name="MultiQuickButtonListFont" value="SetrixHD;32" />
+  <parameter name="MultiQuickButtonList" value="45,7,1650,36" />
+  <parameter name="MultiQuickButtonListPic1" value="45,7,1650,36" />
+  <parameter name="MultiQuickButtonListPic2" value="5,12,35,25" />
+  <!-- PiconManager -->
+  <parameter name="PiconManagerList" value="10,7,1710,36" />
+  <parameter name="PiconManagerListFont" value="SetrixHD;32" />
+  <parameter name="CoverFindListFont" value="SetrixHD;32" />
+  <parameter name="CoverFindItemHeight" value="150" />
+  <parameter name="CoverFindCover" value="10,6,92,138" />
+  <parameter name="CoverFindName" value="110,55,1620,40" />
+  <parameter name="CoverFindListFont" value="Regular;34" />
+  <parameter name="CoverFindListIcon" value="5,12,25,25" />
+  <parameter name="CoverFindListName" value="40,7,1000,36" />
+  <!-- Filebrowser VTi -->
+  <parameter name="FileListmodName" value="40,10,1750,50" />
+  <parameter name="FileListmodIcon" value="5,15,35,35" />
+  <parameter name="FileListmodFont" value="Regular;30" />
+  <parameter name="FileListmodItemHeight" value="50" />
+  <parameter name="FileListmodMultiName" value="70,10,1750,50" />
+  <parameter name="FileListmodMultiIcon" value="40,15,35,35" />
+  <parameter name="FileListmodMultiLock" value="10,13,35,35" />
+  <parameter name="SelectionListmodDescription" value="55, 10, 1900, 45" />
+  <parameter name="SelectionListmodFont" value="Regular;30" />
+  <parameter name="SelectionListmodItemHeight" value="50" />
+  <parameter name="SelectionListmodIcon" value="10,10,25,25" />
+
+  <!-- ServiceInfo -->
+  <parameter name="ServiceInfo" value="0,9,400,32" />
+  <parameter name="ServiceInfoLeft" value="0,9,400,32" />
+  <parameter name="ServiceInfoRight" value="450,9,5500,32" />
+  <!-- Audio selection -->
+  <parameter name="AudioSelectionSliderSeparation" value="500" />
+  <!-- Plugin browser -->
+  <parameter name="PluginListName" value="130, 5, 1000, 36" />
+  <parameter name="PluginListDescription" value="130,42,1000,26" />
+  <parameter name="PluginListIcon" value="15, 15, 100, 40" />
+  <!-- TimerEditList -->
+  <parameter name="TimerListFont1" value="SetrixHD;30" />
+  <parameter name="TimerListFont2" value="SetrixHD;24" />
+  <parameter name="TimerListState" value="750,73,250,34" />
+  <parameter name="TimerListTime" value="15,73,750,34" />
+  <parameter name="TimerListIcon" value="10,35,30,35" />
+  <parameter name="TimerListPngTimer" value="10,10,30,30" />
+  <!-- TimerEditList - Standard -->
+  <parameter name="TimerListNoStyleName" value="15,10,1000,30" />
+  <parameter name="TimerListNoStyleDesc" value="15,40,1000,36" />
+  <!-- TimerEditList - Style 1 -->
+  <parameter name="TimerListStyle1Name" value="0,2,1000,30" />
+  <parameter name="TimerListStyle1Desc" value="0,2,1000,36" />
+  <parameter name="TimerListStyle1Desc1" value="0,35,1000,36" />
+  <!-- TimerEditList - Style 2 -->
+  <parameter name="TimerListStyle2Name" value="0,2,1000,30" />
+  <parameter name="TimerListStyle2Desc" value="0,35,1000,36" />
+  <parameter name="TimerListStyle2Desc1" value="0,35,1000,36" />
+  <!-- TimerEditList - Style 3 -->
+  <parameter name="TimerListStyle3Name" value="0,2,1000,30" />
+  <parameter name="TimerListStyle3Desc" value="0,35,1000,36" />
+  <parameter name="TimerListStyle3Desc1" value="0,35,1000,36" />
+  <!-- TimerEditList - Style 4 -->
+  <parameter name="TimerListStyle4Name" value="0,2,1000,30" />
+  <parameter name="TimerListStyle4Desc" value="0,2,1000,36" />
+  <parameter name="TimerListStyle4Desc1" value="0,35,1000,36" />
+  <parameter name="TimerListStyle4Tags" value="0,35,1000,36" />
+  <parameter name="TimerListStateStyle4" value="0,71,250,34" />
+  <!-- TimerEditList - Style 5 -->
+  <parameter name="TimerListStyle5Name" value="0,2,1000,30" />
+  <parameter name="TimerListStyle5Desc" value="0,2,1000,36" />
+  <parameter name="TimerListStyle5Desc1" value="0,35,1000,36" />
+  <parameter name="TimerListStyle5Tags" value="0,35,1000,36" />
+
+  <parameter name="VertEPGListFont_01" value="SetrixHD;30" />
+  <parameter name="VertEPGListFont_02" value="SetrixHD;32" />
+  <parameter name="VertEPGDate" value="0, 0, 0, 0" />
+  <parameter name="VertEPGText" value="10, 36, 316, 70" />
+  <parameter name="VertEPGDivLine" value="0, 108, 280, 2" />
+  <parameter name="VertEPGPrimeTimePic" value="296, 5, 22, 22" />
+  <parameter name="VertEPGColumnsCount" value="5" />
+  <parameter name="VertEPGBeginEndDuration" value="4, 4, 271, 30" />
+  <parameter name="EPGlistEPGBarText1Offset" value="5,0" />
+  <parameter name="EPGlistEPGBarText2Offset" value="5,0" />
+  <parameter name="EPGlistEPGBarIconOffset" value="5,6" />
+  <!-- EPGSelection - Single -->
+  <parameter name="EPGListItemHeight" value="50" />
+  <parameter name="EPGSearchItemHeightBig" value="65" />
+  <parameter name="EPGlistText1OffSet" value="-40, 4" />
+  <parameter name="EPGlistText2OffSet" value="-110, 4" />
+  <parameter name="EPGlistRecImageOffset" value="-105, 15" />
+  <parameter name="EPGlistRecTextOffset" value="-95, 4" />
+  <parameter name="EPGlistNonRecTextOffset" value="-70, 4" />
+  <parameter name="EPGlistMultiRecTextOffset" value="10, 10" />
+  <parameter name="EPGlistMultiRecIconOffset" value="0, 10" />
+  <parameter name="EPGlistMultiNonRecTextOffset" value="10, 10" />
+  <parameter name="EPGlistMultiBeginText1Offset" value="0, 0" />
+  <parameter name="EPGlistMultiBeginText2Offset" value="0, 10" />
+  <parameter name="EPGlistMultiProgressOffset" value="0, 0" />
+  <parameter name="EPGlistMultiProgressTextOffset" value="0, 10" />
+  
+  
+  
+
+</parameters>

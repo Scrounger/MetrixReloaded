@@ -1,0 +1,87 @@
+﻿<variables>
+  <variable name="screen_full_size" value="1920, 1080" />
+  <variable name="screen_full_pos" value="0,0" />
+  <variable name="key_size" value="240,60" />
+  <variable name="key_size_mid" value="240,60" />
+  <variable name="key_red_pos" value="105,950" />
+  <variable name="key_red_pos_short" value="105,950" />
+  <variable name="key_red_pos_long" value="105,980" />
+  <variable name="key_green_pos" value="385,950" />
+  <variable name="key_green_pos_short" value="385,950" />
+  <variable name="key_green_pos_long" value="385,980" />
+  <variable name="key_yellow_pos" value="667,950" />
+  <variable name="key_yellow_pos_short" value="667,950" />
+  <variable name="key_yellow_pos_long" value="667,980" />
+  <variable name="key_blue_pos" value="945,950" />
+  <variable name="key_blue_pos_short" value="945,950" />
+  <variable name="key_blue_pos_long" value="945,980" />
+  <variable name="key_red_mid_pos" value="105,950" />
+  <variable name="key_green_mid_pos" value="385,950" />
+  <variable name="key_yellow_mid_pos" value="667,950" />
+  <variable name="key_blue_mid_pos" value="945,950" />
+  <variable name="key_menu_size" value="280,31" />
+  <variable name="key_red_menu_pos" value="105,950" />
+  <variable name="key_green_menu_pos" value="385,950" />
+  <variable name="key_yellow_menu_pos" value="667,950" />
+  <variable name="key_blue_menu_pos" value="945,950" />
+  <variable name="title_big_pos" value="155,65" />
+  <variable name="title_big_size" value="1620,92" />
+  <variable name="title_mid_pos" value="173,61" />
+  <variable name="title_mid_size" value="900,100" />
+  <variable name="vkey_pos" value="627,20" />
+  <!-- Meine **********************************************************-->
+  <!-- Menu -->
+  <variable name="menu_title_pos" value="20,5" />
+  <variable name="menu_title_size" value="590,90" />
+  <variable name="menu_list_pos" value="0,320" />
+  <variable name="menu_list_size" value="630,740" />
+  <variable name="menu_icon_pos" value="200,91" />
+  <variable name="menu_icon_size" value="230,230" />
+  <!-- Window -->
+  <variable name="window_title_pos" value="105,55" />
+  <variable name="window_title_size" value="880,90" />
+  <variable name="window_list_pos" value="105,150" />
+  <variable name="window_list_size" value="1050,795" />
+  <variable name="window_list_setup_size" value="1050,760" />
+  <variable name="window_list_setup_two_rows_size" value="1050,750" />
+  <!-- ContextMenu / SmallWindow -->
+  <variable name="contextMenu_title_pos" value="20,5" />
+  <variable name="contextMenu_title_size" value="1050,60" />
+  <variable name="contextMenu_list_pos" value="15,80" />
+  <variable name="contextMenu_list_size" value="1020,650" />
+  <!-- Window EPG -->
+  <variable name="window_epg_picon_pos" value="1350,118" />
+  <variable name="window_epg_picon_size" value="330,198" />
+  <variable name="window_epg_name_pos" value="1216,330" />
+  <variable name="window_epg_name_size" value="622,75" />
+  <variable name="window_epg_startTime_pos" value="1216,387" />
+  <variable name="window_epg_endTime_pos" value="1726,387" />
+  <variable name="window_epg_startendTime_size" value="96,36" />
+  <variable name="window_epg_desc_pos" value="1216,439" />
+  <variable name="window_epg_progressBar_pos" value="1325,405" />
+  <variable name="window_epg_progressBar_size" value="382,5" />
+  <variable name="window_epg_progressBar_bg_pos" value="1325,407" />
+  <variable name="window_epg_progressBar_bg_size" value="382,1" />
+  <variable name="window_image_pos" value="1333,333" />
+  <variable name="window_image_size" value="384,384" />
+  <variable name="window_desc_pos" value="1216,700" />
+  <variable name="window_desc_size" value="622,200" />
+  <!-- Remote Buttons -->
+  <variable name="window_remote_button_right_pos" value="1760,926" />
+  <variable name="window_remote_button_middle_pos" value="1660,926" />
+  <variable name="window_remote_button_left_pos" value="1560,926" />
+  <variable name="window_remote_button_size" value="81,40" />
+  <!-- SerachBar -->
+  <variable name="window_searchbar_pos" value="496,300" />
+  <variable name="window_searchbar_size" value="200,200" />
+  <!-- InfoBar-->
+  <variable name="infoBar_tuner_size" value="30,40" />
+
+  <!-- TODO: Kommentar einfügen-->	
+  <variable name="window_small_list_top_pos" value="105,217" />
+  <variable name="window_text_small_list_top_pos" value="105,150" />
+  <variable name="window_small_list_bottom_pos" value="105,607" />
+  <variable name="window_text_small_list_bottom_pos" value="105,540" />
+  <variable name="window_small_list_size" value="1050,300" />
+  <variable name="window_text_small_list_size" value="1050,45" />
+</variables>

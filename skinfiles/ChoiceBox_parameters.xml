@@ -1,0 +1,8 @@
+﻿<parameters name="ChoiceBox_parameters">
+  <!-- Screens: ChoiceBox, ChannelContextMenu -->
+  <parameter name="ChoicelistDash" value="0,1,800,50" />
+  <parameter name="ChoicelistName" value="55,1,800,50" />
+  <parameter name="ChoicelistIcon" value="5,10,35,35" />
+  <parameter name="ChoicelistItemHeight" value="50" />
+  <parameter name="ChoicelistFont" value="SetrixHD;30" />
+</parameters>

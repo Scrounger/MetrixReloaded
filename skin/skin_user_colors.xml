@@ -1,0 +1,166 @@
+<skin>
+	<colors>
+		<color name="background" value="#17474143" />
+		<color name="black" value="#00000000" />
+		<color name="blue" value="#000064c7" />
+		<color name="violet" value="#00716ab0" />
+		<color name="dark" value="#25062748" />
+		<color name="darkgrey" value="#279e9fa4" />
+		<color name="dodgerblue" value="#001e90ff" />
+		<color name="foreground" value="#00fcfcfc" />
+		<color name="lightgrey" value="#009b9b9b" />
+		<color name="green" value="#00389416" />
+		<color name="orange" value="#00ffa500" />
+		<color name="infobarBgL" value="#27ececec" />
+		<color name="infobarBgR" value="#27666769" />
+		<color name="InfobarFgL" value="#00231f20" />
+		<color name="infobarBgRLowTrans" value="#00909090" />
+		<color name="gray" value="#808080" />
+		<color name="red" value="#00f23d21" />
+		<color name="transparent" value="#ffffffff" />
+		<color name="transpBlack" value="#80000000" />
+		<color name="transpWhite" value="#80ffffff" />
+		<color name="keyBlueBackground" value="#0018188b" />
+		<color name="progressBorderColor" value="#001a53bb" />
+		<color name="un1f771f" value="#001f771f" />
+		<color name="un254f7497" value="#254f7497" />
+		<color name="un2707255d" value="#2707255d" />
+		<color name="NumericalHelpDialogBg" value="#05231f20" />
+		<color name="un27c2bbb2" value="#27c2bbb2" />
+		<color name="un27c8c8c8" value="#27c8c8c8" />
+		<color name="un27d9dee2" value="#27d9dee2" />
+		<color name="un33294a6b" value="#33294a6b" />
+		<color name="un3c3c3c" value="#003c3c3c" />
+		<color name="un3d0e82" value="#003d0e82" />
+		<color name="un41000000" value="#41000000" />
+		<color name="un6c6c6c" value="#006c6c6c" />
+		<color name="un6d6e70" value="#006d6e70" />
+		<color name="un868686" value="#00868686" />
+		<color name="un8c8c8c" value="#008c8c8c" />
+		<color name="un9c9c9c" value="#009c9c9c" />
+		<color name="un9f1313" value="#009f1313" />
+		<color name="una00000" value="#00a00000" />
+		<color name="una08500" value="#00a08500" />
+		<color name="uncccccc" value="#00cccccc" />
+		<color name="undcaaaa" value="#00dcaaaa" />
+		<color name="undcdcdc" value="#00dcdcdc" />
+		<color name="unefefef" value="#00efefef" />
+		<color name="unf4df8d" value="#00f4df8d" />
+		<color name="unff0000" value="#00ff0000" />
+		<color name="unff000000" value="#ff000000" />
+		<color name="white" value="#00ffffff" />
+		<color name="windowBackground" value="#00231f20" />
+		<color name="windowListboxBg" value="#27474143" />
+		<color name="windowMainColorH" value="#00535355" />
+		<color name="windowMainColorL" value="#00231f20" />
+		<color name="yellow" value="#00ffff00" />
+		<color name="channelListDescFg" value="#00fcfcfc" />
+		<color name="listSelectedBackground" value="#dedede" />
+		<color name="listForeground" value="#ffffff" />
+		<color name="listSelectedForeground" value="#020202" />
+		<color name="ServiceNotAvail" value="#58595b" />
+		<color name="ScrollBarFG" value="#ffffff" />
+		<color name="ScrollBarBorder" value="gray" />
+		<color name="MainMenuColorButtonBG" value="windowMainColorL" />
+		<color name="MainMenuColorButtonFG" value="foreground" />
+		<color name="windowBackgroundBars" value="#00535355" />
+		<color name="listBackgroundBarsOne" value="#10362f31" />
+		<color name="listBackgroundBarsTwo" value="#10362f31" />
+		<color name="listForegroundOne" value="foreground" />
+		<color name="listForegroundTwo" value="#10535355" />
+		<color name="accentColorOne" value="dodgerblue" />
+		<color name="accentColorTwo" value="dodgerblue" />
+	</colors>
+	<!-- Main screen colors (id=0 Framebuffer) -->
+	<windowstyle type="skinned" id="0">
+		<title offset="24,15" font="Regular;40" />
+		<color name="Background" color="windowBackground" />
+		<color name="LabelForeground" color="foreground" />
+		<color name="ListboxBackground" color="windowBackground" />
+		<color name="ListboxForeground" color="listForeground" />
+		<color name="ListboxSelectedBackground" color="listSelectedBackground" />
+		<color name="ListboxSelectedForeground" color="listSelectedForeground" />
+		<color name="ListboxMarkedBackground" color="unff0000" />
+		<color name="ListboxMarkedForeground" color="foreground" />
+		<color name="ListboxMarkedAndSelectedBackground" color="una00000" />
+		<color name="ListboxMarkedAndSelectedForeground" color="foreground" />
+		<color name="WindowTitleForeground" color="foreground" />
+		<color name="WindowTitleBackground" color="windowBackground" />
+		<!-- Main screen border png's -->
+		<borderset name="bsWindow">
+			<pixmap pos="bpTopLeft" filename="Vu_HD_1080P/flat_black/trans/b_tl.png" />
+			<pixmap pos="bpTop" filename="Vu_HD_1080P/flat_black/trans/b_t.png" />
+			<pixmap pos="bpTopRight" filename="Vu_HD_1080P/flat_black/trans/b_tr.png" />
+			<pixmap pos="bpLeft" filename="Vu_HD_1080P/flat_black/trans/b_l.png" />
+			<pixmap pos="bpRight" filename="Vu_HD_1080P/flat_black/trans/b_r.png" />
+			<pixmap pos="bpBottomLeft" filename="Vu_HD_1080P/flat_black/trans/b_bl.png" />
+			<pixmap pos="bpBottom" filename="Vu_HD_1080P/flat_black/trans/b_b.png" />
+			<pixmap pos="bpBottomRight" filename="Vu_HD_1080P/flat_black/trans/b_br.png" />
+		</borderset>
+	</windowstyle>
+<!-- Main screen colors (id=1 LCD) -->
+	<windowstyle type="skinned" id="1">
+		<color name="Background" color="black" />
+		<color name="LabelForeground" color="white" />
+		<color name="ListboxBackground" color="black" />
+		<color name="ListboxForeground" color="white" />
+		<color name="ListboxSelectedBackground" color="black" />
+		<color name="ListboxSelectedForeground" color="white" />
+		<color name="ListboxMarkedBackground" color="black" />
+		<color name="ListboxMarkedForeground" color="white" />
+		<color name="ListboxMarkedAndSelectedBackground" color="black" />
+		<color name="ListboxMarkedAndSelectedForeground" color="white" />
+		<color name="WindowTitleForeground" color="white" />
+		<color name="WindowTitleBackground" color="black" />
+	</windowstyle>
+	<constant-widgets>
+ 		<constant-widget name="infobar_pic">
+			<ePixmap pixmap="Vu_HD_1080P/flat_black/trans/info-bg_mirror.png" position="0,0" zPosition="-2" size="1920,279" />
+		</constant-widget>
+		<constant-widget name="mainmenubar_pic">
+			<ePixmap pixmap="Vu_HD_1080P/flat_black/trans/mainmenu_bar_700x1080.png" zPosition="-2" position="0,0" size="700,1080" alphatest="blend" transparent="1" />
+		</constant-widget>
+		<constant-widget name="bg_second_ib_pic">
+			<ePixmap pixmap="Vu_HD_1080P/flat_black/trans/bg_second_infobar_1820x730.png" position="0,0" zPosition="-2" size="1820,730" />
+		</constant-widget>
+		<constant-widget name="bg_pic_big">
+			<ePixmap pixmap="Vu_HD_1080P/flat_black/trans/Bg_List_1820x980_ok.png" position="0,0" size="1820,980" zPosition="-2" alphatest="off" />
+		</constant-widget>
+		<constant-widget name="bg_pic_mid">
+			<ePixmap pixmap="Vu_HD_1080P/flat_black/trans/Bg_EPG_view.png" zPosition="-2" position="0,0" size="1288,923" alphatest="off" />
+		</constant-widget>
+		<constant-widget name="epgbar_pic">
+			<ePixmap pixmap="Vu_HD_1080P/flat_black/trans/epgbar_bg_same.png" position="0,0" size="1920,440" zPosition="-2" />
+		</constant-widget>
+		<constant-widget name="infobar_media_pic">
+			<ePixmap pixmap="Vu_HD_1080P/flat_black/trans/Bg_Media_info.png" position="center,0" zPosition="-2" size="1920,279" />
+		</constant-widget>
+		<constant-widget name="mediaplayer_pic">
+			<ePixmap pixmap="Vu_HD_1080P/flat_black/trans/Bg_Media.png" zPosition="-2" position="0,0" size="1290,919" alphatest="on" />
+		</constant-widget>
+		<constant-widget name="timeshiftstateBackground" >
+			<ePixmap position="0,0" size="25,25" pixmap="Vu_HD_1080P/flat_black/trans/b_tl2.png" />
+			<ePixmap position="25,0" size="1000,25" scale="1" pixmap="Vu_HD_1080P/flat_black/trans/b_t2.png" />
+			<ePixmap position="1025,0" size="25,25" pixmap="Vu_HD_1080P/flat_black/trans/b_tr2.png" />
+			<ePixmap position="0,25" size="25,110" scale="1" pixmap="Vu_HD_1080P/flat_black/trans/b_l2.png" />
+			<ePixmap position="1025,25" size="25,110" scale="1" pixmap="Vu_HD_1080P/flat_black/trans/b_r2.png" />
+			<ePixmap position="0,135" size="25,25" pixmap="Vu_HD_1080P/flat_black/trans/b_bl2.png" />
+			<ePixmap position="25,135" size="1000,25" scale="1" pixmap="Vu_HD_1080P/flat_black/trans/b_b2.png" />
+			<ePixmap position="1025,135" size="25,25" pixmap="Vu_HD_1080P/flat_black/trans/b_br2.png" />
+		</constant-widget>
+		<constant-widget name="pvrstateBackground" >
+			<ePixmap position="0,0" size="25,25" pixmap="Vu_HD_1080P/flat_black/trans/b_tl2.png" />
+			<ePixmap position="25,0" size="240,25" scale="1" pixmap="Vu_HD_1080P/flat_black/trans/b_t2.png" />
+			<ePixmap position="265,0" size="25,25" pixmap="Vu_HD_1080P/flat_black/trans/b_tr2.png" />
+			<ePixmap position="0,25" size="25,50" scale="1" pixmap="Vu_HD_1080P/flat_black/trans/b_l2.png" />
+			<ePixmap position="265,25" size="25,50" scale="1" pixmap="Vu_HD_1080P/flat_black/trans/b_r2.png" />
+			<ePixmap position="0,75" size="25,25" pixmap="Vu_HD_1080P/flat_black/trans/b_bl2.png" />
+			<ePixmap position="25,75" size="240,25" scale="1" pixmap="Vu_HD_1080P/flat_black/trans/b_b2.png" />
+			<ePixmap position="265,75" size="25,25" pixmap="Vu_HD_1080P/flat_black/trans/b_br2.png" />
+		</constant-widget>
+	</constant-widgets>
+	<screen name="Volume" position="center,60" zPosition="1" size="627,81" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Vu_HD_1080P/volume_background_flat.png" position="0,0" size="627,81" />
+		<widget name="Volume" pixmap="Vu_HD_1080P/volume_up_flat.png" position="95,10" zPosition="1" size="512,61" transparent="1" />
+	</screen>
+</skin>

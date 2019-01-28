@@ -1,0 +1,580 @@
+﻿<constant-widgets>
+  <constant-widget name="clock_big">
+    <ePixmap pixmap="MetrixReloaded/media/icons/clock.png" position="1650,20" zPosition="1" size="31,31" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1690,20" zPosition="1" size="100,34" font="Bold; 32" backgroundColor="windowMainColorL" halign="left" transparent="1">
+      <convert type="ClockToText"></convert>
+    </widget>
+  </constant-widget>
+  <constant-widget name="clock_mid">
+    <ePixmap pixmap="MetrixReloaded/media/icons/clock.png" position="1118,20" zPosition="1" size="31,31" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1160,20" zPosition="1" size="100,34" font="Bold; 32" backgroundColor="windowMainColorL" halign="left" transparent="1">
+      <convert type="ClockToText"></convert>
+    </widget>
+  </constant-widget>
+  <constant-widget name="infobar_pic">
+    <ePixmap pixmap="MetrixReloaded/info-bg_mirror.png" position="0,0" zPosition="-2" size="1920,279" />
+  </constant-widget>
+  <constant-widget name="bg_second_ib_pic">
+    <ePixmap position="0,0" zPosition="-1" size="1820,730" pixmap="MetrixReloaded/bg_second_infobar_1820x730.png" />
+  </constant-widget>
+  <constant-widget name="bg_pic_big">
+    <ePixmap pixmap="MetrixReloaded/Bg_List_1820x980_ok.png" position="0,0" size="1820,980" zPosition="-2" alphatest="off" />
+  </constant-widget>
+  <constant-widget name="bg_pic_mid">
+    <ePixmap pixmap="MetrixReloaded/Bg_EPG_view.png" zPosition="-2" position="0,0" size="1288,923" alphatest="off" />
+  </constant-widget>
+  <constant-widget name="epgbar_pic">
+    <ePixmap pixmap="MetrixReloaded/epgbar_bg_same.png" position="0,0" size="1920,440" zPosition="-2" />
+  </constant-widget>
+  <constant-widget name="infobar_media_pic">
+    <ePixmap pixmap="MetrixReloaded/Bg_Media_info.png" position="center,0" zPosition="-2" size="1920,279" />
+  </constant-widget>
+  <constant-widget name="mediaplayer_pic">
+    <ePixmap pixmap="MetrixReloaded/Bg_Media.png" zPosition="-2" position="0,0" size="1290,919" alphatest="on" />
+  </constant-widget>
+  <constant-widget name="pvrstateBackground">
+    <ePixmap position="0,0" size="25,25" pixmap="MetrixReloaded/border_small_top_left.png" />
+    <ePixmap position="25,0" size="240,25" scale="1" pixmap="MetrixReloaded/border_small_top.png" />
+    <ePixmap position="265,0" size="25,25" pixmap="MetrixReloaded/border_small_top_right.png" />
+    <ePixmap position="0,25" size="25,50" scale="1" pixmap="MetrixReloaded/border_small_left.png" />
+    <ePixmap position="265,25" size="25,50" scale="1" pixmap="MetrixReloaded/border_small_right.png" />
+    <ePixmap position="0,75" size="25,25" pixmap="MetrixReloaded/border_small_bottom_left.png" />
+    <ePixmap position="25,75" size="240,25" scale="1" pixmap="MetrixReloaded/border_small_bottom.png" />
+    <ePixmap position="265,75" size="25,25" pixmap="MetrixReloaded/border_small_bottom_right.png" />
+  </constant-widget>
+  <!-- Meine Backgrounds-->
+  <constant-widget name="background_menu">
+    <eLabel backgroundColor="background" position="0,0" size="630,1080" zPosition="-10" />
+    <ePixmap pixmap="MetrixReloaded/background_menu_list.png" position="15,320" size="615,740" alphatest="blend" transparent="1" />
+    <!-- Debug: Menu Entry anzeigen -->
+    <widget backgroundColor="background" font="font_standard" foregroundColor="foreground" render="Label" source="menu" position="20,80" size="750,27" halign="left" valign="center" transparent="1" zPosition="9">
+      <convert type="ScroungerMenuEntryID"></convert>
+    </widget>
+    <widget alphatest="blend" pixmap="MetrixReloaded/media/background_isRecording.png" position="887,0" render="Pixmap" size="146,37" source="session.RecordState" zPosition="2">
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </constant-widget>
+  <constant-widget name="background_window">
+    <eLabel backgroundColor="background" position="60,37" size="1132,975" zPosition="-10" />
+    <eLabel backgroundColor="background_second" position="1192,90" size="667,870" zPosition="-10" />
+  </constant-widget>
+  <constant-widget name="background_infoBar">
+    <eLabel backgroundColor="background" position="0,800" size="1920,280" zPosition="-10" />
+  </constant-widget>
+  <constant-widget name="background_contextMenu">
+    <eLabel backgroundColor="background_second" position="0,0" size="1050,60" zPosition="-10" />
+    <eLabel backgroundColor="background" position="0,60" size="1050,690" zPosition="-10" />
+  </constant-widget>
+
+  <!-- Color Buttons (Red, Green, Yellow, Blue) -->
+  <constant-widget name="color_buttons_window">
+    <ePixmap pixmap="MetrixReloaded/media/buttons/key_red.png" position="52,952" size="45,60" alphatest="blend" />
+    <ePixmap pixmap="MetrixReloaded/media/buttons/key_green.png" position="333,952" size="45,60" alphatest="blend" />
+    <ePixmap pixmap="MetrixReloaded/media/buttons/key_yellow.png" position="615,952" size="45,60" alphatest="blend" />
+    <ePixmap pixmap="MetrixReloaded/media/buttons/key_blue.png" position="892,952" size="45,60" alphatest="blend" />
+  </constant-widget>
+  <constant-widget name="color_buttons_graphMultiEpg">
+    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/key_red.png" position="7,1020" size="45,60" />
+    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/key_green.png" position="397,1020" size="45,60" />
+    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/key_yellow.png" position="802,1020" size="45,60" />
+    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/key_blue.png" position="1215,1020" size="45,60" />
+  </constant-widget>
+  <constant-widget name="red_name">
+    <widget name="red" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="green_name">
+    <widget name="green" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="yellow_name">
+    <widget name="yellow" position="key_yellow_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="blue_name">
+    <widget name="blue" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_red_name">
+    <widget name="key_red" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_green_name">
+    <widget name="key_green" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_yellow_name">
+    <widget name="key_yellow" position="key_yellow_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_blue_name">
+    <widget name="key_blue" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_red_name_short">
+    <widget name="key_red" position="key_red_pos_short" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_green_name_short">
+    <widget name="key_green" position="key_green_pos_short" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_yellow_name_short">
+    <widget name="key_yellow" position="key_yellow_pos_short" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_blue_name_short">
+    <widget name="key_blue" position="key_blue_pos_short" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_red_name_long">
+    <widget name="key_red_long" position="key_red_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_green_name_long">
+    <widget name="key_green_long" position="key_green_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_yellow_name_long">
+    <widget name="key_yellow_long" position="key_yellow_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_blue_name_long">
+    <widget name="key_blue_long" position="key_blue_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_red_KEY_name_long">
+    <widget name="key_red_info_long" position="42,235" foregroundColor="lightgrey" zPosition="1" size="50,40" font="IconFont01; 40" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_green_KEY_name_long">
+    <widget name="key_green_info_long" position="474,235" foregroundColor="lightgrey" zPosition="1" size="50,40" font="IconFont01; 40" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_yellow_KEY_name_long">
+    <widget name="key_yellow_info_long" position="908,235" foregroundColor="lightgrey" zPosition="1" size="50,40" font="IconFont01; 40" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_blue_KEY_name_long">
+    <widget name="key_blue_info_long" position="1341,235" foregroundColor="lightgrey" zPosition="1" size="50,40" font="IconFont01; 40" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_red_source">
+    <widget source="key_red" render="Label" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_green_source">
+    <widget source="key_green" render="Label" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_yellow_source">
+    <widget source="key_yellow" render="Label" position="key_yellow_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+  <constant-widget name="key_blue_source">
+    <widget source="key_blue" render="Label" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
+  </constant-widget>
+
+  <constant-widget name="key_name_graphMultiEpg_Fullscreen">
+    <widget backgroundColor="background" font="font_key_standard" halign="left" name="key_red" position="67,1018" size="key_size" transparent="1" valign="top" />
+    <widget backgroundColor="background" font="font_key_standard" halign="left" name="key_green" position="457,1018" size="key_size" transparent="1" valign="top" />
+    <widget backgroundColor="background" font="font_key_standard" halign="left" name="key_yellow" position="862,1018" size="key_size" transparent="1" valign="top" />
+    <widget backgroundColor="background" font="font_key_standard" halign="left" name="key_blue" position="1275,1018" size="key_size" transparent="1" valign="top" />
+  </constant-widget>
+
+  <!-- Meine Clocks-->
+  <constant-widget name="clock_menu">
+    <widget backgroundColor="background_second" font="font_menu_time" halign="right" position="1660,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="background_second" font="font_menu_date" halign="right" position="1620,99" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%a %e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="background_second" position="1620,42" size="237,100" zPosition="-10" />
+    <!-- CPU Usage -->
+    <eLabel backgroundColor="background_second" position="1620,152" size="237,40" zPosition="-10" />
+    <eLabel text="CPU" backgroundColor="background_second" position="1635,152" size="100,40" font="font_standard_small" halign="left" valign="center" transparent="1" />
+    <widget source="Title" backgroundColor="background_second" render="Label" font="font_standard_small" position="1782,152" size="60,40" halign="right" valign="center" transparent="1" noWrap="1">
+      <convert type="ScroungerCpuUsage">$0</convert>
+    </widget>
+    <!-- System Temperatur -->
+    <eLabel backgroundColor="background_second" position="1620,202" size="237,40" zPosition="-10" />
+    <widget source="Title" backgroundColor="background_second" render="Label" font="font_standard_small" position="1782,202" size="60,40" halign="right" valign="center" transparent="1" noWrap="1">
+      <convert type="ScroungerTempFanInfo">TempInfo</convert>
+    </widget>
+  </constant-widget>
+  <constant-widget name="clock_window">
+    <widget backgroundColor="background" font="font_window_time" halign="right" position="975,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="background" font="font_window_date" halign="right" position="898,99" render="Label" size="257,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%a %e. %B</convert>
+    </widget>
+  </constant-widget>
+  <constant-widget name="clock_graphMultiEpg_Fullscreen">
+    <widget backgroundColor="background" font="font_window_time" halign="right" position="1680,5" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="background" font="font_window_date" halign="right" position="1400,30" render="Label" size="257,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%a %e. %B</convert>
+    </widget>
+  </constant-widget>
+
+  <!-- Meine Seperators-->
+  <constant-widget name="seperator_menu">
+    <!--<eLabel name="Seperator" position="15,75" size="600,1" zPosition="5" backgroundColor="seperator" />-->
+    <ePixmap pixmap="MetrixReloaded/seperator_menu.png" position="15,75" size="615,1" alphatest="blend" transparent="1" />
+  </constant-widget>
+  <constant-widget name="seperator_window_title">
+    <eLabel name="Seperator" position="90,135" size="1078,2" zPosition="5" backgroundColor="seperator" />
+  </constant-widget>
+  <constant-widget name="seperator_contextMenu_title">
+    <eLabel name="Seperator" position="0,60" size="1050,2" zPosition="5" backgroundColor="seperator" />
+  </constant-widget>
+  <constant-widget name="seperator_graphMultiEpg_Fullscreen">
+    <eLabel name="Seperator" position="45,70" size="1830,2" zPosition="5" backgroundColor="seperator" />
+  </constant-widget>
+
+  <!-- Meine Titles-->
+  <constant-widget name="title_menu">
+    <widget source="title" render="Label" position="menu_title_pos" size="menu_title_size" font="font_menu_title" transparent="1"  noWrap="1"/>
+  </constant-widget>
+  <constant-widget name="title_window">
+    <widget source="title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowMainColorL" transparent="1" noWrap="1" />
+  </constant-widget>
+  <constant-widget name="Title_window">
+    <widget source="Title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowMainColorL" transparent="1" noWrap="1"/>
+  </constant-widget>
+  <constant-widget name="Title_contextMenu">
+    <widget source="Title" render="Label" position="contextMenu_title_pos" size="contextMenu_title_size" font="font_contextMenu_title" backgroundColor="background_second" transparent="1"  noWrap="1"/>
+  </constant-widget>
+  <constant-widget name="Title_graphMultiEpg_Fullscreen">
+    <widget foregroundColor="foreground" backgroundColor="background" font="font_window_title" halign="left" position="60,5" size="window_title_size" render="clearFavName" source="Title" transparent="1"  />
+  </constant-widget>
+
+  <!-- Rec Icon-->
+  <constant-widget name="recIcon_top">
+    <widget alphatest="blend" pixmap="MetrixReloaded/media/background_isRecording.png" position="887,0" render="Pixmap" size="146,37" source="session.RecordState" zPosition="2">
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </constant-widget>
+
+  <!-- Icons -->
+  <constant-widget name="icons_menu">
+    <widget alphatest="blend" path="media/icons/menu" position="menu_icon_pos" render="ScroungerIcon" size="menu_icon_size" source="menu" zPosition="3">
+      <convert type="ScroungerMenuEntryID"></convert>
+    </widget>
+  </constant-widget>
+
+  <!-- InfoBar - Icons -->
+  <constant-widget name="infoBar_Icons">
+    <widget alphatest="blend" path="media/logos/tunertypes" position="410,1043" render="ScroungerIcon" size="84,22" source="session.CurrentService" zPosition="3">
+      <convert type="ScroungerServiceInfoEx">ttype</convert>
+    </widget>
+    <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/hbbtv.png" position="1261,1035" render="Pixmap" size="91,34" source="HbbtvApplication" zPosition="10">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nosubtitles.png" position="1372,1038" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="1">
+      <convert type="ServiceInfo">SubservicesAvailable</convert>
+      <convert type="ScroungerCompareBoolean">false</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/subtitles.png" position="1372,1038" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="1">
+      <convert type="ServiceInfo">SubservicesAvailable</convert>
+      <convert type="ScroungerCompareBoolean">true</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/noTeletext.png" position="1425,1035" render="Pixmap" size="37,34" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">HasTelext</convert>
+      <convert type="ScroungerCompareBoolean">false</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/teletext.png" position="1425,1035" render="Pixmap" size="37,34" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">HasTelext</convert>
+      <convert type="ScroungerCompareBoolean">true</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" path="media/logos/audio" position="1482,1025" render="AudioIcon" size="85,50" source="session.CurrentService" zPosition="3">
+      <convert type="VAudioInfo">AudioIcon</convert>
+    </widget>
+    <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/aspectratio/fullscreen.png" position="1587,1035" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ScroungerCompareBoolean">false</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/aspectratio/widescreen.png" position="1587,1035" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ScroungerCompareBoolean">true</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" path="media/logos/resolution" position="1640,1035" render="ScroungerIcon" size="61,34" source="session.CurrentService" zPosition="3">
+      <convert type="ScroungerResolutionIcon">ResolutionIcon</convert>
+    </widget>
+    <widget alphatest="blend" path="media/logos/resolution" position="1721,1035" render="ScroungerIcon" size="61,34" source="session.CurrentService" zPosition="3">
+      <convert type="ScroungerResolutionIcon">DefinitionIcon</convert>
+    </widget>
+    <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/fta.png" position="1802,1035" render="Pixmap" backgroundColor="background" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsCrypted</convert>
+      <convert type="ScroungerCompareBoolean">false</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nofta.png" position="1802,1035" render="Pixmap" backgroundColor="background" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsCrypted</convert>
+      <convert type="ScroungerCompareBoolean">true</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </constant-widget>
+  <!-- InfoBar - Tuner 16x -->
+  <constant-widget name="infoBar_tuner">
+    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="510,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">1,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="A" position="510,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">0,0</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="A" position="510,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="540,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">2,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="B" position="540,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">1,1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="B" position="540,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="570,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">3,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="C" position="570,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">2,2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="C" position="570,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="600,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">4,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="D" position="600,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">3,3</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="D" position="600,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="E" position="630,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">5,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="E" position="630,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">4,4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="E" position="630,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">16</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="F" position="660,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">6,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="F" position="660,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">5,5</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="F" position="660,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">32</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="G" position="690,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">7,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="G" position="690,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">6,6</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="G" position="690,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">64</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="H" position="720,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">8,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="H" position="720,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">7,7</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="H" position="720,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">128</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="I" position="750,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">9,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="I" position="750,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">8,8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="I" position="750,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">256</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="J" position="780,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">10,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="J" position="780,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">9,9</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="J" position="780,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">512</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="K" position="810,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">11,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="K" position="810,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">10,10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="K" position="810,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1024</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="L" position="840,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">12,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="L" position="840,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">11,11</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="L" position="840,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2048</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="M" position="870,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">13,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="M" position="870,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">12,12</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="M" position="870,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4096</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="N" position="900,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">14,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="N" position="900,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">13,13</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="N" position="900,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8192</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="O" position="930,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">15,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="O" position="930,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">14,14</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="O" position="930,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">16384</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="P" position="960,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">16,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="P" position="960,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">15,15</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="P" position="960,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">32768</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="Q" position="990,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">17,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="Q" position="990,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">16,16</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="Q" position="990,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">65536</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="R" position="1020,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" foregroundColor="infoBar_tuner_available" backgroundColor="background" zPosition="1" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerAvailable</convert>
+      <convert type="ValueRange">18,18</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="R" position="1020,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.FrontendInfo" zPosition="3" foregroundColor="infoBar_tuner_active" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">17,17</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget text="R" position="1020,1035" size="infoBar_tuner_size" font="font_infoBar_tuner" source="session.TunerInfo" zPosition="2" foregroundColor="infoBar_tuner_using" backgroundColor="background" render="FixedLabel" halign="center" valign="center" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">131072</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </constant-widget>
+
+
+
+</constant-widgets>
