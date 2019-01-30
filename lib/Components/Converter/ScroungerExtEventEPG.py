@@ -350,6 +350,10 @@ class ScroungerExtEventEPG(Converter, object):
 			except Exception, ex:
 				subtitle = str(ex)
 		
+		#Falls Subtitle = Title -> dann nichts zurück geben
+		if (subtitle != None and subtitle.rstrip('.') == self.getTitle(event, values)):
+			subtitle = None
+		
 		return subtitle
 		
 	def getSubtitleFromDescription(self, event, maxWords):
