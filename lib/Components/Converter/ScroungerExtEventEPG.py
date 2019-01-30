@@ -742,8 +742,8 @@ class ScroungerExtEventEPG(Converter, object):
 		return None
 		
 	AVAILABLE_GENRES_EPG =[
-                        "Actionfilm", "Abenteuerfilm", "Animationsfilm", "Animationsserie", "Abenteuer", "Animations-Serie", "Actiondrama", "Abenteuer-Serie", "Actionthriller", "Actionkomödie", "Actionserie", "Animation",
-						"Beziehungskomödie", "Biographie", 
+                        "Actionfilm", "Abenteuerfilm", "Animationsfilm", "Animationsserie", "Abenteuer", "Animations-Serie", "Actiondrama", "Abenteuer-Serie", "Actionthriller", "Actionkomödie", "Actionserie", "Animation", "Action",
+						"Beziehungskomödie", "Biographie", "Biografie",
 						"Comedy", "Clipshow", "Comedy-Serie", "Comedy Show", 
     					"Doku-Reihe", "Doku-Serie", "Dramaserie", "Dokutainment-Reihe", "Dokumentationsreihe", "Dokumentarserie", "Dokumentation", "Drama", "Dokumentarfilm", "Doku-Experiment", "Deutsche Komödie", "Dramedy", "Dokumentarreihe", "Dokureihe",
     					"Ermittler-Doku",
