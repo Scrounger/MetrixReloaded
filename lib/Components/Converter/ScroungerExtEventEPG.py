@@ -15,7 +15,8 @@ import re
 import logging
 
 class ScroungerExtEventEPG(Converter, object):
-	#Input Parameter per Skin	
+	#Input Parameter per Skin
+	IMAGEID = "ImageId"
 	IS_EPGSHARE_AVAILABLE = "IsEpgShareAvailable"
 	EPGSHARE_RAW = "EpgShareRaw"
 	EPISODE_NUM = "EpisodeNum"
@@ -63,7 +64,7 @@ class ScroungerExtEventEPG(Converter, object):
 			event = None
 		
 		values = self.deserializeJson(extraData)
-		values = None
+		#values = None
 		
 		if self.types != '':
 			result = []
@@ -81,6 +82,11 @@ class ScroungerExtEventEPG(Converter, object):
 					elif type == self.EPGSHARE_RAW:
 						#alle Daten aus der Datenbank ausgeben
 						return self.getExtraData()
+					elif type == self.IMAGEID:
+						#Nur EpgShare - Id des Images
+						if(values != None and len(values) > 0):
+							if len(str(values['id']).strip()) > 0:
+								return str(values['id']).strip()
 					elif type == self.EPISODE_NUM:
 						episodeNum = self.getEpisodeNum(event, values)
 						if (episodeNum != None):
