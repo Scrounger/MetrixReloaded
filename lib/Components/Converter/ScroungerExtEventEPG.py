@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 from Components.Converter.Converter import Converter
 from Components.Element import cached
-from Components.Sources.Event import  Event
+from Components.Sources.Event import Event
 
-from Components.Sources.ExtEvent import ExtEvent
-from Components.Sources.extEventInfo import extEventInfo
-from Components.Sources.ServiceEvent import  ServiceEvent
 from Tools.MovieInfoParser import getExtendedMovieDescription
 from ServiceReference import ServiceReference
+from Tools.ScroungerExtraData import getDataFromDatabase, getExtraData
 import json
 import HTMLParser
 import re
@@ -56,7 +54,7 @@ class ScroungerExtEventEPG(Converter, object):
 	def getText(self):
 		self.log.info('getText: inputString: %s (%s)', str(self.inputString), len(self.types))
 		
-		extraData = self.getExtraData()
+		extraData = getExtraData(self)
 		
 		try:
 			event = self.source.event[0]
@@ -81,7 +79,7 @@ class ScroungerExtEventEPG(Converter, object):
 							return 'false'
 					elif type == self.EPGSHARE_RAW:
 						#alle Daten aus der Datenbank ausgeben
-						return self.getExtraData()
+						return getExtraData(self)
 					elif type == self.IMAGEID:
 						#Nur EpgShare - Id des Images
 						if(values != None and len(values) > 0):
@@ -612,60 +610,6 @@ class ScroungerExtEventEPG(Converter, object):
 				return json.loads(extraData)
 		except Exception, ex:
 			return None	
-			
-	def getExtraData(self):
-		if self.source.event:
-			if type(self.source) == ExtEvent:
-				try:
-					starttime = self.source.event.getBeginTime()
-					title = self.source.event.getEventName()
-					return json.dumps(self.getDataFromDatabase(str(self.source.service), str(self.source.event.getEventId()), starttime, title))
-				except Exception, ex:
-					self.log.error('getExtraData (1): %s', str(ex))
-					return "Error1: %s" % str(ex)
-			elif str(type(self.source)) == "<class 'Components.Sources.extEventInfo.extEventInfo'>":
-				try:
-					return json.dumps(self.getDataFromDatabase(str(self.source.service), str(self.source.eventid)))
-				except Exception, ex:
-					self.log.error('getExtraData (2): %s', str(ex))
-					return "Error2: %s" % str(ex)
-			elif hasattr(self.source, 'service'):
-				try:
-					service = self.source.getCurrentService()
-					servicereference = ServiceReference(service)
-					return json.dumps(self.getDataFromDatabase(str(servicereference), str(self.source.event.getEventId())))
-				except Exception, ex:
-					self.log.error('getExtraData (2): %s', str(ex))
-					return "Error3: %s" % str(ex)
-			elif type(self.source) == Event:
-				return self.source.event.getExtraEventData()
-		return ""
-		
-	def getDataFromDatabase(self, service, eventid, beginTime=None, EventName= None):
-		try:
-			from Plugins.Extensions.EpgShare.main import getEPGDB
-			data = None
-			if "::" in str(service):
-				service = service.split("::")[0] + ":"
-			if "http" in str(service):
-				service = service.split("http")[0]
-			if not "1:0:0:0:0:0:0:0:0:0:" in service and not "4097:0:0:0:0:0:0:0:0:0:" in service:
-				if beginTime and EventName:
-					data = getEPGDB().selectSQL("SELECT * FROM epg_extradata WHERE ref = ? AND (eventid = ? or (LOWER(title) = ? and airtime BETWEEN ? AND ?))", [str(service), str(eventid),str(EventName.lower()).decode("utf-8"), str(int(beginTime) -120), str(int(beginTime) + 120) ])
-				else:
-					data = getEPGDB().selectSQL("SELECT * FROM epg_extradata WHERE ref = ? AND eventid = ?", [str(service), str(eventid)])
-				if data and len(data) > 0:
-					return data[0]
-				else:
-					return None
-			else:
-				return None
-		except Exception, ex:
-			print "DB Error: %s" % str(ex)
-			return None
-		except ImportError, exi:
-			print "Import Error: %s" % str(exi)
-			return None		
 
 	def isNumber(self, inp):
 		try:
