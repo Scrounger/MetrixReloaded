@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 from Components.Converter.Converter import Converter
 from Components.Element import cached
-from Components.Sources.Event import Event
+from Tools.ScroungerExtraData import getDataFromDatabase, getExtraData
 
 from Tools.MovieInfoParser import getExtendedMovieDescription
-from ServiceReference import ServiceReference
-from Tools.ScroungerExtraData import getDataFromDatabase, getExtraData
+
 import json
 import HTMLParser
 import re
@@ -54,7 +53,7 @@ class ScroungerExtEventEPG(Converter, object):
 	def getText(self):
 		self.log.info('getText: inputString: %s (%s)', str(self.inputString), len(self.types))
 		
-		extraData = getExtraData(self)
+		extraData = getExtraData(self.source)
 		
 		try:
 			event = self.source.event[0]
@@ -79,7 +78,7 @@ class ScroungerExtEventEPG(Converter, object):
 							return 'false'
 					elif type == self.EPGSHARE_RAW:
 						#alle Daten aus der Datenbank ausgeben
-						return getExtraData(self)
+						return getExtraData(self.source)
 					elif type == self.IMAGEID:
 						#Nur EpgShare - Id des Images
 						if(values != None and len(values) > 0):

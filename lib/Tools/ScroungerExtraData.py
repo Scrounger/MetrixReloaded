@@ -1,9 +1,40 @@
 # -*- coding: utf-8 -*-
+from Components.Sources.Event import Event
 from Components.Sources.ExtEvent import ExtEvent
+from Components.Sources.extEventInfo import extEventInfo
+from ServiceReference import ServiceReference
 
-import json	
+import json
+
+def getExtraData(source):
+	if source.event:
+		if type(source) == ExtEvent:
+			try:
+				starttime = source.event.getBeginTime()
+				title = source.event.getEventName()
+				return json.dumps(getDataFromDatabase(str(source.service), str(source.event.getEventId()), starttime, title))
+			except Exception, ex:
+				#self.log.error('getExtraData (1): %s', str(ex))
+				return "Error1: %s" % str(ex)
+		elif str(type(source)) == "<class 'Components.Sources.extEventInfo.extEventInfo'>":
+			try:
+				return json.dumps(getDataFromDatabase(str(source.service), str(source.eventid)))
+			except Exception, ex:
+				#self.log.error('getExtraData (2): %s', str(ex))
+				return "Error2: %s" % str(ex)
+		elif hasattr(source, 'service'):
+			try:
+				service = source.getCurrentService()
+				servicereference = ServiceReference(service)
+				return json.dumps(getDataFromDatabase(str(servicereference), str(source.event.getEventId())))
+			except Exception, ex:
+				#self.log.error('getExtraData (2): %s', str(ex))
+				return "Error3: %s" % str(ex)
+		elif type(source) == Event:
+			return source.event.getExtraEventData()
+	return ""	
 	
-def getDataFromDatabase(self, service, eventid, beginTime=None, EventName= None):
+def getDataFromDatabase(service, eventid, beginTime=None, EventName= None):
 	try:
 		from Plugins.Extensions.EpgShare.main import getEPGDB
 		data = None
@@ -29,30 +60,3 @@ def getDataFromDatabase(self, service, eventid, beginTime=None, EventName= None)
 		print "Import Error: %s" % str(exi)
 		return None
 
-def getExtraData(self):
-	if self.source.event:
-		if type(self.source) == ExtEvent:
-			try:
-				starttime = self.source.event.getBeginTime()
-				title = self.source.event.getEventName()
-				return json.dumps(getDataFromDatabase(self, str(self.source.service), str(self.source.event.getEventId()), starttime, title))
-			except Exception, ex:
-				#self.log.error('getExtraData (1): %s', str(ex))
-				return "Error1: %s" % str(ex)
-		elif str(type(self.source)) == "<class 'Components.Sources.extEventInfo.extEventInfo'>":
-			try:
-				return json.dumps(getDataFromDatabase(self, str(self.source.service), str(self.source.eventid)))
-			except Exception, ex:
-				#self.log.error('getExtraData (2): %s', str(ex))
-				return "Error2: %s" % str(ex)
-		elif hasattr(self.source, 'service'):
-			try:
-				service = self.source.getCurrentService()
-				servicereference = ServiceReference(service)
-				return json.dumps(getDataFromDatabase(self, str(servicereference), str(self.source.event.getEventId())))
-			except Exception, ex:
-				#self.log.error('getExtraData (2): %s', str(ex))
-				return "Error3: %s" % str(ex)
-		elif type(self.source) == Event:
-			return self.source.event.getExtraEventData()
-	return ""
