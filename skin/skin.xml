@@ -913,9 +913,17 @@
   <widget alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
+
+
+  <!--<widget source="ServiceEvent" render="MetrixEventImage" online="1" force="0" showtitle="0" usedefault="1" position="window_epg_picon_pos" size="window_epg_picon_size" zPosition="10" backgroundColor="background_second" foregroundColor="foreground" font="SetrixHD;28" transparent="1">
+    <convert type="MetrixCurrentImage" />
+  </widget>-->
+  <widget backgroundColor="background_second" font="regular;0" force="1" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="ScroungerEventImage" showtitle="0" size="window_epg_picon_size" source="ServiceEvent" transparent="1" usedefault="1" zPosition="3"/>
+
+  <widget source="ServiceEvent" backgroundColor="background" position="1720,0" size="200,50" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
+    <convert type="ScroungerExtEventEPG">ImageId</convert>
+  </widget>
   
-  <widget backgroundColor="background_second" font="Regular;0" force="1" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="ScroungerEventImage" showtitle="0" size="window_epg_picon_size" source="ServiceEvent" transparent="1" usedefault="1" zPosition="2"/>
-    
   <widget source="ServiceEvent" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="background_second" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
@@ -3290,7 +3298,7 @@
 
   <widget source="session.extEvent_Now" backgroundColor="background" position="10,200" size="300,400" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
     <convert type="MetrixExtEventName"></convert>
-    <convert type="MetrixExtraEventData">SUBTITLE SERIESINFO GENRE YEAR COUNTRY AGE CATEGORY</convert>
+    <convert type="MetrixExtraEventData">SUBTITLE SERIESINFO GENRE YEAR COUNTRY AGE CATEGORY IMAGE</convert>
   </widget>
 
   <widget source="session.extEvent_Now" backgroundColor="background" position="330,200" size="300,500" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
@@ -3307,6 +3315,11 @@
     <convert type="ScroungerExtEventEPG">EpgShareRaw</convert>
   </widget>
 
+  <widget source="session.extEvent_Now" backgroundColor="background" position="700,50" size="200,50" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
+    <convert type="ScroungerExtEventEPG">ImageId</convert>
+  </widget>
+  
+  
   <widget alphatest="blend" source="session.extEvent_Now" pixmap="MetrixReloaded/media/logos/parentalrating/unknown.png" position="50,50" render="Pixmap" size="60,60" zPosition="1">
     <convert type="ScroungerExtEventEPG">ParentalRating</convert>
     <convert type="ScroungerCompareString"></convert>

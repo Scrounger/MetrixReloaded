@@ -61,7 +61,7 @@
 
   <widget source="session.extEvent_Now" backgroundColor="background" position="10,200" size="300,400" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
     <convert type="MetrixExtEventName"></convert>
-    <convert type="MetrixExtraEventData">SUBTITLE SERIESINFO GENRE YEAR COUNTRY AGE CATEGORY</convert>
+    <convert type="MetrixExtraEventData">SUBTITLE SERIESINFO GENRE YEAR COUNTRY AGE CATEGORY IMAGE</convert>
   </widget>
 
   <widget source="session.extEvent_Now" backgroundColor="background" position="330,200" size="300,500" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
@@ -78,6 +78,11 @@
     <convert type="ScroungerExtEventEPG">EpgShareRaw</convert>
   </widget>
 
+  <widget source="session.extEvent_Now" backgroundColor="background" position="700,50" size="200,50" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
+    <convert type="ScroungerExtEventEPG">ImageId</convert>
+  </widget>
+  
+  
   <widget alphatest="blend" source="session.extEvent_Now" pixmap="MetrixReloaded/media/logos/parentalrating/unknown.png" position="50,50" render="Pixmap" size="60,60" zPosition="1">
     <convert type="ScroungerExtEventEPG">ParentalRating</convert>
     <convert type="ScroungerCompareString"></convert>
