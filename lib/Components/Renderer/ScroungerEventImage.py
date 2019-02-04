@@ -16,6 +16,7 @@ from Components.Sources.ServiceEvent import ServiceEvent
 from Tools.ScroungerExtraData import getDataFromDatabase, getExtraData
 import logging
 
+
 class ScroungerEventImage(Renderer):
     DOWNOAD_IMAGE = "DOWNOAD_IMAGE"
     SHOW_IMAGE = "SHOW_IMAGE"
@@ -101,17 +102,17 @@ class ScroungerEventImage(Renderer):
         if what[0] != self.CHANGED_CLEAR:
             self.smallptr = False
             eventid = event.getEventId()
-            starttime = event.getBeginTime()
+            startTime = event.getBeginTime()
             title = event.getEventName()
 
-            # # Default Image aus Folder 'Default' über Title
-            # defaultImage = self.getDefaultImage(title)
-            # if (defaultImage != None):
-            #     self.smallptr = True
-            #     self.image.setPixmap(loadJPG(p1))
-            #     self.image.setScale(self.scaletype)
-            #     self.showimage()
-            #     return
+            # Default Image aus Folder 'Default' über Title
+            defaultImage = self.getDefaultImage(title)
+            if (defaultImage != None):
+                self.smallptr = True
+                self.image.setPixmap(loadJPG(defaultImage))
+                self.image.setScale(self.scaletype)
+                self.showimage()
+                return
 
             # ExtraDaten aus db holen
             values = self.deserializeJson(getExtraData(self.source))
@@ -119,11 +120,10 @@ class ScroungerEventImage(Renderer):
             if(values != None and len(values) > 0 and eventid):
                 try:
                     if eventid != self.eventid:
-                        size = ''
                         self.id = str(values['id'])
 
-                        sizedImage = None
-                        #sizedImage = self.getEventImage(starttime, self.id, True)
+                        sizedImage = self.getEventImage(
+                            startTime, self.id, True)
                         if (sizedImage != None):
                             # Image mit size des Widgets laden, sofern verfügbar
                             self.image.setPixmap(loadJPG(sizedImage))
@@ -133,13 +133,15 @@ class ScroungerEventImage(Renderer):
                         else:
                             # Image downloaden
                             self.downloadImage(
-                                str(values['id']), int(starttime), event)
+                                str(values['id']), int(startTime), event)
+
+                            # Bild bis Download abgeschlossen ist
+                            self.showSmallImage(startTime, self.id)
 
                     return
                 except Exception as e:
                     self.log.error("changed: %s", str(e))
                     self.hideimage()
-
         return
 
     def GUIcreate(self, parent):
@@ -165,14 +167,10 @@ class ScroungerEventImage(Renderer):
         self.suspended = True
 
     def downloadImage(self, eventId, startTime, event):
-        try:
-            url = 'http://capi.tvmovie.de/v1/broadcast/%s?fields=images.id,previewImage.id' % str(
-                eventId)
-
-            getPage(url).addCallback(self.response, self.DOWNOAD_IMAGE, eventId, startTime, event).addErrback(self.responseError)
-
-        except Exception as e:
-            self.log.error("downloadImage: %s", str(e))
+        url = 'http://capi.tvmovie.de/v1/broadcast/%s?fields=images.id,previewImage.id' % str(
+            eventId)
+        getPage(url).addCallback(self.response, self.DOWNOAD_IMAGE, eventId, startTime,
+                                 event).addErrback(self.responseError, self.DOWNOAD_IMAGE, startTime)
 
     def response(self, data, response, eventId, startTime, event):
         # Antwort für Async Task
@@ -201,7 +199,10 @@ class ScroungerEventImage(Renderer):
 
                         # Image downloaden
                         downloadPage(url, imageFileName).addCallback(
-                            self.response, self.SHOW_IMAGE, eventId, startTime, event).addErrback(self.responseError)
+                            self.response, self.SHOW_IMAGE, eventId, startTime, event).addErrback(self.responseError, response, startTime)
+                    else:
+                        # Kein Bild zum donwload vorhanden, auf Platte zurück greifen
+                        self.showSmallImage(startTime, eventId)
 
                     # TODO: Hier noch als alternative wenn Daten nicht vefügbar sind, smallImage von Platte laden
 
@@ -219,13 +220,26 @@ class ScroungerEventImage(Renderer):
                         self.image.setPixmap(loadJPG(imageFileName))
                         self.image.setScale(self.scaletype)
                         self.showimage()
+                    else:
+                        # Kein Bild vorhanden, auf Platte zurück greifen
+                        self.showSmallImage(startTime, eventId)
             except Exception as e:
                 self.log.error("response: [%s] %s", response, str(e))
                 self.hideimage()
 
-    def responseError(self, e):
-        self.log.error("responseError: %s", str(e))
-        self.hideimage()
+    def responseError(self, e, response, startTime):
+        self.log.error("response: [%s] %s", response, str(e))
+        self.showSmallImage(startTime, self.id)
+
+    def showSmallImage(self, startTime, eventId):
+        smallImage = self.getEventImage(startTime, eventId)
+        if (smallImage != None):
+            # Bild bis Download abgeschlossen ist
+            self.image.setPixmap(loadJPG(smallImage))
+            self.image.setScale(self.scaletype)
+            self.showimage()
+        else:
+            self.hideimage()
 
     def getEventImage(self, timestamp, eventId, withSize=False):
         # FileName für Image aus EpgShare Download Folder zurück geben
@@ -241,15 +255,10 @@ class ScroungerEventImage(Renderer):
             imageFileName = '%s/%s%s.jpg' % (path, eventId, size)
 
             if (os.path.exists(imageFileName)):
-                self.log.info(
-                    'getSizedEventImage: image exist: %s', imageFileName)
                 return imageFileName
-            else:
-                self.log.info(
-                    'getSizedEventImage: image not exist: %s', imageFileName)
 
         except Exception as e:
-            self.log.error("getSizedEventImage: %s", str(e))
+            self.log.error("getEventImage: %s", str(e))
 
         return None
 
@@ -264,12 +273,8 @@ class ScroungerEventImage(Renderer):
             imageFileName = '%s%s' % (path, base64.b64encode(title))
 
             if (os.path.exists(imageFileName)):
-                self.log.info(
-                    'getDefaultImage: image exist: %s', imageFileName)
                 return imageFileName
-            else:
-                self.log.info(
-                    'getDefaultImage: image not exist: %s', imageFileName)
+
         except Exception as e:
             self.log.error("getDefaultImage: %s", str(e))
 
