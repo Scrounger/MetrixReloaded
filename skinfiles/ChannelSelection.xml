@@ -15,12 +15,8 @@
   <widget alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-
-
-  <!--<widget source="ServiceEvent" render="MetrixEventImage" online="1" force="0" showtitle="0" usedefault="1" position="window_epg_picon_pos" size="window_epg_picon_size" zPosition="10" backgroundColor="background_second" foregroundColor="foreground" font="SetrixHD;28" transparent="1">
-    <convert type="MetrixCurrentImage" />
-  </widget>-->
-  <widget backgroundColor="background_second" font="regular;0" force="1" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="ScroungerEventImage" showtitle="0" size="window_epg_picon_size" source="ServiceEvent" transparent="1" usedefault="1" zPosition="3"/>
+  
+  <widget backgroundColor="background_second" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="ScroungerEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3"/>
 
   <widget source="ServiceEvent" backgroundColor="background" position="1720,0" size="200,50" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
     <convert type="ScroungerExtEventEPG">ImageId</convert>
@@ -29,6 +25,7 @@
   <widget source="ServiceEvent" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="background_second" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
+  
   <widget source="ServiceEvent" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText"></convert>

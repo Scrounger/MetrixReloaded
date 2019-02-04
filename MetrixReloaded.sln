@@ -305,6 +305,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Renderer", "Renderer", "{6D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Settings", "tools\Settings\Settings.csproj", "{3A9E2BB8-4BAC-4410-BF26-ED156AE5F772}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{EA8EADFE-01E3-4538-9BCD-24F25340870F}"
+	ProjectSection(SolutionItems) = preProject
+		lib\Tools\ScroungerExtraData.py = lib\Tools\ScroungerExtraData.py
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -349,6 +354,7 @@ Global
 		{0C802B7A-5DF5-48F9-8A6B-47615D06FF3D} = {9C874FC9-CE3F-4A2E-A201-4B6254C6D214}
 		{6DEDD33A-C54B-4C08-A5E7-CBC96CD5B5D2} = {9C874FC9-CE3F-4A2E-A201-4B6254C6D214}
 		{3A9E2BB8-4BAC-4410-BF26-ED156AE5F772} = {E9F4C52D-3853-4E8D-A98C-0F53E897EB3D}
+		{EA8EADFE-01E3-4538-9BCD-24F25340870F} = {FE49F274-7647-4D47-9ED2-763D3C4CAF3E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {15F85B7A-D1BC-4A05-9F4A-8F200A467742}
