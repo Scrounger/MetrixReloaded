@@ -16,6 +16,7 @@
     <convert type="ServiceName">Reference</convert>
   </widget>
   
+  <!-- EpgShare Image -->
   <widget backgroundColor="background_second" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="ScroungerEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3"/>
 
   <widget source="ServiceEvent" backgroundColor="background" position="1720,0" size="200,50" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
