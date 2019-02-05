@@ -61,6 +61,9 @@
   <constant-widget name="background_infoBar">
     <eLabel backgroundColor="background" position="0,800" size="1920,280" zPosition="-10" />
   </constant-widget>
+  <constant-widget name="background_movieplayer">
+    <eLabel backgroundColor="background" position="0,858" size="1920,280" zPosition="-10" />
+  </constant-widget>
   <constant-widget name="background_contextMenu">
     <eLabel backgroundColor="background_second" position="0,0" size="1050,60" zPosition="-10" />
     <eLabel backgroundColor="background" position="0,60" size="1050,690" zPosition="-10" />
@@ -250,6 +253,10 @@
     <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/hbbtv.png" position="1261,1035" render="Pixmap" size="91,34" source="HbbtvApplication" zPosition="10">
       <convert type="ConditionalShowHide" />
     </widget>
+  </constant-widget>
+  
+  <!-- InfoBar & MoviePlayer Icons-->
+  <constant-widget name="infoBar_movieplayer_Icons">    
     <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nosubtitles.png" position="1372,1038" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="1">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ScroungerCompareBoolean">false</convert>
