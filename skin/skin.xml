@@ -914,6 +914,7 @@
     <convert type="ServiceName">Reference</convert>
   </widget>
   
+  <!-- EpgShare Image -->
   <widget backgroundColor="background_second" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="ScroungerEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3"/>
 
   <widget source="ServiceEvent" backgroundColor="background" position="1720,0" size="200,50" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
@@ -1401,14 +1402,13 @@
     </widget>
     <eLabel backgroundColor="background_second" position="1620,42" size="237,100" zPosition="-10" />
     <!-- CPU Usage -->
-    <eLabel backgroundColor="background_second" position="1620,152" size="237,40" zPosition="-10" />
-    <eLabel text="CPU" backgroundColor="background_second" position="1635,152" size="100,40" font="font_standard_small" halign="left" valign="center" transparent="1" />
-    <widget source="Title" backgroundColor="background_second" render="Label" font="font_standard_small" position="1782,152" size="60,40" halign="right" valign="center" transparent="1" noWrap="1">
+    <eLabel backgroundColor="background_second" position="1620,170" size="237,70" zPosition="-10" />
+    <eLabel text="CPU" backgroundColor="background_second" position="1635,170" size="100,70" font="font_standard_small" halign="left" valign="top" transparent="1" />
+    <widget source="Title" backgroundColor="background_second" render="Label" font="font_standard_small" position="1782,170" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="ScroungerCpuUsage">$0</convert>
     </widget>
     <!-- System Temperatur -->
-    <eLabel backgroundColor="background_second" position="1620,202" size="237,40" zPosition="-10" />
-    <widget source="Title" backgroundColor="background_second" render="Label" font="font_standard_small" position="1782,202" size="60,40" halign="right" valign="center" transparent="1" noWrap="1">
+    <widget source="Title" backgroundColor="background_second" render="Label" font="font_standard_small" position="1782,200" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="ScroungerTempFanInfo">TempInfo</convert>
     </widget>
   </constant-widget>
@@ -2286,6 +2286,10 @@
   <widget position="window_epg_picon_pos" size="window_epg_picon_size" source="Service" render="XHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
+
+  <!-- EpgShare Image -->
+  <widget backgroundColor="background_second" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="ScroungerEventImage" size="window_epg_picon_size" source="Event" transparent="1" zPosition="3"/>
+  
   <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="background_second" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
