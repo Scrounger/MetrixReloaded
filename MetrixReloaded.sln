@@ -299,6 +299,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Converter", "Converter", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Renderer", "Renderer", "{6DEDD33A-C54B-4C08-A5E7-CBC96CD5B5D2}"
 	ProjectSection(SolutionItems) = preProject
+		lib\Components\Renderer\ScroungerCover.py = lib\Components\Renderer\ScroungerCover.py
 		lib\Components\Renderer\ScroungerEventImage.py = lib\Components\Renderer\ScroungerEventImage.py
 		lib\Components\Renderer\ScroungerIcon.py = lib\Components\Renderer\ScroungerIcon.py
 	EndProjectSection

@@ -250,10 +250,21 @@
     <widget alphatest="blend" path="media/logos/tunertypes" position="410,1043" render="ScroungerIcon" size="84,22" source="session.CurrentService" zPosition="3">
       <convert type="ScroungerServiceInfoEx">ttype</convert>
     </widget>
-    <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/hbbtv.png" position="1261,1035" render="Pixmap" size="91,34" source="HbbtvApplication" zPosition="10">
+    <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/hbbtv.png" position="1147,1035" render="Pixmap" size="91,34" source="HbbtvApplication" zPosition="10">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" source="session.extEvent_Now" pixmap="MetrixReloaded/media/logos/epgshare_not_available.png" position="1258,1038" render="Pixmap" size="94,34" zPosition="1">
+      <convert type="ScroungerExtEventEPG">IsEpgShareAvailable</convert>
+      <convert type="ScroungerCompareString">false</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" source="session.extEvent_Now" pixmap="MetrixReloaded/media/logos/epgshare.png" position="1258,1038" render="Pixmap" size="94,34" zPosition="1">
+      <convert type="ScroungerExtEventEPG">IsEpgShareAvailable</convert>
+      <convert type="ScroungerCompareString">true</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </constant-widget>
+
   
   <!-- InfoBar & MoviePlayer Icons-->
   <constant-widget name="infoBar_movieplayer_Icons">    
