@@ -198,6 +198,15 @@
       <convert type="ClockToText">Format:%a %e. %B</convert>
     </widget>
   </constant-widget>
+  <constant-widget name="clock_infoBar">
+    <widget backgroundColor="background_second" font="font_menu_time" halign="right" position="1660,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="background_second" font="font_menu_date" halign="right" position="1620,99" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%a %e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="background_second" position="1620,42" size="237,100" zPosition="-10" />
+  </constant-widget>
 
   <!-- Meine Seperators-->
   <constant-widget name="seperator_menu">

@@ -2,7 +2,7 @@
   <!-- Background -->
   <constant-widget name="background_infoBar" />
   <!-- Clock -->
-  <constant-widget name="clock_menu" />
+  <constant-widget name="clock_infoBar" />
   <!-- Logo -->
   <widget alphatest="blend" position="40,841" render="XHDPicon" size="330,198" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServiceName">Reference</convert>

@@ -1431,6 +1431,15 @@
       <convert type="ClockToText">Format:%a %e. %B</convert>
     </widget>
   </constant-widget>
+  <constant-widget name="clock_infoBar">
+    <widget backgroundColor="background_second" font="font_menu_time" halign="right" position="1660,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="background_second" font="font_menu_date" halign="right" position="1620,99" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%a %e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="background_second" position="1620,42" size="237,100" zPosition="-10" />
+  </constant-widget>
 
   <!-- Meine Seperators-->
   <constant-widget name="seperator_menu">
@@ -3258,7 +3267,7 @@
   <!-- Background -->
   <constant-widget name="background_infoBar" />
   <!-- Clock -->
-  <constant-widget name="clock_menu" />
+  <constant-widget name="clock_infoBar" />
   <!-- Logo -->
   <widget alphatest="blend" position="40,841" render="XHDPicon" size="330,198" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServiceName">Reference</convert>
@@ -3308,11 +3317,13 @@
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
+
+  <!-- Icons -->
   <constant-widget name="infoBar_tuner" />
-  
   <constant-widget name="infoBar_Icons" />
   <constant-widget name="infoBar_movieplayer_Icons" />
   
+  <!-- Rec Icon -->
   <constant-widget name="recIcon_top" />
 </screen>
 <screen name="InfoBarZapHistory" position="center,center" size="1050,750" flags="wfNoBorder" backgroundColor="transparent">
