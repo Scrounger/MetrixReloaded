@@ -2,10 +2,16 @@
   <!-- Backgrounds -->
   <constant-widget name="background_window" />
   <!-- Title -->
-  <!--<constant-widget name="Title_window" />-->
   <widget font="font_window_title" position="window_title_pos" render="Label" size="window_title_size" source="Service" transparent="1" backgroundColor="windowMainColorL">
     <convert type="ServiceName">Name</convert>
   </widget>
+
+  <!-- Title bei Verwendung als EPG-Suche-->
+  <widget source="Title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowMainColorL" transparent="1" noWrap="1">
+    <convert type="ScroungerCompareString">EPG-Suche</convert>
+  </widget>
+
+
   <!-- Clock -->
   <constant-widget name="clock_window" />
   <!-- Title Seperator -->

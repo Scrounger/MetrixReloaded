@@ -11,3 +11,12 @@ class ScroungerCompareString(Converter, object):
 		return self.source.text.lower() == self.value.lower()
 
 	boolean = property(getBoolean)
+
+	@cached
+	def getText(self):
+		if(self.source.text.lower() == self.value.lower()):
+			return self.source.text
+		
+		return ''
+	
+	text = property(getText)
