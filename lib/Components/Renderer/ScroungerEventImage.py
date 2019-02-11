@@ -91,7 +91,15 @@ class ScroungerEventImage(Renderer):
     def changed(self, what):
         if not self.instance:
             return
+
         event = self.source.event
+        try:
+            #Prüfen ob eventId vorhanden ist
+            eventid = event.getEventId()
+        except Exception as e:
+            #Fehler, dann ist event array
+            event = self.source.event[0]
+
         self.hideimage()
         if event is None:
             self.eventid = None
@@ -100,48 +108,50 @@ class ScroungerEventImage(Renderer):
         if what[0] == self.CHANGED_CLEAR:
             self.eventid = None
         if what[0] != self.CHANGED_CLEAR:
-            self.smallptr = False
-            eventid = event.getEventId()
-            startTime = event.getBeginTime()
-            title = event.getEventName()
 
-            # Default Image aus Folder 'Default' über Title
-            defaultImage = self.getDefaultImage(title)
-            if (defaultImage != None):
-                self.smallptr = True
-                self.image.setPixmap(loadJPG(defaultImage))
-                self.image.setScale(self.scaletype)
-                self.showimage()
-                return
+            if event:
+                self.smallptr = False
+                eventid = event.getEventId()
+                startTime = event.getBeginTime()
+                title = event.getEventName()
 
-            # ExtraDaten aus db holen
-            values = self.deserializeJson(getExtraData(self.source))
-
-            if(values != None and len(values) > 0 and eventid):
-                try:
-                    if eventid != self.eventid:
-                        self.id = str(values['id'])
-
-                        sizedImage = self.getEventImage(
-                            startTime, self.id, True)
-                        if (sizedImage != None):
-                            # Image mit size des Widgets laden, sofern verfügbar
-                            self.image.setPixmap(loadJPG(sizedImage))
-                            self.image.setScale(self.scaletype)
-                            self.showimage()
-                            return
-                        else:
-                            # Image downloaden
-                            self.downloadImage(
-                                str(values['id']), int(startTime), event)
-
-                            # Bild bis Download abgeschlossen ist
-                            self.showSmallImage(startTime, self.id)
-
+                # Default Image aus Folder 'Default' über Title
+                defaultImage = self.getDefaultImage(title)
+                if (defaultImage != None):
+                    self.smallptr = True
+                    self.image.setPixmap(loadJPG(defaultImage))
+                    self.image.setScale(self.scaletype)
+                    self.showimage()
                     return
-                except Exception as e:
-                    self.log.error("changed: %s", str(e))
-                    self.hideimage()
+
+                # ExtraDaten aus db holen
+                values = self.deserializeJson(getExtraData(self.source))
+
+                if(values != None and len(values) > 0 and eventid):
+                    try:
+                        if eventid != self.eventid:
+                            self.id = str(values['id'])
+
+                            sizedImage = self.getEventImage(
+                                startTime, self.id, True)
+                            if (sizedImage != None):
+                                # Image mit size des Widgets laden, sofern verfügbar
+                                self.image.setPixmap(loadJPG(sizedImage))
+                                self.image.setScale(self.scaletype)
+                                self.showimage()
+                                return
+                            else:
+                                # Image downloaden
+                                self.downloadImage(
+                                    str(values['id']), int(startTime), event)
+
+                                # Bild bis Download abgeschlossen ist
+                                self.showSmallImage(startTime, self.id)
+
+                        return
+                    except Exception as e:
+                        self.log.error("changed: %s", str(e))
+                        self.hideimage()
         return
 
     def GUIcreate(self, parent):
