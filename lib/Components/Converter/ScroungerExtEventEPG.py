@@ -298,49 +298,37 @@ class ScroungerExtEventEPG(Converter, object):
 			if 'vote' in values:
 				if len(str(values['vote']).strip()) > 0:
 					tmp = str(values['vote']).strip()
-					
-					if(self.isNumber(tmp)):
-						# Nur anzeigen wenn Rating > 0
-						if(float(tmp) > 0):
-							if(isStars):
-								rating = str(round(float(tmp) * 2) / 2).replace(".","")
-							else:
-								rating = tmp.replace(".",",")
-						else:
-							if(isStars):
-								rating = str(0)
-					else:
-						if(isStars):
-							rating = str(0)
+					rating = self.getRatingAsNumber(tmp, isStars)
 
 		if (rating == None and event != None) or (rating == str(0) and  event != None):
-			self.log.info("getRating: Jaaaa bin hier!!!")
-		#Rating aus Description extrahieren
+			#Rating aus Description extrahieren
 			desc = self.getFullDescription(event)
 
 			parser = re.search(r'IMDb rating:\s(\d+\.\d+)[/]', desc)
 			if(parser):
 				tmp = str(parser.group(1))
-
-				if(self.isNumber(tmp)):
-					# Nur anzeigen wenn Rating > 0
-					if(float(tmp) > 0):
-						if(isStars):
-							rating = str(round(float(tmp) * 2) / 2).replace(".","")
-						else:
-							rating = tmp.replace(".",",")
-					else:
-						if(isStars):
-							rating = str(0)
-				else:
-					if(isStars):
-						rating = str(0)
+				rating = self.getRatingAsNumber(tmp, isStars)
 
 		prefix = self.getPrefixParser(type)
 		if(rating != None and prefix != None):
 			rating = '%s %s' % (prefix, rating)
 					
 		return rating
+
+	def getRatingAsNumber(self, strRating, isStars):
+		if(self.isNumber(strRating)):
+        	# Nur anzeigen wenn Rating > 0
+			if(float(strRating) > 0):
+				if(isStars):
+					return str(round(float(strRating) * 2) / 2).replace(".", "")
+				else:
+					return strRating.replace(".", ",")
+			else:
+				if(isStars):
+					return str(0)
+		else:
+			if(isStars):
+				return str(0)		
 	
 	def getParentalRating(self, type, event, values):				
 		parentialRating = None
