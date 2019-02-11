@@ -53,7 +53,7 @@ class ScroungerExtEventEPG(Converter, object):
 		
 	@cached
 	def getText(self):
-		self.log.info('getText: inputString: %s (%s)', str(self.inputString), len(self.types))
+		#self.log.info('getText: inputString: %s (%s)', str(self.inputString), len(self.types))
 		
 		extraData = getExtraData(self.source, self.log)
 		
@@ -86,11 +86,17 @@ class ScroungerExtEventEPG(Converter, object):
 						if(values != None and len(values) > 0):
 							if len(str(values['id']).strip()) > 0:
 								return str(values['id']).strip()
+					elif self.POWER_DESCRIPTION in type:
+						powerDescription = self.getPowerDescription(self.inputString, event, values)
+						if(powerDescription != None):
+							return powerDescription
+						else:
+							return ''
 					elif type == self.EPISODE_NUM:
 						episodeNum = self.getEpisodeNum(event, values)
 						if (episodeNum != None):
 							result.append(episodeNum)
-					elif self.TITLE in type:
+					elif self.TITLE == type:
 						title = self.getTitleWithPrefix(type, event, values)
 						if(title != None and len(title) > 0 and title != ' '):
 							result.append(title)					
@@ -106,10 +112,10 @@ class ScroungerExtEventEPG(Converter, object):
 						rating = None
 						if(self.RATING_STARS in type):
 							#gerundetes Rating, kann z.B. für Rating Images verwendet werden
-							rating = self.getRating(type, values, True)
+							rating = self.getRating(type, values, event, True)
 						else:
 							#Rating als Kommazahl
-							rating = self.getRating(type, values, False)
+							rating = self.getRating(type, values, event, False)
 						
 						if(rating != None):
 							result.append(rating)
@@ -129,12 +135,7 @@ class ScroungerExtEventEPG(Converter, object):
 						country = self.getCountry(type, values, event)
 						if(country != None):
 							result.append(country)
-					elif self.POWER_DESCRIPTION in type:
-						powerDescription = self.getPowerDescription()
-						if(powerDescription != None):
-							return powerDescription
-						else:
-							return ''
+
 					else:
 						result.append("!!! invalid parameter '%s' !!!" % (type))
 
@@ -148,8 +149,33 @@ class ScroungerExtEventEPG(Converter, object):
 		
 	text = property(getText)
 
-	def getPowerDescription(self):
-		return "jabadadu"
+	def getPowerDescription(self, input, event, values):
+		#Ziel String extrahieren
+		inputParser = re.match('PowerDescription[[](.*)[]$]', input, re.MULTILINE|re.DOTALL)
+		if(inputParser):
+			input = inputParser.group(1)
+			self.log.info("getPowerDescription: input: %s" % (input))
+
+			if(self.TITLE in input):
+				type = self.TITLE
+				
+				parser = re.match('(Title[(].*?[)])', input)
+				if(parser):
+					type = parser.group(1)
+					self.log.info("getPowerDescription: parser: %s" % (parser.group(1)))
+
+				self.log.info("getPowerDescription: type: %s" % (type))
+
+				title = self.getTitleWithPrefix(type, event, values)
+				if(title != None and len(title) > 0 and title != ' '):
+					input = input.replace(type, title)
+				else:
+					input = str(input).replace(type, "")
+
+
+				return input
+		else:
+			return "Wrong format: %s" %(input)
 	
 	def getCountry(self, type, values, event):
 		country = None
@@ -264,7 +290,7 @@ class ScroungerExtEventEPG(Converter, object):
 		
 		return category
 	
-	def getRating(self, type, values, isStars):
+	def getRating(self, type, values, event, isStars):
 		rating = None
 		
 		if(values != None and len(values) > 0):
@@ -285,7 +311,30 @@ class ScroungerExtEventEPG(Converter, object):
 								rating = str(0)
 					else:
 						if(isStars):
-							rating = str(0)					
+							rating = str(0)
+
+		if (rating == None and event != None) or (rating == str(0) and  event != None):
+			self.log.info("getRating: Jaaaa bin hier!!!")
+		#Rating aus Description extrahieren
+			desc = self.getFullDescription(event)
+
+			parser = re.search(r'IMDb rating:\s(\d+\.\d+)[/]', desc)
+			if(parser):
+				tmp = str(parser.group(1))
+
+				if(self.isNumber(tmp)):
+					# Nur anzeigen wenn Rating > 0
+					if(float(tmp) > 0):
+						if(isStars):
+							rating = str(round(float(tmp) * 2) / 2).replace(".","")
+						else:
+							rating = tmp.replace(".",",")
+					else:
+						if(isStars):
+							rating = str(0)
+				else:
+					if(isStars):
+						rating = str(0)
 
 		prefix = self.getPrefixParser(type)
 		if(rating != None and prefix != None):
