@@ -2449,12 +2449,12 @@
   <widget alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" source="Title" transparent="1" zPosition="5">
     <convert type="MetrixRefString">CurrentRef</convert>
   </widget>
+
+
+  
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/left.png" position="1270,494" size="36,36" transparent="1" zPosition="10" />
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/right.png" position="1718,494" size="36,36" transparent="1" zPosition="10" />
-  <widget backgroundColor="background" font="SetrixHD; 70" halign="left" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0" position="60,37" render="VRunningText" size="1132,90" source="session.CurrentService" transparent="0">
-    <convert type="MetrixExtEventName">Name</convert>
-    <convert type="MetrixExtraEventData">SUBTITLE SERIESINFO GENRE YEAR COUNTRY</convert>
-  </widget>
+  
   <widget backgroundColor="background_second" font="SetrixHD;40" halign="center" name="channel" position="1274,350" size="480,75" transparent="1" />
   <widget backgroundColor="background_second" font="SetrixHD;36" halign="center" name="datetime" position="1309,485" size="405,60" transparent="1" />
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="1325,437" size="382,1" />
@@ -3322,6 +3322,10 @@
   <widget source="session.Event_Next" position="1687,984" size="169,35" backgroundColor="background" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+
+  <widget source="session.extEvent_Now" position="412,100" size="1000,600" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" noWrap="0">
+    <convert type="ScroungerExtEventEPG">EpgShareRaw</convert>
   </widget>
 
   <!-- Icons -->
@@ -5671,7 +5675,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Background -->
   <eLabel backgroundColor="background" position="60,37" size="1132,740" zPosition="-10" />
   <eLabel backgroundColor="background_second" position="1192,37" size="667,740" zPosition="-10" />
-  
+
+  <widget source="session.extEvent_Now" position="105,150" size="1000,600" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="0">
+    <convert type="ScroungerExtEventEPG">PowerDescription(Title \n Subtitle</convert>
+  </widget>
+
   <!--<widget font="BoldItalic;40" position="45,20" render="Label" size="960,50" valign="center" backgroundColor="windowMainColorL" transparent="1" source="session.CurrentService" zPosition="1">
     <convert type="ServiceName">Name</convert>
   </widget>
