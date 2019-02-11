@@ -8,6 +8,7 @@ from Tools.MovieInfoParser import getExtendedMovieDescription
 import json
 import HTMLParser
 import re
+import os
 
 import logging
 
@@ -26,6 +27,7 @@ class ScroungerExtEventEPG(Converter, object):
 	RATING = "Rating"							# (nur EpgShare) optional mit Prefix angabe -> z.B. Rating(Bewertung)
 	RATING_STARS = "RatingStars"				# (nur EpgShare) optional mit Prefix angabe -> z.B. RatingStars(star) -> Output: 65 -> kann für Images verwendet werden
 	CATEGORY = "Category"						# (nur EpgShare) optional mit Prefix angabe -> z.B. Rating(Bewertung)
+	POWER_DESCRIPTION = "PowerDescription"		
 	
 	#Parser fuer Serien- und Episodennummer
 	seriesNumParserList = [('(\d+)[.]\sStaffel[,]\sFolge\s(\d+)'), 
@@ -126,20 +128,28 @@ class ScroungerExtEventEPG(Converter, object):
 					elif self.COUNTRY in type:
 						country = self.getCountry(type, values, event)
 						if(country != None):
-							result.append(country)							
-						
+							result.append(country)
+					elif self.POWER_DESCRIPTION in type:
+						powerDescription = self.getPowerDescription()
+						if(powerDescription != None):
+							return powerDescription
+						else:
+							return ''
 					else:
 						result.append("!!! invalid parameter '%s' !!!" % (type))
 
 				sep = ' %s ' % str(self.htmlParser.unescape('&#xB7;'))
 				return sep.join(result)					
-			except Exception, e:
+			except Exception as e:
 				self.log.error("getText: '%s'  %s", self.logType, str(e))
 				return "[Error] getText: '%s'  %s" % (self.logType, str(e))					
 					
 		return ""
 		
 	text = property(getText)
+
+	def getPowerDescription(self):
+		return "jabadadu"
 	
 	def getCountry(self, type, values, event):
 		country = None
@@ -350,7 +360,7 @@ class ScroungerExtEventEPG(Converter, object):
 				result = self.getSubtitleFromDescription(event, maxWords)
 				if (result != None):						
 					subtitle = result
-			except Exception, ex:
+			except Exception as ex:
 				subtitle = str(ex)
 		
 		#Falls Subtitle = Title -> dann nichts zurück geben
@@ -393,7 +403,7 @@ class ScroungerExtEventEPG(Converter, object):
 
 			else:
 				return None
-		except Exception, e:
+		except Exception as e:
 			return "[Error] getSubtitleFromDescription: %s" % (str(e))
 		
 		return None
@@ -540,7 +550,7 @@ class ScroungerExtEventEPG(Converter, object):
 				
 				return result
 		
-		except Exception, e:
+		except Exception as e:
 			self.log.error("getMaxWords: %s", (str(e)))
 			return "[Error] getMaxWords: %s" % (str(e))
 			
@@ -607,7 +617,7 @@ class ScroungerExtEventEPG(Converter, object):
 		try:
 			if str(extraData) != '':
 				return json.loads(extraData)
-		except Exception, ex:
+		except Exception as ex:
 			return None	
 
 	def isNumber(self, inp):
@@ -621,24 +631,7 @@ class ScroungerExtEventEPG(Converter, object):
 			except ValueError:
 				return False
 			
-	def initializeLog(self):
-		logger = logging.getLogger("ScroungerExtEventName")
-		logger.setLevel(logging.DEBUG)
 
-		# create a file handler
-		handler = logging.FileHandler('/tmp/meins.log')
-		handler.setLevel(logging.DEBUG)
-
-		# create a logging format
-		formatter = logging.Formatter('%(asctime)s - %(name)s: [%(levelname)s] %(message)s')
-		handler.setFormatter(formatter)
-
-		# add the handlers to the logger
-		logger.addHandler(handler)
-
-		logger.debug("logger initialized")
-		
-		return logger
 		
 	def getCompareGenreWithGenreList(self, desc, splitChar):
 		
@@ -693,6 +686,28 @@ class ScroungerExtEventEPG(Converter, object):
 				
 		
 		return None
+
+	def initializeLog(self):
+		logger = logging.getLogger("ScroungerExtEventName")
+		logger.setLevel(logging.DEBUG)
+
+		# create a file handler
+		dir = '/mnt/hdd/scroungerLog/'
+
+		if not os.path.exists(dir):
+			os.makedirs(dir)
+
+		handler = logging.FileHandler('%sScroungerExtEventEPG.log' % (dir))
+		handler.setLevel(logging.DEBUG)
+
+		# create a logging format
+		formatter = logging.Formatter('%(asctime)s - %(name)s: [%(levelname)s] %(message)s')
+		handler.setFormatter(formatter)
+
+		# add the handlers to the logger
+		logger.addHandler(handler)
+		
+		return logger
 		
 	AVAILABLE_GENRES_EPG =[
                         "Actionfilm", "Abenteuerfilm", "Animationsfilm", "Animationsserie", "Abenteuer", "Animations-Serie", "Actiondrama", "Abenteuer-Serie", "Actionthriller", "Actionkomödie", "Actionserie", "Animation", "Action", "Actionfilm",

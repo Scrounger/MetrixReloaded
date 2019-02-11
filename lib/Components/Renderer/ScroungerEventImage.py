@@ -311,7 +311,12 @@ class ScroungerEventImage(Renderer):
         logger.setLevel(logging.DEBUG)
 
         # create a file handler
-        handler = logging.FileHandler('/tmp/ScroungerEventImage.log')
+        dir = '/mnt/hdd/scroungerLog/'
+
+        if not os.path.exists(dir):
+            os.makedirs(dir)
+
+        handler = logging.FileHandler('%sScroungerEventImage.log' % (dir))
         handler.setLevel(logging.DEBUG)
 
         # create a logging format
@@ -321,7 +326,5 @@ class ScroungerEventImage(Renderer):
 
         # add the handlers to the logger
         logger.addHandler(handler)
-
-        logger.debug("logger initialized")
 
         return logger
