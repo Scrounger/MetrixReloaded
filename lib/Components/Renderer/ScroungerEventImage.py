@@ -89,69 +89,74 @@ class ScroungerEventImage(Renderer):
         return ret
 
     def changed(self, what):
-        if not self.instance:
-            return
-
-        event = self.source.event
         try:
-            #Prüfen ob eventId vorhanden ist
-            eventid = event.getEventId()
-        except Exception as e:
-            #Fehler, dann ist event array
-            event = self.source.event[0]
+            if not self.instance:
+                return
 
-        self.hideimage()
-        if event is None:
-            self.eventid = None
-            self.instance.hide()
-            return
-        if what[0] == self.CHANGED_CLEAR:
-            self.eventid = None
-        if what[0] != self.CHANGED_CLEAR:
-
-            if event:
-                self.smallptr = False
+            event = self.source.event
+            try:
+                #Prüfen ob eventId vorhanden ist
                 eventid = event.getEventId()
-                startTime = event.getBeginTime()
-                title = event.getEventName()
+            except Exception as e:
+                #Fehler, dann ist event array
+                event = self.source.event[0]
 
-                # Default Image aus Folder 'Default' über Title
-                defaultImage = self.getDefaultImage(title)
-                if (defaultImage != None):
-                    self.smallptr = True
-                    self.image.setPixmap(loadJPG(defaultImage))
-                    self.image.setScale(self.scaletype)
-                    self.showimage()
-                    return
+            self.hideimage()
+            if event is None:
+                self.eventid = None
+                self.instance.hide()
+                return
+            if what[0] == self.CHANGED_CLEAR:
+                self.eventid = None
+            if what[0] != self.CHANGED_CLEAR:
 
-                # ExtraDaten aus db holen
-                values = self.deserializeJson(getExtraData(self.source))
+                if event:
+                    self.smallptr = False
+                    eventid = event.getEventId()
+                    startTime = event.getBeginTime()
+                    title = event.getEventName()
 
-                if(values != None and len(values) > 0 and eventid):
-                    try:
-                        if eventid != self.eventid:
-                            self.id = str(values['id'])
-
-                            sizedImage = self.getEventImage(
-                                startTime, self.id, True)
-                            if (sizedImage != None):
-                                # Image mit size des Widgets laden, sofern verfügbar
-                                self.image.setPixmap(loadJPG(sizedImage))
-                                self.image.setScale(self.scaletype)
-                                self.showimage()
-                                return
-                            else:
-                                # Image downloaden
-                                self.downloadImage(
-                                    str(values['id']), int(startTime), event)
-
-                                # Bild bis Download abgeschlossen ist
-                                self.showSmallImage(startTime, self.id)
-
+                    # Default Image aus Folder 'Default' über Title
+                    defaultImage = self.getDefaultImage(title)
+                    if (defaultImage != None):
+                        self.smallptr = True
+                        self.image.setPixmap(loadJPG(defaultImage))
+                        self.image.setScale(self.scaletype)
+                        self.showimage()
                         return
-                    except Exception as e:
-                        self.log.error("changed: %s", str(e))
-                        self.hideimage()
+
+                    # ExtraDaten aus db holen
+                    values = self.deserializeJson(getExtraData(self.source, self.log))
+
+                    if(values != None and len(values) > 0 and eventid):
+                        try:
+                            if eventid != self.eventid:
+                                self.id = str(values['id'])
+
+                                sizedImage = self.getEventImage(
+                                    startTime, self.id, True)
+                                if (sizedImage != None):
+                                    # Image mit size des Widgets laden, sofern verfügbar
+                                    self.image.setPixmap(loadJPG(sizedImage))
+                                    self.image.setScale(self.scaletype)
+                                    self.showimage()
+                                    return
+                                else:
+                                    # Image downloaden
+                                    self.downloadImage(
+                                        str(values['id']), int(startTime), event)
+
+                                    # Bild bis Download abgeschlossen ist
+                                    self.showSmallImage(startTime, self.id)
+
+                            return
+                        except Exception as e:
+                            self.log.exception("changed: %s", str(e))
+                            self.hideimage()
+
+        except Exception as e:
+            self.log.exception("changed: %s", str(e))
+        
         return
 
     def GUIcreate(self, parent):
@@ -217,7 +222,7 @@ class ScroungerEventImage(Renderer):
                     # TODO: Hier noch als alternative wenn Daten nicht vefügbar sind, smallImage von Platte laden
 
             except Exception as e:
-                self.log.error("response: [%s] %s", response, str(e))
+                self.log.exception("response: [%s] %s", response, str(e))
                 self.hideimage()
 
         if (response == self.SHOW_IMAGE):
@@ -234,11 +239,11 @@ class ScroungerEventImage(Renderer):
                         # Kein Bild vorhanden, auf Platte zurück greifen
                         self.showSmallImage(startTime, eventId)
             except Exception as e:
-                self.log.error("response: [%s] %s", response, str(e))
+                self.log.exception("response: [%s] %s", response, str(e))
                 self.hideimage()
 
     def responseError(self, e, response, startTime):
-        self.log.error("response: [%s] %s", response, str(e))
+        self.log.exception("response: [%s] %s", response, str(e))
         self.showSmallImage(startTime, self.id)
 
     def showSmallImage(self, startTime, eventId):
@@ -268,7 +273,7 @@ class ScroungerEventImage(Renderer):
                 return imageFileName
 
         except Exception as e:
-            self.log.error("getEventImage: %s", str(e))
+            self.log.exception("getEventImage: %s", str(e))
 
         return None
 
@@ -286,7 +291,7 @@ class ScroungerEventImage(Renderer):
                 return imageFileName
 
         except Exception as e:
-            self.log.error("getDefaultImage: %s", str(e))
+            self.log.exception("getDefaultImage: %s", str(e))
 
         return None
 
@@ -303,7 +308,7 @@ class ScroungerEventImage(Renderer):
             if str(data) != '':
                 return json.loads(data)
         except Exception as e:
-            self.log.error("deserializeJson: %s", str(e))
+            self.log.exception("deserializeJson: %s", str(e))
             return None
 
     def initializeLog(self):

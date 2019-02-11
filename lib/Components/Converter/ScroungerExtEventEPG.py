@@ -55,7 +55,7 @@ class ScroungerExtEventEPG(Converter, object):
 	def getText(self):
 		self.log.info('getText: inputString: %s (%s)', str(self.inputString), len(self.types))
 		
-		extraData = getExtraData(self.source)
+		extraData = getExtraData(self.source, self.log)
 		
 		try:
 			event = self.source.event[0]
@@ -80,7 +80,7 @@ class ScroungerExtEventEPG(Converter, object):
 							return 'false'
 					elif type == self.EPGSHARE_RAW:
 						#alle Daten aus der Datenbank ausgeben
-						return getExtraData(self.source)
+						return getExtraData(self.source, self.log)
 					elif type == self.IMAGEID:
 						#Nur EpgShare - Id des Images
 						if(values != None and len(values) > 0):
@@ -141,7 +141,7 @@ class ScroungerExtEventEPG(Converter, object):
 				sep = ' %s ' % str(self.htmlParser.unescape('&#xB7;'))
 				return sep.join(result)					
 			except Exception as e:
-				self.log.error("getText: '%s'  %s", self.logType, str(e))
+				self.log.exception("getText: '%s'  %s", self.logType, str(e))
 				return "[Error] getText: '%s'  %s" % (self.logType, str(e))					
 					
 		return ""
@@ -551,7 +551,7 @@ class ScroungerExtEventEPG(Converter, object):
 				return result
 		
 		except Exception as e:
-			self.log.error("getMaxWords: %s", (str(e)))
+			self.log.exception("getMaxWords: %s", (str(e)))
 			return "[Error] getMaxWords: %s" % (str(e))
 			
 		return None
