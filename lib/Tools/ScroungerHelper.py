@@ -5,7 +5,9 @@ from Components.Sources.extEventInfo import extEventInfo
 from ServiceReference import ServiceReference
 
 import json
-
+import os
+import time
+import base64
 
 def getExtraData(source, logger):
     if source.event:
@@ -35,7 +37,6 @@ def getExtraData(source, logger):
             return source.event.getExtraEventData()
     return ""
 
-
 def getDataFromDatabase(service, eventid, logger, beginTime=None, EventName=None):
     try:
         from Plugins.Extensions.EpgShare.main import getEPGDB
@@ -60,3 +61,42 @@ def getDataFromDatabase(service, eventid, logger, beginTime=None, EventName=None
     except Exception as ex:
         logger.exception("getDataFromDatabase: %s", str(ex))
         return None
+
+def getEventImage(self, timestamp, eventId, withSize=False):
+    # FileName für Image aus EpgShare Download Folder zurück geben
+    try:
+        path = os.path.join(self.epgShareImagePath, str(
+        time.strftime('%D', time.localtime(int(timestamp)))).replace('/', '.'))
+
+        size = ''
+        if(withSize):
+            # Size des Widgets berücksitigen
+            size = '_%s_%s' % (str(self.WCover), str(self.HCover))
+
+        imageFileName = '%s/%s%s.jpg' % (path, eventId, size)
+
+        if (os.path.exists(imageFileName)):
+            return imageFileName
+
+    except Exception as e:
+        self.log.exception("getEventImage: %s", str(e))
+
+    return None
+
+def getDefaultImage(self, title):
+    # FileName für Image aus Default Folder zurückgeben
+    try:
+        # Image aus Default EpgShare Ordner holen, sofern existiert
+        path = '%s/Default/' % (self.epgShareImagePath)
+        title = title.decode(
+            'utf-8').lower().split('(')[0].strip() + '.jpg'
+
+        imageFileName = '%s%s' % (path, base64.b64encode(title))
+
+        if (os.path.exists(imageFileName)):
+            return imageFileName
+
+    except Exception as e:
+        self.log.exception("getDefaultImage: %s", str(e))
+
+    return None

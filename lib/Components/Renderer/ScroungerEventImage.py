@@ -13,7 +13,7 @@ from skin import parseColor, parseFont
 from twisted.web.client import downloadPage, getPage
 from Components.Sources.ExtEvent import ExtEvent
 from Components.Sources.ServiceEvent import ServiceEvent
-from Tools.ScroungerExtraData import getDataFromDatabase, getExtraData
+from Tools.ScroungerHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage
 import logging
 
 
@@ -117,7 +117,7 @@ class ScroungerEventImage(Renderer):
                     title = event.getEventName()
 
                     # Default Image aus Folder 'Default' über Title
-                    defaultImage = self.getDefaultImage(title)
+                    defaultImage = getDefaultImage(self, title)
                     if (defaultImage != None):
                         self.smallptr = True
                         self.image.setPixmap(loadJPG(defaultImage))
@@ -133,7 +133,7 @@ class ScroungerEventImage(Renderer):
                             if eventid != self.eventid:
                                 self.id = str(values['id'])
 
-                                sizedImage = self.getEventImage(
+                                sizedImage = getEventImage(self, 
                                     startTime, self.id, True)
                                 if (sizedImage != None):
                                     # Image mit size des Widgets laden, sofern verfügbar
@@ -247,7 +247,7 @@ class ScroungerEventImage(Renderer):
         self.showSmallImage(startTime, self.id)
 
     def showSmallImage(self, startTime, eventId):
-        smallImage = self.getEventImage(startTime, eventId)
+        smallImage = getEventImage(self, startTime, eventId)
         if (smallImage != None):
             # Bild bis Download abgeschlossen ist
             self.image.setPixmap(loadJPG(smallImage))
@@ -255,45 +255,6 @@ class ScroungerEventImage(Renderer):
             self.showimage()
         else:
             self.hideimage()
-
-    def getEventImage(self, timestamp, eventId, withSize=False):
-        # FileName für Image aus EpgShare Download Folder zurück geben
-        try:
-            path = os.path.join(self.epgShareImagePath, str(
-                time.strftime('%D', time.localtime(int(timestamp)))).replace('/', '.'))
-
-            size = ''
-            if(withSize):
-                # Size des Widgets berücksitigen
-                size = '_%s_%s' % (str(self.WCover), str(self.HCover))
-
-            imageFileName = '%s/%s%s.jpg' % (path, eventId, size)
-
-            if (os.path.exists(imageFileName)):
-                return imageFileName
-
-        except Exception as e:
-            self.log.exception("getEventImage: %s", str(e))
-
-        return None
-
-    def getDefaultImage(self, title):
-        # FileName für Image aus Default Folder zurückgeben
-        try:
-            # Image aus Default EpgShare Ordner holen, sofern existiert
-            path = '%s/Default/' % (self.epgShareImagePath)
-            title = title.decode(
-                'utf-8').lower().split('(')[0].strip() + '.jpg'
-
-            imageFileName = '%s%s' % (path, base64.b64encode(title))
-
-            if (os.path.exists(imageFileName)):
-                return imageFileName
-
-        except Exception as e:
-            self.log.exception("getDefaultImage: %s", str(e))
-
-        return None
 
     def checkEpgShareAvailable(self):
         try:

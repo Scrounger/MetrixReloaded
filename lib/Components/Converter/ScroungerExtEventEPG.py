@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from Components.Converter.Converter import Converter
 from Components.Element import cached
-from Tools.ScroungerExtraData import getDataFromDatabase, getExtraData
+from Tools.ScroungerHelper import getDataFromDatabase, getExtraData
 
 from Tools.MovieInfoParser import getExtendedMovieDescription
 
@@ -15,6 +15,7 @@ import logging
 class ScroungerExtEventEPG(Converter, object):
 	#Input Parameter per Skin
 	IMAGEID = "ImageId"
+	IS_IMAGE_AVAILABLE = "IsImageAvailable"
 	IS_EPGSHARE_AVAILABLE = "IsEpgShareAvailable"
 	EPGSHARE_RAW = "EpgShareRaw"
 	EPISODE_NUM = "EpisodeNum"
@@ -86,6 +87,10 @@ class ScroungerExtEventEPG(Converter, object):
 						if(values != None and len(values) > 0):
 							if len(str(values['id']).strip()) > 0:
 								return str(values['id']).strip()
+					elif type == self.IS_IMAGE_AVAILABLE:
+						#Prüfen ob ein Image verfügbar ist
+						isImageAvailable = False
+						return str(isImageAvailable)
 					elif self.POWER_DESCRIPTION in type:
 						powerDescription = self.getPowerDescription(self.inputString, event, values)
 						if(powerDescription != None):
