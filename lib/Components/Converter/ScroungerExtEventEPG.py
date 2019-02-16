@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from Components.Converter.Converter import Converter
 from Components.Element import cached
-from Tools.ScroungerHelper import getDataFromDatabase, getExtraData
+from Tools.ScroungerHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage
 
 from Tools.MovieInfoParser import getExtendedMovieDescription
 
@@ -89,8 +89,10 @@ class ScroungerExtEventEPG(Converter, object):
 								return str(values['id']).strip()
 					elif type == self.IS_IMAGE_AVAILABLE:
 						#Prüfen ob ein Image verfügbar ist
-						isImageAvailable = False
-						return str(isImageAvailable)
+						if(values != None and len(values) > 0):
+							return str(self.isImageAvailable(event, values))
+						
+						return str(False)
 					elif self.POWER_DESCRIPTION in type:
 						powerDescription = self.getPowerDescription(self.inputString, event, values)
 						if(powerDescription != None):
@@ -153,6 +155,9 @@ class ScroungerExtEventEPG(Converter, object):
 		return ""
 		
 	text = property(getText)
+
+
+
 
 	def getPowerDescription(self, input, event, values):
 		#Ziel String extrahieren
@@ -728,6 +733,19 @@ class ScroungerExtEventEPG(Converter, object):
 				
 		
 		return None
+
+	def isImageAvailable(self, event, values):
+		#Schauen ob Default Image existiert
+		image = getDefaultImage(self, event.getEventName())
+
+		if(image == None):
+			#Schauen ob Image existiert
+			image = getEventImage(self, event.getBeginTime(), str(values['id']))
+
+		if(image != None):
+			return True
+		
+		return False
 
 	def initializeLog(self):
 		logger = logging.getLogger("ScroungerExtEventName")
