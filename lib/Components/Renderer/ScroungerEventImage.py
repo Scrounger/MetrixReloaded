@@ -13,7 +13,7 @@ from skin import parseColor, parseFont
 from twisted.web.client import downloadPage, getPage
 from Components.Sources.ExtEvent import ExtEvent
 from Components.Sources.ServiceEvent import ServiceEvent
-from Tools.ScroungerHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage
+from Tools.ScroungerHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, getEpgShareImagePath
 import logging
 
 
@@ -37,10 +37,6 @@ class ScroungerEventImage(Renderer):
         self.labeltop = 0
         self.scaletype = 2
         self.WCover = self.HCover = self.TCover = self.LCover = self.WPreview = self.HPreview = self.TPreview = self.LPreview = 0
-
-        # ImagePath von EpgShare Plugin
-        self.epgShareImagePath = str(
-            config.plugins.epgShare.autocachelocation.value)
 
         return
 
@@ -190,7 +186,7 @@ class ScroungerEventImage(Renderer):
     def response(self, data, response, eventId, startTime, event):
         # Antwort für Async Task
         size = '_%s_%s' % (str(self.WCover), str(self.HCover))
-        path = os.path.join(self.epgShareImagePath, str(
+        path = os.path.join(getEpgShareImagePath(self), str(
                             time.strftime('%D', time.localtime(startTime))).replace('/', '.'))
         imageFileName = '%s/%s%s.jpg' % (path, eventId, size)
 

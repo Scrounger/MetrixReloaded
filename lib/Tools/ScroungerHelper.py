@@ -3,6 +3,7 @@ from Components.Sources.Event import Event
 from Components.Sources.ExtEvent import ExtEvent
 from Components.Sources.extEventInfo import extEventInfo
 from ServiceReference import ServiceReference
+from Components.config import config
 
 import json
 import os
@@ -65,7 +66,7 @@ def getDataFromDatabase(service, eventid, logger, beginTime=None, EventName=None
 def getEventImage(self, timestamp, eventId, withSize=False):
     # FileName für Image aus EpgShare Download Folder zurück geben
     try:
-        path = os.path.join(self.epgShareImagePath, str(
+        path = os.path.join(getEpgShareImagePath(self), str(
         time.strftime('%D', time.localtime(int(timestamp)))).replace('/', '.'))
 
         size = ''
@@ -87,7 +88,7 @@ def getDefaultImage(self, title):
     # FileName für Image aus Default Folder zurückgeben
     try:
         # Image aus Default EpgShare Ordner holen, sofern existiert
-        path = '%s/Default/' % (self.epgShareImagePath)
+        path = '%s/Default/' % (getEpgShareImagePath(self))
         title = title.decode(
             'utf-8').lower().split('(')[0].strip() + '.jpg'
 
@@ -99,4 +100,12 @@ def getDefaultImage(self, title):
     except Exception as e:
         self.log.exception("getDefaultImage: %s", str(e))
 
+    return None
+
+def getEpgShareImagePath(self):
+    try:
+        return str(config.plugins.epgShare.autocachelocation.value)
+    except Exception as e:
+        self.log.exception("getEpgShareImagePath: %s", str(e))    
+    
     return None
