@@ -156,15 +156,30 @@ class ScroungerExtEventEPG(Converter, object):
 		
 	text = property(getText)
 
-
-
-
 	def getPowerDescription(self, input, event, values):
-		#Ziel String extrahieren
-		inputParser = re.match('PowerDescription[[](.*)[]$]', input, re.MULTILINE|re.DOTALL)
-		if(inputParser):
+		condition = None
+		
+		#InputParser ohne Condition
+		inputParser = re.match(r'^PowerDescription[[](.*)[]$]', input, re.MULTILINE|re.DOTALL)
+
+		#InputParser mit Condition
+		inputParserWithCondition = re.match(r'^PowerDescription[[](True|False|true|false)[]][[](.*)[]$]', input, re.MULTILINE|re.DOTALL)
+
+		if(inputParserWithCondition != None):
+			condition = inputParserWithCondition.group(1)
+			input = inputParserWithCondition.group(2)
+		elif(inputParser != None):
 			input = inputParser.group(1)
+		else:
+			input = None
+
+		if(input != None):
+			self.log.info("getPowerDescription: condition: %s" % (str(condition).lower()))
 			self.log.info("getPowerDescription: input: %s" % (input))
+
+			if(condition != None and str(self.isImageAvailable(event, values)).lower() != condition.lower()):
+				#Zurück wenn Condition nicht erfüllt, sofern condition vorhanden
+				return None
 
 			if(self.TITLE in input):
 				type = self.TITLE
@@ -738,7 +753,7 @@ class ScroungerExtEventEPG(Converter, object):
 		#Schauen ob Default Image existiert
 		image = getDefaultImage(self, event.getEventName())
 
-		if(image == None):
+		if(image == None and values != None):
 			#Schauen ob Image existiert
 			image = getEventImage(self, event.getBeginTime(), str(values['id']))
 
@@ -748,7 +763,7 @@ class ScroungerExtEventEPG(Converter, object):
 		return False
 
 	def initializeLog(self):
-		logger = logging.getLogger("ScroungerExtEventName")
+		logger = logging.getLogger("ScroungerExtEventEPG")
 		logger.setLevel(logging.DEBUG)
 
 		# create a file handler
