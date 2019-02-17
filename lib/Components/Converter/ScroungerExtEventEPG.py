@@ -182,25 +182,61 @@ class ScroungerExtEventEPG(Converter, object):
 				return None
 
 			if(self.TITLE in input):
-				type = self.TITLE
+				type = self.getParsedTyp(self.TITLE, input)
 				
-				parser = re.match('(Title[(].*?[)])', input)
-				if(parser):
-					type = parser.group(1)
-					self.log.info("getPowerDescription: parser: %s" % (parser.group(1)))
-
-				self.log.info("getPowerDescription: type: %s" % (type))
+				self.log.info("getPowerDescription: title type: %s" % (type))
 
 				title = self.getTitleWithPrefix(type, event, values)
 				if(title != None and len(title) > 0 and title != ' '):
 					input = input.replace(type, title)
 				else:
 					input = str(input).replace(type, "")
+			
+			if(self.SUBTITLE in input):
+				type = self.getParsedTyp(self.SUBTITLE, input)
 
+				self.log.info("getPowerDescription: subtitle type: %s" % (type))
 
-				return input
+				subtitle = self.getSubtitle(type, event, values)
+				if(subtitle != None and len(subtitle) > 0 and subtitle != ' '):
+					input = input.replace(type, subtitle)
+				else:
+					input = str(input).replace(type, "")
+			
+			if(self.GENRE in input):
+				type = self.getParsedTyp(self.GENRE, input)
+
+				genre = self.getGenre(type, values, event)
+				if(genre != None):
+					input = input.replace(type, genre)
+				else:
+					input = str(input).replace(type, "")
+			
+			if(self.EPISODE_NUM in input):
+				type = self.getParsedTyp(self.EPISODE_NUM, input)		
+
+				episodeNum = self.getEpisodeNum(event, values)
+				if (episodeNum != None):
+					input = input.replace(type, episodeNum)
+				else:
+					input = str(input).replace(type, "")
+
+			return input
+
 		else:
 			return "Wrong format: %s" %(input)
+
+	def getParsedTyp(self, type, input):
+		parseString = r'(%s[(].*?[)])' % (type)
+
+		parser = re.search(parseString, input)
+		if(parser):
+			type = parser.group(1)
+			self.log.info("getPowerDescription: subtitle parser: %s" % (parser.group(1)))
+
+			self.log.info("getPowerDescription: subtitle type: %s" % (type))
+
+		return type
 	
 	def getCountry(self, type, values, event):
 		country = None
@@ -373,7 +409,7 @@ class ScroungerExtEventEPG(Converter, object):
 		#Keine EpgShare Daten in DB vorhanden, aus Descriptions extrahieren
 			desc = self.getFullDescription(event)
 
-			parser = re.search('Ab\s(\d+)\s[Jahren|Jahre]', desc)
+			parser = re.search(r'Ab\s(\d+)\s[Jahren|Jahre]', desc)
 			if(parser):
 				parentialRating = parser.group(1)
 		
@@ -478,7 +514,7 @@ class ScroungerExtEventEPG(Converter, object):
 		
 		#Format: 'Subtitle, Genre, Land Jahr'
 		if len(wordList) == 3:		
-			parser = re.match('^[^.:?;]+[,]\s[^.:?;]+[,]\s[^.:?;]+\s\d+$', desc)
+			parser = re.match(r'^[^.:?;]+[,]\s[^.:?;]+[,]\s[^.:?;]+\s\d+$', desc)
 			
 			if (desc.count(", ") == 2 and parser):
 				#Pruefen 2x ', ' vorhanden ist und ob letzter Eintrag im Format 'Land Jahr'
@@ -503,7 +539,7 @@ class ScroungerExtEventEPG(Converter, object):
 		#Format: 'Subtitle/Genre, Land Jahr' | 'Genre, Land Jahr' | 'Subtitle Genre, Land Jahr'
 		#TODO: Abgleich mit Genre einfügen
 		elif len(wordList) == 2:
-			parser = re.match('^[^.:?!;]+[,]\s[^.:?!;]+\s\d+$', desc)
+			parser = re.match(r'^[^.:?!;]+[,]\s[^.:?!;]+\s\d+$', desc)
 			
 			if (desc.count(", ") == 1 and parser):
 
@@ -573,7 +609,7 @@ class ScroungerExtEventEPG(Converter, object):
 	
 	def getSubtitleFromDescriptionUntilChar(self, event, desc, maxWords):
 		#Wenn Wörter in shortDescription > maxWords, dann nach Zeichen suchen und bis dahin zurück geben und prüfen ob < maxWord EXPERIMENTAL		
-		firstChar = re.findall('[.]\s|[?]\s|[:]\s|$', desc)[0]
+		firstChar = re.findall(r'[.]\s|[?]\s|[:]\s|$', desc)[0]
 		if(firstChar != "" and len(firstChar) > 0):
 			firstCharPos = desc.find(firstChar)
 			result = desc[0:firstCharPos]			
@@ -620,7 +656,7 @@ class ScroungerExtEventEPG(Converter, object):
 	
 	def getMaxSubtitleWords(self, type):
 		#max Anzahl an erlaubten Wörten aus Parameter von Skin lesen
-		maxSubtitleWordsParser = 'Subtitle[(](\d+)[)]'
+		maxSubtitleWordsParser = r'Subtitle[(](\d+)[)]'
 		maxSubtitleWords = re.search(maxSubtitleWordsParser, type)
 		
 		if(maxSubtitleWords):
@@ -726,7 +762,7 @@ class ScroungerExtEventEPG(Converter, object):
 		
 		if(event == None):
 		#verwendet von getSpecialFormatDescription
-			parser = re.match('^([^.:?; ]+)\s(\d+)$', desc)
+			parser = re.match(r'^([^.:?; ]+)\s(\d+)$', desc)
 			if(parser):
 				if(resultTyp == self.SPECIAL_FORMAT_PARSED_DESCRIPTION_COUNTRY):
 					return parser.group(1)
@@ -734,14 +770,14 @@ class ScroungerExtEventEPG(Converter, object):
 					return parser.group(2)
 		else:
 			if(desc != ""):
-				parser = re.search('\s\d+\s[Min.]+\n([^.:?;]+)\s(\d+)', desc)
+				parser = re.search(r'\s\d+\s[Min.]+\n([^.:?;]+)\s(\d+)', desc)
 				if(parser):
 					if(resultTyp == self.SPECIAL_FORMAT_PARSED_DESCRIPTION_COUNTRY):
 						return parser.group(1)
 					elif(resultTyp == self.SPECIAL_FORMAT_PARSED_DESCRIPTION_YEAR):
 						return parser.group(2)
 				
-				parser =re.search('\s\d+\s[Min.]+\n(\d+)', desc)
+				parser =re.search(r'\s\d+\s[Min.]+\n(\d+)', desc)
 				if(parser):
 					if(resultTyp == self.SPECIAL_FORMAT_PARSED_DESCRIPTION_YEAR):
 						return parser.group(1)
@@ -751,14 +787,16 @@ class ScroungerExtEventEPG(Converter, object):
 
 	def isImageAvailable(self, event, values):
 		#Schauen ob Default Image existiert
-		image = getDefaultImage(self, event.getEventName())
 
-		if(image == None and values != None):
-			#Schauen ob Image existiert
-			image = getEventImage(self, event.getBeginTime(), str(values['id']))
+		if(event != None):
+			image = getDefaultImage(self, event.getEventName())
 
-		if(image != None):
-			return True
+			if(image == None and values != None):
+				#Schauen ob Image existiert
+				image = getEventImage(self, event.getBeginTime(), str(values['id']))
+
+			if(image != None):
+				return True
 		
 		return False
 
