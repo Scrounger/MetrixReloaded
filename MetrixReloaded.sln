@@ -25,6 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "skinfiles", "skinfiles", "{
 		skinfiles\AllNews.xml = skinfiles\AllNews.xml
 		skinfiles\AnimationSetupConfig.xml = skinfiles\AnimationSetupConfig.xml
 		skinfiles\AnimationSetupScreen.xml = skinfiles\AnimationSetupScreen.xml
+		skinfiles\AtileHD_About.xml = skinfiles\AtileHD_About.xml
 		skinfiles\AtileHD_Config.xml = skinfiles\AtileHD_Config.xml
 		skinfiles\AtileHDScreens.xml = skinfiles\AtileHDScreens.xml
 		skinfiles\AudioSelection.xml = skinfiles\AudioSelection.xml
