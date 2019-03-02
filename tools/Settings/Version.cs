@@ -56,6 +56,7 @@ namespace Tools
         public void IncreaseMinor()
         {
             this.minor = this.minor + 1;
+            this.build = 0;
         }
 
         public void IncreaseBuild()

@@ -23,18 +23,6 @@ namespace Merger
                 string skinFileName = settings.SkinPath + "skin.xml";
                 string skinProductionFileName = settings.VuPlusSkinPath + "skin.xml";
 
-
-                //Console.WriteLine();
-
-                //MyVersion version = new MyVersion();
-
-                //Console.WriteLine(version.Get());
-                //version.IncreaseBuild();
-                //Console.WriteLine(version.Get());
-
-
-                //Console.ReadKey();
-
                 System.IO.DirectoryInfo directory = new System.IO.DirectoryInfo(settings.ScreenFilesPath);
 
                 String skinFileString = "<skin>";

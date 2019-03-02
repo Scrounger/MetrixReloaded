@@ -45,7 +45,6 @@ namespace Tools
             set { this.vuPlusSkinPath = value; }
         }
 
-
         public static Settings Load()
         {
             Settings settings;
