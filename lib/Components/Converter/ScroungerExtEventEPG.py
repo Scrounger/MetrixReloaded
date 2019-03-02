@@ -27,7 +27,7 @@ class ScroungerExtEventEPG(Converter, object):
 	COUNTRY = "Country"							# optional mit Prefix angabe -> z.B. Country oder Country(Land:)
 	RATING = "Rating"							# (nur EpgShare) optional mit Prefix angabe -> z.B. Rating(Bewertung)
 	RATING_STARS = "RatingStars"				# (nur EpgShare) optional mit Prefix angabe -> z.B. RatingStars(star) -> Output: 65 -> kann für Images verwendet werden
-	CATEGORY = "Category"						# (nur EpgShare) optional mit Prefix angabe -> z.B. Rating(Bewertung)
+	CATEGORY = "Category"						# (nur EpgShare) optional mit Prefix angabe -> z.B. Category(Kategorie:)
 	POWER_DESCRIPTION = "PowerDescription"		
 	
 	#Parser fuer Serien- und Episodennummer
@@ -218,6 +218,51 @@ class ScroungerExtEventEPG(Converter, object):
 				episodeNum = self.getEpisodeNum(event, values)
 				if (episodeNum != None):
 					input = input.replace(type, episodeNum)
+				else:
+					input = str(input).replace(type, "")
+			
+			if(self.CATEGORY in input):
+				type = self.getParsedTyp(self.CATEGORY, input)
+
+				category = self.getCategory(type, values)
+				if (category != None):
+					input = input.replace(type, category)
+				else:
+					input = str(input).replace(type, "")
+			
+			if(self.PARENTAL_RATING in input):
+				type = self.getParsedTyp(self.PARENTAL_RATING, input)
+
+				parentialRating = self.getParentalRating(type, event, values)
+				if (parentialRating != None):
+					input = input.replace(type, parentialRating)
+				else:
+					input = str(input).replace(type, "")
+			
+			if(self.RATING in input):
+				type = self.getParsedTyp(self.RATING, input)
+
+				rating = self.getRating(type, values, event, False)				
+				if (rating != None):
+					input = input.replace(type, rating)
+				else:
+					input = str(input).replace(type, "")
+			
+			if(self.YEAR in input):
+				type = self.getParsedTyp(self.YEAR, input)
+				
+				year = self.getYear(type, values, event)
+				if (year != None):
+					input = input.replace(type, year)
+				else:
+					input = str(input).replace(type, "")
+
+			if(self.COUNTRY in input):
+				type = self.getParsedTyp(self.COUNTRY, input)
+
+				country = self.getCountry(type, values, event)
+				if (country != None):
+					input = input.replace(type, country)
 				else:
 					input = str(input).replace(type, "")
 
