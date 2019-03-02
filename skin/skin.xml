@@ -229,6 +229,11 @@
   <!-- TODO: anpassen-->
   <eLabel text="MetrixReloaded" position="100,41" size="400,50" font="SetrixHD;30" backgroundColor="background" foregroundColor="foreground" halign="center" transparent="1" />
   <eLabel text="http://www.vuplus-support.org" backgroundColor="background" foregroundColor="foreground" position="100,122" size="400,50" font="SetrixHD;26" halign="center" transparent="1" />
+
+
+  <widget source="Title" render="Label" position="100,170" size="400,50" backgroundColor="background" font="SetrixHD;22" foregroundColor="foreground" halign="center" transparent="1">
+    <convert type="MetrixReloadedVersion"></convert>
+  </widget>
 </screen>
 <screen name="AtileHD_Config" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- VTI SkinSelector -->
