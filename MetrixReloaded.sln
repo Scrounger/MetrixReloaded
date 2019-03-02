@@ -6,12 +6,24 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{E9F4C52D-3853-4E8D-A98C-0F53E897EB3D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "tools\Builder\Builder.csproj", "{B1C7C4FF-1AD8-4019-A1EA-052589F986C5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1B397A95-3FA1-44F4-80D3-16C92349BEC4} = {1B397A95-3FA1-44F4-80D3-16C92349BEC4}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extractor", "tools\Extractor\Extractor.csproj", "{A4FDF022-A82E-492C-B592-0C9BCBEB6BFF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B92199E0-4B41-4131-98BA-A8E53351BD6D} = {B92199E0-4B41-4131-98BA-A8E53351BD6D}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageFinder", "tools\ImageFinder\ImageFinder.csproj", "{98F486F2-C934-4690-BC8E-CF6905B8E8D2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B92199E0-4B41-4131-98BA-A8E53351BD6D} = {B92199E0-4B41-4131-98BA-A8E53351BD6D}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merger", "tools\Merger\Merger.csproj", "{1B397A95-3FA1-44F4-80D3-16C92349BEC4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B92199E0-4B41-4131-98BA-A8E53351BD6D} = {B92199E0-4B41-4131-98BA-A8E53351BD6D}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenName", "tools\ScreenName\ScreenName.csproj", "{9916E4DA-3360-4251-AEBC-96AFAAD3AAC5}"
 EndProject
@@ -40,8 +52,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Renderer", "Renderer", "{6D
 		lib\Components\Renderer\ScroungerEventImage.py = lib\Components\Renderer\ScroungerEventImage.py
 		lib\Components\Renderer\ScroungerIcon.py = lib\Components\Renderer\ScroungerIcon.py
 	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Settings", "tools\Settings\Settings.csproj", "{3A9E2BB8-4BAC-4410-BF26-ED156AE5F772}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{EA8EADFE-01E3-4538-9BCD-24F25340870F}"
 	ProjectSection(SolutionItems) = preProject
@@ -312,6 +322,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles"
 		screenFiles\ZappingModeSelection.xml = screenFiles\ZappingModeSelection.xml
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helper", "tools\Helper\Helper.csproj", "{B92199E0-4B41-4131-98BA-A8E53351BD6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -338,10 +350,10 @@ Global
 		{9916E4DA-3360-4251-AEBC-96AFAAD3AAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9916E4DA-3360-4251-AEBC-96AFAAD3AAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9916E4DA-3360-4251-AEBC-96AFAAD3AAC5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A9E2BB8-4BAC-4410-BF26-ED156AE5F772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A9E2BB8-4BAC-4410-BF26-ED156AE5F772}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A9E2BB8-4BAC-4410-BF26-ED156AE5F772}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A9E2BB8-4BAC-4410-BF26-ED156AE5F772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B92199E0-4B41-4131-98BA-A8E53351BD6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B92199E0-4B41-4131-98BA-A8E53351BD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B92199E0-4B41-4131-98BA-A8E53351BD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B92199E0-4B41-4131-98BA-A8E53351BD6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -355,8 +367,8 @@ Global
 		{9C874FC9-CE3F-4A2E-A201-4B6254C6D214} = {FE49F274-7647-4D47-9ED2-763D3C4CAF3E}
 		{0C802B7A-5DF5-48F9-8A6B-47615D06FF3D} = {9C874FC9-CE3F-4A2E-A201-4B6254C6D214}
 		{6DEDD33A-C54B-4C08-A5E7-CBC96CD5B5D2} = {9C874FC9-CE3F-4A2E-A201-4B6254C6D214}
-		{3A9E2BB8-4BAC-4410-BF26-ED156AE5F772} = {E9F4C52D-3853-4E8D-A98C-0F53E897EB3D}
 		{EA8EADFE-01E3-4538-9BCD-24F25340870F} = {FE49F274-7647-4D47-9ED2-763D3C4CAF3E}
+		{B92199E0-4B41-4131-98BA-A8E53351BD6D} = {E9F4C52D-3853-4E8D-A98C-0F53E897EB3D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {15F85B7A-D1BC-4A05-9F4A-8F200A467742}

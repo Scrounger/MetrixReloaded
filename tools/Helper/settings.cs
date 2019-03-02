@@ -3,7 +3,7 @@ using System.IO;
 using System.Reflection;
 using Newtonsoft.Json;
 
-namespace Tools
+namespace Helper
 {
     public class Settings
     {
@@ -45,6 +45,24 @@ namespace Tools
             set { this.vuPlusSkinPath = value; }
         }
 
+        private string libPath;
+
+        [JsonProperty(PropertyName = "libPath")]
+        public string LibPath
+        {
+            get { return CreatePath(this.libPath); }
+            set { this.libPath = value; }
+        }
+
+        private string buildPath;
+
+        [JsonProperty(PropertyName = "buildPath")]
+        public string BuildPath
+        {
+            get { return CreatePath(this.buildPath); }
+            set { this.buildPath = value; }
+        }
+
         public static Settings Load()
         {
             Settings settings;
@@ -53,7 +71,7 @@ namespace Tools
             {
                 using (StreamReader reader = new StreamReader(fileName))
                 {
-                    settings = (Settings)JsonConvert.DeserializeObject<Tools.Settings>(reader.ReadToEnd());
+                    settings = (Settings)JsonConvert.DeserializeObject<Helper.Settings>(reader.ReadToEnd());
                 }
 
                 return settings;
