@@ -12,7 +12,7 @@
     <convert type="EventName">Name</convert>
   </widget>
   <widget source="session.extEvent_Now" position="412,874" size="1300,40" backgroundColor="background" foregroundColor="accent1" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="1">
-    <convert type="ScroungerExtEventEPG">EpisodeNum, Subtitle(10), Genre, Year</convert>
+    <convert type="ScroungerExtEventEPG">EpisodeNum, Subtitle(10), Genre, Year, Category</convert>
   </widget>
   <widget source="session.Event_Now" position="1636,835" size="112,56" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
     <convert type="EventTime">StartTime</convert>
@@ -53,6 +53,10 @@
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
 
+  <widget source="session.extEvent_Now" position="412,100" size="1000,600" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" noWrap="0">
+    <convert type="ScroungerExtEventEPG">EpgShareRaw</convert>
+  </widget>
+
   <!-- Icons -->
   <constant-widget name="infoBar_tuner" />
   <constant-widget name="infoBar_Icons" />
@@ -60,4 +64,7 @@
   
   <!-- Rec Icon -->
   <constant-widget name="recIcon_top" />
+
+
+
 </screen>
