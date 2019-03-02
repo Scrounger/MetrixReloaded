@@ -95,7 +95,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -114,7 +114,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -144,7 +144,7 @@
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -248,7 +248,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" position="window_list_pos" size="window_list_size" font="font_list" itemHeight="50" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowMainColorL" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_name" />
@@ -575,7 +575,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="checkList" position="window_list_pos" size="window_list_size" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -603,7 +603,7 @@
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -623,7 +623,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="filelist" position="window_list_pos" size="window_list_size" itemHeight="50" font="font_list" transparent="1" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -661,7 +661,7 @@
   <widget name="acur" position="400,570" size="315,32" font="font_standard" transparent="1" backgroundColor="windowBackground" />
 
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
@@ -1945,7 +1945,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="showjobs" itemHeight="70" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="window_list_pos" size="window_list_setup_size" font="font_list" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -1966,7 +1966,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="filelist" position="window_list_pos" size="window_list_setup_size" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
@@ -2069,7 +2069,7 @@
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -2112,7 +2112,7 @@
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -2545,7 +2545,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="showexe" itemHeight="70" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="window_list_pos" size="window_list_setup_size" font="font_list" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -2566,7 +2566,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="filelist" position="80,350" size="1128,500" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="background_second" transparent="1" valign="center" halign="center" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
@@ -4017,7 +4017,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -4036,7 +4036,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -4244,7 +4244,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget font="Regular;34" name="detailtext" position="window_list_pos" size="window_list_setup_size" halign="center" transparent="1" backgroundColor="windowBackground" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -4384,7 +4384,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -4416,7 +4416,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <widget name="searchchar" position="window_searchbar_pos" size="window_searchbar_size" valign="center" halign="center" zPosition="100" backgroundColor="background_second" transparent="0" font="SetrixHD;140" foregroundColor="foreground" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
@@ -4961,7 +4961,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" backgroundColor="windowMainColorL" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -6764,7 +6764,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -6785,7 +6785,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="passwd" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" backgroundColor="windowMainColorL" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -6849,7 +6849,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -6868,7 +6868,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="update" position="window_list_pos" size="window_list_size" font="font_list" backgroundColor="windowMainColorL" transparent="1" halign="left" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" />
   <widget name="header" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -6971,7 +6971,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <widget source="info" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="foreground" transparent="1" backgroundColor="background_second" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
