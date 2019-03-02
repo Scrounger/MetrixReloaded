@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Helper;
 
 namespace ImageFinder
 {
@@ -15,9 +16,9 @@ namespace ImageFinder
         {
             try
             {
-                Config config = Config.Load();
+                Settings settings = Settings.Load();
 
-                string skinFilePath = config.getSkinFilePath();
+                string skinFilePath = settings.SkinPath;
                 string skinFileName = skinFilePath + "skin.xml";
 
                 List<string> imageList = new List<string>(Directory.GetFiles(@skinFilePath, "*.png", System.IO.SearchOption.AllDirectories));
