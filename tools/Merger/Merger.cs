@@ -1,11 +1,11 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Tools;
 
 
 namespace Merger
@@ -16,14 +16,13 @@ namespace Merger
         {
             try
             {
-                Config config = Config.Load();
+                Settings settings = Settings.Load();
+                settings.LogSettings();
 
-                string skinFilePath = config.getSkinFilePath();
-                string skinFileName = skinFilePath + "skin.xml";
+                string skinFileName = settings.SkinPath + "skin.xml";
+                string skinProductionFileName = settings.VuPlusSkinPath + "skin.xml";
 
-                string skinProductionFileName = config.getProductionPath() + "skin.xml";
-
-                System.IO.DirectoryInfo directory = new System.IO.DirectoryInfo(config.getInputPath());
+                System.IO.DirectoryInfo directory = new System.IO.DirectoryInfo(settings.ScreenFilesPath);
 
                 String skinFileString = "<skin>";
 
@@ -51,6 +50,7 @@ namespace Merger
             {
                 Console.WriteLine();
                 Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write("Error: {0}\n", ex.Message);
                 Console.Write("Error: {0}\n", ex.StackTrace);
                 Console.WriteLine();

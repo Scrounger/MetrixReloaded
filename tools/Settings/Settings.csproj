@@ -10,4 +10,10 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="settings.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
