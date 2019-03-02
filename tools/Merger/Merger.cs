@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using Tools;
@@ -21,6 +22,18 @@ namespace Merger
 
                 string skinFileName = settings.SkinPath + "skin.xml";
                 string skinProductionFileName = settings.VuPlusSkinPath + "skin.xml";
+
+
+                //Console.WriteLine();
+
+                //MyVersion version = new MyVersion();
+
+                //Console.WriteLine(version.Get());
+                //version.IncreaseBuild();
+                //Console.WriteLine(version.Get());
+
+
+                //Console.ReadKey();
 
                 System.IO.DirectoryInfo directory = new System.IO.DirectoryInfo(settings.ScreenFilesPath);
 
@@ -42,9 +55,29 @@ namespace Merger
                 skinFileString = String.Format("{0}\n</skin>", skinFileString, FileMode.Create);
 
                 File.WriteAllText(skinFileName, skinFileString);
-                File.WriteAllText(skinProductionFileName, skinFileString);
 
-                Thread.Sleep(2000);
+                MyVersion myVersion = new MyVersion();
+                myVersion.IncreaseBuild();
+                myVersion.Save();
+                myVersion.Load();
+                Console.WriteLine(String.Format("Version: {0}", myVersion.Get()));
+
+                if (Directory.Exists(settings.VuPlusSkinPath))
+                {
+                    File.Copy(skinFileName, skinProductionFileName, true);
+                    File.Copy(myVersion.FullFileName, settings.VuPlusSkinPath + myVersion.FileName, true);
+                    Thread.Sleep(2000);
+                }
+                else
+                {
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(String.Format("path not exist: {0}", settings.VuPlusSkinPath));
+                    Console.WriteLine();
+                    Console.Write("Press any key to exit");
+                    Console.ReadKey();
+                }
             }
             catch (Exception ex)
             {
