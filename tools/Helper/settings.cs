@@ -101,7 +101,10 @@ namespace Helper
         {
             Type type = this.GetType();
             PropertyInfo[] properties = type.GetProperties();
-            
+
+            Console.WriteLine("load settings...");
+            Console.WriteLine();
+
             foreach (PropertyInfo property in properties)
             {
                 string seperator = "\t";
@@ -111,7 +114,7 @@ namespace Helper
                 }
                 Console.WriteLine(String.Format("{0}: {1} {2}", property.Name, seperator, property.GetValue(this, null)));
             }
-            Console.WriteLine("------------------------------------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------------------------------------------");
             Console.WriteLine();
         }
     }
