@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 /build
+/IPK Creator 5.0

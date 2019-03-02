@@ -10,7 +10,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="checkList" position="window_list_pos" size="window_list_size" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />

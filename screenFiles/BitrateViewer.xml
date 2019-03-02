@@ -28,7 +28,7 @@
   <widget name="acur" position="400,570" size="315,32" font="font_standard" transparent="1" backgroundColor="windowBackground" />
 
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />

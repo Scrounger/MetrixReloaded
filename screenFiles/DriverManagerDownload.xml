@@ -21,7 +21,7 @@
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/menu/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
