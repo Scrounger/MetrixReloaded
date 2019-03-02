@@ -9,7 +9,7 @@ from Plugins.Extensions.FluidNextSetup.fluidnext import get_Extradata
 from ServiceReference import ServiceReference
 import json
 
-class ScroungerExtEventName(Converter, object):
+class MetrixReloadedExtEventName(Converter, object):
     NAME = 0
     SHORT_DESCRIPTION = 1
     EXTENDED_DESCRIPTION = 2

@@ -19,7 +19,7 @@ from enigma import iServiceInformation, iPlayableService
 from Poll import Poll
 from os import path
 
-class ScroungerTempFanInfo(Poll, Converter, object):
+class MetrixReloadedTempFanInfo(Poll, Converter, object):
 	TEMPINFO = 0
 	FANINFO = 1
 

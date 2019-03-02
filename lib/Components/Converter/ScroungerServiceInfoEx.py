@@ -26,7 +26,7 @@ from Components.Element import cached
 
 WIDESCREEN = [3, 4, 7, 8, 0xB, 0xC, 0xF, 0x10]
 
-class ScroungerServiceInfoEx(Poll, Converter, object):
+class MetrixReloadedServiceInfoEx(Poll, Converter, object):
 	apid = 0
 	vpid = 1
 	sid = 2

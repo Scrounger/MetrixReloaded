@@ -4,7 +4,7 @@ import re
 import HTMLParser
 
 #Version 1.1.3
-class ScroungerEventExtractor (Converter, object):
+class MetrixReloadedEventExtractor (Converter, object):
 	#Input Parameter vom skin - getrennt durch ein Komma
 	EPISODE_NUM = "EpisodeNum"
 	SUBTITLE = "Subtitle"					#Skin Parameter: Subtitle(maxWords) -> z.B. mit 'Subtitle(10)' werden nur Subtitles mit max. 10 Woertern angezeigt

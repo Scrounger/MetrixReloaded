@@ -2,18 +2,18 @@
   <!-- Background -->
   <eLabel backgroundColor="background" position="120,37" size="1680,740" zPosition="-10" />
 
-  <widget backgroundColor="background" foregroundColor="foreground" position="150,70" size="400,240" scale="3" render="ScroungerEventImage"  source="session.extEvent_Now" transparent="1" zPosition="3"/>
+  <widget backgroundColor="background" foregroundColor="foreground" position="150,70" size="400,240" scale="3" render="MetrixReloadedEventImage"  source="session.extEvent_Now" transparent="1" zPosition="3"/>
 
   <widget source="session.extEvent_Now" position="600,70" size="1000,600" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="0">
-    <convert type="ScroungerExtEventEPG">PowerDescription[true][Title(Titel du Sack:\t) \nSubtitle(10)Genre(\nGenre:)\t\tEpisodeNum Category(\nKategorie:\t) ParentalRating(\nFSK) Rating(\nBewertung:\t) Year(\nJahr:\t) Country(\nLand:\t)]</convert>
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][Title(Titel du Sack:\t) \nSubtitle(10)Genre(\nGenre:)\t\tEpisodeNum Category(\nKategorie:\t) ParentalRating(\nFSK) Rating(\nBewertung:\t) Year(\nJahr:\t) Country(\nLand:\t)]</convert>
   </widget>
 
   <widget source="session.extEvent_Now" position="150,70" size="1000,600" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="0">
-    <convert type="ScroungerExtEventEPG">PowerDescription[false][Title(Titel du Sack:\t) \nSubtitle(10)Genre(\nGenre:) \t\tEpisodeNum Category(\nKategorie:\t) ParentalRating(\nFSK) Rating(\nBewertung:\t) Year(\nJahr:\t) Country(\nLand:\t)]</convert>
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][Title(Titel du Sack:\t) \nSubtitle(10)Genre(\nGenre:) \t\tEpisodeNum Category(\nKategorie:\t) ParentalRating(\nFSK) Rating(\nBewertung:\t) Year(\nJahr:\t) Country(\nLand:\t)]</convert>
   </widget>
 
   <widget source="session.extEvent_Now" position="600,30" size="400,40" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" noWrap="0">
-    <convert type="ScroungerExtEventEPG">IsImageAvailable</convert>
+    <convert type="MetrixReloadedExtEventEPG">IsImageAvailable</convert>
   </widget>
 
   <widget backgroundColor="windowMainColorL" font="font_standard" transparent="1" halign="left" valign="top" position="150,320" size="1620,440" render="Label" source="session.Event_Now" zPosition="1">
@@ -56,17 +56,17 @@
   </widget>
 
   <widget alphatest="blend" source="session.extEvent_Now" pixmap="MetrixReloaded/media/logos/parentalrating/unknown.png" position="50,50" render="Pixmap" size="60,60" zPosition="1">
-    <convert type="ScroungerExtEventEPG">ParentalRating</convert>
-    <convert type="ScroungerCompareString"></convert>
+    <convert type="MetrixReloadedExtEventEPG">ParentalRating</convert>
+    <convert type="MetrixReloadedCompareString"></convert>
     <convert type="ConditionalShowHide" />
   </widget>
 
-  <widget alphatest="blend" path="media/logos/parentalrating" position="150,50" render="ScroungerIcon" size="60,60" source="session.extEvent_Now" zPosition="3">
-    <convert type="ScroungerExtEventEPG">ParentalRating</convert>
+  <widget alphatest="blend" path="media/logos/parentalrating" position="150,50" render="MetrixReloadedIcon" size="60,60" source="session.extEvent_Now" zPosition="3">
+    <convert type="MetrixReloadedExtEventEPG">ParentalRating</convert>
   </widget>
 
-  <widget alphatest="blend" path="media/logos/stars" position="300,300" render="ScroungerIcon" size="600,40" source="session.extEvent_Now" zPosition="10">
-    <convert type="ScroungerExtEventEPG">RatingStars</convert>
+  <widget alphatest="blend" path="media/logos/stars" position="300,300" render="MetrixReloadedIcon" size="600,40" source="session.extEvent_Now" zPosition="10">
+    <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
   </widget>-->
   
 </screen>

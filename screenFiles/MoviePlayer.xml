@@ -8,7 +8,7 @@
     <convert type="MovieBarInfo">Reference</convert>
   </widget>
   <!-- Cover -->
-  <widget source="session.CurrentService" render="ScroungerCover" backgroundColor="background" position="30,578" zPosition="4" size="350,492" transparent="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="MetrixReloadedCover" backgroundColor="background" position="30,578" zPosition="4" size="350,492" transparent="1" alphatest="blend" />
   <!-- Title -->
   <widget source="session.CurrentService" render="Label" position="410,875" size="1208,56" font="SetrixHD;42" halign="left" valign="top" backgroundColor="background" transparent="1">
     <convert type="ServiceName">Name</convert>

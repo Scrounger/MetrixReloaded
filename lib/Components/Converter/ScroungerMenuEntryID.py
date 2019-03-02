@@ -15,7 +15,7 @@ from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Poll import Poll
 
-class ScroungerMenuEntryID(Poll,Converter,object):
+class MetrixReloadedMenuEntryID(Poll,Converter,object):
 	def __init__(self, type):
 		Poll.__init__(self)
 		Converter.__init__(self, type)

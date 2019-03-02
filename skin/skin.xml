@@ -925,10 +925,10 @@
   </widget>
   
   <!-- EpgShare Image -->
-  <widget backgroundColor="background_second" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="ScroungerEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3"/>
+  <widget backgroundColor="background_second" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3"/>
 
   <widget source="ServiceEvent" backgroundColor="background" position="1720,0" size="200,50" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
-    <convert type="ScroungerExtEventEPG">ImageId</convert>
+    <convert type="MetrixReloadedExtEventEPG">ImageId</convert>
   </widget>
   
   <widget source="ServiceEvent" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="background_second" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
@@ -1291,7 +1291,7 @@
     <ePixmap pixmap="MetrixReloaded/background_menu_list.png" position="15,320" size="615,740" alphatest="blend" transparent="1" />
     <!-- Debug: Menu Entry anzeigen -->
     <widget backgroundColor="background" font="font_standard" foregroundColor="foreground" render="Label" source="menu" position="20,80" size="750,27" halign="left" valign="center" transparent="1" zPosition="9">
-      <convert type="ScroungerMenuEntryID"></convert>
+      <convert type="MetrixReloadedMenuEntryID"></convert>
     </widget>
     <widget alphatest="blend" pixmap="MetrixReloaded/media/background_isRecording.png" position="887,0" render="Pixmap" size="146,37" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide" />
@@ -1418,11 +1418,11 @@
     <eLabel backgroundColor="background_second" position="1620,170" size="237,70" zPosition="-10" />
     <eLabel text="CPU" backgroundColor="background_second" position="1635,170" size="100,70" font="font_standard_small" halign="left" valign="top" transparent="1" />
     <widget source="Title" backgroundColor="background_second" render="Label" font="font_standard_small" position="1782,170" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
-      <convert type="ScroungerCpuUsage">$0</convert>
+      <convert type="MetrixReloadedCpuUsage">$0</convert>
     </widget>
     <!-- System Temperatur -->
     <widget source="Title" backgroundColor="background_second" render="Label" font="font_standard_small" position="1782,200" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
-      <convert type="ScroungerTempFanInfo">TempInfo</convert>
+      <convert type="MetrixReloadedTempFanInfo">TempInfo</convert>
     </widget>
   </constant-widget>
   <constant-widget name="clock_window">
@@ -1492,27 +1492,27 @@
 
   <!-- Icons -->
   <constant-widget name="icons_menu">
-    <widget alphatest="blend" path="media/icons/menu" position="menu_icon_pos" render="ScroungerIcon" size="menu_icon_size" source="menu" zPosition="3">
-      <convert type="ScroungerMenuEntryID"></convert>
+    <widget alphatest="blend" path="media/icons/menu" position="menu_icon_pos" render="MetrixReloadedIcon" size="menu_icon_size" source="menu" zPosition="3">
+      <convert type="MetrixReloadedMenuEntryID"></convert>
     </widget>
   </constant-widget>
 
   <!-- InfoBar - Icons -->
   <constant-widget name="infoBar_Icons">
-    <widget alphatest="blend" path="media/logos/tunertypes" position="410,1043" render="ScroungerIcon" size="84,22" source="session.CurrentService" zPosition="3">
-      <convert type="ScroungerServiceInfoEx">ttype</convert>
+    <widget alphatest="blend" path="media/logos/tunertypes" position="410,1043" render="MetrixReloadedIcon" size="84,22" source="session.CurrentService" zPosition="3">
+      <convert type="MetrixReloadedServiceInfoEx">ttype</convert>
     </widget>
     <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/hbbtv.png" position="1147,1035" render="Pixmap" size="91,34" source="HbbtvApplication" zPosition="10">
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" source="session.extEvent_Now" pixmap="MetrixReloaded/media/logos/epgshare_not_available.png" position="1258,1038" render="Pixmap" size="94,34" zPosition="1">
-      <convert type="ScroungerExtEventEPG">IsEpgShareAvailable</convert>
-      <convert type="ScroungerCompareString">false</convert>
+      <convert type="MetrixReloadedExtEventEPG">IsEpgShareAvailable</convert>
+      <convert type="MetrixReloadedCompareString">false</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" source="session.extEvent_Now" pixmap="MetrixReloaded/media/logos/epgshare.png" position="1258,1038" render="Pixmap" size="94,34" zPosition="1">
-      <convert type="ScroungerExtEventEPG">IsEpgShareAvailable</convert>
-      <convert type="ScroungerCompareString">true</convert>
+      <convert type="MetrixReloadedExtEventEPG">IsEpgShareAvailable</convert>
+      <convert type="MetrixReloadedCompareString">true</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </constant-widget>
@@ -1522,22 +1522,22 @@
   <constant-widget name="infoBar_movieplayer_Icons">    
     <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nosubtitles.png" position="1372,1038" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="1">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
-      <convert type="ScroungerCompareBoolean">false</convert>
+      <convert type="MetrixReloadedCompareBoolean">false</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/subtitles.png" position="1372,1038" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="1">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
-      <convert type="ScroungerCompareBoolean">true</convert>
+      <convert type="MetrixReloadedCompareBoolean">true</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/noTeletext.png" position="1425,1035" render="Pixmap" size="37,34" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">HasTelext</convert>
-      <convert type="ScroungerCompareBoolean">false</convert>
+      <convert type="MetrixReloadedCompareBoolean">false</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/teletext.png" position="1425,1035" render="Pixmap" size="37,34" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">HasTelext</convert>
-      <convert type="ScroungerCompareBoolean">true</convert>
+      <convert type="MetrixReloadedCompareBoolean">true</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" path="media/logos/audio" position="1482,1025" render="AudioIcon" size="85,50" source="session.CurrentService" zPosition="3">
@@ -1545,28 +1545,28 @@
     </widget>
     <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/aspectratio/fullscreen.png" position="1587,1035" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsWidescreen</convert>
-      <convert type="ScroungerCompareBoolean">false</convert>
+      <convert type="MetrixReloadedCompareBoolean">false</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/aspectratio/widescreen.png" position="1587,1035" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsWidescreen</convert>
-      <convert type="ScroungerCompareBoolean">true</convert>
+      <convert type="MetrixReloadedCompareBoolean">true</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget alphatest="blend" path="media/logos/resolution" position="1640,1035" render="ScroungerIcon" size="61,34" source="session.CurrentService" zPosition="3">
-      <convert type="ScroungerResolutionIcon">ResolutionIcon</convert>
+    <widget alphatest="blend" path="media/logos/resolution" position="1640,1035" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
+      <convert type="MetrixReloadedResolutionIcon">ResolutionIcon</convert>
     </widget>
-    <widget alphatest="blend" path="media/logos/resolution" position="1721,1035" render="ScroungerIcon" size="61,34" source="session.CurrentService" zPosition="3">
-      <convert type="ScroungerResolutionIcon">DefinitionIcon</convert>
+    <widget alphatest="blend" path="media/logos/resolution" position="1721,1035" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
+      <convert type="MetrixReloadedResolutionIcon">DefinitionIcon</convert>
     </widget>
     <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/fta.png" position="1802,1035" render="Pixmap" backgroundColor="background" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsCrypted</convert>
-      <convert type="ScroungerCompareBoolean">false</convert>
+      <convert type="MetrixReloadedCompareBoolean">false</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nofta.png" position="1802,1035" render="Pixmap" backgroundColor="background" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsCrypted</convert>
-      <convert type="ScroungerCompareBoolean">true</convert>
+      <convert type="MetrixReloadedCompareBoolean">true</convert>
       <convert type="ConditionalShowHide" />
     </widget>
   </constant-widget>
@@ -2313,7 +2313,7 @@
 
   <!-- Title bei Verwendung als EPG-Suche-->
   <widget source="Title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowMainColorL" transparent="1" noWrap="1">
-    <convert type="ScroungerCompareString">EPG-Suche</convert>
+    <convert type="MetrixReloadedCompareString">EPG-Suche</convert>
   </widget>
 
 
@@ -2331,7 +2331,7 @@
   </widget>
 
   <!-- EpgShare Image -->
-  <widget backgroundColor="background_second" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="ScroungerEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3"/>
+  <widget backgroundColor="background_second" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3"/>
   
   <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="background_second" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
@@ -2475,22 +2475,22 @@
   <!-- Icons -->
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nosubtitles.png" position="1282,690" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="1">
     <convert type="ServiceInfo">SubservicesAvailable</convert>
-    <convert type="ScroungerCompareBoolean">false</convert>
+    <convert type="MetrixReloadedCompareBoolean">false</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/subtitles.png" position="1282,690" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="1">
     <convert type="ServiceInfo">SubservicesAvailable</convert>
-    <convert type="ScroungerCompareBoolean">true</convert>
+    <convert type="MetrixReloadedCompareBoolean">true</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/noTeletext.png" position="1335,690" render="Pixmap" size="37,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">HasTelext</convert>
-    <convert type="ScroungerCompareBoolean">false</convert>
+    <convert type="MetrixReloadedCompareBoolean">false</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/teletext.png" position="1335,690" render="Pixmap" size="37,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">HasTelext</convert>
-    <convert type="ScroungerCompareBoolean">true</convert>
+    <convert type="MetrixReloadedCompareBoolean">true</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget alphatest="blend" path="media/logos/audio" position="1392,680" render="AudioIcon" size="85,50" source="session.CurrentService" zPosition="3">
@@ -2498,28 +2498,28 @@
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/aspectratio/fullscreen.png" position="1497,690" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">IsWidescreen</convert>
-    <convert type="ScroungerCompareBoolean">false</convert>
+    <convert type="MetrixReloadedCompareBoolean">false</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/aspectratio/widescreen.png" position="1497,690" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">IsWidescreen</convert>
-    <convert type="ScroungerCompareBoolean">true</convert>
+    <convert type="MetrixReloadedCompareBoolean">true</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget alphatest="blend" path="media/logos/resolution" position="1550,690" render="ScroungerIcon" size="61,34" source="session.CurrentService" zPosition="3">
-    <convert type="ScroungerResolutionIcon">ResolutionIcon</convert>
+  <widget alphatest="blend" path="media/logos/resolution" position="1550,690" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
+    <convert type="MetrixReloadedResolutionIcon">ResolutionIcon</convert>
   </widget>
-  <widget alphatest="blend" path="media/logos/resolution" position="1631,690" render="ScroungerIcon" size="61,34" source="session.CurrentService" zPosition="3">
-    <convert type="ScroungerResolutionIcon">DefinitionIcon</convert>
+  <widget alphatest="blend" path="media/logos/resolution" position="1631,690" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
+    <convert type="MetrixReloadedResolutionIcon">DefinitionIcon</convert>
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/fta.png" position="1712,690" render="Pixmap" backgroundColor="background" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">IsCrypted</convert>
-    <convert type="ScroungerCompareBoolean">false</convert>
+    <convert type="MetrixReloadedCompareBoolean">false</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nofta.png" position="1712,690" render="Pixmap" backgroundColor="background" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">IsCrypted</convert>
-    <convert type="ScroungerCompareBoolean">true</convert>
+    <convert type="MetrixReloadedCompareBoolean">true</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <!-- Remote Buttons -->
@@ -3293,7 +3293,7 @@
     <convert type="EventName">Name</convert>
   </widget>
   <widget source="session.extEvent_Now" position="412,874" size="1300,40" backgroundColor="background" foregroundColor="accent1" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="1">
-    <convert type="ScroungerExtEventEPG">EpisodeNum, Subtitle(10), Genre, Year, Category</convert>
+    <convert type="MetrixReloadedExtEventEPG">EpisodeNum, Subtitle(10), Genre, Year, Category</convert>
   </widget>
   <widget source="session.Event_Now" position="1636,835" size="112,56" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
     <convert type="EventTime">StartTime</convert>
@@ -3318,7 +3318,7 @@
     <convert type="EventName">Name</convert>
   </widget>
   <widget source="session.extEvent_Next" position="412,984" size="1300,40" backgroundColor="background" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="1">
-    <convert type="ScroungerExtEventEPG">EpisodeNum, Subtitle(10), Genre, Year</convert>
+    <convert type="MetrixReloadedExtEventEPG">EpisodeNum, Subtitle(10), Genre, Year</convert>
   </widget>
   <widget source="session.Event_Next" position="1636,945" size="112,56" backgroundColor="background" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
     <convert type="EventTime">StartTime</convert>
@@ -3335,7 +3335,7 @@
   </widget>
 
   <widget source="session.extEvent_Now" position="412,100" size="1000,600" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" noWrap="0">
-    <convert type="ScroungerExtEventEPG">EpgShareRaw</convert>
+    <convert type="MetrixReloadedExtEventEPG">EpgShareRaw</convert>
   </widget>
 
   <!-- Icons -->
@@ -4064,7 +4064,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     <convert type="MovieBarInfo">Reference</convert>
   </widget>
   <!-- Cover -->
-  <widget source="session.CurrentService" render="ScroungerCover" backgroundColor="background" position="30,578" zPosition="4" size="350,492" transparent="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="MetrixReloadedCover" backgroundColor="background" position="30,578" zPosition="4" size="350,492" transparent="1" alphatest="blend" />
   <!-- Title -->
   <widget source="session.CurrentService" render="Label" position="410,875" size="1208,56" font="SetrixHD;42" halign="left" valign="top" backgroundColor="background" transparent="1">
     <convert type="ServiceName">Name</convert>
@@ -5688,18 +5688,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Background -->
   <eLabel backgroundColor="background" position="120,37" size="1680,740" zPosition="-10" />
 
-  <widget backgroundColor="background" foregroundColor="foreground" position="150,70" size="400,240" scale="3" render="ScroungerEventImage"  source="session.extEvent_Now" transparent="1" zPosition="3"/>
+  <widget backgroundColor="background" foregroundColor="foreground" position="150,70" size="400,240" scale="3" render="MetrixReloadedEventImage"  source="session.extEvent_Now" transparent="1" zPosition="3"/>
 
   <widget source="session.extEvent_Now" position="600,70" size="1000,600" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="0">
-    <convert type="ScroungerExtEventEPG">PowerDescription[true][Title(Titel du Sack:\t) \nSubtitle(10)Genre(\nGenre:)\t\tEpisodeNum Category(\nKategorie:\t) ParentalRating(\nFSK) Rating(\nBewertung:\t) Year(\nJahr:\t) Country(\nLand:\t)]</convert>
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][Title(Titel du Sack:\t) \nSubtitle(10)Genre(\nGenre:)\t\tEpisodeNum Category(\nKategorie:\t) ParentalRating(\nFSK) Rating(\nBewertung:\t) Year(\nJahr:\t) Country(\nLand:\t)]</convert>
   </widget>
 
   <widget source="session.extEvent_Now" position="150,70" size="1000,600" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="0">
-    <convert type="ScroungerExtEventEPG">PowerDescription[false][Title(Titel du Sack:\t) \nSubtitle(10)Genre(\nGenre:) \t\tEpisodeNum Category(\nKategorie:\t) ParentalRating(\nFSK) Rating(\nBewertung:\t) Year(\nJahr:\t) Country(\nLand:\t)]</convert>
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][Title(Titel du Sack:\t) \nSubtitle(10)Genre(\nGenre:) \t\tEpisodeNum Category(\nKategorie:\t) ParentalRating(\nFSK) Rating(\nBewertung:\t) Year(\nJahr:\t) Country(\nLand:\t)]</convert>
   </widget>
 
   <widget source="session.extEvent_Now" position="600,30" size="400,40" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" noWrap="0">
-    <convert type="ScroungerExtEventEPG">IsImageAvailable</convert>
+    <convert type="MetrixReloadedExtEventEPG">IsImageAvailable</convert>
   </widget>
 
   <widget backgroundColor="windowMainColorL" font="font_standard" transparent="1" halign="left" valign="top" position="150,320" size="1620,440" render="Label" source="session.Event_Now" zPosition="1">
@@ -5742,17 +5742,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   </widget>
 
   <widget alphatest="blend" source="session.extEvent_Now" pixmap="MetrixReloaded/media/logos/parentalrating/unknown.png" position="50,50" render="Pixmap" size="60,60" zPosition="1">
-    <convert type="ScroungerExtEventEPG">ParentalRating</convert>
-    <convert type="ScroungerCompareString"></convert>
+    <convert type="MetrixReloadedExtEventEPG">ParentalRating</convert>
+    <convert type="MetrixReloadedCompareString"></convert>
     <convert type="ConditionalShowHide" />
   </widget>
 
-  <widget alphatest="blend" path="media/logos/parentalrating" position="150,50" render="ScroungerIcon" size="60,60" source="session.extEvent_Now" zPosition="3">
-    <convert type="ScroungerExtEventEPG">ParentalRating</convert>
+  <widget alphatest="blend" path="media/logos/parentalrating" position="150,50" render="MetrixReloadedIcon" size="60,60" source="session.extEvent_Now" zPosition="3">
+    <convert type="MetrixReloadedExtEventEPG">ParentalRating</convert>
   </widget>
 
-  <widget alphatest="blend" path="media/logos/stars" position="300,300" render="ScroungerIcon" size="600,40" source="session.extEvent_Now" zPosition="10">
-    <convert type="ScroungerExtEventEPG">RatingStars</convert>
+  <widget alphatest="blend" path="media/logos/stars" position="300,300" render="MetrixReloadedIcon" size="600,40" source="session.extEvent_Now" zPosition="10">
+    <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
   </widget>-->
   
 </screen>

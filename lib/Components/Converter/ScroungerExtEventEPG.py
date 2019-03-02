@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from Components.Converter.Converter import Converter
 from Components.Element import cached
-from Tools.ScroungerHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage
+from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage
 
 from Tools.MovieInfoParser import getExtendedMovieDescription
 
@@ -12,7 +12,7 @@ import os
 
 import logging
 
-class ScroungerExtEventEPG(Converter, object):
+class MetrixReloadedExtEventEPG(Converter, object):
 	#Input Parameter per Skin
 	IMAGEID = "ImageId"
 	IS_IMAGE_AVAILABLE = "IsImageAvailable"
@@ -846,16 +846,16 @@ class ScroungerExtEventEPG(Converter, object):
 		return False
 
 	def initializeLog(self):
-		logger = logging.getLogger("ScroungerExtEventEPG")
+		logger = logging.getLogger("MetrixReloadedExtEventEPG")
 		logger.setLevel(logging.DEBUG)
 
 		# create a file handler
-		dir = '/mnt/hdd/scroungerLog/'
+		dir = '/mnt/hdd/MetrixReloaded/log/'
 
 		if not os.path.exists(dir):
 			os.makedirs(dir)
 
-		handler = logging.FileHandler('%sScroungerExtEventEPG.log' % (dir))
+		handler = logging.FileHandler('%sMetrixReloadedExtEventEPG.log' % (dir))
 		handler.setLevel(logging.DEBUG)
 
 		# create a logging format

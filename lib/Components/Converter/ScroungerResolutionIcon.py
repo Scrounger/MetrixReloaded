@@ -3,7 +3,7 @@ from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Poll import Poll
 
-class ScroungerResolutionIcon(Poll, Converter, object):
+class MetrixReloadedResolutionIcon(Poll, Converter, object):
 	GET_RESOLUTION_ICON = 0
 	GET_DEFINITION_ICON = 1
 

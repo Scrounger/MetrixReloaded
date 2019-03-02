@@ -13,11 +13,11 @@ from skin import parseColor, parseFont
 from twisted.web.client import downloadPage, getPage
 from Components.Sources.ExtEvent import ExtEvent
 from Components.Sources.ServiceEvent import ServiceEvent
-from Tools.ScroungerHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, getEpgShareImagePath
+from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, getEpgShareImagePath
 import logging
 
 
-class ScroungerEventImage(Renderer):
+class MetrixReloadedEventImage(Renderer):
     DOWNOAD_IMAGE = "DOWNOAD_IMAGE"
     SHOW_IMAGE = "SHOW_IMAGE"
 
@@ -269,16 +269,16 @@ class ScroungerEventImage(Renderer):
             return None
 
     def initializeLog(self):
-        logger = logging.getLogger("ScroungerEventImage")
+        logger = logging.getLogger("MetrixReloadedEventImage")
         logger.setLevel(logging.DEBUG)
 
         # create a file handler
-        dir = '/mnt/hdd/scroungerLog/'
+        dir = '/mnt/hdd/MetrixReloaded/log/'
 
         if not os.path.exists(dir):
             os.makedirs(dir)
 
-        handler = logging.FileHandler('%sScroungerEventImage.log' % (dir))
+        handler = logging.FileHandler('%sMetrixReloadedEventImage.log' % (dir))
         handler.setLevel(logging.DEBUG)
 
         # create a logging format

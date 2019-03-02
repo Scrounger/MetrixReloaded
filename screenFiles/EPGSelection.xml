@@ -8,7 +8,7 @@
 
   <!-- Title bei Verwendung als EPG-Suche-->
   <widget source="Title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowMainColorL" transparent="1" noWrap="1">
-    <convert type="ScroungerCompareString">EPG-Suche</convert>
+    <convert type="MetrixReloadedCompareString">EPG-Suche</convert>
   </widget>
 
 
@@ -26,7 +26,7 @@
   </widget>
 
   <!-- EpgShare Image -->
-  <widget backgroundColor="background_second" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="ScroungerEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3"/>
+  <widget backgroundColor="background_second" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3"/>
   
   <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="background_second" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>

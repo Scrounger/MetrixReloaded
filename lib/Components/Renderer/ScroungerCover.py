@@ -8,7 +8,7 @@ from Components.Sources.CurrentService import CurrentService
 from Tools.Directories import SCOPE_SKIN, defaultPaths
 from os import path as os_path
 
-class ScroungerCover(Renderer):
+class MetrixReloadedCover(Renderer):
 	exts = (".jpg", ".png", ".jpeg")
 
 	def __init__(self):

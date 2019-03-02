@@ -29,22 +29,22 @@
   <!-- Icons -->
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nosubtitles.png" position="1282,690" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="1">
     <convert type="ServiceInfo">SubservicesAvailable</convert>
-    <convert type="ScroungerCompareBoolean">false</convert>
+    <convert type="MetrixReloadedCompareBoolean">false</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/subtitles.png" position="1282,690" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="1">
     <convert type="ServiceInfo">SubservicesAvailable</convert>
-    <convert type="ScroungerCompareBoolean">true</convert>
+    <convert type="MetrixReloadedCompareBoolean">true</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/noTeletext.png" position="1335,690" render="Pixmap" size="37,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">HasTelext</convert>
-    <convert type="ScroungerCompareBoolean">false</convert>
+    <convert type="MetrixReloadedCompareBoolean">false</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/teletext.png" position="1335,690" render="Pixmap" size="37,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">HasTelext</convert>
-    <convert type="ScroungerCompareBoolean">true</convert>
+    <convert type="MetrixReloadedCompareBoolean">true</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget alphatest="blend" path="media/logos/audio" position="1392,680" render="AudioIcon" size="85,50" source="session.CurrentService" zPosition="3">
@@ -52,28 +52,28 @@
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/aspectratio/fullscreen.png" position="1497,690" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">IsWidescreen</convert>
-    <convert type="ScroungerCompareBoolean">false</convert>
+    <convert type="MetrixReloadedCompareBoolean">false</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/aspectratio/widescreen.png" position="1497,690" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">IsWidescreen</convert>
-    <convert type="ScroungerCompareBoolean">true</convert>
+    <convert type="MetrixReloadedCompareBoolean">true</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget alphatest="blend" path="media/logos/resolution" position="1550,690" render="ScroungerIcon" size="61,34" source="session.CurrentService" zPosition="3">
-    <convert type="ScroungerResolutionIcon">ResolutionIcon</convert>
+  <widget alphatest="blend" path="media/logos/resolution" position="1550,690" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
+    <convert type="MetrixReloadedResolutionIcon">ResolutionIcon</convert>
   </widget>
-  <widget alphatest="blend" path="media/logos/resolution" position="1631,690" render="ScroungerIcon" size="61,34" source="session.CurrentService" zPosition="3">
-    <convert type="ScroungerResolutionIcon">DefinitionIcon</convert>
+  <widget alphatest="blend" path="media/logos/resolution" position="1631,690" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
+    <convert type="MetrixReloadedResolutionIcon">DefinitionIcon</convert>
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/fta.png" position="1712,690" render="Pixmap" backgroundColor="background" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">IsCrypted</convert>
-    <convert type="ScroungerCompareBoolean">false</convert>
+    <convert type="MetrixReloadedCompareBoolean">false</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nofta.png" position="1712,690" render="Pixmap" backgroundColor="background" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">IsCrypted</convert>
-    <convert type="ScroungerCompareBoolean">true</convert>
+    <convert type="MetrixReloadedCompareBoolean">true</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <!-- Remote Buttons -->

@@ -55,7 +55,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Renderer", "Renderer", "{6D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{EA8EADFE-01E3-4538-9BCD-24F25340870F}"
 	ProjectSection(SolutionItems) = preProject
-		lib\Tools\ScroungerExtraData.py = lib\Tools\ScroungerExtraData.py
+		lib\Tools\ScroungerHelper.py = lib\Tools\ScroungerHelper.py
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles", "{AFBFEEF0-2978-44A5-9315-EAC2AAF2771D}"

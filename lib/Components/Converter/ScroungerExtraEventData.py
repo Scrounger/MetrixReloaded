@@ -3,7 +3,7 @@ from Components.Element import cached
 import json
 import HTMLParser
 
-class ScroungerExtraEventData(Converter, object):
+class MetrixReloadedExtraEventData(Converter, object):
 
     def __init__(self, type):
         Converter.__init__(self, type)
