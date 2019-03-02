@@ -22,9 +22,27 @@ namespace Builder
                 settings.LogSettings();
 
                 MyVersion myVersion = new MyVersion();
+
+                Console.WriteLine("(1) Do nothing, stay at version {0}", myVersion.Get());
                 myVersion.IncreaseMinor();
-                myVersion.Save();
-                myVersion.Load();
+                Console.WriteLine(String.Format("(2) Increase version to {0}", myVersion.Get()));
+                Console.WriteLine("---------------------------------------------------------------------------------------------------");
+                Console.Write("-> ");
+
+                ConsoleKey response = Console.ReadKey(false).Key;
+
+                switch (response)
+                {
+                    case ConsoleKey.D1:
+                        myVersion.Load();
+                        break;
+                    case ConsoleKey.D2:
+                        myVersion.Save();
+                        break;
+                }
+
+                Console.WriteLine();
+                Console.WriteLine();
 
                 Console.WriteLine(String.Format("Building version: {0}....", myVersion.Get()));
                 Console.WriteLine();
