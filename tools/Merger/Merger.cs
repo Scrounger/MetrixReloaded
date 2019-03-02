@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Helper;
+using System;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading;
-using System.Threading.Tasks;
-using Helper;
 
 
 namespace Merger
@@ -27,18 +22,25 @@ namespace Merger
 
                 String skinFileString = "<skin>";
 
-                foreach (System.IO.FileInfo file in directory.GetFiles())
+                FileInfo[] fileList = directory.GetFiles();
+
+                Console.WriteLine(String.Format("Merging xml files in {0}", skinFileName));
+                Console.WriteLine("---------------------------------------------------------------------------------------------------");
+
+                int i = 1;
+                foreach (System.IO.FileInfo file in fileList)
                 {
                     if (file.Name.Contains(".xml") & !file.Name.Equals("skin.xml"))
                     {
-                        Console.Write(String.Format("Reading {0}\n", file.Name));
-
                         String fileString = File.ReadAllText(file.FullName);
                         skinFileString = String.Format("{0}\n{1}", skinFileString, File.ReadAllText(file.FullName));
+
+                        ProgressBar.Draw("merging screen files to skin.xml", i, fileList.Length);
+                        i++;
                     }
                 }
-                Console.Write("\n-------------------------------------------------------------\n");
-                Console.Write(String.Format("Merging xml files in {0}\n", skinFileName));
+
+                Console.WriteLine();
 
                 skinFileString = String.Format("{0}\n</skin>", skinFileString, FileMode.Create);
 
@@ -48,8 +50,9 @@ namespace Merger
                 myVersion.IncreaseBuild();
                 myVersion.Save();
                 myVersion.Load();
-                Console.WriteLine(String.Format("Version: {0}", myVersion.Get()));
+                Console.WriteLine(String.Format("version: {0}", myVersion.Get()));
 
+                Console.WriteLine();
                 if (Directory.Exists(settings.VuPlusSkinPath))
                 {
                     File.Copy(skinFileName, skinProductionFileName, true);
@@ -59,10 +62,10 @@ namespace Merger
                 else
                 {
                     Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine(String.Format("Warn: path not exist: {0}", settings.VuPlusSkinPath));
                     Console.WriteLine();
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(String.Format("path not exist: {0}", settings.VuPlusSkinPath));
-                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Press any key to exit");
                     Console.ReadKey();
                 }

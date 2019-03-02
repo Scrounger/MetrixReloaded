@@ -104,7 +104,12 @@ namespace Helper
             
             foreach (PropertyInfo property in properties)
             {
-                Console.WriteLine(String.Format("{0}: \t\t\t {1}", property.Name, property.GetValue(this, null)));
+                string seperator = "\t";
+                if (property.Name.Length < 12)
+                {
+                    seperator = seperator + "\t";
+                }
+                Console.WriteLine(String.Format("{0}: {1} {2}", property.Name, seperator, property.GetValue(this, null)));
             }
             Console.WriteLine("------------------------------------------------------------------------");
             Console.WriteLine();
