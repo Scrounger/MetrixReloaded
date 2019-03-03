@@ -38,8 +38,7 @@
   <color name="transpBlack" value="#80000000" />
   <color name="white" value="#00ffffff" />
   <color name="windowBackgroundBars" value="#10535355" />
-  <color name="windowListboxBg" value="#27474143" />
-  <color name="windowMainColorH" value="#00535355" />
+  <color name="windowListboxBg" value="#27474143" />  
   <color name="yellow" value="#00ffff00" />
   <color name="accentColorOne" value="dodgerblue" />
   <color name="accentColorTwo" value="dodgerblue" />
