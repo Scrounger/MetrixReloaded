@@ -14,9 +14,6 @@
   <constant-widget name="infobar_pic">
     <ePixmap pixmap="MetrixReloaded/info-bg_mirror.png" position="0,0" zPosition="-2" size="1920,279" />
   </constant-widget>
-  <constant-widget name="bg_second_ib_pic">
-    <ePixmap position="0,0" zPosition="-1" size="1820,730" pixmap="MetrixReloaded/bg_second_infobar_1820x730.png" />
-  </constant-widget>
   <constant-widget name="bg_pic_big">
     <ePixmap pixmap="MetrixReloaded/Bg_List_1820x980_ok.png" position="0,0" size="1820,980" zPosition="-2" alphatest="off" />
   </constant-widget>
@@ -31,16 +28,6 @@
   </constant-widget>
   <constant-widget name="mediaplayer_pic">
     <ePixmap pixmap="MetrixReloaded/Bg_Media.png" zPosition="-2" position="0,0" size="1290,919" alphatest="on" />
-  </constant-widget>
-  <constant-widget name="pvrstateBackground">
-    <ePixmap position="0,0" size="25,25" pixmap="MetrixReloaded/border_small_top_left.png" />
-    <ePixmap position="25,0" size="240,25" scale="1" pixmap="MetrixReloaded/border_small_top.png" />
-    <ePixmap position="265,0" size="25,25" pixmap="MetrixReloaded/border_small_top_right.png" />
-    <ePixmap position="0,25" size="25,50" scale="1" pixmap="MetrixReloaded/border_small_left.png" />
-    <ePixmap position="265,25" size="25,50" scale="1" pixmap="MetrixReloaded/border_small_right.png" />
-    <ePixmap position="0,75" size="25,25" pixmap="MetrixReloaded/border_small_bottom_left.png" />
-    <ePixmap position="25,75" size="240,25" scale="1" pixmap="MetrixReloaded/border_small_bottom.png" />
-    <ePixmap position="265,75" size="25,25" pixmap="MetrixReloaded/border_small_bottom_right.png" />
   </constant-widget>
   <!-- Meine Backgrounds-->
   <constant-widget name="background_menu">
@@ -129,18 +116,6 @@
   </constant-widget>
   <constant-widget name="key_blue_name_long">
     <widget name="key_blue_long" position="key_blue_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="background" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_red_KEY_name_long">
-    <widget name="key_red_info_long" position="42,235" foregroundColor="lightgrey" zPosition="1" size="50,40" font="IconFont01; 40" halign="left" valign="top" backgroundColor="background" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_green_KEY_name_long">
-    <widget name="key_green_info_long" position="474,235" foregroundColor="lightgrey" zPosition="1" size="50,40" font="IconFont01; 40" halign="left" valign="top" backgroundColor="background" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_yellow_KEY_name_long">
-    <widget name="key_yellow_info_long" position="908,235" foregroundColor="lightgrey" zPosition="1" size="50,40" font="IconFont01; 40" halign="left" valign="top" backgroundColor="background" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_blue_KEY_name_long">
-    <widget name="key_blue_info_long" position="1341,235" foregroundColor="lightgrey" zPosition="1" size="50,40" font="IconFont01; 40" halign="left" valign="top" backgroundColor="background" transparent="1" />
   </constant-widget>
   <constant-widget name="key_red_source">
     <widget source="key_red" render="Label" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="background" transparent="1" />
