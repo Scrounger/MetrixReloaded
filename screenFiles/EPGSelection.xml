@@ -2,12 +2,12 @@
   <!-- Backgrounds -->
   <constant-widget name="background_window" />
   <!-- Title -->
-  <widget font="font_window_title" position="window_title_pos" render="Label" size="window_title_size" source="Service" transparent="1" backgroundColor="windowMainColorL">
+  <widget font="font_window_title" position="window_title_pos" render="Label" size="window_title_size" source="Service" transparent="1" backgroundColor="windowBackground">
     <convert type="ServiceName">Name</convert>
   </widget>
 
   <!-- Title bei Verwendung als EPG-Suche-->
-  <widget source="Title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowMainColorL" transparent="1" noWrap="1">
+  <widget source="Title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1">
     <convert type="MetrixReloadedCompareString">EPG-Suche</convert>
   </widget>
 

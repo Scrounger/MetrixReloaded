@@ -2,7 +2,7 @@
   <!-- Backgrounds -->
   <constant-widget name="background_window" />
   <!-- Title -->
-  <widget backgroundColor="windowMainColorL" font="font_window_title" position="105,55" render="clearFavName" size="window_title_size" source="Title" transparent="1" />
+  <widget backgroundColor="windowBackground" font="font_window_title" position="105,55" render="clearFavName" size="window_title_size" source="Title" transparent="1" />
   <!-- Clock -->
   <constant-widget name="clock_window" />
   <!-- Title Seperator -->
@@ -12,7 +12,7 @@
 
   <!-- Timeline Text & selected Date-->
   <widget name="timeline_text" backgroundColor="windowBackground" itemHeight="42" position="5,145" size="1050,42" transparent="1" />
-  <widget source="Event" render="Label" position="925,140" zPosition="1" size="225,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowMainColorL" transparent="1">
+  <widget source="Event" render="Label" position="925,140" zPosition="1" size="225,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Format:%a %d.%m</convert>
   </widget>

@@ -12,8 +12,8 @@
   <widget source="session.VideoPicture" position="54,94" size="550,310" render="Pig" backgroundColor="transparent" zPosition="3" OverScan="0" />
 
   <!-- Timeline Text & selected Date-->
-  <widget name="timeline_text" itemHeight="42" position="6,422" size="1868,42" backgroundColor="windowMainColorL" transparent="1" />
-  <widget source="Event" render="Label" position="1625,415" zPosition="1" size="225,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowMainColorL" transparent="1">
+  <widget name="timeline_text" itemHeight="42" position="6,422" size="1868,42" backgroundColor="windowBackground" transparent="1" />
+  <widget source="Event" render="Label" position="1625,415" zPosition="1" size="225,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Format:%A %d.%m</convert>
   </widget>
@@ -59,14 +59,14 @@
   <widget name="timeline_now" pixmap="MetrixReloaded/media/timeline_now.png" position="52,450" size="2,560" zPosition="2" alphatest="on"/>
 
   <!-- selected Infos-->
-  <widget backgroundColor="windowMainColorL" font="font_standard" halign="left" position="630,82" render="Label" size="746,54" source="Event" transparent="1" valign="center" noWrap="1">
+  <widget backgroundColor="windowBackground" font="font_standard" halign="left" position="630,82" render="Label" size="746,54" source="Event" transparent="1" valign="center" noWrap="1">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget backgroundColor="windowMainColorL" font="font_standard_small" halign="right" position="1360,80" render="Label" shadowColor="windowBackground" size="400,34" source="Event" transparent="1">
+  <widget backgroundColor="windowBackground" font="font_standard_small" halign="right" position="1360,80" render="Label" shadowColor="windowBackground" size="400,34" source="Event" transparent="1">
     <convert type="EventTime">StartTime  </convert>
     <convert type="ClockToText">Format:%a %d.%m  %H:%M</convert>
   </widget>
-  <widget source="Event" render="Label" position="1750,80" zPosition="1" size="110,34" font="font_standard_small" backgroundColor="windowMainColorL" transparent="1" halign="right">
+  <widget source="Event" render="Label" position="1750,80" zPosition="1" size="110,34" font="font_standard_small" backgroundColor="windowBackground" transparent="1" halign="right">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:- %H:%M</convert>
   </widget>
@@ -76,7 +76,7 @@
   <widget foregroundColor="windowBackgroundSecond" position="1600,123" render="Progress" size="250,5" source="session.Event_Now" transparent="1" zPosition="7">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget backgroundColor="windowMainColorL" foregroundColor="foreground" font="font_second_standard_small" transparent="1" position="630,140" render="Label" size="1232,268" source="Event" valign="top" zPosition="1">
+  <widget backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" transparent="1" position="630,140" render="Label" size="1232,268" source="Event" valign="top" zPosition="1">
     <convert type="EventName">ExtendedDescription  </convert>
   </widget>
 

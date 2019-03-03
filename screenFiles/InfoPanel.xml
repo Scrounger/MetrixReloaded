@@ -12,13 +12,13 @@
   <eLabel position="645,211" size="585,119" zPosition="-10" backgroundColor="gray" />
   <eLabel position="645,335" size="585,74" zPosition="-10" backgroundColor="gray" />
   <eLabel position="50,414" size="1180,211" zPosition="-10" backgroundColor="gray" />
-  <widget name="vtiversion" position="55,300" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowMainColorL" transparent="1" />
-  <widget name="kernel" position="55,330" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowMainColorL" transparent="1" />
-  <widget name="uptime" position="55,360" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowMainColorL" transparent="1" />
-  <widget name="load" position="55,390" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowMainColorL" transparent="1" />
-  <widget name="temp" position="1400,440" size="370,30" font="Regular;28" halign="right" valign="center" backgroundColor="windowMainColorL" transparent="1" />
-  <widget name="fan" position="1400,470" size="370,30" font="Regular;28" halign="right" valign="center" backgroundColor="windowMainColorL" transparent="1" />
-  <widget source="proclist" render="Listbox" backgroundColor="windowMainColorL" transparent="1" position="55,440" size="800,210" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget name="vtiversion" position="55,300" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="kernel" position="55,330" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="uptime" position="55,360" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="load" position="55,390" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="temp" position="1400,440" size="370,30" font="Regular;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="fan" position="1400,470" size="370,30" font="Regular;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget source="proclist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,440" size="800,210" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (220, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -32,7 +32,7 @@
 				}
 			</convert>
   </widget>
-  <widget source="storagelist" render="Listbox" backgroundColor="windowMainColorL" transparent="1" position="55,640" size="1710,270" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" enableWrapAround="1">
+  <widget source="storagelist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,640" size="1710,270" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 			{"template": [
 					MultiContentEntryText(pos = (0, 1), size = (550, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -47,7 +47,7 @@
 			}
 		</convert>
   </widget>
-  <widget source="netdev" render="Listbox" backgroundColor="windowMainColorL" transparent="1" position="900,300" size="800,120" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="netdev" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,300" size="800,120" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (150, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -60,7 +60,7 @@
 				}
 			</convert>
   </widget>
-  <widget source="memory" render="Listbox" backgroundColor="windowMainColorL" transparent="1" position="900,440" size="800,210" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="memory" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,440" size="800,210" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (150, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -73,7 +73,7 @@
 				}
 			</convert>
   </widget>
-  <widget font="Regular;31" halign="left" valign="center" source="key_red" render="Label" position="key_red_pos" size="key_size" zPosition="1" backgroundColor="windowMainColorL" transparent="1" />
-  <widget font="Regular;31" halign="left" valign="center" source="key_green" render="Label" position="key_green_pos" size="key_size" zPosition="1" backgroundColor="windowMainColorL" transparent="1" />
+  <widget font="Regular;31" halign="left" valign="center" source="key_red" render="Label" position="key_red_pos" size="key_size" zPosition="1" backgroundColor="windowBackground" transparent="1" />
+  <widget font="Regular;31" halign="left" valign="center" source="key_green" render="Label" position="key_green_pos" size="key_size" zPosition="1" backgroundColor="windowBackground" transparent="1" />
   <eLabel text="InfoPanel" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1620,955" />
 </screen>

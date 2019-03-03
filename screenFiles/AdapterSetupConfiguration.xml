@@ -10,8 +10,8 @@
   <!-- Left Panel (Left Side) -->
   <widget name="menulist" position="105,210" size="1020,650" textOffset="5,1" font="font_list" itemHeight="50" transparent="1" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand" />
 
-  <widget source="IFtext" render="Label" position="105,150" size="150,50" zPosition="10" backgroundColor="windowMainColorL" font="font_standard" transparent="1" halign="left" />
-  <widget source="IF" render="Label" position="275,150" size="600,50" zPosition="10" backgroundColor="windowMainColorL" font="font_standard" transparent="1" halign="left" />
+  <widget source="IFtext" render="Label" position="105,150" size="150,50" zPosition="10" backgroundColor="windowBackground" font="font_standard" transparent="1" halign="left" />
+  <widget source="IF" render="Label" position="275,150" size="600,50" zPosition="10" backgroundColor="windowBackground" font="font_standard" transparent="1" halign="left" />
   <widget source="Statustext" render="Label" position="875,150" size="200,50" zPosition="10" font="font_standard" halign="left" valign="center" backgroundColor="windowMainColorH" transparent="1" />
   <widget name="statuspic" pixmaps="MetrixReloaded/buttons/green.png,MetrixReloaded/buttons/button_off.png" position="1095,156" zPosition="10" size="38,38" transparent="1" alphatest="blend" />
 

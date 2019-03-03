@@ -1,6 +1,6 @@
 ﻿<screen name="ChromiumOSWindow" position="center,center" size="1288,923" title="Start ChromiumOS" flags="wfNoBorder" backgroundColor="transparent">
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Start ChromiumOS" position="title_mid_pos" valign="center" size="title_mid_size" font="BoldItalic; 58" backgroundColor="windowMainColorL" transparent="1" />
+  <eLabel text="Start ChromiumOS" position="title_mid_pos" valign="center" size="title_mid_size" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
   <constant-widget name="bg_pic_mid" />
   <constant-widget name="clock_mid" />
   <constant-widget name="color_buttons_window" />

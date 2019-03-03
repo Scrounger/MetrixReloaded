@@ -6,7 +6,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_contextMenu_title" />
   <!-- Context Panel -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="contextMenu_list_pos" size="contextMenu_list_size" transparent="1" backgroundColor="windowMainColorL" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="contextMenu_list_pos" size="contextMenu_list_size" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Rest über Parameter -->
   <!--<widget name="text" 
 	  position="window_desc_pos" 

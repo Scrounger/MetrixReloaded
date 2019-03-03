@@ -1,30 +1,30 @@
 ﻿<screen name="MediaPlayer" position="center,center" size="1290,919" title="MediaPlayer" flags="wfNoBorder" backgroundColor="transparent">
   <constant-widget name="mediaplayer_pic" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Media.png" position="65,48" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Media Player" position="169,58" size="550,74" font="BoldItalic; 64" backgroundColor="windowMainColorL" transparent="1" />
+  <eLabel text="Media Player" position="169,58" size="550,74" font="BoldItalic; 64" backgroundColor="windowBackground" transparent="1" />
   <ePixmap pixmap="MetrixReloaded/media/icons/clock.png" position="1092,86" zPosition="1" size="31,31" alphatest="blend" />
-  <widget source="global.CurrentTime" render="Label" position="1125,86" zPosition="1" size="87,30" font="Regular; 30" backgroundColor="windowMainColorL" halign="right" transparent="1">
+  <widget source="global.CurrentTime" render="Label" position="1125,86" zPosition="1" size="87,30" font="Regular; 30" backgroundColor="windowBackground" halign="right" transparent="1">
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
   <widget name="title" position="98,145" size="900,45" font="BoldItalic;38" valign="top" backgroundColor="windowMainColorH" transparent="1" />
-  <widget name="artist" position="104,212" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowMainColorL" transparent="1" />
+  <widget name="artist" position="104,212" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget name="album" position="104,263" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowMainColorH" transparent="1" />
   <widget name="year" position="702,263" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowMainColorH" transparent="1" />
-  <widget name="genre" position="702,216" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowMainColorL" transparent="1" />
+  <widget name="genre" position="702,216" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget name="coverArt" pixmap="MetrixReloaded/no_coverArt.png" position="1143,147" size="102,102" transparent="1" alphatest="blend" />
   <ePixmap pixmap="MetrixReloaded/media/icons/mp_buttons.png" position="73,326" size="228,27" alphatest="blend" backgroundColor="windowBackground" />
   <ePixmap pixmap="MetrixReloaded/media/icons/media-progress-background.png" zPosition="2" position="326,326" size="844,23" alphatest="blend" />
   <widget name="PositionGauge" zPosition="3" position="326,317" size="844,32" pointer="MetrixReloaded/media/icons/media-progress.png:844,0" seek_pointer="MetrixReloaded/media/icons/media-progress.png:844,0" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="335,366" size="100,30" font="BoldItalic;27" halign="right" valign="center" backgroundColor="windowMainColorL" transparent="1">
+  <widget source="session.CurrentService" render="Label" position="335,366" size="100,30" font="BoldItalic;27" halign="right" valign="center" backgroundColor="windowBackground" transparent="1">
     <convert type="ServicePosition">Position</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="1066,366" size="100,30" font="BoldItalic;27" halign="left" valign="center" backgroundColor="windowMainColorL" transparent="1">
+  <widget source="session.CurrentService" render="Label" position="1066,366" size="100,30" font="BoldItalic;27" halign="left" valign="center" backgroundColor="windowBackground" transparent="1">
     <convert type="ServicePosition">Remaining</convert>
   </widget>
   <widget name="repeat" position="1198,366" size="33,27" pixmaps="MetrixReloaded/media/icons/ico_noreplay.png,MetrixReloaded/media/icons/ico_replay.png" transparent="1" alphatest="blend" />
-  <eLabel name="Filelist" position="67,441" size="165,33" text="File List" font="BoldItalic;33" backgroundColor="windowMainColorL" transparent="1" />
+  <eLabel name="Filelist" position="67,441" size="165,33" text="File List" font="BoldItalic;33" backgroundColor="windowBackground" transparent="1" />
   <widget name="filelist" position="64,491" transparent="1" size="565,350" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
-  <eLabel name="Playlist" position="669,441" size="165,33" text="Play List" font="BoldItalic;33" backgroundColor="windowMainColorL" transparent="1" />
+  <eLabel name="Playlist" position="669,441" size="165,33" text="Play List" font="BoldItalic;33" backgroundColor="windowBackground" transparent="1" />
   <widget name="playlist" position="666,491" transparent="1" size="565,360" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" selectionDisabled="1" />
   <widget name="currenttext" position="65,80" size="0,0" />
   <widget name="titletext" position="65,80" size="0,0" />

@@ -40,12 +40,11 @@
   <color name="windowBackgroundBars" value="#10535355" />
   <color name="windowListboxBg" value="#27474143" />
   <color name="windowMainColorH" value="#00535355" />
-  <color name="windowMainColorL" value="background" />
   <color name="yellow" value="#00ffff00" />
   <color name="accentColorOne" value="dodgerblue" />
   <color name="accentColorTwo" value="dodgerblue" />
   <color name="listForegroundOne" value="foreground" />
-  <color name="MainMenuColorButtonBG" value="windowMainColorL" />
+  <color name="MainMenuColorButtonBG" value="windowBackground" />
   <color name="MainMenuColorButtonFG" value="foreground" />
   <color name="ScrollBarBorder" value="gray" />
   <!-- Meine-->

@@ -1,13 +1,13 @@
 ﻿<constant-widgets>
   <constant-widget name="clock_big">
     <ePixmap pixmap="MetrixReloaded/media/icons/clock.png" position="1650,20" zPosition="1" size="31,31" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="1690,20" zPosition="1" size="100,34" font="Bold; 32" backgroundColor="windowMainColorL" halign="left" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="1690,20" zPosition="1" size="100,34" font="Bold; 32" backgroundColor="windowBackground" halign="left" transparent="1">
       <convert type="ClockToText"></convert>
     </widget>
   </constant-widget>
   <constant-widget name="clock_mid">
     <ePixmap pixmap="MetrixReloaded/media/icons/clock.png" position="1118,20" zPosition="1" size="31,31" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="1160,20" zPosition="1" size="100,34" font="Bold; 32" backgroundColor="windowMainColorL" halign="left" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="1160,20" zPosition="1" size="100,34" font="Bold; 32" backgroundColor="windowBackground" halign="left" transparent="1">
       <convert type="ClockToText"></convert>
     </widget>
   </constant-widget>
@@ -203,10 +203,10 @@
     <widget source="title" render="Label" position="menu_title_pos" size="menu_title_size" font="font_menu_title" transparent="1"  noWrap="1"/>
   </constant-widget>
   <constant-widget name="title_window">
-    <widget source="title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowMainColorL" transparent="1" noWrap="1" />
+    <widget source="title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1" />
   </constant-widget>
   <constant-widget name="Title_window">
-    <widget source="Title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowMainColorL" transparent="1" noWrap="1"/>
+    <widget source="Title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1"/>
   </constant-widget>
   <constant-widget name="Title_contextMenu">
     <widget source="Title" render="Label" position="contextMenu_title_pos" size="contextMenu_title_size" font="font_contextMenu_title" backgroundColor="windowBackgroundSecond" transparent="1"  noWrap="1"/>

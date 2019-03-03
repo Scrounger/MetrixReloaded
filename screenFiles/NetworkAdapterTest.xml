@@ -1,6 +1,6 @@
 ﻿<screen name="NetworkAdapterTest" position="center,center" size="1288,923" title="Network test..." flags="wfNoBorder" backgroundColor="transparent">
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="44,47" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Network test..." position="145,60" size="500,65" font="BoldItalic;51" backgroundColor="windowMainColorL" transparent="1" />
+  <eLabel text="Network test..." position="145,60" size="500,65" font="BoldItalic;51" backgroundColor="windowBackground" transparent="1" />
   <widget render="Label" source="key_red" position="key_red_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowMainColorH" transparent="1" />
   <widget render="Label" source="key_green" position="key_green_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowMainColorH" transparent="1" />
   <widget render="Label" source="key_yellow" position="key_yellow_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowMainColorH" transparent="1" />
@@ -13,28 +13,28 @@
   <eLabel position="70,600" size="1148,50" zPosition="-1" backgroundColor="listBackgroundBarsOne" />
   <eLabel position="70,700" size="1148,50" zPosition="-1" backgroundColor="listBackgroundBarsOne" />
   <eLabel position="70,800" size="1148,50" zPosition="-1" backgroundColor="listBackgroundBarsOne" />
-  <widget name="Adaptertext" position="90,250" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowMainColorL" transparent="1" />
-  <widget name="Adapter" position="390,250" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowMainColorL" transparent="1" />
+  <widget name="Adaptertext" position="90,250" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowBackground" transparent="1" />
+  <widget name="Adapter" position="390,250" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
   <widget name="AdapterInfo" pixmaps="MetrixReloaded/buttons/button_off.png,MetrixReloaded/buttons/blue.png" position="920,250" zPosition="1" size="31,31" transparent="1" alphatest="blend" />
   <widget name="AdapterInfo_Text" position="980,250" size="225,39" zPosition="2" font="Bold;36" foregroundColors="gray,dodgerblue,white" backgroundColor="windowBackground" transparent="1" />
   <widget name="AdapterInfo_OK" pixmap="MetrixReloaded/media/icons/lock_on.png" position="825,250" size="57,47" alphatest="blend" zPosition="2" />
-  <widget name="Networktext" position="90,360" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowMainColorL" transparent="1" />
-  <widget name="Network" position="390,360" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowMainColorL" transparent="1" />
+  <widget name="Networktext" position="90,360" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowBackground" transparent="1" />
+  <widget name="Network" position="390,360" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
   <widget name="NetworkInfo" pixmaps="MetrixReloaded/buttons/button_off.png,MetrixReloaded/buttons/blue.png" position="920,360" zPosition="1" size="31,31" transparent="1" alphatest="blend" />
   <widget name="NetworkInfo_Text" position="980,360" size="225,39" zPosition="2" font="Bold;36" foregroundColors="gray,dodgerblue,white" backgroundColor="windowBackground" transparent="1" />
   <widget name="NetworkInfo_Check" pixmaps="MetrixReloaded/media/icons/lock_on.png,MetrixReloaded/media/icons/lock_error.png" position="825,360" size="57,47" alphatest="blend" zPosition="2" />
-  <widget name="Dhcptext" position="90,460" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowMainColorL" transparent="1" />
-  <widget name="Dhcp" position="390,460" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowMainColorL" transparent="1" />
+  <widget name="Dhcptext" position="90,460" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowBackground" transparent="1" />
+  <widget name="Dhcp" position="390,460" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
   <widget name="DhcpInfo" pixmaps="MetrixReloaded/buttons/button_off.png,MetrixReloaded/buttons/blue.png" position="920,460" zPosition="1" size="31,31" transparent="1" alphatest="blend" />
   <widget name="DhcpInfo_Text" position="980,460" size="225,39" zPosition="2" font="Bold;36" foregroundColors="gray,dodgerblue,white" backgroundColor="windowBackground" transparent="1" />
   <widget name="DhcpInfo_Check" pixmaps="MetrixReloaded/media/icons/lock_on.png,MetrixReloaded/media/icons/lock_error.png" position="825,460" size="57,47" alphatest="blend" zPosition="2" />
-  <widget name="IPtext" position="90,560" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowMainColorL" transparent="1" />
-  <widget name="IP" position="390,560" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowMainColorL" transparent="1" />
+  <widget name="IPtext" position="90,560" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowBackground" transparent="1" />
+  <widget name="IP" position="390,560" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
   <widget name="IPInfo" pixmaps="MetrixReloaded/buttons/button_off.png,MetrixReloaded/buttons/blue.png" position="920,560" zPosition="1" size="31,31" transparent="1" alphatest="blend" />
   <widget name="IPInfo_Text" position="980,560" size="225,39" zPosition="2" font="Bold;36" foregroundColors="gray,dodgerblue,white" backgroundColor="windowBackground" transparent="1" />
   <widget name="IPInfo_Check" pixmaps="MetrixReloaded/media/icons/lock_on.png,MetrixReloaded/media/icons/lock_error.png" position="825,560" size="57,47" alphatest="blend" zPosition="2" />
-  <widget name="DNStext" position="90,660" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" transparent="1" backgroundColor="windowMainColorL" />
-  <widget name="DNS" position="390,660" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowMainColorL" transparent="1" />
+  <widget name="DNStext" position="90,660" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" transparent="1" backgroundColor="windowBackground" />
+  <widget name="DNS" position="390,660" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
   <widget name="DNSInfo" pixmaps="MetrixReloaded/buttons/button_off.png,MetrixReloaded/buttons/blue.png" position="920,660" zPosition="1" size="31,31" transparent="1" alphatest="blend" />
   <widget name="DNSInfo_Text" position="980,660" size="225,39" zPosition="2" font="Bold;36" foregroundColors="gray,dodgerblue,white" backgroundColor="windowBackground" transparent="1" />
   <widget name="DNSInfo_Check" pixmaps="MetrixReloaded/media/icons/lock_on.png,MetrixReloaded/media/icons/lock_error.png" position="825,660" size="57,47" alphatest="blend" zPosition="2" />

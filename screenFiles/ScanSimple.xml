@@ -2,7 +2,7 @@
   <!-- Backgrounds -->
   <constant-widget name="background_window" />
   <!-- Title -->
-  <widget name="header" position="window_title_pos" size="window_title_size" zPosition="3" font="font_window_title" backgroundColor="windowMainColorL" transparent="1" />
+  <widget name="header" position="window_title_pos" size="window_title_size" zPosition="3" font="font_window_title" backgroundColor="windowBackground" transparent="1" />
   <!-- Clock -->
   <constant-widget name="clock_window" />
   <!-- Title Seperator -->

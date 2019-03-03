@@ -10,7 +10,7 @@
 
   <!-- Timeline Text & selected Date-->
   <widget name="timeline_text" backgroundColor="windowBackground" itemHeight="42" position="6,75" size="1868,42"  />
-  <widget source="Event" render="Label" position="1625,68" zPosition="1" size="225,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowMainColorL" transparent="1">
+  <widget source="Event" render="Label" position="1625,68" zPosition="1" size="225,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Format:%A %d.%m</convert>
   </widget>
