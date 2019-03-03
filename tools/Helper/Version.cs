@@ -53,6 +53,13 @@ namespace Helper
             Load();
         }
 
+        public void IncreaseMajor()
+        {
+            this.major = this.major + 1;
+            this.minor = 0;
+            this.build = 0;
+        }
+
         public void IncreaseMinor()
         {
             this.minor = this.minor + 1;
