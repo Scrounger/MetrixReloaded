@@ -5,8 +5,6 @@
   <color name="black" value="#00000000" />
   <color name="blue" value="#000064c7" />
   <color name="channelListDescFg" value="#00fcfcfc" />
-  <color name="dark" value="#25062748" />
-  <color name="darkgrey" value="#279e9fa4" />
   <color name="dodgerblue" value="#001e90ff" />
   <color name="foreground" value="#00ffffff" />
   <color name="gray" value="#00808080" />
@@ -32,35 +30,6 @@
   <color name="ServiceNotAvail" value="#0058595b" />
   <color name="transparent" value="#ffffffff" />
   <color name="transpBlack" value="#80000000" />
-  <color name="transpWhite" value="#80ffffff" />
-  <color name="un1f771f" value="#001f771f" />
-  <color name="un254f7497" value="#254f7497" />
-  <color name="un2707255d" value="#2707255d" />
-  <color name="un27c2bbb2" value="#27c2bbb2" />
-  <color name="un27c8c8c8" value="#27c8c8c8" />
-  <color name="un27d9dee2" value="#27d9dee2" />
-  <color name="un33294a6b" value="#33294a6b" />
-  <color name="un3c3c3c" value="#003c3c3c" />
-  <color name="un3d0e82" value="#003d0e82" />
-  <color name="un41000000" value="#41000000" />
-  <color name="un50647c" value="#0050647c" />
-  <color name="un6c6c6c" value="#006c6c6c" />
-  <color name="un6d6e70" value="#006d6e70" />
-  <color name="un868686" value="#00868686" />
-  <color name="un8c8c8c" value="#008c8c8c" />
-  <color name="un9c9c9c" value="#009c9c9c" />
-  <color name="un9f1313" value="#009f1313" />
-  <color name="una00000" value="#00a00000" />
-  <color name="una08500" value="#00a08500" />
-  <color name="uncccccc" value="#00cccccc" />
-  <color name="undcaaaa" value="#00dcaaaa" />
-  <color name="undcdcdc" value="#00dcdcdc" />
-  <color name="unefefef" value="#00efefef" />
-  <color name="unf4df8d" value="#00f4df8d" />
-  <color name="unff0000" value="#00ff0000" />
-  <color name="unff000000" value="#ff000000" />
-  <color name="unfff000" value="#00fff000" />
-  <color name="violet" value="#00716ab0" />
   <color name="white" value="#00ffffff" />
   <color name="windowBackground" value="background" />
   <color name="windowBackgroundBars" value="#10535355" />

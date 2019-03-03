@@ -7,9 +7,9 @@
   <color name="ListboxForeground" color="listForeground" />
   <color name="ListboxSelectedBackground" color="listSelectedBackground" />
   <color name="ListboxSelectedForeground" color="listSelectedForeground" />
-  <color name="ListboxMarkedBackground" color="unff0000" />
+  <color name="ListboxMarkedBackground" color="yellow" />
   <color name="ListboxMarkedForeground" color="foreground" />
-  <color name="ListboxMarkedAndSelectedBackground" color="una00000" />
+  <color name="ListboxMarkedAndSelectedBackground" color="yellow" />
   <color name="ListboxMarkedAndSelectedForeground" color="foreground" />
   <color name="WindowTitleForeground" color="foreground" />
   <color name="WindowTitleBackground" color="windowBackground" />
