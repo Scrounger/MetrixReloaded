@@ -12,7 +12,7 @@
   <widget name="year" position="702,263" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowMainColorH" transparent="1" />
   <widget name="genre" position="702,216" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowMainColorL" transparent="1" />
   <widget name="coverArt" pixmap="MetrixReloaded/no_coverArt.png" position="1143,147" size="102,102" transparent="1" alphatest="blend" />
-  <ePixmap pixmap="MetrixReloaded/media/icons/mp_buttons.png" position="73,326" size="228,27" alphatest="blend" backgroundColor="background" />
+  <ePixmap pixmap="MetrixReloaded/media/icons/mp_buttons.png" position="73,326" size="228,27" alphatest="blend" backgroundColor="windowBackground" />
   <ePixmap pixmap="MetrixReloaded/media/icons/media-progress-background.png" zPosition="2" position="326,326" size="844,23" alphatest="blend" />
   <widget name="PositionGauge" zPosition="3" position="326,317" size="844,32" pointer="MetrixReloaded/media/icons/media-progress.png:844,0" seek_pointer="MetrixReloaded/media/icons/media-progress.png:844,0" transparent="1" />
   <widget source="session.CurrentService" render="Label" position="335,366" size="100,30" font="BoldItalic;27" halign="right" valign="center" backgroundColor="windowMainColorL" transparent="1">

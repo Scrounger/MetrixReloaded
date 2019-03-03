@@ -9,7 +9,7 @@
   <widget source="key_green" render="Label" position="483,195" zPosition="1" size="225,38" font="Regular;32" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
   <widget source="key_blue" render="Label" position="998,185" zPosition="1" size="225,50" font="Regular;28" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
   <ePixmap pixmap="MetrixReloaded/border_menu.png" position="160,260" zPosition="-1" size="518,505" transparent="1" alphatest="blend" />
-  <widget name="aplist" position="175,275" size="488,475" font="Regular; 32" itemHeight="40" transparent="1" backgroundColor="background" zPosition="10" scrollbarMode="showOnDemand" />
+  <widget name="aplist" position="175,275" size="488,475" font="Regular; 32" itemHeight="40" transparent="1" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand" />
   <widget source="ESSID" render="Label" position="735,340" zPosition="1" size="450,45" font="Regular;30" backgroundColor="windowMainColorL" halign="center" valign="center" transparent="1" />
   <widget source="Address" render="Label" position="735,385" zPosition="1" size="450,45" font="Regular;30" backgroundColor="windowMainColorL" halign="center" valign="center" transparent="1" />
   <widget source="Protocol" render="Label" position="735,430" zPosition="1" size="450,45" font="Regular;30" backgroundColor="windowMainColorL" halign="center" valign="center" transparent="1" />

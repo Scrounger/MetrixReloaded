@@ -8,22 +8,22 @@
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- Now: Title, Subtitle, Times -->
-  <widget source="session.Event_Now" position="410,820" size="1208,56" backgroundColor="background" foregroundColor="foreground" font="SetrixHD;42" render="VRunningText" halign="left" valign="top" options="movetype=running,startpoint=0,direction=left,steptime=50,startdelay=2000,always=0,noWrap" transparent="1">
+  <widget source="session.Event_Now" position="410,820" size="1208,56" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" render="VRunningText" halign="left" valign="top" options="movetype=running,startpoint=0,direction=left,steptime=50,startdelay=2000,always=0,noWrap" transparent="1">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget source="session.extEvent_Now" position="412,874" size="1300,40" backgroundColor="background" foregroundColor="accent1" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="1">
+  <widget source="session.extEvent_Now" position="412,874" size="1300,40" backgroundColor="windowBackground" foregroundColor="accent1" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="1">
     <convert type="MetrixReloadedExtEventEPG">EpisodeNum, Subtitle(10), Genre, Year, Category</convert>
   </widget>
-  <widget source="session.Event_Now" position="1636,835" size="112,56" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
+  <widget source="session.Event_Now" position="1636,835" size="112,56" backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <eLabel position="1760,835" size="22,56" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="center" valign="bottom" text="-" transparent="1" />
-  <widget source="session.Event_Now" position="1765,835" size="90,56" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
+  <eLabel position="1760,835" size="22,56" backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" halign="center" valign="bottom" text="-" transparent="1" />
+  <widget source="session.Event_Now" position="1765,835" size="90,56" backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget source="session.Event_Now" position="1687,874" size="169,35" backgroundColor="background" foregroundColor="accent1" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
+  <widget source="session.Event_Now" position="1687,874" size="169,35" backgroundColor="windowBackground" foregroundColor="accent1" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
@@ -33,27 +33,27 @@
     <convert type="EventTime">Progress</convert>
   </widget>
   <!-- Next: Title, Subtitle, Times -->
-  <widget source="session.Event_Next" position="410,934" size="1208,56" backgroundColor="background" foregroundColor="infoBar_next_event" font="SetrixHD;38" render="VRunningText" halign="left" valign="top" options="movetype=running,startpoint=0,direction=left,steptime=50,startdelay=2000,always=0,noWrap" transparent="1">
+  <widget source="session.Event_Next" position="410,934" size="1208,56" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="SetrixHD;38" render="VRunningText" halign="left" valign="top" options="movetype=running,startpoint=0,direction=left,steptime=50,startdelay=2000,always=0,noWrap" transparent="1">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget source="session.extEvent_Next" position="412,984" size="1300,40" backgroundColor="background" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="1">
+  <widget source="session.extEvent_Next" position="412,984" size="1300,40" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="1">
     <convert type="MetrixReloadedExtEventEPG">EpisodeNum, Subtitle(10), Genre, Year</convert>
   </widget>
-  <widget source="session.Event_Next" position="1636,945" size="112,56" backgroundColor="background" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
+  <widget source="session.Event_Next" position="1636,945" size="112,56" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <eLabel position="1760,945" size="22,56" backgroundColor="background" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="center" valign="bottom" text="-" transparent="1" />
-  <widget source="session.Event_Next" position="1765,945" size="90,56" backgroundColor="background" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
+  <eLabel position="1760,945" size="22,56" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="center" valign="bottom" text="-" transparent="1" />
+  <widget source="session.Event_Next" position="1765,945" size="90,56" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget source="session.Event_Next" position="1687,984" size="169,35" backgroundColor="background" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
+  <widget source="session.Event_Next" position="1687,984" size="169,35" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
 
-  <widget source="session.extEvent_Now" position="412,100" size="1000,600" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" noWrap="0">
+  <widget source="session.extEvent_Now" position="412,100" size="1000,600" backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" noWrap="0">
     <convert type="MetrixReloadedExtEventEPG">EpgShareRaw</convert>
   </widget>
 

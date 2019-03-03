@@ -1,18 +1,18 @@
 ﻿<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1920,800" title="SecondInfoBar" backgroundColor="transparent" animationMode="disable">
   <!-- Background -->
-  <eLabel backgroundColor="background" position="120,37" size="1680,740" zPosition="-10" />
+  <eLabel backgroundColor="windowBackground" position="120,37" size="1680,740" zPosition="-10" />
 
-  <widget backgroundColor="background" foregroundColor="foreground" position="150,70" size="400,240" scale="3" render="MetrixReloadedEventImage"  source="session.extEvent_Now" transparent="1" zPosition="3"/>
+  <widget backgroundColor="windowBackground" foregroundColor="foreground" position="150,70" size="400,240" scale="3" render="MetrixReloadedEventImage"  source="session.extEvent_Now" transparent="1" zPosition="3"/>
 
-  <widget source="session.extEvent_Now" position="600,70" size="1000,600" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="0">
+  <widget source="session.extEvent_Now" position="600,70" size="1000,600" backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="0">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][Title(Titel du Sack:\t) \nSubtitle(10)Genre(\nGenre:)\t\tEpisodeNum Category(\nKategorie:\t) ParentalRating(\nFSK) Rating(\nBewertung:\t) Year(\nJahr:\t) Country(\nLand:\t)]</convert>
   </widget>
 
-  <widget source="session.extEvent_Now" position="150,70" size="1000,600" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="0">
+  <widget source="session.extEvent_Now" position="150,70" size="1000,600" backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="0">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][Title(Titel du Sack:\t) \nSubtitle(10)Genre(\nGenre:) \t\tEpisodeNum Category(\nKategorie:\t) ParentalRating(\nFSK) Rating(\nBewertung:\t) Year(\nJahr:\t) Country(\nLand:\t)]</convert>
   </widget>
 
-  <widget source="session.extEvent_Now" position="600,30" size="400,40" backgroundColor="background" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" noWrap="0">
+  <widget source="session.extEvent_Now" position="600,30" size="400,40" backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" noWrap="0">
     <convert type="MetrixReloadedExtEventEPG">IsImageAvailable</convert>
   </widget>
 

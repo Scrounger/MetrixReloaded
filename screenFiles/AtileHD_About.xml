@@ -1,10 +1,10 @@
-﻿<screen name="AtileHD_About" backgroundColor="background" position="660,310" size="600,250" title="MetrixReloaded">
+﻿<screen name="AtileHD_About" backgroundColor="windowBackground" position="660,310" size="600,250" title="MetrixReloaded">
   <!-- TODO: anpassen-->
-  <eLabel text="MetrixReloaded" position="100,41" size="400,50" font="SetrixHD;30" backgroundColor="background" foregroundColor="foreground" halign="center" transparent="1" />
-  <eLabel text="http://www.vuplus-support.org" backgroundColor="background" foregroundColor="foreground" position="100,122" size="400,50" font="SetrixHD;26" halign="center" transparent="1" />
+  <eLabel text="MetrixReloaded" position="100,41" size="400,50" font="SetrixHD;30" backgroundColor="windowBackground" foregroundColor="foreground" halign="center" transparent="1" />
+  <eLabel text="http://www.vuplus-support.org" backgroundColor="windowBackground" foregroundColor="foreground" position="100,122" size="400,50" font="SetrixHD;26" halign="center" transparent="1" />
 
 
-  <widget source="Title" render="Label" position="100,170" size="400,50" backgroundColor="background" font="SetrixHD;22" foregroundColor="foreground" halign="center" transparent="1">
+  <widget source="Title" render="Label" position="100,170" size="400,50" backgroundColor="windowBackground" font="SetrixHD;22" foregroundColor="foreground" halign="center" transparent="1">
     <convert type="MetrixReloadedVersion"></convert>
   </widget>
 </screen>

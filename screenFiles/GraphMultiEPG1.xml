@@ -21,9 +21,9 @@
   <!-- GraphEPG -->
   <widget name="list" position="54,460" size="1820,540" itemHeight="90" FontSize1="24" FontSize2="24" piconWidth="150" scrollbarMode="showOnDemand" transparent="1"
   foregroundColor="foreground"
-  backgroundColor="background"
+  backgroundColor="windowBackground"
   ServiceNameForegroundColor="foreground"
-  ServiceNameBackgroundColor="background"
+  ServiceNameBackgroundColor="windowBackground"
   EntryForegroundColor="foreground"
   EntryBackgroundColor="graph_multi_epg_background"
   EntryBorderColor="black"
@@ -40,8 +40,8 @@
   EntryRecIncompleteColor="graph_multi_epg_rec"
   EntryRecOffColor="graph_multi_epg_rec"
   onlyFullListEntries="true"
-  piconColor="background" 
-  piconColorSelected="background"
+  piconColor="windowBackground" 
+  piconColorSelected="windowBackground"
   scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
 
   <!-- GraphEPG Zoom-->
@@ -62,7 +62,7 @@
   <widget backgroundColor="windowMainColorL" font="font_standard" halign="left" position="630,82" render="Label" size="746,54" source="Event" transparent="1" valign="center" noWrap="1">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget backgroundColor="windowMainColorL" font="font_standard_small" halign="right" position="1360,80" render="Label" shadowColor="background" size="400,34" source="Event" transparent="1">
+  <widget backgroundColor="windowMainColorL" font="font_standard_small" halign="right" position="1360,80" render="Label" shadowColor="windowBackground" size="400,34" source="Event" transparent="1">
     <convert type="EventTime">StartTime  </convert>
     <convert type="ClockToText">Format:%a %d.%m  %H:%M</convert>
   </widget>

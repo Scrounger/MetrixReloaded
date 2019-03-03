@@ -6,7 +6,7 @@
   <!-- Title Seperator -->
   <eLabel name="Seperator" position="0,60" size="900,1" zPosition="5" backgroundColor="seperator" />
   <!-- Message Background -->
-  <!--<eLabel position="0,60" size="900,1020" backgroundColor="background" zPosition="-1" />-->
+  <!--<eLabel position="0,60" size="900,1020" backgroundColor="windowBackground" zPosition="-1" />-->
   <!-- Message Icons -->
   <widget alphatest="blend" name="ErrorPixmap" pixmap="MetrixReloaded/media/logos/message/attention.png" position="10,0" size="60,60" />
   <widget alphatest="blend" name="QuestionPixmap" pixmap="MetrixReloaded/media/logos/message/question.png" position="10,0" size="60,60" />

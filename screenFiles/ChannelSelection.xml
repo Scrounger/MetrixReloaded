@@ -19,7 +19,7 @@
   <!-- EpgShare Image -->
   <widget backgroundColor="background_second" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3"/>
 
-  <widget source="ServiceEvent" backgroundColor="background" position="1720,0" size="200,50" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
+  <widget source="ServiceEvent" backgroundColor="windowBackground" position="1720,0" size="200,50" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
     <convert type="MetrixReloadedExtEventEPG">ImageId</convert>
   </widget>
   
@@ -42,7 +42,7 @@
   <widget source="ServiceEvent" position="window_epg_desc_pos" zPosition="1" size="622,360" font="font_standard_small" foregroundColor="foreground" backgroundColor="background_second" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="EventName">FullDescription</convert>
   </widget>
-  <widget name="epglist" backgroundColorRows="background_second" backgroundColorSelected="background" position="1216,818" zPosition="10" size="622,96" itemHeight="32" backgroundColor="background_second" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="epglist" backgroundColorRows="background_second" backgroundColorSelected="windowBackground" position="1216,818" zPosition="10" size="622,96" itemHeight="32" backgroundColor="background_second" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- List: über Parameters -->
   <!-- Fonts: EPGListChannelList0, EPGListChannelList1 -->
   <!-- Remote Buttons -->

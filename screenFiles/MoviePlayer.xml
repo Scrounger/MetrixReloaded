@@ -8,17 +8,17 @@
     <convert type="MovieBarInfo">Reference</convert>
   </widget>
   <!-- Cover -->
-  <widget source="session.CurrentService" render="MetrixReloadedCover" backgroundColor="background" position="30,578" zPosition="4" size="350,492" transparent="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="MetrixReloadedCover" backgroundColor="windowBackground" position="30,578" zPosition="4" size="350,492" transparent="1" alphatest="blend" />
   <!-- Title -->
-  <widget source="session.CurrentService" render="Label" position="410,875" size="1208,56" font="SetrixHD;42" halign="left" valign="top" backgroundColor="background" transparent="1">
+  <widget source="session.CurrentService" render="Label" position="410,875" size="1208,56" font="SetrixHD;42" halign="left" valign="top" backgroundColor="windowBackground" transparent="1">
     <convert type="ServiceName">Name</convert>
   </widget>
   <!-- Endzeit -->
-  <widget backgroundColor="background" font="font_second_standard_small" foregroundColor="foreground" halign="right" position="1765,885" size="90,56" render="Label" source="session.CurrentService" transparent="1">
+  <widget backgroundColor="windowBackground" font="font_second_standard_small" foregroundColor="foreground" halign="right" position="1765,885" size="90,56" render="Label" source="session.CurrentService" transparent="1">
     <convert type="ServicePosition">EndTime,ShowNoSeconds</convert>
   </widget>
   <!-- Position -->
-  <widget backgroundColor="background" font="font_second_standard_small" foregroundColor="accent1" halign="left" position="410,945" render="Label" size="169,45" source="session.CurrentService" transparent="1">
+  <widget backgroundColor="windowBackground" font="font_second_standard_small" foregroundColor="accent1" halign="left" position="410,945" render="Label" size="169,45" source="session.CurrentService" transparent="1">
     <convert type="ServicePosition">Position</convert>
   </widget>
   <!-- ProgressBar + Marker -->
@@ -30,7 +30,7 @@
     <convert type="ServicePosition">Position</convert>
   </widget>
   <!-- verbleibende Zeit-->
-  <widget backgroundColor="background" font="font_second_standard_small" foregroundColor="accent1" halign="right" position="1689,945" render="Label" size="169,45" source="session.CurrentService" transparent="1">
+  <widget backgroundColor="windowBackground" font="font_second_standard_small" foregroundColor="accent1" halign="right" position="1689,945" render="Label" size="169,45" source="session.CurrentService" transparent="1">
     <convert type="ServicePosition">Remaining,Negate</convert>
   </widget>
   <!-- Icons -->

@@ -66,12 +66,12 @@
   <widget alphatest="blend" path="media/logos/resolution" position="1631,690" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
     <convert type="MetrixReloadedResolutionIcon">DefinitionIcon</convert>
   </widget>
-  <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/fta.png" position="1712,690" render="Pixmap" backgroundColor="background" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">
+  <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/fta.png" position="1712,690" render="Pixmap" backgroundColor="windowBackground" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">IsCrypted</convert>
     <convert type="MetrixReloadedCompareBoolean">false</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nofta.png" position="1712,690" render="Pixmap" backgroundColor="background" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">
+  <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nofta.png" position="1712,690" render="Pixmap" backgroundColor="windowBackground" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">
     <convert type="ServiceInfo">IsCrypted</convert>
     <convert type="MetrixReloadedCompareBoolean">true</convert>
     <convert type="ConditionalShowHide" />

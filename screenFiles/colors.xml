@@ -1,7 +1,12 @@
 ﻿<colors>
+  <!-- Color Definitionen -->
   <color name="background" value="#2d000000" />
   <color name="background_second" value="#1227408b" />
   
+  <!-- Color Zuweisungen -->
+  <color name="windowBackground" value="background" />
+
+
   <color name="black" value="#00000000" />
   <color name="blue" value="#000064c7" />
   <color name="channelListDescFg" value="#00fcfcfc" />
@@ -31,7 +36,6 @@
   <color name="transparent" value="#ffffffff" />
   <color name="transpBlack" value="#80000000" />
   <color name="white" value="#00ffffff" />
-  <color name="windowBackground" value="background" />
   <color name="windowBackgroundBars" value="#10535355" />
   <color name="windowListboxBg" value="#27474143" />
   <color name="windowMainColorH" value="#00535355" />

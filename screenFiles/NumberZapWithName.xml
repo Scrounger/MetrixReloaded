@@ -6,7 +6,7 @@
   <!-- Title Seperator -->
   <eLabel name="Seperator" position="600,450" size="720,1" zPosition="5" backgroundColor="seperator" />
   <!-- Panel Background -->
-  <eLabel position="600,450" size="720,240" backgroundColor="background" zPosition="-1" />
+  <eLabel position="600,450" size="720,240" backgroundColor="windowBackground" zPosition="-1" />
   <!-- Panel -->
   <widget source="Service" render="XHDPicon" position="620,470" size="330,198" zPosition="5" alphatest="blend" transparent="1">
     <convert type="ServiceName">Reference</convert>
