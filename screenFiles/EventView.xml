@@ -19,13 +19,13 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/left.png" position="1270,494" size="36,36" transparent="1" zPosition="10" />
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/right.png" position="1718,494" size="36,36" transparent="1" zPosition="10" />
   
-  <widget backgroundColor="background_second" font="SetrixHD;40" halign="center" name="channel" position="1274,350" size="480,75" transparent="1" />
-  <widget backgroundColor="background_second" font="SetrixHD;36" halign="center" name="datetime" position="1309,485" size="405,60" transparent="1" />
+  <widget backgroundColor="windowBackgroundSecond" font="SetrixHD;40" halign="center" name="channel" position="1274,350" size="480,75" transparent="1" />
+  <widget backgroundColor="windowBackgroundSecond" font="SetrixHD;36" halign="center" name="datetime" position="1309,485" size="405,60" transparent="1" />
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="1325,437" size="382,1" />
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="1325,435" render="Progress" size="382,5" source="session.Event_Now" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget backgroundColor="background_second" font="SetrixHD;36" halign="center" name="duration" position="1309,568" size="405,60" transparent="1" />
+  <widget backgroundColor="windowBackgroundSecond" font="SetrixHD;36" halign="center" name="duration" position="1309,568" size="405,60" transparent="1" />
   <!-- Icons -->
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nosubtitles.png" position="1282,690" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="1">
     <convert type="ServiceInfo">SubservicesAvailable</convert>

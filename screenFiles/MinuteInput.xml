@@ -1,4 +1,4 @@
 ﻿<screen name="MinuteInput" backgroundColor="transparent" position="center,center" size="420,90" title="Seek">
-  <eLabel backgroundColor="background_second" position="0,0" size="420,90" zPosition="-1" />
-  <widget name="minutes" backgroundColor="background_second" position="0,15" size="420,60" halign="center" valign="center" font="Bold;70" />
+  <eLabel backgroundColor="windowBackgroundSecond" position="0,0" size="420,90" zPosition="-1" />
+  <widget name="minutes" backgroundColor="windowBackgroundSecond" position="0,15" size="420,60" halign="center" valign="center" font="Bold;70" />
 </screen>

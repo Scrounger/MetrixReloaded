@@ -9,10 +9,10 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="activityslider" position="105,150" size="1050,22" backgroundColor="windowBackground" borderWidth="2" borderColor="foreground" foregroundColor="background_second" />
+  <widget name="activityslider" position="105,150" size="1050,22" backgroundColor="windowBackground" borderWidth="2" borderColor="foreground" foregroundColor="windowBackgroundSecond" />
   <widget name="package" position="105,192" size="1050,45" font="font_standard" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="status" position="105,255" size="1050,80" font="font_standard" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="slider" position="105,392" size="1050,30" backgroundColor="windowBackground" borderWidth="2" borderColor="foreground" foregroundColor="background_second" />
+  <widget name="slider" position="105,392" size="1050,30" backgroundColor="windowBackground" borderWidth="2" borderColor="foreground" foregroundColor="windowBackgroundSecond" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/paket.png" position="window_image_pos" size="window_image_size" />
   <!-- TODO: Layout anpassen -->

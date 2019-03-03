@@ -42,7 +42,7 @@
   scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
 
   <!-- GraphEPG Zoom-->
-  <widget name="zoom" position="0,0" size="0,0" zPosition="5" font="SetrixHD;26" backgroundColor="background_second" />
+  <widget name="zoom" position="0,0" size="0,0" zPosition="5" font="SetrixHD;26" backgroundColor="windowBackgroundSecond" />
   <widget name="zoomBack" position="0,0" size="600,0" zPosition="4" font="SetrixHD;26" backgroundColor="windowBackground" />
 
   <!-- Timelines-->

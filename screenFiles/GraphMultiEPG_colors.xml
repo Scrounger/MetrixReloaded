@@ -4,7 +4,7 @@
 	<color name="graph_multi_epg_rec" value="#00922527" /> <!--  GraphMulitEPG Record  -->
   <color name="graph_multi_epg_pre_rec" value="#00ffff00" /> <!--  GraphMulitEPG Pre / Post Record  -->
 	<color name="graph_multi_epg_primeTime" value="#006c0aab" /> <!--  PrimeTime Color  -->
-	<color name="graph_multi_epg_selected" value="background_second" /> <!--  GraphMulitEPG Selection  -->
+	<color name="graph_multi_epg_selected" value="windowBackgroundSecond" /> <!--  GraphMulitEPG Selection  -->
 
 
 </colors>

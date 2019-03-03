@@ -73,7 +73,7 @@
 
   <!-- ProgressBar-->
   <eLabel backgroundColor="accent1" foregroundColor="accent1" position="1600,125" size="250,1" />
-  <widget foregroundColor="background_second" position="1600,123" render="Progress" size="250,5" source="session.Event_Now" transparent="1" zPosition="7">
+  <widget foregroundColor="windowBackgroundSecond" position="1600,123" render="Progress" size="250,5" source="session.Event_Now" transparent="1" zPosition="7">
     <convert type="EventTime">Progress</convert>
   </widget>
   <widget backgroundColor="windowMainColorL" foregroundColor="foreground" font="font_second_standard_small" transparent="1" position="630,140" render="Label" size="1232,268" source="Event" valign="top" zPosition="1">

@@ -26,7 +26,7 @@
     <convert type="ServicePosition">Gauge</convert>
   </widget>
   <eLabel backgroundColor="accent1" foregroundColor="accent1" position="510,963" size="1228,1" />
-  <widget foregroundColor="background_second" position="510,961" render="Progress" size="1228,5" source="session.CurrentService" transparent="1" zPosition="4">
+  <widget foregroundColor="windowBackgroundSecond" position="510,961" render="Progress" size="1228,5" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServicePosition">Position</convert>
   </widget>
   <!-- verbleibende Zeit-->

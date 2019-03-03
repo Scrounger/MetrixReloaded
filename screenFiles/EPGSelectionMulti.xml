@@ -24,14 +24,14 @@
   <widget alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="background_second" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+  <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText"></convert>
   </widget>
-  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
@@ -39,7 +39,7 @@
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget source="Event" position="window_epg_desc_pos" zPosition="1" size="622,475" font="font_standard_small" foregroundColor="foreground" backgroundColor="background_second" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <widget source="Event" position="window_epg_desc_pos" zPosition="1" size="622,475" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <!-- Remote Buttons -->

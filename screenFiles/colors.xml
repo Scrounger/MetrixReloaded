@@ -1,10 +1,11 @@
 ﻿<colors>
   <!-- Color Definitionen -->
   <color name="background" value="#2d000000" />
-  <color name="background_second" value="#1227408b" />
+  <color name="backgroundSecond" value="#1227408b" />
   
   <!-- Color Zuweisungen -->
   <color name="windowBackground" value="background" />
+  <color name="windowBackgroundSecond" value="backgroundSecond" />
 
 
   <color name="black" value="#00000000" />
@@ -25,7 +26,7 @@
   <color name="listBackgroundBarsTwo" value="background" />
   <color name="listForeground" value="#00ffffff" />
   <color name="listForegroundTwo" value="#10535355" />
-  <color name="listSelectedBackground" value="background_second" />
+  <color name="listSelectedBackground" value="backgroundSecond" />
   <color name="listSelectedForeground" value="foreground" />
   <color name="NumericalHelpDialogBg" value="#05231f20" />
   <color name="orange" value="#00ffa500" />

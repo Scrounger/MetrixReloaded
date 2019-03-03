@@ -43,7 +43,7 @@
 
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
-  <widget source="introduction2" render="Label" position="window_desc_pos" size="window_desc_size" foregroundColor="foreground" font="font_standard" halign="center" transparent="1" backgroundColor="background_second" />
+  <widget source="introduction2" render="Label" position="window_desc_pos" size="window_desc_size" foregroundColor="foreground" font="font_standard" halign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
@@ -72,7 +72,7 @@
 
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
-  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" halign="center" valign="center" backgroundColor="background_second" transparent="1" />
+  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" />
 
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
@@ -328,7 +328,7 @@
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,1" position="window_list_pos" zPosition="10" size="window_list_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />  
-  <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" backgroundColor="background_second" />
+  <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -723,7 +723,7 @@
   </widget>
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
-  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background_second" transparent="1" />
+  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_name" />
@@ -756,7 +756,7 @@
   </widget>
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
-  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background_second" transparent="1" />
+  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_name" />
@@ -810,7 +810,7 @@
   </widget>
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
-  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background_second" transparent="1" />
+  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_name" />
@@ -847,7 +847,7 @@
   <!-- Left Panel (Left Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/dvbc.png" position="180,200" size="220,96" transparent="1" zPosition="2" />
   <widget backgroundColor="windowBackground" font="font_standard" name="scan_state" position="180,315" size="900,45" transparent="1" zPosition="2" />
-  <widget borderColor="foreground" foregroundColor="background_second" borderWidth="1" name="scan_progress" position="180,375" size="900,22" transparent="1" />
+  <widget borderColor="foreground" foregroundColor="windowBackgroundSecond" borderWidth="1" name="scan_progress" position="180,375" size="900,22" transparent="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
   <eLabel text="CableScanStatus" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
@@ -866,7 +866,7 @@
   <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" />
-  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="foreground" transparent="1" backgroundColor="background_second" />
+  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="foreground" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -926,28 +926,28 @@
   <!-- Left Panel (Left Side) -->
   <widget name="list" backgroundColorRows="listBackgroundBarsTwo" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowMainColorL" colorServiceDescription="gray" colorServiceRecording="listRecording" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="50" itemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="foreground" />
   <!-- List: über Parameters -->
-  <widget name="searchchar" position="window_searchbar_pos" size="window_searchbar_size" valign="center" halign="center" zPosition="100" backgroundColor="background_second" transparent="0" font="SetrixHD;140" foregroundColor="foreground" />
+  <widget name="searchchar" position="window_searchbar_pos" size="window_searchbar_size" valign="center" halign="center" zPosition="100" backgroundColor="windowBackgroundSecond" transparent="0" font="SetrixHD;140" foregroundColor="foreground" />
   <!-- Right Panel (Right Side) -->
   <widget alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   
   <!-- EpgShare Image -->
-  <widget backgroundColor="background_second" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3"/>
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3"/>
 
   <widget source="ServiceEvent" backgroundColor="windowBackground" position="1720,0" size="200,50" font="font_standard_small" foregroundColor="foreground" halign="left" valign="center" render="Label">
     <convert type="MetrixReloadedExtEventEPG">ImageId</convert>
   </widget>
   
-  <widget source="ServiceEvent" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="background_second" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+  <widget source="ServiceEvent" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
   
-  <widget source="ServiceEvent" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="ServiceEvent" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText"></convert>
   </widget>
-  <widget source="ServiceEvent" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="ServiceEvent" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
@@ -955,10 +955,10 @@
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="ServiceEvent" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget source="ServiceEvent" position="window_epg_desc_pos" zPosition="1" size="622,360" font="font_standard_small" foregroundColor="foreground" backgroundColor="background_second" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <widget source="ServiceEvent" position="window_epg_desc_pos" zPosition="1" size="622,360" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="EventName">FullDescription</convert>
   </widget>
-  <widget name="epglist" backgroundColorRows="background_second" backgroundColorSelected="windowBackground" position="1216,818" zPosition="10" size="622,96" itemHeight="32" backgroundColor="background_second" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="epglist" backgroundColorRows="windowBackgroundSecond" backgroundColorSelected="windowBackground" position="1216,818" zPosition="10" size="622,96" itemHeight="32" backgroundColor="windowBackgroundSecond" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- List: über Parameters -->
   <!-- Fonts: EPGListChannelList0, EPGListChannelList1 -->
   <!-- Remote Buttons -->
@@ -1044,7 +1044,7 @@
 	  halign="center" 
 	  foregroundColor="foreground" 
 	  transparent="1" 
-	  backgroundColor="background_second" />-->
+	  backgroundColor="windowBackgroundSecond" />-->
   <eLabel text="ChoiceBox" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="850,725" />
 </screen>
 <parameters name="ChoiceBox_parameters">
@@ -1110,7 +1110,7 @@
   <widget name="ServiceList" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_small_list_bottom_pos" size="window_small_list_size" backgroundColor="windowMainColorL" itemHeight="50" font="font_list" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" />
-  <widget source="ServiceList_info" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="background_second" transparent="1" />
+  <widget source="ServiceList_info" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -1157,10 +1157,11 @@
 <colors>
   <!-- Color Definitionen -->
   <color name="background" value="#2d000000" />
-  <color name="background_second" value="#1227408b" />
+  <color name="backgroundSecond" value="#1227408b" />
   
   <!-- Color Zuweisungen -->
   <color name="windowBackground" value="background" />
+  <color name="windowBackgroundSecond" value="backgroundSecond" />
 
 
   <color name="black" value="#00000000" />
@@ -1181,7 +1182,7 @@
   <color name="listBackgroundBarsTwo" value="background" />
   <color name="listForeground" value="#00ffffff" />
   <color name="listForegroundTwo" value="#10535355" />
-  <color name="listSelectedBackground" value="background_second" />
+  <color name="listSelectedBackground" value="backgroundSecond" />
   <color name="listSelectedForeground" value="foreground" />
   <color name="NumericalHelpDialogBg" value="#05231f20" />
   <color name="orange" value="#00ffa500" />
@@ -1276,7 +1277,7 @@
   </constant-widget>
   <constant-widget name="background_window">
     <eLabel backgroundColor="windowBackground" position="60,37" size="1132,975" zPosition="-10" />
-    <eLabel backgroundColor="background_second" position="1192,90" size="667,870" zPosition="-10" />
+    <eLabel backgroundColor="windowBackgroundSecond" position="1192,90" size="667,870" zPosition="-10" />
   </constant-widget>
   <constant-widget name="background_infoBar">
     <eLabel backgroundColor="windowBackground" position="0,800" size="1920,280" zPosition="-10" />
@@ -1285,7 +1286,7 @@
     <eLabel backgroundColor="windowBackground" position="0,858" size="1920,280" zPosition="-10" />
   </constant-widget>
   <constant-widget name="background_contextMenu">
-    <eLabel backgroundColor="background_second" position="0,0" size="1050,60" zPosition="-10" />
+    <eLabel backgroundColor="windowBackgroundSecond" position="0,0" size="1050,60" zPosition="-10" />
     <eLabel backgroundColor="windowBackground" position="0,60" size="1050,690" zPosition="-10" />
   </constant-widget>
 
@@ -1372,21 +1373,21 @@
 
   <!-- Meine Clocks-->
   <constant-widget name="clock_menu">
-    <widget backgroundColor="background_second" font="font_menu_time" halign="right" position="1660,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
+    <widget backgroundColor="windowBackgroundSecond" font="font_menu_time" halign="right" position="1660,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="background_second" font="font_menu_date" halign="right" position="1620,99" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="windowBackgroundSecond" font="font_menu_date" halign="right" position="1620,99" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%a %e. %B</convert>
     </widget>
-    <eLabel backgroundColor="background_second" position="1620,42" size="237,100" zPosition="-10" />
+    <eLabel backgroundColor="windowBackgroundSecond" position="1620,42" size="237,100" zPosition="-10" />
     <!-- CPU Usage -->
-    <eLabel backgroundColor="background_second" position="1620,170" size="237,70" zPosition="-10" />
-    <eLabel text="CPU" backgroundColor="background_second" position="1635,170" size="100,70" font="font_standard_small" halign="left" valign="top" transparent="1" />
-    <widget source="Title" backgroundColor="background_second" render="Label" font="font_standard_small" position="1782,170" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
+    <eLabel backgroundColor="windowBackgroundSecond" position="1620,170" size="237,70" zPosition="-10" />
+    <eLabel text="CPU" backgroundColor="windowBackgroundSecond" position="1635,170" size="100,70" font="font_standard_small" halign="left" valign="top" transparent="1" />
+    <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1782,170" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="MetrixReloadedCpuUsage">$0</convert>
     </widget>
     <!-- System Temperatur -->
-    <widget source="Title" backgroundColor="background_second" render="Label" font="font_standard_small" position="1782,200" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
+    <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1782,200" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="MetrixReloadedTempFanInfo">TempInfo</convert>
     </widget>
   </constant-widget>
@@ -1407,13 +1408,13 @@
     </widget>
   </constant-widget>
   <constant-widget name="clock_infoBar">
-    <widget backgroundColor="background_second" font="font_menu_time" halign="right" position="1660,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
+    <widget backgroundColor="windowBackgroundSecond" font="font_menu_time" halign="right" position="1660,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="background_second" font="font_menu_date" halign="right" position="1620,99" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="windowBackgroundSecond" font="font_menu_date" halign="right" position="1620,99" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%a %e. %B</convert>
     </widget>
-    <eLabel backgroundColor="background_second" position="1620,42" size="237,100" zPosition="-10" />
+    <eLabel backgroundColor="windowBackgroundSecond" position="1620,42" size="237,100" zPosition="-10" />
   </constant-widget>
 
   <!-- Meine Seperators-->
@@ -1442,7 +1443,7 @@
     <widget source="Title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowMainColorL" transparent="1" noWrap="1"/>
   </constant-widget>
   <constant-widget name="Title_contextMenu">
-    <widget source="Title" render="Label" position="contextMenu_title_pos" size="contextMenu_title_size" font="font_contextMenu_title" backgroundColor="background_second" transparent="1"  noWrap="1"/>
+    <widget source="Title" render="Label" position="contextMenu_title_pos" size="contextMenu_title_size" font="font_contextMenu_title" backgroundColor="windowBackgroundSecond" transparent="1"  noWrap="1"/>
   </constant-widget>
   <constant-widget name="Title_graphMultiEpg_Fullscreen">
     <widget foregroundColor="foreground" backgroundColor="windowBackground" font="font_window_title" halign="left" position="60,5" size="window_title_size" render="clearFavName" source="Title" transparent="1"  />
@@ -1825,7 +1826,7 @@
   <widget name="list" position="window_list_pos" size="window_list_setup_size" itemHeight="50" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <widget name="cover" position="1338,110" size="375,562" alphatest="blend" />
-  <widget name="searchinfo" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1" />
+  <widget name="searchinfo" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_name" />
@@ -2153,7 +2154,7 @@
   <widget name="ServiceList" position="window_list_pos" size="window_list_setup_size" font="font_list" itemHeight="50" zPosition="1" scrollbarMode="showOnDemand" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" />
-  <widget source="ServiceList_info" render="Label" position="window_desc_pos" size="window_desc_size" zPosition="2" font="font_standard" halign="center" valign="center" backgroundColor="background_second" transparent="1" />
+  <widget source="ServiceList_info" render="Label" position="window_desc_pos" size="window_desc_size" zPosition="2" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" />
   <widget source="ServiceList_desc" render="Label" position="233,300" size="825,33" font="Regular;30" backgroundColor="windowBackground" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
@@ -2196,8 +2197,8 @@
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
-  <widget source="configdesc" render="Label" zPosition="10" foregroundColor="foreground" font="font_standard" position="window_desc_pos" size="window_desc_size" halign="center" valign="center" transparent="1" backgroundColor="background_second" />
-  <widget name="status" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="background_second" foregroundColor="foreground" transparent="1" />
+  <widget source="configdesc" render="Label" zPosition="10" foregroundColor="foreground" font="font_standard" position="window_desc_pos" size="window_desc_size" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <widget name="status" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -2217,7 +2218,7 @@
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
-  <widget source="help" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="background_second" foregroundColor="foreground" transparent="1" />
+  <widget source="help" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/epg.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
@@ -2296,16 +2297,16 @@
   </widget>
 
   <!-- EpgShare Image -->
-  <widget backgroundColor="background_second" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3"/>
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3"/>
   
-  <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="background_second" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+  <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText" />
   </widget>
-  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText" />
   </widget>
@@ -2313,7 +2314,7 @@
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget font="font_standard_small" backgroundColor="background_second" transparent="1" position="window_epg_desc_pos" size="622,475" source="Event" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_epg_desc_pos" size="622,475" source="Event" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <!-- Remote Buttons -->
@@ -2379,14 +2380,14 @@
   <widget alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="background_second" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+  <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText"></convert>
   </widget>
-  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
@@ -2394,7 +2395,7 @@
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget source="Event" position="window_epg_desc_pos" zPosition="1" size="622,475" font="font_standard_small" foregroundColor="foreground" backgroundColor="background_second" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <widget source="Event" position="window_epg_desc_pos" zPosition="1" size="622,475" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <!-- Remote Buttons -->
@@ -2430,13 +2431,13 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/left.png" position="1270,494" size="36,36" transparent="1" zPosition="10" />
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/right.png" position="1718,494" size="36,36" transparent="1" zPosition="10" />
   
-  <widget backgroundColor="background_second" font="SetrixHD;40" halign="center" name="channel" position="1274,350" size="480,75" transparent="1" />
-  <widget backgroundColor="background_second" font="SetrixHD;36" halign="center" name="datetime" position="1309,485" size="405,60" transparent="1" />
+  <widget backgroundColor="windowBackgroundSecond" font="SetrixHD;40" halign="center" name="channel" position="1274,350" size="480,75" transparent="1" />
+  <widget backgroundColor="windowBackgroundSecond" font="SetrixHD;36" halign="center" name="datetime" position="1309,485" size="405,60" transparent="1" />
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="1325,437" size="382,1" />
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="1325,435" render="Progress" size="382,5" source="session.Event_Now" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget backgroundColor="background_second" font="SetrixHD;36" halign="center" name="duration" position="1309,568" size="405,60" transparent="1" />
+  <widget backgroundColor="windowBackgroundSecond" font="SetrixHD;36" halign="center" name="duration" position="1309,568" size="405,60" transparent="1" />
   <!-- Icons -->
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nosubtitles.png" position="1282,690" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="1">
     <convert type="ServiceInfo">SubservicesAvailable</convert>
@@ -2532,7 +2533,7 @@
   <widget name="filelist" position="80,350" size="1128,500" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
-  <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="background_second" transparent="1" valign="center" halign="center" />
+  <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" valign="center" halign="center" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -2553,7 +2554,7 @@
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
-  <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="background_second" transparent="1" foregroundColor="foreground" />
+  <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground" />
   <!-- Buttons -->
   <!--<constant-widget name="color_buttons_window" />-->
   <eLabel text="FastScanScreen" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
@@ -2570,7 +2571,7 @@
   <!-- Left Panel (Left Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/dvbs.png" position="180,200" size="220,96" transparent="1" zPosition="2" />
   <widget name="scan_state" position="180,315" size="900,45" font="font_standard" backgroundColor="windowBackground" transparent="1" />
-  <widget borderColor="foreground" foregroundColor="background_second" borderWidth="1" name="scan_progress" position="180,375" size="900,22" transparent="1" />
+  <widget borderColor="foreground" foregroundColor="windowBackgroundSecond" borderWidth="1" name="scan_progress" position="180,375" size="900,22" transparent="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
   <eLabel text="FastScanStatus" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
@@ -2718,7 +2719,7 @@
   <widget name="filelist" position="window_list_pos" size="window_list_setup_size" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" alphatest="blend" transparent="1" />
-  <widget name="current_selection" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="background_second" transparent="1" valign="center" halign="center" />
+  <widget name="current_selection" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" valign="center" halign="center" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -2830,7 +2831,7 @@
   scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
 
   <!-- GraphEPG Zoom-->
-  <widget name="zoom" position="0,0" size="0,0" zPosition="5" font="SetrixHD;26" backgroundColor="background_second" />
+  <widget name="zoom" position="0,0" size="0,0" zPosition="5" font="SetrixHD;26" backgroundColor="windowBackgroundSecond" />
   <widget name="zoomBack" position="0,0" size="600,0" zPosition="4" font="SetrixHD;26" backgroundColor="windowBackground" />
 
   <!-- Timelines-->
@@ -2944,7 +2945,7 @@
 
   <!-- ProgressBar-->
   <eLabel backgroundColor="accent1" foregroundColor="accent1" position="1600,125" size="250,1" />
-  <widget foregroundColor="background_second" position="1600,123" render="Progress" size="250,5" source="session.Event_Now" transparent="1" zPosition="7">
+  <widget foregroundColor="windowBackgroundSecond" position="1600,123" render="Progress" size="250,5" source="session.Event_Now" transparent="1" zPosition="7">
     <convert type="EventTime">Progress</convert>
   </widget>
   <widget backgroundColor="windowMainColorL" foregroundColor="foreground" font="font_second_standard_small" transparent="1" position="630,140" render="Label" size="1232,268" source="Event" valign="top" zPosition="1">
@@ -3008,7 +3009,7 @@
   scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
 
   <!-- GraphEPG Zoom-->
-  <widget name="zoom" position="0,0" size="0,0" zPosition="5" font="SetrixHD;26" backgroundColor="background_second" />
+  <widget name="zoom" position="0,0" size="0,0" zPosition="5" font="SetrixHD;26" backgroundColor="windowBackgroundSecond" />
   <widget name="zoomBack" position="0,0" size="600,0" zPosition="4" font="SetrixHD;26" backgroundColor="windowBackground" />
 
   <!-- Timelines-->
@@ -3021,15 +3022,15 @@
   <widget alphatest="on" name="timeline_now" position="103,170" size="2,740" pixmap="MetrixReloaded/media/timeline_now.png" zPosition="2" />
 
   <!-- Right Panel (Right Side) -->
-  <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="background_second" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+  <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
 
-  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText" />
   </widget>
-  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText" />
   </widget>
@@ -3042,7 +3043,7 @@
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
 
-  <widget font="font_standard_small" backgroundColor="background_second" transparent="1" position="window_epg_desc_pos" size="622,475" source="Event" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_epg_desc_pos" size="622,475" source="Event" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
 
@@ -3105,7 +3106,7 @@
   scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
 
   <!-- GraphEPG Zoom-->
-  <widget name="zoom" position="0,0" size="0,0" zPosition="5" font="SetrixHD;26" backgroundColor="background_second" />
+  <widget name="zoom" position="0,0" size="0,0" zPosition="5" font="SetrixHD;26" backgroundColor="windowBackgroundSecond" />
   <widget name="zoomBack" position="0,0" size="600,0" zPosition="4" font="SetrixHD;26" backgroundColor="windowBackground" />
 
   <!-- Timelines-->
@@ -3118,15 +3119,15 @@
   <widget alphatest="on" name="timeline_now" position="103,170" size="2,740" pixmap="MetrixReloaded/media/timeline_now.png" zPosition="2" />
 
   <!-- Right Panel (Right Side) -->
-  <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="background_second" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+  <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
 
-  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText" />
   </widget>
-  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText" />
   </widget>
@@ -3139,7 +3140,7 @@
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
 
-  <widget font="font_standard_small" backgroundColor="background_second" transparent="1" position="window_epg_desc_pos" size="622,475" source="Event" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_epg_desc_pos" size="622,475" source="Event" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
 
@@ -3162,7 +3163,7 @@
 	<color name="graph_multi_epg_rec" value="#00922527" /> <!--  GraphMulitEPG Record  -->
   <color name="graph_multi_epg_pre_rec" value="#00ffff00" /> <!--  GraphMulitEPG Pre / Post Record  -->
 	<color name="graph_multi_epg_primeTime" value="#006c0aab" /> <!--  PrimeTime Color  -->
-	<color name="graph_multi_epg_selected" value="background_second" /> <!--  GraphMulitEPG Selection  -->
+	<color name="graph_multi_epg_selected" value="windowBackgroundSecond" /> <!--  GraphMulitEPG Selection  -->
 
 
 </colors>
@@ -3261,7 +3262,7 @@
   </widget>
   <!-- ProgressBar-->
   <eLabel backgroundColor="accent1" foregroundColor="accent1" position="410,923" size="1448,1" />
-  <widget foregroundColor="background_second" position="410,921" render="Progress" size="1448,5" source="session.Event_Now" transparent="1" zPosition="7">
+  <widget foregroundColor="windowBackgroundSecond" position="410,921" render="Progress" size="1448,5" source="session.Event_Now" transparent="1" zPosition="7">
     <convert type="EventTime">Progress</convert>
   </widget>
   <!-- Next: Title, Subtitle, Times -->
@@ -3470,10 +3471,10 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="activityslider" position="105,150" size="1050,22" backgroundColor="windowBackground" borderWidth="2" borderColor="foreground" foregroundColor="background_second" />
+  <widget name="activityslider" position="105,150" size="1050,22" backgroundColor="windowBackground" borderWidth="2" borderColor="foreground" foregroundColor="windowBackgroundSecond" />
   <widget name="package" position="105,192" size="1050,45" font="font_standard" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="status" position="105,255" size="1050,80" font="font_standard" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="slider" position="105,392" size="1050,30" backgroundColor="windowBackground" borderWidth="2" borderColor="foreground" foregroundColor="background_second" />
+  <widget name="slider" position="105,392" size="1050,30" backgroundColor="windowBackground" borderWidth="2" borderColor="foreground" foregroundColor="windowBackgroundSecond" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/paket.png" position="window_image_pos" size="window_image_size" />
   <!-- TODO: Layout anpassen -->
@@ -3882,7 +3883,7 @@
 </screen>
 <screen name="MessageBox" title="Message" position="510,0" size="900,1080" flags="wfNoBorder" backgroundColor="windowBackground">
   <!-- Background Title -->
-  <eLabel position="0,0" size="900,60" backgroundColor="background_second" zPosition="-1" />
+  <eLabel position="0,0" size="900,60" backgroundColor="windowBackgroundSecond" zPosition="-1" />
   <!-- Title -->
   <widget source="Title" render="Label" position="75,0" valign="center" size="825,60" font="font_contextMenu_title" transparent="1" />
   <!-- Title Seperator -->
@@ -3946,8 +3947,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <eLabel text="MessageBoxConfirmCode" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1088,898" />
 </screen>
 <screen name="MinuteInput" backgroundColor="transparent" position="center,center" size="420,90" title="Seek">
-  <eLabel backgroundColor="background_second" position="0,0" size="420,90" zPosition="-1" />
-  <widget name="minutes" backgroundColor="background_second" position="0,15" size="420,60" halign="center" valign="center" font="Bold;70" />
+  <eLabel backgroundColor="windowBackgroundSecond" position="0,0" size="420,90" zPosition="-1" />
+  <widget name="minutes" backgroundColor="windowBackgroundSecond" position="0,15" size="420,60" halign="center" valign="center" font="Bold;70" />
 </screen>
 <screen name="MMIDialog" position="center,center" size="675,405">
   <widget name="title" position="15,15" size="645,38" font="Regular; 34" backgroundColor="windowBackground" />
@@ -4033,7 +4034,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     <convert type="ServicePosition">Gauge</convert>
   </widget>
   <eLabel backgroundColor="accent1" foregroundColor="accent1" position="510,963" size="1228,1" />
-  <widget foregroundColor="background_second" position="510,961" render="Progress" size="1228,5" source="session.CurrentService" transparent="1" zPosition="4">
+  <widget foregroundColor="windowBackgroundSecond" position="510,961" render="Progress" size="1228,5" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServicePosition">Position</convert>
   </widget>
   <!-- verbleibende Zeit-->
@@ -4064,18 +4065,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="waitingtext" position="105,190" size="1050,710" zPosition="4" font="font_standard" backgroundColor="windowMainColorL" halign="center" valign="center" />
 
   <!-- Right Panel (Right Side) -->
-  <widget source="Service" render="Cover" position="1216,118" zPosition="4" size="173,260" backgroundColor="background_second" alphatest="blend" />
+  <widget source="Service" render="Cover" position="1216,118" zPosition="4" size="173,260" backgroundColor="windowBackgroundSecond" alphatest="blend" />
   <widget alphatest="blend" position="1450,138" render="XHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
     <convert type="MovieInfo">Reference</convert>
   </widget>
-  <widget source="Service" render="Label" position="1216,380" zPosition="1" size="window_epg_name_size" font="font_epg_name" backgroundColor="background_second" transparent="1">
+  <widget source="Service" render="Label" position="1216,380" zPosition="1" size="window_epg_name_size" font="font_epg_name" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="MovieInfo">ShortDescription</convert>
   </widget>
-  <widget source="Service" render="Label" position="1216,420" zPosition="1" size="100,34" font="font_standard_small" halign="left" backgroundColor="background_second" transparent="1">
+  <widget source="Service" render="Label" position="1216,420" zPosition="1" size="100,34" font="font_standard_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="ServiceTime">Duration</convert>
     <convert type="ClockToText">AsLength</convert>
   </widget>  
-  <widget source="Service" render="Label" position="1216,469" size="622,445" font="font_standard_small" backgroundColor="background_second" transparent="1">
+  <widget source="Service" render="Label" position="1216,469" size="622,445" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
 
@@ -4227,10 +4228,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap pixmap="skin_default/buttons/key_1.png" zPosition="1" position="1216,780" size="35,25" alphatest="on" />
   <ePixmap pixmap="skin_default/buttons/key_2.png" zPosition="1" position="1216,840" size="35,25" alphatest="on" />
   <ePixmap pixmap="skin_default/buttons/key_3.png" zPosition="1" position="1216,900" size="35,25" alphatest="on" />
-  <widget name="key_0" foregroundColor="foreground" backgroundColor="background_second" zPosition="1" position="1256,712" size="390,30" font="font_standard_small" halign="left" valign="top" transparent="1" />
-  <widget name="key_1" foregroundColor="foreground" backgroundColor="background_second" zPosition="1" position="1256,772" size="335,30" font="font_standard_small" halign="left" valign="top" transparent="1" />
-  <widget name="key_2" foregroundColor="foreground" backgroundColor="background_second" zPosition="1" position="1256,832" size="335,30" font="font_standard_small" halign="left" valign="top" transparent="1" />
-  <widget name="key_3" foregroundColor="foreground" backgroundColor="background_second" zPosition="1" position="1256,829" size="335,30" font="font_standard_small" halign="left" valign="top" transparent="1" />
+  <widget name="key_0" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" zPosition="1" position="1256,712" size="390,30" font="font_standard_small" halign="left" valign="top" transparent="1" />
+  <widget name="key_1" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" zPosition="1" position="1256,772" size="335,30" font="font_standard_small" halign="left" valign="top" transparent="1" />
+  <widget name="key_2" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" zPosition="1" position="1256,832" size="335,30" font="font_standard_small" halign="left" valign="top" transparent="1" />
+  <widget name="key_3" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" zPosition="1" position="1256,829" size="335,30" font="font_standard_small" halign="left" valign="top" transparent="1" />
   <eLabel text="MultiQuickButton" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>
 <screen name="MultiQuickButtonMacro" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -4276,7 +4277,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="filelist" position="window_list_pos" size="window_list_setup_size" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" />
-  <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="background_second" transparent="1" valign="center" halign="center" />
+  <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" valign="center" halign="center" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -4301,7 +4302,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="list" position="window_list_pos" backgroundColorRows="listBackgroundBarsOne" size="window_list_setup_size" zPosition="3" backgroundColor="windowMainColorL" colorServiceDescription="gray" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="60" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="foreground" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" />
-  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" zPosition="10" font="font_standard" halign="center" valign="center" backgroundColor="background_second" transparent="1" foregroundColor="foreground" />
+  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" zPosition="10" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -4368,7 +4369,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   </widget>
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
-  <widget name="searchchar" position="window_searchbar_pos" size="window_searchbar_size" valign="center" halign="center" zPosition="100" backgroundColor="background_second" transparent="0" font="SetrixHD;140" foregroundColor="foreground" />
+  <widget name="searchchar" position="window_searchbar_pos" size="window_searchbar_size" valign="center" halign="center" zPosition="100" backgroundColor="windowBackgroundSecond" transparent="0" font="SetrixHD;140" foregroundColor="foreground" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_name" />
@@ -4803,7 +4804,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 </screen>
 <screen name="NumberZapWithName" position="center,center" size="1920,1080" title="Kanal" backgroundColor="transparent">
   <!-- Background Title -->
-  <eLabel position="600,390" size="720,60" backgroundColor="background_second" zPosition="-1" />
+  <eLabel position="600,390" size="720,60" backgroundColor="windowBackgroundSecond" zPosition="-1" />
   <!-- Title -->
   <widget name="servicename" position="620,390" size="680,60" font="font_contextMenu_title" halign="left" valign="center" foregroundColor="foreground" transparent="1" />
   <!-- Title Seperator -->
@@ -4889,12 +4890,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" zPosition="10" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" />
-  <widget name="info_txt" position="window_desc_pos" size="window_desc_size" valign="center" halign="center" zPosition="2" foregroundColor="foreground" font="font_standard" backgroundColor="background_second" transparent="1" />
+  <widget name="info_txt" position="window_desc_pos" size="window_desc_size" valign="center" halign="center" zPosition="2" foregroundColor="foreground" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
-  <widget name="buttonred" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="center" backgroundColor="background_second" transparent="1" />
-  <widget name="buttongreen" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="center" backgroundColor="background_second" transparent="1" />
-  <widget name="buttonblue" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="center" backgroundColor="background_second" transparent="1" />
+  <widget name="buttonred" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget name="buttongreen" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget name="buttonblue" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" />
   <eLabel text="OscamButler" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>
 <output id="0">
@@ -5274,7 +5275,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 </screen>
 <screen name="PVRState" backgroundColor="transparent" flags="wfNoBorder" position="center,185" size="960,615" zPosition="2">
   <!-- Play, Pause, Zeiten Spulen -->
-  <widget backgroundColor="background_second" font="Bold;105" name="state" position="188,222" size="585,150" halign="center" valign="center" zPosition="5" />
+  <widget backgroundColor="windowBackgroundSecond" font="Bold;105" name="state" position="188,222" size="585,150" halign="center" valign="center" zPosition="5" />
 </screen>
 <screen name="QuadPiPChannelSelection" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -5549,7 +5550,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   </widget>
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
-  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="background_second" transparent="1" foregroundColor="foreground" />
+  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -5616,7 +5617,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
-  <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" backgroundColor="background_second" />
+  <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <eLabel text="ScanSetup" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>
 <screen name="ScanSimple" position="center,center" size="1920,1080" title="Service Scan" flags="wfNoBorder" backgroundColor="transparent">
@@ -5632,7 +5633,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
-  <widget name="footer" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" backgroundColor="background_second" />
+  <widget name="footer" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <eLabel text="ScanSimple" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>
 <screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1920,800" title="SecondInfoBar" backgroundColor="transparent" animationMode="disable">
@@ -5909,8 +5910,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="SkinList" position="window_list_pos" size="window_list_setup_size" textOffset="5,0" font="font_list" itemHeight="50" backgroundColor="windowMainColorL" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <widget name="Preview" position="window_image_pos" size="window_image_size" alphatest="blend" backgroundColor="background_second" />
-  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" zPosition="10" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background_second" transparent="1" />
+  <widget name="Preview" position="window_image_pos" size="window_image_size" alphatest="blend" backgroundColor="windowBackgroundSecond" />
+  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" zPosition="10" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/epg.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
@@ -5941,7 +5942,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="blue_text" position="145,490" size="900,45" valign="center" font="font_standard" backgroundColor="windowMainColorL" transparent="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/shutdowntimer.png" position="window_image_pos" size="window_image_size" />
-  <widget name="current_status" position="window_desc_pos" size="window_desc_size" halign="center" valign="center" font="font_standard" backgroundColor="background_second" transparent="1" />
+  <widget name="current_status" position="window_desc_pos" size="window_desc_size" halign="center" valign="center" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
   <eLabel text="SleepTimerEdit" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>
 <screen backgroundColor="accentColorTwo" flags="wfNoBorder" name="SplitScreen" position="0,0" size="1920,1080" zPosition="-1">
@@ -5981,7 +5982,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="sclist" position="window_list_pos" size="window_list_setup_size" zPosition="3" backgroundColor="windowMainColorL" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
-  <widget name="infomation" position="window_desc_pos" zPosition="1" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background_second" transparent="1" />
+  <widget name="infomation" position="window_desc_pos" zPosition="1" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -6159,14 +6160,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="ServiceEvent" alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="ServiceEvent" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="background_second" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+  <widget source="ServiceEvent" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText"></convert>
   </widget>
-  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" transparent="1">
+  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
@@ -6174,7 +6175,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="Event" backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget source="Event" position="window_epg_desc_pos" zPosition="1" size="622,460" font="font_standard_small" foregroundColor="foreground" backgroundColor="background_second" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <widget source="Event" position="window_epg_desc_pos" zPosition="1" size="622,460" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <!-- Remote Buttons -->
@@ -6200,7 +6201,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
-  <widget source="configdesc" render="Label" foregroundColor="foreground" font="font_standard" size="window_desc_size" position="window_desc_pos" transparent="1" backgroundColor="background_second" />
+  <widget source="configdesc" render="Label" foregroundColor="foreground" font="font_standard" size="window_desc_size" position="window_desc_pos" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <widget name="canceltext" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowMainColorH" transparent="1" />
@@ -6220,7 +6221,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="loglist" position="window_list_pos" size="window_list_setup_size" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
-  <widget name="logentry" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="background_second" halign="center" valign="center" transparent="1" />
+  <widget name="logentry" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_name" />
@@ -6266,7 +6267,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <eLabel backgroundColor="windowBackground" position="0,548" size="960,70" zPosition="-1" />
   
   <!-- Play, Pause, Zeiten Spulen -->
-  <widget backgroundColor="background_second" font="Bold;105" name="state" position="188,222" size="585,150" halign="center" valign="center" zPosition="5" />
+  <widget backgroundColor="windowBackgroundSecond" font="Bold;105" name="state" position="188,222" size="585,150" halign="center" valign="center" zPosition="5" />
 
   <!-- Position left/right of ProgressBar-->
   <widget backgroundColor="windowBackground" font="font_standard" halign="right" position="7,567" render="Label" size="110,40" source="session.CurrentService" transparent="1">
@@ -6278,7 +6279,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 
   <!-- ProgressBar -->
   <eLabel backgroundColor="accent1" foregroundColor="accent1" position="135,586" size="690,1" />
-  <widget position="135,584" render="Progress" foregroundColor="background_second" size="690,5" source="session.CurrentService" transparent="1" zPosition="7">
+  <widget position="135,584" render="Progress" foregroundColor="windowBackgroundSecond" size="690,5" source="session.CurrentService" transparent="1" zPosition="7">
     <convert type="ServicePosition">Position</convert>
   </widget>
 
@@ -6314,7 +6315,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
-  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="background_second" foregroundColor="foreground" transparent="1" />
+  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <widget source="text" render="Label" position="35,820" size="1740,40" font="Regular;34" valign="center" halign="center" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
@@ -6394,8 +6395,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title -->
   <eLabel backgroundColor="windowBackground" font="font_window_title" position="30,980" size="453,79" text="Software Update..." transparent="1" />
   <!-- ProgressBars -->
-  <widget borderWidth="1" name="activityslider" position="535,1012" size="1355,20" borderColor="foreground" foregroundColor="background_second" transparent="1" />
-  <widget borderWidth="1" name="slider" position="535,1040" size="1355,20" transparent="1" borderColor="foreground" foregroundColor="background_second" />
+  <widget borderWidth="1" name="activityslider" position="535,1012" size="1355,20" borderColor="foreground" foregroundColor="windowBackgroundSecond" transparent="1" />
+  <widget borderWidth="1" name="slider" position="535,1040" size="1355,20" transparent="1" borderColor="foreground" foregroundColor="windowBackgroundSecond" />
   <widget backgroundColor="windowBackground" font="font_standard" foregroundColor="foreground" position="535,960" render="Label" size="1355,45" source="status" transparent="1" />
   <eLabel text="UpdatePlugin" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>
@@ -6413,7 +6414,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="config" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
-  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="background_second" foregroundColor="foreground" transparent="1" />
+  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <widget name="HelpWindow" pixmap="MetrixReloaded/vkey_icon.png" position="627,20" zPosition="1" size="1,1" transparent="1" alphatest="on" />
   <eLabel text="UserDialog" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>
@@ -6440,7 +6441,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   </widget>
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
-  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="background_second" transparent="1" />
+  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -6633,7 +6634,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
-  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="background_second" foregroundColor="foreground" transparent="1" />
+  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -6923,7 +6924,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   </widget>
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
-  <widget source="info" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="foreground" transparent="1" backgroundColor="background_second" />
+  <widget source="info" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="foreground" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -6967,7 +6968,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="menulist" position="window_list_pos" size="window_list_setup_size" font="font_list" itemHeight="40" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" />
-  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" halign="center" valign="center" transparent="1" />
+  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -6988,7 +6989,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="menulist" position="window_list_pos" size="window_list_setup_size" font="font_list" itemHeight="40" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" />
-  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" halign="center" valign="center" transparent="1" />
+  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
@@ -7037,7 +7038,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
-  <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="background_second" halign="center" valign="center" transparent="1" />
+  <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />

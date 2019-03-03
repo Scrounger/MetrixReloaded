@@ -11,8 +11,8 @@
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
-  <widget source="configdesc" render="Label" zPosition="10" foregroundColor="foreground" font="font_standard" position="window_desc_pos" size="window_desc_size" halign="center" valign="center" transparent="1" backgroundColor="background_second" />
-  <widget name="status" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="background_second" foregroundColor="foreground" transparent="1" />
+  <widget source="configdesc" render="Label" zPosition="10" foregroundColor="foreground" font="font_standard" position="window_desc_pos" size="window_desc_size" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <widget name="status" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />

@@ -31,7 +31,7 @@
 
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
-  <widget source="introduction2" render="Label" position="window_desc_pos" size="window_desc_size" foregroundColor="foreground" font="font_standard" halign="center" transparent="1" backgroundColor="background_second" />
+  <widget source="introduction2" render="Label" position="window_desc_pos" size="window_desc_size" foregroundColor="foreground" font="font_standard" halign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->

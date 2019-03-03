@@ -1,6 +1,6 @@
 ﻿<screen name="MessageBox" title="Message" position="510,0" size="900,1080" flags="wfNoBorder" backgroundColor="windowBackground">
   <!-- Background Title -->
-  <eLabel position="0,0" size="900,60" backgroundColor="background_second" zPosition="-1" />
+  <eLabel position="0,0" size="900,60" backgroundColor="windowBackgroundSecond" zPosition="-1" />
   <!-- Title -->
   <widget source="Title" render="Label" position="75,0" valign="center" size="825,60" font="font_contextMenu_title" transparent="1" />
   <!-- Title Seperator -->

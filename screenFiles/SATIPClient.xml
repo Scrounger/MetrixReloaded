@@ -26,7 +26,7 @@
   </widget>
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
-  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="background_second" transparent="1" foregroundColor="foreground" />
+  <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />

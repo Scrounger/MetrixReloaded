@@ -29,7 +29,7 @@
   </widget>
   <!-- ProgressBar-->
   <eLabel backgroundColor="accent1" foregroundColor="accent1" position="410,923" size="1448,1" />
-  <widget foregroundColor="background_second" position="410,921" render="Progress" size="1448,5" source="session.Event_Now" transparent="1" zPosition="7">
+  <widget foregroundColor="windowBackgroundSecond" position="410,921" render="Progress" size="1448,5" source="session.Event_Now" transparent="1" zPosition="7">
     <convert type="EventTime">Progress</convert>
   </widget>
   <!-- Next: Title, Subtitle, Times -->

@@ -19,18 +19,18 @@
   <widget name="waitingtext" position="105,190" size="1050,710" zPosition="4" font="font_standard" backgroundColor="windowMainColorL" halign="center" valign="center" />
 
   <!-- Right Panel (Right Side) -->
-  <widget source="Service" render="Cover" position="1216,118" zPosition="4" size="173,260" backgroundColor="background_second" alphatest="blend" />
+  <widget source="Service" render="Cover" position="1216,118" zPosition="4" size="173,260" backgroundColor="windowBackgroundSecond" alphatest="blend" />
   <widget alphatest="blend" position="1450,138" render="XHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
     <convert type="MovieInfo">Reference</convert>
   </widget>
-  <widget source="Service" render="Label" position="1216,380" zPosition="1" size="window_epg_name_size" font="font_epg_name" backgroundColor="background_second" transparent="1">
+  <widget source="Service" render="Label" position="1216,380" zPosition="1" size="window_epg_name_size" font="font_epg_name" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="MovieInfo">ShortDescription</convert>
   </widget>
-  <widget source="Service" render="Label" position="1216,420" zPosition="1" size="100,34" font="font_standard_small" halign="left" backgroundColor="background_second" transparent="1">
+  <widget source="Service" render="Label" position="1216,420" zPosition="1" size="100,34" font="font_standard_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="ServiceTime">Duration</convert>
     <convert type="ClockToText">AsLength</convert>
   </widget>  
-  <widget source="Service" render="Label" position="1216,469" size="622,445" font="font_standard_small" backgroundColor="background_second" transparent="1">
+  <widget source="Service" render="Label" position="1216,469" size="622,445" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
 

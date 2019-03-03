@@ -1,6 +1,6 @@
 ﻿<screen name="NumberZapWithName" position="center,center" size="1920,1080" title="Kanal" backgroundColor="transparent">
   <!-- Background Title -->
-  <eLabel position="600,390" size="720,60" backgroundColor="background_second" zPosition="-1" />
+  <eLabel position="600,390" size="720,60" backgroundColor="windowBackgroundSecond" zPosition="-1" />
   <!-- Title -->
   <widget name="servicename" position="620,390" size="680,60" font="font_contextMenu_title" halign="left" valign="center" foregroundColor="foreground" transparent="1" />
   <!-- Title Seperator -->
