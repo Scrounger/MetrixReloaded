@@ -1,20 +1,10 @@
 ﻿<fonts>
-  <!-- keep compatiblity -->
-  <font filename="MyriadPro-Semibold.otf" name="Semibold" scale="93" />
-  <font filename="MyriadPro-SemiboldIt.otf" name="Semiboldit" scale="93" />
-  <font filename="MyriadPro-Regular.otf" name="Regular" scale="93" />
-  <font filename="MyriadPro-Semibold.otf" name="Bold" scale="93" />
-  <font filename="MyriadPro-Regular.otf" name="Italic" scale="93" />
-  <font filename="MyriadPro-SemiboldIt.otf" name="BoldItalic" scale="93" />
-  <font filename="MyriadPro-Semibold.otf" name="SimpleBold" scale="93" />
-  <font filename="MyriadPro-Regular.otf" name="SimpleRegular" scale="93" />
-  <font filename="MyriadPro-SemiboldIt.otf" name="HeadLine" scale="93" />
-  <font filename="MyriadPro-Regular.otf" name="TrueType" scale="93" />
+  <!-- Meine Fonts Files-->
+  <font filename="MetrixReloaded/fonts/setrixHD.ttf" name="SetrixHD" scale="100" />
+  <font filename="MetrixReloaded/fonts/setrixHD.ttf" name="Regular" scale="100" />
+  <font filename="MetrixReloaded/fonts/setrixSL.ttf" name="SetrixSL" scale="100" />
   <font filename="MetrixReloaded/fonts/calchux.ttf" name="IconFont01" scale="100" />
-  <font filename="lcd.ttf" name="LCD" scale="100" />
-  <font filename="ae_AlMateen.ttf" name="Replacement" scale="90" replacement="1" />
-  <font filename="tuxtxt.ttf" name="Console" scale="100" />
-  <font filename="nmsbd.ttf" name="Subtitlefont" scale="90" />
+
   <!-- ChoiceBox-->
   <!--<alias name="ChoiceList" font="SetrixHD" size="30" height="50" />-->
   
@@ -36,13 +26,9 @@
   <alias name="HelpMenuList" font="Regular" size="32" height="50" />
   <alias name="SelectionList" font="Regular" size="32" height="50" />
   <alias name="ParentalControlList" font="Regular" size="32" height="50" />
-  <alias name="VirtualKeyboard" font="Bold" size="42" height="50" />
+  <alias name="VirtualKeyboard" font="SetrixHD" size="42" height="50" />
   
-  <!-- Meine Fonts Files-->
-  <font filename="MetrixReloaded/fonts/setrixHD.ttf" name="SetrixHD" scale="100" />
-  <font filename="MetrixReloaded/fonts/setrixSL.ttf" name="SetrixSL" scale="100" />
   <!-- Meine Fonts Definitions-->
-  
   <alias name="font_standard" font="SetrixHD" size="30" />
   <alias name="font_standard_small" font="SetrixHD" size="28" />
   <alias name="font_standard_extra_small" font="SetrixHD" size="24" />
