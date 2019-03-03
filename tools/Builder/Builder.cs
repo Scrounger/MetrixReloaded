@@ -59,6 +59,12 @@ namespace Builder
                 CopyAll(settings.SkinPath, skinPath);
 
                 Console.WriteLine();
+
+                IpkControlFile ipkControlFile = new IpkControlFile(settings.BuildPath, myVersion.Get());
+                ipkControlFile.Generate();
+                Console.WriteLine("Ipk control file created");
+
+                Console.WriteLine();
                 Console.WriteLine("successful finished!");
 
                 Thread.Sleep(5000);

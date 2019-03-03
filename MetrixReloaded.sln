@@ -33,29 +33,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Converter", "Converter", "{0C802B7A-5DF5-48F9-8A6B-47615D06FF3D}"
 	ProjectSection(SolutionItems) = preProject
-		lib\Components\Converter\ScroungerCompareBoolean.py = lib\Components\Converter\ScroungerCompareBoolean.py
-		lib\Components\Converter\ScroungerCompareString.py = lib\Components\Converter\ScroungerCompareString.py
-		lib\Components\Converter\ScroungerCpuUsage.py = lib\Components\Converter\ScroungerCpuUsage.py
-		lib\Components\Converter\ScroungerEventExtractor.py = lib\Components\Converter\ScroungerEventExtractor.py
-		lib\Components\Converter\ScroungerExtEventEPG.py = lib\Components\Converter\ScroungerExtEventEPG.py
-		lib\Components\Converter\ScroungerExtEventName.py = lib\Components\Converter\ScroungerExtEventName.py
-		lib\Components\Converter\ScroungerExtraEventData.py = lib\Components\Converter\ScroungerExtraEventData.py
-		lib\Components\Converter\ScroungerMenuEntryID.py = lib\Components\Converter\ScroungerMenuEntryID.py
-		lib\Components\Converter\ScroungerResolutionIcon.py = lib\Components\Converter\ScroungerResolutionIcon.py
-		lib\Components\Converter\ScroungerServiceInfoEx.py = lib\Components\Converter\ScroungerServiceInfoEx.py
-		lib\Components\Converter\ScroungerTempFanInfo.py = lib\Components\Converter\ScroungerTempFanInfo.py
+		lib\Components\Converter\MetrixReloadedCompareBoolean.py = lib\Components\Converter\MetrixReloadedCompareBoolean.py
+		lib\Components\Converter\MetrixReloadedCompareString.py = lib\Components\Converter\MetrixReloadedCompareString.py
+		lib\Components\Converter\MetrixReloadedCpuUsage.py = lib\Components\Converter\MetrixReloadedCpuUsage.py
+		lib\Components\Converter\MetrixReloadedEventExtractor.py = lib\Components\Converter\MetrixReloadedEventExtractor.py
+		lib\Components\Converter\MetrixReloadedExtEventEPG.py = lib\Components\Converter\MetrixReloadedExtEventEPG.py
+		lib\Components\Converter\MetrixReloadedExtEventName.py = lib\Components\Converter\MetrixReloadedExtEventName.py
+		lib\Components\Converter\MetrixReloadedExtraEventData.py = lib\Components\Converter\MetrixReloadedExtraEventData.py
+		lib\Components\Converter\MetrixReloadedMenuEntryID.py = lib\Components\Converter\MetrixReloadedMenuEntryID.py
+		lib\Components\Converter\MetrixReloadedResolutionIcon.py = lib\Components\Converter\MetrixReloadedResolutionIcon.py
+		lib\Components\Converter\MetrixReloadedServiceInfoEx.py = lib\Components\Converter\MetrixReloadedServiceInfoEx.py
+		lib\Components\Converter\MetrixReloadedTempFanInfo.py = lib\Components\Converter\MetrixReloadedTempFanInfo.py
+		lib\Components\Converter\MetrixReloadedVersion.py = lib\Components\Converter\MetrixReloadedVersion.py
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Renderer", "Renderer", "{6DEDD33A-C54B-4C08-A5E7-CBC96CD5B5D2}"
 	ProjectSection(SolutionItems) = preProject
-		lib\Components\Renderer\ScroungerCover.py = lib\Components\Renderer\ScroungerCover.py
-		lib\Components\Renderer\ScroungerEventImage.py = lib\Components\Renderer\ScroungerEventImage.py
-		lib\Components\Renderer\ScroungerIcon.py = lib\Components\Renderer\ScroungerIcon.py
+		lib\Components\Renderer\MetrixReloadedCover.py = lib\Components\Renderer\MetrixReloadedCover.py
+		lib\Components\Renderer\MetrixReloadedEventImage.py = lib\Components\Renderer\MetrixReloadedEventImage.py
+		lib\Components\Renderer\MetrixReloadedIcon.py = lib\Components\Renderer\MetrixReloadedIcon.py
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{EA8EADFE-01E3-4538-9BCD-24F25340870F}"
 	ProjectSection(SolutionItems) = preProject
-		lib\Tools\ScroungerHelper.py = lib\Tools\ScroungerHelper.py
+		lib\Tools\MetrixReloadedHelper.py = lib\Tools\MetrixReloadedHelper.py
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles", "{AFBFEEF0-2978-44A5-9315-EAC2AAF2771D}"
