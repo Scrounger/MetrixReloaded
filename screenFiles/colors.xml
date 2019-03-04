@@ -6,6 +6,7 @@
   <color name="foreground" value="#00ffffff" />
 
   <color name="black" value="#00000000" />
+  <color name="white" value="#00ffffff" />
   <color name="blue" value="#000064c7" />
   <color name="yellow" value="#00ffff00" />
   <color name="gray" value="#00808080" />
