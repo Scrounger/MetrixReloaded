@@ -1,7 +1,9 @@
 ﻿<screen name="TimerSanityConflict" position="center,center" size="1820,980" title="Timer sanity error" flags="wfNoBorder" backgroundColor="transparent">
+    <!-- Backgrounds -->
+  <constant-widget name="background_window" />
+  
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Timer.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
   <eLabel text="Timer sanity error" position="155,90" size="1620,92" zPosition="3" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
-  <constant-widget name="bg_pic_big" />
   <constant-widget name="clock_big" />
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_name" />

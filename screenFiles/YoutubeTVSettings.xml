@@ -1,6 +1,9 @@
 ﻿<screen name="YoutubeTVSettings" position="center,center" size="1820,980" flags="wfNoBorder" backgroundColor="transparent">
+  <!-- Backgrounds -->
+  <constant-widget name="background_window" />
+  
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="40,72" size="77,77" alphatest="blend" transparent="1" />
-  <constant-widget name="bg_pic_big" />
+
   <constant-widget name="clock_big" />
   <eLabel text="YouTube TV Settings" position="title_big_pos" valign="center" size="title_big_size" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
   <constant-widget name="color_buttons_window" />

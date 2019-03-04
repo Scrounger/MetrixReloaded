@@ -11,24 +11,6 @@
       <convert type="ClockToText"></convert>
     </widget>
   </constant-widget>
-  <constant-widget name="infobar_pic">
-    <ePixmap pixmap="MetrixReloaded/info-bg_mirror.png" position="0,0" zPosition="-2" size="1920,279" />
-  </constant-widget>
-  <constant-widget name="bg_pic_big">
-    <ePixmap pixmap="MetrixReloaded/Bg_List_1820x980_ok.png" position="0,0" size="1820,980" zPosition="-2" alphatest="off" />
-  </constant-widget>
-  <constant-widget name="bg_pic_mid">
-    <ePixmap pixmap="MetrixReloaded/Bg_EPG_view.png" zPosition="-2" position="0,0" size="1288,923" alphatest="off" />
-  </constant-widget>
-  <constant-widget name="epgbar_pic">
-    <ePixmap pixmap="MetrixReloaded/epgbar_bg_same.png" position="0,0" size="1920,440" zPosition="-2" />
-  </constant-widget>
-  <constant-widget name="infobar_media_pic">
-    <ePixmap pixmap="MetrixReloaded/Bg_Media_info.png" position="center,0" zPosition="-2" size="1920,279" />
-  </constant-widget>
-  <constant-widget name="mediaplayer_pic">
-    <ePixmap pixmap="MetrixReloaded/Bg_Media.png" zPosition="-2" position="0,0" size="1290,919" alphatest="on" />
-  </constant-widget>
   <!-- Meine Backgrounds-->
   <constant-widget name="background_menu">
     <eLabel backgroundColor="windowBackground" position="0,0" size="630,1080" zPosition="-10" />

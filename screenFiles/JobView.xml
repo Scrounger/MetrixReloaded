@@ -1,7 +1,10 @@
 ﻿<screen name="JobView" title="Job View" flags="wfNoBorder" position="center,center" size="1288,923" backgroundColor="transparent">
+  <!-- Backgrounds -->
+  <constant-widget name="background_window" />
+  
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Subtitles.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
   <eLabel text="Job View" position="168,100" size="900,65" font="BoldItalic; 52" backgroundColor="windowBackground" transparent="1" />
-  <constant-widget name="bg_pic_mid" />
+
   <constant-widget name="clock_mid" />
   <constant-widget name="color_buttons_window" />
   <widget source="job_name" render="Label" position="127,250" size="1034,64" font="Regular;30" backgroundColor="windowBackground" transparent="1" />

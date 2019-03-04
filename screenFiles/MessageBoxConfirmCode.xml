@@ -1,5 +1,7 @@
 ﻿<screen name="MessageBoxConfirmCode" title="MessageBox" position="center,center" size="1288,923" flags="wfNoBorder" backgroundColor="transparent">
-  <constant-widget name="bg_pic_mid" />
+  <!-- Backgrounds -->
+  <constant-widget name="background_window" />
+  
   <eLabel text="Message" position="title_mid_pos" valign="center" size="title_mid_size" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
   <constant-widget name="clock_mid" />
   <widget alphatest="blend" name="ErrorPixmap" pixmap="MetrixReloaded/media/icons/input_error.png" position="70,94" size="54,54" />

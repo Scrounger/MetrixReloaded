@@ -1,5 +1,6 @@
 ﻿<screen name="LCDdisplayConfig" position="center,center" size="1820,980" flags="wfNoBorder" backgroundColor="transparent" NoAnimationAfter="1">
-  <constant-widget name="bg_pic_big" />
+  <!-- Backgrounds -->
+  <constant-widget name="background_window" />
   <ePixmap pixmap="MetrixReloaded/media/icons/ico_Chlist_title.png" position="40,72" size="84,84" />
   <constant-widget name="clock_big" />
   <constant-widget name="Title_window" />

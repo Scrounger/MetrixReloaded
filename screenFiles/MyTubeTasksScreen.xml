@@ -1,6 +1,9 @@
 ﻿<screen name="MyTubeTasksScreen" flags="wfNoBorder" position="center,center" size="1288,923" title="MyTube - Tasks" backgroundColor="transparent">
+  <!-- Backgrounds -->
+  <constant-widget name="background_window" />
+  
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Subtitles.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <constant-widget name="bg_pic_mid" />
+
   <constant-widget name="clock_mid" />
   <constant-widget name="color_buttons_window" />
   <widget name="key_red" position="key_red_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
