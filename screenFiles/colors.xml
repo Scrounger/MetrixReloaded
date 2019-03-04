@@ -41,13 +41,10 @@
   <color name="infobarBgR" value="#27666769" />
   <color name="infobarBgRLowTrans" value="#10666769" />
   <color name="InfobarFgL" value="#00231f20" />
-  <color name="keyBlueBackground" value="#0018188b" />
 
   <!-- Hintergrundfarbe List jede zweite Zeile -->
 
   <color name="NumericalHelpDialogBg" value="#05231f20" />
-  <color name="orange" value="#00ffa500" />
-  <color name="progressBorderColor" value="#001a53bb" />
   <color name="red" value="#00f23d21" />
   <color name="ScrollBarFG" value="#00ffffff" />
   <color name="ServiceNotAvail" value="#0058595b" />
