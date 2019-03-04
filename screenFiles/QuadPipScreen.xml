@@ -1,8 +1,8 @@
 ﻿<screen name="QuadPipScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-  <widget name="ch1" position="240,240" zPosition="1" size="480,60" font="Regular; 34" halign="center" valign="center" foregroundColor="white" backgroundColor="transparent" />
-  <widget name="ch2" position="1200,240" zPosition="1" size="480,60" font="Regular; 34" halign="center" valign="center" foregroundColor="white" backgroundColor="transparent" />
-  <widget name="ch3" position="240,780" zPosition="1" size="480,60" font="Regular; 34" halign="center" valign="center" foregroundColor="white" backgroundColor="transparent" />
-  <widget name="ch4" position="1200,780" zPosition="1" size="480,60" font="Regular; 34" halign="center" valign="center" foregroundColor="white" backgroundColor="transparent" />
+  <widget name="ch1" position="240,240" zPosition="1" size="480,60" font="Regular; 34" halign="center" valign="center" foregroundColor="foreground" backgroundColor="transparent" />
+  <widget name="ch2" position="1200,240" zPosition="1" size="480,60" font="Regular; 34" halign="center" valign="center" foregroundColor="foreground" backgroundColor="transparent" />
+  <widget name="ch3" position="240,780" zPosition="1" size="480,60" font="Regular; 34" halign="center" valign="center" foregroundColor="foreground" backgroundColor="transparent" />
+  <widget name="ch4" position="1200,780" zPosition="1" size="480,60" font="Regular; 34" halign="center" valign="center" foregroundColor="foreground" backgroundColor="transparent" />
   <widget name="text1" position="0,1030" zPosition="2" size="960,50" font="Regular; 34" halign="left" valign="center" backgroundColor="transpBlack" foregroundColor="accentColorOne" />
   <widget name="text2" position="960,1030" zPosition="2" size="960,50" font="Regular; 34" halign="right" valign="center" backgroundColor="transpBlack" foregroundColor="accentColorOne" />
   <widget name="focus" position="0,0" zPosition="-1" size="960,540" backgroundColor="transparent" borderWidth="4" borderColor="blue" />

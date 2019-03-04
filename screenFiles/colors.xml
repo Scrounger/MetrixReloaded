@@ -2,17 +2,29 @@
   <!-- Color Definitionen -->
   <color name="background" value="#2d000000" />
   <color name="backgroundSecond" value="#1227408b" />
+  <color name="foreground" value="#00ffffff" />
   
   <!-- Color Zuweisungen -->
   <color name="windowBackground" value="background" />
   <color name="windowBackgroundSecond" value="backgroundSecond" />
 
+  <!-- List Hintergund -->
+  <color name="listBackgroundBarsOne" value="background" />
+  <color name="listBackgroundBarsTwo" value="background" />
+  <!-- List Vordergrund -->
+  <color name="listForeground" value="#00ffffff" />
+  <color name="listForegroundOne" value="foreground" />
+  <color name="listForegroundTwo" value="#10535355" />
+  <!-- List selected -->
+  <color name="listSelectedBackground" value="backgroundSecond" />
+  <color name="listSelectedForeground" value="foreground" />
+  
 
   <color name="black" value="#00000000" />
   <color name="blue" value="#000064c7" />
   <color name="channelListDescFg" value="#00fcfcfc" />
   <color name="dodgerblue" value="#001e90ff" />
-  <color name="foreground" value="#00ffffff" />
+  
   <color name="gray" value="#00808080" />
   <color name="green" value="#00389416" />
   <color name="infobarBgL" value="#27ececec" />
@@ -22,12 +34,7 @@
   <color name="keyBlueBackground" value="#0018188b" />
   <color name="lightgrey" value="#009b9b9b" />
   <!-- Hintergrundfarbe List jede zweite Zeile -->
-  <color name="listBackgroundBarsOne" value="background" />
-  <color name="listBackgroundBarsTwo" value="background" />
-  <color name="listForeground" value="#00ffffff" />
-  <color name="listForegroundTwo" value="#10535355" />
-  <color name="listSelectedBackground" value="backgroundSecond" />
-  <color name="listSelectedForeground" value="foreground" />
+
   <color name="NumericalHelpDialogBg" value="#05231f20" />
   <color name="orange" value="#00ffa500" />
   <color name="progressBorderColor" value="#001a53bb" />
@@ -36,15 +43,16 @@
   <color name="ServiceNotAvail" value="#0058595b" />
   <color name="transparent" value="#ffffffff" />
   <color name="transpBlack" value="#80000000" />
-  <color name="white" value="#00ffffff" />
   <color name="windowBackgroundBars" value="#10535355" />
   <color name="windowListboxBg" value="#27474143" />  
   <color name="yellow" value="#00ffff00" />
   <color name="accentColorOne" value="dodgerblue" />
   <color name="accentColorTwo" value="dodgerblue" />
-  <color name="listForegroundOne" value="foreground" />
-  <color name="MainMenuColorButtonBG" value="windowBackground" />
-  <color name="MainMenuColorButtonFG" value="foreground" />
+  
+  
+  
+  
+  
   <color name="ScrollBarBorder" value="gray" />
   <!-- Meine-->
   <color name="seperator" value="#00bbbbbb" />

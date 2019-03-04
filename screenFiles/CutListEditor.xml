@@ -8,7 +8,7 @@
   <eLabel text="Cutlist editor" position="135,180" size="480,48" font="Regular;40" transparent="1" />
   <eLabel position="120,233" size="510,630" zPosition="1" backgroundColor="black" />
   <eLabel position="122,234" size="507,627" zPosition="2" backgroundColor="gray" />
-  <widget source="cutlist" render="Listbox" position="135,248" zPosition="3" size="480,600" scrollbarMode="showOnDemand" backgroundColor="white" transparent="1">
+  <widget source="cutlist" render="Listbox" position="135,248" zPosition="3" size="480,600" scrollbarMode="showOnDemand" backgroundColor="foreground" transparent="1">
     <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(size=(286, 28), text = 1),

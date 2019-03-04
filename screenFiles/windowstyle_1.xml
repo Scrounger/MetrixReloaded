@@ -1,15 +1,15 @@
 ﻿<windowstyle type="skinned" id="1">
   <!-- Main screen colors (id=1 LCD) -->
   <color name="Background" color="black" />
-  <color name="LabelForeground" color="white" />
+  <color name="LabelForeground" color="foreground" />
   <color name="ListboxBackground" color="black" />
-  <color name="ListboxForeground" color="white" />
+  <color name="ListboxForeground" color="foreground" />
   <color name="ListboxSelectedBackground" color="black" />
-  <color name="ListboxSelectedForeground" color="white" />
+  <color name="ListboxSelectedForeground" color="foreground" />
   <color name="ListboxMarkedBackground" color="black" />
-  <color name="ListboxMarkedForeground" color="white" />
+  <color name="ListboxMarkedForeground" color="foreground" />
   <color name="ListboxMarkedAndSelectedBackground" color="black" />
-  <color name="ListboxMarkedAndSelectedForeground" color="white" />
-  <color name="WindowTitleForeground" color="white" />
+  <color name="ListboxMarkedAndSelectedForeground" color="foreground" />
+  <color name="WindowTitleForeground" color="foreground" />
   <color name="WindowTitleBackground" color="black" />
 </windowstyle>
