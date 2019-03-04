@@ -93,7 +93,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -112,7 +112,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -131,7 +131,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="menu" render="Listbox" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_size" transparent="1" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" enableWrapAround="1">
+  <widget source="menu" render="Listbox" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_size" transparent="1" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template":
       [
@@ -183,7 +183,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -204,7 +204,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="menu" render="Listbox" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" position="window_list_pos" size="window_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
+  <widget source="menu" render="Listbox" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" position="window_list_pos" size="window_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"template":
 					[
@@ -259,7 +259,7 @@
 </screen>
 <screen name="AudioSelection" position="center,center" size="1288,923" title="Audio" flags="wfNoBorder" backgroundColor="transparent">
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Subtitles.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="127,250" size="1050,300" textOffset="25,9" font="Regular;32" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="127,250" size="1050,300" textOffset="25,9" font="Regular;32" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <eLabel position="45,572" size="1198,4" zPosition="-1" backgroundColor="gray" />
   <constant-widget name="bg_pic_mid" />
   <constant-widget name="Title_window" />
@@ -325,7 +325,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,1" position="window_list_pos" zPosition="10" size="window_list_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,1" position="window_list_pos" zPosition="10" size="window_list_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />  
   <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
@@ -404,7 +404,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" transparent="1" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" zPosition="10" descriptionColor="listDescription" descriptionfont="font_list_description" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" transparent="1" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" zPosition="10" descriptionColor="listDescription" descriptionfont="font_list_description" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/shutdown.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -424,7 +424,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
   <widget source="help" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" />
@@ -446,7 +446,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -467,7 +467,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -488,7 +488,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="entries" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="entries" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -508,7 +508,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="timerlist" backgroundColorRows="listBackgroundBarsOne" render="Listbox" position="window_list_pos" size="window_list_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
+  <widget source="timerlist" backgroundColorRows="listBackgroundBarsOne" render="Listbox" position="window_list_pos" size="window_list_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"template":
 					[
@@ -540,7 +540,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -561,7 +561,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
   <widget source="help" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" />
@@ -601,7 +601,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="menu" render="Listbox" transparent="1" position="window_list_pos" size="window_list_size" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="menu" render="Listbox" transparent="1" position="window_list_pos" size="window_list_size" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [	MultiContentEntryText(pos = (20, 7), size = (553, 49), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, font = 0 ),
       MultiContentEntryText(pos = (20, 46), size = (553, 39), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2, font = 1 )],
@@ -629,7 +629,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="filelist" position="window_list_pos" size="window_list_size" itemHeight="50" font="font_list" transparent="1" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
+  <widget name="filelist" position="window_list_pos" size="window_list_size" itemHeight="50" font="font_list" transparent="1" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -688,7 +688,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
   <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" />
@@ -775,7 +775,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -863,7 +863,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" />
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="foreground" transparent="1" backgroundColor="windowBackgroundSecond" />
@@ -882,7 +882,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="list" render="Listbox" transparent="1" position="window_list_pos" size="window_list_size" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="list" render="Listbox" transparent="1" position="window_list_pos" size="window_list_size" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [
       MultiContentEntryText(pos = (60, 7), size = (865, 75), font=0, flags = RT_HALIGN_LEFT, text = 0),
@@ -924,7 +924,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsTwo" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" colorServiceRecording="listRecording" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="50" itemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="foreground" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsTwo" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" colorServiceRecording="listRecording" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="50" itemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="foreground" />
   <!-- List: über Parameters -->
   <widget name="searchchar" position="window_searchbar_pos" size="window_searchbar_size" valign="center" halign="center" zPosition="100" backgroundColor="windowBackgroundSecond" transparent="0" font="SetrixHD;140" foregroundColor="foreground" />
   <!-- Right Panel (Right Side) -->
@@ -958,7 +958,7 @@
   <widget source="ServiceEvent" position="window_epg_desc_pos" zPosition="1" size="622,360" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="EventName">FullDescription</convert>
   </widget>
-  <widget name="epglist" backgroundColorRows="windowBackgroundSecond" backgroundColorSelected="windowBackground" position="1216,818" zPosition="10" size="622,96" itemHeight="32" backgroundColor="windowBackgroundSecond" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="epglist" backgroundColorRows="windowBackgroundSecond" backgroundColorSelected="windowBackground" position="1216,818" zPosition="10" size="622,96" itemHeight="32" backgroundColor="windowBackgroundSecond" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- List: über Parameters -->
   <!-- Fonts: EPGListChannelList0, EPGListChannelList1 -->
   <!-- Remote Buttons -->
@@ -1014,7 +1014,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" />
+  <widget name="list" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -1066,7 +1066,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/browser.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -1107,7 +1107,7 @@
   <widget source="CAidList_desc" render="Label" position="window_text_small_list_top_pos" size="window_text_small_list_size" font="font_standard" backgroundColor="windowBackground" transparent="1" />
   <widget source="CAidList" render="Label" position="window_small_list_top_pos" size="window_small_list_size" font="font_list" backgroundColor="windowBackground" transparent="1" />
   <widget source="ServiceList_desc" render="Label" position="window_text_small_list_bottom_pos" size="window_text_small_list_size" font="font_standard" backgroundColor="windowBackground" transparent="1" />
-  <widget name="ServiceList" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_small_list_bottom_pos" size="window_small_list_size" backgroundColor="windowBackground" itemHeight="50" font="font_list" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+  <widget name="ServiceList" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_small_list_bottom_pos" size="window_small_list_size" backgroundColor="windowBackground" itemHeight="50" font="font_list" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" />
   <widget source="ServiceList_info" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
@@ -1129,7 +1129,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="entries" backgroundColorRows="listBackgroundBarsOne" zPosition="2" position="window_list_pos" size="window_list_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="entries" backgroundColorRows="listBackgroundBarsOne" zPosition="2" position="window_list_pos" size="window_list_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" />
   <widget name="text" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" foregroundColor="foreground" />
@@ -1145,7 +1145,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="CiList" backgroundColorRows="listBackgroundBarsOne" zPosition="2" position="window_list_pos" size="window_list_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="CiList" backgroundColorRows="listBackgroundBarsOne" zPosition="2" position="window_list_pos" size="window_list_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -1277,7 +1277,7 @@
   <!-- Meine Backgrounds-->
   <constant-widget name="background_menu">
     <eLabel backgroundColor="windowBackground" position="0,0" size="630,1080" zPosition="-10" />
-    <ePixmap pixmap="MetrixReloaded/background_menu_list.png" position="15,320" size="615,740" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="MetrixReloaded/media/background_menu_list.png" position="15,320" size="615,740" alphatest="blend" transparent="1" />
     <!-- Debug: Menu Entry anzeigen -->
     <widget backgroundColor="windowBackground" font="font_standard" foregroundColor="foreground" render="Label" source="menu" position="20,80" size="750,27" halign="left" valign="center" transparent="1" zPosition="9">
       <convert type="MetrixReloadedMenuEntryID"></convert>
@@ -1431,7 +1431,7 @@
   <!-- Meine Seperators-->
   <constant-widget name="seperator_menu">
     <!--<eLabel name="Seperator" position="15,75" size="600,1" zPosition="5" backgroundColor="seperator" />-->
-    <ePixmap pixmap="MetrixReloaded/seperator_menu.png" position="15,75" size="615,1" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="MetrixReloaded/media/seperator_menu.png" position="15,75" size="615,1" alphatest="blend" transparent="1" />
   </constant-widget>
   <constant-widget name="seperator_window_title">
     <eLabel name="Seperator" position="90,135" size="1078,2" zPosition="5" backgroundColor="seperator" />
@@ -1834,7 +1834,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" position="window_list_pos" size="window_list_setup_size" itemHeight="50" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" position="window_list_pos" size="window_list_setup_size" itemHeight="50" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <widget name="cover" position="1338,110" size="375,562" alphatest="blend" />
   <widget name="searchinfo" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
@@ -1856,7 +1856,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <widget name="info" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" />
@@ -1878,7 +1878,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" position="window_list_pos" size="window_list_setup_size" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" position="window_list_pos" size="window_list_setup_size" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/movie.png" position="window_image_pos" size="window_image_size" />
   <widget name="searchinfo" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" />
@@ -1904,7 +1904,7 @@
   <widget name="key_green" position="466,196" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="key_yellow" position="723,196" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="key_blue" position="989,198" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="list" position="35,300" size="1100,560" serviceItemHeight="40" serviceNumberFont="Regular;28" serviceNameFont="Regular;28" serviceInfoFont="Bold;24" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" position="35,300" size="1100,560" serviceItemHeight="40" serviceNumberFont="Regular;28" serviceNameFont="Regular;28" serviceInfoFont="Bold;24" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget name="textChannels" position="1200,300" size="585,40" font="Regular;34" transparent="1" />
   <widget name="selectedList" position="1220,350" size="565,160" font="Regular;30" itemHeight="40" transparent="1" />
   <widget name="description" position="1200,800" size="650,170" font="Regular;28" halign="left" transparent="1" />
@@ -1920,7 +1920,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="showjobs" itemHeight="70" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="window_list_pos" size="window_list_setup_size" font="font_list" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+  <widget name="showjobs" itemHeight="70" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="window_list_pos" size="window_list_setup_size" font="font_list" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -2076,7 +2076,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="downloadmenu" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" render="Listbox" position="window_list_pos" size="window_list_size" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarMode="showOnDemand" transparent="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
+  <widget source="downloadmenu" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" render="Listbox" position="window_list_pos" size="window_list_size" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarMode="showOnDemand" transparent="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"template":
 					[
@@ -2106,7 +2106,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="accentColorOne" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="accentColorOne" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -2184,7 +2184,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="ServiceList" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowBackground" itemHeight="50" font="font_list" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+  <widget name="ServiceList" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowBackground" itemHeight="50" font="font_list" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -2205,7 +2205,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <widget source="configdesc" render="Label" zPosition="10" foregroundColor="foreground" font="font_standard" position="window_desc_pos" size="window_desc_size" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
@@ -2226,7 +2226,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -2254,7 +2254,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" zPosition="10" size="window_list_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" zPosition="10" size="window_list_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Parameters: EPGlistText1OffSet, EPGlistText2OffSet, EPGlistNonRecTextOffset-->
   <!-- Fonts: EPGList0, EPGList1 -->
   <!-- Right Panel (Right Side) -->
@@ -2304,7 +2304,7 @@
   <widget font="Regular;30" halign="left" valign="center" name="key_green" position="510,321" size="250,60" zPosition="1" backgroundColor="infobarBgR" transparent="1" />
   <widget font="Regular;30" halign="left" valign="center" name="key_yellow" position="880,321" size="250,60" zPosition="1" backgroundColor="infobarBgR" transparent="1" />
   <widget font="Regular;30" halign="left" valign="center" name="key_blue" position="1250,321" size="250,60" zPosition="1" backgroundColor="infobarBgR" transparent="1" />
-  <widget name="list" position="100,60" size="825,252" itemHeight="36" backgroundColorRows="listBackgroundBarsOne" backgroundColor="infobarBgR" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" position="100,60" size="825,252" itemHeight="36" backgroundColorRows="listBackgroundBarsOne" backgroundColor="infobarBgR" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget font="Regular;30" backgroundColor="infobarBgR" position="945,60" size="545,246" render="Label" source="Event" transparent="1">
     <convert type="EventName">FullDescription</convert>
   </widget>
@@ -2340,7 +2340,7 @@
   <widget backgroundColor="windowBackground" font="font_standard" halign="center" name="more_text" position="555,150" size="225,45" text="MORE" transparent="1" zPosition="3" />
   <widget font="font_standard_extra_small" halign="right" name="date" position="780,150" size="375,45" transparent="1" valign="center" />
   
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="105,205" zPosition="10" size="1050,700" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="105,205" zPosition="10" size="1050,700" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
 
   <!-- Right Panel (Right Side) -->
   <widget alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
@@ -2475,7 +2475,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="showexe" itemHeight="70" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="window_list_pos" size="window_list_setup_size" font="font_list" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+  <widget name="showexe" itemHeight="70" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="window_list_pos" size="window_list_setup_size" font="font_list" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -2517,7 +2517,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
   <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground" />
@@ -2552,7 +2552,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -2590,7 +2590,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap pixmap="MetrixReloaded/media/icons/filecom.png" position="window_image_pos" size="window_image_size" alphatest="blend" transparent="1" />
   <!-- Buttons -->
@@ -2794,7 +2794,7 @@
   onlyFullListEntries="true"
   piconColor="windowBackground" 
   piconColorSelected="windowBackground"
-  scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
 
   <!-- GraphEPG Zoom-->
   <widget name="zoom" position="0,0" size="0,0" zPosition="5" font="SetrixHD;26" backgroundColor="windowBackgroundSecond" />
@@ -2880,7 +2880,7 @@
   onlyFullListEntries="true"
   piconColor="windowBackground" 
   piconColorSelected="windowBackground"
-  scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
 
   <!-- GraphEPG Zoom-->
   <widget name="zoom" position="0,0" size="0,0" zPosition="5" font="font_standard" backgroundColor="infobarBgR" />
@@ -2972,7 +2972,7 @@
   onlyFullListEntries="true"
   piconColor="windowBackground" 
   piconColorSelected="windowBackground"
-  scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
 
   <!-- GraphEPG Zoom-->
   <widget name="zoom" position="0,0" size="0,0" zPosition="5" font="SetrixHD;26" backgroundColor="windowBackgroundSecond" />
@@ -3069,7 +3069,7 @@
   onlyFullListEntries="true"
   piconColor="windowBackground" 
   piconColorSelected="windowBackground"
-  scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
 
   <!-- GraphEPG Zoom-->
   <widget name="zoom" position="0,0" size="0,0" zPosition="5" font="SetrixHD;26" backgroundColor="windowBackgroundSecond" />
@@ -3164,7 +3164,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap pixmap="MetrixReloaded/media/icons/hdmicec.png" position="window_image_pos" size="window_image_size" alphatest="blend" transparent="1" />
   <!-- Buttons -->
@@ -3275,7 +3275,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_contextMenu_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="ZapHistoryList" backgroundColorRows="listBackgroundBarsOne" position="contextMenu_list_pos" size="450,660" textOffset="2,0" itemHeight="50" font="font_list" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+  <widget name="ZapHistoryList" backgroundColorRows="listBackgroundBarsOne" position="contextMenu_list_pos" size="450,660" textOffset="2,0" itemHeight="50" font="font_list" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
   <widget alphatest="blend" position="495,80" render="XHDPicon" size="220,132" source="ServiceEvent" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
@@ -3320,7 +3320,7 @@
   <widget name="load" position="55,390" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="temp" position="1400,440" size="370,30" font="Regular;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="fan" position="1400,470" size="370,30" font="Regular;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget source="proclist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,440" size="800,210" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="proclist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,440" size="800,210" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (220, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -3334,7 +3334,7 @@
 				}
 			</convert>
   </widget>
-  <widget source="storagelist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,640" size="1710,270" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" enableWrapAround="1">
+  <widget source="storagelist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,640" size="1710,270" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 			{"template": [
 					MultiContentEntryText(pos = (0, 1), size = (550, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -3349,7 +3349,7 @@
 			}
 		</convert>
   </widget>
-  <widget source="netdev" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,300" size="800,120" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="netdev" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,300" size="800,120" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (150, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -3362,7 +3362,7 @@
 				}
 			</convert>
   </widget>
-  <widget source="memory" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,440" size="800,210" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="memory" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,440" size="800,210" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (150, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -3381,7 +3381,7 @@
 </screen>
 <screen name="InputBox" position="center,center" size="1400,150" title="Input" flags="wfNoBorder">
   <widget name="text" position="15,30" size="1370,38" font="Bold;34" transparent="1" backgroundColor="windowBackground" />
-  <ePixmap pixmap="skin_default/vkey_text.png" position="10,83" zPosition="100" size="1380,52" alphatest="on" scale="1" />
+  <ePixmap pixmap="MetrixReloaded/media/vkey_text.png" position="10,83" zPosition="100" size="1380,52" alphatest="on" scale="1" />
   <widget name="input" position="20,83" size="1360,52" font="Regular;46" transparent="1" backgroundColor="windowBackground" />
   <eLabel text="InputBox" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1200,125" />
 </screen>
@@ -3400,7 +3400,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -3525,7 +3525,7 @@
   <constant-widget name="key_green_name" />
   <constant-widget name="key_yellow_name" />
   <constant-widget name="key_blue_name" />
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1100,450" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1100,450" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget source="introduction" render="Label" position="35,770" size="1100,70" font="Regular;32" halign="center" valign="center" foregroundColor="accentColorOne" backgroundColor="windowBackground" transparent="1" />
   <widget source="Version" render="Label" position="35,850" size="280,30" font="Regular;28" halign="left" valign="center" foregroundColor="gray" backgroundColor="windowBackground" transparent="1" />
   <widget source="LibUSB" render="Label" position="35,880" size="280,30" font="Regular;28" halign="left" valign="center" foregroundColor="gray" backgroundColor="windowBackground" transparent="1" />
@@ -3544,7 +3544,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="menu" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" font="font_list" itemHeight="50" transparent="1" zPosition="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="menu" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" font="font_list" itemHeight="50" transparent="1" zPosition="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" alphatest="blend" transparent="1" />
   <!-- Buttons -->
@@ -3563,7 +3563,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="menu" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" font="font_list" itemHeight="50" transparent="1" zPosition="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="menu" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" font="font_list" itemHeight="50" transparent="1" zPosition="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" alphatest="blend" transparent="1" />
   <!-- Buttons -->
@@ -3581,9 +3581,9 @@
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
   <widget name="target" position="window_text_small_list_top_pos" size="window_text_small_list_size" font="font_standard" foregroundColor="foreground" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="filelist" position="window_small_list_top_pos" selectionDisabled="1" zPosition="10" size="window_small_list_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="filelist" position="window_small_list_top_pos" selectionDisabled="1" zPosition="10" size="window_small_list_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget name="textbook" position="window_text_small_list_bottom_pos" size="window_text_small_list_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" />
-  <widget name="booklist" position="window_small_list_bottom_pos" size="window_small_list_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="booklist" position="window_small_list_bottom_pos" size="window_small_list_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -3635,7 +3635,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_menu" />
   <!-- Menu List -->
-  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [	MultiContentEntryText(pos = (35, 10), size = (553, 52), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ) ],
       "fonts": [gFont("SetrixHD", 35)],
@@ -3658,7 +3658,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_menu" />
   <!-- Menu List -->
-  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [	MultiContentEntryText(pos = (35, 10), size = (630, 52), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ) ],
       "fonts": [gFont("SetrixHD", 35)],
@@ -3681,7 +3681,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_menu" />
   <!-- Menu List -->
-  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [	MultiContentEntryText(pos = (35, 10), size = (630, 52), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ) ],
       "fonts": [gFont("SetrixHD", 35)],
@@ -3704,7 +3704,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_menu" />
   <!-- Menu List -->
-  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [	MultiContentEntryText(pos = (35, 10), size = (553, 52), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ) ],
       "fonts": [gFont("SetrixHD", 35)],
@@ -3727,7 +3727,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_menu" />
   <!-- Menu List -->
-  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [	MultiContentEntryText(pos = (35, 10), size = (553, 52), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ) ],
       "fonts": [gFont("SetrixHD", 35)],
@@ -3750,7 +3750,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_menu" />
   <!-- Menu List -->
-  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [	MultiContentEntryText(pos = (35, 10), size = (630, 52), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ) ],
       "fonts": [gFont("SetrixHD", 35)],
@@ -3773,7 +3773,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_menu" />
   <!-- Menu List -->
-  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [	MultiContentEntryText(pos = (35, 10), size = (553, 52), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ) ],
       "fonts": [gFont("SetrixHD", 35)],
@@ -3796,7 +3796,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_menu" />
   <!-- Menu List -->
-  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [	MultiContentEntryText(pos = (35, 10), size = (553, 52), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ) ],
       "fonts": [gFont("SetrixHD", 35)],
@@ -3897,7 +3897,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -3916,7 +3916,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -3988,7 +3988,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="Title" position="105,150" size="1050,30" render="Label" font="font_standard_small" halign="left" valign="center" foregroundColor="listDescription" backgroundColor="windowBackground" transparent="1" />
 
   <!--<widget name="ServicePath" position="105,180" size="1078,40" foregroundColor="lightgrey" font="font_standard_extra_small" backgroundColor="windowBackground" valign="bottom" halign="left" transparent="1" />-->
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="105,190" size="1050,710" zPosition="2" backgroundColor="windowBackground" transparent="1" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="105,190" size="1050,710" zPosition="2" backgroundColor="windowBackground" transparent="1" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
 
   <widget name="freeDiskSpace" position="105,900" size="1050,40" font="font_standard_small" foregroundColor="lightgrey" backgroundColor="windowBackground" valign="top" halign="center" transparent="1" />
   
@@ -4145,7 +4145,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -4216,7 +4216,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <eLabel text="MultiQuickButtonScript" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>
 <screen name="Mute" position="1590,75" zPosition="10" size="75,56" backgroundColor="transparent" title="Mute" flags="wfNoBorder">
-  <ePixmap position="0,0" size="75,56" pixmap="MetrixReloaded/mute.png" transparent="1" alphatest="off" />
+  <ePixmap position="0,0" size="75,56" pixmap="MetrixReloaded/media/mute.png" transparent="1" alphatest="off" />
 </screen>
 <screen name="myChannelSelection" position="center,center" size="1920,1080" title="Select service to add..." flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -4229,7 +4229,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" position="window_list_pos" backgroundColorRows="listBackgroundBarsOne" size="window_list_setup_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="60" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="foreground" />
+  <widget name="list" position="window_list_pos" backgroundColorRows="listBackgroundBarsOne" size="window_list_setup_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="60" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="foreground" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" />
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" zPosition="10" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground" />
@@ -4251,7 +4251,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="list" backgroundColorRows="listBackgroundBarsOne" render="Listbox" transparent="1" backgroundColor="windowBackground" position="window_list_pos" size="window_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20">
+  <widget source="list" backgroundColorRows="listBackgroundBarsOne" render="Listbox" transparent="1" backgroundColor="windowBackground" position="window_list_pos" size="window_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20">
     <convert type="TemplatedMultiContent">
 				{"template":
 					[
@@ -4283,7 +4283,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="list" render="Listbox" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="window_list_pos" size="window_list_setup_two_rows_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20">
+  <widget source="list" render="Listbox" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="window_list_pos" size="window_list_setup_two_rows_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20">
     <convert type="TemplatedMultiContent">
       {"template": [
       MultiContentEntryText(pos = (105, 10), size = (900, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the description
@@ -4318,7 +4318,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="60" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="foreground" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="60" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="foreground" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" />
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" zPosition="10" font="font_standard" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" foregroundColor="foreground" />
@@ -4331,7 +4331,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <eLabel text="myProviderSelection" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>
 <screen name="MyTubeHistoryScreen" title="MyTube - History" position="1100,430" zPosition="10" size="740,500" flags="wfNoBorder" backgroundColor="windowBackground" Animation="off">
-  <widget source="historylist" render="Listbox" position="5,5" size="720,500" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
+  <widget source="historylist" render="Listbox" position="5,5" size="720,500" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"template":
 					[
@@ -4399,7 +4399,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <constant-widget name="key_green_name" />
   <constant-widget name="key_yellow_name" />
   <widget name="config" zPosition="1" font="Regular;32" itemHeight="50" position="35,300" size="1000,50" scrollbarMode="showNever" backgroundColor="windowBackground" transparent="1" />
-  <widget source="feedlist" render="Listbox" position="35,380" size="1000,500" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
+  <widget source="feedlist" render="Listbox" position="35,380" size="1000,500" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default":
@@ -4435,11 +4435,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_name" />
   <constant-widget name="key_green_name" />
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <eLabel text="MyTubeSettingsScreen" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1620,955" />
 </screen>
 <screen name="MyTubeSuggestionsListScreen" title="MyTube - Search" position="1100,430" zPosition="10" size="740,500" flags="wfNoBorder" backgroundColor="windowBackground" Animation="off">
-  <widget source="suggestionslist" render="Listbox" position="5,5" size="720,500" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
+  <widget source="suggestionslist" render="Listbox" position="5,5" size="720,500" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"template":
 					[
@@ -4491,7 +4491,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="starsbg" pixmap="~/starsbar_empty.png" position="630,500" zPosition="5" size="100,20" backgroundColor="background_left" alphatest="on" />
   <widget name="stars" pixmap="~/starsbar_filled.png" position="630,500" zPosition="6" size="100,20" backgroundColor="background_left" transparent="1" />
   <widget name="title" zPosition="1" font="Regular;32" position="35,300" size="1000,50" backgroundColor="windowBackground" transparent="1" foregroundColor="accentColorOne" />
-  <widget source="infolist" render="Listbox" position="35,380" size="1750,100" selectionDisabled="1" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
+  <widget source="infolist" render="Listbox" position="35,380" size="1750,100" selectionDisabled="1" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default":
@@ -4700,7 +4700,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -4719,7 +4719,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="menu" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" font="font_list" itemHeight="50" transparent="1" zPosition="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="menu" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" font="font_list" itemHeight="50" transparent="1" zPosition="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -4797,7 +4797,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" zPosition="10" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" zPosition="10" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/webb.png" position="window_image_pos" size="window_image_size" />
   <widget name="lab1" position="window_desc_pos" size="window_desc_size" zPosition="10" font="font_standard" halign="center" valign="center" foregroundColor="foreground" transparent="1" />
@@ -4817,7 +4817,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" zPosition="10" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" zPosition="10" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" />
   <widget name="info_txt" position="window_desc_pos" size="window_desc_size" valign="center" halign="center" zPosition="2" foregroundColor="foreground" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
@@ -5051,7 +5051,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/look.png" position="window_image_pos" size="window_image_size" />
   <eLabel text="ParentalControlSetup" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
@@ -5172,7 +5172,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" itemHeight="82" position="window_list_pos" size="window_list_setup_two_rows_size" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" itemHeight="82" position="window_list_pos" size="window_list_setup_two_rows_size" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/plugin.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -5194,7 +5194,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -5217,7 +5217,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="ChannelList" backgroundColorRows="listBackgroundBarsOne" render="Listbox" position="window_list_pos" size="window_list_setup_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
+  <widget source="ChannelList" backgroundColorRows="listBackgroundBarsOne" render="Listbox" position="window_list_pos" size="window_list_setup_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"template":
 					[
@@ -5262,7 +5262,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -5274,7 +5274,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <eLabel text="QuickButton" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>
 <screen name="QuickSubtitlesConfigMenu" position="0,0" size="1288,300" title="Subtitle settings" flags="wfNoBorder" backgroundColor="listBackgroundBarsOne">
-  <widget name="config" zPosition="2" position="127,50" size="1050,250" textOffset="25,9" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" zPosition="2" position="127,50" size="1050,250" textOffset="25,9" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <eLabel text="QuickSubtitlesConfigMenu" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1088,275" />
 </screen>
 <screen name="RadioInfoBar" position="1200,350" size="620,600" zPosition="10" flags="wfNoBorder" title="Radio" backgroundColor="windowBackground">
@@ -5329,7 +5329,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -5348,7 +5348,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="menu" backgroundColorRows="listBackgroundBarsOne" render="Listbox" transparent="1" backgroundColor="windowBackground" position="window_list_pos" size="window_list_setup_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20">
+  <widget source="menu" backgroundColorRows="listBackgroundBarsOne" render="Listbox" transparent="1" backgroundColor="windowBackground" position="window_list_pos" size="window_list_setup_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20">
     <convert type="TemplatedMultiContent">
 				{"template":
 					[
@@ -5380,7 +5380,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/remotecontrol.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -5400,7 +5400,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="ServiceList" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" backgroundColor="windowBackground" itemHeight="50" font="font_list" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+  <widget name="ServiceList" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" backgroundColor="windowBackground" itemHeight="50" font="font_list" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
   <widget source="ServiceList_desc" render="Label" position="window_desc_pos" size="window_desc_size" valign="center" halign="center" font="font_standard" backgroundColor="windowBackground" transparent="1" />
@@ -5422,7 +5422,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="timerlist" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" transparent="1" itemHeight="105" scrollbarMode="showOnDemand" backgroundColor="windowBackground" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+  <widget name="timerlist" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" transparent="1" itemHeight="105" scrollbarMode="showOnDemand" backgroundColor="windowBackground" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -5443,7 +5443,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -5521,7 +5521,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -5544,7 +5544,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
   <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
@@ -5560,7 +5560,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
   <widget name="footer" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
@@ -5648,7 +5648,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="countrymenu" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" font="font_list" itemHeight="50" transparent="1" zPosition="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="countrymenu" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" font="font_list" itemHeight="50" transparent="1" zPosition="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -5665,7 +5665,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -5742,7 +5742,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" transparent="1" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" zPosition="10" descriptionColor="listDescription" descriptionfont="font_list_description" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" transparent="1" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" zPosition="10" descriptionColor="listDescription" descriptionfont="font_list_description" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <widget source="configdesc" render="Label" zPosition="10" foregroundColor="foreground" font="font_standard" position="window_desc_pos" size="window_desc_size" halign="center" valign="center" transparent="1" backgroundColor="windowBackground" />
@@ -5762,7 +5762,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -5782,7 +5782,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsTwo" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" colorServiceRecording="listRecording" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="50" itemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="foreground" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsTwo" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" colorServiceRecording="listRecording" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="50" itemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="foreground" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -5909,7 +5909,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="sclist" position="window_list_pos" size="window_list_setup_size" zPosition="3" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="sclist" position="window_list_pos" size="window_list_setup_size" zPosition="3" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <widget name="infomation" position="window_desc_pos" zPosition="1" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
@@ -6084,7 +6084,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="timerlist" position="window_list_pos" size="window_list_setup_size" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" itemHeight="110" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+  <widget name="timerlist" position="window_list_pos" size="window_list_setup_size" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" itemHeight="110" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Font über Parameter-->
   <!-- Right Panel (Right Side) -->
   <widget source="ServiceEvent" alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" transparent="1" zPosition="1">
@@ -6128,7 +6128,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
   <widget source="configdesc" render="Label" foregroundColor="foreground" font="font_standard" size="window_desc_size" position="window_desc_pos" transparent="1" backgroundColor="windowBackgroundSecond" />
@@ -6187,7 +6187,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="timerlist" position="window_list_pos" size="window_list_setup_size" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" transparent="1" itemHeight="105" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+  <widget name="timerlist" position="window_list_pos" size="window_list_setup_size" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" transparent="1" itemHeight="105" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
   <eLabel text="TimerSelection" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
@@ -6242,7 +6242,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
@@ -6281,7 +6281,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/ui.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -6315,7 +6315,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <eLabel text="UIPositionSetup" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>
 <screen name="UnhandledKey" flags="wfNoBorder" position="1680,75" size="67,66" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
-  <widget name="UnhandledKeyPixmap" pixmap="MetrixReloaded/unhandled-key.png" position="0,0" size="67,66" alphatest="off" />
+  <widget name="UnhandledKeyPixmap" pixmap="MetrixReloaded/media/unhandled-key.png" position="0,0" size="67,66" alphatest="off" />
 </screen>
 <screen name="UpdatePlugin" position="center,center" size="1920,1080" title="Software update" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -6345,7 +6345,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
-  <widget name="HelpWindow" pixmap="MetrixReloaded/vkey_icon.png" position="627,20" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+  <widget name="HelpWindow" pixmap="MetrixReloaded/media/vkey_icon.png" position="627,20" zPosition="1" size="1,1" transparent="1" alphatest="on" />
   <eLabel text="UserDialog" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>
 <screen name="UserManager" position="center,center" size="1920,1080" title="UserManager" flags="wfNoBorder" backgroundColor="transparent">
@@ -6516,11 +6516,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget font="Bold;30" halign="center" valign="center" name="currCh3" position="852,300" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
   <widget font="Bold;30" halign="center" valign="center" name="currCh4" position="1203,300" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
   <widget font="Bold;30" halign="center" valign="center" name="currCh5" position="1554,300" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
-  <widget itemHeight="110" name="epg_list1" position="40,370" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
-  <widget itemHeight="110" name="epg_list2" position="391,370" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
-  <widget itemHeight="110" name="epg_list3" position="742,370" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
-  <widget itemHeight="110" name="epg_list4" position="1093,370" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
-  <widget itemHeight="110" name="epg_list5" position="1444,370" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
+  <widget itemHeight="110" name="epg_list1" position="40,370" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
+  <widget itemHeight="110" name="epg_list2" position="391,370" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
+  <widget itemHeight="110" name="epg_list3" position="742,370" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
+  <widget itemHeight="110" name="epg_list4" position="1093,370" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
+  <widget itemHeight="110" name="epg_list5" position="1444,370" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
   <widget source="Event" render="Label" position="40,820" zPosition="1" size="1715,130" font="Regular;30" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
@@ -6561,7 +6561,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
@@ -6610,7 +6610,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="header" position="105,160" size="1050,40" font="font_standard" transparent="1" noWrap="1" />
   <!-- Input mit Hintergrund-->
   <widget name="text" position="105,220" size="1050,75" font="font_second_standard" transparent="1" noWrap="1" halign="right" />
-  <ePixmap pixmap="skin_default/vkey_text.png" position="105,215" zPosition="100" size="1050,52" alphatest="on" scale="1" />
+  <ePixmap pixmap="MetrixReloaded/media/vkey_text.png" position="105,215" zPosition="100" size="1050,52" alphatest="on" scale="1" />
   <!-- Keyboard-->
   <widget name="list" position="300,310" size="600,375" selectionDisabled="1" transparent="1" />
   <!-- Right Panel (Right Side) -->
@@ -6619,8 +6619,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <eLabel text="VirtualKeyBoard" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>
 <screen name="Volume" position="center,60" zPosition="1" size="627,81" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
-  <ePixmap pixmap="MetrixReloaded/volume_background.png" position="0,0" size="627,81" />
-  <widget name="Volume" pixmap="MetrixReloaded/volume_up.png" position="95,10" zPosition="1" size="512,61" transparent="1" />
+  <ePixmap pixmap="MetrixReloaded/media/volume_background.png" position="0,0" size="627,81" />
+  <widget name="Volume" pixmap="MetrixReloaded/media/volume_up.png" position="95,10" zPosition="1" size="512,61" transparent="1" />
   <eLabel text="Volume" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="427,56" />
 </screen>
 <screen name="VTIMainMenu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent" NoAnimationAfter="1">
@@ -6633,7 +6633,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="list" render="Listbox" transparent="1" position="window_list_pos" size="window_list_size" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="list" render="Listbox" transparent="1" position="window_list_pos" size="window_list_size" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [
       MultiContentEntryText(pos = (162, 7), size = (658, 49), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the description
@@ -6686,7 +6686,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="list" render="Listbox" backgroundColorRows="listBackgroundBarsOne" transparent="1" backgroundColor="windowBackground" position="window_list_pos" size="window_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20">
+  <widget source="list" render="Listbox" backgroundColorRows="listBackgroundBarsOne" transparent="1" backgroundColor="windowBackground" position="window_list_pos" size="window_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20">
     <convert type="TemplatedMultiContent">
       {"template":
       [
@@ -6718,7 +6718,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="list" render="Listbox" transparent="1" position="window_list_pos" size="window_list_size" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="list" render="Listbox" transparent="1" position="window_list_pos" size="window_list_size" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [
       MultiContentEntryPixmapAlphaTest(pos = (29, 13), size = (66, 66), png = 3), # index 4 is the status pixmap
@@ -6747,7 +6747,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="update" position="window_list_pos" size="window_list_size" font="font_list" backgroundColor="windowBackground" transparent="1" halign="left" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" />
+  <widget name="update" position="window_list_pos" size="window_list_size" font="font_list" backgroundColor="windowBackground" transparent="1" halign="left" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" />
   <widget name="header" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
@@ -6824,7 +6824,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="DNS2text" render="Label" position="750,665" zPosition="1" size="300,39" font="BoldItalic;33" backgroundColor="windowBackground" transparent="1" />
   <widget source="DNS2" render="Label" position="795,705" zPosition="1" size="225,39" font="Regular;30" backgroundColor="windowBackground" valign="center" transparent="1" />
   <widget name="VKeyIcon" pixmap="MetrixReloaded/buttons/key_text.png" position="750,765" zPosition="10" size="53,38" transparent="1" alphatest="on" />
-  <widget name="HelpWindow" pixmap="MetrixReloaded/vkey_icon.png" position="627,20" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+  <widget name="HelpWindow" pixmap="MetrixReloaded/media/vkey_icon.png" position="627,20" zPosition="1" size="1,1" transparent="1" alphatest="on" />
   <eLabel text="WlanConfig" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1088,898" />
 </screen>
 <screen name="WlanScan" position="center,center" size="1920,1080" title="Choose a Wireless Network" flags="wfNoBorder" backgroundColor="transparent">
@@ -6837,7 +6837,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget source="list" backgroundColorRows="listBackgroundBarsOne" render="Listbox" position="window_list_pos" size="window_list_setup_size" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1">
+  <widget source="list" backgroundColorRows="listBackgroundBarsOne" render="Listbox" position="window_list_pos" size="window_list_setup_size" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1">
     <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (5,5), size = (520, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -6965,7 +6965,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
   <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
@@ -6985,7 +6985,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
   <constant-widget name="key_green_source" />
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <eLabel text="YoutubeTVSettings" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1620,955" />
 </screen>
 <screen name="YoutubeTVWindow" position="center,center" size="1288,923" title="Start YouTube TV" flags="wfNoBorder" backgroundColor="transparent">
@@ -7017,7 +7017,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->

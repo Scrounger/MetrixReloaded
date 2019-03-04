@@ -6,7 +6,7 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_menu" />
   <!-- Menu List -->
-  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [	MultiContentEntryText(pos = (35, 10), size = (630, 52), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0 ) ],
       "fonts": [gFont("SetrixHD", 35)],

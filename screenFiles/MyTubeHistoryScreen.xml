@@ -1,5 +1,5 @@
 ﻿<screen name="MyTubeHistoryScreen" title="MyTube - History" position="1100,430" zPosition="10" size="740,500" flags="wfNoBorder" backgroundColor="windowBackground" Animation="off">
-  <widget source="historylist" render="Listbox" position="5,5" size="720,500" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
+  <widget source="historylist" render="Listbox" position="5,5" size="720,500" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"template":
 					[

@@ -1,3 +1,3 @@
 ﻿<screen name="UnhandledKey" flags="wfNoBorder" position="1680,75" size="67,66" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
-  <widget name="UnhandledKeyPixmap" pixmap="MetrixReloaded/unhandled-key.png" position="0,0" size="67,66" alphatest="off" />
+  <widget name="UnhandledKeyPixmap" pixmap="MetrixReloaded/media/unhandled-key.png" position="0,0" size="67,66" alphatest="off" />
 </screen>

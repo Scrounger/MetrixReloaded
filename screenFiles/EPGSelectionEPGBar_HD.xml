@@ -8,7 +8,7 @@
   <widget font="Regular;30" halign="left" valign="center" name="key_green" position="510,321" size="250,60" zPosition="1" backgroundColor="infobarBgR" transparent="1" />
   <widget font="Regular;30" halign="left" valign="center" name="key_yellow" position="880,321" size="250,60" zPosition="1" backgroundColor="infobarBgR" transparent="1" />
   <widget font="Regular;30" halign="left" valign="center" name="key_blue" position="1250,321" size="250,60" zPosition="1" backgroundColor="infobarBgR" transparent="1" />
-  <widget name="list" position="100,60" size="825,252" itemHeight="36" backgroundColorRows="listBackgroundBarsOne" backgroundColor="infobarBgR" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" position="100,60" size="825,252" itemHeight="36" backgroundColorRows="listBackgroundBarsOne" backgroundColor="infobarBgR" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget font="Regular;30" backgroundColor="infobarBgR" position="945,60" size="545,246" render="Label" source="Event" transparent="1">
     <convert type="EventName">FullDescription</convert>
   </widget>

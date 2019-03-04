@@ -8,7 +8,7 @@
   <widget name="starsbg" pixmap="~/starsbar_empty.png" position="630,500" zPosition="5" size="100,20" backgroundColor="background_left" alphatest="on" />
   <widget name="stars" pixmap="~/starsbar_filled.png" position="630,500" zPosition="6" size="100,20" backgroundColor="background_left" transparent="1" />
   <widget name="title" zPosition="1" font="Regular;32" position="35,300" size="1000,50" backgroundColor="windowBackground" transparent="1" foregroundColor="accentColorOne" />
-  <widget source="infolist" render="Listbox" position="35,380" size="1750,100" selectionDisabled="1" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
+  <widget source="infolist" render="Listbox" position="35,380" size="1750,100" selectionDisabled="1" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default":

@@ -1,3 +1,3 @@
 ﻿<screen name="Mute" position="1590,75" zPosition="10" size="75,56" backgroundColor="transparent" title="Mute" flags="wfNoBorder">
-  <ePixmap position="0,0" size="75,56" pixmap="MetrixReloaded/mute.png" transparent="1" alphatest="off" />
+  <ePixmap position="0,0" size="75,56" pixmap="MetrixReloaded/media/mute.png" transparent="1" alphatest="off" />
 </screen>

@@ -18,7 +18,7 @@
   <widget name="load" position="55,390" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="temp" position="1400,440" size="370,30" font="Regular;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="fan" position="1400,470" size="370,30" font="Regular;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget source="proclist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,440" size="800,210" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="proclist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,440" size="800,210" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (220, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -32,7 +32,7 @@
 				}
 			</convert>
   </widget>
-  <widget source="storagelist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,640" size="1710,270" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" enableWrapAround="1">
+  <widget source="storagelist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,640" size="1710,270" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 			{"template": [
 					MultiContentEntryText(pos = (0, 1), size = (550, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -47,7 +47,7 @@
 			}
 		</convert>
   </widget>
-  <widget source="netdev" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,300" size="800,120" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="netdev" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,300" size="800,120" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (150, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -60,7 +60,7 @@
 				}
 			</convert>
   </widget>
-  <widget source="memory" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,440" size="800,210" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="memory" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,440" size="800,210" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (150, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
