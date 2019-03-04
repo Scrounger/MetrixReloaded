@@ -1156,13 +1156,22 @@
 </screen>
 <colors>
   <!-- Color Definitionen -->
+  <color name="transparent" value="#ffffffff" />
   <color name="background" value="#2d000000" />
   <color name="backgroundSecond" value="#1227408b" />
   <color name="foreground" value="#00ffffff" />
+
+  <color name="black" value="#00000000" />
+  <color name="blue" value="#000064c7" />
+  <color name="yellow" value="#00ffff00" />
+  <color name="gray" value="#00808080" />
+  <color name="green" value="#00389416" />
+  <color name="lightgrey" value="#00bbbbbb" />
   
   <!-- Color Zuweisungen -->
   <color name="windowBackground" value="background" />
   <color name="windowBackgroundSecond" value="backgroundSecond" />
+  <color name="accent1" value="lightgrey" />
 
   <!-- List Hintergund -->
   <color name="listBackgroundBarsOne" value="background" />
@@ -1174,21 +1183,22 @@
   <!-- List selected -->
   <color name="listSelectedBackground" value="backgroundSecond" />
   <color name="listSelectedForeground" value="foreground" />
+  <!-- ProgressBar -->
+  <color name="progressBarSmallBackground" value="lightgrey" />
+  <color name="progressBarBackground" value="#40000000" />
   
 
-  <color name="black" value="#00000000" />
-  <color name="blue" value="#000064c7" />
+
   <color name="channelListDescFg" value="#00fcfcfc" />
   <color name="dodgerblue" value="#001e90ff" />
   
-  <color name="gray" value="#00808080" />
-  <color name="green" value="#00389416" />
+
   <color name="infobarBgL" value="#27ececec" />
   <color name="infobarBgR" value="#27666769" />
   <color name="infobarBgRLowTrans" value="#10666769" />
   <color name="InfobarFgL" value="#00231f20" />
   <color name="keyBlueBackground" value="#0018188b" />
-  <color name="lightgrey" value="#009b9b9b" />
+
   <!-- Hintergrundfarbe List jede zweite Zeile -->
 
   <color name="NumericalHelpDialogBg" value="#05231f20" />
@@ -1197,11 +1207,10 @@
   <color name="red" value="#00f23d21" />
   <color name="ScrollBarFG" value="#00ffffff" />
   <color name="ServiceNotAvail" value="#0058595b" />
-  <color name="transparent" value="#ffffffff" />
   <color name="transpBlack" value="#80000000" />
   <color name="windowBackgroundBars" value="#10535355" />
   <color name="windowListboxBg" value="#27474143" />  
-  <color name="yellow" value="#00ffff00" />
+  
   <color name="accentColorOne" value="dodgerblue" />
   <color name="accentColorTwo" value="dodgerblue" />
   
@@ -1211,12 +1220,10 @@
   
   <color name="ScrollBarBorder" value="gray" />
   <!-- Meine-->
-  <color name="seperator" value="#00bbbbbb" />
-  <color name="listDescription" value="#00ffff00" />
+  <color name="seperator" value="lightgrey" />
+  <color name="listDescription" value="yellow" />
   <color name="listRecording" value="#00ff0000" />
-  <color name="progressBarSmallBackground" value="#00bbbbbb" />
-  <color name="progressBarBackground" value="#40000000" />
-  <color name="accent1" value="#00bbbbbb" />
+
   <color name="infoBar_tuner_available" value="#00555555" />
   <color name="infoBar_tuner_active" value="#00389416" />
   <color name="infoBar_tuner_using" value="#00f23d21" />
