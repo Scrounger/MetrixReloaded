@@ -18,7 +18,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 	IS_IMAGE_AVAILABLE = "IsImageAvailable"
 	IS_EPGSHARE_AVAILABLE = "IsEpgShareAvailable"
 	EPGSHARE_RAW = "EpgShareRaw"
-	EPISODE_NUM = "EpisodeNum"
+	EPISODE_NUM = "EpisodeNum"					# optional formatierung angeben -> z.B. EpisodeNum(Staffel [s] Episode[ee])
 	TITLE = "Title"								# optional mit Prefix angabe -> z.B. Titel oder Titel(Titel:)
 	SUBTITLE = "Subtitle"						# mit MaxWord angabe -> z.B. Subtitle(10)
 	PARENTAL_RATING = "ParentalRating"			# optional mit Prefix angabe -> z.B. ParentalRating oder ParentalRating(FSK)
@@ -99,8 +99,8 @@ class MetrixReloadedExtEventEPG(Converter, object):
 							return powerDescription
 						else:
 							return ''
-					elif type == self.EPISODE_NUM:
-						episodeNum = self.getEpisodeNum(event, values)
+					elif self.EPISODE_NUM in type:
+						episodeNum = self.getEpisodeNum(type, event, values)
 						if (episodeNum != None):
 							result.append(episodeNum)
 					elif self.TITLE == type:
@@ -215,7 +215,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 			if(self.EPISODE_NUM in input):
 				type = self.getParsedTyp(self.EPISODE_NUM, input)		
 
-				episodeNum = self.getEpisodeNum(event, values)
+				episodeNum = self.getEpisodeNum(type, event, values)
 				if (episodeNum != None):
 					input = input.replace(type, episodeNum)
 				else:
@@ -709,14 +709,17 @@ class MetrixReloadedExtEventEPG(Converter, object):
 		else:
 			return "!!! invalid type '%s' !!!" % (type)
 	
-	def getEpisodeNum(self, event, values):
+	def getEpisodeNum(self, type, event, values):
 		episodeNum = None
+		sNum = None
+		eNum = None
 		
 		if(values != None and len(values) > 0):
 			#EpgShare Daten sind in DB vorhanden
 			if 'season' in values and 'episode' in values:
 				if len(str(values['season']).strip()) > 0 and len(str(values['episode']).strip()) > 0:
-					episodeNum = "S%sE%s" % (str(values['season']).zfill(2), str(values['episode']).zfill(2))
+					sNum = str(values['season'])
+					eNum = str(values['episode'])
 	
 		if (episodeNum == None and event != None):
 			#Keine EpgShare Daten in DB vorhanden, versuch über Parser	
@@ -729,8 +732,30 @@ class MetrixReloadedExtEventEPG(Converter, object):
 					sNum = extractSeriesNums.group(1)
 					eNum = extractSeriesNums.group(2)
 
-					return 'S%sE%s' % (sNum.zfill(2), eNum.zfill(2))
-			
+		#individuelle Formatierung extrahieren
+		episodeFormat = self.getPrefixParser(type)
+		self.log.info("EpisodePrefix: %s" % episodeFormat)
+		if(sNum != None and eNum != None):
+			if(episodeFormat != None):
+				#Staffel Format parsen
+				sFormatParser = re.search(r"[[]([s]+|[s])[]]", episodeFormat)
+				if(sFormatParser != None):
+					sFormat = sFormatParser.group(1)
+					sDigits = len(sFormat)
+
+					episodeNum = episodeFormat.replace('[%s]' % (sFormat), sNum.zfill(sDigits))
+
+				#Episoden Format parsen
+				eFormatParser = re.search(r"[[]([e]+|[e])[]]", episodeFormat)
+				if(eFormatParser != None):
+					eFormat = eFormatParser.group(1)
+					eDigits = len(eFormat)
+
+					episodeNum = episodeNum.replace('[%s]' % (eFormat), eNum.zfill(eDigits))
+			else:
+				#Standard falls kein individuelles Format angeben ist
+				episodeNum = 'S%sE%s' % (sNum.zfill(2), eNum.zfill(2))
+
 		return episodeNum
 		
 	def getFullDescription(self, event):
@@ -773,8 +798,6 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				return True
 			except ValueError:
 				return False
-			
-
 		
 	def getCompareGenreWithGenreList(self, desc, splitChar):
 		
