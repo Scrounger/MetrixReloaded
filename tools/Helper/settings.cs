@@ -36,6 +36,15 @@ namespace Helper
             set { this.screenFilesPath = value; }
         }
 
+        private string skinPartsPath;
+
+        [JsonProperty(PropertyName = "skinPartsPath")]
+        public string SkinPartsPath
+        {
+            get { return CreatePath(this.skinPartsPath); }
+            set { this.skinPartsPath = value; }
+        }
+
         private string vuPlusSkinPath;
 
         [JsonProperty(PropertyName = "vuPlusSkinPath")]
