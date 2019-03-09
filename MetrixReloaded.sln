@@ -325,6 +325,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "skinParts", "skinParts", "{68B36529-5F60-4BAB-9754-C1F4111BD39A}"
+	ProjectSection(SolutionItems) = preProject
+		skinparts\skin_Plugin_EPG_Share.xml = skinparts\skin_Plugin_EPG_Share.xml
+		skinparts\skin_Plugin_EPGRefresh.xml = skinparts\skin_Plugin_EPGRefresh.xml
+		skinparts\skin_Plugin_Serienrecorder.xml = skinparts\skin_Plugin_Serienrecorder.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
