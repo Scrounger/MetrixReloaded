@@ -2708,6 +2708,9 @@
   <font filename="MetrixReloaded/fonts/setrixSL.ttf" name="SetrixSL" scale="100" />
   <font filename="MetrixReloaded/fonts/calchux.ttf" name="IconFont01" scale="100" />
 
+  <font filename="MyriadPro-Semibold.otf" name="Bold" scale="93" />
+  <font filename="MyriadPro-Semibold.otf" name="SimpleBold" scale="93" />
+
   <!-- ChoiceBox-->
   <!--<alias name="ChoiceList" font="SetrixHD" size="30" height="50" />-->
   
