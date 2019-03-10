@@ -29,9 +29,11 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 ## Aufbau des Repositories
 
 ## Screenshots
+<body>
 <a target="_blank" href="screenshots/infobar.jpg">
   <img src="screenshots/infobar.jpg" alt="Forest" style="400px:height">
 </a>
+ </body>
 
 <p align="center">
   <img src="screenshots/infobar.jpg" width="400"/>
