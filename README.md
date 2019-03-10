@@ -5,6 +5,9 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vupl
 * VTI v14.x
 
 [![paypal](https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YHPPW474N5CKQ&source=url)
+[![download](https://dabuttonfactory.com/button.gif?t=Download&f=Calibri-Bold&ts=30&tc=fff&tshs=1&tshc=000&hp=20&vp=8&c=5&bgt=gradient&bgc=3d85c6&ebgc=073763)](https://github.com/Scrounger/MetrixReloaded/releases)
+
+
 
 ### Unterstützte Plugins
 * EPGShare (im Skin optional implementiert)
