@@ -1,4 +1,4 @@
-﻿<screen backgroundColor="transparent" flags="wfNoBorder" name="TimeshiftState" position="center,185" size="960,615" zPosition="2">
+﻿<screen backgroundColor="transparent" flags="wfNoBorder" name="TimeshiftState" position="center,185" size="960,615" zPosition="1">
   <!-- Background -->
   <eLabel backgroundColor="windowBackground" position="0,548" size="960,70" zPosition="-1" />
   

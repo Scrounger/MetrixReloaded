@@ -1,4 +1,4 @@
-﻿<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1920,800" title="SecondInfoBar" backgroundColor="transparent" animationMode="disable">
+﻿<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1920,800" title="SecondInfoBar" backgroundColor="transparent" animationMode="disable" zPosition="2">
   <!-- Background -->
   <eLabel backgroundColor="windowBackground" position="120,37" size="1680,740" zPosition="-10" />
 
