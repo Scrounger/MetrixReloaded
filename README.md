@@ -1,17 +1,3 @@
-
-<style>
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
-}
-
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-</style>
-
 # MetrixReloaded
 MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vuplus-support.org/).
 
@@ -29,16 +15,10 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 ## Aufbau des Repositories
 
 ## Screenshots
-<body>
-<a target="_blank" href="screenshots/infobar.jpg">
-  <img src="screenshots/infobar.jpg" alt="Forest" style="400px:height">
-</a>
- </body>
-
 <p align="center">
   <img src="screenshots/infobar.jpg?sanitize=true&raw=true" width="400"/>
-  <img src="screenshots/pluginbrowser.jpg" width="400"/>
-  <img src="screenshots/vtipanel.jpg" width="400"/>
+  <img src="screenshots/pluginbrowser.jpg?sanitize=true&raw=true" width="400"/>
+  <img src="screenshots/vtipanel.jpg?sanitize=true&raw=true" width="400"/>
 </p>
 
 ## Changelog
