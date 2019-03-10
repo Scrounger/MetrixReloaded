@@ -123,7 +123,7 @@ namespace Builder
             dirList = Directory.GetFiles(SourcePath, "*.*", SearchOption.AllDirectories);
 
             //Copy all the files & Replaces any files with the same name
-            foreach (string newPath in Directory.GetFiles(SourcePath, "*.*", SearchOption.AllDirectories))
+            foreach (string newPath in dirList)
             {
                 File.Copy(newPath, Path.Combine(DestinationPath, newPath.Remove(0, SourcePath.Length)), true);
                 ProgressBar.Draw("copy files...", i, dirList.Length);
