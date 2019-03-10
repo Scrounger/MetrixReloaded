@@ -1,0 +1,96 @@
+<skin>
+	<screen name="EPGImportConfig" position="0,0" size="1920,1080" title="EPG Import Configuration" backgroundColor="transparent" flags="wfNoBorder">
+    <!-- Backgrounds -->
+    <constant-widget name="background_window" />
+    <!-- Title -->
+    <constant-widget name="Title_window" />
+    <!-- Clock -->
+    <constant-widget name="clock_window" />
+    <!-- Title Seperator -->
+    <constant-widget name="seperator_window_title" />
+    <!-- Left Panel (Left Side) -->
+		<widget name="config" position="window_list_pos" size="window_list_size" itemHeight="50" font="font_list" secondfont="font_list_second" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+    <!-- Right Panel (Right Side) -->
+    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/plugin.png" position="window_image_pos" size="window_image_size" />		
+    
+    <!--TODO: anpassen-->
+    <widget name="status" position="30,855" size="900,100" font="Regular; 28" halign="center" valign="center" backgroundColor="background" transparent="1" />
+		<widget name="statusbar" position="30,965" size="900,40" font="Regular; 28" halign="center" valign="center" backgroundColor="background" transparent="1" />
+
+    <!-- Remote Buttons -->
+    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
+    <!-- Buttons -->
+    <constant-widget name="color_buttons_window" />
+    <constant-widget name="key_red_name" />
+    <constant-widget name="key_green_name" />
+    <constant-widget name="key_yellow_name" />
+    <constant-widget name="key_blue_name" />    
+	</screen>
+
+	<screen name="EPGImportSources" position="0,0" size="1920,1080" title="EPG Import Sources" backgroundColor="transparent" flags="wfNoBorder">
+    <!-- Backgrounds -->
+    <constant-widget name="background_window" />
+    <!-- Title -->
+    <constant-widget name="Title_window" />
+    <!-- Clock -->
+    <constant-widget name="clock_window" />
+    <!-- Title Seperator -->
+    <constant-widget name="seperator_window_title" />
+    <!-- Left Panel (Left Side) -->
+		<widget name="list" position="window_list_pos" size="window_list_size" itemHeight="50" font="font_list" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />			
+    <!-- Right Panel (Right Side) -->
+    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/plugin.png" position="window_image_pos" size="window_image_size" />
+    <!-- Remote Buttons -->
+    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
+    <!-- Buttons -->
+    <constant-widget name="color_buttons_window" />
+    <constant-widget name="key_red_name" />
+    <constant-widget name="key_green_name" />
+    <constant-widget name="key_yellow_name" />
+    <constant-widget name="key_blue_name" />
+  </screen>
+	
+	<screen name="EPGImportProfile" position="0,0" size="1920,1080" title="EPGImportProfile" backgroundColor="transparent" flags="wfNoBorder">
+    <!-- Backgrounds -->
+    <constant-widget name="background_window" />
+    <!-- Title -->
+    <constant-widget name="Title_window" />
+    <!-- Clock -->
+    <constant-widget name="clock_window" />
+    <!-- Title Seperator -->
+    <constant-widget name="seperator_window_title" />
+    <!-- Left Panel (Left Side) -->
+		<widget name="config" position="window_list_pos" size="window_list_size" itemHeight="50" font="font_list" secondfont="font_list_second" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />    
+    <!-- Right Panel (Right Side) -->
+    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/plugin.png" position="window_image_pos" size="window_image_size" />
+    <!-- Remote Buttons -->
+    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
+    <!-- Buttons -->
+    <constant-widget name="color_buttons_window" />
+    <constant-widget name="key_red_name" />
+    <constant-widget name="key_green_name" />
+	</screen>
+
+	<screen name="EPGImportLog" position="0,0" size="1920,1080" title="EPG Import Log" backgroundColor="transparent" flags="wfNoBorder">
+    <!-- Backgrounds -->
+    <constant-widget name="background_window" />
+    <!-- Title -->
+    <constant-widget name="Title_window" />
+    <!-- Clock -->
+    <constant-widget name="clock_window" />
+    <!-- Title Seperator -->
+    <constant-widget name="seperator_window_title" />
+    <!-- Left Panel (Left Side) -->
+		<widget name="list" position="window_list_pos" size="window_list_size" font="font_list" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+    <!-- Right Panel (Right Side) -->
+    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/plugin.png" position="window_image_pos" size="window_image_size" />
+    <!-- Remote Buttons -->
+    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
+    <!-- Buttons -->
+    <constant-widget name="color_buttons_window" />
+    <constant-widget name="key_red_name" />
+    <constant-widget name="key_green_name" />
+    <constant-widget name="key_yellow_name" />
+    <constant-widget name="key_blue_name" />
+	</screen>
+</skin>
