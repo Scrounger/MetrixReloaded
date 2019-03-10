@@ -3,7 +3,7 @@
     <!-- Backgrounds -->
     <constant-widget name="background_window" />
     <!-- Title -->
-    <widget name="version" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowMainColorL" transparent="1" noWrap="1"/>
+    <widget name="version" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1"/>
     <!-- Clock -->
     <constant-widget name="clock_window" />
     <!-- Title Seperator -->
@@ -11,78 +11,78 @@
     <!-- Left Panel ************************************************************************************** -->
 
     <!-- Subtitle / List Description -->
-    <widget name="title" position="105,140" size="1050,35" font="font_list_description" foregroundColor="listDescription" backgroundColor="background" transparent="1" valign="top" zPosition="0" />
+    <widget name="title" position="105,140" size="1050,35" font="font_list_description" foregroundColor="listDescription" backgroundColor="windowBackground" transparent="1" valign="top" zPosition="0" />
 
     <!-- Description für Tagesübersicht / Top30-->
-    <widget name="headline" position="105,880" size="1050,35" font="font_list_description" foregroundColor="foreground" backgroundColor="background" valign="top" halign="center" transparent="1" zPosition="1" />
+    <widget name="headline" position="105,880" size="1050,35" font="font_list_description" foregroundColor="foreground" backgroundColor="windowBackground" valign="top" halign="center" transparent="1" zPosition="1" />
 
     <!-- Liste: SerienBeschreibung -->
-    <widget name="info" position="105,190" size="1050,700" font="font_list" backgroundColor="background" transparent="1" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" />
+    <widget name="info" position="105,190" size="1050,700" font="font_list" backgroundColor="windowBackground" transparent="1" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" />
 
     <!-- Liste: Config -->
-    <widget name="config" position="105,190" size="1050,700" itemHeight="50" textOffset="5,3" font="font_list" secondfont="font_list_second" enableWrapAround="1" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20"/>
+    <widget name="config" position="105,190" size="1050,700" itemHeight="50" textOffset="5,3" font="font_list" secondfont="font_list_second" enableWrapAround="1" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20"/>
 
     <!-- Listen: Top30 / Tagesübersicht / Serien Marker / Timer-Liste / Serienstarts-->
-    <widget name="menu_list" position="105,190" size="1050,675" enableWrapAround="1" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+    <widget name="menu_list" position="105,190" size="1050,675" enableWrapAround="1" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
 
     <!-- Log: Liste -->
-    <widget name="log" position="105,220" size="1050,675" enableWrapAround="1" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20"/>
-    <widget name="path" position="105,140" size="1050,65" font="font_list_description" foregroundColor="listDescription" backgroundColor="background" valign="top" transparent="1" />
+    <widget name="log" position="105,220" size="1050,675" enableWrapAround="1" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20"/>
+    <widget name="path" position="105,140" size="1050,65" font="font_list_description" foregroundColor="listDescription" backgroundColor="windowBackground" valign="top" transparent="1" />
 
     <!-- Listen Sender zuordnen -->
-    <widget name="Web_Channel" position="105,180" size="250,30" zPosition="2" font="font_standard_extra_small" foregroundColor="foreground" backgroundColor="background" transparent="1" />
-    <widget name="STB_Channel" position="630,180" size="250,30" zPosition="2" font="font_standard_extra_small" foregroundColor="foreground" backgroundColor="background" transparent="1" />
-    <widget name="alt_STB_Channel" position="905,180" size="250,30" zPosition="2" font="font_standard_extra_small" foregroundColor="foreground" backgroundColor="background" halign="right" transparent="1" />
-    <widget name="list" position="105,220" size="1050,675" itemHeight="35" backgroundColor="background" zPosition="1" transparent="0" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20"/>
-    <widget name="popup_list" position="105,185" size="1050,710" itemHeight="35" backgroundColor="background" zPosition="6" transparent="0" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20"/>
-    <widget name="popup_list2" position="105,185" size="1050,710" itemHeight="35" backgroundColor="background" zPosition="7" transparent="0" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20"/>
+    <widget name="Web_Channel" position="105,180" size="250,30" zPosition="2" font="font_standard_extra_small" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" />
+    <widget name="STB_Channel" position="630,180" size="250,30" zPosition="2" font="font_standard_extra_small" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" />
+    <widget name="alt_STB_Channel" position="905,180" size="250,30" zPosition="2" font="font_standard_extra_small" foregroundColor="foreground" backgroundColor="windowBackground" halign="right" transparent="1" />
+    <widget name="list" position="105,220" size="1050,675" itemHeight="35" backgroundColor="windowBackground" zPosition="1" transparent="0" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20"/>
+    <widget name="popup_list" position="105,185" size="1050,710" itemHeight="35" backgroundColor="windowBackground" zPosition="6" transparent="0" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20"/>
+    <widget name="popup_list2" position="105,185" size="1050,710" itemHeight="35" backgroundColor="windowBackground" zPosition="7" transparent="0" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20"/>
 
     <!-- Right Panel ************************************************************************************************ -->
-    <widget name="cover" position="1350,105" size="350,492" backgroundColor="background" transparent="1" alphatest="blend" />
+    <widget name="cover" position="1350,105" size="350,492" backgroundColor="windowBackground" transparent="1" alphatest="blend" />
 
     <!-- Config -->
-    <widget name="config_information" position="1216,115" size="619,492" zPosition="3" foregroundColor="foreground" backgroundColor="background_second" />
-    <widget name="config_information_text" position="1216,115" size="619,492" zPosition="5" font="font_standard" halign="left" foregroundColor="foreground" backgroundColor="background_second" transparent="0" />
+    <widget name="config_information" position="1216,115" size="619,492" zPosition="3" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" />
+    <widget name="config_information_text" position="1216,115" size="619,492" zPosition="5" font="font_standard" halign="left" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="0" />
 
     <!-- Buttons Panel-->
     <widget name="bt_0" position="1270,620" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_0.png" alphatest="on" zPosition="3" />
-    <widget name="text_0" position="1308,620" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_0" position="1308,620" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_1" position="1595,620" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_1.png" alphatest="on" zPosition="3" />
-    <widget name="text_1" position="1633,620" size="285,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_1" position="1633,620" size="285,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_2" position="1270,660" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_2.png" alphatest="on" zPosition="3" />
-    <widget name="text_2" position="1308,660" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_2" position="1308,660" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_3" position="1595,660" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_3.png" alphatest="on" zPosition="3" />
-    <widget name="text_3" position="1633,660" size="285,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_3" position="1633,660" size="285,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_4" position="1270,700" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_4.png" alphatest="on" zPosition="3" />
-    <widget name="text_4" position="1308,700" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_4" position="1308,700" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_5" position="1595,700" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_5.png" alphatest="on" zPosition="2" />
-    <widget name="text_5" position="1633,700" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_5" position="1633,700" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_6" position="1270,740" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_6.png" alphatest="on" zPosition="2" />
-    <widget name="text_6" position="1308,740" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_6" position="1308,740" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_7" position="1595,740" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_7.png" alphatest="on" zPosition="2" />
-    <widget name="text_7" position="1633,740" size="285,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_7" position="1633,740" size="285,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_8" position="1270,780" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_8.png" alphatest="on" zPosition="2" />
-    <widget name="text_8" position="1308,780" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_8" position="1308,780" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_9" position="1595,780" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_9.png" alphatest="on" zPosition="2" />
-    <widget name="text_9" position="1633,780" size="285,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_9" position="1633,780" size="285,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_epg" position="1270,820" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_epg.png" alphatest="on" zPosition="1" />
-    <widget name="text_epg" position="1308,820" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_epg" position="1308,820" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_info" position="1595,820" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_help.png" alphatest="on" zPosition="1" />
-    <widget name="text_info" position="1633,820" size="285,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_info" position="1633,820" size="285,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_menu" position="1270,860" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_menu.png" alphatest="on" zPosition="1" />
-    <widget name="text_menu" position="1308,860" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_menu" position="1308,860" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_text" position="1595,860" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_text.png" alphatest="on" zPosition="1" />
-    <widget name="text_text" position="1633,860" size="100,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_text" position="1633,860" size="100,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_ok" position="1270,900" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_ok.png" alphatest="on" zPosition="1" />
-    <widget name="text_ok" position="1308,900" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_ok" position="1308,900" size="275,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
     <widget name="bt_exit" position="1595,900" size="32,32" pixmap="MetrixReloaded/media/buttons/serienrecorder/key_exit.png" alphatest="on" zPosition="1" />
-    <widget name="text_exit" position="1633,900" size="285,32" font="font_standard_extra_small" halign="left" backgroundColor="background_second" transparent="1" zPosition="1" />
+    <widget name="text_exit" position="1633,900" size="285,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
 
     <!-- Buttons -->
     <constant-widget name="color_buttons_window" />
-    <widget backgroundColor="background" font="font_key_standard" halign="left" position="key_red_pos" size="key_size" name="text_red" transparent="1" valign="top" zPosition="1" />
-    <widget backgroundColor="background" font="font_key_standard" halign="left" position="key_green_pos" size="key_size" name="text_green" transparent="1" valign="top" zPosition="1" />
-    <widget backgroundColor="background" font="font_key_standard" halign="left" position="key_yellow_pos" size="key_size" name="text_yellow" transparent="1" valign="top" zPosition="1" />
-    <widget backgroundColor="background" font="font_key_standard" halign="left" position="key_blue_pos" size="key_size" name="text_blue" transparent="1" valign="top" zPosition="1" />
+    <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" position="key_red_pos" size="key_size" name="text_red" transparent="1" valign="top" zPosition="1" />
+    <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" position="key_green_pos" size="key_size" name="text_green" transparent="1" valign="top" zPosition="1" />
+    <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" position="key_yellow_pos" size="key_size" name="text_yellow" transparent="1" valign="top" zPosition="1" />
+    <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" position="key_blue_pos" size="key_size" name="text_blue" transparent="1" valign="top" zPosition="1" />
   </screen>
 </skin>
