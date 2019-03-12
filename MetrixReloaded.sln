@@ -292,6 +292,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles"
 		screenFiles\variables.xml = screenFiles\variables.xml
 		screenFiles\vEditor.xml = screenFiles\vEditor.xml
 		screenFiles\VerticalEPGView_FHD.xml = screenFiles\VerticalEPGView_FHD.xml
+		screenFiles\VerticalEPGView_FHD_parameters.xml = screenFiles\VerticalEPGView_FHD_parameters.xml
 		screenFiles\VideoEnhancementPreview.xml = screenFiles\VideoEnhancementPreview.xml
 		screenFiles\VideoEnhancementSetup.xml = screenFiles\VideoEnhancementSetup.xml
 		screenFiles\VideoFinetune.xml = screenFiles\VideoFinetune.xml

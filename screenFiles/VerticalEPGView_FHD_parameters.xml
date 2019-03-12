@@ -1,0 +1,10 @@
+﻿<parameters name="VerticalEPGView_FHD_parameters">
+  <parameter name="VertEPGListFont_01" value="SetrixSL;26" />
+  <parameter name="VertEPGListFont_02" value="SetrixHD;30" />
+  <parameter name="VertEPGDate" value="0, 0, 0, 0" />
+  <parameter name="VertEPGText" value="10, 36, 316, 70" />
+  <parameter name="VertEPGDivLine" value="0, 108, 280, 2" />
+  <parameter name="VertEPGPrimeTimePic" value="296, 5, 22, 22" />
+  <parameter name="VertEPGColumnsCount" value="5" />
+  <parameter name="VertEPGBeginEndDuration" value="4, 4, 271, 30" />
+</parameters>

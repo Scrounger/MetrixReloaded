@@ -1,9 +1,8 @@
 ﻿<screen name="VerticalEPGView_FHD" position="center,center" size="1920,1080" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent" NoAnimationAfter="1">
   <!-- Backgrounds -->
-  <eLabel backgroundColor="windowBackground" position="60,37" size="1800,975" zPosition="-10" />
+  <constant-widget name="background_wide" />
   <!-- Title -->
   <constant-widget name="Title_window" />
-
   <!-- Title Seperator -->
   <eLabel name="Seperator" position="90,135" size="1740,2" zPosition="5" backgroundColor="seperator" />
   

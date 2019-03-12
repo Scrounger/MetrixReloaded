@@ -33,6 +33,9 @@
   <constant-widget name="background_movieplayer">
     <eLabel backgroundColor="windowBackground" position="0,858" size="1920,280" zPosition="-10" />
   </constant-widget>
+  <constant-widget name="background_wide">
+    <eLabel backgroundColor="windowBackground" position="60,37" size="1800,975" zPosition="-10" />
+  </constant-widget>
   <constant-widget name="background_contextMenu">
     <eLabel backgroundColor="windowBackgroundSecond" position="0,0" size="1050,60" zPosition="-10" />
     <eLabel backgroundColor="windowBackground" position="0,60" size="1050,690" zPosition="-10" />
