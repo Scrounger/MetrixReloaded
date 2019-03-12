@@ -17,9 +17,17 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 
 ## Screenshots
 <p align="center">
-  <img src="screenshots/infobar.jpg?sanitize=true&raw=true" title="InfoBar" width="400"/>
-  <img src="screenshots/pluginbrowser.jpg?sanitize=true&raw=true" title="PluginBrowser" width="400"/>
-  <img src="screenshots/vtipanel.jpg?sanitize=true&raw=true" title="VtiPanel" width="400"/>
+  <img src="screenshots/contextMenu.jpg?sanitize=true&raw=true" title="InfoBar" width="400"/>
+  <img src="screenshots/infobar.jpg?sanitize=true&raw=true" title="PluginBrowser" width="400"/>
+  <img src="screenshots/infoBarZapHistory.jpg?sanitize=true&raw=true" title="VtiPanel" width="400"/>
+<img src="screenshots/messageBox.jpg?sanitize=true&raw=true" title="VtiPanel" width="400"/>
+<img src="screenshots/moviePlayer.jpg?sanitize=true&raw=true" title="VtiPanel" width="400"/>
+<img src="screenshots/movieSelection.jpg?sanitize=true&raw=true" title="VtiPanel" width="400"/>
+<img src="screenshots/pluginBrowser.jpg?sanitize=true&raw=true" title="VtiPanel" width="400"/>
+<img src="screenshots/setup.jpg?sanitize=true&raw=true" title="VtiPanel" width="400"/>
+<img src="screenshots/timerEditList.jpg?sanitize=true&raw=true" title="VtiPanel" width="400"/>
+<img src="screenshots/timerEntry.jpg?sanitize=true&raw=true" title="VtiPanel" width="400"/>
+<img src="screenshots/vtiPanel.jpg?sanitize=true&raw=true" title="VtiPanel" width="400"/>
 </p>
 
 
