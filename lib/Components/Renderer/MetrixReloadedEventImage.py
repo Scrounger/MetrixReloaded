@@ -16,7 +16,6 @@ from Components.Sources.ServiceEvent import ServiceEvent
 from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, getEpgShareImagePath
 import logging
 
-
 class MetrixReloadedEventImage(Renderer):
     DOWNOAD_IMAGE = "DOWNOAD_IMAGE"
     SHOW_IMAGE = "SHOW_IMAGE"
@@ -89,15 +88,16 @@ class MetrixReloadedEventImage(Renderer):
             if not self.instance:
                 return
 
+            self.hideimage()
+
             event = self.source.event
             try:
                 #Prüfen ob eventId vorhanden ist
                 eventid = event.getEventId()
             except Exception as e:
-                #Fehler, dann ist event array
+                #Fehler, dann ist event ggf. ein array
                 event = self.source.event[0]
 
-            self.hideimage()
             if event is None:
                 self.eventid = None
                 self.instance.hide()
@@ -152,6 +152,7 @@ class MetrixReloadedEventImage(Renderer):
 
         except Exception as e:
             self.log.exception("changed: %s", str(e))
+            self.hideimage()
         
         return
 
