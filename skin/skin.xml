@@ -3962,7 +3962,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Background -->
   <constant-widget name="background_movieplayer" />
   <!-- Clock -->
-  <constant-widget name="clock_menu" />
+  <constant-widget name="clock_infoBar" />
   <!-- Logo -->
   <widget source="session.CurrentService" render="XHDPicon" position="40,870" zPosition="1" size="330,198" backgroundColor="windowBackground" transparent="1" alphatest="blend">
     <convert type="MovieBarInfo">Reference</convert>
