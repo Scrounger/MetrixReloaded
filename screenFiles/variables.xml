@@ -2,6 +2,7 @@
   <variable name="screen_full_size" value="1920, 1080" />
   <variable name="screen_full_pos" value="0,0" />
   <variable name="key_size" value="240,60" />
+  <variable name="key_size_small" value="18,28" />
   <variable name="key_size_mid" value="240,60" />
   <variable name="key_red_pos" value="105,950" />
   <variable name="key_red_pos_short" value="105,950" />

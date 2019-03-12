@@ -1,44 +1,45 @@
-﻿<screen name="AudioSelection" position="center,center" size="1288,923" title="Audio" flags="wfNoBorder" backgroundColor="transparent">
+﻿<screen name="AudioSelection" position="center,center" size="1050,750" title="Audio" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <constant-widget name="background_contextMenu" />
+  <!-- Title -->
+  <constant-widget name="Title_contextMenu" />
+  <!-- Title Seperator -->
+  <constant-widget name="seperator_contextMenu_title" />
+  <!-- Context Panel -->
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="contextMenu_list_pos" size="1020,300" textOffset="5,1" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <eLabel name="Seperator" position="15,350" size="1020,2" zPosition="5" backgroundColor="seperator" />
+  <widget source="key_red" render="Pixmap" pixmap="MetrixReloaded/media/buttons/key_red_small.png" position="5,88" size="key_size_small" alphatest="blend" zPosition="2">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="key_green" render="Pixmap" pixmap="MetrixReloaded/media/buttons/key_green_small.png" position="5,138" size="key_size_small" alphatest="blend" zPosition="2">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="key_yellow" render="Pixmap" pixmap="MetrixReloaded/media/buttons/key_yellow_small.png" position="5,188" size="key_size_small" alphatest="blend" zPosition="2">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="key_blue" render="Pixmap" pixmap="MetrixReloaded/media/buttons/key_blue_small.png" position="5,238" size="key_size_small" alphatest="blend" zPosition="2">
+    <convert type="ConditionalShowHide" />
+  </widget>
   
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Subtitles.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="127,250" size="1050,300" textOffset="25,9" font="Regular;32" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
-  <eLabel position="45,572" size="1198,4" zPosition="-1" backgroundColor="gray" />
-
-  <constant-widget name="Title_window" />
-  <constant-widget name="clock_mid" />
-  <widget source="key_red" render="Pixmap" pixmap="MetrixReloaded/buttons/red.png" position="90,260" size="31,31" alphatest="blend">
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="key_green" render="Pixmap" pixmap="MetrixReloaded/buttons/green.png" position="90,310" size="31,31" alphatest="blend">
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="key_yellow" render="Pixmap" pixmap="MetrixReloaded/buttons/yellow.png" position="90,360" size="31,31" alphatest="blend">
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="key_blue" render="Pixmap" pixmap="MetrixReloaded/buttons/blue.png" position="90,410" size="31,31" alphatest="blend">
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="streams" render="Listbox" scrollbarMode="showAlways" position="127,600" size="1050,250" zPosition="3" transparent="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
+  <widget source="streams" render="Listbox" position="15,370" size="1020,360" zPosition="3" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"templates":
       {"default": (50, [
-      MultiContentEntryText(pos = (0, 9), size = (35, 40), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
-      MultiContentEntryText(pos = (40, 9), size = (60, 40), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
-      MultiContentEntryText(pos = (110, 9), size = (250, 40), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
-      MultiContentEntryText(pos = (370, 9), size = (400, 40), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
-      MultiContentEntryText(pos = (780, 9), size = (150, 40), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
-      ], True, "showAlways"),
+      MultiContentEntryText(pos = (0, 9), size = (35, 40), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # key,
+      MultiContentEntryText(pos = (40, 9), size = (60, 40), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # number,
+      MultiContentEntryText(pos = (110, 9), size = (250, 40), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # description,
+      MultiContentEntryText(pos = (420, 9), size = (400, 40), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # language,
+      MultiContentEntryText(pos = (840, 9), size = (150, 40), font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 5), # selection,
+      ], True, "showOnDemand"),
       "notselected": (50, [
-      MultiContentEntryText(pos = (0, 9), size = (35, 40), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
-      MultiContentEntryText(pos = (40, 9), size = (60, 40), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
-      MultiContentEntryText(pos = (110, 9), size = (250, 40), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
-      MultiContentEntryText(pos = (370, 9), size = (400, 40), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
-      MultiContentEntryText(pos = (780, 9), size = (150, 40), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
-      ], False, "showAlways")
+      MultiContentEntryText(pos = (0, 9), size = (35, 40), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # key,
+      MultiContentEntryText(pos = (40, 9), size = (60, 40), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # number,
+      MultiContentEntryText(pos = (110, 9), size = (250, 40), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # description,
+      MultiContentEntryText(pos = (420, 9), size = (400, 40), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # language,
+      MultiContentEntryText(pos = (840, 9), size = (150, 40), font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 5), # selection,
+      ], False, "showOnDemand")
       },
-      "fonts": [gFont("Regular", 32), gFont("SetrixSL", 28)],
+      "fonts": [gFont("SetrixHD", 30), gFont("SetrixSL", 24)],
       "itemHeight": 50
       }
     </convert>
