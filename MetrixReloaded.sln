@@ -276,6 +276,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles"
 		screenFiles\TaskListScreen.xml = screenFiles\TaskListScreen.xml
 		screenFiles\TimeDateInput.xml = screenFiles\TimeDateInput.xml
 		screenFiles\TimerEditList.xml = screenFiles\TimerEditList.xml
+		screenFiles\TimerEditList_parameters.xml = screenFiles\TimerEditList_parameters.xml
 		screenFiles\TimerEntry.xml = screenFiles\TimerEntry.xml
 		screenFiles\TimerLog.xml = screenFiles\TimerLog.xml
 		screenFiles\TimerSanityConflict.xml = screenFiles\TimerSanityConflict.xml
