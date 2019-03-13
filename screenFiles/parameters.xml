@@ -1,21 +1,5 @@
 ﻿<parameters>
-  <!-- ChannelSelection - Einzeilig -->
-  <parameter name="ServicelistAdvertismentIconPixmap" value="0,10,30,60" />
-  <parameter name="ServicelistServiceNumberOffsetNormal" value="80" />
-  <parameter name="ServicelistOffset" value="100" />
-  <parameter name="ServicelistServiceNumberOffset" value="80" />
-  <parameter name="ServicelistServiceNumber" value="0,0,57,0" />
-  <parameter name="ServicelistRecordServicePixmap" value="0,9,46,45" />
-  <parameter name="ServicelistDoubleSpacedMinHeight" value="88" />
-  <parameter name="ServicelistCustomPreViewPicSize" value="141,88" />
-  <!-- ChannelSelection - Zweizeilig -->
-  <parameter name="Servicelist100Picon" value="10,10,100,60" />
-  <parameter name="ServicelistServiceTypePixmap100" value="0,10,40,40" />
-  <parameter name="ServicelistServiceEventProgressbar100" value="25,0,52,0" />
-  <parameter name="ServicelistServiceNumber100" value="20,0,57,0" />
-  <parameter name="ServicelistRecordServicePixmap100" value="0,7,40,40" />
-  <parameter name="ServicelistServiceName100" value="5,0,800,40" />
-  <parameter name="ServicelistServiceInfo100" value="5,0,800,40" />
+
   <!-- Kanalliste - Horizontal -->
   <parameter name="ServicelistHorServiceTypeIcon" value="0,0,0,0" />
   <parameter name="ServicelistHorServiceTime" value="0,0,0,0" />
@@ -26,13 +10,9 @@
   <parameter name="ServicelistHorName" value="5,160,225,40" />
   <parameter name="ServicelistHorServiceInfo" value="5,225,225,70" />
   <parameter name="ServicelistHorCustomPiconSize" value="220,132" />
-  <!-- ChannelSelection - epglist-->
-  <parameter name="EPGServicelistText0OffSet" value="10, 0" />
-  <parameter name="EPGServicelistText1OffSet" value="-10, 0" />
-  <parameter name="EPGServicelistText2OffSet" value="-10, 0" />
-  <parameter name="EPGServicelistRecImageOffset" value="-30, 5" />
-  <parameter name="EPGServicelistRecTextOffset" value="-30, 0" />
-  <parameter name="EPGServicelistNonRecTextOffset" value="-20, 0" />
+
+  
+  
   <parameter name="PluginBrowserName" value="130, 5, 28" />
   <parameter name="PluginBrowserDescr" value="130, 33, 20" />
   <parameter name="PluginBrowserIcon" value="10, 10, 100, 40" />
