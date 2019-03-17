@@ -120,7 +120,6 @@ def initializeLog(fileName):
     logger = logging.getLogger(fileName)
 
     debug = True
-
     try:
         debug = config.plugins.MetrixReloaded.debug.value
     except:
@@ -131,9 +130,13 @@ def initializeLog(fileName):
     else:
         logger.setLevel(logging.INFO)
 
-    # create a file handler
     dir = '/mnt/hdd/MetrixReloaded/log/'
+    try:
+        dir = config.plugins.MetrixReloaded.logDirectory.value
+    except:
+        pass
 
+    # create a file handler
     if not os.path.exists(dir):
         os.makedirs(dir)
 

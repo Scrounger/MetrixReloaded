@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 from Plugins.Plugin import PluginDescriptor
 
 # Config
-from Components.config import config, ConfigYesNo, ConfigNumber, ConfigSelection, ConfigSubsection, ConfigClock, ConfigYesNo
+from Components.config import config, ConfigSubsection, ConfigOnOff, ConfigDirectory
 
 import os
 import logging
@@ -10,8 +11,9 @@ import MetrixReloadedSetup
 
 #Configuration
 config.plugins.MetrixReloaded = ConfigSubsection()
-config.plugins.MetrixReloaded.onlineMode = ConfigYesNo(default = True)
-config.plugins.MetrixReloaded.debug = ConfigYesNo(default = False)
+config.plugins.MetrixReloaded.onlineMode = ConfigOnOff(default = True)
+config.plugins.MetrixReloaded.debug = ConfigOnOff(default = False)
+config.plugins.MetrixReloaded.logDirectory = ConfigDirectory(default = '/tmp/MetrixReloaded/log/')
 
 def Plugins(**kwargs):
 	log = initializeLog()

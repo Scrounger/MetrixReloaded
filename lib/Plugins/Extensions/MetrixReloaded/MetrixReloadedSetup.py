@@ -1,12 +1,12 @@
+# -*- coding: utf-8 -*-
+
+# GUI (Screens)
 from Screens.Screen import Screen
 from Components.ConfigList import ConfigListScreen
 from Screens.MessageBox import MessageBox
-from Components.Label import Label
 
 # Configuration
 from Components.config import config, getConfigListEntry
-
-from Tools import Notifications
 
 # GUI (Components)
 from Components.ActionMap import ActionMap
@@ -14,6 +14,8 @@ from Components.Sources.StaticText import StaticText
 
 # MyLog
 from Tools.MetrixReloadedHelper import initializeLog
+
+#from Tools import Notifications
 
 
 class MetrixReloadedSetup(Screen, ConfigListScreen):
@@ -39,7 +41,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
     def __init__(self, session):
         Screen.__init__(self, session)
         self.log = initializeLog("MetrixReloadedSetup")
-        
+
         self.log.info("MetrixReloadedSetup open")
         self.log.debug("Debug: MetrixReloadedSetup open")
         self.log.debug(str(config.plugins.MetrixReloaded.debug.value))
@@ -54,6 +56,8 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
                     "Wenn der Online Modus aktiviert ist, werden im Hintergrund zustzliche Informationen heruntergeladen")),
                 getConfigListEntry(_("Log Debug Modus"), config.plugins.MetrixReloaded.debug, _(
                     "Log Debug Modus aktivieren")),
+                getConfigListEntry(_("Verzeichnis Log Dateien"), config.plugins.MetrixReloaded.logDirectory, _(
+                    "Bla Bla")),
             ]
 
             ConfigListScreen.__init__(
