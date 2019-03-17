@@ -9,6 +9,7 @@ import json
 import os
 import time
 import base64
+import logging
 
 def getExtraData(source, logger):
     if source.event:
@@ -38,6 +39,7 @@ def getExtraData(source, logger):
             return source.event.getExtraEventData()
     return ""
 
+
 def getDataFromDatabase(service, eventid, logger, beginTime=None, EventName=None):
     try:
         from Plugins.Extensions.EpgShare.main import getEPGDB
@@ -63,11 +65,12 @@ def getDataFromDatabase(service, eventid, logger, beginTime=None, EventName=None
         logger.exception("getDataFromDatabase: %s", str(ex))
         return None
 
+
 def getEventImage(self, timestamp, eventId, withSize=False):
     # FileName für Image aus EpgShare Download Folder zurück geben
     try:
         path = os.path.join(getEpgShareImagePath(self), str(
-        time.strftime('%D', time.localtime(int(timestamp)))).replace('/', '.'))
+            time.strftime('%D', time.localtime(int(timestamp)))).replace('/', '.'))
 
         size = ''
         if(withSize):
@@ -83,6 +86,7 @@ def getEventImage(self, timestamp, eventId, withSize=False):
         self.log.exception("getEventImage: %s", str(e))
 
     return None
+
 
 def getDefaultImage(self, title):
     # FileName für Image aus Default Folder zurückgeben
@@ -102,10 +106,45 @@ def getDefaultImage(self, title):
 
     return None
 
+
 def getEpgShareImagePath(self):
     try:
         return str(config.plugins.epgShare.autocachelocation.value)
     except Exception as e:
-        self.log.exception("getEpgShareImagePath: %s", str(e))    
-    
+        self.log.exception("getEpgShareImagePath: %s", str(e))
+
     return None
+
+
+def initializeLog(fileName):
+    logger = logging.getLogger(fileName)
+
+    debug = True
+
+    try:
+        debug = config.plugins.MetrixReloaded.debug.value
+    except:
+        pass
+
+    if(debug):
+        logger.setLevel(logging.DEBUG)
+    else:
+        logger.setLevel(logging.INFO)
+
+    # create a file handler
+    dir = '/mnt/hdd/MetrixReloaded/log/'
+
+    if not os.path.exists(dir):
+        os.makedirs(dir)
+
+    handler = logging.FileHandler('%s%s.log' % (dir, fileName))
+
+    # create a logging format
+    formatter = logging.Formatter(
+        '%(asctime)s - %(name)s: [%(levelname)s] %(message)s')
+    handler.setFormatter(formatter)
+
+    # add the handlers to the logger
+    logger.addHandler(handler)
+
+    return logger
