@@ -1,42 +1,108 @@
 from Screens.Screen import Screen
+from Components.ConfigList import ConfigListScreen
 from Screens.MessageBox import MessageBox
 from Components.Label import Label
 
-from Tools import Notifications
+# Configuration
+from Components.config import config, getConfigListEntry
 
+from Tools import Notifications
 
 # GUI (Components)
 from Components.ActionMap import ActionMap
+from Components.Sources.StaticText import StaticText
 
-import os
-import logging
+# MyLog
+from Tools.MetrixReloadedHelper import initializeLog
 
 
-class MetrixReloadedSetup(Screen):
+class MetrixReloadedSetup(Screen, ConfigListScreen):
+    """Configuration of MetrixReloaded"""
 
-    skin = """
-<screen position="130,150" size="460,150" title="Ihad.tv e2-tutorial
-lesson 2" >
-<widget name="myLabel" position="10,60" size="200,40"
-font="Regular;20"/>
-</screen>"""
+    skin = """<screen name="EPGRefreshConfiguration" position="center,center" size="600,430">
+		<ePixmap position="0,5" size="140,40" pixmap="skin_default/buttons/red.png" transparent="1" alphatest="on" />
+		<ePixmap position="140,5" size="140,40" pixmap="skin_default/buttons/green.png" transparent="1" alphatest="on" />
+		<ePixmap position="280,5" size="140,40" pixmap="skin_default/buttons/yellow.png" transparent="1" alphatest="on" />
+		<ePixmap position="420,5" size="140,40" pixmap="skin_default/buttons/blue.png" transparent="1" alphatest="on" />
+		<ePixmap position="562,15" size="35,25" pixmap="skin_default/buttons/key_info.png" alphatest="on" />
 
-    def __init__(self, session, args=None):
+		<widget source="key_red" render="Label" position="0,5" zPosition="1" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget source="key_green" render="Label" position="140,5" zPosition="1" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget source="key_yellow" render="Label" position="280,5" zPosition="1" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+		<widget source="key_blue" render="Label" position="420,5" zPosition="1" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
 
-        self.session = session
+		<widget name="config" position="5,50" size="590,275" scrollbarMode="showOnDemand" />
+		<ePixmap pixmap="skin_default/div-h.png" position="0,335" zPosition="1" size="565,2" />
+		<widget source="help" render="Label" position="5,345" size="590,83" font="Regular;21" />
+	</screen>"""
+
+    def __init__(self, session):
         Screen.__init__(self, session)
-
-        self.log = self.initializeLog()
+        self.log = initializeLog("MetrixReloadedSetup")
+        
         self.log.info("MetrixReloadedSetup open")
+        self.log.debug("Debug: MetrixReloadedSetup open")
+        self.log.debug(str(config.plugins.MetrixReloaded.debug.value))
+
+        # Summary
+        self.setTitle("MetrixReloaded Configuration")
+        self.onChangedEntry = []
 
         try:
-            self["myLabel"] = Label(_("please press OK"))
+            self.list = [
+                getConfigListEntry(_("Online Modus"), config.plugins.MetrixReloaded.onlineMode, _(
+                    "Wenn der Online Modus aktiviert ist, werden im Hintergrund zustzliche Informationen heruntergeladen")),
+                getConfigListEntry(_("Log Debug Modus"), config.plugins.MetrixReloaded.debug, _(
+                    "Log Debug Modus aktivieren")),
+            ]
+
+            ConfigListScreen.__init__(
+                self, self.list, session=session, on_change=self.changed)
+
+            def selectionChanged():
+                if self["config"].current:
+                    self["config"].current[1].onDeselect(self.session)
+                self["config"].current = self["config"].getCurrent()
+                if self["config"].current:
+                    self["config"].current[1].onSelect(self.session)
+                for x in self["config"].onSelectionChanged:
+                    x()
+
+            self["config"].selectionChanged = selectionChanged
+            self["config"].onSelectionChanged.append(self.updateHelp)
+
+            # Initialize Buttons
+            self["key_red"] = StaticText(_("Cancel"))
+            self["key_green"] = StaticText(_("OK"))
+            self["key_yellow"] = StaticText(_("Refresh now"))
+            self["key_blue"] = StaticText(_("Edit Services"))
+
+            self["help"] = StaticText()
+
             # Define Actions
-            self["myActionsMap"] = ActionMap(["SetupActions", "ColorActions"],
-                                             {
-                "ok": self.myMsg,
-                "cancel": self.close,
-            }, -1)
+            self["actions"] = ActionMap(["SetupActions", "ColorActions", "ChannelSelectEPGActions", "HelpActions"],
+                                        {
+                "cancel": self.keyCancel,
+                "save": self.keySave,
+                # "yellow": self.forceRefresh,
+                # "blue": self.editServices,
+                # "showEPGList": self.keyInfo,
+                # "displayHelp": self.showHelp,
+            }
+            )
+
+            # Trigger change
+            self.changed()
+
+            # self.onLayoutFinish.append(self.setCustomTitle)
+
+            # self["myLabel"] = Label(_("please press OK"))
+            # # Define Actions
+            # self["myActionsMap"] = ActionMap(["SetupActions", "ColorActions"],
+            #                                  {
+            #     "ok": self.myMsg,
+            #     "cancel": self.close,
+            # }, -1)
 
         except Exception as e:
             self.log.exception("MetrixReloadedSetup: %s", str(e))
@@ -45,25 +111,30 @@ font="Regular;20"/>
     def myMsg(self):
         self.session.open(MessageBox, _("Hello World!"), MessageBox.TYPE_INFO)
 
-    def initializeLog(self):
-        logger = logging.getLogger("MetrixReloadedSetup")
-        logger.setLevel(logging.DEBUG)
+    def keyCancel(self):
+        if self["config"].isChanged():
+            self.session.openWithCallback(
+                self.cancelConfirm,
+                MessageBox,
+                _("Really close without saving settings?")
+            )
+        else:
+            self.close(self.session)
 
-        # create a file handler
-        dir = '/mnt/hdd/MetrixReloaded/log/'
+    def keySave(self):
+        for x in self["config"].list:
+            x[1].save()
 
-        if not os.path.exists(dir):
-            os.makedirs(dir)
+        self.close(self.session)
 
-        handler = logging.FileHandler('%sMetrixReloadedSetup.log' % (dir))
-        handler.setLevel(logging.DEBUG)
+    def updateHelp(self):
+        cur = self["config"].getCurrent()
+        if cur:
+            self["help"].text = cur[2]
 
-        # create a logging format
-        formatter = logging.Formatter(
-            '%(asctime)s - %(name)s: [%(levelname)s] %(message)s')
-        handler.setFormatter(formatter)
-
-        # add the handlers to the logger
-        logger.addHandler(handler)
-
-        return logger
+    def changed(self):
+        for x in self.onChangedEntry:
+            try:
+                x()
+            except Exception:
+                pass

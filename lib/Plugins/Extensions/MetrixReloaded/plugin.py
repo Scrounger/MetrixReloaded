@@ -1,13 +1,23 @@
 from Plugins.Plugin import PluginDescriptor
-from Components.config import config
+
+# Config
+from Components.config import config, ConfigYesNo, ConfigNumber, ConfigSelection, ConfigSubsection, ConfigClock, ConfigYesNo
 
 import os
 import logging
 
 import MetrixReloadedSetup
 
+#Configuration
+config.plugins.MetrixReloaded = ConfigSubsection()
+config.plugins.MetrixReloaded.onlineMode = ConfigYesNo(default = True)
+config.plugins.MetrixReloaded.debug = ConfigYesNo(default = False)
 
 def Plugins(**kwargs):
+	log = initializeLog()
+
+	log.info(str(config.plugins.MetrixReloaded.onlineMode))
+
 	return [PluginDescriptor(
 		name="MetrixReloaded",
 		description="MetrixReloaded Skin Einstellungen",

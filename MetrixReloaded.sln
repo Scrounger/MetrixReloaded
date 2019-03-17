@@ -180,6 +180,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles"
 		screenFiles\menu_tasklist.xml = screenFiles\menu_tasklist.xml
 		screenFiles\MessageBox.xml = screenFiles\MessageBox.xml
 		screenFiles\MessageBoxConfirmCode.xml = screenFiles\MessageBoxConfirmCode.xml
+		screenFiles\MetrixReloadedSetup.xml = screenFiles\MetrixReloadedSetup.xml
 		screenFiles\MinuteInput.xml = screenFiles\MinuteInput.xml
 		screenFiles\MMIDialog.xml = screenFiles\MMIDialog.xml
 		screenFiles\modifyExe.xml = screenFiles\modifyExe.xml
