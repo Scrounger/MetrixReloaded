@@ -23,6 +23,27 @@ from Tools.MetrixReloadedHelper import initializeLog, getVersion
 #from Tools import Notifications
 
 
+#Language #########################################################################################################################################
+from Components.Language import language
+import gettext
+from Tools.Directories import resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
+from os import environ
+
+#language
+lang = language.getLanguage()
+environ["LANGUAGE"] = lang[:2]
+gettext.bindtextdomain("enigma2", resolveFilename(SCOPE_LANGUAGE))
+gettext.textdomain("enigma2")
+gettext.bindtextdomain("MetrixReloaded", "%s%s" % (resolveFilename(SCOPE_PLUGINS), "Extensions/MetrixReloaded/locale/"))
+
+def _(txt):
+	t = gettext.dgettext("MetrixReloaded", txt)
+	if t == txt:
+		t = gettext.gettext(txt)
+	return t
+
+###########################################################################################################################################
+
 class MetrixReloadedSetup(Screen, ConfigListScreen):
 
     def __init__(self, session):
@@ -113,7 +134,8 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             from Plugins.Extensions.AtileHD.plugin import *
             self.session.open(AtileHD_Config)
         else:
-            self.session.open(MessageBox, _("Sorry, but the plugin %s is not installed at your Vu+ STB! Please install it to use this function" % "AtileHD"), MessageBox.TYPE_ERROR)
+            msg = _("Sorry, but the plugin %s is not installed at your Vu+ STB! Please install it to use this function") % "AtileHD"
+            self.session.open(MessageBox, msg, MessageBox.TYPE_ERROR)
     
     def keyOK(self):
         if (self['config'].getCurrent()[1] == config.plugins.MetrixReloaded.logDirectory):

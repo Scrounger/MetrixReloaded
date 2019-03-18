@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2019-03-18 18:06+0100\n"
-"PO-Revision-Date: 2019-03-18 18:11+0100\n"
+"PO-Revision-Date: 2019-03-18 18:23+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -43,7 +43,7 @@ msgstr "Log Dateien Verzeichnis"
 #: MetrixReloadedSetup.py:44
 msgid ""
 "choose the directory where log files of skin, components, etc are stored"
-msgstr "Verzeichnis der log datein auswählen"
+msgstr "Verzeichnis der log Datein auswählen"
 
 #: MetrixReloadedSetup.py:63
 msgid "Cancel"
@@ -72,7 +72,7 @@ msgid ""
 "to use this function"
 msgstr ""
 "Das Plugin '%s' ist nicht auf Ihrer Vu+ installiert.\n"
-"Bitte installieren Sie das Plugin, um diese Funktion nutzen zu können."
+"Bitte installieren Sie das Plugin, um diese Funktion nutzen zu können"
 
 #: MetrixReloadedSetup.py:121
 msgid "Choose folder"
