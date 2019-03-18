@@ -13,7 +13,7 @@ from skin import parseColor, parseFont
 from twisted.web.client import downloadPage, getPage
 from Components.Sources.ExtEvent import ExtEvent
 from Components.Sources.ServiceEvent import ServiceEvent
-from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, getEpgShareImagePath
+from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, getEpgShareImagePath, initializeLog
 import logging
 
 class MetrixReloadedEventImage(Renderer):
@@ -24,7 +24,7 @@ class MetrixReloadedEventImage(Renderer):
         Renderer.__init__(self)
 
         # Log initialisieren
-        self.log = self.initializeLog()
+        self.log = initializeLog("MetrixReloadedEventImage")
 
         self.eventid = None
         self.downloads = []
@@ -268,26 +268,3 @@ class MetrixReloadedEventImage(Renderer):
         except Exception as e:
             self.log.exception("deserializeJson: %s", str(e))
             return None
-
-    def initializeLog(self):
-        logger = logging.getLogger("MetrixReloadedEventImage")
-        logger.setLevel(logging.DEBUG)
-
-        # create a file handler
-        dir = '/mnt/hdd/MetrixReloaded/log/'
-
-        if not os.path.exists(dir):
-            os.makedirs(dir)
-
-        handler = logging.FileHandler('%sMetrixReloadedEventImage.log' % (dir))
-        handler.setLevel(logging.DEBUG)
-
-        # create a logging format
-        formatter = logging.Formatter(
-            '%(asctime)s - %(name)s: [%(levelname)s] %(message)s')
-        handler.setFormatter(formatter)
-
-        # add the handlers to the logger
-        logger.addHandler(handler)
-
-        return logger

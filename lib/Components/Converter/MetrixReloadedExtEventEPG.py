@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from Components.Converter.Converter import Converter
 from Components.Element import cached
-from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage
+from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, initializeLog
 
 from Tools.MovieInfoParser import getExtendedMovieDescription
 
@@ -47,7 +47,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 	def __init__(self, type):
 		Converter.__init__(self, type)
 		
-		self.log = self.initializeLog()
+		self.log = initializeLog("MetrixReloadedExtEventEPG")
 
 		self.inputString = type
 		self.types = str(type).split(",")
@@ -867,28 +867,6 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				return True
 		
 		return False
-
-	def initializeLog(self):
-		logger = logging.getLogger("MetrixReloadedExtEventEPG")
-		logger.setLevel(logging.DEBUG)
-
-		# create a file handler
-		dir = '/mnt/hdd/MetrixReloaded/log/'
-
-		if not os.path.exists(dir):
-			os.makedirs(dir)
-
-		handler = logging.FileHandler('%sMetrixReloadedExtEventEPG.log' % (dir))
-		handler.setLevel(logging.DEBUG)
-
-		# create a logging format
-		formatter = logging.Formatter('%(asctime)s - %(name)s: [%(levelname)s] %(message)s')
-		handler.setFormatter(formatter)
-
-		# add the handlers to the logger
-		logger.addHandler(handler)
-		
-		return logger
 		
 	AVAILABLE_GENRES_EPG =[
                         "Actionfilm", "Abenteuerfilm", "Animationsfilm", "Animationsserie", "Abenteuer", "Animations-Serie", "Actiondrama", "Abenteuer-Serie", "Actionthriller", "Actionkomödie", "Actionserie", "Animation", "Action", "Actionfilm",
