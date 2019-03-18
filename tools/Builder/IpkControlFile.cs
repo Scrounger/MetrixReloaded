@@ -28,9 +28,9 @@ namespace Builder
                 "Priority: " + "optional" + "\n" +
                 "Maintainer: " + "scrounger" + "\n" +
                 "Architecture: " + "all" + "\n" +
-                "License: " + "" + "\n" +
-                "Homepage: " + "" + "\n" +
-                "Source: " + "";
+                "License: " + "Apache License 2.0" + "\n" +
+                "Homepage: " + "https://github.com/Scrounger/MetrixReloaded" + "\n" +
+                "Source: " + "https://github.com/Scrounger/MetrixReloaded";
 
             System.IO.File.WriteAllText(filename, content);
         }
