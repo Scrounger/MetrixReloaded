@@ -16,10 +16,6 @@ config.plugins.MetrixReloaded.debug = ConfigOnOff(default = False)
 config.plugins.MetrixReloaded.logDirectory = ConfigDirectory(default = '/tmp/MetrixReloaded/log/')
 
 def Plugins(**kwargs):
-	log = initializeLog()
-
-	log.info(str(config.plugins.MetrixReloaded.onlineMode))
-
 	return [PluginDescriptor(
 		name="MetrixReloaded",
 		description="MetrixReloaded Skin Einstellungen",

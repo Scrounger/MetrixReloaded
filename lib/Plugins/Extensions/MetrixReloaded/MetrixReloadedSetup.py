@@ -4,6 +4,7 @@
 from Screens.Screen import Screen
 from Components.ConfigList import ConfigListScreen
 from Screens.MessageBox import MessageBox
+from Screens.FileDirBrowser import FileDirBrowser
 
 # Configuration
 from Components.config import config, getConfigListEntry
@@ -11,6 +12,8 @@ from Components.config import config, getConfigListEntry
 # GUI (Components)
 from Components.ActionMap import ActionMap
 from Components.Sources.StaticText import StaticText
+
+import os
 
 # MyLog
 from Tools.MetrixReloadedHelper import initializeLog
@@ -43,8 +46,6 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
         self.log = initializeLog("MetrixReloadedSetup")
 
         self.log.info("MetrixReloadedSetup open")
-        self.log.debug("Debug: MetrixReloadedSetup open")
-        self.log.debug(str(config.plugins.MetrixReloaded.debug.value))
 
         # Summary
         self.setTitle("MetrixReloaded Configuration")
@@ -54,9 +55,8 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             self.list = [
                 getConfigListEntry(_("Online Modus"), config.plugins.MetrixReloaded.onlineMode, _(
                     "Wenn der Online Modus aktiviert ist, werden im Hintergrund zustzliche Informationen heruntergeladen")),
-                getConfigListEntry(_("Log Debug Modus"), config.plugins.MetrixReloaded.debug, _(
-                    "Log Debug Modus aktivieren")),
-                getConfigListEntry(_("Verzeichnis Log Dateien"), config.plugins.MetrixReloaded.logDirectory, _(
+                getConfigListEntry(_("enable debug"), config.plugins.MetrixReloaded.debug),
+                getConfigListEntry(_("Verzeichnis der Log Dateien"), config.plugins.MetrixReloaded.logDirectory, _(
                     "Bla Bla")),
             ]
 
@@ -77,9 +77,9 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
 
             # Initialize Buttons
             self["key_red"] = StaticText(_("Cancel"))
-            self["key_green"] = StaticText(_("OK"))
-            self["key_yellow"] = StaticText(_("Refresh now"))
-            self["key_blue"] = StaticText(_("Edit Services"))
+            self["key_green"] = StaticText(_("Save"))
+            self["key_yellow"] = StaticText(_("Personalize your Skin"))
+            self["key_blue"] = StaticText()
 
             self["help"] = StaticText()
 
@@ -88,7 +88,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
                                         {
                 "cancel": self.keyCancel,
                 "save": self.keySave,
-                # "yellow": self.forceRefresh,
+                "yellow": self.keyYellow,
                 # "blue": self.editServices,
                 # "showEPGList": self.keyInfo,
                 # "displayHelp": self.showHelp,
@@ -99,14 +99,6 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             self.changed()
 
             # self.onLayoutFinish.append(self.setCustomTitle)
-
-            # self["myLabel"] = Label(_("please press OK"))
-            # # Define Actions
-            # self["myActionsMap"] = ActionMap(["SetupActions", "ColorActions"],
-            #                                  {
-            #     "ok": self.myMsg,
-            #     "cancel": self.close,
-            # }, -1)
 
         except Exception as e:
             self.log.exception("MetrixReloadedSetup: %s", str(e))
@@ -130,11 +122,31 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             x[1].save()
 
         self.close(self.session)
+    
+    def keyYellow(self):
+        if (os.path.exists("/usr/lib/enigma2/python/Plugins/Extensions/AtileHD/plugin.py")):
+            from Plugins.Extensions.AtileHD.plugin import *
+            self.session.open(AtileHD_Config)
+        else:
+            self.session.open(MessageBox, _("Sorry, but the plugin %s is not installed at your Vu+ STB! Please install it to use this function" % "AtileHD"), MessageBox.TYPE_ERROR)
+    
+    def keyOK(self):
+        if (self['config'].getCurrent()[1] == config.plugins.MetrixReloaded.logDirectory):
+            start_dir = config.plugins.MetrixReloaded.logDirectory.value
+            self.session.openWithCallback(self.fileDirBrowserResponse, FileDirBrowser,initDir = start_dir, title = _("Choose folder"), getFile = False, getDir = True,showDirectories = True, showFiles = False)
+
+    def fileDirBrowserResponse(self, path):
+        if path:
+            self["config"].getCurrent()[1].value = path
 
     def updateHelp(self):
         cur = self["config"].getCurrent()
-        if cur:
+        if cur and len(cur) > 2:
+            self.log.debug(cur[0])
+            self.log.debug(cur[1].value)
             self["help"].text = cur[2]
+        else:
+            self["help"].text = ""
 
     def changed(self):
         for x in self.onChangedEntry:
