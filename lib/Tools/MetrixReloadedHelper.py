@@ -115,6 +115,17 @@ def getEpgShareImagePath(self):
 
     return None
 
+def getVersion():
+    versFile = "/usr/share/enigma2/MetrixReloaded/version.info"
+    version = "Error: version file not exist!"
+
+    if (os.path.exists(versFile)):
+        pFile = open(versFile,"r")
+        for line in pFile:
+            version = "Version: " + line.rstrip()
+        pFile.close()
+
+    return version
 
 def initializeLog(fileName):
     logger = logging.getLogger(fileName)

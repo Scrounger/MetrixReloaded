@@ -1,5 +1,6 @@
 from Components.Converter.Converter import Converter
 from Components.Element import cached
+from Tools.MetrixReloadedHelper import getVersion
 
 class MetrixReloadedVersion(Converter, object):
 	def __init__(self, type):
@@ -8,10 +9,6 @@ class MetrixReloadedVersion(Converter, object):
 	
 	@cached
 	def getText(self):
-		versFile = "/usr/share/enigma2/MetrixReloaded/version.info"
-		pFile = open(versFile,"r")
-		for line in pFile:
-			return "Version: " + line.rstrip()
-		pFile.close()
+		return getVersion()
 	
 	text = property(getText)
