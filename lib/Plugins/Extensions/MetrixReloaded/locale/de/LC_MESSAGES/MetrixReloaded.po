@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-03-18 18:06+0100\n"
-"PO-Revision-Date: 2019-03-18 18:23+0100\n"
+"POT-Creation-Date: 2019-03-18 23:59+0100\n"
+"PO-Revision-Date: 2019-03-19 00:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -14,58 +14,63 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: MetrixReloadedSetup.py:35
+#: MetrixReloadedSetup.py:60
 msgid "MetrixReloaded Configuration"
 msgstr "MetrixReloaded Einstellungen"
 
-#: MetrixReloadedSetup.py:40
+#: MetrixReloadedSetup.py:65
 msgid "Download additional data"
 msgstr "Zusätzliche Daten herunterladen"
 
-#: MetrixReloadedSetup.py:41
+#: MetrixReloadedSetup.py:66
 msgid "Download additional data such as images. Requires internet connection!"
 msgstr ""
 "Zusätzlichen Daten wie z.B. Bilder herunterladen.\n"
 "Benötigt eine Internetverbindung!"
 
-#: MetrixReloadedSetup.py:42
+#: MetrixReloadedSetup.py:67
 msgid "enable debug"
 msgstr "Debug Modus"
 
-#: MetrixReloadedSetup.py:42
+#: MetrixReloadedSetup.py:67
 msgid "show additional log informations"
 msgstr "Zusätzliche log Informationen ausgeben"
 
-#: MetrixReloadedSetup.py:43
+#: MetrixReloadedSetup.py:68
 msgid "log files directory"
 msgstr "Log Dateien Verzeichnis"
 
-#: MetrixReloadedSetup.py:44
+#: MetrixReloadedSetup.py:69
 msgid ""
 "choose the directory where log files of skin, components, etc are stored"
 msgstr "Verzeichnis der log Datein auswählen"
 
-#: MetrixReloadedSetup.py:63
+#: MetrixReloadedSetup.py:88
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: MetrixReloadedSetup.py:64
+#: MetrixReloadedSetup.py:89
 msgid "Save"
 msgstr "Speichern"
 
-#: MetrixReloadedSetup.py:65
+#: MetrixReloadedSetup.py:90
 msgid "Personalize your Skin"
 msgstr "Skin personalisieren"
 
-#: MetrixReloadedSetup.py:93
+#: MetrixReloadedSetup.py:94
+#, python-format
+msgid "version: %s"
+msgstr "Version: %s"
+
+#: MetrixReloadedSetup.py:118
 msgid "Hello World!"
 msgstr ""
 
-#: MetrixReloadedSetup.py:100
+#: MetrixReloadedSetup.py:125
 msgid "Really close without saving settings?"
 msgstr "Wirklich schließen ohne die Einstellungen zu speichern?"
 
-#: MetrixReloadedSetup.py:116
+#: MetrixReloadedSetup.py:141
 #, python-format
 msgid ""
 "Sorry, but the plugin %s is not installed at your Vu+ STB! Please install it "
@@ -74,6 +79,23 @@ msgstr ""
 "Das Plugin '%s' ist nicht auf Ihrer Vu+ installiert.\n"
 "Bitte installieren Sie das Plugin, um diese Funktion nutzen zu können"
 
-#: MetrixReloadedSetup.py:121
+#: MetrixReloadedSetup.py:150
 msgid "Choose folder"
 msgstr "Verzeichnis auswählen"
+
+#: MetrixReloadedUpdater.py:30
+#, python-format
+msgid ""
+"A new version of MetrixReloaded skin is available!\n"
+"\n"
+"Installed version:\t%s\n"
+"New version:\t%s\n"
+"\n"
+"Would you like to download the new version?"
+msgstr ""
+"Eine neue Version vom MetrixReloaded Skin ist verfügbar!\n"
+"\n"
+"Installierte Version:\t%s\n"
+"Neue Version:\t%s\n"
+"\n"
+"Willst du die neue Version herunterladen?"
