@@ -80,6 +80,10 @@ namespace Helper
         {
             System.IO.File.WriteAllText(fullFileName, Get());
         }
+        public void Save(string filename)
+        {
+            System.IO.File.WriteAllText(filename, Get());
+        }
 
         public void Load()
         {

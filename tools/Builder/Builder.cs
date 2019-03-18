@@ -73,6 +73,8 @@ namespace Builder
                 ipkControlFile.Generate();
                 Console.WriteLine("Ipk control file created");
 
+                myVersion.Save(settings.ProjectPath + "version.released");
+
                 Console.WriteLine();
                 Console.WriteLine("successful finished!");
 
