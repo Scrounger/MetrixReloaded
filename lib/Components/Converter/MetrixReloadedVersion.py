@@ -9,6 +9,6 @@ class MetrixReloadedVersion(Converter, object):
 	
 	@cached
 	def getText(self):
-		return getVersion()
+		return "Version: %s" % getVersion()
 	
 	text = property(getText)

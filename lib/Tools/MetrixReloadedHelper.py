@@ -122,7 +122,7 @@ def getVersion():
     if (os.path.exists(versFile)):
         pFile = open(versFile,"r")
         for line in pFile:
-            version = "Version: " + line.rstrip()
+            version = line.rstrip()
         pFile.close()
 
     return version

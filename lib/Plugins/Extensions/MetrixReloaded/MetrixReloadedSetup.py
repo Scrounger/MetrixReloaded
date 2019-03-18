@@ -15,7 +15,11 @@ from Components.ActionMap import ActionMap
 from Components.Sources.StaticText import StaticText
 from Components.Label import Label
 
+from twisted.web.client import downloadPage, getPage
+
 import os
+
+import MetrixReloadedUpdater
 
 # MyLog
 from Tools.MetrixReloadedHelper import initializeLog, getVersion
@@ -87,7 +91,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             self["key_blue"] = StaticText()
 
             self["help"] = StaticText()
-            self["version"] = StaticText(getVersion())
+            self["version"] = StaticText(_("version: %s") % getVersion())
 
             # Define Actions
             self["actions"] = ActionMap(["SetupActions", "ColorActions", "ChannelSelectEPGActions", "HelpActions"],
@@ -95,7 +99,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
                 "cancel": self.keyCancel,
                 "save": self.keySave,
                 "yellow": self.keyYellow,
-                # "blue": self.editServices,
+                "blue": self.keyBlue,
                 # "showEPGList": self.keyInfo,
                 # "displayHelp": self.showHelp,
             }
@@ -137,6 +141,9 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             msg = _("Sorry, but the plugin %s is not installed at your Vu+ STB! Please install it to use this function") % "AtileHD"
             self.session.open(MessageBox, msg, MessageBox.TYPE_ERROR)
     
+    def keyBlue(self):
+        test = MetrixReloadedUpdater.MetrixReloadedUpdater(self.session)
+
     def keyOK(self):
         if (self['config'].getCurrent()[1] == config.plugins.MetrixReloaded.logDirectory):
             start_dir = config.plugins.MetrixReloaded.logDirectory.value
