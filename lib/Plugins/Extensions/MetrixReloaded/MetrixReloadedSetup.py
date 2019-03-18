@@ -144,7 +144,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
 
     def fileDirBrowserResponse(self, path):
         if path:
-            self["config"].getCurrent()[1].value = path
+            self["config"].getCurrent()[1].value = path + '/'
 
     def updateHelp(self):
         cur = self["config"].getCurrent()
