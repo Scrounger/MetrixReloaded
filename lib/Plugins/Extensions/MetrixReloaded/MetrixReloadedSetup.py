@@ -32,16 +32,16 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
         self.log.info("MetrixReloadedSetup open")
 
         # Summary
-        self.setTitle("MetrixReloaded Configuration")
+        self.setTitle(_("MetrixReloaded Configuration"))
         self.onChangedEntry = []
 
         try:
             self.list = [
-                getConfigListEntry(_("Online Modus"), config.plugins.MetrixReloaded.onlineMode, _(
-                    "Wenn der Online Modus aktiviert ist, werden im Hintergrund zustzliche Informationen heruntergeladen")),
-                getConfigListEntry(_("enable debug"), config.plugins.MetrixReloaded.debug),
-                getConfigListEntry(_("Verzeichnis der Log Dateien"), config.plugins.MetrixReloaded.logDirectory, _(
-                    "Bla Bla")),
+                getConfigListEntry(_("Download additional data"), config.plugins.MetrixReloaded.onlineMode, _(
+                    "Download additional data such as images. Requires internet connection!")),
+                getConfigListEntry(_("enable debug"), config.plugins.MetrixReloaded.debug, _("show additional log informations")),
+                getConfigListEntry(_("log files directory"), config.plugins.MetrixReloaded.logDirectory, _(
+                    "choose the directory where log files of skin, components, etc are stored")),
             ]
 
             ConfigListScreen.__init__(
