@@ -4,12 +4,13 @@ from Tools.MetrixReloadedHelper import initializeLog, getVersion
 from twisted.web.client import downloadPage, getPage
 
 from Screens.MessageBox import MessageBox
+from Screens.Ipkg import PackageSelection
 
 #Language #########################################################################################################################################
 from Components.Language import language
 import gettext
 from Tools.Directories import resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
-from os import environ
+from os import environ, path
 
 #language
 lang = language.getLanguage()
@@ -28,6 +29,7 @@ def _(txt):
 
 class MetrixReloadedUpdater:
     CHECK_VERSION = "CHECK_VERSION"
+    DOWNLOAD = "DOWNLOAD"
 
     def __init__(self, session):
         self.log = initializeLog("MetrixReloadedUpdater")
@@ -44,22 +46,43 @@ class MetrixReloadedUpdater:
 
     def response(self, data, response):
         if (response == self.CHECK_VERSION):
-            releasedVersion = data
+            self.releasedVersion = data
 
-            if(self.currentVersion != releasedVersion):
-                self.log.info("new version: %s avaiable" % releasedVersion)
+            if(self.currentVersion != self.releasedVersion):
+                self.log.info("new version: %s avaiable" % self.releasedVersion)
 
                 msg = _("A new version of MetrixReloaded skin is available!\n\nInstalled version:\t%s\nNew version:\t%s\n\nWould you like to download the new version?") % (
-                    self.currentVersion, releasedVersion)
+                    self.currentVersion, self.releasedVersion)
 
                 self.session.openWithCallback(
-                    self.msgBoxResponse, MessageBox, msg, MessageBox.TYPE_YESNO)
+                    self.msgBoxResponseStartDownload, MessageBox, msg, MessageBox.TYPE_YESNO)
             else:
                 self.log.info("current version %s is uptodate!" % self.currentVersion)
+        elif(response == self.DOWNLOAD):
+            if (path.exists(self.targetFileName)):
+                self.log.info("new version successful downloaded! filename: %s" % (self.targetFileName))
+
+                msg = _("MetrixReloaded version %s successful downloaded!\n\nWould you like to open the installation screen?") %(self.releasedVersion)
+                
+                self.session.openWithCallback(
+                    self.msgBoxResponseStartInstallation, MessageBox, msg, MessageBox.TYPE_YESNO)
 
     def responseError(self, e, response):
         self.log.exception("response: [%s] %s", response, str(e))
 
-    def msgBoxResponse(self, result):
+    def msgBoxResponseStartDownload(self, result):
         if result:
-            self.log.info("runter laden")
+            fileName = "enigma2-skin-metrixreloaded_%s_all.ipk" % (self.releasedVersion)
+            url = "https://github.com/Scrounger/MetrixReloaded/releases/download/%s/%s" % (self.releasedVersion, fileName)
+            self.log.debug("download url: %s" % url)
+
+            self.targetFileName = "/tmp/%s" % fileName
+
+            self.log.debug("downloading new version...")
+            downloadPage(url, self.targetFileName).addCallback(
+                            self.response, self.DOWNLOAD).addErrback(self.responseError, self.DOWNLOAD)
+    
+    def msgBoxResponseStartInstallation(self, result):
+        if result:
+            self.session.open(PackageSelection, '/tmp/')
+            

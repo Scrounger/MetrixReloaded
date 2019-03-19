@@ -26,7 +26,7 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 Die Einstellungen (Verzeichnisse) für die Tools müssen in der [settings.cfg](https://github.com/Scrounger/MetrixReloaded/blob/master/settings.cfg) ggf. angepasst werden
 * Für eine bessere und übersichtliche Versionsverwaltung sind alle Screens des Skins in einzelne *.xml Dateien ausgelagert worden. Die einzelnen Screens findet ihr im Verzeichnis [screenFiles](https://github.com/Scrounger/MetrixReloaded/tree/master/screenFiles).
 Mit Hilfe der **merger.exe** wird aus den screenFiles die [skin.xml](https://github.com/Scrounger/MetrixReloaded/blob/master/skin/skin.xml) Datei im Verzeichnis [skin](https://github.com/Scrounger/MetrixReloaded/tree/master/skin) erzeugt
-* Genauso sind die SkinParts in das Verzeichnis [skinParts](https://github.com/Scrounger/MetrixReloaded/tree/master/skinparts) ausgelagert worden und werden auch mit dem Tool merger.exe in das skin Verzeichnis kopiert
+* Genauso sind die SkinParts in das Verzeichnis [skinParts](https://github.com/Scrounger/MetrixReloaded/tree/master/skinparts) ausgelagert worden und werden auch mit dem Tool merger.exe in das [skin](https://github.com/Scrounger/MetrixReloaded/tree/master/skin) Verzeichnis kopiert
 * 
 
 
