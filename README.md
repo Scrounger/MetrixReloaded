@@ -16,7 +16,7 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 ## Installation
 1. Ladet euch die [aktuelle Version](https://github.com/Scrounger/MetrixReloaded/releases) herunter.
 2. Kopiert die heruntergeladene *.ipk Datei in das /tmp/ Vereichnis auf Euren VU+ Receiver
-3. Öffne das VtiPanel (Blaue Taste) -> Manuelle Installation -> Installiere IPKG Paket
+3. Öffne das VtiPanel (Blaue Taste) -> Manuelle Installation von Paketen -> Installiere IPKG Paket
 4. Wähle die *.ipk Datei aus und starte die Installation
 
 ## Aufbau des Repositories
