@@ -31,27 +31,31 @@ class MetrixReloadedUpdater:
 
     def __init__(self, session):
         self.log = initializeLog("MetrixReloadedUpdater")
-
         self.session = session
-        self.log.info("Jaaa Man!")
+        self.currentVersion = getVersion()
 
         self.checkVersion()
 
     def checkVersion(self):
-        self.log.info("Jaaa Man2")
+        self.log.info("check for new version")
+        self.log.info("current version: %s" % self.currentVersion)
         getPage('https://raw.githubusercontent.com/Scrounger/MetrixReloaded/master/version.released').addCallback(
             self.response, self.CHECK_VERSION).addErrback(self.responseError, self.CHECK_VERSION)
 
     def response(self, data, response):
         if (response == self.CHECK_VERSION):
-            releasedVersin = data
-            currentVersion = getVersion()
+            releasedVersion = data
 
-            msg = _("A new version of MetrixReloaded skin is available!\n\nInstalled version:\t%s\nNew version:\t%s\n\nWould you like to download the new version?") % (
-                currentVersion, releasedVersin)
+            if(self.currentVersion != releasedVersion):
+                self.log.info("new version: %s avaiable" % releasedVersion)
 
-            self.session.openWithCallback(
-                self.msgBoxResponse, MessageBox, msg, MessageBox.TYPE_YESNO)
+                msg = _("A new version of MetrixReloaded skin is available!\n\nInstalled version:\t%s\nNew version:\t%s\n\nWould you like to download the new version?") % (
+                    self.currentVersion, releasedVersion)
+
+                self.session.openWithCallback(
+                    self.msgBoxResponse, MessageBox, msg, MessageBox.TYPE_YESNO)
+            else:
+                self.log.info("current version %s is uptodate!" % self.currentVersion)
 
     def responseError(self, e, response):
         self.log.exception("response: [%s] %s", response, str(e))
