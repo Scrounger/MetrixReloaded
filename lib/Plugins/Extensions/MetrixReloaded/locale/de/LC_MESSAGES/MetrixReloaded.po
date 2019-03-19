@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-03-19 21:11+0100\n"
-"PO-Revision-Date: 2019-03-19 21:11+0100\n"
+"POT-Creation-Date: 2019-03-19 22:23+0100\n"
+"PO-Revision-Date: 2019-03-19 22:24+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -83,7 +83,7 @@ msgstr ""
 msgid "Choose folder"
 msgstr "Verzeichnis auswählen"
 
-#: MetrixReloadedUpdater.py:52
+#: MetrixReloadedUpdater.py:54
 #, python-format
 msgid ""
 "A new version of MetrixReloaded skin is available!\n"
@@ -99,3 +99,14 @@ msgstr ""
 "Neue Version:\t%s\n"
 "\n"
 "Willst du die neue Version herunterladen?"
+
+#: MetrixReloadedUpdater.py:64
+#, python-format
+msgid ""
+"MetrixReloaded version %s successful downloaded!\n"
+"\n"
+"Would you like to open the installation screen?"
+msgstr ""
+"MetrixReloaded Version %s erfolgreich heruntergeladen!\n"
+"\n"
+"Möchtest du den Installation-Screen öffnen?"
