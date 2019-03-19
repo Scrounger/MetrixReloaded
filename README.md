@@ -20,6 +20,13 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 4. Wähle die *.ipk Datei aus und starte die Installation
 
 ## Aufbau des Repositories
+* Ich habe ein paar kleine Tools geschrieben, die für die Erstellung des Skin inkl. der Python Dateien verwendet werden.
+Die Einstellungen (Verzeichnisse) für die Tools müssen in der [settings.cfg](https://github.com/Scrounger/MetrixReloaded/blob/master/settings.cfg) ggf. angepasst werden
+* Für eine bessere und übersichtliche Versionsverwaltung sind alle Screens des Skins in einzelne *.xml Dateien ausgelagert worden. Die einzelnen Screens findet ihr im Verzeichnis [screenFiles](https://github.com/Scrounger/MetrixReloaded/tree/master/screenFiles). 
+Mit Hilfe der **merger.exe** wird aus den screenFiles die skin.xml Datei im Verzeichnis [skin](https://github.com/Scrounger/MetrixReloaded/tree/master/skin) erzeugt
+
+*Genauso sind die SkinParts in das Verzeichnis [https://github.com/Scrounger/MetrixReloaded/tree/master/skinparts](skinParts) ausgelagert worden.
+
 
 ## Screenshots
 <p align="center">
@@ -36,8 +43,9 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 <img src="screenshots/vtiPanel.jpg?sanitize=true&raw=true" title="VtiPanel" width="400"/>
 </p>
 
-
 ## Changelog
-### 1.1.3 (xx.xx.2019)
-* bug fixes
+### 0.2.0 BETA (20.03.2019)
+* erste veröffentlichte Version
+* ca. 80% der Screens sind final
+* Converter, Plugin und Updater enthalten
 
