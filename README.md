@@ -32,9 +32,10 @@ Mit Hilfe der **merger.exe** wird aus den screenFiles die [skin.xml](https://git
 
 ## Screenshots
 <p align="center">
-  <img src="screenshots/contextMenu.jpg?sanitize=true&raw=true" title="ContextMenu" width="400"/>
-  <img src="screenshots/infobar.jpg?sanitize=true&raw=true" title="InfoBar" width="400"/>
-  <img src="screenshots/infoBarZapHistory.jpg?sanitize=true&raw=true" title="InfoBarZapHistory" width="400"/>
+<img src="screenshots/MetrixReloadedSetup.jpg?sanitize=true&raw=true" title="MetrixReloadedSetup" width="400"/>
+<img src="screenshots/contextMenu.jpg?sanitize=true&raw=true" title="ContextMenu" width="400"/>
+<img src="screenshots/infobar.jpg?sanitize=true&raw=true" title="InfoBar" width="400"/>
+<img src="screenshots/infoBarZapHistory.jpg?sanitize=true&raw=true" title="InfoBarZapHistory" width="400"/>
 <img src="screenshots/messageBox.jpg?sanitize=true&raw=true" title="MessageBox" width="400"/>
 <img src="screenshots/moviePlayer.jpg?sanitize=true&raw=true" title="MoviePlayer" width="400"/>
 <img src="screenshots/movieSelection.jpg?sanitize=true&raw=true" title="MovieSelection" width="400"/>
@@ -43,6 +44,12 @@ Mit Hilfe der **merger.exe** wird aus den screenFiles die [skin.xml](https://git
 <img src="screenshots/timerEditList.jpg?sanitize=true&raw=true" title="TimerEditList" width="400"/>
 <img src="screenshots/timerEntry.jpg?sanitize=true&raw=true" title="TimerEntry" width="400"/>
 <img src="screenshots/vtiPanel.jpg?sanitize=true&raw=true" title="VtiPanel" width="400"/>
+<img src="screenshots/AtileHD_Config.jpg?sanitize=true&raw=true" title="AtileHD_Config" width="400"/>
+<img src="screenshots/ChannelSelection.jpg?sanitize=true&raw=true" title="ChannelSelection" width="400"/>
+<img src="screenshots/EPGSelection.jpg?sanitize=true&raw=true" title="EPGSelection" width="400"/>
+<img src="screenshots/GraphMultiEPG.jpg?sanitize=true&raw=true" title="GraphMultiEPG" width="400"/>
+<img src="screenshots/GraphMultiEPG2.jpg?sanitize=true&raw=true" title="GraphMultiEPG2" width="400"/>
+<img src="screenshots/GraphMultiEPG3.jpg?sanitize=true&raw=true" title="GraphMultiEPG3" width="400"/>
 </p>
 
 ## Changelog
