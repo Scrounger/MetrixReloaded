@@ -49,5 +49,5 @@ Mit Hilfe der **merger.exe** wird aus den screenFiles die [skin.xml](https://git
 ### 0.2.0 BETA (20.03.2019)
 * erste veröffentlichte Version
 * ca. 80% der Screens sind final
-* Converter, Plugin und Updater enthalten
+* Converter und Plugin enthalten
 
