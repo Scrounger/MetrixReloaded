@@ -130,35 +130,37 @@ def getVersion():
 def initializeLog(fileName):
     logger = logging.getLogger(fileName)
 
-    debug = True
-    try:
-        debug = config.plugins.MetrixReloaded.debug.value
-    except:
-        pass
+    if (not len(logger.handlers)):
 
-    if(debug):
-        logger.setLevel(logging.DEBUG)
-    else:
-        logger.setLevel(logging.INFO)
+        debug = True
+        try:
+            debug = config.plugins.MetrixReloaded.debug.value
+        except:
+            pass
 
-    dir = '/mnt/hdd/MetrixReloaded/log/'
-    try:
-        dir = config.plugins.MetrixReloaded.logDirectory.value
-    except:
-        pass
+        if(debug):
+            logger.setLevel(logging.DEBUG)
+        else:
+            logger.setLevel(logging.INFO)
 
-    # create a file handler
-    if not os.path.exists(dir):
-        os.makedirs(dir)
+        dir = '/mnt/hdd/MetrixReloaded/log/'
+        try:
+            dir = config.plugins.MetrixReloaded.logDirectory.value
+        except:
+            pass
 
-    handler = logging.FileHandler('%s%s.log' % (dir, fileName))
+        # create a file handler
+        if not os.path.exists(dir):
+            os.makedirs(dir)
 
-    # create a logging format
-    formatter = logging.Formatter(
-        '%(asctime)s - %(name)s: [%(levelname)s] %(message)s')
-    handler.setFormatter(formatter)
+        handler = logging.FileHandler('%s%s.log' % (dir, fileName))
 
-    # add the handlers to the logger
-    logger.addHandler(handler)
+        # create a logging format
+        formatter = logging.Formatter(
+            '%(asctime)s - %(name)s: [%(levelname)s] %(message)s')
+        handler.setFormatter(formatter)
+
+        # add the handlers to the logger
+        logger.addHandler(handler)
 
     return logger
