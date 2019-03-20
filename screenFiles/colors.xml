@@ -44,8 +44,6 @@
   <color name="infobarBgRLowTrans" value="#10666769" />
   <color name="InfobarFgL" value="#00231f20" />
 
-  <!-- Hintergrundfarbe List jede zweite Zeile -->
-
   <color name="NumericalHelpDialogBg" value="#05231f20" />
   <color name="red" value="#00f23d21" />
   <color name="ScrollBarFG" value="#00ffffff" />
