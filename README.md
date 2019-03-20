@@ -35,6 +35,7 @@ Mit Hilfe der **merger.exe** wird aus den screenFiles die [skin.xml](https://git
 <img src="screenshots/MetrixReloadedSetup.jpg?sanitize=true&raw=true" title="MetrixReloadedSetup" width="400"/>
 <img src="screenshots/contextMenu.jpg?sanitize=true&raw=true" title="ContextMenu" width="400"/>
 <img src="screenshots/infobar.jpg?sanitize=true&raw=true" title="InfoBar" width="400"/>
+<img src="screenshots/SecondInfoBar.jpg?sanitize=true&raw=true" title="SecondInfoBar" width="400"/>
 <img src="screenshots/infoBarZapHistory.jpg?sanitize=true&raw=true" title="InfoBarZapHistory" width="400"/>
 <img src="screenshots/messageBox.jpg?sanitize=true&raw=true" title="MessageBox" width="400"/>
 <img src="screenshots/moviePlayer.jpg?sanitize=true&raw=true" title="MoviePlayer" width="400"/>
