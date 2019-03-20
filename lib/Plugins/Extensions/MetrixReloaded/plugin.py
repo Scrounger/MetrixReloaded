@@ -57,17 +57,20 @@ def main(session, **kwargs):
 
 
 def autoStart(reason, **kwargs):
-    if kwargs.has_key("session") and reason == 0:
-        log.debug("startUp")
-        session = kwargs.get("session")
-        config.misc.standbyCounter.addNotifier(
-            onEnterStandby, initial_call=False)
+	try:
+		if kwargs.has_key("session") and reason == 0:
+			log.debug("startUp")
+			session = kwargs.get("session")
+			config.misc.standbyCounter.addNotifier(
+				onEnterStandby, initial_call=False)
 
-        checkNewVersion(session)
+			checkNewVersion(session)
 
-    elif reason == 1:
-        log.debug("shutdown / restart")
-        session = None
+		elif reason == 1:
+			log.debug("shutdown / restart")
+			session = None
+	except Exception as e:
+		log.exception("MetrixReloadedSetup: %s", str(e))
 
 
 def onLeaveStandby():
@@ -75,7 +78,7 @@ def onLeaveStandby():
     if(session != None):
         checkNewVersion(session)
     else:
-        log.debug("keine session!")
+        log.debug("no session!")
 
 
 def onEnterStandby(self):
@@ -86,5 +89,8 @@ def onEnterStandby(self):
 
 def checkNewVersion(session):
     # Updater ausführen
-    log.info("Call new version check")
-    MetrixReloadedUpdater(session)
+	try:
+		log.info("Call new version check")
+		MetrixReloadedUpdater(session)
+	except Exception as e:
+		log.exception("MetrixReloadedSetup: %s", str(e))
