@@ -1,4 +1,4 @@
-﻿<screen name="NumericalTextInputHelpDialogVKB" position="220,780" zPosition="2" size="816,190" backgroundColor="NumericalHelpDialogBg" flags="wfNoBorder">
+﻿<screen name="NumericalTextInputHelpDialogVKB" position="220,680" zPosition="2" size="816,190" backgroundColor="NumericalHelpDialogBg" flags="wfNoBorder">
   <eLabel backgroundColor="backgroundSecond" size="816,2" position="0,0" />
   <eLabel backgroundColor="backgroundSecond" size="2,190" position="0,0" />
   <eLabel backgroundColor="backgroundSecond" size="2,190" position="814,0" />
