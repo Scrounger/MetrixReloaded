@@ -16,13 +16,13 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 ## Installation
 1. Ladet euch die [aktuelle Version](https://github.com/Scrounger/MetrixReloaded/releases) herunter.
 2. Kopiert die heruntergeladene *.ipk Datei in das /tmp/ Vereichnis auf Euren VU+ Receiver
-3. Öffne das VtiPanel (Blaue Taste) -> Manuelle Installation von Paketen -> Installiere IPKG Paket
+3. Öffne das VtiPanel (Blaue Taste) -> *Manuelle Installation von Paketen* -> *IPKG-Pakete installieren**
 4. Wähle die *.ipk Datei aus und starte die Installation
 
 ## Einstellungen
 <img src="screenshots/MetrixReloadedSetup.jpg?sanitize=true&raw=true" title="MetrixReloadedSetup" width="300"/>
 
-Unter Erweiterungen -> MetrixReloaded findest du zusätzliche Einstellungen für den Skin. Die Einstellungen sind dort ausführlich beschrieben, sobald du diese anwählst
+Unter *Erweiterungen* -> *MetrixReloaded* findest du zusätzliche Einstellungen für den Skin. Die Einstellungen sind dort ausführlich beschrieben, sobald du diese anwählst
 
 ## Aufbau des Repositories
 * Ich habe ein paar kleine Tools geschrieben, die für die Erstellung des Skin inkl. der Python Dateien verwendet werden.
@@ -30,7 +30,7 @@ Die Einstellungen (Verzeichnisse) für die Tools müssen in der [settings.cfg](h
 * Für eine bessere und übersichtliche Versionsverwaltung sind alle Screens des Skins in einzelne *.xml Dateien ausgelagert worden. Die einzelnen Screens findet ihr im Verzeichnis [screenFiles](https://github.com/Scrounger/MetrixReloaded/tree/master/screenFiles).
 Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://github.com/Scrounger/MetrixReloaded/blob/master/skin/skin.xml) Datei im Verzeichnis [skin](https://github.com/Scrounger/MetrixReloaded/tree/master/skin) erzeugt
 * Genauso sind die SkinParts in das Verzeichnis [skinParts](https://github.com/Scrounger/MetrixReloaded/tree/master/skinparts) ausgelagert worden und werden auch mit dem Tool **Merger.exe** in das [skin](https://github.com/Scrounger/MetrixReloaded/tree/master/skin) Verzeichnis kopiert
-* Mit Hilfe der **Builder.exe** wird der Skin inkl. Converter, Renderer, Plugin, etc. gebaut und alle relvanten Daten in das Verzeichnis kopiert, dass als Build-Verzeichnis in der [settings.cfg](https://github.com/Scrounger/MetrixReloaded/blob/master/settings.cfg) angegeben ist. Mit diesen Dateinen kann die *.ipk Datei erstellt werden, z.B. mit dem Tool [IPK Creator 5.0 (Java) By Persian Prince](https://www.vuplus-support.org/wbb4/index.php?thread/111551-ipk-creator-5-0-java-by-persian-prince/)
+* Mit Hilfe der **Builder.exe** wird der Skin inkl. Converter, Renderer, Plugin, etc. gebaut und alle relvanten Daten in das Verzeichnis kopiert, dass als Build-Verzeichnis in der [settings.cfg](https://github.com/Scrounger/MetrixReloaded/blob/master/settings.cfg) angegeben ist. Mit diesen Dateien kann die *.ipk Datei erstellt werden, z.B. mit dem Tool [IPK Creator 5.0 (Java) By Persian Prince](https://www.vuplus-support.org/wbb4/index.php?thread/111551-ipk-creator-5-0-java-by-persian-prince/)
 
 
 ## Screenshots
@@ -58,7 +58,7 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 </p>
 
 ## Changelog
-### 0.2.0 BETA (20.03.2019)
+### 0.2.0 BETA (19.03.2019)
 * erste veröffentlichte Version
 * ca. 80% der Screens sind final
 * Converter und Plugin enthalten
