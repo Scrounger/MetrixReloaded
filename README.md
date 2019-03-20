@@ -60,6 +60,7 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 <img src="screenshots/GraphMultiEPG1.jpg?sanitize=true&raw=true" title="GraphMultiEPG1" width="400"/>
 <img src="screenshots/GraphMultiEPG2.jpg?sanitize=true&raw=true" title="GraphMultiEPG2" width="400"/>
 <img src="screenshots/GraphMultiEPG3.jpg?sanitize=true&raw=true" title="GraphMultiEPG3" width="400"/>
+<img src="screenshots/TimeshiftState.jpg?sanitize=true&raw=true" title="TimeshiftState" width="400"/>
 </p>
 
 ## Changelog
