@@ -6,7 +6,6 @@ from Components.ConfigList import ConfigListScreen
 from Screens.MessageBox import MessageBox
 from Screens.FileDirBrowser import FileDirBrowser
 
-
 # Configuration
 from Components.config import config, getConfigListEntry
 
@@ -18,13 +17,11 @@ from Components.Label import Label
 from twisted.web.client import downloadPage, getPage
 
 import os
+import HTMLParser
 
+#MetrixReloaded imports
 from MetrixReloadedUpdater import MetrixReloadedUpdater
-
-# MyLog
 from Tools.MetrixReloadedHelper import initializeLog, getVersion
-
-#from Tools import Notifications
 
 
 #Language #########################################################################################################################################
@@ -49,6 +46,7 @@ def _(txt):
 ###########################################################################################################################################
 
 class MetrixReloadedSetup(Screen, ConfigListScreen):
+    htmlParser = HTMLParser.HTMLParser()
 
     def __init__(self, session):
         Screen.__init__(self, session)
@@ -65,7 +63,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
                 getConfigListEntry(_("Download additional data"), config.plugins.MetrixReloaded.onlineMode, _(
                     "Download additional data such as images. Requires internet connection!")),
                 getConfigListEntry(_("Check for skin update on startup"), config.plugins.MetrixReloaded.checkNewVersionOnStartUp, _("Checks on startup (boot or standby) if a new skin version is available to download. Requires internet connection!")),
-                getConfigListEntry(_("Auto download new version"), config.plugins.MetrixReloaded.autoDownloadNewVersion, _(
+                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Auto download new version")), config.plugins.MetrixReloaded.autoDownloadNewVersion, _(
                     "New version of MetrixReloaded skin will be automatically downloaded. You will get an information if new version is ready to install")),
                 getConfigListEntry(_("enable debug"), config.plugins.MetrixReloaded.debug, _("show additional log informations")),
                 getConfigListEntry(_("log files directory"), config.plugins.MetrixReloaded.logDirectory, _(
