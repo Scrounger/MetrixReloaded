@@ -88,7 +88,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             self["key_red"] = StaticText(_("Cancel"))
             self["key_green"] = StaticText(_("Save"))
             self["key_yellow"] = StaticText(_("Personalize your Skin"))
-            self["key_blue"] = StaticText()
+            self["key_blue"] = StaticText(_("Check for updates"))
 
             self["help"] = StaticText()
             self["version"] = StaticText(_("version: %s") % getVersion())

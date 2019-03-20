@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-03-19 22:23+0100\n"
-"PO-Revision-Date: 2019-03-19 22:24+0100\n"
+"POT-Creation-Date: 2019-03-20 08:47+0100\n"
+"PO-Revision-Date: 2019-03-20 08:48+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -57,6 +57,10 @@ msgstr "Speichern"
 msgid "Personalize your Skin"
 msgstr "Skin personalisieren"
 
+#: MetrixReloadedSetup.py:91
+msgid "Check for updates"
+msgstr "Auf Updates prüfen"
+
 #: MetrixReloadedSetup.py:94
 #, python-format
 msgid "version: %s"
@@ -100,7 +104,7 @@ msgstr ""
 "\n"
 "Willst du die neue Version herunterladen?"
 
-#: MetrixReloadedUpdater.py:64
+#: MetrixReloadedUpdater.py:65
 #, python-format
 msgid ""
 "MetrixReloaded version %s successful downloaded!\n"
