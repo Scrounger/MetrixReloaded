@@ -24,6 +24,11 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 
 Unter *Erweiterungen* -> *MetrixReloaded* findest du zusätzliche Einstellungen für den Skin. Die Einstellungen sind dort ausführlich beschrieben, sobald du diese anwählst
 
+## Fehlerbehebung / Verbesserungen
+Für Fehlerbehebung, Verbesserungen oder von Euch erstellten screenFiles bzw. skinParts ein [Issue](https://github.com/Scrounger/MetrixReloaded/issues) erstellen.
+* Bei Fehler immer die Log-Dateien (Debug Modus in den Einstellungen aktivieren!!!) mit anhängen - das Verzeichnis kann in den Einstellungen des Skins festgelegt werden.
+
+
 ## Aufbau des Repositories
 * Ich habe ein paar kleine Tools geschrieben, die für die Erstellung des Skin inkl. der Python Dateien verwendet werden.
 Die Einstellungen (Verzeichnisse) für die Tools müssen in der [settings.cfg](https://github.com/Scrounger/MetrixReloaded/blob/master/settings.cfg) ggf. angepasst werden
