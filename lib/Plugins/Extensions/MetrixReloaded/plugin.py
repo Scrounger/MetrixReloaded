@@ -3,6 +3,9 @@ from MetrixReloadedUpdater import MetrixReloadedUpdater
 from Tools.MetrixReloadedHelper import initializeLog
 from Plugins.Plugin import PluginDescriptor
 
+from threading import Thread
+from time import sleep
+
 # Config
 from Components.config import config, ConfigSubsection, ConfigOnOff, ConfigDirectory
 
@@ -58,17 +61,19 @@ def main(session, **kwargs):
 
 def autoStart(reason, **kwargs):
 	try:
+		global session
 		if kwargs.has_key("session") and reason == 0:
-			log.debug("startUp")
+			log.info("VU+ startUp")
 			session = kwargs.get("session")
 			config.misc.standbyCounter.addNotifier(
 				onEnterStandby, initial_call=False)
 
-			checkNewVersion(session)
+			#auf anderem Thread damit sleep nicht blockt
+			Thread(target=checkNewVersion, args=(session,)).start()
 
 		elif reason == 1:
-			log.debug("shutdown / restart")
-			session = None
+			log.debug("VU+ shutdown / restart")
+			session=None
 	except Exception as e:
 		log.exception("MetrixReloadedSetup: %s", str(e))
 
@@ -76,7 +81,8 @@ def autoStart(reason, **kwargs):
 def onLeaveStandby():
     log.debug("leaving standy")
     if(session != None):
-        checkNewVersion(session)
+        #auf anderem Thread damit sleep nicht blockt
+        Thread(target=checkNewVersion, args=(session,)).start()
     else:
         log.debug("no session!")
 
@@ -88,8 +94,10 @@ def onEnterStandby(self):
 
 
 def checkNewVersion(session):
-    # Updater ausführen
+    # Updater verzögert ausführen
 	try:
+		log.debug("waiting")
+		sleep(30)
 		log.info("Call new version check")
 		MetrixReloadedUpdater(session)
 	except Exception as e:
