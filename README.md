@@ -26,7 +26,7 @@ Unter *Erweiterungen* -> *MetrixReloaded* findest du zusätzliche Einstellungen 
 
 ## Fehlerbehebung / Verbesserungen
 Für Fehlerbehebung, Verbesserungen oder von Euch erstellten screenFiles bzw. skinParts ein [Issue](https://github.com/Scrounger/MetrixReloaded/issues) erstellen.
-* Bei Fehler immer die Log-Dateien (Debug Modus in den Einstellungen aktivieren!!!) mit anhängen - das Verzeichnis kann in den Einstellungen des Skins festgelegt werden.
+* Bei Fehler immer die Log-Dateien (Debug Modus in den Einstellungen aktivieren!!!) mit anhängen - das Verzeichnis kann in den Einstellungen des Skins festgelegt werden (siehe oben).
 
 
 ## Aufbau des Repositories
