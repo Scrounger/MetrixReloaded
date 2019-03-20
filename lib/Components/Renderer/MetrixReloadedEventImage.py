@@ -179,10 +179,18 @@ class MetrixReloadedEventImage(Renderer):
         self.suspended = True
 
     def downloadImage(self, eventId, startTime, event):
-        url = 'http://capi.tvmovie.de/v1/broadcast/%s?fields=images.id,previewImage.id' % str(
-            eventId)
-        getPage(url).addCallback(self.response, self.DOWNOAD_IMAGE, eventId, startTime,
-                                 event).addErrback(self.responseError, self.DOWNOAD_IMAGE, startTime)
+        onlineMode = True
+        try:
+            onlineMode = config.plugins.MetrixReloaded.onlineMode.value
+            self.log.debug("onlineMode: %s" % (str(config.plugins.MetrixReloaded.onlineMode.value)))
+        except Exception as e:
+            self.log.exception("getEpgShareImagePath: %s", str(e))
+
+        if(onlineMode):
+            url = 'http://capi.tvmovie.de/v1/broadcast/%s?fields=images.id,previewImage.id' % str(
+                eventId)
+            getPage(url).addCallback(self.response, self.DOWNOAD_IMAGE, eventId, startTime,
+                                    event).addErrback(self.responseError, self.DOWNOAD_IMAGE, startTime)
 
     def response(self, data, response, eventId, startTime, event):
         # Antwort für Async Task
