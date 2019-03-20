@@ -64,6 +64,8 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             self.list = [
                 getConfigListEntry(_("Download additional data"), config.plugins.MetrixReloaded.onlineMode, _(
                     "Download additional data such as images. Requires internet connection!")),
+                getConfigListEntry(_("Auto download new version"), config.plugins.MetrixReloaded.autoDownloadNewVersion, _(
+                    "New version of MetrixReloaded skin will be automatically downloaded. You will get an information if new version is ready to install")),
                 getConfigListEntry(_("enable debug"), config.plugins.MetrixReloaded.debug, _("show additional log informations")),
                 getConfigListEntry(_("log files directory"), config.plugins.MetrixReloaded.logDirectory, _(
                     "choose the directory where log files of skin, components, etc are stored")),

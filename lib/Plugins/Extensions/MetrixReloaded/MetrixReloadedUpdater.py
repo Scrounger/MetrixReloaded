@@ -54,7 +54,7 @@ class MetrixReloadedUpdater:
             if(self.currentVersion != self.releasedVersion):
                 self.log.info("new version: %s avaiable" % self.releasedVersion)
 
-                msg = _("A new version of MetrixReloaded skin is available!\n\nInstalled version:\t%s\nNew version:\t%s\n\nWould you like to download the new version?") % (
+                msg = _("A new version of MetrixReloaded skin is available!\n\nInstalled version:\t%s\nNew version:\t%s\n\nWould you like to download the new version in the background?") % (
                     self.currentVersion, self.releasedVersion)
 
                 #User fragen ob version heruntergeladen werden soll
