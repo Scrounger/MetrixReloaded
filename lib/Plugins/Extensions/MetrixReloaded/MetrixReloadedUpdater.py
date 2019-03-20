@@ -31,34 +31,43 @@ class MetrixReloadedUpdater:
     CHECK_VERSION = "CHECK_VERSION"
     DOWNLOAD = "DOWNLOAD"
 
-    def __init__(self, session):
+    def __init__(self, session, manualMode = False):
         self.log = initializeLog("MetrixReloadedUpdater")
         self.session = session
         self.currentVersion = getVersion()
+        self.manualMode = manualMode
 
         self.checkVersion()
 
     def checkVersion(self):
-        self.log.info("check for new version")
-        self.log.info("current version: %s" % self.currentVersion)
+        self.log.info("check for new version - current version: %s (manualMode: %s)" % (self.currentVersion, str(self.manualMode)))
+
         getPage('https://raw.githubusercontent.com/Scrounger/MetrixReloaded/master/version.released').addCallback(
             self.response, self.CHECK_VERSION).addErrback(self.responseError, self.CHECK_VERSION)
 
     def response(self, data, response):
         if (response == self.CHECK_VERSION):
             self.releasedVersion = data
+            self.log.debug("released version: %s" % self.releasedVersion)
 
+            #Prüfen ob Version neuer ist
             if(self.currentVersion != self.releasedVersion):
                 self.log.info("new version: %s avaiable" % self.releasedVersion)
 
                 msg = _("A new version of MetrixReloaded skin is available!\n\nInstalled version:\t%s\nNew version:\t%s\n\nWould you like to download the new version?") % (
                     self.currentVersion, self.releasedVersion)
 
+                #User fragen ob version heruntergeladen werden soll
                 self.session.openWithCallback(
                     self.msgBoxResponseStartDownload, MessageBox, msg, MessageBox.TYPE_YESNO)
             else:
-                self.log.info("current version %s is uptodate!" % self.currentVersion)
+                self.log.info("current version %s is up to date!" % self.currentVersion)
+
+                if(self.manualMode):
+                    self.session.open(MessageBox, _("No new version available.\nMetrixReloaded is up to date!"), MessageBox.TYPE_INFO, timeout=10)
+
         elif(response == self.DOWNLOAD):
+            #Zum Ipkg Screen gehen -> Installation
             if (path.exists(self.targetFileName)):
                 self.log.info("new version successful downloaded! filename: %s" % (self.targetFileName))
 
@@ -72,6 +81,7 @@ class MetrixReloadedUpdater:
 
     def msgBoxResponseStartDownload(self, result):
         if result:
+            #Donwload der neune Version
             fileName = "enigma2-skin-metrixreloaded_%s_all.ipk" % (self.releasedVersion)
             url = "https://github.com/Scrounger/MetrixReloaded/releases/download/%s/%s" % (self.releasedVersion, fileName)
             self.log.debug("download url: %s" % url)

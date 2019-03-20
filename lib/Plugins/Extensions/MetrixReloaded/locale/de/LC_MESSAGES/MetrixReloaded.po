@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-03-20 08:47+0100\n"
-"PO-Revision-Date: 2019-03-20 08:48+0100\n"
+"POT-Creation-Date: 2019-03-20 09:16+0100\n"
+"PO-Revision-Date: 2019-03-20 09:17+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -66,15 +66,11 @@ msgstr "Auf Updates prüfen"
 msgid "version: %s"
 msgstr "Version: %s"
 
-#: MetrixReloadedSetup.py:118
-msgid "Hello World!"
-msgstr ""
-
-#: MetrixReloadedSetup.py:125
+#: MetrixReloadedSetup.py:121
 msgid "Really close without saving settings?"
 msgstr "Wirklich schließen ohne die Einstellungen zu speichern?"
 
-#: MetrixReloadedSetup.py:141
+#: MetrixReloadedSetup.py:139
 #, python-format
 msgid ""
 "Sorry, but the plugin %s is not installed at your Vu+ STB! Please install it "
@@ -87,7 +83,7 @@ msgstr ""
 msgid "Choose folder"
 msgstr "Verzeichnis auswählen"
 
-#: MetrixReloadedUpdater.py:54
+#: MetrixReloadedUpdater.py:57
 #, python-format
 msgid ""
 "A new version of MetrixReloaded skin is available!\n"
@@ -104,7 +100,15 @@ msgstr ""
 "\n"
 "Willst du die neue Version herunterladen?"
 
-#: MetrixReloadedUpdater.py:65
+#: MetrixReloadedUpdater.py:67
+msgid ""
+"No new version available.\n"
+"MetrixReloaded is up to date!"
+msgstr ""
+"Keine neue Version verfügbar.\n"
+"MetrixReloaded ist auf dem aktuellen Stand!"
+
+#: MetrixReloadedUpdater.py:74
 #, python-format
 msgid ""
 "MetrixReloaded version %s successful downloaded!\n"

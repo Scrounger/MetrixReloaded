@@ -19,7 +19,7 @@ from twisted.web.client import downloadPage, getPage
 
 import os
 
-import MetrixReloadedUpdater
+from MetrixReloadedUpdater import MetrixReloadedUpdater
 
 # MyLog
 from Tools.MetrixReloadedHelper import initializeLog, getVersion
@@ -108,16 +108,12 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             # Trigger change
             self.changed()
 
-            # self.onLayoutFinish.append(self.setCustomTitle)
-
         except Exception as e:
             self.log.exception("MetrixReloadedSetup: %s", str(e))
             self.close()
 
-    def myMsg(self):
-        self.session.open(MessageBox, _("Hello World!"), MessageBox.TYPE_INFO)
-
     def keyCancel(self):
+        #Screen schließen, mit Prüfung ob es Änderungen an den Einstellungen gab -> Ja -> Fragen ob schließen ohne speichern
         if self["config"].isChanged():
             self.session.openWithCallback(
                 self.cancelConfirm,
@@ -128,6 +124,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             self.close(self.session)
 
     def keySave(self):
+        #Einstellungen speichern
         for x in self["config"].list:
             x[1].save()
 
@@ -135,6 +132,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
     
     def keyYellow(self):
         if (os.path.exists("/usr/lib/enigma2/python/Plugins/Extensions/AtileHD/plugin.py")):
+            #Atile_HD_Config Screen öffnen
             from Plugins.Extensions.AtileHD.plugin import *
             self.session.open(AtileHD_Config)
         else:
@@ -142,18 +140,22 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             self.session.open(MessageBox, msg, MessageBox.TYPE_ERROR)
     
     def keyBlue(self):
-        test = MetrixReloadedUpdater.MetrixReloadedUpdater(self.session)
+        #Updater ausführen
+        MetrixReloadedUpdater(self.session, True)
 
     def keyOK(self):
         if (self['config'].getCurrent()[1] == config.plugins.MetrixReloaded.logDirectory):
+            #FileDirBrowser bei Click 'ok' ausführen
             start_dir = config.plugins.MetrixReloaded.logDirectory.value
             self.session.openWithCallback(self.fileDirBrowserResponse, FileDirBrowser,initDir = start_dir, title = _("Choose folder"), getFile = False, getDir = True,showDirectories = True, showFiles = False)
 
     def fileDirBrowserResponse(self, path):
         if path:
+            #Antwort vom FileDirBrowser -> ausgewähltes Verzeichnis
             self["config"].getCurrent()[1].value = path + '/'
 
     def updateHelp(self):
+        #Zusatzinfos anzeigen
         cur = self["config"].getCurrent()
         if cur and len(cur) > 2:
             self.log.debug(cur[0])
@@ -163,6 +165,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             self["help"].text = ""
 
     def changed(self):
+        #Änderungen in der Liste übernehmen
         for x in self.onChangedEntry:
             try:
                 x()
