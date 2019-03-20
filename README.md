@@ -48,6 +48,7 @@ Mit Hilfe der **merger.exe** wird aus den screenFiles die [skin.xml](https://git
 <img src="screenshots/ChannelSelection.jpg?sanitize=true&raw=true" title="ChannelSelection" width="400"/>
 <img src="screenshots/EPGSelection.jpg?sanitize=true&raw=true" title="EPGSelection" width="400"/>
 <img src="screenshots/GraphMultiEPG.jpg?sanitize=true&raw=true" title="GraphMultiEPG" width="400"/>
+<img src="screenshots/GraphMultiEPG1.jpg?sanitize=true&raw=true" title="GraphMultiEPG1" width="400"/>
 <img src="screenshots/GraphMultiEPG2.jpg?sanitize=true&raw=true" title="GraphMultiEPG2" width="400"/>
 <img src="screenshots/GraphMultiEPG3.jpg?sanitize=true&raw=true" title="GraphMultiEPG3" width="400"/>
 </p>
