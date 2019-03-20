@@ -20,7 +20,7 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 4. Wähle die *.ipk Datei aus und starte die Installation
 
 ## Einstellungen
-<img src="screenshots/MetrixReloadedSetup.jpg?sanitize=true&raw=true" title="MetrixReloadedSetup" width="300"/>
+<img src="screenshots/MetrixReloadedSetup.jpg?sanitize=true&raw=true" title="MetrixReloadedSetup" width="600"/>
 
 Unter *Erweiterungen* -> *MetrixReloaded* findest du zusätzliche Einstellungen für den Skin. Die Einstellungen sind dort ausführlich beschrieben, sobald du diese anwählst
 
