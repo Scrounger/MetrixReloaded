@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-03-20 09:26+0100\n"
-"PO-Revision-Date: 2019-03-20 09:26+0100\n"
+"POT-Creation-Date: 2019-03-20 13:37+0100\n"
+"PO-Revision-Date: 2019-03-20 13:40+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -29,61 +29,73 @@ msgstr ""
 "Benötigt eine Internetverbindung!"
 
 #: MetrixReloadedSetup.py:67
+msgid "Check for skin update on startup"
+msgstr "Beim Starten auf Updates prüfen"
+
+#: MetrixReloadedSetup.py:67
+msgid ""
+"Checks on startup (boot or standby) if a new skin version is available to "
+"download. Requires internet connection!"
+msgstr ""
+"Prüft beim Starten (Boot oder Standby) ob eine neue Version des Skins zum "
+"Herunterladen verfügbar ist. Benötigt eine Internetverbindung!"
+
+#: MetrixReloadedSetup.py:68
 msgid "Auto download new version"
 msgstr "Automatisch neue Version herunterladen"
 
-#: MetrixReloadedSetup.py:68
+#: MetrixReloadedSetup.py:69
 msgid ""
 "New version of MetrixReloaded skin will be automatically downloaded. You "
 "will get an information if new version is ready to install"
 msgstr ""
 "Sofern eine neue Version vom MetrixReloaded Skin verfügbar ist, wird diese "
 "automatisch heruntergeladen. Du wirst informiert, wenn die neue Version zur "
-"Installation bereit ist."
+"Installation bereit ist"
 
-#: MetrixReloadedSetup.py:69
+#: MetrixReloadedSetup.py:70
 msgid "enable debug"
 msgstr "Debug Modus"
 
-#: MetrixReloadedSetup.py:69
+#: MetrixReloadedSetup.py:70
 msgid "show additional log informations"
 msgstr "Zusätzliche log Informationen ausgeben"
 
-#: MetrixReloadedSetup.py:70
+#: MetrixReloadedSetup.py:71
 msgid "log files directory"
 msgstr "Log Dateien Verzeichnis"
 
-#: MetrixReloadedSetup.py:71
+#: MetrixReloadedSetup.py:72
 msgid ""
 "choose the directory where log files of skin, components, etc are stored"
 msgstr "Verzeichnis der log Dateien auswählen"
 
-#: MetrixReloadedSetup.py:90
+#: MetrixReloadedSetup.py:91
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: MetrixReloadedSetup.py:91
+#: MetrixReloadedSetup.py:92
 msgid "Save"
 msgstr "Speichern"
 
-#: MetrixReloadedSetup.py:92
+#: MetrixReloadedSetup.py:93
 msgid "Personalize your Skin"
 msgstr "Skin personalisieren"
 
-#: MetrixReloadedSetup.py:93
+#: MetrixReloadedSetup.py:94
 msgid "Check for updates"
 msgstr "Auf Updates prüfen"
 
-#: MetrixReloadedSetup.py:96
+#: MetrixReloadedSetup.py:97
 #, python-format
 msgid "version: %s"
 msgstr "Version: %s"
 
-#: MetrixReloadedSetup.py:123
+#: MetrixReloadedSetup.py:124
 msgid "Really close without saving settings?"
 msgstr "Wirklich schließen ohne die Einstellungen zu speichern?"
 
-#: MetrixReloadedSetup.py:141
+#: MetrixReloadedSetup.py:142
 #, python-format
 msgid ""
 "Sorry, but the plugin %s is not installed at your Vu+ STB! Please install it "
@@ -92,11 +104,11 @@ msgstr ""
 "Das Plugin '%s' ist nicht auf Ihrer Vu+ installiert.\n"
 "Bitte installieren Sie das Plugin, um diese Funktion nutzen zu können"
 
-#: MetrixReloadedSetup.py:152
+#: MetrixReloadedSetup.py:153
 msgid "Choose folder"
 msgstr "Verzeichnis auswählen"
 
-#: MetrixReloadedUpdater.py:57
+#: MetrixReloadedUpdater.py:64
 #, python-format
 msgid ""
 "A new version of MetrixReloaded skin is available!\n"
@@ -113,7 +125,7 @@ msgstr ""
 "\n"
 "Willst du die neue Version im Hintergrund herunterladen?"
 
-#: MetrixReloadedUpdater.py:67
+#: MetrixReloadedUpdater.py:74
 msgid ""
 "No new version available.\n"
 "MetrixReloaded is up to date!"
@@ -121,7 +133,7 @@ msgstr ""
 "Keine neue Version verfügbar.\n"
 "MetrixReloaded ist auf dem aktuellen Stand!"
 
-#: MetrixReloadedUpdater.py:74
+#: MetrixReloadedUpdater.py:81
 #, python-format
 msgid ""
 "MetrixReloaded version %s successful downloaded!\n"

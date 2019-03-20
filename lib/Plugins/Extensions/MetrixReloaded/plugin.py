@@ -17,11 +17,10 @@ import MetrixReloadedSetup
 # Configuration
 config.plugins.MetrixReloaded = ConfigSubsection()
 config.plugins.MetrixReloaded.onlineMode = ConfigOnOff(default=True)
-config.plugins.MetrixReloaded.autoDownloadNewVersion = ConfigOnOff(
-    default=True)
+config.plugins.MetrixReloaded.checkNewVersionOnStartUp = ConfigOnOff(default=True)
+config.plugins.MetrixReloaded.autoDownloadNewVersion = ConfigOnOff(default=True)
 config.plugins.MetrixReloaded.debug = ConfigOnOff(default=False)
-config.plugins.MetrixReloaded.logDirectory = ConfigDirectory(
-    default='/tmp/MetrixReloaded/log/')
+config.plugins.MetrixReloaded.logDirectory = ConfigDirectory(default='/tmp/MetrixReloaded/log/')
 
 # MyLog
 # MyLog
@@ -95,10 +94,13 @@ def onEnterStandby(self):
 
 def checkNewVersion(session):
     # Updater verzögert ausführen
-	try:
-		log.debug("waiting")
-		sleep(30)
-		log.info("Call new version check")
-		MetrixReloadedUpdater(session)
-	except Exception as e:
-		log.exception("MetrixReloadedSetup: %s", str(e))
+	if(config.plugins.MetrixReloaded.checkNewVersionOnStartUp.value == True):
+		try:
+			log.debug("waiting")
+			sleep(30)
+			log.info("Call new version check")
+			MetrixReloadedUpdater(session)
+		except Exception as e:
+			log.exception("MetrixReloadedSetup: %s", str(e))
+	else:
+		log.info("checkNewVersionOnStartUp: %s" %str(config.plugins.MetrixReloaded.checkNewVersionOnStartUp.value))
