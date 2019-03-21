@@ -613,8 +613,8 @@
   <!-- Left Panel (Left Side) -->
   <widget source="menu" render="Listbox" transparent="1" position="window_list_pos" size="window_list_size" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
-      {"template": [	MultiContentEntryText(pos = (20, 7), size = (553, 49), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, font = 0 ),
-      MultiContentEntryText(pos = (20, 46), size = (553, 39), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2, font = 1 )],
+      {"template": [	MultiContentEntryText(pos = (20, 7), size = (1010, 49), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, font = 0 ),
+      MultiContentEntryText(pos = (20, 46), size = (1010, 39), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2, font = 1 )],
       "fonts": [gFont("SetrixHD", 32), gFont("SetrixSL", 24)],
       "itemHeight": 90
       }
@@ -2058,7 +2058,7 @@
 						MultiContentEntryText(pos = (70, 2), size = (988, 34), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
 						MultiContentEntryText(pos = (70, 36), size = (510, 28), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3),
 						MultiContentEntryText(pos = (70, 64), size = (510, 28), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4),
-						MultiContentEntryText(pos = (540, 36), size = (510, 28), font=1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 5),
+						MultiContentEntryText(pos = (530, 36), size = (510, 28), font=1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 5),
 					],
 				"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
 				"itemHeight": 100
