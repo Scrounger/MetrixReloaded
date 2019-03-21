@@ -21,9 +21,12 @@
   <parameter name="PluginBrowserDownloadIcon" value="10, 0, 100, 50" />
   <parameter name="FileListName" value="65, 3, 800, 50" />
   <parameter name="FileListIcon" value="10, 8, 35, 35" />
-  <parameter name="FileListMultiName" value="70, 10, 900, 50" />
-  <parameter name="FileListMultiIcon" value="30, 7, 35, 35" />
-  <parameter name="FileListMultiLock" value="0, 7, 35, 35" />
+  
+  <!-- BackupSelection -->
+  <parameter name="FileListMultiName" value="70, 1, 900, 50" />
+  <parameter name="FileListMultiIcon" value="5, 7, 35, 35" />
+  <parameter name="FileListMultiLock" value="7, 11, 35, 35" />
+  
   <parameter name="PlayListName" value="25, 1, 520, 28" />
   <parameter name="PlayListIcon" value="5, 3, 16, 16" />
   <parameter name="HelpMenuListHlp" value="6, 6, 800, 32" />

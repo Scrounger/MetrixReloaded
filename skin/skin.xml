@@ -591,6 +591,7 @@
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
   <widget name="checkList" position="window_list_pos" size="window_list_size" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
+  <!-- ListParameter: FileListMulti-->
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -4964,9 +4965,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <parameter name="PluginBrowserDownloadIcon" value="10, 0, 100, 50" />
   <parameter name="FileListName" value="65, 3, 800, 50" />
   <parameter name="FileListIcon" value="10, 8, 35, 35" />
-  <parameter name="FileListMultiName" value="70, 10, 900, 50" />
-  <parameter name="FileListMultiIcon" value="30, 7, 35, 35" />
-  <parameter name="FileListMultiLock" value="0, 7, 35, 35" />
+  
+  <parameter name="FileListMultiName" value="70, 1, 900, 50" />
+  <parameter name="FileListMultiIcon" value="5, 7, 35, 35" />
+  <parameter name="FileListMultiLock" value="7, 11, 35, 35" />
+  
   <parameter name="PlayListName" value="25, 1, 520, 28" />
   <parameter name="PlayListIcon" value="5, 3, 16, 16" />
   <parameter name="HelpMenuListHlp" value="6, 6, 800, 32" />
