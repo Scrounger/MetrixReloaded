@@ -66,6 +66,12 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 </p>
 
 ## Changelog
+
+### 0.3.0 BETA (21.03.2019)
+* Skin Updater -> lädt neue version herunter
+* ScreenFiles überarbeitet
+* Bug fixes 
+
 ### 0.2.0 BETA (19.03.2019)
 * erste veröffentlichte Version
 * ca. 80% der Screens sind final
