@@ -94,13 +94,16 @@ def onEnterStandby(self):
 
 def checkNewVersion(session):
     # Updater verzögert ausführen
-	if(config.plugins.MetrixReloaded.checkNewVersionOnStartUp.value == True):
-		try:
-			log.debug("waiting")
-			sleep(30)
-			log.info("Call new version check")
-			MetrixReloadedUpdater(session)
-		except Exception as e:
-			log.exception("MetrixReloadedSetup: %s", str(e))
-	else:
-		log.info("checkNewVersionOnStartUp: %s" %str(config.plugins.MetrixReloaded.checkNewVersionOnStartUp.value))
+    if("MetrixReloaded" in config.skin.primary_skin.value):
+        if(config.plugins.MetrixReloaded.checkNewVersionOnStartUp.value == True):
+            try:
+                log.debug("waiting")
+                sleep(30)
+                log.info("Call new version check")
+                MetrixReloadedUpdater(session)
+            except Exception as e:
+                log.exception("MetrixReloadedSetup: %s", str(e))
+        else:
+            log.info("checkNewVersionOnStartUp: %s" %str(config.plugins.MetrixReloaded.checkNewVersionOnStartUp.value))
+    else:
+        log.debug("Primary skin is not MetrixReloaded")
