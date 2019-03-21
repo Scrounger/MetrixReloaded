@@ -5,6 +5,7 @@ from twisted.web.client import downloadPage, getPage
 
 from Screens.MessageBox import MessageBox
 from Screens.Ipkg import Ipkg, PackageSelection
+from Screens.Standby import TryQuitMainloop
 
 # Configuration
 from Components.config import config, getConfigListEntry
@@ -82,7 +83,7 @@ class MetrixReloadedUpdater:
             if (path.exists(self.targetFileName)):
                 self.log.info("new version successful downloaded! filename: %s" % (self.targetFileName))
 
-                msg = _("MetrixReloaded version %s successful downloaded!\n\nWould you like to open the installation screen?") %(self.releasedVersion)
+                msg = _("MetrixReloaded version %s successful downloaded!\n\nWould you like to install the update?") %(self.releasedVersion)
                 
                 self.session.openWithCallback(
                     self.msgBoxResponseStartInstallation, MessageBox, msg, MessageBox.TYPE_YESNO, timeout = 30)
@@ -90,24 +91,21 @@ class MetrixReloadedUpdater:
     def responseError(self, e, response):
         self.log.exception("response: [%s] %s", response, str(e))
 
-    def msgBoxResponseStartDownload(self, result):
-        if result:
+    def msgBoxResponseStartDownload(self, answer):
+        if answer:
             self.downloadNewVersion()
     
-    def msgBoxResponseStartInstallation(self, result):
-        if result:
-            self.session.openWithCallback(self.installSTBpackages, PackageSelection, '/tmp/')
+    def msgBoxResponseStartInstallation(self, answer):
+        if answer:
+            self.installUpdate()
 
-    def installSTBpackages(self, args):
-        self.log.debug(str(args[0]))
+    def installUpdate(self):
+        self.log.debug("Start installation")
         cmdList = []
-        packages = args[0]
-        session = args[1]
-        if packages and session:
-            cmdList.append((IpkgComponent.CMD_UPDATE, { }))
-            for pkg in packages:
-                cmdList.append((IpkgComponent.CMD_INSTALL, {"package": pkg}))
-            session.open(Ipkg, cmdList = cmdList)
+
+        if self.targetFileName and self.session:
+            cmdList.append((IpkgComponent.CMD_INSTALL, {"package": self.targetFileName}))
+            self.session.openWithCallback(self.restartGUI, Ipkg, cmdList = cmdList)
     
     def downloadNewVersion(self):
             #Donwload der neuen Version
@@ -120,6 +118,15 @@ class MetrixReloadedUpdater:
             self.log.debug("downloading new version...")
             downloadPage(url, self.targetFileName).addCallback(
                             self.response, self.DOWNLOAD).addErrback(self.responseError, self.DOWNLOAD)
+
+    def restartGUI(self):
+        #Fragen ob Restart
+        self.log.debug("Installation finished")
+        restartbox = self.session.openWithCallback(self.msgBoxResponseRestart,MessageBox,_("Restart necessary, restart GUI now?"), MessageBox.TYPE_YESNO)        
+
+    def msgBoxResponseRestart(self, answer):
+        if answer is True:
+            self.session.open(TryQuitMainloop, 3)
 
     def compareVersions(self, version1, version2):
         def normalize(v):
