@@ -4,10 +4,12 @@ from Tools.MetrixReloadedHelper import initializeLog, getVersion
 from twisted.web.client import downloadPage, getPage
 
 from Screens.MessageBox import MessageBox
-from Screens.Ipkg import PackageSelection
+from Screens.Ipkg import Ipkg, PackageSelection
 
 # Configuration
 from Components.config import config, getConfigListEntry
+
+from Components.Ipkg import IpkgComponent
 
 #Language #########################################################################################################################################
 from Components.Language import language
@@ -94,7 +96,18 @@ class MetrixReloadedUpdater:
     
     def msgBoxResponseStartInstallation(self, result):
         if result:
-            self.session.open(PackageSelection, '/tmp/')
+            self.session.openWithCallback(self.installSTBpackages, PackageSelection, '/tmp/')
+
+    def installSTBpackages(self, args):
+        self.log.debug(str(args[0]))
+        cmdList = []
+        packages = args[0]
+        session = args[1]
+        if packages and session:
+            cmdList.append((IpkgComponent.CMD_UPDATE, { }))
+            for pkg in packages:
+                cmdList.append((IpkgComponent.CMD_INSTALL, {"package": pkg}))
+            session.open(Ipkg, cmdList = cmdList)
     
     def downloadNewVersion(self):
             #Donwload der neuen Version
