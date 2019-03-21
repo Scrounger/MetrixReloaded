@@ -68,7 +68,7 @@ class MetrixReloadedUpdater:
 
                     #User fragen ob version heruntergeladen werden soll
                     self.session.openWithCallback(
-                        self.msgBoxResponseStartDownload, MessageBox, msg, MessageBox.TYPE_YESNO)
+                        self.msgBoxResponseStartDownload, MessageBox, msg, MessageBox.TYPE_YESNO, timeout = 30)
             else:
                 self.log.info("current version %s is up to date!" % self.currentVersion)
 
@@ -83,7 +83,7 @@ class MetrixReloadedUpdater:
                 msg = _("MetrixReloaded version %s successful downloaded!\n\nWould you like to open the installation screen?") %(self.releasedVersion)
                 
                 self.session.openWithCallback(
-                    self.msgBoxResponseStartInstallation, MessageBox, msg, MessageBox.TYPE_YESNO)
+                    self.msgBoxResponseStartInstallation, MessageBox, msg, MessageBox.TYPE_YESNO, timeout = 30)
 
     def responseError(self, e, response):
         self.log.exception("response: [%s] %s", response, str(e))
