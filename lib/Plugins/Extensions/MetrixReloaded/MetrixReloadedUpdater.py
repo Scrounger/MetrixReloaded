@@ -14,6 +14,7 @@ from Components.Language import language
 import gettext
 from Tools.Directories import resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
 from os import environ, path
+import re
 
 #language
 lang = language.getLanguage()
@@ -54,7 +55,8 @@ class MetrixReloadedUpdater:
             self.log.debug("released version: %s" % self.releasedVersion)
 
             #Prüfen ob Version neuer ist
-            if(self.currentVersion != self.releasedVersion):
+            #if(self.currentVersion != self.releasedVersion):
+            if(self.compareVersions(self.releasedVersion, self.currentVersion) > 0):
                 self.log.info("new version: %s avaiable" % self.releasedVersion)
 
                 if(config.plugins.MetrixReloaded.autoDownloadNewVersion.value == True and self.manualMode == False):
@@ -105,4 +107,12 @@ class MetrixReloadedUpdater:
             self.log.debug("downloading new version...")
             downloadPage(url, self.targetFileName).addCallback(
                             self.response, self.DOWNLOAD).addErrback(self.responseError, self.DOWNLOAD)
+
+    def compareVersions(self, version1, version2):
+        def normalize(v):
+            return [int(x) for x in re.sub(r'(\.0+)*$','', v).split(".")]
+        return self.cmp(normalize(version1), normalize(version2))
+    
+    def cmp(self, a, b):
+        return (a > b) - (a < b)
             
