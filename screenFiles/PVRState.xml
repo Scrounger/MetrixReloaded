@@ -1,4 +1,5 @@
 ﻿<screen name="PVRState" backgroundColor="transparent" flags="wfNoBorder" position="center,185" size="960,615" zPosition="2">
   <!-- Play, Pause, Zeiten Spulen -->
   <widget backgroundColor="windowBackgroundSecond" font="Bold;105" name="state" position="188,222" size="585,150" halign="center" valign="center" zPosition="5" />
+  <widget text="PVRState" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="760,590" />
 </screen>

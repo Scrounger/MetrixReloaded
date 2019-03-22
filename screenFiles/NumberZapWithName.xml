@@ -13,4 +13,5 @@
   </widget>
   <widget name="servicenumber" position="970,470" size="330,198" halign="center" valign="center" font="SetrixHD; 170" foregroundColor="foreground" transparent="1" />
   <!--<widget name="servicebouquet" position="240,115" size="345,99" font="Regular;38" halign="center" valign="center" foregroundColor="accentColorOne" backgroundColor="windowBackground" />-->
+  <widget text="NumberZapWithName" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
 </screen>

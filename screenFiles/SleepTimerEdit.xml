@@ -22,4 +22,5 @@
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/shutdowntimer.png" position="window_image_pos" size="window_image_size" />
   <widget name="current_status" position="window_desc_pos" size="window_desc_size" halign="center" valign="center" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget text="SleepTimerEdit" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
 </screen>

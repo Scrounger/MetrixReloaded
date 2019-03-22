@@ -22,4 +22,5 @@
   <widget font="Regular;24" halign="left" valign="top" source="backgroundable" render="FixedLabel" text="Continue in background" position="key_blue_mid_pos" size="key_size_mid" zPosition="1" backgroundColor="windowBackground" transparent="1">
     <convert type="ConditionalShowHide" />
   </widget>
+  <widget text="JobView" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1088,898" />
 </screen>

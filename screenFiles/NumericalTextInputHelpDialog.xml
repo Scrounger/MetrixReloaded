@@ -15,4 +15,5 @@
   <widget name="help1" position="3,138" size="150,45" font="font_standard_small" halign="center" valign="center" transparent="1" />
   <widget name="key0" position="153,138" size="510,45" font="font_standard_small" halign="center" valign="center" transparent="1" />
   <widget name="help2" position="663,138" size="150,45" font="font_standard_small" halign="center" valign="center" transparent="1" />
+  <widget text="NumericalTextInputHelpDialog" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="616,165" />
 </screen>

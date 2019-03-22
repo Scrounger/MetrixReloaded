@@ -16,4 +16,5 @@
   <widget name="buttonred" position="key_red_pos" size="key_size" valign="top" halign="left" zPosition="2" foregroundColor="foreground" font="font_key_standard" backgroundColor="windowBackground" transparent="1" />
   <widget name="buttongreen" position="key_green_pos" size="key_size" valign="top" halign="left" zPosition="2" foregroundColor="foreground" font="font_key_standard" backgroundColor="windowBackground" transparent="1" />
   <widget name="buttonyellow" position="key_yellow_pos" size="key_size" valign="top" halign="left" zPosition="2" foregroundColor="foreground" font="font_key_standard" backgroundColor="windowBackground" transparent="1" />
+  <widget text="AutoShutDownConfiguration" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
 </screen>

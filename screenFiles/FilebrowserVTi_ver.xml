@@ -19,4 +19,5 @@
   <widget name="help" position="825,200" size="900,750" zPosition="5" font="Regular;30" backgroundColor="windowBackground" />
   <widget name="helpBack" position="822,197" size="906,756" zPosition="4" font="Regular;30" backgroundColor="foreground" />
   <widget name="helpShadow" position="837,212" size="906,756" zPosition="3" font="Regular;30" backgroundColor="black" />
+  <widget text="FilebrowserVTi_ver" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1620,955" />
 </screen>

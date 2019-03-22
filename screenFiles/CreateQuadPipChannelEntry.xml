@@ -17,4 +17,5 @@
   <widget name="textChannels" position="1200,300" size="585,40" font="Regular;34" transparent="1" />
   <widget name="selectedList" position="1220,350" size="565,160" font="Regular;30" itemHeight="40" transparent="1" />
   <widget name="description" position="1200,800" size="650,170" font="Regular;28" halign="left" transparent="1" />
+  <widget text="CreateQuadPipChannelEntry" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1620,955" />
 </screen>

@@ -6,4 +6,5 @@
   <widget name="text1" position="0,1030" zPosition="2" size="960,50" font="Regular; 34" halign="left" valign="center" backgroundColor="transpBlack" foregroundColor="accentColorOne" />
   <widget name="text2" position="960,1030" zPosition="2" size="960,50" font="Regular; 34" halign="right" valign="center" backgroundColor="transpBlack" foregroundColor="accentColorOne" />
   <widget name="focus" position="0,0" zPosition="-1" size="960,540" backgroundColor="transparent" borderWidth="4" borderColor="blue" />
+  <widget text="QuadPipScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
 </screen>

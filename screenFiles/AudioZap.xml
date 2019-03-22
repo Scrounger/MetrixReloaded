@@ -10,4 +10,5 @@
   </widget>
   <widget backgroundColor="transparent" name="video1" position="864,486" size="192,108" />
   <widget backgroundColor="transparent" name="video2" position="0,0" size="1920,1080" />
+  <widget text="AudioZap" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
 </screen>

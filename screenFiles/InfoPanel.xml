@@ -76,4 +76,5 @@
   </widget>
   <widget font="Regular;31" halign="left" valign="center" source="key_red" render="Label" position="key_red_pos" size="key_size" zPosition="1" backgroundColor="windowBackground" transparent="1" />
   <widget font="Regular;31" halign="left" valign="center" source="key_green" render="Label" position="key_green_pos" size="key_size" zPosition="1" backgroundColor="windowBackground" transparent="1" />
+  <widget text="InfoPanel" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1620,955" />
 </screen>

@@ -25,4 +25,5 @@
   <widget name="pass" position="344,370" size="600,35" font="Regular;30" backgroundColor="windowBackground" transparent="1" />
   <widget name="scan_progress" position="344,408" size="600,23" borderWidth="2" borderColor="foreground" backgroundColor="windowBackground" transparent="1" />
   <widget name="servicelist" position="344,453" size="600,408" font="Regular;30" itemHeight="34" selectionDisabled="1" backgroundColor="windowBackground" transparent="1" />
+  <widget text="ServiceScan" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1088,898" />
 </screen>

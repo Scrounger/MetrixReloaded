@@ -11,4 +11,5 @@
   <widget name="Field7" font="Regular;30" noWrap="1" halign="left" valign="center" foregroundColor="foreground" backgroundColor="infobarBgR" transparent="1" zPosition="1" />
   <widget name="Field8" font="Regular;30" noWrap="1" halign="left" valign="center" foregroundColor="foreground" backgroundColor="infobarBgR" transparent="1" zPosition="1" />
   <widget name="Field9" font="Regular;30" noWrap="1" halign="left" valign="center" foregroundColor="foreground" backgroundColor="infobarBgR" transparent="1" zPosition="1" />
+  <widget text="TunerState" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1620,15" />
 </screen>

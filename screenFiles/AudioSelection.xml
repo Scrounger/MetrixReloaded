@@ -43,4 +43,5 @@
       }
     </convert>
   </widget>
+  <widget text="AudioSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="850,725" />
 </screen>

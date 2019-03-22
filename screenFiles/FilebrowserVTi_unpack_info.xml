@@ -11,4 +11,5 @@
   <constant-widget name="key_blue_name" />
   <widget name="list_left_head" position="10,340" size="1780,35" backgroundColor="windowBackground" font="Regular;30" transparent="1" />
   <widget name="list_left" position="10,400" size="1780,550" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showNever" enableWrapAround="1" transparent="1" />
+  <widget text="FilebrowserVTi_unpack_info" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1620,955" />
 </screen>
