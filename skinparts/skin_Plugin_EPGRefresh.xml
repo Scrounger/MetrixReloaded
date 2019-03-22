@@ -21,6 +21,7 @@
 		<constant-widget name="key_green_source" />
 		<constant-widget name="key_yellow_source" />
 		<constant-widget name="key_blue_source" />
+    <widget text="EPGRefreshConfiguration" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
 	</screen>
 	<screen name="EPGRefreshServiceEditor" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<!-- Backgrounds -->
@@ -41,5 +42,6 @@
 		<constant-widget name="key_green_source" />
 		<constant-widget name="key_yellow_source" />
 		<constant-widget name="key_blue_source" />
+    <widget text="EPGRefreshServiceEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
 	</screen>
 </skin>

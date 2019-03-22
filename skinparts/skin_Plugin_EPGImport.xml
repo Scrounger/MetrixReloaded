@@ -24,7 +24,8 @@
     <constant-widget name="key_red_name" />
     <constant-widget name="key_green_name" />
     <constant-widget name="key_yellow_name" />
-    <constant-widget name="key_blue_name" />    
+    <constant-widget name="key_blue_name" />
+    <widget text="EPGImportConfig" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
 	</screen>
 
 	<screen name="EPGImportSources" position="0,0" size="1920,1080" title="EPG Import Sources" backgroundColor="transparent" flags="wfNoBorder">
@@ -48,6 +49,7 @@
     <constant-widget name="key_green_name" />
     <constant-widget name="key_yellow_name" />
     <constant-widget name="key_blue_name" />
+    <widget text="EPGImportSources" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
   </screen>
 	
 	<screen name="EPGImportProfile" position="0,0" size="1920,1080" title="EPGImportProfile" backgroundColor="transparent" flags="wfNoBorder">
@@ -69,6 +71,7 @@
     <constant-widget name="color_buttons_window" />
     <constant-widget name="key_red_name" />
     <constant-widget name="key_green_name" />
+    <widget text="EPGImportProfile" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
 	</screen>
 
 	<screen name="EPGImportLog" position="0,0" size="1920,1080" title="EPG Import Log" backgroundColor="transparent" flags="wfNoBorder">
@@ -92,5 +95,6 @@
     <constant-widget name="key_green_name" />
     <constant-widget name="key_yellow_name" />
     <constant-widget name="key_blue_name" />
+    <widget text="EPGImportLog" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
 	</screen>
 </skin>

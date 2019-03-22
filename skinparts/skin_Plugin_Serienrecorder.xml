@@ -84,5 +84,7 @@
     <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" position="key_green_pos" size="key_size" name="text_green" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" position="key_yellow_pos" size="key_size" name="text_yellow" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" position="key_blue_pos" size="key_size" name="text_blue" transparent="1" valign="top" zPosition="1" />
+
+    <widget text="SerienRecorder" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
   </screen>
 </skin>
