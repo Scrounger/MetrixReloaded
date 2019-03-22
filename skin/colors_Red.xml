@@ -1,0 +1,31 @@
+<skin>
+<colors>
+  <!-- Color Definitionen -->
+  <color name="transparent" value="#ffffffff" />
+  <color name="background" value="#2d000000" />
+  <color name="backgroundSecond" value="#12670a10" />
+  <color name="foreground" value="#00ffffff" />
+  <color name="yellow" value="#00ffff00" />
+  <color name="windowBackground" value="background" />
+  <color name="windowBackgroundSecond" value="backgroundSecond" />
+  <color name="listForeground" value="#00ffffff" />
+  <color name="listSelectedBackground" value="backgroundSecond" />
+  <color name="listSelectedForeground" value="foreground" />
+</colors>
+<windowstyle type="skinned" id="0">
+  <!-- Main screen colors (id=0 Framebuffer) -->
+  <title offset="24,15" font="Regular;40" />
+  <color name="Background" color="windowBackground" />
+  <color name="LabelForeground" color="foreground" />
+  <color name="ListboxBackground" color="windowBackground" />
+  <color name="ListboxForeground" color="listForeground" />
+  <color name="ListboxSelectedBackground" color="listSelectedBackground" />
+  <color name="ListboxSelectedForeground" color="listSelectedForeground" />
+  <color name="ListboxMarkedBackground" color="yellow" />
+  <color name="ListboxMarkedForeground" color="foreground" />
+  <color name="ListboxMarkedAndSelectedBackground" color="yellow" />
+  <color name="ListboxMarkedAndSelectedForeground" color="foreground" />
+  <color name="WindowTitleForeground" color="foreground" />
+  <color name="WindowTitleBackground" color="windowBackground" />
+</windowstyle>
+</skin>
