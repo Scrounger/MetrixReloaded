@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-03-22 18:42+0100\n"
-"PO-Revision-Date: 2019-03-22 18:43+0100\n"
+"POT-Creation-Date: 2019-03-22 18:49+0100\n"
+"PO-Revision-Date: 2019-03-22 18:50+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -156,6 +156,11 @@ msgstr ""
 "\n"
 "Möchtest Du das Update installieren?"
 
-#: MetrixReloadedUpdater.py:125
+#: MetrixReloadedUpdater.py:94
+#, python-format
+msgid "Error: [%s] %s"
+msgstr "Fehler: [%s] %s"
+
+#: MetrixReloadedUpdater.py:128
 msgid "Restart necessary, restart GUI now?"
 msgstr "Neustart erforderlich, jetzt neu starten?"

@@ -91,6 +91,9 @@ class MetrixReloadedUpdater:
     def responseError(self, e, response):
         self.log.exception("response: [%s] %s", response, str(e))
 
+        msg = _("Error: [%s] %s") %  response, str(e)
+        self.session.open(MessageBox, msg, MessageBox.TYPE_ERROR, timeout=30)
+
     def msgBoxResponseStartDownload(self, answer):
         if answer:
             self.downloadNewVersion()
