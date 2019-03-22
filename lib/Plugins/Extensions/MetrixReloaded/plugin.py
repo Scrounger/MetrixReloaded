@@ -21,6 +21,7 @@ config.plugins.MetrixReloaded.checkNewVersionOnStartUp = ConfigOnOff(default=Tru
 config.plugins.MetrixReloaded.autoDownloadNewVersion = ConfigOnOff(default=True)
 config.plugins.MetrixReloaded.debug = ConfigOnOff(default=False)
 config.plugins.MetrixReloaded.logDirectory = ConfigDirectory(default='/tmp/MetrixReloaded/log/')
+config.plugins.MetrixReloaded.showScreenNames = ConfigOnOff(default=False)
 
 # MyLog
 # MyLog
