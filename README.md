@@ -71,6 +71,13 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 <img src="screenshots/EPGSelectionMulti.jpg?sanitize=true&raw=true" title="EPGSelectionMulti" width="400"/>
 </p>
 
+## Farbstile
+<img src="screenshots/colors_Grey.jpg?sanitize=true&raw=true" title="colors_Grey" width="400"/>
+<img src="screenshots/colors_Brown.jpg?sanitize=true&raw=true" title="colors_Brown" width="400"/>
+<img src="screenshots/colors_Green.jpg?sanitize=true&raw=true" title="colors_Green" width="400"/>
+<img src="screenshots/colors_Purpel.jpg?sanitize=true&raw=true" title="colors_Purpel" width="400"/>
+<img src="screenshots/colors_Red.jpg?sanitize=true&raw=true" title="colors_Red" width="400"/>
+
 ## Changelog
 
 ### 0.3.1 BETA (21.03.2019)
