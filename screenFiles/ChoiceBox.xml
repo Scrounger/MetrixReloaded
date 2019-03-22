@@ -17,5 +17,5 @@
 	  foregroundColor="foreground" 
 	  transparent="1" 
 	  backgroundColor="windowBackgroundSecond" />-->
-  <widget text="ChoiceBox" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="850,725" />
+  <widget text="ChoiceBox" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="850,725" />
 </screen>

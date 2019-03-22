@@ -29,5 +29,5 @@
   <widget source="ServiceEvent" render="NextEvents" position="495,645" size="540,90" noWrap="1" font="font_standard_extra_small">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget text="InfoBarZapHistory" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="850,725" />
+  <widget text="InfoBarZapHistory" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="850,725" />
 </screen>

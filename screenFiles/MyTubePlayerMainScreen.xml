@@ -36,5 +36,5 @@
   <widget name="thumbnail" position="1500,300" size="100,75" alphatest="on" zPosition="4" />
   <ePixmap pixmap="skin_default/buttons/key_info.png" position="1700,300" zPosition="4" size="35,25" alphatest="on" />
   <ePixmap pixmap="skin_default/buttons/key_menu.png" position="1750,300" zPosition="4" size="35,25" alphatest="on" />
-  <widget text="MyTubePlayerMainScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1620,955" />
+  <widget text="MyTubePlayerMainScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
 </screen>

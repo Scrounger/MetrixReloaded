@@ -29,5 +29,5 @@
   <widget name="piconpath2" position="250,300" size="800,36" font="Regular;32" valign="left" foregroundColor="accentColorOne" backgroundColor="windowBackground" transparent="1" />
   <widget name="piconspace" position="1050,300" size="680,36" font="Regular;32" valign="left" backgroundColor="windowBackground" transparent="1" />
   <widget name="list" position="45,700" size="1730,250" itemHeight="50" zPosition="2" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
-  <widget text="PiconManagerScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1620,955" />
+  <widget text="PiconManagerScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
 </screen>

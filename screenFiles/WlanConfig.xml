@@ -21,5 +21,5 @@
   <widget source="DNS2" render="Label" position="795,705" zPosition="1" size="225,39" font="Regular;30" backgroundColor="windowBackground" valign="center" transparent="1" />
   <widget name="VKeyIcon" pixmap="MetrixReloaded/buttons/key_text.png" position="750,765" zPosition="10" size="53,38" transparent="1" alphatest="on" />
   <widget name="HelpWindow" pixmap="MetrixReloaded/media/vkey_icon.png" position="627,20" zPosition="1" size="1,1" transparent="1" alphatest="on" />
-  <widget text="WlanConfig" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1088,898" />
+  <widget text="WlanConfig" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
 </screen>

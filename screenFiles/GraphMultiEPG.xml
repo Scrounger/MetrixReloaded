@@ -48,5 +48,5 @@
   <!-- Buttons -->
   <constant-widget name="color_buttons_graphMultiEpg" />
   <constant-widget name="key_name_graphMultiEpg_Fullscreen" />
-  <widget text="GraphMultiEPG" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
+  <widget text="GraphMultiEPG" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

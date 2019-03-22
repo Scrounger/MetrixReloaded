@@ -26,5 +26,5 @@
   <eLabel position="35,450" size="1218,50" zPosition="-1" backgroundColor="listBackgroundBarsOne" />
   <eLabel position="35,550" size="1218,50" zPosition="-1" backgroundColor="listBackgroundBarsOne" />
   <eLabel position="35,650" size="1218,50" zPosition="-1" backgroundColor="listBackgroundBarsOne" />
-  <widget text="WlanStatus" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1088,898" />
+  <widget text="WlanStatus" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
 </screen>

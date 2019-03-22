@@ -1,5 +1,5 @@
 ﻿<screen name="MinuteInput" backgroundColor="transparent" position="center,center" size="420,90" title="Seek">
   <eLabel backgroundColor="windowBackgroundSecond" position="0,0" size="420,90" zPosition="-1" />
   <widget name="minutes" backgroundColor="windowBackgroundSecond" position="0,15" size="420,60" halign="center" valign="center" font="Bold;70" />
-  <widget text="MinuteInput" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="220,65" />
+  <widget text="MinuteInput" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="220,65" />
 </screen>

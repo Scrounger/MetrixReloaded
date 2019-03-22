@@ -15,5 +15,5 @@
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
   <constant-widget name="key_green_source" />
-  <widget text="InputMacroName" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
+  <widget text="InputMacroName" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

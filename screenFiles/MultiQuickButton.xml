@@ -25,5 +25,5 @@
   <widget name="key_1" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" zPosition="1" position="1256,772" size="335,30" font="font_standard_small" halign="left" valign="top" transparent="1" />
   <widget name="key_2" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" zPosition="1" position="1256,832" size="335,30" font="font_standard_small" halign="left" valign="top" transparent="1" />
   <widget name="key_3" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" zPosition="1" position="1256,829" size="335,30" font="font_standard_small" halign="left" valign="top" transparent="1" />
-  <widget text="MultiQuickButton" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
+  <widget text="MultiQuickButton" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

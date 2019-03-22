@@ -30,5 +30,5 @@
   <widget name="currenttext" position="65,80" size="0,0" />
   <widget name="titletext" position="65,80" size="0,0" />
   <widget name="searchchar" position="center,550" size="150,150" valign="center" halign="center" zPosition="100" backgroundColor="transparent" transparent="1" font="SimpleBold;100" foregroundColor="accentColorOne" />
-  <widget text="MediaPlayer" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1090,894" />
+  <widget text="MediaPlayer" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1090,894" />
 </screen>

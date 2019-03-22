@@ -1,5 +1,5 @@
 ﻿<screen name="skin2HD" position="center,center" size="800,170" zPosition="1" title="Convert selected skinfile-xml from 1280 to 1920">
   <ePixmap position="50,22" size="54,54" pixmap="skin_default/icons/input_info.png" transparent="1" alphatest="blend" />
   <widget source="label" render="Label" position="200,37" size="500,75" font="Regular;48" transparent="1" />
-  <widget text="skin2HD" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="600,145" />
+  <widget text="skin2HD" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="600,145" />
 </screen>

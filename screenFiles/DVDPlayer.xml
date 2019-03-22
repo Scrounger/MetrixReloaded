@@ -31,5 +31,5 @@
   <widget source="session.CurrentService" render="Label" position="1500,169" size="150,50" font="Bold; 40" halign="left" valign="center" backgroundColor="infobarBgR" transparent="1">
     <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
   </widget>
-  <widget text="DVDPlayer" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,254" />
+  <widget text="DVDPlayer" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,254" />
 </screen>

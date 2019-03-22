@@ -26,5 +26,5 @@
 			</convert>
   </widget>
   <widget source="introduction" render="Label" position="230,790" size="825,30" zPosition="10" font="Regular;30" halign="center" foregroundColor="accentColorOne" transparent="1" />
-  <widget text="AutoMountView" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1088,898" />
+  <widget text="AutoMountView" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
 </screen>

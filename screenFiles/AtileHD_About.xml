@@ -6,5 +6,5 @@
   <widget source="Title" render="Label" position="10,180" size="560,50" backgroundColor="windowBackground" font="SetrixHD;22" foregroundColor="foreground" halign="center" transparent="1">
     <convert type="MetrixReloadedVersion"></convert>
   </widget>
-  <widget text="AtileHD_About" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="400,225" />
+  <widget text="AtileHD_About" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="400,225" />
 </screen>

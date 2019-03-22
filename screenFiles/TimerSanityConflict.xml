@@ -13,5 +13,5 @@
   <widget name="timer2" position="745,435" size="1040,105" scrollbarMode="showNever" transparent="1" backgroundColor="windowBackground" />
   <eLabel position="35,435" size="1750,105" zPosition="-1" backgroundColor="windowBackground" />
   <widget name="list" position="35,560" size="1750,400" font="Regular;32" itemHeight="40" transparent="1" scrollbarMode="showOnDemand" />
-  <widget text="TimerSanityConflict" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1620,955" />
+  <widget text="TimerSanityConflict" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
 </screen>

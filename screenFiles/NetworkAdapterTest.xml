@@ -42,5 +42,5 @@
   <widget name="EditSettingsButton" pixmaps="MetrixReloaded/buttons/button_off.png,MetrixReloaded/buttons/blue.png" position="920,760" zPosition="1" size="31,31" transparent="1" alphatest="blend" />
   <widget name="EditSettings_Text" position="980,760" size="300,39" zPosition="2" font="Bold;36" foregroundColors="gray,dodgerblue,white" backgroundColor="windowBackground" halign="left" transparent="1" />
   <widget name="InfoText" position="60,240" size="1178,645" zPosition="25" foregroundColor="foreground" backgroundColor="windowBackground" font="Regular;31" />
-  <widget text="NetworkAdapterTest" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1088,898" />
+  <widget text="NetworkAdapterTest" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
 </screen>

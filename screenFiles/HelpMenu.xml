@@ -18,5 +18,5 @@
   <widget name="arrowup" pixmap="MetrixReloaded/media/arrowup2.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
   <widget name="arrowup2" pixmap="MetrixReloaded/media/arrowup2.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
   <widget name="long_key" position="key_red_pos" size="key_size" font="font_key_standard" halign="left" valign="top" foregroundColor="foreground" />
-  <widget text="HelpMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
+  <widget text="HelpMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

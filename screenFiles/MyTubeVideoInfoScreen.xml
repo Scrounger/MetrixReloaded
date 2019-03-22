@@ -36,4 +36,4 @@
   <widget name="tags" position="55,580" size="590,32" zPosition="10" font="Regular;30" backgroundColor="windowBackground" transparent="1" halign="left" valign="top" />
   <widget name="detailtext" position="55,620" size="1710,310" zPosition="10" font="Regular;30" backgroundColor="windowBackground" transparent="1" halign="left" valign="top" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <widget name="thumbnail" position="1920,1080" size="130,98" alphatest="on" /> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
-	<widget text="MyTubeVideoInfoScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1620,955" /></screen>
+	<widget text="MyTubeVideoInfoScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" /></screen>

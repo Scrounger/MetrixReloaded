@@ -2,5 +2,5 @@
   <widget name="text" position="15,30" size="1370,38" font="Bold;34" transparent="1" backgroundColor="windowBackground" />
   <ePixmap pixmap="MetrixReloaded/media/vkey_text.png" position="10,83" zPosition="100" size="1380,52" alphatest="on" scale="1" />
   <widget name="input" position="20,83" size="1360,52" font="Regular;46" transparent="1" backgroundColor="windowBackground" />
-  <widget text="InputBox" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1200,125" />
+  <widget text="InputBox" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1200,125" />
 </screen>

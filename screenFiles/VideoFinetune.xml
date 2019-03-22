@@ -1,4 +1,4 @@
 ﻿<screen name="VideoFinetune" position="0,0" size="1920,1080" backgroundColor="black">
   <widget source="Canvas" render="Canvas" position="420,105" size="720,576" />
-  <widget text="VideoFinetune" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
+  <widget text="VideoFinetune" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

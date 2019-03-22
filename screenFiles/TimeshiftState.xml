@@ -31,5 +31,5 @@
   <widget backgroundColor="infobarBgRLowTrans" font="Regular;30" halign="left" valign="top" noWrap="1" position="225,93" render="Label" size="760,34" source="TimeShiftService" zPosition="1">
     <convert type="EventName">Name</convert>
   </widget>-->
-  <widget text="TimeshiftState" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="760,590" />
+  <widget text="TimeshiftState" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="760,590" />
 </screen>

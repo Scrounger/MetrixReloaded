@@ -20,5 +20,5 @@
   </widget>
   <widget backgroundColor="transparent" name="video1" position="0,0" size="960,540" />
   <widget backgroundColor="transparent" name="video2" position="960,540" size="960,540" />
-  <widget text="SplitScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1720,1055" />
+  <widget text="SplitScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

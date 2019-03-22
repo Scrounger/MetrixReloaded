@@ -10,5 +10,5 @@
   <widget name="new_app_version" position="90,350" size="1118,40" font="Regular;30" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="text" position="90,470" size="1118,90" font="Regular;30" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="progress" position="90,430" size="1118,35" borderWidth="2" borderColor="foreground" />
-  <widget text="VuRcuOtaUpdate" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="global.CurrentTime" position="1088,898" />
+  <widget text="VuRcuOtaUpdate" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
 </screen>
