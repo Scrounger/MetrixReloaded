@@ -73,6 +73,7 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 
 ## Farbstile
 <p align="center">
+<img src="screenshots/colors_Blue.jpg?sanitize=true&raw=true" title="colors_Blue" width="400"/>
 <img src="screenshots/colors_Grey.jpg?sanitize=true&raw=true" title="colors_Grey" width="400"/>
 <img src="screenshots/colors_Brown.jpg?sanitize=true&raw=true" title="colors_Brown" width="400"/>
 <img src="screenshots/colors_Green.jpg?sanitize=true&raw=true" title="colors_Green" width="400"/>
