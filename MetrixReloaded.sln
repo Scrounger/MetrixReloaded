@@ -26,6 +26,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merger", "tools\Merger\Merg
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenName", "tools\ScreenName\ScreenName.csproj", "{9916E4DA-3360-4251-AEBC-96AFAAD3AAC5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B92199E0-4B41-4131-98BA-A8E53351BD6D} = {B92199E0-4B41-4131-98BA-A8E53351BD6D}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{FE49F274-7647-4D47-9ED2-763D3C4CAF3E}"
 EndProject

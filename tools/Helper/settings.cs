@@ -72,6 +72,24 @@ namespace Helper
             set { this.buildPath = value; }
         }
 
+        private string screenNameElement;
+
+        [JsonProperty(PropertyName = "screenNameElement")]
+        public string ScreenNameElement
+        {
+            get { return this.screenNameElement; }
+            set { this.screenNameElement = value; }
+        }
+
+        private string screenNameElementMetrixReloaded;
+
+        [JsonProperty(PropertyName = "screenNameElementMetrixReloaded")]
+        public string ScreenNameElementMetrixReloaded
+        {
+            get { return this.screenNameElementMetrixReloaded; }
+            set { this.screenNameElementMetrixReloaded = value; }
+        }
+
         public static Settings Load()
         {
             Settings settings;
