@@ -1,4 +1,9 @@
 # MetrixReloaded
+![GitHub release](https://img.shields.io/github/release/Scrounger/MetrixReloaded.svg)
+![GitHub All Releases](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/total.svg)
+![GitHub](https://img.shields.io/github/license/Scrounger/MetrixReloaded.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/Scrounger/MetrixReloaded.svg)
+
 MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vuplus-support.org/).
 
 [![paypal](https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YHPPW474N5CKQ&source=url)
