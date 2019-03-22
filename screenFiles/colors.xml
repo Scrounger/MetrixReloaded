@@ -4,7 +4,6 @@
   <color name="background" value="#2d000000" />
   <color name="backgroundSecond" value="#1227408b" />
   <color name="foreground" value="#00ffffff" />
-
   <color name="black" value="#00000000" />
   <color name="white" value="#00ffffff" />
   <color name="blue" value="#000064c7" />
@@ -13,12 +12,10 @@
   <color name="green" value="#00389416" />
   <color name="lightgrey" value="#00bbbbbb" />
   <color name="orange" value="#00ffa500" />
-  
   <!-- Color Zuweisungen -->
   <color name="windowBackground" value="background" />
   <color name="windowBackgroundSecond" value="backgroundSecond" />
   <color name="accent1" value="lightgrey" />
-
   <!-- List Hintergund -->
   <color name="listBackgroundBarsOne" value="background" />
   <color name="listBackgroundBarsTwo" value="background" />
@@ -32,39 +29,26 @@
   <!-- ProgressBar -->
   <color name="progressBarSmallBackground" value="lightgrey" />
   <color name="progressBarBackground" value="#40000000" />
-  
-
-
   <color name="channelListDescFg" value="#00fcfcfc" />
   <color name="dodgerblue" value="#001e90ff" />
-  
-
   <color name="infobarBgL" value="#27ececec" />
   <color name="infobarBgR" value="#27666769" />
   <color name="infobarBgRLowTrans" value="#10666769" />
   <color name="InfobarFgL" value="#00231f20" />
-
   <color name="NumericalHelpDialogBg" value="#05231f20" />
   <color name="red" value="#00f23d21" />
   <color name="ScrollBarFG" value="#00ffffff" />
   <color name="ServiceNotAvail" value="#0058595b" />
   <color name="transpBlack" value="#80000000" />
   <color name="windowBackgroundBars" value="#10535355" />
-  <color name="windowListboxBg" value="#27474143" />  
-  
+  <color name="windowListboxBg" value="#27474143" />
   <color name="accentColorOne" value="dodgerblue" />
   <color name="accentColorTwo" value="dodgerblue" />
-  
-  
-  
-  
-  
   <color name="ScrollBarBorder" value="gray" />
   <!-- Meine-->
   <color name="seperator" value="lightgrey" />
   <color name="listDescription" value="yellow" />
   <color name="listRecording" value="#00ff0000" />
-
   <color name="infoBar_tuner_available" value="#00555555" />
   <color name="infoBar_tuner_active" value="#00389416" />
   <color name="infoBar_tuner_using" value="#00f23d21" />

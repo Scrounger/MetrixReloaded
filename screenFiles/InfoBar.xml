@@ -52,19 +52,13 @@
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
-
   <!--<widget source="session.extEvent_Now" position="412,100" size="1000,600" backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" noWrap="0">
     <convert type="MetrixReloadedExtEventEPG">EpgShareRaw</convert>
   </widget>-->
-
   <!-- Icons -->
   <constant-widget name="infoBar_tuner" />
   <constant-widget name="infoBar_Icons" />
   <constant-widget name="infoBar_movieplayer_Icons" />
-  
   <!-- Rec Icon -->
   <constant-widget name="recIcon_top" />
-
-
-
 </screen>

@@ -4,13 +4,10 @@
   <font filename="MetrixReloaded/fonts/setrixHD.ttf" name="Regular" scale="100" />
   <font filename="MetrixReloaded/fonts/setrixSL.ttf" name="SetrixSL" scale="100" />
   <font filename="MetrixReloaded/fonts/calchux.ttf" name="IconFont01" scale="100" />
-
   <font filename="MyriadPro-Semibold.otf" name="Bold" scale="93" />
   <font filename="MyriadPro-Semibold.otf" name="SimpleBold" scale="93" />
-
   <!-- ChoiceBox-->
   <!--<alias name="ChoiceList" font="SetrixHD" size="30" height="50" />-->
-  
   <!-- EPGSelection - Single -->
   <alias name="EPGList0" font="SetrixHD" size="30" />
   <alias name="EPGList1" font="SetrixHD" size="30" />
@@ -30,7 +27,6 @@
   <alias name="SelectionList" font="Regular" size="32" height="50" />
   <alias name="ParentalControlList" font="Regular" size="32" height="50" />
   <alias name="VirtualKeyboard" font="SetrixHD" size="42" height="50" />
-  
   <!-- Meine Fonts Definitions-->
   <alias name="font_standard" font="SetrixHD" size="30" />
   <alias name="font_standard_small" font="SetrixHD" size="28" />

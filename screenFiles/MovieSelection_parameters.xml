@@ -1,4 +1,4 @@
-<parameters name="MovieSelection_parameters">
+﻿<parameters name="MovieSelection_parameters">
   <!-- MovieList - Ordneranzeige -->
   <parameter name="MovieListIcon" value="5,9,25,25" />
   <parameter name="MovieListIconXOffset" value="34" />
@@ -10,7 +10,6 @@
   <parameter name="MovieListProgress" value="10,13,70,13" />
   <parameter name="MovieListProgressPercent" value="10,2,70,38" />
   <parameter name="MovieListProgressBorder" value="1" />
-  
   <!-- MovieList - Standard -->
   <parameter name="MovieListOriginalItemHeight" value="100" />
   <parameter name="MovieListOriginalTitle" value="0,0,940,40" />
@@ -22,8 +21,7 @@
   <!-- 3.Zeile -->
   <parameter name="MovieListOriginalLength" value="850,65,170,35" />
   <parameter name="MovieListOriginalServiceTags" value="550,65,340,35" />
-  
-   <!-- Kompakte Listenansicht -->
+  <!-- Kompakte Listenansicht -->
   <parameter name="MovieListCompactItemHeight" value="70" />
   <parameter name="MovieListCompactTitle" value="0,2,940,40" />
   <!-- Titel -->
@@ -34,7 +32,6 @@
   <parameter name="MovieListCompactService" value="800,35,370,40" />
   <!-- Sender -->
   <parameter name="MovieListCompactServiceTags" value="310,35,370,40" />
-  
   <!-- Kompakte Listenansicht mit Beschreibung -->
   <parameter name="MovieListCompactDescItemHeight" value="70" />
   <parameter name="MovieListCompactDescTitle" value="0,2,850,38" />
@@ -45,8 +42,7 @@
   <!-- Datum_Uhrzeit -->
   <parameter name="MovieListCompactDescLength" value="830,4,0,35" />
   <parameter name="MovieListCompactDescService" value="650,35,370,35" />
-  <!-- Sender -->  
-  
+  <!-- Sender -->
   <!-- Einzeilige Listenansicht -->
   <parameter name="MovieListMinimalItemHeight" value="50" />
   <parameter name="MovieListMinimalTitle" value="0,3,340,40" />
@@ -55,7 +51,6 @@
   <parameter name="MovieListMinimalBegin" value="765,3,250,40" />
   <!-- Datum_Uhrzeit -->
   <parameter name="MovieListMinimalLength" value="1000,3,170,40" />
-  
   <!-- Einzeilige Listenansicht VTI -->
   <parameter name="MovieListMinimalVTITitle" value="0,0,1165,42" />
   <parameter name="MovieListMinimalVTIBegin" value="1150,3,0,40" />
@@ -63,8 +58,6 @@
   <parameter name="MovieListMinimalVTISize" value="1150,3,0,40" />
   <parameter name="MovieListMinimalVTIService" value="1050,3,0,40" />
   <parameter name="MovieListMinimalVTIPicon" value="1130,5,50,30" />
-
-
   <!-- Movieliste allgemein -->
   <parameter name="MovieListItemHeight" value="42" />
   <parameter name="MovieListChannelSize" value="110,50,0" />

@@ -77,8 +77,7 @@
   <variable name="window_searchbar_size" value="200,200" />
   <!-- InfoBar-->
   <variable name="infoBar_tuner_size" value="30,40" />
-
-  <!-- TODO: Kommentar einfügen-->	
+  <!-- TODO: Kommentar einfügen-->
   <variable name="window_small_list_top_pos" value="105,217" />
   <variable name="window_text_small_list_top_pos" value="105,150" />
   <variable name="window_small_list_bottom_pos" value="105,607" />

@@ -1,4 +1,4 @@
-<fonts name="MovieSelection_fonts">
+﻿<fonts name="MovieSelection_fonts">
   <alias name="MovieListCompactFont1" font="SetrixHD" size="28" height="70" />
   <alias name="MovieListCompactFont2" font="SetrixHD" size="25" />
   <alias name="MovieListFont1" font="SetrixHD" size="28" height="41" />
@@ -7,5 +7,5 @@
   <alias name="MovieListMinimalFont2" font="SetrixHD" size="26" />
   <alias name="MovieListOriginalFont1" font="SetrixHD" size="30" height="100" />
   <alias name="MovieListOriginalFont2" font="SetrixHD" size="26" />
-  <alias name="MovieListOriginalFont3" font="SetrixHD" size="26" />  
+  <alias name="MovieListOriginalFont3" font="SetrixHD" size="26" />
 </fonts>

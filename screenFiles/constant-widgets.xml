@@ -40,7 +40,6 @@
     <eLabel backgroundColor="windowBackgroundSecond" position="0,0" size="1050,60" zPosition="-10" />
     <eLabel backgroundColor="windowBackground" position="0,60" size="1050,690" zPosition="-10" />
   </constant-widget>
-
   <!-- Color Buttons (Red, Green, Yellow, Blue) -->
   <constant-widget name="color_buttons_window">
     <ePixmap pixmap="MetrixReloaded/media/buttons/key_red.png" position="52,952" size="45,60" alphatest="blend" />
@@ -114,14 +113,12 @@
   <constant-widget name="key_blue_source">
     <widget source="key_blue" render="Label" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   </constant-widget>
-
   <constant-widget name="key_name_graphMultiEpg_Fullscreen">
     <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" name="key_red" position="67,1018" size="key_size" transparent="1" valign="top" />
     <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" name="key_green" position="457,1018" size="key_size" transparent="1" valign="top" />
     <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" name="key_yellow" position="862,1018" size="key_size" transparent="1" valign="top" />
     <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" name="key_blue" position="1275,1018" size="key_size" transparent="1" valign="top" />
   </constant-widget>
-
   <!-- Meine Clocks-->
   <constant-widget name="clock_menu">
     <widget backgroundColor="windowBackgroundSecond" font="font_menu_time" halign="right" position="1660,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
@@ -167,7 +164,6 @@
     </widget>
     <eLabel backgroundColor="windowBackgroundSecond" position="1620,42" size="237,100" zPosition="-10" />
   </constant-widget>
-
   <!-- Meine Seperators-->
   <constant-widget name="seperator_menu">
     <!--<eLabel name="Seperator" position="15,75" size="600,1" zPosition="5" backgroundColor="seperator" />-->
@@ -182,38 +178,34 @@
   <constant-widget name="seperator_graphMultiEpg_Fullscreen">
     <eLabel name="Seperator" position="45,70" size="1830,2" zPosition="5" backgroundColor="seperator" />
   </constant-widget>
-
   <!-- Meine Titles-->
   <constant-widget name="title_menu">
-    <widget source="title" render="Label" position="menu_title_pos" size="menu_title_size" font="font_menu_title" transparent="1"  noWrap="1"/>
+    <widget source="title" render="Label" position="menu_title_pos" size="menu_title_size" font="font_menu_title" transparent="1" noWrap="1" />
   </constant-widget>
   <constant-widget name="title_window">
     <widget source="title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1" />
   </constant-widget>
   <constant-widget name="Title_window">
-    <widget source="Title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1"/>
+    <widget source="Title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1" />
   </constant-widget>
   <constant-widget name="Title_contextMenu">
-    <widget source="Title" render="Label" position="contextMenu_title_pos" size="contextMenu_title_size" font="font_contextMenu_title" backgroundColor="windowBackgroundSecond" transparent="1"  noWrap="1"/>
+    <widget source="Title" render="Label" position="contextMenu_title_pos" size="contextMenu_title_size" font="font_contextMenu_title" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" />
   </constant-widget>
   <constant-widget name="Title_graphMultiEpg_Fullscreen">
-    <widget foregroundColor="foreground" backgroundColor="windowBackground" font="font_window_title" halign="left" position="60,5" size="window_title_size" render="clearFavName" source="Title" transparent="1"  />
+    <widget foregroundColor="foreground" backgroundColor="windowBackground" font="font_window_title" halign="left" position="60,5" size="window_title_size" render="clearFavName" source="Title" transparent="1" />
   </constant-widget>
-
   <!-- Rec Icon-->
   <constant-widget name="recIcon_top">
     <widget alphatest="blend" pixmap="MetrixReloaded/media/background_isRecording.png" position="887,0" render="Pixmap" size="146,37" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide" />
     </widget>
   </constant-widget>
-
   <!-- Icons -->
   <constant-widget name="icons_menu">
     <widget alphatest="blend" path="media/icons/menu" position="menu_icon_pos" render="MetrixReloadedIcon" size="menu_icon_size" source="menu" zPosition="3">
       <convert type="MetrixReloadedMenuEntryID"></convert>
     </widget>
   </constant-widget>
-
   <!-- InfoBar - Icons -->
   <constant-widget name="infoBar_Icons">
     <widget alphatest="blend" path="media/logos/tunertypes" position="410,1043" render="MetrixReloadedIcon" size="84,22" source="session.CurrentService" zPosition="3">
@@ -233,10 +225,8 @@
       <convert type="ConditionalShowHide" />
     </widget>
   </constant-widget>
-
-  
   <!-- InfoBar & MoviePlayer Icons-->
-  <constant-widget name="infoBar_movieplayer_Icons">    
+  <constant-widget name="infoBar_movieplayer_Icons">
     <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nosubtitles.png" position="1372,1038" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="1">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="MetrixReloadedCompareBoolean">false</convert>
@@ -560,7 +550,4 @@
       <convert type="ConditionalShowHide" />
     </widget>
   </constant-widget>
-
-
-
 </constant-widgets>

@@ -1,10 +1,14 @@
 ﻿<colors name="GraphMultiEPG_colors">
-	<color name="graph_multi_epg_background" value="#00222325" /> <!--  GraphMulitEPG Background  -->
-	<color name="graph_multi_epg_now" value="#00333234" /> <!--  GraphMulitEPG Background Now  -->
-	<color name="graph_multi_epg_rec" value="#00922527" /> <!--  GraphMulitEPG Record  -->
-  <color name="graph_multi_epg_pre_rec" value="#00ffff00" /> <!--  GraphMulitEPG Pre / Post Record  -->
-	<color name="graph_multi_epg_primeTime" value="#006c0aab" /> <!--  PrimeTime Color  -->
-	<color name="graph_multi_epg_selected" value="windowBackgroundSecond" /> <!--  GraphMulitEPG Selection  -->
-
-
+  <color name="graph_multi_epg_background" value="#00222325" />
+  <!--  GraphMulitEPG Background  -->
+  <color name="graph_multi_epg_now" value="#00333234" />
+  <!--  GraphMulitEPG Background Now  -->
+  <color name="graph_multi_epg_rec" value="#00922527" />
+  <!--  GraphMulitEPG Record  -->
+  <color name="graph_multi_epg_pre_rec" value="#00ffff00" />
+  <!--  GraphMulitEPG Pre / Post Record  -->
+  <color name="graph_multi_epg_primeTime" value="#006c0aab" />
+  <!--  PrimeTime Color  -->
+  <color name="graph_multi_epg_selected" value="windowBackgroundSecond" />
+  <!--  GraphMulitEPG Selection  -->
 </colors>

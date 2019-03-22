@@ -7,48 +7,20 @@
   <constant-widget name="clock_graphMultiEpg_Fullscreen" />
   <!-- Title Seperator -->
   <constant-widget name="seperator_graphMultiEpg_Fullscreen" />
-
   <!-- PiP Tv-->
   <widget source="session.VideoPicture" position="54,94" size="550,310" render="Pig" backgroundColor="transparent" zPosition="3" OverScan="0" />
-
   <!-- Timeline Text & selected Date-->
   <widget name="timeline_text" itemHeight="42" position="6,422" size="1868,42" backgroundColor="windowBackground" transparent="1" />
   <widget source="Event" render="Label" position="1625,415" zPosition="1" size="225,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Format:%A %d.%m</convert>
   </widget>
-
   <!-- GraphEPG -->
-  <widget name="list" position="54,460" size="1820,540" itemHeight="90" FontSize1="24" FontSize2="24" piconWidth="150" scrollbarMode="showOnDemand" transparent="1"
-  foregroundColor="foreground"
-  backgroundColor="windowBackground"
-  ServiceNameForegroundColor="foreground"
-  ServiceNameBackgroundColor="windowBackground"
-  EntryForegroundColor="foreground"
-  EntryBackgroundColor="graph_multi_epg_background"
-  EntryBorderColor="black"
-  EntryNowForegroundColor="foreground"
-  EntryNowBackgroundColor="graph_multi_epg_now"
-  EntryForegroundColorSelected="foreground"
-  EntryForegroundColorSelectedFlat="graph_multi_epg_selected"
-  EntryBackgroundColorSelected="graph_multi_epg_selected"
-  EntryNowForegroundColorSelected="foreground"
-  EntryNowForegroundColorSelectedFlat="graph_multi_epg_selected"
-  EntryNowBackgroundColorSelected="graph_multi_epg_selected"
-  EntryRecColor="graph_multi_epg_rec"
-  EntryPreColor="graph_multi_epg_pre_rec"
-  EntryRecIncompleteColor="graph_multi_epg_rec"
-  EntryRecOffColor="graph_multi_epg_rec"
-  onlyFullListEntries="true"
-  piconColor="windowBackground" 
-  piconColorSelected="windowBackground"
-  scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
-
+  <widget name="list" position="54,460" size="1820,540" itemHeight="90" FontSize1="24" FontSize2="24" piconWidth="150" scrollbarMode="showOnDemand" transparent="1" foregroundColor="foreground" backgroundColor="windowBackground" ServiceNameForegroundColor="foreground" ServiceNameBackgroundColor="windowBackground" EntryForegroundColor="foreground" EntryBackgroundColor="graph_multi_epg_background" EntryBorderColor="black" EntryNowForegroundColor="foreground" EntryNowBackgroundColor="graph_multi_epg_now" EntryForegroundColorSelected="foreground" EntryForegroundColorSelectedFlat="graph_multi_epg_selected" EntryBackgroundColorSelected="graph_multi_epg_selected" EntryNowForegroundColorSelected="foreground" EntryNowForegroundColorSelectedFlat="graph_multi_epg_selected" EntryNowBackgroundColorSelected="graph_multi_epg_selected" EntryRecColor="graph_multi_epg_rec" EntryPreColor="graph_multi_epg_pre_rec" EntryRecIncompleteColor="graph_multi_epg_rec" EntryRecOffColor="graph_multi_epg_rec" onlyFullListEntries="true" piconColor="windowBackground" piconColorSelected="windowBackground" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- GraphEPG Zoom-->
   <widget name="zoom" position="0,0" size="0,0" zPosition="5" font="font_standard" backgroundColor="infobarBgR" />
   <widget name="zoomBack" position="0,0" size="0,0" zPosition="4" font="font_standard" backgroundColor="infobarBgL" />
   <widget name="zoomShadow" position="0,0" size="0,0" zPosition="3" font="font_standard" backgroundColor="gray" />
-
   <!-- Timelines-->
   <widget name="timeline0" position="128,450" zPosition="1" size="2,560" pixmap="MetrixReloaded/media/timeline.png" />
   <widget name="timeline1" position="128,450" zPosition="1" size="2,560" pixmap="MetrixReloaded/media/timeline.png" />
@@ -56,8 +28,7 @@
   <widget name="timeline3" position="128,450" zPosition="1" size="2,560" pixmap="MetrixReloaded/media/timeline.png" />
   <widget name="timeline4" position="128,450" zPosition="1" size="2,560" pixmap="MetrixReloaded/media/timeline.png" />
   <widget name="timeline5" position="128,450" zPosition="1" size="2,560" pixmap="MetrixReloaded/media/timeline.png" />
-  <widget name="timeline_now" pixmap="MetrixReloaded/media/timeline_now.png" position="52,450" size="2,560" zPosition="2" alphatest="on"/>
-
+  <widget name="timeline_now" pixmap="MetrixReloaded/media/timeline_now.png" position="52,450" size="2,560" zPosition="2" alphatest="on" />
   <!-- selected Infos-->
   <widget backgroundColor="windowBackground" font="font_standard" halign="left" position="630,82" render="Label" size="746,54" source="Event" transparent="1" valign="center" noWrap="1">
     <convert type="EventName">Name</convert>
@@ -70,7 +41,6 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:- %H:%M</convert>
   </widget>
-
   <!-- ProgressBar-->
   <eLabel backgroundColor="accent1" foregroundColor="accent1" position="1600,125" size="250,1" />
   <widget foregroundColor="windowBackgroundSecond" position="1600,123" render="Progress" size="250,5" source="session.Event_Now" transparent="1" zPosition="7">
@@ -79,15 +49,11 @@
   <widget backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" transparent="1" position="630,140" render="Label" size="1232,268" source="Event" valign="top" zPosition="1">
     <convert type="EventName">ExtendedDescription  </convert>
   </widget>
-
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="1780,1028" size="window_remote_button_size" transparent="1" zPosition="10" />
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/epg.png" position="1680,1028" size="window_remote_button_size" transparent="1" zPosition="10" />
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/pvr.png" position="1580,1028" size="window_remote_button_size" transparent="1" zPosition="10" />
-
   <!-- Buttons -->
   <constant-widget name="color_buttons_graphMultiEpg" />
   <constant-widget name="key_name_graphMultiEpg_Fullscreen" />
-
-  <eLabel text="GraphMultiEPG1" name="autoGeneratedScreenName" size="200,25" font="Regular;20" backgroundColor="#2d000000" valign="center" halign="right" foregroundColor="#00ffffff" position="1720,1055" />
 </screen>

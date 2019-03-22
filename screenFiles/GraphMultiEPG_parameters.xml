@@ -1,4 +1,4 @@
-<parameters name="GraphMultiEPG_parameters">
+﻿<parameters name="GraphMultiEPG_parameters">
   <parameter name="GMultiEPGTimelineFont" value="SetrixHD;28" />
   <parameter name="GMultiEPGTimelineItemSize" value="100,30" />
   <parameter name="GMultiEPGZoomFont" value="SetrixHD;34" />

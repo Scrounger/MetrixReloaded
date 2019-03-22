@@ -1,4 +1,4 @@
-<parameters name="SimpleList_parameters">
+﻿<parameters name="SimpleList_parameters">
   <parameter name="SimpleListDash" value="0,3,800,32" />
   <parameter name="SimpleListName" value="45,3,800,32" />
   <parameter name="SimpleListIcon" value="5,10,35,35" />

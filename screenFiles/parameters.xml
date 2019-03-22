@@ -1,5 +1,4 @@
 ﻿<parameters>
-
   <!-- Kanalliste - Horizontal -->
   <parameter name="ServicelistHorServiceTypeIcon" value="0,0,0,0" />
   <parameter name="ServicelistHorServiceTime" value="0,0,0,0" />
@@ -10,9 +9,6 @@
   <parameter name="ServicelistHorName" value="5,160,225,40" />
   <parameter name="ServicelistHorServiceInfo" value="5,225,225,70" />
   <parameter name="ServicelistHorCustomPiconSize" value="220,132" />
-
-  
-  
   <parameter name="PluginBrowserName" value="130, 5, 28" />
   <parameter name="PluginBrowserDescr" value="130, 33, 20" />
   <parameter name="PluginBrowserIcon" value="10, 10, 100, 40" />
@@ -21,12 +17,10 @@
   <parameter name="PluginBrowserDownloadIcon" value="10, 0, 100, 50" />
   <parameter name="FileListName" value="65, 3, 800, 50" />
   <parameter name="FileListIcon" value="10, 8, 35, 35" />
-  
   <!-- BackupSelection -->
   <parameter name="FileListMultiName" value="70, 1, 900, 50" />
   <parameter name="FileListMultiIcon" value="5, 7, 35, 35" />
   <parameter name="FileListMultiLock" value="7, 11, 35, 35" />
-  
   <parameter name="PlayListName" value="25, 1, 520, 28" />
   <parameter name="PlayListIcon" value="5, 3, 16, 16" />
   <parameter name="HelpMenuListHlp" value="6, 6, 800, 32" />
@@ -62,7 +56,6 @@
   <parameter name="SelectionListmodFont" value="Regular;30" />
   <parameter name="SelectionListmodItemHeight" value="50" />
   <parameter name="SelectionListmodIcon" value="10,10,25,25" />
-
   <!-- ServiceInfo -->
   <parameter name="ServiceInfo" value="0,9,400,32" />
   <parameter name="ServiceInfoLeft" value="0,9,400,32" />
@@ -73,7 +66,6 @@
   <parameter name="PluginListName" value="130, 5, 1000, 36" />
   <parameter name="PluginListDescription" value="130,42,1000,26" />
   <parameter name="PluginListIcon" value="15, 15, 100, 40" />
-
   <parameter name="EPGlistEPGBarText1Offset" value="5,0" />
   <parameter name="EPGlistEPGBarText2Offset" value="5,0" />
   <parameter name="EPGlistEPGBarIconOffset" value="5,6" />
@@ -92,8 +84,4 @@
   <parameter name="EPGlistMultiBeginText2Offset" value="0, 10" />
   <parameter name="EPGlistMultiProgressOffset" value="0, 0" />
   <parameter name="EPGlistMultiProgressTextOffset" value="0, 10" />
-  
-  
-  
-
 </parameters>
