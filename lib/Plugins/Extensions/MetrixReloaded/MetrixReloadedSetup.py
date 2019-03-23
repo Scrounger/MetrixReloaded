@@ -61,6 +61,8 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
 
         self.log.info("MetrixReloadedSetup open")
 
+        self.skinParts_changed = False
+
         # Summary
         self.setTitle(_("MetrixReloaded Configuration"))
         self.onChangedEntry = []
@@ -108,7 +110,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             # Initialize Buttons
             self["key_red"] = StaticText(_("Cancel"))
             self["key_green"] = StaticText(_("Save"))
-            self["key_yellow"] = StaticText(_("Personalize your Skin"))
+            self["key_yellow"] = StaticText(_("SkinParts configuration"))
             self["key_blue"] = StaticText(_("Check for updates"))
 
             self["help"] = StaticText()
@@ -153,11 +155,9 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
     def keyCancel(self):
         # Screen schließen, mit Prüfung ob es Änderungen an den Einstellungen gab -> Ja -> Fragen ob schließen ohne speichern
         if self["config"].isChanged():
-            self.session.openWithCallback(
-                self.cancelConfirm,
-                MessageBox,
-                _("Really close without saving settings?")
-            )
+            self.showMsgBoxCancelConfirm()
+        elif(self.skinParts_changed):
+            self.showMsgBoxCancelConfirm()
         else:
             self.close(self.session)
 
@@ -177,14 +177,23 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
                 self.log.debug(self.myColorScheme.value)
 
             self.restartGUI()
+        elif(self.skinParts_changed):
+            self.restartGUI()
         else:
             self.close()
 
     def keyYellow(self):
         if (path.exists("/usr/lib/enigma2/python/Plugins/Extensions/AtileHD/plugin.py")):
+            
+            if not path.exists("mySkin_off") and path.exists("mySkin"):
+                rename("mySkin", "mySkin_off")
+
+            if not path.exists("mySkin") and path.exists("mySkin_off"):
+                symlink("mySkin_off","mySkin")
+
             # Atile_HD_Config Screen öffnen
             from Plugins.Extensions.AtileHD.plugin import *
-            self.session.open(AtileHD_Config)
+            self.session.openWithCallback(self.AtileHDScreenResponse, AtileHDScreens)
         else:
             msg = _(
                 "Sorry, but the plugin %s is not installed at your Vu+ STB! Please install it to use this function") % "AtileHD"
@@ -200,6 +209,13 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             start_dir = config.plugins.MetrixReloaded.logDirectory.value
             self.session.openWithCallback(self.fileDirBrowserResponse, FileDirBrowser, initDir=start_dir, title=_(
                 "Choose folder"), getFile=False, getDir=True, showDirectories=True, showFiles=False)
+
+    def showMsgBoxCancelConfirm(self):
+        self.session.openWithCallback(
+                self.cancelConfirm,
+                MessageBox,
+                _("Really close without saving settings?")
+            )
 
     def fileDirBrowserResponse(self, path):
         if path:
@@ -255,6 +271,9 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
         friendly_name = friendly_name.replace(".xml", "")
         friendly_name = friendly_name.replace("_", " ")
         return (filename, friendly_name)
+
+    def AtileHDScreenResponse(self):
+        self.skinParts_changed = True
 
     def changed(self):
         # Änderungen in der Liste übernehmen
