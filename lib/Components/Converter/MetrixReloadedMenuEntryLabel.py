@@ -19,8 +19,14 @@ class MetrixReloadedMenuEntryLabel(Poll,Converter,object):
 		cur = self.source.current
 		if cur and len(cur) > 2:
 			selectedMenu = cur[2]
+
+		showMenuEntryNames = False
+		try:
+			showMenuEntryNames = config.plugins.MetrixReloaded.showMenuEntryNames.value
+		except Exception as e:
+			pass		
 		
-		if(config.plugins.MetrixReloaded.showMenuEntryNames.value == True):
+		if(showMenuEntryNames):
 			return selectedMenu
 		else:
 			return ''

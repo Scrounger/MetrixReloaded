@@ -10,6 +10,12 @@ class MetrixReloadedScreenNameLabel(Renderer):
 	GUI_WIDGET = eLabel
 
 	def changed(self, what):
-		if(config.plugins.MetrixReloaded.showScreenNames.value == False):
+		showScreenNames = False
+		try:
+			showScreenNames = config.plugins.MetrixReloaded.showScreenNames.value
+		except Exception as e:
+			pass
+
+		if(showScreenNames == False):
 				self.hide()
 
