@@ -87,9 +87,9 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
                 getConfigListEntry(
                     _("developer options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())),
                 getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  show screen names")), config.plugins.MetrixReloaded.showScreenNames, _(
-                    "Shows the name of the current screen in the bottom right corner. Requires GUI restart!")),
+                    "Shows the name of the current screen in the bottom right corner")),
                 getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  show selected menu entry name")), config.plugins.MetrixReloaded.showMenuEntryNames, _(
-                    "Shows the name of the current selected menu entry. Requires GUI restart!")),
+                    "Shows the name of the current selected menu entry")),
             ]
 
             ConfigListScreen.__init__(
@@ -174,7 +174,6 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
                 remove(self.color_file)
             if self.myColorScheme.value != 'default':
                 symlink(self.myColorScheme.value, self.color_file)
-                self.log.debug(self.myColorScheme.value)
 
             self.restartGUI()
         elif(self.skinParts_changed):
@@ -236,8 +235,6 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
         # Zusatzinfos anzeigen
         cur = self["config"].getCurrent()
         if cur and len(cur) > 2:
-            self.log.debug(cur[0])
-            self.log.debug(cur[1].value)
             self["help"].text = cur[2]
         else:
             self["help"].text = ""
