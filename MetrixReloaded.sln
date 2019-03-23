@@ -41,6 +41,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Converter", "Converter", "{
 		lib\Components\Converter\MetrixReloadedCpuUsage.py = lib\Components\Converter\MetrixReloadedCpuUsage.py
 		lib\Components\Converter\MetrixReloadedExtEventEPG.py = lib\Components\Converter\MetrixReloadedExtEventEPG.py
 		lib\Components\Converter\MetrixReloadedMenuEntryID.py = lib\Components\Converter\MetrixReloadedMenuEntryID.py
+		lib\Components\Converter\MetrixReloadedMenuEntryLabel.py = lib\Components\Converter\MetrixReloadedMenuEntryLabel.py
 		lib\Components\Converter\MetrixReloadedResolutionIcon.py = lib\Components\Converter\MetrixReloadedResolutionIcon.py
 		lib\Components\Converter\MetrixReloadedServiceInfoEx.py = lib\Components\Converter\MetrixReloadedServiceInfoEx.py
 		lib\Components\Converter\MetrixReloadedTempFanInfo.py = lib\Components\Converter\MetrixReloadedTempFanInfo.py
