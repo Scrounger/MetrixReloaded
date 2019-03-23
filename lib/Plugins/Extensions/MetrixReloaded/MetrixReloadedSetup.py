@@ -7,7 +7,7 @@ from Screens.MessageBox import MessageBox
 from Screens.FileDirBrowser import FileDirBrowser
 
 # Configuration
-from Components.config import config, getConfigListEntry
+from Components.config import config, getConfigListEntry, NoSave, ConfigNothing
 
 # GUI (Components)
 from Components.ActionMap import ActionMap
@@ -66,12 +66,14 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
                 getConfigListEntry(_("Check for skin update on startup"), config.plugins.MetrixReloaded.checkNewVersionOnStartUp, _("Checks on startup (boot or standby) if a new skin version is available to download. Requires internet connection!")),
                 getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Auto download new version")), config.plugins.MetrixReloaded.autoDownloadNewVersion, _(
                     "New version of MetrixReloaded skin will be automatically downloaded. You will get an information if new version is ready to install")),
-                getConfigListEntry(_("enable debug"), config.plugins.MetrixReloaded.debug, _("show additional log informations")),
-                getConfigListEntry(_("log files directory"), config.plugins.MetrixReloaded.logDirectory, _(
+                getConfigListEntry(_("debug options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())),
+                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  enable debug")), config.plugins.MetrixReloaded.debug, _("show additional log informations")),
+                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  log files directory")), config.plugins.MetrixReloaded.logDirectory, _(
                     "choose the directory where log files of skin, components, etc are stored")),
-                getConfigListEntry(_("show screen names"), config.plugins.MetrixReloaded.showScreenNames, _(
+                getConfigListEntry(_("developer options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())),
+                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  show screen names")), config.plugins.MetrixReloaded.showScreenNames, _(
                     "Shows the name of the current screen in the bottom right corner. Requires GUI restart!")),
-                getConfigListEntry(_("show selected menu entry name"), config.plugins.MetrixReloaded.showMenuEntryNames, _(
+                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  show selected menu entry name")), config.plugins.MetrixReloaded.showMenuEntryNames, _(
                     "Shows the name of the current selected menu entry. Requires GUI restart!")),
             ]
 
