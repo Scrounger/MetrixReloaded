@@ -20,7 +20,7 @@ class MetrixReloadedMenuEntryLabel(Poll,Converter,object):
 		if cur and len(cur) > 2:
 			selectedMenu = cur[2]
 		
-		if(config.plugins.MetrixReloaded.showScreenNames.value == True):
+		if(config.plugins.MetrixReloaded.showMenuEntryNames.value == True):
 			return selectedMenu
 		else:
 			return ''

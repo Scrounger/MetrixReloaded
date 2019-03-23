@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-03-22 18:49+0100\n"
-"PO-Revision-Date: 2019-03-22 18:50+0100\n"
+"POT-Creation-Date: 2019-03-23 09:34+0100\n"
+"PO-Revision-Date: 2019-03-23 09:35+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -82,32 +82,43 @@ msgstr ""
 "Zeigt den Namen des aktuellen Screens in der unteren rechten Ecke an. GUI "
 "Neustart ist erforderlich!"
 
-#: MetrixReloadedSetup.py:92
+#: MetrixReloadedSetup.py:74
+msgid "show selected menu entry name"
+msgstr "Name des selektierten Menu Eintrages anzeigen"
+
+#: MetrixReloadedSetup.py:75
+msgid ""
+"Shows the name of the current selected menu entry. Requires GUI restart!"
+msgstr ""
+"Zeigt den Name des aktuell selektierten Menu Eintrages an. GUI Neustart ist "
+"erforderlich!"
+
+#: MetrixReloadedSetup.py:94
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: MetrixReloadedSetup.py:93
+#: MetrixReloadedSetup.py:95
 msgid "Save"
 msgstr "Speichern"
 
-#: MetrixReloadedSetup.py:94
+#: MetrixReloadedSetup.py:96
 msgid "Personalize your Skin"
 msgstr "Skin personalisieren"
 
-#: MetrixReloadedSetup.py:95
+#: MetrixReloadedSetup.py:97
 msgid "Check for updates"
 msgstr "Auf Updates prüfen"
 
-#: MetrixReloadedSetup.py:98
+#: MetrixReloadedSetup.py:100
 #, python-format
 msgid "version: %s"
 msgstr "Version: %s"
 
-#: MetrixReloadedSetup.py:125
+#: MetrixReloadedSetup.py:127
 msgid "Really close without saving settings?"
 msgstr "Wirklich schließen ohne die Einstellungen zu speichern?"
 
-#: MetrixReloadedSetup.py:143
+#: MetrixReloadedSetup.py:145
 #, python-format
 msgid ""
 "Sorry, but the plugin %s is not installed at your Vu+ STB! Please install it "
@@ -116,7 +127,7 @@ msgstr ""
 "Das Plugin '%s' ist nicht auf Ihrer Vu+ installiert.\n"
 "Bitte installieren Sie das Plugin, um diese Funktion nutzen zu können"
 
-#: MetrixReloadedSetup.py:154
+#: MetrixReloadedSetup.py:156
 msgid "Choose folder"
 msgstr "Verzeichnis auswählen"
 
@@ -161,6 +172,6 @@ msgstr ""
 msgid "Error: [%s] %s"
 msgstr "Fehler: [%s] %s"
 
-#: MetrixReloadedUpdater.py:128
+#: MetrixReloadedUpdater.py:129
 msgid "Restart necessary, restart GUI now?"
 msgstr "Neustart erforderlich, jetzt neu starten?"

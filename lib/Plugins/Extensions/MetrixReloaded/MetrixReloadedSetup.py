@@ -71,6 +71,8 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
                     "choose the directory where log files of skin, components, etc are stored")),
                 getConfigListEntry(_("show screen names"), config.plugins.MetrixReloaded.showScreenNames, _(
                     "Shows the name of the current screen in the bottom right corner. Requires GUI restart!")),
+                getConfigListEntry(_("show selected menu entry name"), config.plugins.MetrixReloaded.showMenuEntryNames, _(
+                    "Shows the name of the current selected menu entry. Requires GUI restart!")),
             ]
 
             ConfigListScreen.__init__(
