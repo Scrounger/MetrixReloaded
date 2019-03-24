@@ -1,0 +1,4 @@
+﻿<screen name="ResolutionLabel" position="50,40" size="250,40" flags="wfNoBorder" >
+  <widget name="content" position="0,1" size="250,18" font="Regular;16" />
+  <widget name="restxt" position="0,19" size="250,18" font="Regular;16" />
+</screen>

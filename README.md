@@ -83,7 +83,7 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 
 ## Changelog
 
-### 0.5.0 BETA (23.03.2019)
+### 0.5.0 BETA (24.03.2019)
 * MetrixReloaded Einstellungen: selektierte Menu Einträge anzeigen
 * Schriftart hinzugefügt
 * SkinParts hinzugefügt

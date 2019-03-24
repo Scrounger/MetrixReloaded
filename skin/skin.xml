@@ -5267,6 +5267,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <constant-widget name="key_green_name" />
   <widget text="RemoteTimerSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
+<screen name="ResolutionLabel" position="50,40" size="250,40" flags="wfNoBorder" >
+  <widget name="content" position="0,2" size="250,18" font="Regular;16" />
+  <widget name="restxt" position="0,20" size="250,18" font="Regular;16" />
+</screen>
 <screen name="SATIPClient" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <constant-widget name="background_window" />

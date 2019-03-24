@@ -250,6 +250,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles"
 		screenFiles\RemoteServicesSetupMenu.xml = screenFiles\RemoteServicesSetupMenu.xml
 		screenFiles\RemoteTimerScreen.xml = screenFiles\RemoteTimerScreen.xml
 		screenFiles\RemoteTimerSetup.xml = screenFiles\RemoteTimerSetup.xml
+		screenFiles\ResolutionLabel.xml = screenFiles\ResolutionLabel.xml
 		screenFiles\SATIPClient.xml = screenFiles\SATIPClient.xml
 		screenFiles\SATIPTuner.xml = screenFiles\SATIPTuner.xml
 		screenFiles\ScanIP.xml = screenFiles\ScanIP.xml
