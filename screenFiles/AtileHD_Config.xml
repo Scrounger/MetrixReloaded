@@ -12,7 +12,7 @@
   <widget name="config" position="window_list_pos" size="window_list_size" font="font_list" itemHeight="50" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />  
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
-  <widget name="Picture" position="780,375" size="455,265" alphatest="blend" backgroundColor="windowBackground" />
+  <widget name="Picture" position="1216,320" size="622,350" alphatest="blend" backgroundColor="windowBackground" zPosition="1"/>
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_name" />
