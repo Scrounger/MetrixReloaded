@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-03-23 16:49+0100\n"
-"PO-Revision-Date: 2019-03-23 16:50+0100\n"
+"POT-Creation-Date: 2019-03-24 10:04+0100\n"
+"PO-Revision-Date: 2019-03-24 10:05+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -19,8 +19,8 @@ msgid "MetrixReloaded Configuration"
 msgstr "MetrixReloaded Einstellungen"
 
 #: MetrixReloadedSetup.py:74
-msgid "Color scheme:"
-msgstr "Farbschema"
+msgid "  &#8226;  Color scheme:"
+msgstr "  &#8226;  Farbschema"
 
 #: MetrixReloadedSetup.py:74
 msgid "Choose your color scheme"
@@ -35,8 +35,8 @@ msgstr ""
 "-------------------------------------------------------------------------------------------------------------"
 
 #: MetrixReloadedSetup.py:80
-msgid "Download additional data"
-msgstr "Zusätzliche Daten herunterladen"
+msgid "  &#8226;  Download additional data"
+msgstr "  &#8226;  Zusätzliche Daten herunterladen"
 
 #: MetrixReloadedSetup.py:81
 msgid "Download additional data such as images. Requires internet connection!"
@@ -45,8 +45,8 @@ msgstr ""
 "Benötigt eine Internetverbindung!"
 
 #: MetrixReloadedSetup.py:82
-msgid "Check for skin update on startup"
-msgstr "Beim Starten auf Updates prüfen"
+msgid "  &#8226;  Check for skin update on startup"
+msgstr "  &#8226;  Beim Starten auf Updates prüfen"
 
 #: MetrixReloadedSetup.py:83
 msgid ""

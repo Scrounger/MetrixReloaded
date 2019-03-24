@@ -71,15 +71,15 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
         try:
             self.getInitConfig()
 
-            self.set_color = getConfigListEntry(_("Color scheme:"), self.myColorScheme, _("Choose your color scheme")) 
+            self.set_color = getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Color scheme:")), self.myColorScheme, _("Choose your color scheme")) 
 
             self.list = [
                 getConfigListEntry(
                     _("skin options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())),
                 self.set_color,
-                getConfigListEntry(_("Download additional data"), config.plugins.MetrixReloaded.onlineMode, _(
+                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Download additional data")), config.plugins.MetrixReloaded.onlineMode, _(
                     "Download additional data such as images. Requires internet connection!")),
-                getConfigListEntry(_("Check for skin update on startup"), config.plugins.MetrixReloaded.checkNewVersionOnStartUp, _(
+                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Check for skin update on startup")), config.plugins.MetrixReloaded.checkNewVersionOnStartUp, _(
                     "Checks on startup (boot or standby) if a new skin version is available to download. Requires internet connection!")),
                 getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Auto download new version")), config.plugins.MetrixReloaded.autoDownloadNewVersion, _(
                     "New version of MetrixReloaded skin will be automatically downloaded. You will get an information if new version is ready to install")),
