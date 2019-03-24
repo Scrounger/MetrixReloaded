@@ -54,6 +54,9 @@ cur_skin = config.skin.primary_skin.value.replace('/skin.xml', '')
 
 
 class MetrixReloadedSetup(Screen, ConfigListScreen):
+    TYPE_COLOR = 1
+    TYPE_FONT = 2
+
     htmlParser = HTMLParser.HTMLParser()
 
     def __init__(self, session):
@@ -71,26 +74,30 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
         try:
             self.getInitConfig()
 
-            self.set_color = getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Color scheme:")), self.myColorScheme, _("Choose your color scheme")) 
+            self.set_color = getConfigListEntry(self.htmlParser.unescape(
+                _("  &#8226;  Color scheme:")), self.myColorScheme, _("Choose your color scheme"))
+            self.set_font = getConfigListEntry(self.htmlParser.unescape(
+                _("  &#8226;  Font")), self.myFont)
 
             self.list = [
                 getConfigListEntry(
                     _("skin options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())),
                 self.set_color,
+                self.set_font,
                 getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Download additional data")), config.plugins.MetrixReloaded.onlineMode, _(
                     "Download additional data such as images. Requires internet connection!")),
                 getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Check for skin update on startup")), config.plugins.MetrixReloaded.checkNewVersionOnStartUp, _(
                     "Checks on startup (boot or standby) if a new skin version is available to download. Requires internet connection!")),
                 getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Auto download new version")), config.plugins.MetrixReloaded.autoDownloadNewVersion, _(
                     "New version of MetrixReloaded skin will be automatically downloaded. You will get an information if new version is ready to install")),
-                getConfigListEntry("",NoSave(ConfigNothing())),
+                getConfigListEntry("", NoSave(ConfigNothing())),
                 getConfigListEntry(
                     _("debug options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())),
                 getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  enable debug")),
                                    config.plugins.MetrixReloaded.debug, _("show additional log informations")),
                 getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  log files directory")), config.plugins.MetrixReloaded.logDirectory, _(
                     "choose the directory where log files of skin, components, etc are stored")),
-                getConfigListEntry("",NoSave(ConfigNothing())),
+                getConfigListEntry("", NoSave(ConfigNothing())),
                 getConfigListEntry(
                     _("developer options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())),
                 getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  show screen names")), config.plugins.MetrixReloaded.showScreenNames, _(
@@ -109,12 +116,14 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
 
                 if self["config"].current:
                     self["config"].current[1].onSelect(self.session)
-                    
+
                 for x in self["config"].onSelectionChanged:
                     x()
-                
+
                 if self["config"].getCurrent() == self.set_color:
-                    self.setPicture(self.myColorScheme.value)
+                    self.setPicture(self.myColorScheme.value, self.TYPE_COLOR)
+                elif self["config"].getCurrent() == self.set_font:
+                    self.setPicture(self.myFont.value, self.TYPE_FONT)
                 else:
                     self["Picture"].hide()
 
@@ -153,6 +162,8 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
 
     def getInitConfig(self):
         self.skin_base_dir = "/usr/share/enigma2/%s/" % cur_skin
+
+        # Farbstile
         self.default_color_file = "colors_Original.xml"
         self.color_file = "skin_user_colors.xml"
 
@@ -167,6 +178,22 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
 
         self.myColorScheme = NoSave(ConfigSelection(
             default=current_color, choices=color_choices))
+
+        # Schriftart
+        self.default_font_file = "font_Original.xml"
+        self.font_file = "skin_user_header.xml"
+
+        current_font = self.getCurrentFont()
+        font_choices = self.getPossibleFont()
+        default_font = ("default", _("Default"))
+        if current_font is None:
+            current_font = default_font
+        if default_font not in font_choices:
+            font_choices.append(default_font)
+        current_font = current_font[0]
+
+        self.myFont = NoSave(ConfigSelection(
+            default=current_font, choices=font_choices))
 
     def keyCancel(self):
         # Screen schließen, mit Prüfung ob es Änderungen an den Einstellungen gab -> Ja -> Fragen ob schließen ohne speichern
@@ -184,6 +211,14 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
                 x[1].save()
 
             chdir(self.skin_base_dir)
+
+            if path.exists(self.font_file):
+                remove(self.font_file)
+            elif path.islink(self.font_file):
+                remove(self.font_file)
+            if self.myFont.value != 'default':
+                symlink(self.myFont.value, self.font_file)
+
             if path.exists(self.color_file):
                 remove(self.color_file)
             elif path.islink(self.color_file):
@@ -199,16 +234,17 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
 
     def keyYellow(self):
         if (path.exists("/usr/lib/enigma2/python/Plugins/Extensions/AtileHD/plugin.py")):
-            
+
             if not path.exists("mySkin_off") and path.exists("mySkin"):
                 rename("mySkin", "mySkin_off")
 
             if not path.exists("mySkin") and path.exists("mySkin_off"):
-                symlink("mySkin_off","mySkin")
+                symlink("mySkin_off", "mySkin")
 
             # Atile_HD_Config Screen öffnen
             from Plugins.Extensions.AtileHD.plugin import *
-            self.session.openWithCallback(self.AtileHDScreenResponse, AtileHDScreens)
+            self.session.openWithCallback(
+                self.AtileHDScreenResponse, AtileHDScreens)
         else:
             msg = _(
                 "Sorry, but the plugin %s is not installed at your Vu+ STB! Please install it to use this function") % "AtileHD"
@@ -227,19 +263,20 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
 
     def showMsgBoxCancelConfirm(self):
         self.session.openWithCallback(
-                self.cancelConfirm,
-                MessageBox,
-                _("Really close without saving settings?")
-            )
+            self.cancelConfirm,
+            MessageBox,
+            _("Really close without saving settings?")
+        )
 
     def fileDirBrowserResponse(self, path):
         if path:
             # Antwort vom FileDirBrowser -> ausgewähltes Verzeichnis
             self["config"].getCurrent()[1].value = path + '/'
-    
+
     def restartGUI(self):
         # Fragen ob Restart
-        restartbox = self.session.openWithCallback(self.msgBoxResponseRestart,MessageBox,_("Restart necessary, restart GUI now?"), MessageBox.TYPE_YESNO)
+        restartbox = self.session.openWithCallback(self.msgBoxResponseRestart, MessageBox, _(
+            "Restart necessary, restart GUI now?"), MessageBox.TYPE_YESNO)
 
     def msgBoxResponseRestart(self, answer):
         if (answer):
@@ -266,6 +303,17 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
                 color_list.append((f, friendly_name))
         return color_list
 
+    def getPossibleFont(self):
+        font_list = []
+        for f in sorted(listdir(self.skin_base_dir), key=str.lower):
+            search_str = 'font_'
+            if f.endswith('.xml') and f.startswith(search_str):
+                friendly_name = f.replace(search_str, "")
+                friendly_name = friendly_name.replace(".xml", "")
+                friendly_name = friendly_name.replace("_", " ")
+                font_list.append((f, friendly_name))
+        return font_list
+
     def getCurrentColor(self):
         myfile = self.skin_base_dir + self.color_file
         if not path.exists(myfile):
@@ -285,12 +333,35 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
         friendly_name = friendly_name.replace("_", " ")
         return (filename, friendly_name)
 
-    def setPicture(self, f):
+    def getCurrentFont(self):
+        myfile = self.skin_base_dir + self.font_file
+        if not path.exists(myfile):
+            if path.exists(self.skin_base_dir + self.default_font_file):
+                if path.islink(myfile):
+                    remove(myfile)
+                chdir(self.skin_base_dir)
+                symlink(self.default_font_file, self.font_file)
+            else:
+                return None
+        filename = path.realpath(myfile)
+        filename = path.basename(filename)
+
+        search_str = 'font_'
+        friendly_name = filename.replace(search_str, "")
+        friendly_name = friendly_name.replace(".xml", "")
+        friendly_name = friendly_name.replace("_", " ")
+        return (filename, friendly_name)
+
+    def setPicture(self, f, type):
+        self.log.debug(f)
         if(f == "default"):
-            pic= "colors_Default.png"
+            if(type == self.TYPE_COLOR):
+                pic = "colors_Default.png"
+            else:
+                pic = "font_Default.png"
         else:
             pic = f.replace(".xml", ".png")
-        
+
         preview = self.skin_base_dir + "preview/preview_" + pic
         self.log.debug(preview)
         if path.exists(preview):
@@ -306,7 +377,9 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
     def changed(self):
         # Änderungen in der Liste übernehmen
         if self["config"].getCurrent() == self.set_color:
-            self.setPicture(self.myColorScheme.value)
+            self.setPicture(self.myColorScheme.value, self.TYPE_COLOR)
+        elif self["config"].getCurrent() == self.set_font:
+            self.setPicture(self.myFont.value, self.TYPE_FONT)
         for x in self.onChangedEntry:
             try:
                 x()

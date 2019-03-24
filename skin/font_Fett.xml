@@ -1,0 +1,19 @@
+<skin>
+  <parameters>
+  	<parameter name="ServicelistServiceNumber" value="0,0,62,0" />
+    <parameter name="ServicelistServiceNumberOffset" value="85" />
+  </parameters>
+  <fonts>
+    <font filename="lcd.ttf" name="LCD" scale="100" />
+    <font filename="ae_AlMateen.ttf" name="Replacement" replacement="1" scale="100" />
+    <font filename="tuxtxt.ttf" name="Console" scale="100" />
+    <font filename="nmsbd.ttf" name="Arial" scale="100" />
+    <font filename="/usr/share/enigma2/MetrixFHD Mod by Koloss/fonts/segoeui.ttf" name="Regular" scale="100" />
+    <font filename="/usr/share/enigma2/MetrixFHD Mod by Koloss/fonts/segoeui.ttf" name="RegularLight" scale="100" />
+    <font filename="/usr/share/enigma2/MetrixFHD Mod by Koloss/fonts/segoeui.ttf" name="SetrixHD" scale="100" />
+	<font filename="/usr/share/enigma2/MetrixFHD Mod by Koloss/fonts/segoeui.ttf" name="SetrixHD140" scale="94" />
+    <font filename="/usr/share/enigma2/MetrixFHD Mod by Koloss/fonts/meteocons.ttf" name="Meteo" scale="100" />
+	<alias name="VirtualKeyboard" font="SetrixHD" size="34" height="45" />
+  </fonts>
+ 
+</skin>
