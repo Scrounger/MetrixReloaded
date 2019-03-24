@@ -1,6 +1,6 @@
 # MetrixReloaded
 ![GitHub release](https://img.shields.io/github/release/Scrounger/MetrixReloaded.svg)
-![GitHub Releases](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/0.4.0/total.svg)
+![GitHub Releases](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/0.5.0/total.svg)
 ![GitHub All Releases](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/total.svg)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Scrounger/MetrixReloaded.svg)
 ![GitHub](https://img.shields.io/github/license/Scrounger/MetrixReloaded.svg)
@@ -82,6 +82,13 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 </p>
 
 ## Changelog
+
+### 0.5.0 BETA (23.03.2019)
+* MetrixReloaded Einstellungen: selektierte Menu Einträge anzeigen
+* Schriftart hinzugefügt
+* SkinParts hinzugefügt
+* Preview Images hinzugefügt
+* Bug fixes
 
 ### 0.4.0 BETA (23.03.2019)
 * MetrixReloaded Einstellungen: Screen Namen anzeigen
