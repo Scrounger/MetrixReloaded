@@ -73,38 +73,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
 
         try:
             self.getInitConfig()
-
-            self.set_color = getConfigListEntry(self.htmlParser.unescape(
-                _("  &#8226;  Color scheme:")), self.myColorScheme, _("Choose your color scheme"))
-            self.set_font = getConfigListEntry(self.htmlParser.unescape(
-                _("  &#8226;  Font")), self.myFont)
-
-            self.list = [
-                getConfigListEntry(
-                    _("skin options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())),
-                self.set_color,
-                self.set_font,
-                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Download additional data")), config.plugins.MetrixReloaded.onlineMode, _(
-                    "Download additional data such as images. Requires internet connection!")),
-                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Check for skin update on startup")), config.plugins.MetrixReloaded.checkNewVersionOnStartUp, _(
-                    "Checks on startup (boot or standby) if a new skin version is available to download. Requires internet connection!")),
-                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Auto download new version")), config.plugins.MetrixReloaded.autoDownloadNewVersion, _(
-                    "New version of MetrixReloaded skin will be automatically downloaded. You will get an information if new version is ready to install")),
-                getConfigListEntry("", NoSave(ConfigNothing())),
-                getConfigListEntry(
-                    _("debug options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())),
-                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  enable debug")),
-                                   config.plugins.MetrixReloaded.debug, _("show additional log informations")),
-                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  log files directory")), config.plugins.MetrixReloaded.logDirectory, _(
-                    "choose the directory where log files of skin, components, etc are stored")),
-                getConfigListEntry("", NoSave(ConfigNothing())),
-                getConfigListEntry(
-                    _("developer options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())),
-                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  show screen names")), config.plugins.MetrixReloaded.showScreenNames, _(
-                    "Shows the name of the current screen in the bottom right corner")),
-                getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  show selected menu entry name")), config.plugins.MetrixReloaded.showMenuEntryNames, _(
-                    "Shows the name of the current selected menu entry")),
-            ]
+            self.list = []
 
             ConfigListScreen.__init__(
                 self, self.list, session=session, on_change=self.changed)
@@ -153,12 +122,57 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
 
             self["Picture"] = Pixmap()
 
+            self.generateList()
+
             # Trigger change
             self.changed()
 
         except Exception as e:
             self.log.exception("MetrixReloadedSetup: %s", str(e))
             self.close()
+
+    def generateList(self):
+        self.list =[]
+
+        #Liste Einträge als var, die später gebracuht werden
+        self.set_color = getConfigListEntry(self.htmlParser.unescape(
+            _("  &#8226;  Color scheme:")), self.myColorScheme, _("Choose your color scheme"))
+        self.set_font = getConfigListEntry(self.htmlParser.unescape(
+            _("  &#8226;  Font")), self.myFont)
+
+        self.checkForUpdates = getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Check for skin update on startup")), config.plugins.MetrixReloaded.checkNewVersionOnStartUp, _(
+            "Checks on startup (boot or standby) if a new skin version is available to download. Requires internet connection!"))
+
+        #Listen Einträge erstellen
+        self.list.append(getConfigListEntry(
+            _("skin options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())))
+        self.list.append(self.set_color)
+        self.list.append(self.set_font)
+        self.list.append(getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Download additional data")),
+                                            config.plugins.MetrixReloaded.onlineMode, _("Download additional data such as images. Requires internet connection!")))
+        self.list.append(self.checkForUpdates)
+        
+        if(config.plugins.MetrixReloaded.checkNewVersionOnStartUp.value):
+            self.list.append(getConfigListEntry(self.htmlParser.unescape(_("       &#8226;  Auto download new version")), config.plugins.MetrixReloaded.autoDownloadNewVersion, _(
+            "New version of MetrixReloaded skin will be automatically downloaded. You will get an information if new version is ready to install")))
+        
+        self.list.append(getConfigListEntry("", NoSave(ConfigNothing())))
+        self.list.append(getConfigListEntry(
+                 _("debug options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())))
+        self.list.append(getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  enable debug")),
+                                config.plugins.MetrixReloaded.debug, _("show additional log informations")))
+        self.list.append(getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  log files directory")), config.plugins.MetrixReloaded.logDirectory, _(
+                 "choose the directory where log files of skin, components, etc are stored")))
+        self.list.append(getConfigListEntry("", NoSave(ConfigNothing())))
+        self.list.append(getConfigListEntry(
+                 _("developer options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())))
+        self.list.append(getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  show screen names")), config.plugins.MetrixReloaded.showScreenNames, _(
+                 "Shows the name of the current screen in the bottom right corner")))
+        self.list.append(getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  show selected menu entry name")), config.plugins.MetrixReloaded.showMenuEntryNames, _(
+                 "Shows the name of the current selected menu entry")))
+
+        #Liste anzeigen
+        self['config'].setList(self.list)
 
     def getInitConfig(self):
         self.skin_base_dir = "/usr/share/enigma2/%s/" % cur_skin
@@ -353,7 +367,6 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
         return (filename, friendly_name)
 
     def setPicture(self, f, type):
-        self.log.debug(f)
         if(f == "default"):
             if(type == self.TYPE_COLOR):
                 pic = "colors_Default.png"
@@ -363,9 +376,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             pic = f.replace(".xml", ".png")
 
         preview = self.skin_base_dir + "preview/preview_" + pic
-        self.log.debug(preview)
         if path.exists(preview):
-            self.log.debug(preview)
             self["Picture"].instance.setPixmapFromFile(preview)
             self["Picture"].show()
         else:
@@ -380,6 +391,9 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             self.setPicture(self.myColorScheme.value, self.TYPE_COLOR)
         elif self["config"].getCurrent() == self.set_font:
             self.setPicture(self.myFont.value, self.TYPE_FONT)
+        elif self["config"].getCurrent() == self.checkForUpdates:
+            self.generateList()
+
         for x in self.onChangedEntry:
             try:
                 x()
