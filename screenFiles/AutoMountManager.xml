@@ -22,7 +22,7 @@
   </widget>
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="menu_icon_pos" size="menu_icon_size" />
-  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" zPosition="10" font="font_standard" halign="center" foregroundColor="foreground" transparent="1" />
+  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />

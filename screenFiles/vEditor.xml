@@ -11,7 +11,7 @@
   <widget name="filedata" font="font_list" scrollbarMode="showOnDemand" position="window_list_pos" size="window_list_setup_size" itemHeight="40" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
-  <widget name="list_head" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="foreground" transparent="1" />
+  <widget name="list_head" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_name" />

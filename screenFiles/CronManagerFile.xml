@@ -11,7 +11,7 @@
   <widget name="filelist" position="window_list_pos" size="window_list_setup_size" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
-  <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" />
+  <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />

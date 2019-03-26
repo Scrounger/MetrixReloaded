@@ -11,7 +11,7 @@
   <widget name="config" transparent="1" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" zPosition="10" descriptionColor="listDescription" descriptionfont="font_list_description" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
-  <widget source="configdesc" render="Label" zPosition="10" foregroundColor="foreground" font="font_standard" position="window_desc_pos" size="window_desc_size" halign="center" valign="center" transparent="1" backgroundColor="windowBackground" />
+  <widget source="configdesc" render="Label" foregroundColor="foreground" font="font_standard" position="window_desc_pos" size="window_desc_size" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />

@@ -11,7 +11,7 @@
   <widget name="SkinList" position="window_list_pos" size="window_list_setup_size" textOffset="5,0" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <widget name="Preview" position="window_image_pos" size="window_image_size" alphatest="blend" backgroundColor="windowBackgroundSecond" />
-  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" zPosition="10" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/epg.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
