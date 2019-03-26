@@ -1391,7 +1391,7 @@
     <eLabel backgroundColor="windowBackgroundSecond" position="1622,268" size="237,70" zPosition="-10" />
     <eLabel text="Flash" backgroundColor="windowBackgroundSecond" position="1635,268" size="100,70" font="font_standard_small" halign="left" valign="top" transparent="1" />
     <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1722,268" size="300,40" halign="right" valign="top" transparent="1" noWrap="1">
-      <convert type="MetrixReloadedLayoutInfo">FlashInfo,Free</convert>
+      <convert type="MetrixReloadedLayoutInfo">FlashInfo,Short</convert>
     </widget>
     <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1722,308" size="120,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="MetrixReloadedLayoutInfo">MemTotal,Free</convert>
@@ -3917,7 +3917,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   </widget>
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_middle_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/epg.png" position="window_remote_button_middle_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/pvr.png" position="window_remote_button_left_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_left_outer_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_name_short" />
@@ -6337,6 +6339,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <variable name="window_remote_button_right_pos" value="1760,926" />
   <variable name="window_remote_button_middle_pos" value="1660,926" />
   <variable name="window_remote_button_left_pos" value="1560,926" />
+  <variable name="window_remote_button_left_outer_pos" value="1460,926" />
   <variable name="window_remote_button_size" value="81,40" />
   <!-- SerachBar -->
   <variable name="window_searchbar_pos" value="496,300" />

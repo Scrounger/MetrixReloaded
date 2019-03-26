@@ -31,7 +31,9 @@
   </widget>
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_middle_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/epg.png" position="window_remote_button_middle_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/pvr.png" position="window_remote_button_left_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_left_outer_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_name_short" />

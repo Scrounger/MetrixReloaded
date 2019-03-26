@@ -71,6 +71,7 @@
   <variable name="window_remote_button_right_pos" value="1760,926" />
   <variable name="window_remote_button_middle_pos" value="1660,926" />
   <variable name="window_remote_button_left_pos" value="1560,926" />
+  <variable name="window_remote_button_left_outer_pos" value="1460,926" />
   <variable name="window_remote_button_size" value="81,40" />
   <!-- SerachBar -->
   <variable name="window_searchbar_pos" value="496,300" />
