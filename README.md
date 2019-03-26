@@ -89,7 +89,7 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 
 ## Changelog
 
-### 0.6.0 BETA (24.03.2019)
+### 0.6.0 BETA (26.03.2019)
 * Fehlende Dependencies hinzugefügt
 * Insatller bug fixes
 * font_Fett bug fixed
