@@ -20,8 +20,8 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 
 ## Installation
 
-#### benötigte Plugins:
-folgende Plugins müssen auf Eurem System installiert sein, damit der Skin funktioniert
+##### benötigte Plugins:
+Achtung! Folgende Plugins müssen auf Eurem System installiert sein, damit der Skin funktioniert:
 * ExtendeEventInfoHandler >= Version 2.3<br>(Installieren über *Erweiterungen -> rote Taste -> Systemerweiterungen -> exteventinfohandler*)
 
 1. Ladet euch die [aktuelle Version](https://github.com/Scrounger/MetrixReloaded/releases) herunter.
