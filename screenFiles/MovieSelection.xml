@@ -16,7 +16,7 @@
   <widget name="waitingtext" position="105,190" size="1050,710" zPosition="4" font="font_standard" backgroundColor="windowBackground" halign="center" valign="center" />
   <!-- Right Panel (Right Side) -->
   <widget source="Service" render="Cover" position="1216,118" zPosition="4" size="173,260" backgroundColor="windowBackgroundSecond" alphatest="blend" />
-  <widget alphatest="blend" position="1450,138" render="XHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
+  <widget alphatest="blend" position="1450,138" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
     <convert type="MovieInfo">Reference</convert>
   </widget>
   <widget source="Service" render="Label" position="1216,380" zPosition="1" size="window_epg_name_size" font="font_epg_name" backgroundColor="windowBackgroundSecond" transparent="1">

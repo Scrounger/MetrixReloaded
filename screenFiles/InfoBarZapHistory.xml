@@ -8,7 +8,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="ZapHistoryList" backgroundColorRows="listBackgroundBarsOne" position="contextMenu_list_pos" size="450,660" textOffset="2,0" itemHeight="50" font="font_list" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
-  <widget alphatest="blend" position="495,80" render="XHDPicon" size="220,132" source="ServiceEvent" transparent="1" zPosition="1">
+  <widget alphatest="blend" position="495,80" render="MetrixReloadedXHDPicon" size="220,132" source="ServiceEvent" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget source="ServiceEvent" render="Label" position="775,130" size="90,37" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackground" valign="center" halign="left" transparent="1">

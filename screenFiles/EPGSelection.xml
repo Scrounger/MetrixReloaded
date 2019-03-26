@@ -18,7 +18,7 @@
   <!-- Parameters: EPGlistText1OffSet, EPGlistText2OffSet, EPGlistNonRecTextOffset-->
   <!-- Fonts: EPGList0, EPGList1 -->
   <!-- Right Panel (Right Side) -->
-  <widget position="window_epg_picon_pos" size="window_epg_picon_size" source="Service" render="XHDPicon" alphatest="blend" zPosition="1">
+  <widget position="window_epg_picon_pos" size="window_epg_picon_size" source="Service" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- EpgShare Image -->

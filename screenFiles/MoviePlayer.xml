@@ -4,7 +4,7 @@
   <!-- Clock -->
   <constant-widget name="clock_infoBar" />
   <!-- Logo -->
-  <widget source="session.CurrentService" render="XHDPicon" position="40,870" zPosition="1" size="330,198" backgroundColor="windowBackground" transparent="1" alphatest="blend">
+  <widget source="session.CurrentService" render="MetrixReloadedXHDPicon" position="40,870" zPosition="1" size="330,198" backgroundColor="windowBackground" transparent="1" alphatest="blend">
     <convert type="MovieBarInfo">Reference</convert>
   </widget>
   <!-- Cover -->

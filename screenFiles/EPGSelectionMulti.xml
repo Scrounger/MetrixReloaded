@@ -18,7 +18,7 @@
   <widget font="font_standard_extra_small" halign="right" name="date" position="780,150" size="375,45" transparent="1" valign="center" />
   <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="105,205" zPosition="10" size="1050,700" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <widget alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
+  <widget alphatest="blend" position="window_epg_picon_pos" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- EpgShare Image -->

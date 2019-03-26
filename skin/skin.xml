@@ -916,11 +916,12 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
+  
   <widget name="list" backgroundColorRows="listBackgroundBarsTwo" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" colorServiceRecording="listRecording" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="50" itemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="foreground" />
   <!-- List: über Parameters -->
   <widget name="searchchar" position="window_searchbar_pos" size="window_searchbar_size" valign="center" halign="center" zPosition="100" backgroundColor="windowBackgroundSecond" transparent="0" font="SetrixHD;140" foregroundColor="foreground" />
   <!-- Right Panel (Right Side) -->
-  <widget alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="1">
+  <widget alphatest="blend" position="window_epg_picon_pos" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- EpgShare Image -->
@@ -2235,7 +2236,7 @@
   <!-- Parameters: EPGlistText1OffSet, EPGlistText2OffSet, EPGlistNonRecTextOffset-->
   <!-- Fonts: EPGList0, EPGList1 -->
   <!-- Right Panel (Right Side) -->
-  <widget position="window_epg_picon_pos" size="window_epg_picon_size" source="Service" render="XHDPicon" alphatest="blend" zPosition="1">
+  <widget position="window_epg_picon_pos" size="window_epg_picon_size" source="Service" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- EpgShare Image -->
@@ -2316,7 +2317,7 @@
   <widget font="font_standard_extra_small" halign="right" name="date" position="780,150" size="375,45" transparent="1" valign="center" />
   <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="105,205" zPosition="10" size="1050,700" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <widget alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
+  <widget alphatest="blend" position="window_epg_picon_pos" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- EpgShare Image -->
@@ -2362,7 +2363,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="epg_description" position="window_list_pos" size="window_list_size" font="font_list" backgroundColor="windowBackground" transparent="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" />
   <!-- Right Panel (Right Side) -->
-  <widget alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" source="Title" transparent="1" zPosition="5">
+  <widget alphatest="blend" position="window_epg_picon_pos" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" source="Title" transparent="1" zPosition="5">
     <convert type="MetrixRefString">CurrentRef</convert>
   </widget>
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/left.png" position="1270,494" size="36,36" transparent="1" zPosition="10" />
@@ -3054,7 +3055,7 @@
   <!-- Clock -->
   <constant-widget name="clock_infoBar" />
   <!-- Logo -->
-  <widget alphatest="blend" position="40,841" render="XHDPicon" size="330,198" source="session.CurrentService" transparent="1" zPosition="4">
+  <widget alphatest="blend" position="40,841" render="MetrixReloadedXHDPicon" size="330,198" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- Now: Title, Subtitle, Times -->
@@ -3123,7 +3124,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="ZapHistoryList" backgroundColorRows="listBackgroundBarsOne" position="contextMenu_list_pos" size="450,660" textOffset="2,0" itemHeight="50" font="font_list" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
-  <widget alphatest="blend" position="495,80" render="XHDPicon" size="220,132" source="ServiceEvent" transparent="1" zPosition="1">
+  <widget alphatest="blend" position="495,80" render="MetrixReloadedXHDPicon" size="220,132" source="ServiceEvent" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget source="ServiceEvent" render="Label" position="775,130" size="90,37" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackground" valign="center" halign="left" transparent="1">
@@ -3823,7 +3824,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Clock -->
   <constant-widget name="clock_infoBar" />
   <!-- Logo -->
-  <widget source="session.CurrentService" render="XHDPicon" position="40,870" zPosition="1" size="330,198" backgroundColor="windowBackground" transparent="1" alphatest="blend">
+  <widget source="session.CurrentService" render="MetrixReloadedXHDPicon" position="40,870" zPosition="1" size="330,198" backgroundColor="windowBackground" transparent="1" alphatest="blend">
     <convert type="MovieBarInfo">Reference</convert>
   </widget>
   <!-- Cover -->
@@ -3874,7 +3875,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="waitingtext" position="105,190" size="1050,710" zPosition="4" font="font_standard" backgroundColor="windowBackground" halign="center" valign="center" />
   <!-- Right Panel (Right Side) -->
   <widget source="Service" render="Cover" position="1216,118" zPosition="4" size="173,260" backgroundColor="windowBackgroundSecond" alphatest="blend" />
-  <widget alphatest="blend" position="1450,138" render="XHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
+  <widget alphatest="blend" position="1450,138" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
     <convert type="MovieInfo">Reference</convert>
   </widget>
   <widget source="Service" render="Label" position="1216,380" zPosition="1" size="window_epg_name_size" font="font_epg_name" backgroundColor="windowBackgroundSecond" transparent="1">
@@ -4617,7 +4618,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Panel Background -->
   <eLabel position="600,450" size="720,240" backgroundColor="windowBackground" zPosition="-1" />
   <!-- Panel -->
-  <widget source="Service" render="XHDPicon" position="620,470" size="330,198" zPosition="5" alphatest="blend" transparent="1">
+  <widget source="Service" render="MetrixReloadedXHDPicon" position="620,470" size="330,198" zPosition="5" alphatest="blend" transparent="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget name="servicenumber" position="970,470" size="330,198" halign="center" valign="center" font="SetrixHD; 170" foregroundColor="foreground" transparent="1" />
@@ -5913,7 +5914,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="timerlist" position="window_list_pos" size="window_list_setup_size" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" itemHeight="110" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Font über Parameter-->
   <!-- Right Panel (Right Side) -->
-  <widget source="ServiceEvent" alphatest="blend" position="window_epg_picon_pos" render="XHDPicon" size="window_epg_picon_size" transparent="1" zPosition="1">
+  <widget source="ServiceEvent" alphatest="blend" position="window_epg_picon_pos" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget source="ServiceEvent" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
