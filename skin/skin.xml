@@ -1370,9 +1370,14 @@
       <convert type="ClockToText">Format:%a %e. %B</convert>
     </widget>
     <eLabel backgroundColor="windowBackgroundSecond" position="1620,42" size="237,100" zPosition="-10" />
+  </constant-widget>
+  <constant-widget name="system_infos_menu">
     <!-- CPU Usage -->
     <eLabel backgroundColor="windowBackgroundSecond" position="1620,170" size="237,70" zPosition="-10" />
-    <eLabel text="CPU" backgroundColor="windowBackgroundSecond" position="1635,170" size="100,70" font="font_standard_small" halign="left" valign="top" transparent="1" />
+    <widget source="Title" render="Label" position="1635,170" size="100,70" font="font_standard_small" halign="left" valign="top" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground">
+      <convert type="MetrixReloadedTextTranslator">cpuload</convert>
+    </widget>    
+    
     <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1782,170" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="MetrixReloadedCpuUsage">$0</convert>
     </widget>
@@ -1380,6 +1385,18 @@
     <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1782,200" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="MetrixReloadedTempFanInfo">TempInfo</convert>
     </widget>
+    
+    <eLabel backgroundColor="windowBackgroundSecond" position="1620,268" size="237,70" zPosition="-10" />
+    <eLabel text="Flash" backgroundColor="windowBackgroundSecond" position="1635,268" size="100,70" font="font_standard_small" halign="left" valign="top" transparent="1" />
+    <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1722,268" size="300,40" halign="right" valign="top" transparent="1" noWrap="1">
+      <convert type="MetrixReloadedLayoutInfo">FlashInfo,Free</convert>
+    </widget>
+    <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1722,308" size="120,40" halign="right" valign="top" transparent="1" noWrap="1">
+      <convert type="MetrixReloadedLayoutInfo">MemTotal,Free</convert>
+    </widget>
+    
+    
+    
   </constant-widget>
   <constant-widget name="clock_window">
     <widget backgroundColor="windowBackground" font="font_window_time" halign="right" position="975,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
@@ -3498,6 +3515,7 @@
   <constant-widget name="icons_menu" />
   <!-- Clock -->
   <constant-widget name="clock_menu" />
+  <constant-widget name="system_infos_menu" />
   <!-- Buttons - deaktiviert-->
   <widget text="Menu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -3521,6 +3539,7 @@
   <constant-widget name="icons_menu" />
   <!-- Clock -->
   <constant-widget name="clock_menu" />
+  <constant-widget name="system_infos_menu" />
   <!-- Buttons - deaktiviert-->
   <widget text="menu_information" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -3544,6 +3563,7 @@
   <constant-widget name="icons_menu" />
   <!-- Clock -->
   <constant-widget name="clock_menu" />
+  <constant-widget name="system_infos_menu" />
   <!-- Buttons - deaktiviert-->
   <widget text="menu_mainmenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -3567,6 +3587,7 @@
   <constant-widget name="icons_menu" />
   <!-- Clock -->
   <constant-widget name="clock_menu" />
+  <constant-widget name="system_infos_menu" />
   <!-- Buttons - deaktiviert-->
   <widget text="menu_scan" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -3590,6 +3611,7 @@
   <constant-widget name="icons_menu" />
   <!-- Clock -->
   <constant-widget name="clock_menu" />
+  <constant-widget name="system_infos_menu" />
   <!-- Buttons - deaktiviert-->
   <widget text="menu_setup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -3613,6 +3635,7 @@
   <constant-widget name="icons_menu" />
   <!-- Clock -->
   <constant-widget name="clock_menu" />
+  <constant-widget name="system_infos_menu" />
   <!-- Buttons - deaktiviert-->
   <widget text="menu_shutdown" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -3636,6 +3659,7 @@
   <constant-widget name="icons_menu" />
   <!-- Clock -->
   <constant-widget name="clock_menu" />
+  <constant-widget name="system_infos_menu" />
   <!-- Buttons - deaktiviert-->
   <widget text="menu_system" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -3659,6 +3683,7 @@
   <constant-widget name="icons_menu" />
   <!-- Clock -->
   <constant-widget name="clock_menu" />
+  <constant-widget name="system_infos_menu" />
   <!-- Buttons - deaktiviert-->
   <widget text="menu_tasklist" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -6180,6 +6205,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <eLabel backgroundColor="windowBackground" position="0,950" size="1920,130" zPosition="-10" />
   <!-- Clock -->
   <constant-widget name="clock_menu" />
+  <constant-widget name="system_infos_menu" />
   <!-- Title -->
   <eLabel backgroundColor="windowBackground" font="font_window_title" position="30,980" size="453,79" text="Software Update..." transparent="1" />
   <!-- ProgressBars -->
