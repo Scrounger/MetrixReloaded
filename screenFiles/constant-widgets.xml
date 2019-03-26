@@ -192,7 +192,7 @@
     <widget source="Title" render="Label" position="contextMenu_title_pos" size="contextMenu_title_size" font="font_contextMenu_title" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" />
   </constant-widget>
   <constant-widget name="Title_graphMultiEpg_Fullscreen">
-    <widget foregroundColor="foreground" backgroundColor="windowBackground" font="font_window_title" halign="left" position="60,5" size="window_title_size" render="clearFavName" source="Title" transparent="1" />
+    <widget foregroundColor="foreground" backgroundColor="windowBackground" font="font_window_title" halign="left" position="60,5" size="window_title_size" render="MetrixReloadedClearFavName" source="Title" transparent="1" />
   </constant-widget>
   <!-- Rec Icon-->
   <constant-widget name="recIcon_top">

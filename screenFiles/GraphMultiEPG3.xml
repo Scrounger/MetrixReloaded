@@ -2,7 +2,7 @@
   <!-- Backgrounds -->
   <constant-widget name="background_window" />
   <!-- Title -->
-  <widget backgroundColor="windowBackground" font="font_window_title" position="105,55" render="clearFavName" size="window_title_size" source="Title" transparent="1" />
+  <widget backgroundColor="windowBackground" font="font_window_title" position="105,55" render="MetrixReloadedClearFavName" size="window_title_size" source="Title" transparent="1" />
   <!-- Clock -->
   <constant-widget name="clock_window" />
   <!-- Title Seperator -->

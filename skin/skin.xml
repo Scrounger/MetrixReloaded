@@ -910,7 +910,7 @@
   <!-- Backgrounds -->
   <constant-widget name="background_window" />
   <!-- Title -->
-  <widget backgroundColor="windowBackground" font="font_window_title" position="76,55" render="clearFavName" size="window_title_size" source="Title" transparent="1" />
+  <widget backgroundColor="windowBackground" font="font_window_title" position="76,55" render="MetrixReloadedClearFavName" size="window_title_size" source="Title" transparent="1" />
   <!-- Clock -->
   <constant-widget name="clock_window" />
   <!-- Title Seperator -->
@@ -1369,6 +1369,16 @@
       <convert type="ClockToText">Format:%a %e. %B</convert>
     </widget>
     <eLabel backgroundColor="windowBackgroundSecond" position="1620,42" size="237,100" zPosition="-10" />
+    <!-- CPU Usage -->
+    <eLabel backgroundColor="windowBackgroundSecond" position="1620,170" size="237,70" zPosition="-10" />
+    <eLabel text="CPU" backgroundColor="windowBackgroundSecond" position="1635,170" size="100,70" font="font_standard_small" halign="left" valign="top" transparent="1" />
+    <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1782,170" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
+      <convert type="MetrixReloadedCpuUsage">$0</convert>
+    </widget>
+    <!-- System Temperatur -->
+    <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1782,200" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
+      <convert type="MetrixReloadedTempFanInfo">TempInfo</convert>
+    </widget>
   </constant-widget>
   <constant-widget name="clock_window">
     <widget backgroundColor="windowBackground" font="font_window_time" halign="right" position="975,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
@@ -1423,7 +1433,7 @@
     <widget source="Title" render="Label" position="contextMenu_title_pos" size="contextMenu_title_size" font="font_contextMenu_title" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" />
   </constant-widget>
   <constant-widget name="Title_graphMultiEpg_Fullscreen">
-    <widget foregroundColor="foreground" backgroundColor="windowBackground" font="font_window_title" halign="left" position="60,5" size="window_title_size" render="clearFavName" source="Title" transparent="1" />
+    <widget foregroundColor="foreground" backgroundColor="windowBackground" font="font_window_title" halign="left" position="60,5" size="window_title_size" render="MetrixReloadedClearFavName" source="Title" transparent="1" />
   </constant-widget>
   <!-- Rec Icon-->
   <constant-widget name="recIcon_top">
@@ -2832,7 +2842,7 @@
   <!-- Backgrounds -->
   <constant-widget name="background_window" />
   <!-- Title -->
-  <widget backgroundColor="windowBackground" font="font_window_title" position="105,55" render="clearFavName" size="window_title_size" source="Title" transparent="1" />
+  <widget backgroundColor="windowBackground" font="font_window_title" position="105,55" render="MetrixReloadedClearFavName" size="window_title_size" source="Title" transparent="1" />
   <!-- Clock -->
   <constant-widget name="clock_window" />
   <!-- Title Seperator -->
@@ -2898,7 +2908,7 @@
   <!-- Backgrounds -->
   <constant-widget name="background_window" />
   <!-- Title -->
-  <widget backgroundColor="windowBackground" font="font_window_title" position="105,55" render="clearFavName" size="window_title_size" source="Title" transparent="1" />
+  <widget backgroundColor="windowBackground" font="font_window_title" position="105,55" render="MetrixReloadedClearFavName" size="window_title_size" source="Title" transparent="1" />
   <!-- Clock -->
   <constant-widget name="clock_window" />
   <!-- Title Seperator -->
