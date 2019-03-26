@@ -485,6 +485,8 @@
   <widget name="entries" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
+  <!-- Remote Buttons -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_green_source" />
@@ -521,7 +523,6 @@
   <!-- Buttons -->
   <constant-widget name="color_buttons_window" />
   <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
   <widget text="AutoTimerPreview" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AutoTimerServiceEditor" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -1363,20 +1364,20 @@
   </constant-widget>
   <!-- Meine Clocks-->
   <constant-widget name="clock_menu">
-    <widget backgroundColor="windowBackgroundSecond" font="font_menu_time" halign="right" position="1660,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
+    <widget backgroundColor="windowBackgroundSecond" font="font_menu_time" halign="right" position="1662,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="windowBackgroundSecond" font="font_menu_date" halign="right" position="1620,99" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="windowBackgroundSecond" font="font_menu_date" halign="right" position="1622,99" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%a %e. %B</convert>
     </widget>
-    <eLabel backgroundColor="windowBackgroundSecond" position="1620,42" size="237,100" zPosition="-10" />
+    <eLabel backgroundColor="windowBackgroundSecond" position="1622,42" size="237,100" zPosition="-10" />
   </constant-widget>
   
   
   
   <constant-widget name="system_infos_menu">
     <!-- CPU Usage -->
-    <eLabel backgroundColor="windowBackgroundSecond" position="1620,170" size="237,70" zPosition="-10" />
+    <eLabel backgroundColor="windowBackgroundSecond" position="1622,170" size="237,70" zPosition="-10" />
     <widget source="Title" render="Label" position="1635,170" size="100,70" font="font_standard_small" halign="left" valign="top" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground">
       <convert type="MetrixReloadedTextTranslator">cpuload</convert>
     </widget>    
@@ -1387,7 +1388,7 @@
     <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1782,200" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="MetrixReloadedTempFanInfo">TempInfo</convert>
     </widget>
-    <eLabel backgroundColor="windowBackgroundSecond" position="1620,268" size="237,70" zPosition="-10" />
+    <eLabel backgroundColor="windowBackgroundSecond" position="1622,268" size="237,70" zPosition="-10" />
     <eLabel text="Flash" backgroundColor="windowBackgroundSecond" position="1635,268" size="100,70" font="font_standard_small" halign="left" valign="top" transparent="1" />
     <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1722,268" size="300,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="MetrixReloadedLayoutInfo">FlashInfo,Free</convert>
@@ -6198,8 +6199,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <eLabel position="1895,880" size="20,195" zPosition="1" backgroundColor="blue" />
   <widget text="UIPositionSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="UnhandledKey" flags="wfNoBorder" position="1680,75" size="67,66" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
-  <widget name="UnhandledKeyPixmap" pixmap="MetrixReloaded/media/unhandled-key.png" position="0,0" size="67,66" alphatest="off" />
+<screen name="UnhandledKey" flags="wfNoBorder" position="1622,42" size="237,100" title="UnhandledKey" zPosition="0" backgroundColor="windowBackgroundSecond">
+  <widget name="UnhandledKeyPixmap" pixmap="MetrixReloaded/media/unhandled-key.png" position="85,17" size="67,66" alphatest="blend" />
 </screen>
 <screen name="UpdatePlugin" position="center,center" size="1920,1080" title="Software update" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->

@@ -121,20 +121,20 @@
   </constant-widget>
   <!-- Meine Clocks-->
   <constant-widget name="clock_menu">
-    <widget backgroundColor="windowBackgroundSecond" font="font_menu_time" halign="right" position="1660,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
+    <widget backgroundColor="windowBackgroundSecond" font="font_menu_time" halign="right" position="1662,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="windowBackgroundSecond" font="font_menu_date" halign="right" position="1620,99" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="windowBackgroundSecond" font="font_menu_date" halign="right" position="1622,99" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%a %e. %B</convert>
     </widget>
-    <eLabel backgroundColor="windowBackgroundSecond" position="1620,42" size="237,100" zPosition="-10" />
+    <eLabel backgroundColor="windowBackgroundSecond" position="1622,42" size="237,100" zPosition="-10" />
   </constant-widget>
   
   
   
   <constant-widget name="system_infos_menu">
     <!-- CPU Usage -->
-    <eLabel backgroundColor="windowBackgroundSecond" position="1620,170" size="237,70" zPosition="-10" />
+    <eLabel backgroundColor="windowBackgroundSecond" position="1622,170" size="237,70" zPosition="-10" />
     <widget source="Title" render="Label" position="1635,170" size="100,70" font="font_standard_small" halign="left" valign="top" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground">
       <convert type="MetrixReloadedTextTranslator">cpuload</convert>
     </widget>    
@@ -145,7 +145,7 @@
     <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1782,200" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="MetrixReloadedTempFanInfo">TempInfo</convert>
     </widget>
-    <eLabel backgroundColor="windowBackgroundSecond" position="1620,268" size="237,70" zPosition="-10" />
+    <eLabel backgroundColor="windowBackgroundSecond" position="1622,268" size="237,70" zPosition="-10" />
     <eLabel text="Flash" backgroundColor="windowBackgroundSecond" position="1635,268" size="100,70" font="font_standard_small" halign="left" valign="top" transparent="1" />
     <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1722,268" size="300,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="MetrixReloadedLayoutInfo">FlashInfo,Free</convert>
