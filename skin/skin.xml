@@ -1369,16 +1369,6 @@
       <convert type="ClockToText">Format:%a %e. %B</convert>
     </widget>
     <eLabel backgroundColor="windowBackgroundSecond" position="1620,42" size="237,100" zPosition="-10" />
-    <!-- CPU Usage -->
-    <eLabel backgroundColor="windowBackgroundSecond" position="1620,170" size="237,70" zPosition="-10" />
-    <eLabel text="CPU" backgroundColor="windowBackgroundSecond" position="1635,170" size="100,70" font="font_standard_small" halign="left" valign="top" transparent="1" />
-    <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1782,170" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
-      <convert type="MetrixReloadedCpuUsage">$0</convert>
-    </widget>
-    <!-- System Temperatur -->
-    <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1782,200" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
-      <convert type="MetrixReloadedTempFanInfo">TempInfo</convert>
-    </widget>
   </constant-widget>
   <constant-widget name="clock_window">
     <widget backgroundColor="windowBackground" font="font_window_time" halign="right" position="975,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
@@ -5268,8 +5258,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget text="RemoteTimerSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="ResolutionLabel" position="50,40" size="250,40" flags="wfNoBorder" >
-  <widget name="content" position="0,2" size="250,18" font="Regular;16" />
-  <widget name="restxt" position="0,20" size="250,18" font="Regular;16" />
+  <widget name="content" position="0,1" size="250,18" font="Regular;16" />
+  <widget name="restxt" position="0,19" size="250,18" font="Regular;16" />
 </screen>
 <screen name="SATIPClient" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
