@@ -19,6 +19,11 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 * [EPGImport](https://github.com/oe-alliance/XMLTV-Import)
 
 ## Installation
+
+#### benötigte Plugins:
+folgende Plugins müssen auf Eurem System installiert sein, damit der Skin funktioniert
+* ExtendeEventInfoHandler >= Version 2.3<br>(Installieren über *Erweiterungen -> rote Taste -> Systemerweiterungen -> exteventinfohandler*)
+
 1. Ladet euch die [aktuelle Version](https://github.com/Scrounger/MetrixReloaded/releases) herunter.
 2. Kopiert die heruntergeladene *.ipk Datei in das /tmp/ Vereichnis auf Euren VU+ Receiver
 3. Öffne das VtiPanel (Blaue Taste) -> *Manuelle Installation von Paketen* -> *IPKG-Pakete installieren*
@@ -78,6 +83,7 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 <img src="screenshots/colors_Green.jpg?sanitize=true&raw=true" title="colors_Green" width="400"/>
 <img src="screenshots/colors_Purpel.jpg?sanitize=true&raw=true" title="colors_Purpel" width="400"/>
 <img src="screenshots/colors_Red.jpg?sanitize=true&raw=true" title="colors_Red" width="400"/>
+<img src="screenshots/colors_Metrix_Retro.jpg?sanitize=true&raw=true" title="colors_Red" width="400"/>
 </p>
 
 ## Changelog
