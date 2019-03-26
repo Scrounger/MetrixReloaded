@@ -1,6 +1,5 @@
 # MetrixReloaded
-![GitHub release](https://img.shields.io/github/release/Scrounger/MetrixReloaded.svg)
-![GitHub Releases](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/0.5.0/total.svg)
+[![GitHub release](https://img.shields.io/github/release/Scrounger/MetrixReloaded.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
 ![GitHub All Releases](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/total.svg)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Scrounger/MetrixReloaded.svg)
 ![GitHub](https://img.shields.io/github/license/Scrounger/MetrixReloaded.svg)
