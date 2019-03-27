@@ -7,7 +7,6 @@ import skin
 from Components.config import config
 from Components.Sources.Event import Event
 from enigma import eLabel, ePixmap, ePoint, eSize, eTimer, eWidget, loadJPG, loadPNG
-from PIL import Image
 from Renderer import Renderer
 from skin import parseColor, parseFont
 from twisted.web.client import downloadPage, getPage
@@ -234,8 +233,6 @@ class MetrixReloadedEventImage(Renderer):
             # Image wurde heruntergeladen -> anzeigen
             try:
                 if (os.path.exists(imageFileName)):
-                    # img = Image.open(p).convert('RGBA')
-                    # img.save(p)
                     if (eventId == self.id):
                         self.image.setPixmap(loadJPG(imageFileName))
                         self.image.setScale(self.scaletype)
