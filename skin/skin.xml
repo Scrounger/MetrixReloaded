@@ -1203,6 +1203,10 @@
   
   <color name="infoBar_moviePlayer_progressBar_background" value="accent1" />
   <color name="infoBar_moviePlayer_progressBar_foreground" value="backgroundSecond" />
+
+  <color name="slider_background" value="windowBackground" />
+  <color name="slider_border" value="foreground" />
+  <color name="slider_foreground" value="infoBar_moviePlayer_progressBar_foreground" />
   
   
   
@@ -3310,10 +3314,10 @@
   <!-- Title Seperator -->
   <constant-widget name="seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="activityslider" position="105,150" size="1050,22" backgroundColor="windowBackground" borderWidth="2" borderColor="foreground" foregroundColor="windowBackgroundSecond" />
+  <widget name="activityslider" position="105,150" size="1050,22" backgroundColor="slider_background" borderWidth="2" borderColor="slider_border" foregroundColor="slider_foreground" />
   <widget name="package" position="105,192" size="1050,45" font="font_standard" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="status" position="105,255" size="1050,80" font="font_standard" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="slider" position="105,392" size="1050,30" backgroundColor="windowBackground" borderWidth="2" borderColor="foreground" foregroundColor="windowBackgroundSecond" />
+  <widget name="slider" position="105,392" size="1050,30" backgroundColor="slider_background" borderWidth="2" borderColor="slider_border" foregroundColor="slider_foreground" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/paket.png" position="window_image_pos" size="window_image_size" />
   <!-- TODO: Layout anpassen -->
@@ -6219,8 +6223,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title -->
   <eLabel backgroundColor="windowBackground" font="font_window_title" position="30,980" size="453,79" text="Software Update..." transparent="1" />
   <!-- ProgressBars -->
-  <widget borderWidth="1" name="activityslider" position="535,1012" size="1355,20" borderColor="foreground" foregroundColor="windowBackgroundSecond" transparent="1" />
-  <widget borderWidth="1" name="slider" position="535,1040" size="1355,20" transparent="1" borderColor="foreground" foregroundColor="windowBackgroundSecond" />
+  <widget borderWidth="1" name="activityslider" position="535,1012" size="1355,20" borderColor="slider_border" foregroundColor="slider_foreground" transparent="1" />
+  <widget borderWidth="1" name="slider" position="535,1040" size="1355,20" transparent="1" borderColor="slider_border" foregroundColor="slider_foreground" />
   <widget backgroundColor="windowBackground" font="font_standard" foregroundColor="foreground" position="535,960" render="Label" size="1355,45" source="status" transparent="1" />
   <widget text="UpdatePlugin" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

@@ -26,12 +26,16 @@
   <!-- List selected -->
   <color name="listSelectedBackground" value="backgroundSecond" />
   <color name="listSelectedForeground" value="foreground" />
+  
+  
   <!-- ProgressBar -->
   <color name="progressBarSmallBackground" value="lightgrey" />
-  <color name="progressBarBackground" value="#40000000" />
-  
+  <color name="progressBarBackground" value="#40000000" />  
   <color name="infoBar_moviePlayer_progressBar_background" value="accent1" />
   <color name="infoBar_moviePlayer_progressBar_foreground" value="backgroundSecond" />
+  <color name="slider_background" value="windowBackground" />
+  <color name="slider_border" value="foreground" />
+  <color name="slider_foreground" value="infoBar_moviePlayer_progressBar_foreground" />
   
   
   
