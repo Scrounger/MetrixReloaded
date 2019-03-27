@@ -29,6 +29,12 @@
   <!-- ProgressBar -->
   <color name="progressBarSmallBackground" value="lightgrey" />
   <color name="progressBarBackground" value="#40000000" />
+  
+  <color name="infoBar_moviePlayer_progressBar_background" value="accent1" />
+  <color name="infoBar_moviePlayer_progressBar_foreground" value="backgroundSecond" />
+  
+  
+  
   <color name="channelListDescFg" value="#00fcfcfc" />
   <color name="dodgerblue" value="#001e90ff" />
   <color name="infobarBgL" value="#27ececec" />

@@ -1200,6 +1200,12 @@
   <!-- ProgressBar -->
   <color name="progressBarSmallBackground" value="lightgrey" />
   <color name="progressBarBackground" value="#40000000" />
+  
+  <color name="infoBar_moviePlayer_progressBar_background" value="accent1" />
+  <color name="infoBar_moviePlayer_progressBar_foreground" value="backgroundSecond" />
+  
+  
+  
   <color name="channelListDescFg" value="#00fcfcfc" />
   <color name="dodgerblue" value="#001e90ff" />
   <color name="infobarBgL" value="#27ececec" />
@@ -1391,7 +1397,7 @@
     <eLabel backgroundColor="windowBackgroundSecond" position="1622,268" size="237,70" zPosition="-10" />
     <eLabel text="Flash" backgroundColor="windowBackgroundSecond" position="1635,268" size="100,70" font="font_standard_small" halign="left" valign="top" transparent="1" />
     <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1722,268" size="300,40" halign="right" valign="top" transparent="1" noWrap="1">
-      <convert type="MetrixReloadedLayoutInfo">FlashInfo,Short</convert>
+      <convert type="MetrixReloadedLayoutInfo">FlashInfo,Free</convert>
     </widget>
     <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1722,308" size="120,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="MetrixReloadedLayoutInfo">MemTotal,Free</convert>
@@ -3098,8 +3104,8 @@
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
   <!-- ProgressBar-->
-  <eLabel backgroundColor="accent1" foregroundColor="accent1" position="410,923" size="1448,1" />
-  <widget foregroundColor="windowBackgroundSecond" position="410,921" render="Progress" size="1448,5" source="session.Event_Now" transparent="1" zPosition="7">
+  <eLabel backgroundColor="infoBar_moviePlayer_progressBar_background" foregroundColor="infoBar_moviePlayer_progressBar_background" position="410,923" size="1448,1" />
+  <widget foregroundColor="infoBar_moviePlayer_progressBar_foreground" position="410,921" render="Progress" size="1448,5" source="session.Event_Now" transparent="1" zPosition="7">
     <convert type="EventTime">Progress</convert>
   </widget>
   <!-- Next: Title, Subtitle, Times -->
@@ -3872,8 +3878,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="session.CurrentService" render="PositionGauge" position="510,958" size="1228,12" zPosition="5" transparent="1">
     <convert type="ServicePosition">Gauge</convert>
   </widget>
-  <eLabel backgroundColor="accent1" foregroundColor="accent1" position="510,963" size="1228,1" />
-  <widget foregroundColor="windowBackgroundSecond" position="510,961" render="Progress" size="1228,5" source="session.CurrentService" transparent="1" zPosition="4">
+  <eLabel backgroundColor="infoBar_moviePlayer_progressBar_background" foregroundColor="infoBar_moviePlayer_progressBar_background" position="510,963" size="1228,1" />
+  <widget foregroundColor="infoBar_moviePlayer_progressBar_foreground" position="510,961" render="Progress" size="1228,5" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServicePosition">Position</convert>
   </widget>
   <!-- verbleibende Zeit-->

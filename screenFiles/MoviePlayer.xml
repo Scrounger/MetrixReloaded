@@ -25,8 +25,8 @@
   <widget source="session.CurrentService" render="PositionGauge" position="510,958" size="1228,12" zPosition="5" transparent="1">
     <convert type="ServicePosition">Gauge</convert>
   </widget>
-  <eLabel backgroundColor="accent1" foregroundColor="accent1" position="510,963" size="1228,1" />
-  <widget foregroundColor="windowBackgroundSecond" position="510,961" render="Progress" size="1228,5" source="session.CurrentService" transparent="1" zPosition="4">
+  <eLabel backgroundColor="infoBar_moviePlayer_progressBar_background" foregroundColor="infoBar_moviePlayer_progressBar_background" position="510,963" size="1228,1" />
+  <widget foregroundColor="infoBar_moviePlayer_progressBar_foreground" position="510,961" render="Progress" size="1228,5" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServicePosition">Position</convert>
   </widget>
   <!-- verbleibende Zeit-->
