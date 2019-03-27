@@ -35,7 +35,7 @@
   <color name="infoBar_moviePlayer_progressBar_foreground" value="backgroundSecond" />
   <color name="slider_background" value="windowBackground" />
   <color name="slider_border" value="foreground" />
-  <color name="slider_foreground" value="infoBar_moviePlayer_progressBar_foreground" />
+  <color name="slider_foreground" value="backgroundSecond" />
   
   
   
