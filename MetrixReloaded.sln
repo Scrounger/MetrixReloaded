@@ -226,6 +226,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles"
 		screenFiles\OscamButler.xml = screenFiles\OscamButler.xml
 		screenFiles\output.xml = screenFiles\output.xml
 		screenFiles\PanelPassword.xml = screenFiles\PanelPassword.xml
+		screenFiles\Panels.xml = screenFiles\Panels.xml
 		screenFiles\parameters.xml = screenFiles\parameters.xml
 		screenFiles\ParentalControlChangePin.xml = screenFiles\ParentalControlChangePin.xml
 		screenFiles\ParentalControlEditor.xml = screenFiles\ParentalControlEditor.xml

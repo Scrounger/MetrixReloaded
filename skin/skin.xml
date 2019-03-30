@@ -1197,16 +1197,16 @@
   <!-- List selected -->
   <color name="listSelectedBackground" value="backgroundSecond" />
   <color name="listSelectedForeground" value="foreground" />
+  
+  
   <!-- ProgressBar -->
   <color name="progressBarSmallBackground" value="lightgrey" />
-  <color name="progressBarBackground" value="#40000000" />
-  
+  <color name="progressBarBackground" value="#40000000" />  
   <color name="infoBar_moviePlayer_progressBar_background" value="accent1" />
   <color name="infoBar_moviePlayer_progressBar_foreground" value="backgroundSecond" />
-
   <color name="slider_background" value="windowBackground" />
   <color name="slider_border" value="foreground" />
-  <color name="slider_foreground" value="infoBar_moviePlayer_progressBar_foreground" />
+  <color name="slider_foreground" value="backgroundSecond" />
   
   
   
@@ -3557,11 +3557,11 @@
 </screen>
 <screen name="menu_mainmenu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent" NoAnimationAfter="1">
   <!-- Background -->
-  <constant-widget name="background_menu" />
+  <panel name="panel_background_menu" />
   <!-- Title -->
   <eLabel text="Main menu" position="menu_title_pos" size="menu_title_size" font="font_menu_title" transparent="1" halign="left" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_menu" />
+  <panel name="panel_seperator_menu" />
   <!-- Menu List -->
   <widget source="menu" render="Listbox" transparent="1" position="menu_list_pos" size="menu_list_size" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
@@ -3572,10 +3572,10 @@
     </convert>
   </widget>
   <!-- Icons -->
-  <constant-widget name="icons_menu" />
+  <panel name="panel_icons_menu" />
   <!-- Clock -->
-  <constant-widget name="clock_menu" />
-  <constant-widget name="system_infos_menu" />
+  <panel name="panel_clock_menu" />
+  <!--<constant-widget name="system_infos_menu" />-->
   <!-- Buttons - deaktiviert-->
   <widget text="menu_mainmenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -4766,6 +4766,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <constant-widget name="key_yellow_source" />
   <widget text="PanelPassword" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
+<screen name="panel_background_menu">
+  <eLabel backgroundColor="windowBackground" position="0,0" size="630,1080" zPosition="-10" />
+  <ePixmap pixmap="MetrixReloaded/media/background_menu_list.png" position="15,320" size="615,740" alphatest="blend" transparent="1" />
+  <!-- Debug: Menu Entry anzeigen -->
+  <widget backgroundColor="windowBackground" font="SetrixSL;16" foregroundColor="foreground" render="Label" source="menu" position="20,80" size="250,27" halign="left" valign="center" transparent="1" zPosition="9">
+    <convert type="MetrixReloadedMenuEntryLabel"></convert>
+  </widget>
+  <widget alphatest="blend" pixmap="MetrixReloaded/media/background_isRecording.png" position="887,0" render="Pixmap" size="146,37" source="session.RecordState" zPosition="2">
+    <convert type="ConditionalShowHide" />
+  </widget>
+</screen>
+<screen name="panel_seperator_menu">
+  <ePixmap pixmap="MetrixReloaded/media/seperator_menu.png" position="15,75" size="615,1" alphatest="blend" transparent="1" />
+</screen>
+<screen name="panel_icons_menu">
+  <widget alphatest="blend" path="media/icons/menu" position="menu_icon_pos" render="MetrixReloadedIcon" size="menu_icon_size" source="menu" zPosition="3">
+    <convert type="MetrixReloadedMenuEntryID"></convert>
+  </widget>
+</screen>
+<screen name="panel_clock_menu">
+  <widget backgroundColor="windowBackgroundSecond" font="font_menu_time" halign="right" position="1662,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+</screen>
+
 <parameters>
   <!-- Kanalliste - Horizontal -->
   <parameter name="ServicelistHorServiceTypeIcon" value="0,0,0,0" />
