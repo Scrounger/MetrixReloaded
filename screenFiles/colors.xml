@@ -26,6 +26,8 @@
   <!-- List selected -->
   <color name="listSelectedBackground" value="backgroundSecond" />
   <color name="listSelectedForeground" value="foreground" />
+  <color name="channelSelectionEpgListSelected" value="windowBackground" />
+  
   
   
   <!-- ProgressBar -->

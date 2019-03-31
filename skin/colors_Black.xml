@@ -12,6 +12,7 @@
   <color name="listSelectedBackground" value="#1227408b" />
   <color name="listSelectedForeground" value="foreground" />
   <color name="infoBar_moviePlayer_progressBar_foreground" value="#1227408b" />
+  <color name="channelSelectionEpgListSelected" value="#1227408b" />
 </colors>
 <windowstyle type="skinned" id="0">
   <!-- Main screen colors (id=0 Framebuffer) -->
