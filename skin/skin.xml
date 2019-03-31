@@ -1386,7 +1386,7 @@
   
   
   <constant-widget name="system_infos_menu">
-    <!-- CPU Usage -->
+    <!-- CPU Usage --><!--
     <eLabel backgroundColor="windowBackgroundSecond" position="1622,170" size="237,70" zPosition="-10" />
     <widget source="Title" render="Label" position="1635,170" size="100,70" font="font_standard_small" halign="left" valign="top" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground">
       <convert type="MetrixReloadedTextTranslator">cpuload</convert>
@@ -1394,7 +1394,7 @@
     <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1782,170" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="MetrixReloadedCpuUsage">$0</convert>
     </widget>
-    <!-- System Temperatur -->
+    --><!-- System Temperatur --><!--
     <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1782,200" size="60,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="MetrixReloadedTempFanInfo">TempInfo</convert>
     </widget>
@@ -1405,7 +1405,7 @@
     </widget>
     <widget source="Title" backgroundColor="windowBackgroundSecond" render="Label" font="font_standard_small" position="1722,308" size="120,40" halign="right" valign="top" transparent="1" noWrap="1">
       <convert type="MetrixReloadedLayoutInfo">MemTotal,Free</convert>
-    </widget>
+    </widget>-->
   </constant-widget>
   
   
