@@ -11,7 +11,7 @@
   <widget name="epg_description" position="window_list_pos" size="window_list_size" font="font_list" backgroundColor="windowBackground" transparent="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" />
   <!-- Right Panel (Right Side) -->
   <widget alphatest="blend" position="window_epg_picon_pos" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" source="Title" transparent="1" zPosition="5">
-    <convert type="MetrixRefString">CurrentRef</convert>
+    <convert type="MetrixReloadedRefString">CurrentRef</convert>
   </widget>
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/left.png" position="1270,494" size="36,36" transparent="1" zPosition="10" />
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/right.png" position="1718,494" size="36,36" transparent="1" zPosition="10" />
