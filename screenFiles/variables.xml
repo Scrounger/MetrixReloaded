@@ -32,11 +32,13 @@
   <variable name="vkey_pos" value="627,20" />
   <!-- Meine **********************************************************-->
   <!-- Menu -->
-  <variable name="menu_title_pos" value="20,5" />
+  <variable name="menu_title_pos" value="350,132" />
   <variable name="menu_title_size" value="590,90" />
-  <variable name="menu_list_pos" value="0,320" />
+  <variable name="menu_title_seperator_pos" value="345,204" />
+  <variable name="menu_title_seperator_size" value="615,1" />
+  <variable name="menu_list_pos" value="330,208" />
   <variable name="menu_list_size" value="630,740" />
-  <variable name="menu_icon_pos" value="200,91" />
+  <variable name="menu_icon_pos" value="1000,250" />
   <variable name="menu_icon_size" value="230,230" />
   <!-- Window -->
   <variable name="window_title_pos" value="105,55" />

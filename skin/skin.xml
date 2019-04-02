@@ -1268,10 +1268,11 @@
   </constant-widget>
   <!-- Meine Backgrounds-->
   <constant-widget name="background_menu">
-    <eLabel backgroundColor="windowBackground" position="0,0" size="630,1080" zPosition="-10" />
-    <ePixmap pixmap="MetrixReloaded/media/background_menu_list.png" position="15,320" size="615,740" alphatest="blend" transparent="1" />
+    <eLabel backgroundColor="windowBackground" position="330,132" size="630,816" zPosition="-10" />
+    <eLabel backgroundColor="windowBackgroundSecond" position="960,152" size="630,776" zPosition="-10" />
+    <!--<ePixmap pixmap="MetrixReloaded/media/background_menu_list.png" position="345,208" size="615,740" alphatest="blend" transparent="1" />-->
     <!-- Debug: Menu Entry anzeigen -->
-    <widget backgroundColor="windowBackground" font="SetrixSL;16" foregroundColor="foreground" render="Label" source="menu" position="20,80" size="250,27" halign="left" valign="center" transparent="1" zPosition="9">
+    <widget backgroundColor="windowBackground" font="SetrixSL;16" foregroundColor="foregroundSecond" render="Label" source="menu" position="1340,250" size="250,27" halign="left" valign="center" transparent="1" zPosition="9">
       <convert type="MetrixReloadedMenuEntryLabel"></convert>
     </widget>
     <widget alphatest="blend" pixmap="MetrixReloaded/media/background_isRecording.png" position="887,0" render="Pixmap" size="146,37" source="session.RecordState" zPosition="2">
@@ -1376,18 +1377,20 @@
   </constant-widget>
   <!-- Meine Clocks-->
   <constant-widget name="clock_menu">
-    <widget backgroundColor="windowBackgroundSecond" font="font_menu_time" halign="right" position="1662,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
+    <widget backgroundColor="windowBackgroundSecond" font="font_menu_time" halign="right" valign="center" position="1390,162" render="Label" size="180,60" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="windowBackgroundSecond" font="font_menu_date" halign="right" position="1622,99" render="Label" size="220,40" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%a %e. %B</convert>
+    <widget backgroundColor="windowBackgroundSecond" font="font_menu_date" halign="right" valign="center" position="980,182" render="Label" size="460,40" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A %e. %B</convert>
     </widget>
-    <eLabel backgroundColor="windowBackgroundSecond" position="1622,42" size="237,100" zPosition="-10" />
   </constant-widget>
   
   
   
   <constant-widget name="system_infos_menu">
+
+    
+    
     <!-- CPU Usage --><!--
     <eLabel backgroundColor="windowBackgroundSecond" position="1622,170" size="237,70" zPosition="-10" />
     <widget source="Title" render="Label" position="1635,170" size="100,70" font="font_standard_small" halign="left" valign="top" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground">
@@ -1439,7 +1442,7 @@
   <!-- Meine Seperators-->
   <constant-widget name="seperator_menu">
     <!--<eLabel name="Seperator" position="15,75" size="600,1" zPosition="5" backgroundColor="seperator" />-->
-    <ePixmap pixmap="MetrixReloaded/media/seperator_menu.png" position="15,75" size="615,1" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="MetrixReloaded/media/seperator_menu.png" position="menu_title_seperator_pos" size="menu_title_seperator_size" alphatest="blend" transparent="1" />
   </constant-widget>
   <constant-widget name="seperator_window_title">
     <eLabel name="Seperator" position="90,135" size="1078,2" zPosition="5" backgroundColor="seperator" />
@@ -3577,6 +3580,23 @@
   <!-- Clock -->
   <constant-widget name="clock_menu" />
   <constant-widget name="system_infos_menu" />
+
+  <widget source="session.CurrentService" render="Label" position="980,838" size="75,30" font="font_standard_extra_small" halign="left" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground">
+    <convert type="MetrixReloadedTextTranslator">hdd</convert>
+  </widget>
+
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1055,838" size="500,30" halign="left" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="accent1">
+    <convert type="MetrixReloadedLayoutInfo">HddInfo,Long</convert>
+  </widget>
+
+  <widget source="session.CurrentService" render="Label" position="980,878" size="75,30" font="font_standard_extra_small" halign="left" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground">
+    <convert type="MetrixReloadedTextTranslator">usb</convert>
+  </widget>
+
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1055,878" size="270,30" halign="left" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="accent1">
+    <convert type="MetrixReloadedLayoutInfo">UsbInfo,Free</convert>
+  </widget>
+
   <!-- Buttons - deaktiviert-->
   <widget text="menu_mainmenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -6311,11 +6331,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <variable name="vkey_pos" value="627,20" />
   <!-- Meine **********************************************************-->
   <!-- Menu -->
-  <variable name="menu_title_pos" value="20,5" />
+  <variable name="menu_title_pos" value="350,132" />
   <variable name="menu_title_size" value="590,90" />
-  <variable name="menu_list_pos" value="0,320" />
+  <variable name="menu_title_seperator_pos" value="345,204" />
+  <variable name="menu_title_seperator_size" value="615,1" />
+  <variable name="menu_list_pos" value="330,208" />
   <variable name="menu_list_size" value="630,740" />
-  <variable name="menu_icon_pos" value="200,91" />
+  <variable name="menu_icon_pos" value="1000,250" />
   <variable name="menu_icon_size" value="230,230" />
   <!-- Window -->
   <variable name="window_title_pos" value="105,55" />
