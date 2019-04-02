@@ -27,8 +27,8 @@
   <widget name="searchchar" position="window_searchbar_pos" size="window_searchbar_size" valign="center" halign="center" zPosition="100" backgroundColor="windowBackgroundSecond" transparent="0" font="SetrixHD;140" foregroundColor="foreground" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_name" />
-  <constant-widget name="key_green_name" />
-  <constant-widget name="key_yellow_name" />
+  <panel name="panel_key_red_name" />
+  <panel name="panel_key_green_name" />
+  <panel name="panel_key_yellow_name" />
   <widget text="MyPluginManager" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

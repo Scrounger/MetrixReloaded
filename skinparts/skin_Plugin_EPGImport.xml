@@ -21,10 +21,10 @@
     <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
     <!-- Buttons -->
     <panel name="panel_color_buttons_window" />
-    <constant-widget name="key_red_name" />
-    <constant-widget name="key_green_name" />
-    <constant-widget name="key_yellow_name" />
-    <constant-widget name="key_blue_name" />
+    <panel name="panel_key_red_name" />
+    <panel name="panel_key_green_name" />
+    <panel name="panel_key_yellow_name" />
+    <panel name="panel_key_blue_name" />
     <widget text="EPGImportConfig" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 	</screen>
 
@@ -45,10 +45,10 @@
     <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
     <!-- Buttons -->
     <panel name="panel_color_buttons_window" />
-    <constant-widget name="key_red_name" />
-    <constant-widget name="key_green_name" />
-    <constant-widget name="key_yellow_name" />
-    <constant-widget name="key_blue_name" />
+    <panel name="panel_key_red_name" />
+    <panel name="panel_key_green_name" />
+    <panel name="panel_key_yellow_name" />
+    <panel name="panel_key_blue_name" />
     <widget text="EPGImportSources" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
   </screen>
 	
@@ -69,8 +69,8 @@
     <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
     <!-- Buttons -->
     <panel name="panel_color_buttons_window" />
-    <constant-widget name="key_red_name" />
-    <constant-widget name="key_green_name" />
+    <panel name="panel_key_red_name" />
+    <panel name="panel_key_green_name" />
     <widget text="EPGImportProfile" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 	</screen>
 
@@ -91,10 +91,10 @@
     <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
     <!-- Buttons -->
     <panel name="panel_color_buttons_window" />
-    <constant-widget name="key_red_name" />
-    <constant-widget name="key_green_name" />
-    <constant-widget name="key_yellow_name" />
-    <constant-widget name="key_blue_name" />
+    <panel name="panel_key_red_name" />
+    <panel name="panel_key_green_name" />
+    <panel name="panel_key_yellow_name" />
+    <panel name="panel_key_blue_name" />
     <widget text="EPGImportLog" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 	</screen>
 </skin>

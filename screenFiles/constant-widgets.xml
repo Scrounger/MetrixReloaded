@@ -44,18 +44,9 @@
   <constant-widget name="blue_name">
     <widget name="blue" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   </constant-widget>
-  <constant-widget name="key_red_name">
-    <widget name="key_red" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_green_name">
-    <widget name="key_green" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_yellow_name">
-    <widget name="key_yellow" position="key_yellow_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_blue_name">
-    <widget name="key_blue" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
+  
+
+  
   <constant-widget name="key_red_name_short">
     <widget name="key_red" position="key_red_pos_short" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   </constant-widget>

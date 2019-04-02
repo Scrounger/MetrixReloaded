@@ -82,6 +82,19 @@
   <widget source="key_blue" render="Label" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
 </screen>
 
+<screen name="panel_key_red_name">
+  <widget name="key_red" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+<screen name="panel_key_green_name">
+  <widget name="key_green" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+<screen name="panel_key_yellow_name">
+  <widget name="key_yellow" position="key_yellow_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+<screen name="panel_key_blue_name">
+  <widget name="key_blue" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+
 <!-- Misc -->
 <screen name="panel_system_infos_menu">
   <widget source="Title" render="Label" position="1120,598" size="150,30" font="font_standard_extra_small" halign="left" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">

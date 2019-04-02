@@ -5,10 +5,10 @@
   <constant-widget name="clock_big" />
   <panel name="panel_Title_window" />
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_name" />
-  <constant-widget name="key_green_name" />
-  <constant-widget name="key_yellow_name" />
-  <constant-widget name="key_blue_name" />
+  <panel name="panel_key_red_name" />
+  <panel name="panel_key_green_name" />
+  <panel name="panel_key_yellow_name" />
+  <panel name="panel_key_blue_name" />
   <widget name="picon" position="1235,400" size="400,240" zPosition="2" transparent="1" backgroundColor="windowBackground" alphatest="blend" />
   <widget name="piconcount" position="45,340" size="350,36" font="Regular;32" valign="left" transparent="1" backgroundColor="windowBackground" />
   <widget name="picondownload" position="45,380" size="350,36" font="Regular;32" valign="left" transparent="1" backgroundColor="windowBackground" />

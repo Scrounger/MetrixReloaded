@@ -4,8 +4,8 @@
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="40,72" size="77,77" alphatest="blend" transparent="1" />
   <constant-widget name="clock_big" />
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_name" />
-  <constant-widget name="key_green_name" />
+  <panel name="panel_key_red_name" />
+  <panel name="panel_key_green_name" />
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget text="MyTubeSettingsScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
 </screen>

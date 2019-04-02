@@ -13,10 +13,10 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_name" />
-  <constant-widget name="key_green_name" />
-  <constant-widget name="key_yellow_name" />
-  <constant-widget name="key_blue_name" />
+  <panel name="panel_key_red_name" />
+  <panel name="panel_key_green_name" />
+  <panel name="panel_key_yellow_name" />
+  <panel name="panel_key_blue_name" />
   <ePixmap pixmap="skin_default/buttons/key_0.png" zPosition="1" position="1216,720" size="35,25" alphatest="on" />
   <ePixmap pixmap="skin_default/buttons/key_1.png" zPosition="1" position="1216,780" size="35,25" alphatest="on" />
   <ePixmap pixmap="skin_default/buttons/key_2.png" zPosition="1" position="1216,840" size="35,25" alphatest="on" />

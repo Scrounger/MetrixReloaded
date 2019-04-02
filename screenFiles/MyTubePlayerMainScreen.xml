@@ -5,9 +5,9 @@
   <constant-widget name="clock_big" />
   <panel name="panel_Title_window" />
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_name" />
-  <constant-widget name="key_green_name" />
-  <constant-widget name="key_yellow_name" />
+  <panel name="panel_key_red_name" />
+  <panel name="panel_key_green_name" />
+  <panel name="panel_key_yellow_name" />
   <widget name="config" zPosition="1" font="Regular;32" itemHeight="50" position="35,300" size="1000,50" scrollbarMode="showNever" backgroundColor="windowBackground" transparent="1" />
   <widget source="feedlist" render="Listbox" position="35,380" size="1000,500" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">

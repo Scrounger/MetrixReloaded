@@ -5,7 +5,7 @@
   <constant-widget name="clock_big" />
   <panel name="panel_Title_window" />
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_name" />
+  <panel name="panel_key_red_name" />
   <widget name="starsbg" pixmap="~/starsbar_empty.png" position="630,500" zPosition="5" size="100,20" backgroundColor="background_left" alphatest="on" />
   <widget name="stars" pixmap="~/starsbar_filled.png" position="630,500" zPosition="6" size="100,20" backgroundColor="background_left" transparent="1" />
   <widget name="title" zPosition="1" font="Regular;32" position="35,300" size="1000,50" backgroundColor="windowBackground" transparent="1" foregroundColor="accentColorOne" />

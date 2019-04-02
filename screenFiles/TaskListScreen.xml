@@ -25,6 +25,6 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_name" />
+  <panel name="panel_key_red_name" />
   <widget text="TaskListScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
