@@ -1,19 +1,19 @@
 ﻿<screen name="vEditor" position="center,center" size="1920,1080" title="">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <!-- Title -->
-  <constant-widget name="Title_window" />
+  <panel name="panel_Title_window" />
   <!-- Clock -->
-  <constant-widget name="clock_window" />
+  <panel name="panel_clock_window" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_window_title" />
+  <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
   <widget name="filedata" font="font_list" scrollbarMode="showOnDemand" position="window_list_pos" size="window_list_setup_size" itemHeight="40" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <widget name="list_head" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
-  <constant-widget name="color_buttons_window" />
+  <panel name="panel_color_buttons_window" />
   <constant-widget name="key_red_name" />
   <constant-widget name="key_green_name" />
   <constant-widget name="key_yellow_name" />

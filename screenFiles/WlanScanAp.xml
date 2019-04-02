@@ -1,6 +1,6 @@
 ﻿<screen name="WlanScanAp" position="center,center" size="1288,923" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="72,84" size="77,77" alphatest="blend" transparent="1" />
   <eLabel text="Wireless Network AP Scan..." position="168,100" size="900,65" font="BoldItalic; 52" backgroundColor="windowBackground" transparent="1" />
   <ePixmap pixmap="MetrixReloaded/buttons/red.png" position="135,198" size="32,32" alphatest="blend" />

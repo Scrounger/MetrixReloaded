@@ -1,18 +1,18 @@
 ﻿<screen name="AutoShutDownConfiguration" position="center,center" size="1920,1080" title="AutoShutDown" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <!-- Title -->
-  <constant-widget name="Title_window" />
+  <panel name="panel_Title_window" />
   <!-- Clock -->
-  <constant-widget name="clock_window" />
+  <panel name="panel_clock_window" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_window_title" />
+  <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
   <widget name="config" transparent="1" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" zPosition="10" descriptionColor="listDescription" descriptionfont="font_list_description" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/shutdown.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
-  <constant-widget name="color_buttons_window" />
+  <panel name="panel_color_buttons_window" />
   <widget name="buttonred" position="key_red_pos" size="key_size" valign="top" halign="left" zPosition="2" foregroundColor="foreground" font="font_key_standard" backgroundColor="windowBackground" transparent="1" />
   <widget name="buttongreen" position="key_green_pos" size="key_size" valign="top" halign="left" zPosition="2" foregroundColor="foreground" font="font_key_standard" backgroundColor="windowBackground" transparent="1" />
   <widget name="buttonyellow" position="key_yellow_pos" size="key_size" valign="top" halign="left" zPosition="2" foregroundColor="foreground" font="font_key_standard" backgroundColor="windowBackground" transparent="1" />

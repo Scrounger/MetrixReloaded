@@ -1,12 +1,12 @@
 ﻿<screen name="CableScanStatus" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <!-- Title -->
-  <constant-widget name="Title_window" />
+  <panel name="panel_Title_window" />
   <!-- Clock -->
-  <constant-widget name="clock_window" />
+  <panel name="panel_clock_window" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_window_title" />
+  <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/dvbc.png" position="180,200" size="220,96" transparent="1" zPosition="2" />
   <widget backgroundColor="windowBackground" font="font_standard" name="scan_state" position="180,315" size="900,45" transparent="1" zPosition="2" />

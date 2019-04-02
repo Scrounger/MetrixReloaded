@@ -1,6 +1,6 @@
 ﻿<screen name="MediaPlayer" position="center,center" size="1290,919" title="MediaPlayer" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Media.png" position="65,48" size="77,77" alphatest="blend" transparent="1" />
   <eLabel text="Media Player" position="169,58" size="550,74" font="BoldItalic; 64" backgroundColor="windowBackground" transparent="1" />
   <ePixmap pixmap="MetrixReloaded/media/icons/clock.png" position="1092,86" zPosition="1" size="31,31" alphatest="blend" />

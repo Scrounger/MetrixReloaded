@@ -1,10 +1,10 @@
 ﻿<screen name="AutoMountView" position="center,center" size="1288,923" title="AutoMountView" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="51,68" size="77,77" alphatest="blend" transparent="1" />
-  <constant-widget name="Title_window" />
+  <panel name="panel_Title_window" />
   <constant-widget name="clock_mid" />
-  <constant-widget name="color_buttons_window" />
+  <panel name="panel_color_buttons_window" />
   <widget source="key_red" render="Label" position="key_red_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget source="key_yellow" render="Label" position="key_yellow_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget source="legend1" render="Label" position="80,280" zPosition="1" size="300,60" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />

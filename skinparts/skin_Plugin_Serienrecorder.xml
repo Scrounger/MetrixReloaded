@@ -1,13 +1,13 @@
 <skin>
   <screen name="SerienRecorder" position="0,0" size="1980,1080" title="Serien Recorder" backgroundColor="transparent">
     <!-- Backgrounds -->
-    <constant-widget name="background_window" />
+    <panel name="panel_background_window" />
     <!-- Title -->
     <widget name="version" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1"/>
     <!-- Clock -->
-    <constant-widget name="clock_window" />
+    <panel name="panel_clock_window" />
     <!-- Title Seperator -->
-    <constant-widget name="seperator_window_title" />
+    <panel name="panel_seperator_window_title" />
     <!-- Left Panel ************************************************************************************** -->
 
     <!-- Subtitle / List Description -->
@@ -79,7 +79,7 @@
     <widget name="text_exit" position="1633,900" size="285,32" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" zPosition="1" />
 
     <!-- Buttons -->
-    <constant-widget name="color_buttons_window" />
+    <panel name="panel_color_buttons_window" />
     <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" position="key_red_pos" size="key_size" name="text_red" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" position="key_green_pos" size="key_size" name="text_green" transparent="1" valign="top" zPosition="1" />
     <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" position="key_yellow_pos" size="key_size" name="text_yellow" transparent="1" valign="top" zPosition="1" />

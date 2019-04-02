@@ -1,10 +1,10 @@
 ﻿<screen name="FilebrowserVTi_unpack_info" position="center,center" size="1820,980" title="" flags="wfNoBorder" backgroundColor="transparent" NoAnimationAfter="1">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="40,72" size="77,77" alphatest="blend" transparent="1" />
   <constant-widget name="clock_big" />
-  <constant-widget name="Title_window" />
-  <constant-widget name="color_buttons_window" />
+  <panel name="panel_Title_window" />
+  <panel name="panel_color_buttons_window" />
   <constant-widget name="key_red_name" />
   <constant-widget name="key_green_name" />
   <constant-widget name="key_yellow_name" />

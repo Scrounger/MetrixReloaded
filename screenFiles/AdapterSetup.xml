@@ -1,12 +1,12 @@
 ﻿<screen name="AdapterSetup" position="center,center" size="1920,1080" title="Network Setup" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <!-- Title -->
-  <constant-widget name="Title_window" />
+  <panel name="panel_Title_window" />
   <!-- Clock -->
-  <constant-widget name="clock_window" />
+  <panel name="panel_clock_window" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_window_title" />
+  <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
   <widget source="Adaptertext" render="Label" position="window_text_small_list_top_pos" size="150,50" zPosition="10" backgroundColor="windowBackground" font="font_standard" transparent="1" halign="left" />
   <widget source="Adapter" render="Label" position="275,150" size="600,50" zPosition="10" backgroundColor="windowBackground" font="font_standard" transparent="1" halign="left" />
@@ -30,7 +30,8 @@
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
-  <constant-widget name="color_buttons_window" />
+  <panel name="panel_color_buttons_window" />
+  
   <constant-widget name="key_red_source" />
   <constant-widget name="key_blue_source" />
   <widget text="AdapterSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />

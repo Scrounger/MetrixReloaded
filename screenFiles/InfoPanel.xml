@@ -1,10 +1,10 @@
 ﻿<screen name="InfoPanel" position="center,center" size="1820,980" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="40,72" size="77,77" alphatest="blend" transparent="1" />
-  <constant-widget name="title_window" />
+  <panel name="panel_title_window" />
   <constant-widget name="clock_big" />
-  <constant-widget name="color_buttons_window" />
+  <panel name="panel_color_buttons_window" />
   <eLabel position="860,300" size="2,325" zPosition="10" backgroundColor="gray" />
   <eLabel position="55,430" size="800,2" zPosition="10" backgroundColor="gray" />
   <eLabel position="865,430" size="835,2" zPosition="10" backgroundColor="gray" />

@@ -1,6 +1,6 @@
 ﻿<screen name="ServiceScan" position="center,center" size="1288,923" title="Service Scan" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
   <eLabel text="Service Scan" position="173,90" size="1000,84" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
   <constant-widget name="clock_mid" />

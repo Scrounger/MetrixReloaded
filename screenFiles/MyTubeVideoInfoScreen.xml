@@ -1,10 +1,10 @@
 ﻿<screen name="MyTubeVideoInfoScreen" title="MyTube - Video Info" Animation="off" position="center,center" size="1820,980" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Subtitles.png" position="40,72" size="77,77" alphatest="blend" transparent="1" />
   <constant-widget name="clock_big" />
-  <constant-widget name="Title_window" />
-  <constant-widget name="color_buttons_window" />
+  <panel name="panel_Title_window" />
+  <panel name="panel_color_buttons_window" />
   <constant-widget name="key_red_name" />
   <widget name="starsbg" pixmap="~/starsbar_empty.png" position="630,500" zPosition="5" size="100,20" backgroundColor="background_left" alphatest="on" />
   <widget name="stars" pixmap="~/starsbar_filled.png" position="630,500" zPosition="6" size="100,20" backgroundColor="background_left" transparent="1" />

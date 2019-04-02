@@ -2,7 +2,7 @@
   <!-- Backgrounds -->
   <constant-widget name="background_wide" />
   <!-- Title -->
-  <constant-widget name="Title_window" />
+  <panel name="panel_Title_window" />
   <!-- Title Seperator -->
   <eLabel name="Seperator" position="90,135" size="1740,2" zPosition="5" backgroundColor="seperator" />
   <widget position="40,300" size="100,60" source="Service1" render="Picon" alphatest="blend" zPosition="1">
@@ -34,7 +34,7 @@
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
   <!-- Buttons -->
-  <constant-widget name="color_buttons_window" />
+  <panel name="panel_color_buttons_window" />
   <constant-widget name="key_red_name_short" />
   <constant-widget name="key_green_name_short" />
   <constant-widget name="key_yellow_name_short" />

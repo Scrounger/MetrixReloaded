@@ -1,6 +1,6 @@
 ﻿<screen name="StalkerClient_Player" flags="wfNoBorder" position="0,801" size="1920,279" title="InfoBar" backgroundColor="transparent" animationMode="disable_onhide">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <widget name="channel_icon" position="50,100" zPosition="4" size="232,132" transparent="1" alphatest="blend" />
   <widget name="channel_name" position="1542,122" size="289,70" font="BoldItalic;34" valign="top" halign="center" foregroundColor="InfobarFgL" backgroundColor="infobarBgL" transparent="1" />
   <widget name="channel_uri" position="305,194" zPosition="1" valign="top" halign="left" size="1000,44" noWrap="1" font="Regular; 28" backgroundColor="infobarBgR" transparent="1" />

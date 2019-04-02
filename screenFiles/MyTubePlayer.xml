@@ -1,6 +1,6 @@
 ﻿<screen name="MyTubePlayer" flags="wfNoBorder" position="0,801" size="1920,278" title="MyTubePlayer" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <ePixmap position="80,65" size="75,24" pixmap="MetrixReloaded/menu/ico_title_media-info.png" alphatest="blend" />
   <ePixmap position="770,173" pixmap="MetrixReloaded/media/icons/ico_player.png" size="334,31" alphatest="blend" />
   <ePixmap pixmap="MetrixReloaded/media/icons/clock.png" position="1698,55" zPosition="1" size="31,31" alphatest="blend" />

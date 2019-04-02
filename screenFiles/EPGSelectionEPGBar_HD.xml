@@ -1,6 +1,6 @@
 ﻿<screen name="EPGSelectionEPGBar_HD" backgroundColor="transparent" flags="wfNoBorder" position="0,640" size="1920,440" NoAnimationAfter="1">
   <!-- Backgrounds -->
-  <constant-widget name="background_window" />
+  <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/buttons/red.png" position="100,338" size="31,31" alphatest="blend" />
   <ePixmap pixmap="MetrixReloaded/buttons/green.png" position="470,338" size="31,31" alphatest="blend" />
   <ePixmap pixmap="MetrixReloaded/buttons/yellow.png" position="840,338" size="31,31" alphatest="blend" />
