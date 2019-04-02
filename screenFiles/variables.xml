@@ -69,6 +69,7 @@
   <variable name="window_image_size" value="384,384" />
   <variable name="window_desc_pos" value="1216,700" />
   <variable name="window_desc_size" value="622,200" />
+  <variable name="window_vert_epg_picon_size" value="160,95" />
   <!-- Remote Buttons -->
   <variable name="window_remote_button_right_pos" value="1760,926" />
   <variable name="window_remote_button_middle_pos" value="1660,926" />
