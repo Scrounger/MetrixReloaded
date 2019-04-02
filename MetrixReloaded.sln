@@ -337,6 +337,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "skinParts", "skinParts", "{68B36529-5F60-4BAB-9754-C1F4111BD39A}"
 	ProjectSection(SolutionItems) = preProject
+		skinparts\skin_Menu_SystemInfo_Full.xml = skinparts\skin_Menu_SystemInfo_Full.xml
 		skinparts\skin_Plugin_EPG_Share.xml = skinparts\skin_Plugin_EPG_Share.xml
 		skinparts\skin_Plugin_EPGImport.xml = skinparts\skin_Plugin_EPGImport.xml
 		skinparts\skin_Plugin_EPGRefresh.xml = skinparts\skin_Plugin_EPGRefresh.xml

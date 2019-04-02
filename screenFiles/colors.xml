@@ -38,6 +38,10 @@
   <color name="slider_background" value="windowBackground" />
   <color name="slider_border" value="foreground" />
   <color name="slider_foreground" value="backgroundSecond" />
+
+  <!-- SystemInfos -->
+  <color name="sysInfo_Label" value="lightgrey" />
+  <color name="sysInfo_Value" value="lightgrey" />
   
   
   

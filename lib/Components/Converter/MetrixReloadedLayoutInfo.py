@@ -8,7 +8,7 @@
 #  License. To view a copy of this license, visit
 #  http://creativecommons.org/licenses/by-nc-sa/4.0/
 #
-#  26.03.2019: Modified for MetrixReloaded skin by scrounger
+#  02.04.2019: Modified for MetrixReloaded skin by scrounger
 #
 
 from Components.Converter.Converter import Converter
@@ -63,6 +63,7 @@ class MetrixReloadedLayoutInfo(Poll, Converter):
         self.shortFormat = 'Short' in type
         self.fullFormat = 'Full' in type
         self.freeFormat = 'Free' in type
+        self.freeOnlyFormat = 'FreeOnly' in type
         self.usedFormat = 'Used' in type
         self.longFormat = 'Long' in type
         if 'HddTemp' in type:
@@ -116,12 +117,14 @@ class MetrixReloadedLayoutInfo(Poll, Converter):
             else:
                 list = self.getMemInfo(entry[0])
             if list[0] == 0:
-                if self.freeFormat or self.usedFormat or self.longFormat:
+                if self.freeFormat or self.freeOnlyFormat or self.usedFormat or self.longFormat:
                     text = _('not available')
                 else:
                     text = entry[1]+': '+_('not available')
             elif self.freeFormat:
                     text = self.getSizeStr(list[0])+', '+self.getSizeStr(list[2])+' '+_('free')
+            elif self.freeOnlyFormat:
+                    text = self.getSizeStr(list[2])+' '+_('free')
             elif self.usedFormat:
                     text = self.getSizeStr(list[0])+', '+str(list[3])+'% '+_('used')
             elif self.longFormat:
