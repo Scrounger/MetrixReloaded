@@ -13,9 +13,9 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
   <!--<widget source="key_red" render="Label" position="key_red_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget source="key_green" render="Label" position="key_green_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget source="key_yellow" render="Label" position="key_yellow_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />-->

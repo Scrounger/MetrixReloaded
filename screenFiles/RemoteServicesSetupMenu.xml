@@ -16,7 +16,7 @@
   <widget source="ServiceList_info" render="Label" position="233,325" size="825,375" zPosition="2" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="RemoteServicesSetupMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

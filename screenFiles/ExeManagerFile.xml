@@ -14,8 +14,8 @@
   <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" valign="center" halign="center" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget name="keyblue" position="key_blue_mid_pos" zPosition="1" size="key_size_mid" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget text="ExeManagerFile" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

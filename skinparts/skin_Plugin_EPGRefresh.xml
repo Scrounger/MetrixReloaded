@@ -17,10 +17,10 @@
 		<ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/epg.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
 		<!-- Buttons -->
 		<panel name="panel_color_buttons_window" />
-		<constant-widget name="key_red_source" />
-		<constant-widget name="key_green_source" />
-		<constant-widget name="key_yellow_source" />
-		<constant-widget name="key_blue_source" />
+		<panel name="panel_key_red_source" />
+		<panel name="panel_key_green_source" />
+		<panel name="panel_key_yellow_source" />
+		<panel name="panel_key_blue_source" />
     <widget text="EPGRefreshConfiguration" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 	</screen>
 	<screen name="EPGRefreshServiceEditor" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -38,10 +38,10 @@
 		<ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
 		<!-- Buttons -->
 		<panel name="panel_color_buttons_window" />
-		<constant-widget name="key_red_source" />
-		<constant-widget name="key_green_source" />
-		<constant-widget name="key_yellow_source" />
-		<constant-widget name="key_blue_source" />
+		<panel name="panel_key_red_source" />
+		<panel name="panel_key_green_source" />
+		<panel name="panel_key_yellow_source" />
+		<panel name="panel_key_blue_source" />
     <widget text="EPGRefreshServiceEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 	</screen>
 </skin>

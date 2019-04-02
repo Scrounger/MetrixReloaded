@@ -27,7 +27,7 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
+  <panel name="panel_key_red_source" />
   <constant-widget name="key_green_name" />
   <constant-widget name="key_yellow_name" />
   <constant-widget name="key_blue_name" />

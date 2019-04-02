@@ -44,8 +44,8 @@
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="AdapterSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AdapterSetupConfiguration" position="center,center" size="1920,1080" title="Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
@@ -70,7 +70,7 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
+  <panel name="panel_key_red_source" />
   <widget text="AdapterSetupConfiguration" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="addExe" position="center,center" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">
@@ -88,8 +88,9 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  
   <widget text="addExe" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="addJob" position="center,center" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">
@@ -107,8 +108,8 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="addJob" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AllNews" position="center,center" size="1920,1080" title="VTI News" flags="wfNoBorder" backgroundColor="transparent">
@@ -137,10 +138,11 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
+  
   <widget text="AllNews" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AnimationSetupConfig" position="center,center" size="1920,1080" title="Animation Settings" flags="wfNoBorder" backgroundColor="transparent">
@@ -178,9 +180,9 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="AnimationSetupScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AtileHDScreens" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -212,8 +214,8 @@
   <widget name="Picture" position="1216,320" size="622,350" alphatest="blend" backgroundColor="windowBackground" zPosition="1"/>
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="AtileHDScreens" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AtileHD_About" backgroundColor="windowBackground" position="660,310" size="600,250" title="MetrixReloaded">
@@ -326,7 +328,7 @@
   <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
+  <panel name="panel_key_red_source" />
   <widget text="AutoMountEdit" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AutoMountManager" position="center,center" size="1920,1080" title="MountManager" flags="wfNoBorder" backgroundColor="transparent">
@@ -356,7 +358,7 @@
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
+  <panel name="panel_key_red_source" />
   <widget text="AutoMountManager" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AutoMountView" position="center,center" size="1288,923" title="AutoMountView" flags="wfNoBorder" backgroundColor="transparent">
@@ -425,10 +427,10 @@
   <widget source="help" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="AutoTimerEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AutoTimerFilterEditor" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -446,10 +448,10 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/autotimer.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="AutoTimerFilterEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AutoTimerImporter" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -467,10 +469,10 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/autotimer.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="AutoTimerImporter" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AutoTimerOverview" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -490,9 +492,9 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="AutoTimerOverview" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AutoTimerPreview" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -523,7 +525,7 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/autotimer.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
+  <panel name="panel_key_red_source" />
   <widget text="AutoTimerPreview" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AutoTimerServiceEditor" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -541,10 +543,10 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/autotimer.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="AutoTimerServiceEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AutoTimerSettings" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -563,8 +565,8 @@
   <widget source="help" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="AutoTimerSettings" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="BackupSelection" position="center,center" size="1920,1080" title="Select files/folders to backup" flags="wfNoBorder" backgroundColor="transparent">
@@ -583,9 +585,9 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
   <widget text="BackupSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="BackupSuite" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent" NoAnimationAfter="1">
@@ -611,9 +613,9 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
   <widget text="BackupSuite" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="BackupSuiteRestore" position="center,center" size="1920,1080" title="Restore backups" flags="wfNoBorder" backgroundColor="transparent">
@@ -631,9 +633,9 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
   <widget text="BackupSuiteRestore" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="BitrateViewer" title="Bitrate Viewer" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -688,9 +690,9 @@
   <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="Blindscan" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="BluetoothDiscoveryScreen" position="center,center" title="Bluetooth Discovery" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -774,8 +776,8 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="BluetoothSetupConfig" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="BluetoothSetupScreen" position="center,center" title="Bluetooth Setup" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -863,7 +865,7 @@
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="foreground" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
+  <panel name="panel_key_red_source" />
   <widget text="CAidSelect" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="CamSelectMenu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent" NoAnimationAfter="1">
@@ -891,10 +893,10 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="CamSelectMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="ChannelContextMenu" title="Channellist menu" position="center,center" size="1050,750" flags="wfNoBorder" backgroundColor="transparent">
@@ -1086,8 +1088,8 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/browser.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="ChromiumOSSettings" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="ChromiumOSWindow" position="center,center" size="1288,923" title="Start ChromiumOS" flags="wfNoBorder" backgroundColor="transparent">
@@ -1129,10 +1131,10 @@
   <widget source="ServiceList_info" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="CIconfigMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="CiSelection" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -1166,8 +1168,8 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="CIselectMainMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <colors>
@@ -1339,18 +1341,6 @@
   </constant-widget>
   <constant-widget name="key_blue_name_long">
     <widget name="key_blue_long" position="key_blue_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_red_source">
-    <widget source="key_red" render="Label" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_green_source">
-    <widget source="key_green" render="Label" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_yellow_source">
-    <widget source="key_yellow" render="Label" position="key_yellow_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_blue_source">
-    <widget source="key_blue" render="Label" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   </constant-widget>
   <constant-widget name="key_name_graphMultiEpg_Fullscreen">
     <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" name="key_red" position="67,1018" size="key_size" transparent="1" valign="top" />
@@ -1844,10 +1834,10 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="CronManager" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="CronManagerFile" position="center,center" size="1920,1080" title="DVD File Browser" flags="wfNoBorder" backgroundColor="transparent">
@@ -1866,8 +1856,8 @@
   <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget name="keyblue" position="key_blue_mid_pos" zPosition="1" size="key_size_mid" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget text="CronManagerFile" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -1968,7 +1958,7 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
+  <panel name="panel_key_red_source" />
   <constant-widget name="key_green_name" />
   <constant-widget name="key_yellow_name" />
   <constant-widget name="key_blue_name" />
@@ -1991,8 +1981,8 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="DeviceManager2Message" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="DriverManagerDownload" position="center,center" size="1920,1080" title="VTI DriverManager" flags="wfNoBorder" backgroundColor="transparent">
@@ -2021,8 +2011,8 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="DriverManagerDownload" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="DVB_EPG_blacklist_ChannelSelection" position="center,center" size="1920,1080" title="Select service to add..." flags="wfNoBorder" backgroundColor="transparent">
@@ -2040,10 +2030,10 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="DVB_EPG_blacklist_ChannelSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="DVDPlayer" flags="wfNoBorder" position="0,801" size="1920,279" title="DVDPlayer" backgroundColor="transparent">
@@ -2099,9 +2089,9 @@
   <widget source="ServiceList_desc" render="Label" position="233,300" size="825,33" font="Regular;30" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
   <widget text="easyCIconfigMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="Edit_DVB_EPG_Blacklist" position="center,center" size="1920,1080" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">
@@ -2119,10 +2109,10 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="Edit_DVB_EPG_Blacklist" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="EPGPanel" position="center,center" size="1920,1080" title="VTI EPGPanel" flags="wfNoBorder" backgroundColor="transparent">
@@ -2142,8 +2132,8 @@
   <widget name="status" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="EPGPanel" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="EPGSearchSetup" position="center,center" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -2161,8 +2151,8 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="EPGSearchSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="EPGSelection" position="center,center" size="1920,1080" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent" NoAnimationAfter="1">
@@ -2400,10 +2390,10 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="ExeManager" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="ExeManagerFile" position="center,center" size="1920,1080" title="DVD File Browser" flags="wfNoBorder" backgroundColor="transparent">
@@ -2422,8 +2412,8 @@
   <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" valign="center" halign="center" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget name="keyblue" position="key_blue_mid_pos" zPosition="1" size="key_size_mid" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget text="ExeManagerFile" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -2477,8 +2467,8 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="FCCSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="FileBrowser" position="center,center" size="1920,1080" title="DVD File Browser" flags="wfNoBorder" backgroundColor="transparent">
@@ -2496,8 +2486,8 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/dvd.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="FileBrowser" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="FilebrowserConfigScreenVTi" position="center,center" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
@@ -2612,8 +2602,8 @@
   <widget name="current_selection" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" valign="center" halign="center" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="FileDirBrowser" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <fonts>
@@ -2970,10 +2960,10 @@
   <ePixmap pixmap="MetrixReloaded/media/icons/hdmicec.png" position="window_image_pos" size="window_image_size" alphatest="blend" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="HdmiCecPlugin" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="HelpMenu" position="0,0" size="1920,1080" title="Menu" flags="wfNoBorder">
@@ -3202,8 +3192,8 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="InputMacroName" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="InputPanelPassword" position="center,center" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">
@@ -3219,8 +3209,8 @@
   <widget name="config" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="InputPanelPassword" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="Ipkg" position="center,center" size="1920,1080" title="Installing Software..." flags="wfNoBorder" backgroundColor="transparent">
@@ -3348,8 +3338,8 @@
   <ePixmap pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" alphatest="blend" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="LiveStreamingLinks" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="LiveStreamingLinksHeader" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -3708,10 +3698,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="MetrixReloadedSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="MinuteInput" backgroundColor="transparent" position="center,center" size="420,90" title="Seek">
@@ -3741,8 +3731,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="modifyExe" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="modifyJob" position="center,center" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">
@@ -3760,8 +3750,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="modifyJob" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="MovieContextMenu" title="Movielist menu" position="center,center" size="1050,750" flags="wfNoBorder" backgroundColor="transparent">
@@ -3956,10 +3946,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="MPHelp" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="MultiQuickButton" title="MultiQuickButton Panel" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -4037,8 +4027,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" valign="center" halign="center" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget name="keyblue" position="key_blue_mid_pos" zPosition="1" size="key_size_mid" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget text="MultiQuickButtonScript" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -4062,10 +4052,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="myChannelSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="myPacketManager" title="Download or delete Cam" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -4096,8 +4086,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="myPacketManager" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="MyPluginManager" title="VTi SoftwareManager" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -4151,10 +4141,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="myProviderSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="MyTubeHistoryScreen" title="MyTube - History" position="1100,430" zPosition="10" size="740,500" flags="wfNoBorder" backgroundColor="windowBackground" Animation="off">
@@ -4382,10 +4372,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="NetworkAdapterSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="NetworkAdapterTest" position="center,center" size="1288,923" title="Network test..." flags="wfNoBorder" backgroundColor="transparent">
@@ -4464,10 +4454,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="infotext" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="NetworkBrowser" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="NetworkWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder">
@@ -4520,9 +4510,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
   <widget text="NimSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="NimSetup" position="center,center" size="1920,1080" title="Reception Settings" flags="wfNoBorder" backgroundColor="transparent">
@@ -4540,8 +4530,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="NimSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="NTPManager" position="center,center" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">
@@ -4681,9 +4671,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
   <widget text="PanelPassword" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <!-- Backgrounds -->
@@ -4755,6 +4745,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap pixmap="MetrixReloaded/media/buttons/key_green.png" position="333,952" size="45,60" alphatest="blend" />
   <ePixmap pixmap="MetrixReloaded/media/buttons/key_yellow.png" position="615,952" size="45,60" alphatest="blend" />
   <ePixmap pixmap="MetrixReloaded/media/buttons/key_blue.png" position="892,952" size="45,60" alphatest="blend" />
+</screen>
+
+<screen name="panel_key_red_source">
+  <widget source="key_red" render="Label" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+<screen name="panel_key_green_source">
+  <widget source="key_green" render="Label" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+<screen name="panel_key_yellow_source">
+  <widget source="key_yellow" render="Label" position="key_yellow_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+<screen name="panel_key_blue_source">
+  <widget source="key_blue" render="Label" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
 </screen>
 
 <!-- Misc -->
@@ -5013,10 +5016,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="thn" position="window_desc_pos" size="window_desc_size" alphatest="on" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="picshow" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="PictureInPicture" position="0,0" zPosition="-1" size="1980,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -5049,7 +5052,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/pplayer.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
+  <panel name="panel_key_red_source" />
   <widget text="Pic_Exif" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="PinInput" position="center,center" size="1000,450" title="Pin code needed">
@@ -5239,8 +5242,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="RecordPathsSettings" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="ReduceMenuConfig" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -5269,9 +5272,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
   <widget text="ReduceMenuConfig" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="RemoteControlCode" position="center,center" size="1920,1080" title="RemoteControlCode" flags="wfNoBorder" backgroundColor="transparent">
@@ -5290,8 +5293,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/remotecontrol.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="RemoteControlCode" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="RemoteServicesSetupMenu" position="center,center" size="1920,1080" title="Streaming service assignment" flags="wfNoBorder" backgroundColor="transparent">
@@ -5312,8 +5315,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="ServiceList_info" render="Label" position="233,325" size="825,375" zPosition="2" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="RemoteServicesSetupMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="RemoteTimerScreen" position="center,center" size="1920,1080" title="Remote Timer" flags="wfNoBorder" backgroundColor="transparent">
@@ -5392,10 +5395,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="SATIPClient" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="SATIPTuner" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -5415,9 +5418,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="choices" render="Label" position="127,770" size="1050,70" font="font_standard" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
   <widget text="SATIPTuner" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="ScanIP" position="center,center" size="1920,1080" title="Scan IP" flags="wfNoBorder" backgroundColor="transparent">
@@ -5435,9 +5438,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
   <!--<widget source="key_red" render="Label" position="key_red_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget source="key_green" render="Label" position="key_green_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget source="key_yellow" render="Label" position="key_yellow_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />-->
@@ -5584,10 +5587,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="ServerEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="ServiceInfo" position="center,center" size="1920,1080" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent">
@@ -5663,8 +5666,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="configdesc" render="Label" foregroundColor="foreground" font="font_standard" position="window_desc_pos" size="window_desc_size" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="Setup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="ShootYourScreenConfig" title="ShootYourScreen for Vu+" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -5830,10 +5833,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="infomation" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="StalkerClient_ChannelSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="StalkerClient_Player" flags="wfNoBorder" position="0,801" size="1920,279" title="InfoBar" backgroundColor="transparent" animationMode="disable_onhide">
@@ -5895,10 +5898,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="statusbar" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="StreamingChannelFromServerScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="SubtitleDisplay" position="0,0" size="1920,1080" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent">
@@ -5935,10 +5938,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="TagEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="TaskListScreen" flags="wfNoBorder" position="center,center" size="1920,1080" title="Tasks" backgroundColor="transparent">
@@ -6196,10 +6199,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="text" render="Label" position="35,820" size="1740,40" font="Regular;34" valign="center" halign="center" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="TranscodingSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="TunerState" title="Tuner State" flags="wfNoBorder" position="0,761" size="1820,40" zPosition="5" padding="30" spacing="20" backgroundColor="InfobarFgL" Animation="off">
@@ -6233,8 +6236,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/ui.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="UI3DSetupScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="UIPositionSetup" position="0,0" size="1920,1080" title="Screen Position Setup" backgroundColor="windowBackground" flags="wfNoBorder">
@@ -6322,8 +6325,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="UserManager" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <variables>
@@ -6522,10 +6525,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="VideoEnhancementSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="VideoFinetune" position="0,0" size="1920,1080" backgroundColor="black">
@@ -6604,10 +6607,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="VTIMainMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="VTIPasswdScreen" position="center,center" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">
@@ -6625,10 +6628,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="VTIPasswdScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="VTIStatusListMenu" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -6689,7 +6692,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
+  <panel name="panel_key_red_source" />
   <widget text="VTISubMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="VTiUpdateInfo" position="center,center" size="1920,1080" title="VTI News" flags="wfNoBorder" backgroundColor="transparent">
@@ -6708,10 +6711,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="VTiUpdateInfo" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="VuRcuOtaUpdate" position="center,center" size="1288,923" title="VU RCU OTA Update" flags="wfNoBorder" backgroundColor="transparent">
@@ -6814,9 +6817,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="info" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="foreground" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
   <widget text="WlanScan" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="WlanScanAp" position="center,center" size="1288,923" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
@@ -6859,8 +6862,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="WlanSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="WlanSetup" position="center,center" size="1920,1080" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
@@ -6880,8 +6883,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="WlanSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="WlanStatus" position="center,center" size="1288,923" title="Wireless Network State" flags="wfNoBorder" backgroundColor="transparent">
@@ -6930,10 +6933,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
-  <constant-widget name="key_yellow_source" />
-  <constant-widget name="key_blue_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
   <widget text="WOLSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="YoutubeTVSettings" position="center,center" size="1820,980" flags="wfNoBorder" backgroundColor="transparent">
@@ -6943,8 +6946,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <constant-widget name="clock_big" />
   <eLabel text="YouTube TV Settings" position="title_big_pos" valign="center" size="title_big_size" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget text="YoutubeTVSettings" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
 </screen>
@@ -6983,8 +6986,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
-  <constant-widget name="key_green_source" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
   <widget text="ZappingModeSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 </skin>

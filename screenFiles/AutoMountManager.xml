@@ -25,6 +25,6 @@
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_source" />
+  <panel name="panel_key_red_source" />
   <widget text="AutoMountManager" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
