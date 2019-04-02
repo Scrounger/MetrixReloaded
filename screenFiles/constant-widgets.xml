@@ -12,18 +12,6 @@
     </widget>
   </constant-widget>
   <!-- Meine Backgrounds-->
-  <constant-widget name="background_menu">
-    <eLabel backgroundColor="windowBackground" position="330,132" size="630,816" zPosition="-10" />
-    <eLabel backgroundColor="windowBackgroundSecond" position="960,152" size="630,776" zPosition="-10" />
-    <!--<ePixmap pixmap="MetrixReloaded/media/background_menu_list.png" position="345,208" size="615,740" alphatest="blend" transparent="1" />-->
-    <!-- Debug: Menu Entry anzeigen -->
-    <widget backgroundColor="windowBackgroundSecond" font="SetrixSL;16" foregroundColor="foreground" render="Label" source="menu" position="1320,500" size="250,27" halign="right" valign="center" transparent="1" zPosition="9">
-      <convert type="MetrixReloadedMenuEntryLabel"></convert>
-    </widget>
-    <widget alphatest="blend" pixmap="MetrixReloaded/media/background_isRecording.png" position="887,0" render="Pixmap" size="146,37" source="session.RecordState" zPosition="2">
-      <convert type="ConditionalShowHide" />
-    </widget>
-  </constant-widget>
   <constant-widget name="background_window">
     <eLabel backgroundColor="windowBackground" position="60,37" size="1132,975" zPosition="-10" />
     <eLabel backgroundColor="windowBackgroundSecond" position="1192,90" size="667,870" zPosition="-10" />
@@ -121,14 +109,6 @@
     <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" name="key_blue" position="1275,1018" size="key_size" transparent="1" valign="top" />
   </constant-widget>
   <!-- Meine Clocks-->
-  <constant-widget name="clock_menu">
-    <widget backgroundColor="windowBackgroundSecond" font="font_menu_time" halign="right" valign="center" position="1390,162" render="Label" size="180,60" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget backgroundColor="windowBackgroundSecond" font="font_menu_date" halign="right" valign="center" position="980,182" render="Label" size="460,40" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%A %e. %B</convert>
-    </widget>
-  </constant-widget>
   <constant-widget name="clock_window">
     <widget backgroundColor="windowBackground" font="font_window_time" halign="right" position="975,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
       <convert type="ClockToText">Default</convert>
@@ -155,10 +135,6 @@
     <eLabel backgroundColor="windowBackgroundSecond" position="1620,42" size="237,100" zPosition="-10" />
   </constant-widget>
   <!-- Meine Seperators-->
-  <constant-widget name="seperator_menu">
-    <!--<eLabel name="Seperator" position="15,75" size="600,1" zPosition="5" backgroundColor="seperator" />-->
-    <ePixmap pixmap="MetrixReloaded/media/seperator_menu.png" position="menu_title_seperator_pos" size="menu_title_seperator_size" alphatest="blend" transparent="1" />
-  </constant-widget>
   <constant-widget name="seperator_window_title">
     <eLabel name="Seperator" position="90,135" size="1078,2" zPosition="5" backgroundColor="seperator" />
   </constant-widget>
@@ -169,9 +145,6 @@
     <eLabel name="Seperator" position="45,70" size="1830,2" zPosition="5" backgroundColor="seperator" />
   </constant-widget>
   <!-- Meine Titles-->
-  <constant-widget name="title_menu">
-    <widget source="title" render="Label" position="menu_title_pos" size="menu_title_size" font="font_menu_title" transparent="1" noWrap="1" />
-  </constant-widget>
   <constant-widget name="title_window">
     <widget source="title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1" />
   </constant-widget>
@@ -189,12 +162,6 @@
   <constant-widget name="recIcon_top">
     <widget alphatest="blend" pixmap="MetrixReloaded/media/background_isRecording.png" position="887,0" render="Pixmap" size="146,37" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide" />
-    </widget>
-  </constant-widget>
-  <!-- Icons -->
-  <constant-widget name="icons_menu">
-    <widget alphatest="blend" path="media/icons/menu" position="menu_icon_pos" render="MetrixReloadedIcon" size="menu_icon_size" source="menu" zPosition="3" scale="1">
-      <convert type="MetrixReloadedMenuEntryID"></convert>
     </widget>
   </constant-widget>
   <!-- InfoBar - Icons -->
