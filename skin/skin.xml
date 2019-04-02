@@ -6248,8 +6248,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <eLabel position="1895,880" size="20,195" zPosition="1" backgroundColor="blue" />
   <widget text="UIPositionSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="UnhandledKey" flags="wfNoBorder" position="1622,42" size="237,100" title="UnhandledKey" zPosition="0" backgroundColor="windowBackgroundSecond">
-  <widget name="UnhandledKeyPixmap" pixmap="MetrixReloaded/media/unhandled-key.png" position="85,17" size="67,66" alphatest="blend" />
+<screen name="UnhandledKey" flags="wfNoBorder" position="1759,42" size="100,100" title="UnhandledKey" zPosition="0" backgroundColor="windowBackgroundSecond">
+  <widget name="UnhandledKeyPixmap" pixmap="MetrixReloaded/media/unhandled-key.png" position="20,20" size="60,60" alphatest="blend" />
 </screen>
 <screen name="UpdatePlugin" position="center,center" size="1920,1080" title="Software update" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
