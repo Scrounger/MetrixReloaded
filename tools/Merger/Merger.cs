@@ -10,7 +10,7 @@ namespace Merger
     {
         static void Main(string[] args)
         {
-            ScreenMerger.Run(true, true, true);
+            ScreenMerger.Run(true, true, true, true);
         }
     }
 }

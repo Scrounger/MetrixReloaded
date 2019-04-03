@@ -8,7 +8,7 @@ namespace Helper
 {
     public class ScreenMerger
     {
-        public static void Run(bool withProduction, bool withVersion, bool logSettings)
+        public static void Run(bool withProduction, bool withVersion, bool logSettings, bool withOpenSkinDesigner = false)
         {
             try
             {
@@ -87,6 +87,33 @@ namespace Helper
                         Thread.Sleep(2000);
                     }
                     else
+                    {
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine(String.Format("Warn: path not exist: {0}", settings.VuPlusSkinPath));
+                        Console.WriteLine();
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.Write("Press any key to exit");
+                        Console.ReadKey();
+                    }
+                }
+
+                if (withOpenSkinDesigner)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine(String.Format("Connecting to OpenSkin Designer..."));
+
+                    if (Directory.Exists(settings.OpenSkinDesignerSkinPath))
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine(String.Format("Copy files to OpenSkin Designer", skinFileName));
+                        Console.WriteLine("---------------------------------------------------------------------------------------------------");
+
+                        string skinOSDFileName = settings.OpenSkinDesignerSkinPath + "skin.xml";
+                        ProgressBar.Draw("copy skin.xml", 1, 1);
+
+                        File.Copy(skinFileName, skinOSDFileName, true);
+                    } else
                     {
                         Console.WriteLine();
                         Console.ForegroundColor = ConsoleColor.Yellow;

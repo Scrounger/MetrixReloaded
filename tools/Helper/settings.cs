@@ -90,6 +90,15 @@ namespace Helper
             set { this.screenNameElementMetrixReloaded = value; }
         }
 
+        private string openSkinDesignerSkinPath;
+
+        [JsonProperty(PropertyName = "openSkinDesignerSkinPath")]
+        public string OpenSkinDesignerSkinPath
+        {
+            get { return CreatePath(this.openSkinDesignerSkinPath); }
+            set { this.openSkinDesignerSkinPath = value; }
+        }
+
         public static Settings Load()
         {
             Settings settings;

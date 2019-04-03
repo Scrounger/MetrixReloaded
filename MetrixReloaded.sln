@@ -232,6 +232,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles"
 		screenFiles\ParentalControlEditor.xml = screenFiles\ParentalControlEditor.xml
 		screenFiles\ParentalControlSetup.xml = screenFiles\ParentalControlSetup.xml
 		screenFiles\Pic_Exif.xml = screenFiles\Pic_Exif.xml
+		screenFiles\PiconManager_parameters.xml = screenFiles\PiconManager_parameters.xml
 		screenFiles\PiconManagerFolderScreen.xml = screenFiles\PiconManagerFolderScreen.xml
 		screenFiles\PiconManagerScreen.xml = screenFiles\PiconManagerScreen.xml
 		screenFiles\picshow.xml = screenFiles\picshow.xml
