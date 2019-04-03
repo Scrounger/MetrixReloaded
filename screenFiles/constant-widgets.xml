@@ -21,12 +21,7 @@
 
 
   <!-- Color Buttons (Red, Green, Yellow, Blue) -->
-  <constant-widget name="color_buttons_graphMultiEpg">
-    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/key_red.png" position="7,1020" size="45,60" />
-    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/key_green.png" position="397,1020" size="45,60" />
-    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/key_yellow.png" position="802,1020" size="45,60" />
-    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/key_blue.png" position="1215,1020" size="45,60" />
-  </constant-widget>
+
   <constant-widget name="red_name">
     <widget name="red" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   </constant-widget>
@@ -66,21 +61,9 @@
   <constant-widget name="key_blue_name_long">
     <widget name="key_blue_long" position="key_blue_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   </constant-widget>
-  <constant-widget name="key_name_graphMultiEpg_Fullscreen">
-    <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" name="key_red" position="67,1018" size="key_size" transparent="1" valign="top" />
-    <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" name="key_green" position="457,1018" size="key_size" transparent="1" valign="top" />
-    <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" name="key_yellow" position="862,1018" size="key_size" transparent="1" valign="top" />
-    <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" name="key_blue" position="1275,1018" size="key_size" transparent="1" valign="top" />
-  </constant-widget>
+
   <!-- Meine Clocks-->
-  <constant-widget name="clock_graphMultiEpg_Fullscreen">
-    <widget backgroundColor="windowBackground" font="font_window_time" halign="right" position="1680,5" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget backgroundColor="windowBackground" font="font_window_date" halign="right" position="1400,30" render="Label" size="257,40" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText">Format:%a %e. %B</convert>
-    </widget>
-  </constant-widget>
+
   <constant-widget name="clock_infoBar">
     <widget backgroundColor="windowBackgroundSecond" font="font_menu_time" halign="right" position="1660,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
       <convert type="ClockToText">Default</convert>
@@ -94,14 +77,10 @@
   <constant-widget name="seperator_contextMenu_title">
     <eLabel name="Seperator" position="0,60" size="1050,2" zPosition="5" backgroundColor="seperator" />
   </constant-widget>
-  <constant-widget name="seperator_graphMultiEpg_Fullscreen">
-    <eLabel name="Seperator" position="45,70" size="1830,2" zPosition="5" backgroundColor="seperator" />
-  </constant-widget>
+
   <!-- Meine Titles-->
 
-  <constant-widget name="Title_graphMultiEpg_Fullscreen">
-    <widget foregroundColor="foreground" backgroundColor="windowBackground" font="font_window_title" halign="left" position="60,5" size="window_title_size" render="MetrixReloadedClearFavName" source="Title" transparent="1" />
-  </constant-widget>
+
   
   <!-- Rec Icon-->
   <constant-widget name="recIcon_top">
