@@ -1,13 +1,16 @@
-﻿<screen name="PiconManagerFolderScreen" position="center,center" size="1288,923" flags="wfNoBorder" backgroundColor="transparent">
+﻿<screen name="PiconManagerFolderScreen" position="center,center" size="1050,750" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <panel name="panel_title_window" />
-  <constant-widget name="clock_mid" />
-  <panel name="panel_color_buttons_window" />
-  <widget source="key_red" render="Label" position="key_red_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget source="key_green" render="Label" position="key_green_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget name="media" position="90,300" size="1118,50" font="Regular;32" backgroundColor="windowBackground" transparent="1" halign="left" />
-  <widget name="folderlist" position="80,350" size="1128,500" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
-  <widget text="PiconManagerFolderScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+  <panel name="panel_background_contextMenu" />
+  <!-- Title -->
+  <panel name="panel_Title_contextMenu" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_contextMenu_title" />
+  <!-- Context Panel -->
+  <widget name="folderlist" backgroundColorRows="listBackgroundBarsOne" position="contextMenu_list_pos" size="1020,540" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="media" position="15,635" size="1020,40" font="font_standard_small" backgroundColor="windowBackground" foregroundColor="accent1" transparent="1" halign="center" />
+  <!-- Buttons -->
+  <panel name="panel_color_two_buttons_contextMenu" />
+  <widget source="key_red" render="Label" position="54,690" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+  <widget source="key_green" render="Label" position="334,690" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+  <widget text="PiconManagerFolderScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="850,725" />
 </screen>
