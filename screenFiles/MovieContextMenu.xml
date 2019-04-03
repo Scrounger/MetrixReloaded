@@ -1,10 +1,10 @@
 ﻿<screen name="MovieContextMenu" title="Movielist menu" position="center,center" size="1050,750" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_contextMenu" />
+  <panel name="panel_background_contextMenu" />
   <!-- Title -->
-  <constant-widget name="Title_contextMenu" />
+  <panel name="panel_Title_contextMenu" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_contextMenu_title" />
+  <panel name="panel_seperator_contextMenu_title" />
   <!-- Context Panel -->
   <widget name="menu" backgroundColorRows="listBackgroundBarsOne" position="contextMenu_list_pos" size="contextMenu_list_size" textOffset="5,1" font="font_list" itemHeight="50" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget text="MovieContextMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="850,725" />

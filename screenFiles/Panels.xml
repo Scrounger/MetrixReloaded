@@ -18,6 +18,10 @@
 <screen name="panel_background_wide">
   <eLabel backgroundColor="windowBackground" position="60,37" size="1800,975" zPosition="-10" />
 </screen>
+<screen name="panel_background_contextMenu">
+  <eLabel backgroundColor="windowBackgroundSecond" position="0,0" size="1050,60" zPosition="-10" />
+  <eLabel backgroundColor="windowBackground" position="0,60" size="1050,690" zPosition="-10" />
+</screen>
 
 <!-- Seperators -->
 <screen name="panel_seperator_menu">
@@ -25,6 +29,9 @@
 </screen>
 <screen name="panel_seperator_window_title">
   <eLabel name="Seperator" position="90,135" size="1078,2" zPosition="5" backgroundColor="seperator" />
+</screen>
+<screen name="panel_seperator_contextMenu_title">
+  <eLabel name="Seperator" position="0,60" size="1050,2" zPosition="5" backgroundColor="seperator" />
 </screen>
 
 <!-- Icons / Images -->
@@ -71,6 +78,9 @@
 <screen name="panel_title_window">
   <widget source="title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1" />
 </screen>
+<screen name="panel_Title_contextMenu">
+  <widget source="Title" render="Label" position="contextMenu_title_pos" size="contextMenu_title_size" font="font_contextMenu_title" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" />
+</screen>
 
 <!-- Buttons -->
 <screen name="panel_color_buttons_window">
@@ -78,6 +88,11 @@
   <ePixmap pixmap="MetrixReloaded/media/buttons/key_green.png" position="333,952" size="45,60" alphatest="blend" />
   <ePixmap pixmap="MetrixReloaded/media/buttons/key_yellow.png" position="615,952" size="45,60" alphatest="blend" />
   <ePixmap pixmap="MetrixReloaded/media/buttons/key_blue.png" position="892,952" size="45,60" alphatest="blend" />
+</screen>
+
+<screen name="panel_color_two_buttons_contextMenu">
+  <ePixmap pixmap="MetrixReloaded/media/buttons/key_red.png" position="0,690" size="45,60" alphatest="blend" />
+  <ePixmap pixmap="MetrixReloaded/media/buttons/key_green.png" position="281,690" size="45,60" alphatest="blend" />  
 </screen>
 
 <screen name="panel_key_red_source">

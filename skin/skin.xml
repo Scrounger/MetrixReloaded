@@ -1,11 +1,11 @@
 <skin>
 <screen name="About" position="center,center" size="1050,750" title="About" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_contextMenu" />
+  <panel name="panel_background_contextMenu" />
   <!-- Title -->
-  <constant-widget name="Title_contextMenu" />
+  <panel name="panel_Title_contextMenu" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_contextMenu_title" />
+  <panel name="panel_seperator_contextMenu_title" />
   <!-- Context Panel -->
   <widget name="FullAbout" position="contextMenu_list_pos" size="contextMenu_list_size" font="font_list" transparent="1" zPosition="1" backgroundColor="windowBackground" scrollbarWidth="6" scrollbarSliderBorderWidth="0" />
   <widget text="About" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="850,725" />
@@ -253,11 +253,11 @@
 </screen>
 <screen name="AudioSelection" position="center,center" size="1050,750" title="Audio" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_contextMenu" />
+  <panel name="panel_background_contextMenu" />
   <!-- Title -->
-  <constant-widget name="Title_contextMenu" />
+  <panel name="panel_Title_contextMenu" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_contextMenu_title" />
+  <panel name="panel_seperator_contextMenu_title" />
   <!-- Context Panel -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="contextMenu_list_pos" size="1020,300" textOffset="5,1" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <eLabel name="Seperator" position="15,350" size="1020,2" zPosition="5" backgroundColor="seperator" />
@@ -901,11 +901,11 @@
 </screen>
 <screen name="ChannelContextMenu" title="Channellist menu" position="center,center" size="1050,750" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_contextMenu" />
+  <panel name="panel_background_contextMenu" />
   <!-- Title -->
-  <constant-widget name="Title_contextMenu" />
+  <panel name="panel_Title_contextMenu" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_contextMenu_title" />
+  <panel name="panel_seperator_contextMenu_title" />
   <!-- Context Panel -->
   <widget name="menu" backgroundColorRows="listBackgroundBarsOne" position="contextMenu_list_pos" size="contextMenu_list_size" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget text="ChannelContextMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="850,725" />
@@ -1045,11 +1045,11 @@
 </parameters>
 <screen name="ChoiceBox" position="center,center" size="1050,750" title="Input" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_contextMenu" />
+  <panel name="panel_background_contextMenu" />
   <!-- Title -->
-  <constant-widget name="Title_contextMenu" />
+  <panel name="panel_Title_contextMenu" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_contextMenu_title" />
+  <panel name="panel_seperator_contextMenu_title" />
   <!-- Context Panel -->
   <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="contextMenu_list_pos" size="contextMenu_list_size" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Rest über Parameter -->
@@ -1281,10 +1281,7 @@
     <eLabel backgroundColor="windowBackground" position="0,858" size="1920,280" zPosition="-10" />
   </constant-widget>
 
-  <constant-widget name="background_contextMenu">
-    <eLabel backgroundColor="windowBackgroundSecond" position="0,0" size="1050,60" zPosition="-10" />
-    <eLabel backgroundColor="windowBackground" position="0,60" size="1050,690" zPosition="-10" />
-  </constant-widget>
+
   <!-- Color Buttons (Red, Green, Yellow, Blue) -->
   <constant-widget name="color_buttons_graphMultiEpg">
     <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/key_red.png" position="7,1020" size="45,60" />
@@ -1363,9 +1360,7 @@
     <eLabel name="Seperator" position="45,70" size="1830,2" zPosition="5" backgroundColor="seperator" />
   </constant-widget>
   <!-- Meine Titles-->
-  <constant-widget name="Title_contextMenu">
-    <widget source="Title" render="Label" position="contextMenu_title_pos" size="contextMenu_title_size" font="font_contextMenu_title" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" />
-  </constant-widget>
+
   <constant-widget name="Title_graphMultiEpg_Fullscreen">
     <widget foregroundColor="foreground" backgroundColor="windowBackground" font="font_window_title" halign="left" position="60,5" size="window_title_size" render="MetrixReloadedClearFavName" source="Title" transparent="1" />
   </constant-widget>
@@ -3044,11 +3039,11 @@
 </screen>
 <screen name="InfoBarZapHistory" position="center,center" size="1050,750" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_contextMenu" />
+  <panel name="panel_background_contextMenu" />
   <!-- Title -->
-  <constant-widget name="Title_contextMenu" />
+  <panel name="panel_Title_contextMenu" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_contextMenu_title" />
+  <panel name="panel_seperator_contextMenu_title" />
   <!-- Left Panel (Left Side) -->
   <widget name="ZapHistoryList" backgroundColorRows="listBackgroundBarsOne" position="contextMenu_list_pos" size="450,660" textOffset="2,0" itemHeight="50" font="font_list" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
@@ -3745,11 +3740,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 </screen>
 <screen name="MovieContextMenu" title="Movielist menu" position="center,center" size="1050,750" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_contextMenu" />
+  <panel name="panel_background_contextMenu" />
   <!-- Title -->
-  <constant-widget name="Title_contextMenu" />
+  <panel name="panel_Title_contextMenu" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_contextMenu_title" />
+  <panel name="panel_seperator_contextMenu_title" />
   <!-- Context Panel -->
   <widget name="menu" backgroundColorRows="listBackgroundBarsOne" position="contextMenu_list_pos" size="contextMenu_list_size" textOffset="5,1" font="font_list" itemHeight="50" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget text="MovieContextMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="850,725" />
@@ -4685,6 +4680,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 <screen name="panel_background_wide">
   <eLabel backgroundColor="windowBackground" position="60,37" size="1800,975" zPosition="-10" />
 </screen>
+<screen name="panel_background_contextMenu">
+  <eLabel backgroundColor="windowBackgroundSecond" position="0,0" size="1050,60" zPosition="-10" />
+  <eLabel backgroundColor="windowBackground" position="0,60" size="1050,690" zPosition="-10" />
+</screen>
 
 <!-- Seperators -->
 <screen name="panel_seperator_menu">
@@ -4692,6 +4691,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 </screen>
 <screen name="panel_seperator_window_title">
   <eLabel name="Seperator" position="90,135" size="1078,2" zPosition="5" backgroundColor="seperator" />
+</screen>
+<screen name="panel_seperator_contextMenu_title">
+  <eLabel name="Seperator" position="0,60" size="1050,2" zPosition="5" backgroundColor="seperator" />
 </screen>
 
 <!-- Icons / Images -->
@@ -4738,6 +4740,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 <screen name="panel_title_window">
   <widget source="title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1" />
 </screen>
+<screen name="panel_Title_contextMenu">
+  <widget source="Title" render="Label" position="contextMenu_title_pos" size="contextMenu_title_size" font="font_contextMenu_title" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" />
+</screen>
 
 <!-- Buttons -->
 <screen name="panel_color_buttons_window">
@@ -4745,6 +4750,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap pixmap="MetrixReloaded/media/buttons/key_green.png" position="333,952" size="45,60" alphatest="blend" />
   <ePixmap pixmap="MetrixReloaded/media/buttons/key_yellow.png" position="615,952" size="45,60" alphatest="blend" />
   <ePixmap pixmap="MetrixReloaded/media/buttons/key_blue.png" position="892,952" size="45,60" alphatest="blend" />
+</screen>
+
+<screen name="panel_color_two_buttons_contextMenu">
+  <ePixmap pixmap="MetrixReloaded/media/buttons/key_red.png" position="0,690" size="45,60" alphatest="blend" />
+  <ePixmap pixmap="MetrixReloaded/media/buttons/key_green.png" position="281,690" size="45,60" alphatest="blend" />  
 </screen>
 
 <screen name="panel_key_red_source">
@@ -4965,18 +4975,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/look.png" position="window_image_pos" size="window_image_size" />
   <widget text="ParentalControlSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="PiconManagerFolderScreen" position="center,center" size="1288,923" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="PiconManagerFolderScreen" position="center,center" size="1050,750" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <panel name="panel_title_window" />
-  <constant-widget name="clock_mid" />
-  <panel name="panel_color_buttons_window" />
-  <widget source="key_red" render="Label" position="key_red_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget source="key_green" render="Label" position="key_green_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget name="media" position="90,300" size="1118,50" font="Regular;32" backgroundColor="windowBackground" transparent="1" halign="left" />
-  <widget name="folderlist" position="80,350" size="1128,500" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
-  <widget text="PiconManagerFolderScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+  <panel name="panel_background_contextMenu" />
+  <!-- Title -->
+  <panel name="panel_Title_contextMenu" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_contextMenu_title" />
+  <!-- Context Panel -->
+  <widget name="folderlist" backgroundColorRows="listBackgroundBarsOne" position="contextMenu_list_pos" size="1020,540" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="media" position="15,635" size="1020,40" font="font_standard_small" backgroundColor="windowBackground" foregroundColor="accent1" transparent="1" halign="center" />
+  <!-- Buttons -->
+  <panel name="panel_color_two_buttons_contextMenu" />
+  <widget source="key_red" render="Label" position="54,690" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+  <widget source="key_green" render="Label" position="334,690" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+  <widget text="PiconManagerFolderScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="850,725" />
 </screen>
 <screen name="PiconManagerScreen" title="PiconManager" NoAnimationAfter="on" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -5205,11 +5218,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 </screen>
 <screen name="QuickSubtitlesConfigMenu" position="center,center" size="1050,500" title="Subtitle settings" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_contextMenu" />
+  <panel name="panel_background_contextMenu" />
   <!-- Title -->
-  <constant-widget name="Title_contextMenu" />
+  <panel name="panel_Title_contextMenu" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_contextMenu_title" />
+  <panel name="panel_seperator_contextMenu_title" />
   <!-- Context Panel -->
   <widget name="config" position="contextMenu_list_pos" size="1020,250" textOffset="5,1" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget text="QuickSubtitlesConfigMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="850,475" />

@@ -1,10 +1,10 @@
 ﻿<screen name="QuickSubtitlesConfigMenu" position="center,center" size="1050,500" title="Subtitle settings" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <constant-widget name="background_contextMenu" />
+  <panel name="panel_background_contextMenu" />
   <!-- Title -->
-  <constant-widget name="Title_contextMenu" />
+  <panel name="panel_Title_contextMenu" />
   <!-- Title Seperator -->
-  <constant-widget name="seperator_contextMenu_title" />
+  <panel name="panel_seperator_contextMenu_title" />
   <!-- Context Panel -->
   <widget name="config" position="contextMenu_list_pos" size="1020,250" textOffset="5,1" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget text="QuickSubtitlesConfigMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="850,475" />
