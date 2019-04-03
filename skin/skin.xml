@@ -4868,9 +4868,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <parameter name="MultiQuickButtonList" value="45,7,1650,36" />
   <parameter name="MultiQuickButtonListPic1" value="45,7,1650,36" />
   <parameter name="MultiQuickButtonListPic2" value="5,12,35,25" />
-  <!-- PiconManager -->
-  <parameter name="PiconManagerList" value="10,7,1710,36" />
-  <parameter name="PiconManagerListFont" value="SetrixHD;32" />
+
   <parameter name="CoverFindListFont" value="SetrixHD;32" />
   <parameter name="CoverFindItemHeight" value="150" />
   <parameter name="CoverFindCover" value="10,6,92,138" />
@@ -4980,39 +4978,57 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="folderlist" position="80,350" size="1128,500" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <widget text="PiconManagerFolderScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
 </screen>
-<screen name="PiconManagerScreen" title="PiconManager" NoAnimationAfter="on" position="center,center" size="1820,980" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="PiconManagerScreen" title="PiconManager" NoAnimationAfter="on" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="40,72" size="77,77" alphatest="blend" transparent="1" />
-  <constant-widget name="clock_big" />
+  <!-- Title -->
   <panel name="panel_Title_window" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget name="piconpath" position="105,150" size="200,30" font="font_standard_small" valign="left" foregroundColor="listDescription" backgroundColor="windowBackground" transparent="1" />
+  <widget name="piconpath2" position="305,150" size="830,30" font="font_standard_small" valign="left" foregroundColor="listDescription" backgroundColor="windowBackground" transparent="1" />
+  <widget name="list" position="105,190" size="1050,710" itemHeight="50" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="piconspace" position="505,900" size="650,40" font="font_standard_small" foregroundColor="lightgrey" backgroundColor="windowBackground" valign="top" halign="right" transparent="1" />
+  <!-- Right Panel (Right Side) -->
+  <widget name="picon" position="window_epg_picon_pos" size="window_epg_picon_size" zPosition="2" transparent="1" backgroundColor="windowBackground" alphatest="blend" />
+  <widget name="piconcount" position="105,900" size="400,40" font="font_standard_small" foregroundColor="lightgrey" backgroundColor="windowBackground" valign="top" halign="left" transparent="1" />
+  <widget name="picondownload" position="1212,590" size="350,36" font="font_standard" valign="left" transparent="1" backgroundColor="windowBackground" />
+  <widget name="piconerror" position="1212,640" size="350,36" font="font_standard" valign="left" transparent="1" backgroundColor="windowBackground" />
+  <widget name="selectedname" position="1212,360" size="200,36" font="font_standard" halign="left" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <ePixmap alphatest="blend" position="1427,366" size="36,26" pixmap="MetrixReloaded/skin_default/buttons/key_ch_minus.png" zPosition="3" />
+  <widget name="selected" position="1470,360" size="330,36" font="font_standard" halign="center" valign="center" foregroundColor="accent1" transparent="1" backgroundColor="windowBackgroundSecond" noWrap="1" />
+  <ePixmap alphatest="blend" position="1807,366" size="36,26" pixmap="MetrixReloaded/skin_default/buttons/key_ch_plus.png" zPosition="3" />
+  <widget name="creatorname" position="1212,410" size="200,36" font="font_standard" halign="left" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <ePixmap alphatest="blend" position="1427,416" size="36,26" pixmap="MetrixReloaded/skin_default/buttons/key_1.png" zPosition="3" />
+  <widget name="creator" position="1470,410" size="330,36" font="font_standard" halign="center" foregroundColor="accent1" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <ePixmap alphatest="blend" position="1807,416" size="36,26" pixmap="MetrixReloaded/skin_default/buttons/key_3.png" zPosition="3" />
+  <widget name="sizename" position="1212,460" size="200,36" font="font_standard" halign="left" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <ePixmap alphatest="blend" position="1427,466" size="36,26" pixmap="MetrixReloaded/skin_default/buttons/key_4.png" zPosition="3" />
+  <widget name="size" position="1470,460" size="330,36" font="font_standard" halign="center" foregroundColor="accent1" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <ePixmap alphatest="blend" position="1807,466" size="36,26" pixmap="MetrixReloaded/skin_default/buttons/key_6.png" zPosition="3" />
+  <widget name="bitname" position="1212,510" size="200,36" font="font_standard" halign="left" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <ePixmap alphatest="blend" position="1427,516" size="36,26" pixmap="MetrixReloaded/skin_default/buttons/key_7.png" zPosition="3" />
+  <widget name="bit" position="1470,510" size="330,36" font="font_standard" halign="center" foregroundColor="accent1" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <ePixmap alphatest="blend" position="1807,516" size="36,26" pixmap="MetrixReloaded/skin_default/buttons/key_9.png" zPosition="3" />
+  <widget name="piconslidername" position="1212,740" size="300,36" font="font_standard" valign="left" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <widget name="piconslider" position="1519,740" size="310,36" zPosition="2" transparent="1" backgroundColor="slider_background" foregroundColor="slider_foreground" />
+  <widget name="spiconname" position="1212,690" size="250,36" font="font_standard" halign="left" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <widget name="spicon" position="1481,690" size="350,36" font="font_standard" halign="left" foregroundColor="accentColorOne" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />
   <panel name="panel_key_green_name" />
   <panel name="panel_key_yellow_name" />
   <panel name="panel_key_blue_name" />
-  <widget name="picon" position="1235,400" size="400,240" zPosition="2" transparent="1" backgroundColor="windowBackground" alphatest="blend" />
-  <widget name="piconcount" position="45,340" size="350,36" font="Regular;32" valign="left" transparent="1" backgroundColor="windowBackground" />
-  <widget name="picondownload" position="45,380" size="350,36" font="Regular;32" valign="left" transparent="1" backgroundColor="windowBackground" />
-  <widget name="piconerror" position="45,420" size="350,36" font="Regular;32" valign="left" transparent="1" backgroundColor="windowBackground" />
-  <widget name="piconslidername" position="45,460" size="350,36" font="Regular;32" valign="left" transparent="1" backgroundColor="windowBackground" />
-  <widget name="piconslider" position="400,460" size="350,36" zPosition="2" transparent="1" backgroundColor="windowBackground" />
-  <widget name="selectedname" position="45,500" size="350,36" font="Regular;32" halign="left" valign="center" transparent="1" backgroundColor="windowBackground" />
-  <widget name="creatorname" position="45,540" size="350,36" font="Regular;32" halign="left" valign="center" transparent="1" backgroundColor="windowBackground" />
-  <widget name="sizename" position="45,580" size="350,36" font="Regular;32" halign="left" valign="center" transparent="1" backgroundColor="windowBackground" />
-  <widget name="bitname" position="45,620" size="350,36" font="Regular;32" halign="left" valign="center" transparent="1" backgroundColor="windowBackground" />
-  <widget name="selected" position="400,500" size="550,36" font="Regular;32" halign="left" valign="center" foregroundColor="accentColorOne" transparent="1" backgroundColor="windowBackground" />
-  <widget name="creator" position="400,540" size="550,36" font="Regular;32" halign="left" foregroundColor="accentColorOne" valign="center" transparent="1" backgroundColor="windowBackground" />
-  <widget name="size" position="400,580" size="550,36" font="Regular;32" halign="left" foregroundColor="accentColorOne" valign="center" transparent="1" backgroundColor="windowBackground" />
-  <widget name="bit" position="400,620" size="550,36" font="Regular;32" halign="left" foregroundColor="accentColorOne" valign="center" transparent="1" backgroundColor="windowBackground" />
-  <widget name="spiconname" position="1050,620" size="250,36" font="Regular;32" halign="left" valign="center" transparent="1" backgroundColor="windowBackground" />
-  <widget name="spicon" position="1300,620" size="500,36" font="Regular;32" halign="left" foregroundColor="accentColorOne" valign="center" transparent="1" backgroundColor="windowBackground" />
-  <widget name="piconpath" position="45,300" size="200,36" font="Regular;32" valign="left" backgroundColor="windowBackground" transparent="1" />
-  <widget name="piconpath2" position="250,300" size="800,36" font="Regular;32" valign="left" foregroundColor="accentColorOne" backgroundColor="windowBackground" transparent="1" />
-  <widget name="piconspace" position="1050,300" size="680,36" font="Regular;32" valign="left" backgroundColor="windowBackground" transparent="1" />
-  <widget name="list" position="45,700" size="1730,250" itemHeight="50" zPosition="2" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
-  <widget text="PiconManagerScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
+  <widget text="PiconManagerScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
+<parameters name="PiconManager_parameters">
+  <parameter name="PiconManagerList" value="10,7,1050,36" />
+  <parameter name="PiconManagerListFont" value="SetrixHD;30" />
+</parameters>
 <screen name="picshow" position="center,center" size="1920,1080" title="PicturePlayer" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />

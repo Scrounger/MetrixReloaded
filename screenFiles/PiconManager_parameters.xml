@@ -1,0 +1,4 @@
+﻿<parameters name="PiconManager_parameters">
+  <parameter name="PiconManagerList" value="10,7,1050,36" />
+  <parameter name="PiconManagerListFont" value="SetrixHD;30" />
+</parameters>
