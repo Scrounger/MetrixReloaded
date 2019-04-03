@@ -107,7 +107,7 @@
 
 <screen name="panel_color_two_buttons_contextMenu">
   <ePixmap pixmap="MetrixReloaded/media/buttons/key_red.png" position="0,690" size="45,60" alphatest="blend" />
-  <ePixmap pixmap="MetrixReloaded/media/buttons/key_green.png" position="281,690" size="45,60" alphatest="blend" />  
+  <ePixmap pixmap="MetrixReloaded/media/buttons/key_green.png" position="281,690" size="45,60" alphatest="blend" />
 </screen>
 
 <screen name="panel_color_buttons_graphMultiEpg">
@@ -141,6 +141,19 @@
 </screen>
 <screen name="panel_key_blue_name">
   <widget name="key_blue" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+
+<screen name="panel_red_name">
+  <widget name="red" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+<screen name="panel_green_name">
+  <widget name="green" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+<screen name="panel_yellow_name">
+  <widget name="yellow" position="key_yellow_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+<screen name="panel_blue_name">
+  <widget name="blue" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
 </screen>
 
 <screen name="panel_key_name_graphMultiEpg_Fullscreen">

@@ -22,18 +22,7 @@
 
   <!-- Color Buttons (Red, Green, Yellow, Blue) -->
 
-  <constant-widget name="red_name">
-    <widget name="red" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="green_name">
-    <widget name="green" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="yellow_name">
-    <widget name="yellow" position="key_yellow_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="blue_name">
-    <widget name="blue" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
+
   
 
   
