@@ -63,10 +63,26 @@ namespace Helper
 
                 if (withProduction)
                 {
+                    Console.WriteLine();
+                    Console.WriteLine(String.Format("Connecting to VuPlus..."));                    
+
                     if (Directory.Exists(settings.VuPlusSkinPath))
                     {
+                        Console.WriteLine();
+                        Console.WriteLine(String.Format("Copy files to VuPlus", skinFileName));
+                        Console.WriteLine("---------------------------------------------------------------------------------------------------");
+
                         File.Copy(skinFileName, skinProductionFileName, true);
+                        ProgressBar.Draw("copy skin.xml", 1, 2);
+
                         File.Copy(myVersion.FullFileName, settings.VuPlusSkinPath + myVersion.FileName, true);
+                        ProgressBar.Draw("copy version file", 2, 2);
+
+                        string vuPlusAllScreensPath = settings.VuPlusSkinPath + "allScreens/";
+                        string skinPartsPath = settings.SkinPartsPath;
+
+                        Console.WriteLine();
+                        Functions.CopyAll(skinPartsPath, vuPlusAllScreensPath, false, "Copy skinParts to VuPlus");
 
                         Thread.Sleep(2000);
                     }

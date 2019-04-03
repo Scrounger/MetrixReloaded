@@ -22,7 +22,7 @@ namespace Helper
                 string skinPartsPath = settings.SkinPartsPath;
 
                 Console.WriteLine();
-                Console.WriteLine(String.Format("copy skinParts files from: {0}", skinPartsPath));
+                Console.WriteLine(String.Format("copy skinParts files: '{0}' to '{1}'", skinPartsPath, allScreensPath));
                 Console.WriteLine("---------------------------------------------------------------------------------------------------");
 
                 int i = 1;
