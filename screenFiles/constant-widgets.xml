@@ -19,29 +19,6 @@
     <eLabel backgroundColor="windowBackground" position="0,858" size="1920,280" zPosition="-10" />
   </constant-widget>
 
-
-  <!-- Color Buttons (Red, Green, Yellow, Blue) -->
-
-
-  
-
-  
-
-  
-  
-  <constant-widget name="key_red_name_long">
-    <widget name="key_red_long" position="key_red_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_green_name_long">
-    <widget name="key_green_long" position="key_green_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_yellow_name_long">
-    <widget name="key_yellow_long" position="key_yellow_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_blue_name_long">
-    <widget name="key_blue_long" position="key_blue_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-
   <!-- Meine Clocks-->
 
   <constant-widget name="clock_infoBar">

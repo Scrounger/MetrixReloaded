@@ -40,9 +40,9 @@
   <panel name="panel_key_green_name_short" />
   <panel name="panel_key_yellow_name_short" />
   <panel name="panel_key_blue_name_short" />
-  <constant-widget name="key_red_name_long" />
-  <constant-widget name="key_green_name_long" />
-  <constant-widget name="key_yellow_name_long" />
-  <constant-widget name="key_blue_name_long" />
+  <panel name="panel_key_red_name_long" />
+  <panel name="panel_key_green_name_long" />
+  <panel name="panel_key_yellow_name_long" />
+  <panel name="panel_key_blue_name_long" />
   <widget text="MovieSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

@@ -169,6 +169,19 @@
   <widget name="key_blue" position="key_blue_pos_short" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
 </screen>
 
+<screen name="panel_key_red_name_long">
+  <widget name="key_red_long" position="key_red_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+<screen name="panel_key_green_name_long">
+  <widget name="key_green_long" position="key_green_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+<screen name="panel_key_yellow_name_long">
+  <widget name="key_yellow_long" position="key_yellow_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+<screen name="panel_key_blue_name_long">
+  <widget name="key_blue_long" position="key_blue_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+</screen>
+
 <screen name="panel_key_name_graphMultiEpg_Fullscreen">
   <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" name="key_red" position="67,1018" size="key_size" transparent="1" valign="top" />
   <widget backgroundColor="windowBackground" font="font_key_standard" halign="left" name="key_green" position="457,1018" size="key_size" transparent="1" valign="top" />
