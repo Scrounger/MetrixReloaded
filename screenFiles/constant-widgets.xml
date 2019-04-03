@@ -11,16 +11,7 @@
       <convert type="ClockToText"></convert>
     </widget>
   </constant-widget>
-  <!-- Meine Backgrounds-->
-  <constant-widget name="background_infoBar">
-    <eLabel backgroundColor="windowBackground" position="0,800" size="1920,280" zPosition="-10" />
-  </constant-widget>
-  <constant-widget name="background_movieplayer">
-    <eLabel backgroundColor="windowBackground" position="0,858" size="1920,280" zPosition="-10" />
-  </constant-widget>
-
   <!-- Meine Clocks-->
-
   <constant-widget name="clock_infoBar">
     <widget backgroundColor="windowBackgroundSecond" font="font_menu_time" halign="right" position="1660,42" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
       <convert type="ClockToText">Default</convert>
@@ -30,21 +21,7 @@
     </widget>
     <eLabel backgroundColor="windowBackgroundSecond" position="1620,42" size="237,100" zPosition="-10" />
   </constant-widget>
-  <!-- Meine Seperators-->
-  <constant-widget name="seperator_contextMenu_title">
-    <eLabel name="Seperator" position="0,60" size="1050,2" zPosition="5" backgroundColor="seperator" />
-  </constant-widget>
 
-  <!-- Meine Titles-->
-
-
-  
-  <!-- Rec Icon-->
-  <constant-widget name="recIcon_top">
-    <widget alphatest="blend" pixmap="MetrixReloaded/media/background_isRecording.png" position="887,0" render="Pixmap" size="146,37" source="session.RecordState" zPosition="2">
-      <convert type="ConditionalShowHide" />
-    </widget>
-  </constant-widget>
   <!-- InfoBar - Icons -->
   <constant-widget name="infoBar_Icons">
     <widget alphatest="blend" path="media/logos/tunertypes" position="410,1043" render="MetrixReloadedIcon" size="84,22" source="session.CurrentService" zPosition="3">

@@ -1,6 +1,6 @@
 ﻿<screen name="MoviePlayer" flags="wfNoBorder" position="0,0" size="1920,1080" title="MoviePlayer" backgroundColor="transparent">
   <!-- Background -->
-  <constant-widget name="background_movieplayer" />
+  <eLabel backgroundColor="windowBackground" position="0,858" size="1920,280" zPosition="-10" />
   <!-- Clock -->
   <constant-widget name="clock_infoBar" />
   <!-- Logo -->

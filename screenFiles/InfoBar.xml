@@ -1,6 +1,6 @@
 ﻿<screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="transparent" animationMode="disable_onhide">
   <!-- Background -->
-  <constant-widget name="background_infoBar" />
+  <eLabel backgroundColor="windowBackground" position="0,800" size="1920,280" zPosition="-10" />
   <!-- Clock -->
   <constant-widget name="clock_infoBar" />
   <!-- Logo -->
@@ -60,6 +60,7 @@
   <constant-widget name="infoBar_Icons" />
   <constant-widget name="infoBar_movieplayer_Icons" />
   <!-- Rec Icon -->
-  <constant-widget name="recIcon_top" />
+  <panel name="panel_recIcon_top" />
+  
   <widget text="InfoBar" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

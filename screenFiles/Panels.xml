@@ -43,6 +43,11 @@
     <convert type="MetrixReloadedMenuEntryID"></convert>
   </widget>
 </screen>
+<screen name="panel_recIcon_top">
+  <widget alphatest="blend" pixmap="MetrixReloaded/media/background_isRecording.png" position="887,0" render="Pixmap" size="146,37" source="session.RecordState" zPosition="2">
+    <convert type="ConditionalShowHide" />
+  </widget>
+</screen>
 
 <!-- Clocks -->
 <screen name="panel_clock_menu">
