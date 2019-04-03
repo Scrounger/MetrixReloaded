@@ -36,10 +36,10 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_left_outer_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_name_short" />
-  <constant-widget name="key_green_name_short" />
-  <constant-widget name="key_yellow_name_short" />
-  <constant-widget name="key_blue_name_short" />
+  <panel name="panel_key_red_name_short" />
+  <panel name="panel_key_green_name_short" />
+  <panel name="panel_key_yellow_name_short" />
+  <panel name="panel_key_blue_name_short" />
   <constant-widget name="key_red_name_long" />
   <constant-widget name="key_green_name_long" />
   <constant-widget name="key_yellow_name_long" />

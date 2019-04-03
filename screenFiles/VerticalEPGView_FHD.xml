@@ -39,10 +39,12 @@
   </widget>
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <constant-widget name="key_red_name_short" />
-  <constant-widget name="key_green_name_short" />
-  <constant-widget name="key_yellow_name_short" />
-  <constant-widget name="key_blue_name_short" />
+  
+  <panel name="panel_key_red_name_short" />
+  <panel name="panel_key_green_name_short" />
+  <panel name="panel_key_yellow_name_short" />
+  <panel name="panel_key_blue_name_short" />
+  
   <constant-widget name="key_red_name_long" />
   <constant-widget name="key_green_name_long" />
   <constant-widget name="key_yellow_name_long" />

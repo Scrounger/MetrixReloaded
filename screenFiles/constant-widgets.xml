@@ -26,18 +26,9 @@
   
 
   
-  <constant-widget name="key_red_name_short">
-    <widget name="key_red" position="key_red_pos_short" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_green_name_short">
-    <widget name="key_green" position="key_green_pos_short" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_yellow_name_short">
-    <widget name="key_yellow" position="key_yellow_pos_short" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
-  <constant-widget name="key_blue_name_short">
-    <widget name="key_blue" position="key_blue_pos_short" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  </constant-widget>
+
+  
+  
   <constant-widget name="key_red_name_long">
     <widget name="key_red_long" position="key_red_pos_long" foregroundColor="key_second_function" zPosition="1" size="key_size" font="font_key_second_function" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   </constant-widget>
