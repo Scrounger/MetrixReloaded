@@ -2,7 +2,7 @@
   <!-- Background -->
   <eLabel backgroundColor="windowBackground" position="0,858" size="1920,280" zPosition="-10" />
   <!-- Clock -->
-  <constant-widget name="clock_infoBar" />
+  <panel name="panel_clock_infoBar" />
   <!-- Logo -->
   <widget source="session.CurrentService" render="MetrixReloadedXHDPicon" position="40,870" zPosition="1" size="330,198" backgroundColor="windowBackground" transparent="1" alphatest="blend">
     <convert type="MovieBarInfo">Reference</convert>
@@ -34,6 +34,8 @@
     <convert type="ServicePosition">Remaining,Negate</convert>
   </widget>
   <!-- Icons -->
-  <constant-widget name="infoBar_movieplayer_Icons" />
+  <panel name="panel_infoBar_movieplayer_Icons" />
+  <!-- Rec Icon -->
+  <panel name="panel_recIcon_top" />
   <widget text="MoviePlayer" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

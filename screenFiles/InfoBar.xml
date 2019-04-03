@@ -2,7 +2,7 @@
   <!-- Background -->
   <eLabel backgroundColor="windowBackground" position="0,800" size="1920,280" zPosition="-10" />
   <!-- Clock -->
-  <constant-widget name="clock_infoBar" />
+  <panel name="panel_clock_infoBar" />
   <!-- Logo -->
   <widget alphatest="blend" position="40,841" render="MetrixReloadedXHDPicon" size="330,198" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServiceName">Reference</convert>
@@ -56,9 +56,9 @@
     <convert type="MetrixReloadedExtEventEPG">EpgShareRaw</convert>
   </widget>-->
   <!-- Icons -->
-  <constant-widget name="infoBar_tuner" />
-  <constant-widget name="infoBar_Icons" />
-  <constant-widget name="infoBar_movieplayer_Icons" />
+  <panel name="panel_infoBar_tuner" />
+  <panel name="panel_infoBar_Icons" />
+  <panel name="panel_infoBar_movieplayer_Icons" />
   <!-- Rec Icon -->
   <panel name="panel_recIcon_top" />
   
