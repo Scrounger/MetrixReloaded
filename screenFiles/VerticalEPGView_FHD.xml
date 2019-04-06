@@ -8,19 +8,19 @@
   <!-- Clock -->
   <panel name="panel_clock_wide" />
   <!-- Logos -->
-  <widget position="150,150" size="window_vert_epg_picon_size" source="Service1" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
+  <widget position="80,140" size="336,95" source="Service1" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget position="514,150" size="window_vert_epg_picon_size" source="Service2" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
+  <widget position="436,140" size="336,95" source="Service2" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget position="861,149" size="window_vert_epg_picon_size" source="Service3" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
+  <widget position="792,140" size="336,95" source="Service3" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget position="1231,150" size="window_vert_epg_picon_size" source="Service4" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
+  <widget position="1148,140" size="336,95" source="Service4" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget position="1583,150" size="window_vert_epg_picon_size" source="Service5" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
+  <widget position="1504,140" size="336,95" source="Service5" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!--<widget font="Bold;30" halign="center" valign="center" name="currCh1" position="150,299" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
@@ -29,13 +29,25 @@
   <widget font="Bold;30" halign="center" valign="center" name="currCh4" position="1203,300" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
   <widget font="Bold;30" halign="center" valign="center" name="currCh5" position="1554,300" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />-->
   <!-- Listen -->
-  <widget itemHeight="110" name="epg_list1" position="75,260" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
-  <widget itemHeight="110" name="epg_list2" position="431,260" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
-  <widget itemHeight="110" name="epg_list3" position="789,260" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
-  <widget itemHeight="110" name="epg_list4" position="1148,259" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
-  <widget itemHeight="110" name="epg_list5" position="1504,260" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
-  <widget source="Event" render="Label" position="75,709" zPosition="1" size="1765,235" font="Regular;30" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1">
+  <widget itemHeight="110" name="epg_list1" position="80,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
+  <widget itemHeight="110" name="epg_list2" position="436,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
+  <widget itemHeight="110" name="epg_list3" position="792,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
+  <widget itemHeight="110" name="epg_list4" position="1148,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
+  <widget itemHeight="110" name="epg_list5" position="1504,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
+  <widget source="Event" render="Label" position="80,733" zPosition="1" size="1760,211" font="Regular;30" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" valign="top">
     <convert type="EventName">ExtendedDescription</convert>
+  </widget>
+
+  <widget source="Event" position="80,685" zPosition="1" size="900,40" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][Title]</convert>
+  </widget>
+  <widget source="Event" render="Label" position="1600,685" zPosition="1" size="120,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="Event" render="Label" position="1720,685" zPosition="1" size="120,42" halign="left" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:- %H:%M</convert>
   </widget>
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -47,6 +59,5 @@
   <panel name="panel_key_green_name_long" />
   <panel name="panel_key_yellow_name_long" />
   <panel name="panel_key_blue_name_long" />
-  
   <widget text="VerticalEPGView_FHD" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
