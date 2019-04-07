@@ -11,16 +11,16 @@
   <widget name="config" position="window_list_pos" size="window_list_setup_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" />
-  <widget source="ipaddresstext" render="Label" position="1216,720" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackground" transparent="1" />
-  <widget source="ipaddress" render="Label" position="1518,720" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackground" valign="center" transparent="1" halign="right" />
-  <widget source="netmasktext" render="Label" position="1216,765" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackground" transparent="1" />
-  <widget source="netmask" render="Label" position="1518,765" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackground" valign="center" transparent="1" halign="right" />
-  <widget source="gatewaytext" render="Label" position="1216,810" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackground" transparent="1" />
-  <widget source="gateway" render="Label" position="1518,810" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackground" valign="center" transparent="1" halign="right" />
-  <widget source="DNS1text" render="Label" position="1216,855" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackground" transparent="1" />
-  <widget source="DNS1" render="Label" position="1518,855" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackground" valign="center" transparent="1" halign="right" />
-  <widget source="DNS2text" render="Label" position="1216,900" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackground" transparent="1" />
-  <widget source="DNS2" render="Label" position="1518,900" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackground" valign="center" transparent="1" halign="right" />
+  <widget source="ipaddresstext" render="Label" position="1216,720" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget source="ipaddress" render="Label" position="1518,720" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" valign="center" transparent="1" halign="right" />
+  <widget source="netmasktext" render="Label" position="1216,765" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget source="netmask" render="Label" position="1518,765" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" valign="center" transparent="1" halign="right" />
+  <widget source="gatewaytext" render="Label" position="1216,810" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget source="gateway" render="Label" position="1518,810" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" valign="center" transparent="1" halign="right" />
+  <widget source="DNS1text" render="Label" position="1216,855" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget source="DNS1" render="Label" position="1518,855" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" valign="center" transparent="1" halign="right" />
+  <widget source="DNS2text" render="Label" position="1216,900" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget source="DNS2" render="Label" position="1518,900" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" valign="center" transparent="1" halign="right" />
   <widget name="VKeyIcon" pixmap="MetrixReloaded/buttons/key_text.png" position="750,765" zPosition="10" size="53,38" transparent="1" alphatest="on" />
   <widget name="HelpWindow" pixmap="MetrixReloaded/media/vkey_icon.png" position="627,20" zPosition="1" size="1,1" transparent="1" alphatest="on" />
   <!-- Buttons -->

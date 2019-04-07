@@ -6825,16 +6825,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="config" position="window_list_pos" size="window_list_setup_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" />
-  <widget source="ipaddresstext" render="Label" position="1216,720" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackground" transparent="1" />
-  <widget source="ipaddress" render="Label" position="1518,720" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackground" valign="center" transparent="1" halign="right" />
-  <widget source="netmasktext" render="Label" position="1216,765" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackground" transparent="1" />
-  <widget source="netmask" render="Label" position="1518,765" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackground" valign="center" transparent="1" halign="right" />
-  <widget source="gatewaytext" render="Label" position="1216,810" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackground" transparent="1" />
-  <widget source="gateway" render="Label" position="1518,810" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackground" valign="center" transparent="1" halign="right" />
-  <widget source="DNS1text" render="Label" position="1216,855" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackground" transparent="1" />
-  <widget source="DNS1" render="Label" position="1518,855" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackground" valign="center" transparent="1" halign="right" />
-  <widget source="DNS2text" render="Label" position="1216,900" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackground" transparent="1" />
-  <widget source="DNS2" render="Label" position="1518,900" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackground" valign="center" transparent="1" halign="right" />
+  <widget source="ipaddresstext" render="Label" position="1216,720" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget source="ipaddress" render="Label" position="1518,720" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" valign="center" transparent="1" halign="right" />
+  <widget source="netmasktext" render="Label" position="1216,765" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget source="netmask" render="Label" position="1518,765" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" valign="center" transparent="1" halign="right" />
+  <widget source="gatewaytext" render="Label" position="1216,810" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget source="gateway" render="Label" position="1518,810" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" valign="center" transparent="1" halign="right" />
+  <widget source="DNS1text" render="Label" position="1216,855" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget source="DNS1" render="Label" position="1518,855" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" valign="center" transparent="1" halign="right" />
+  <widget source="DNS2text" render="Label" position="1216,900" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget source="DNS2" render="Label" position="1518,900" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" valign="center" transparent="1" halign="right" />
   <widget name="VKeyIcon" pixmap="MetrixReloaded/buttons/key_text.png" position="750,765" zPosition="10" size="53,38" transparent="1" alphatest="on" />
   <widget name="HelpWindow" pixmap="MetrixReloaded/media/vkey_icon.png" position="627,20" zPosition="1" size="1,1" transparent="1" alphatest="on" />
   <!-- Buttons -->
@@ -6878,28 +6878,33 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <panel name="panel_key_yellow_source" />
   <widget text="WlanScan" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="WlanScanAp" position="center,center" size="1288,923" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
+<screen name="WlanScanAp" position="center,center" size="1920,1080" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="72,84" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Wireless Network AP Scan..." position="168,100" size="900,65" font="BoldItalic; 52" backgroundColor="windowBackground" transparent="1" />
-  <ePixmap pixmap="MetrixReloaded/buttons/red.png" position="135,198" size="32,32" alphatest="blend" />
-  <ePixmap pixmap="MetrixReloaded/buttons/green.png" position="435,198" size="32,32" alphatest="blend" />
-  <ePixmap pixmap="MetrixReloaded/buttons/blue.png" position="945,198" size="32,32" alphatest="blend" />
-  <widget source="key_red" render="Label" position="183,195" zPosition="1" size="225,38" font="Regular; 32" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget source="key_green" render="Label" position="483,195" zPosition="1" size="225,38" font="Regular;32" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget source="key_blue" render="Label" position="998,185" zPosition="1" size="225,50" font="Regular;28" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <ePixmap pixmap="MetrixReloaded/media/border_menu.png" position="160,260" zPosition="-1" size="518,505" transparent="1" alphatest="blend" />
-  <widget name="aplist" position="175,275" size="488,475" font="Regular; 32" itemHeight="40" transparent="1" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand" />
-  <widget source="ESSID" render="Label" position="735,340" zPosition="1" size="450,45" font="Regular;30" backgroundColor="windowBackground" halign="center" valign="center" transparent="1" />
-  <widget source="Address" render="Label" position="735,385" zPosition="1" size="450,45" font="Regular;30" backgroundColor="windowBackground" halign="center" valign="center" transparent="1" />
-  <widget source="Protocol" render="Label" position="735,430" zPosition="1" size="450,45" font="Regular;30" backgroundColor="windowBackground" halign="center" valign="center" transparent="1" />
-  <widget source="Frequency" render="Label" position="735,475" zPosition="1" size="450,45" font="Regular;30" backgroundColor="windowBackground" halign="center" valign="center" transparent="1" />
-  <widget source="Channel" render="Label" position="735,520" zPosition="1" size="450,45" font="Regular;30" backgroundColor="windowBackground" halign="center" valign="center" transparent="1" />
-  <widget source="Encryption key" render="Label" position="735,565" zPosition="1" size="450,45" font="Regular;30" backgroundColor="windowBackground" halign="center" valign="center" transparent="1" />
-  <widget source="BitRate" render="Label" position="735,610" zPosition="1" size="450,45" font="Regular;30" backgroundColor="windowBackground" halign="center" valign="center" transparent="1" />
-  <widget source="Status" render="Label" position="377,795" zPosition="1" size="540,45" font="Regular;30" foregroundColor="accentColorOne" backgroundColor="windowBackground" halign="center" valign="center" transparent="1" />
-  <widget text="WlanScanAp" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+  <!-- Title -->
+  <panel name="panel_Title_window" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget name="aplist" position="window_list_pos" size="1050,720" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget source="Status" render="Label" position="105,889" zPosition="1" size="1050,45" font="font_standard_small; 30" foregroundColor="accent1" backgroundColor="windowBackground" halign="center" valign="center" transparent="1" />
+  <!-- Right Panel (Right Side) -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" />
+  <widget source="ESSID" render="Label" position="1218,720" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <widget source="Address" render="Label" position="1218,765" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <widget source="Protocol" render="Label" position="1218,810" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <widget source="Frequency" render="Label" position="1218,855" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <widget source="Channel" render="Label" position="1218,900" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <widget source="Encryption key" render="Label" position="1218,565" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <widget source="BitRate" render="Label" position="1218,610" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <!-- Buttons -->
+  <panel name="panel_color_buttons_window" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_blue_source" />
+  <widget text="WlanScanAp" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="WlanSelection" position="center,center" size="1920,1080" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
