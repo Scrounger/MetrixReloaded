@@ -13,17 +13,17 @@
   <widget name="config" position="window_small_list_top_pos" transparent="1" size="window_small_list_size" font="font_list" itemHeight="50" textOffset="5,1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- unter der Liste-->
   <eLabel name="Seperator" position="90,530" size="1078,2" zPosition="5" backgroundColor="seperator" />
-  <widget source="introduction" render="Label" position="105,545" size="800,40" foregroundColor="listDescription" font="font_standard" halign="left" transparent="1" backgroundColor="windowBackground" />
+  <widget source="introduction" render="Label" position="105,545" size="1050,40" foregroundColor="listDescription" font="font_standard" halign="left" transparent="1" backgroundColor="windowBackground" />
   <widget source="IPtext" render="Label" position="105,600" size="225,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" />
   <widget source="Netmasktext" render="Label" position="105,650" size="225,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" />
   <widget source="Gatewaytext" render="Label" position="105,700" size="225,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" />
-  <widget source="IP" render="Label" position="800,600" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
-  <widget source="Mask" render="Label" position="800,650" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
-  <widget source="Gateway" render="Label" position="800,700" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="IP" render="Label" position="795,600" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="Mask" render="Label" position="795,650" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="Gateway" render="Label" position="795,700" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
   <widget source="DNS1text" render="Label" position="105,780" size="220,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" />
   <widget source="DNS2text" render="Label" position="105,830" size="220,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" />
-  <widget source="DNS1" render="Label" position="800,780" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
-  <widget source="DNS2" render="Label" position="800,830" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="DNS1" render="Label" position="795,780" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="DNS2" render="Label" position="795,830" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
   <widget source="introduction2" render="Label" position="window_desc_pos" size="window_desc_size" foregroundColor="foreground" font="font_standard" halign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
@@ -31,8 +31,7 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  
   <panel name="panel_key_red_source" />
   <panel name="panel_key_blue_source" />
-  <widget text="AdapterSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="AdapterSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>

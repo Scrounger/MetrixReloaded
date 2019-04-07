@@ -1,4 +1,4 @@
-﻿<screen name="AutoTimerEditor" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
+﻿<screen name="AutoTimerEditor" position="center,center" size="1920,1080" title="AutoTimerEditor" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->

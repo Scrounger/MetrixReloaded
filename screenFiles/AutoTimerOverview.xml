@@ -1,4 +1,4 @@
-﻿<screen name="AutoTimerOverview" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+﻿<screen name="AutoTimerOverview" position="center,center" size="1920,1080" title="AutoTimerOverview" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->

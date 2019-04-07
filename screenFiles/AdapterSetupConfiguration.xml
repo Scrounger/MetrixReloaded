@@ -8,11 +8,11 @@
   <!-- Title Seperator -->
   <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="menulist" position="105,210" size="1020,650" textOffset="5,1" font="font_list" itemHeight="50" transparent="1" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand" />
+  <widget name="menulist" position="105,210" size="1050,650" textOffset="5,1" font="font_list" itemHeight="50" transparent="1" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand" />
   <widget source="IFtext" render="Label" position="105,150" size="150,50" zPosition="10" backgroundColor="windowBackground" font="font_standard" transparent="1" halign="left" />
   <widget source="IF" render="Label" position="275,150" size="600,50" zPosition="10" backgroundColor="windowBackground" font="font_standard" transparent="1" halign="left" />
   <widget source="Statustext" render="Label" position="875,150" size="200,50" zPosition="10" font="font_standard" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="statuspic" pixmaps="MetrixReloaded/buttons/green.png,MetrixReloaded/buttons/button_off.png" position="1095,156" zPosition="10" size="38,38" transparent="1" alphatest="blend" />
+  <widget name="statuspic" pixmaps="MetrixReloaded/skin_default/buttons/key_green.png,MetrixReloaded/skin_default/buttons/key_off.png" position="1105,161" zPosition="10" size="35,26" transparent="1" alphatest="blend" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" />
@@ -21,5 +21,5 @@
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
-  <widget text="AdapterSetupConfiguration" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="AdapterSetupConfiguration" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
