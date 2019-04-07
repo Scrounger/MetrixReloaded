@@ -12,13 +12,13 @@
   <widget source="Status" render="Label" position="105,889" zPosition="1" size="1050,45" font="font_standard_small; 30" foregroundColor="accent1" backgroundColor="windowBackground" halign="center" valign="center" transparent="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" />
-  <widget source="ESSID" render="Label" position="1218,720" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
-  <widget source="Address" render="Label" position="1218,765" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
-  <widget source="Protocol" render="Label" position="1218,810" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
-  <widget source="Frequency" render="Label" position="1218,855" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
-  <widget source="Channel" render="Label" position="1218,900" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
-  <widget source="Encryption key" render="Label" position="1218,565" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
-  <widget source="BitRate" render="Label" position="1218,610" zPosition="1" size="450,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <widget source="ESSID" render="Label" position="1218,110" zPosition="1" size="622,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <widget source="Address" render="Label" position="1218,160" zPosition="1" size="622,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <widget source="Protocol" render="Label" position="1218,210" zPosition="1" size="622,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <widget source="Frequency" render="Label" position="1218,260" zPosition="1" size="622,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <widget source="Channel" render="Label" position="1218,730" zPosition="1" size="622,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <widget source="Encryption key" render="Label" position="1218,780" zPosition="1" size="622,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
+  <widget source="BitRate" render="Label" position="1218,830" zPosition="1" size="622,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
