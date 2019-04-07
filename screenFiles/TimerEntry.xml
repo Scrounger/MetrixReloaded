@@ -11,10 +11,10 @@
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
-  <widget source="configdesc" render="Label" foregroundColor="foreground" font="font_standard" size="window_desc_size" position="window_desc_pos" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <widget source="configdesc" render="Label" foregroundColor="foreground" font="font_standard" size="window_desc_size" position="window_desc_pos" transparent="1" backgroundColor="windowBackgroundSecond" halign="center" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <widget name="canceltext" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget name="oktext" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget text="TimerEntry" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="TimerEntry" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>

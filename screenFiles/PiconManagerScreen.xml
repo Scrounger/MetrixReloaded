@@ -36,7 +36,7 @@
   <widget name="piconslidername" position="1212,740" size="300,36" font="font_standard" valign="left" transparent="1" backgroundColor="windowBackgroundSecond" />
   <widget name="piconslider" position="1519,740" size="310,36" zPosition="2" transparent="1" backgroundColor="slider_background" foregroundColor="slider_foreground" />
   <widget name="spiconname" position="1212,690" size="250,36" font="font_standard" halign="left" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
-  <widget name="spicon" position="1481,690" size="350,36" font="font_standard" halign="left" foregroundColor="accentColorOne" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <widget name="spicon" position="1481,690" size="350,36" font="font_standard" halign="left" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />

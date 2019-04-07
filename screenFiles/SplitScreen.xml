@@ -1,5 +1,5 @@
 ﻿<screen backgroundColor="accentColorTwo" flags="wfNoBorder" name="SplitScreen" position="0,0" size="1920,1080" zPosition="-1">
-  <widget backgroundColor="transparent" font="Regular;60" halign="center" name="zap_focus" position="0,0" size="1920,1080" valign="center" zPosition="10" />
+  <widget backgroundColor="transparent" font="Regular;60" halign="center" name="zap_focus" position="0,0" size="1920,1080" valign="center" zPosition="-1" />
   <widget backgroundColor="accentColorTwo" font="Regular;36" foregroundColor="foreground" halign="left" position="975,150" render="Label" size="870,75" source="MasterService" transparent="1">
     <convert type="ServiceName" />
   </widget>

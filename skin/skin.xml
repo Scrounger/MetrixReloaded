@@ -4917,7 +4917,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <parameter name="EPGlistMultiProgressOffset" value="0, 0" />
   <parameter name="EPGlistMultiProgressTextOffset" value="0, 10" />
 </parameters>
-<screen name="ParentalControlChangePin" position="center,center" size="1920,1080" title="Change pin code">
+<screen name="ParentalControlChangePin" position="center,center" size="1920,1080" title="Change pin code" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -4933,7 +4933,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/look.png" position="window_image_pos" size="window_image_size" />
   <widget text="ParentalControlChangePin" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="ParentalControlEditor" position="center,center" size="1920,1080" title="Parental control services Editor">
+<screen name="ParentalControlEditor" position="center,center" size="1920,1080" title="Parental control services Editor" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -4947,7 +4947,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="servicelist" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" font="font_list" itemHeight="50" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/look.png" position="window_image_pos" size="window_image_size" />
-  <widget text="ParentalControlEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="ParentalControlEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="ParentalControlSetup" position="center,center" size="1920,1080" title="Parental control setup" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -5019,7 +5019,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="piconslidername" position="1212,740" size="300,36" font="font_standard" valign="left" transparent="1" backgroundColor="windowBackgroundSecond" />
   <widget name="piconslider" position="1519,740" size="310,36" zPosition="2" transparent="1" backgroundColor="slider_background" foregroundColor="slider_foreground" />
   <widget name="spiconname" position="1212,690" size="250,36" font="font_standard" halign="left" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
-  <widget name="spicon" position="1481,690" size="350,36" font="font_standard" halign="left" foregroundColor="accentColorOne" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <widget name="spicon" position="1481,690" size="350,36" font="font_standard" halign="left" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />
@@ -5341,16 +5341,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="ServiceList" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" backgroundColor="windowBackground" itemHeight="50" font="font_list" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+  <widget name="ServiceList" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="1050,380" textOffset="5,3" backgroundColor="windowBackground" itemHeight="50" font="font_list" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+  <widget source="ServiceList_info" render="Label" position="105,547" size="1050,380" zPosition="2" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
   <widget source="ServiceList_desc" render="Label" position="window_desc_pos" size="window_desc_size" valign="center" halign="center" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
-  <widget source="ServiceList_info" render="Label" position="233,325" size="825,375" zPosition="2" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
+
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
   <panel name="panel_key_green_source" />
-  <widget text="RemoteServicesSetupMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="RemoteServicesSetupMenu" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="RemoteTimerScreen" position="center,center" size="1920,1080" title="Remote Timer" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -5444,17 +5445,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" position="window_list_pos" size="1048,735" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" valign="center" halign="center" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
-  <widget source="choices" render="Label" position="127,770" size="1050,70" font="font_standard" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget source="choices" render="Label" position="105,895" size="1050,40" font="font_standard_small; 30" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" foregroundColor="accent1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
   <panel name="panel_key_green_source" />
   <panel name="panel_key_yellow_source" />
-  <widget text="SATIPTuner" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="SATIPTuner" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="ScanIP" position="center,center" size="1920,1080" title="Scan IP" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -5827,7 +5828,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget text="SleepTimerEdit" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen backgroundColor="accentColorTwo" flags="wfNoBorder" name="SplitScreen" position="0,0" size="1920,1080" zPosition="-1">
-  <widget backgroundColor="transparent" font="Regular;60" halign="center" name="zap_focus" position="0,0" size="1920,1080" valign="center" zPosition="10" />
+  <widget backgroundColor="transparent" font="Regular;60" halign="center" name="zap_focus" position="0,0" size="1920,1080" valign="center" zPosition="-1" />
   <widget backgroundColor="accentColorTwo" font="Regular;36" foregroundColor="foreground" halign="left" position="975,150" render="Label" size="870,75" source="MasterService" transparent="1">
     <convert type="ServiceName" />
   </widget>
@@ -6118,12 +6119,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
-  <widget source="configdesc" render="Label" foregroundColor="foreground" font="font_standard" size="window_desc_size" position="window_desc_pos" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <widget source="configdesc" render="Label" foregroundColor="foreground" font="font_standard" size="window_desc_size" position="window_desc_pos" transparent="1" backgroundColor="windowBackgroundSecond" halign="center" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <widget name="canceltext" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget name="oktext" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget text="TimerEntry" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="TimerEntry" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="TimerLog" position="center,center" size="1920,1080" title="Timer log" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -6147,22 +6148,28 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <panel name="panel_key_blue_name" />
   <widget text="TimerLog" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="TimerSanityConflict" position="center,center" size="1820,980" title="Timer sanity error" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="TimerSanityConflict" position="center,center" size="1920,1080" title="Timer sanity error" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Timer.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Timer sanity error" position="155,90" size="1620,92" zPosition="3" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
-  <constant-widget name="clock_big" />
+  <!-- Title -->
+  <panel name="panel_Title_window" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget name="list" position="window_list_pos" size="window_list_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <!-- Right Panel (Right Side) -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
+  <widget name="timer1" position="1218,115" size="610,200" scrollbarMode="showNever" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <widget name="timer2" position="1218,730" size="610,200" scrollbarMode="showNever" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />
   <panel name="panel_key_green_name" />
   <panel name="panel_key_yellow_name" />
   <panel name="panel_key_blue_name" />
-  <widget name="timer1" position="35,320" size="1040,105" scrollbarMode="showNever" transparent="1" backgroundColor="windowBackground" />
-  <widget name="timer2" position="745,435" size="1040,105" scrollbarMode="showNever" transparent="1" backgroundColor="windowBackground" />
-  <eLabel position="35,435" size="1750,105" zPosition="-1" backgroundColor="windowBackground" />
-  <widget name="list" position="35,560" size="1750,400" font="Regular;32" itemHeight="40" transparent="1" scrollbarMode="showOnDemand" />
-  <widget text="TimerSanityConflict" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
+  <widget text="TimerSanityConflict" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="TimerSelection" position="center,center" size="1920,1080" title="Timer selection" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -6225,18 +6232,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="1050,737" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
-  <widget source="text" render="Label" position="35,820" size="1740,40" font="Regular;34" valign="center" halign="center" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" />
+  <widget source="text" render="Label" position="105,895" size="1050,40" font="font_standard_small; 34" valign="center" halign="center" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
   <panel name="panel_key_green_source" />
   <panel name="panel_key_yellow_source" />
   <panel name="panel_key_blue_source" />
-  <widget text="TranscodingSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="TranscodingSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="TunerState" title="Tuner State" flags="wfNoBorder" position="0,761" size="1820,40" zPosition="5" padding="30" spacing="20" backgroundColor="InfobarFgL" Animation="off">
   <widget name="Type" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/InfoBarTunerState/record.png,/usr/lib/enigma2/python/Plugins/Extensions/InfoBarTunerState/stream.png,/usr/lib/enigma2/python/Plugins/Extensions/InfoBarTunerState/finished.png,/usr/lib/enigma2/python/Plugins/Extensions/InfoBarTunerState/info.png" position="screen_full_pos" size="32,32" zPosition="1" transparent="1" alphatest="on" />
@@ -6304,17 +6311,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Backgrounds -->
   <eLabel backgroundColor="windowBackground" position="0,950" size="1920,130" zPosition="-10" />
   <!-- Clock -->
-  <panel name="panel_clock_menu" />
-  <panel name="panel_system_infos_menu" />
+  <panel name="panel_clock_infoBar" />  
   <!-- Title -->
   <eLabel backgroundColor="windowBackground" font="font_window_title" position="30,980" size="453,79" text="Software Update..." transparent="1" />
   <!-- ProgressBars -->
   <widget borderWidth="1" name="activityslider" position="535,1012" size="1355,20" borderColor="slider_border" foregroundColor="slider_foreground" transparent="1" />
   <widget borderWidth="1" name="slider" position="535,1040" size="1355,20" transparent="1" borderColor="slider_border" foregroundColor="slider_foreground" />
   <widget backgroundColor="windowBackground" font="font_standard" foregroundColor="foreground" position="535,960" render="Label" size="1355,45" source="status" transparent="1" />
-  <widget text="UpdatePlugin" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="UpdatePlugin" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
-<screen name="UserDialog" position="center,center" size="1920,1080" title="UserDialog">
+<screen name="UserDialog" position="center,center" size="1920,1080" title="UserDialog" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -6330,7 +6336,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <widget name="HelpWindow" pixmap="MetrixReloaded/media/vkey_icon.png" position="627,20" zPosition="1" size="1,1" transparent="1" alphatest="on" />
-  <widget text="UserDialog" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="UserDialog" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="UserManager" position="center,center" size="1920,1080" title="UserManager" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -6413,7 +6419,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <variable name="window_list_setup_two_rows_size" value="1050,750" />
   <!-- ContextMenu / SmallWindow -->
   <variable name="contextMenu_title_pos" value="20,5" />
-  <variable name="contextMenu_title_size" value="1050,60" />
+  <variable name="contextMenu_title_size" value="1010,60" />
   <variable name="contextMenu_list_pos" value="15,80" />
   <variable name="contextMenu_list_size" value="1020,650" />
   <!-- Window EPG -->
@@ -6822,7 +6828,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Title Seperator -->
   <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" position="window_list_pos" size="window_list_setup_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" position="window_list_pos" size="window_list_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" />
   <widget source="ipaddresstext" render="Label" position="1216,720" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />

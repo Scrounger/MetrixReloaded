@@ -49,7 +49,7 @@
   <variable name="window_list_setup_two_rows_size" value="1050,750" />
   <!-- ContextMenu / SmallWindow -->
   <variable name="contextMenu_title_pos" value="20,5" />
-  <variable name="contextMenu_title_size" value="1050,60" />
+  <variable name="contextMenu_title_size" value="1010,60" />
   <variable name="contextMenu_list_pos" value="15,80" />
   <variable name="contextMenu_list_size" value="1020,650" />
   <!-- Window EPG -->

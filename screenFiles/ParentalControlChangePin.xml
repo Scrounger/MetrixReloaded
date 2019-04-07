@@ -1,4 +1,4 @@
-﻿<screen name="ParentalControlChangePin" position="center,center" size="1920,1080" title="Change pin code">
+﻿<screen name="ParentalControlChangePin" position="center,center" size="1920,1080" title="Change pin code" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
