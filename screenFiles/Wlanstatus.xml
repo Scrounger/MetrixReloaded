@@ -1,30 +1,33 @@
-﻿<screen name="WlanStatus" position="center,center" size="1288,923" title="Wireless Network State" flags="wfNoBorder" backgroundColor="transparent">
+﻿<screen name="WlanStatus" position="center,center" size="1920,1080" title="Wireless Network State" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="51,68" size="77,77" alphatest="blend" transparent="1" />
-  <constant-widget name="clock_mid" />
+  <!-- Title -->
   <panel name="panel_Title_window" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget source="LabelBSSID" render="Label" position="105,150" size="400,40" zPosition="10" valign="left" font="font_standard" transparent="1" backgroundColor="windowBackground" />
+  <widget source="LabelESSID" render="Label" position="105,200" size="400,40" zPosition="10" valign="left" font="font_standard" transparent="1" backgroundColor="windowBackground" />
+  <widget source="LabelQuality" render="Label" position="105,250" size="400,40" zPosition="10" valign="left" font="font_standard" transparent="1" backgroundColor="windowBackground" />
+  <widget source="LabelSignal" render="Label" position="105,300" size="400,40" zPosition="10" valign="left" font="font_standard" transparent="1" backgroundColor="windowBackground" />
+  <widget source="LabelBitrate" render="Label" position="105,350" size="400,40" zPosition="10" valign="left" font="font_standard" transparent="1" backgroundColor="windowBackground" />
+  <widget source="LabelEnc" render="Label" position="105,400" size="400,40" zPosition="10" valign="left" font="font_standard" transparent="1" backgroundColor="windowBackground" />
+  <widget source="IFtext" render="Label" position="105,450" size="400,40" zPosition="10" font="font_standard" halign="left" backgroundColor="windowBackground" transparent="1" />
+  <widget source="Statustext" render="Label" position="105,500" size="400,40" zPosition="10" font="font_standard" halign="left" backgroundColor="windowBackground" transparent="1" />
+  <widget source="BSSID" render="Label" position="505,150" size="650,40" zPosition="10" valign="left" font="font_standard_small" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="ESSID" render="Label" position="505,200" size="650,40" zPosition="10" valign="left" font="font_standard_small" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="quality" render="Label" position="505,250" size="650,40" zPosition="10" valign="left" font="font_standard_small" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="signal" render="Label" position="505,300" size="650,40" zPosition="10" valign="left" font="font_standard_small" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="bitrate" render="Label" position="505,350" size="650,40" zPosition="10" valign="left" font="font_standard_small" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="enc" render="Label" position="505,400" size="650,40" zPosition="10" valign="left" font="font_standard_small" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="IF" render="Label" position="505,450" size="650,40" zPosition="10" font="font_standard_small" halign="right" backgroundColor="windowBackground" transparent="1" />
+  <widget name="statuspic" pixmaps="MetrixReloaded/skin_default/buttons/key_green.png,MetrixReloaded/skin_default/buttons/key_off.png" position="1120,507" zPosition="10" size="35,26" transparent="1" alphatest="on" />
+  <!-- Right Panel (Right Side) -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" />
+  <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <widget source="key_red" render="Label" position="key_red_mid_pos" zPosition="10" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget source="LabelBSSID" render="Label" position="85,309" size="400,34" zPosition="10" valign="left" font="Regular;32" transparent="1" backgroundColor="windowBackground" />
-  <widget source="LabelESSID" render="Label" position="85,359" size="400,34" zPosition="10" valign="left" font="Regular;32" transparent="1" backgroundColor="windowBackground" />
-  <widget source="LabelQuality" render="Label" position="85,409" size="400,34" zPosition="10" valign="left" font="Regular;32" transparent="1" backgroundColor="windowBackground" />
-  <widget source="LabelSignal" render="Label" position="85,459" size="400,34" zPosition="10" valign="left" font="Regular;32" transparent="1" backgroundColor="windowBackground" />
-  <widget source="LabelBitrate" render="Label" position="85,509" size="400,34" zPosition="10" valign="left" font="Regular;32" transparent="1" backgroundColor="windowBackground" />
-  <widget source="LabelEnc" render="Label" position="85,559" size="400,34" zPosition="10" valign="left" font="Regular;32" transparent="1" backgroundColor="windowBackground" />
-  <widget source="IFtext" render="Label" position="85,609" size="400,34" zPosition="10" font="Regular;32" halign="left" backgroundColor="windowBackground" transparent="1" />
-  <widget source="Statustext" render="Label" position="85,659" size="400,34" zPosition="10" font="Regular;32" halign="left" backgroundColor="windowBackground" transparent="1" />
-  <widget source="BSSID" render="Label" position="490,309" size="400,34" zPosition="10" valign="left" font="Bold;32" transparent="1" backgroundColor="windowBackground" />
-  <widget source="ESSID" render="Label" position="490,359" size="400,34" zPosition="10" valign="left" font="Bold;32" transparent="1" backgroundColor="windowBackground" />
-  <widget source="quality" render="Label" position="490,409" size="400,34" zPosition="10" valign="left" font="Bold;32" transparent="1" backgroundColor="windowBackground" />
-  <widget source="signal" render="Label" position="490,459" size="400,34" zPosition="10" valign="left" font="Bold;32" transparent="1" backgroundColor="windowBackground" />
-  <widget source="bitrate" render="Label" position="490,509" size="400,34" zPosition="10" valign="left" font="Bold;32" transparent="1" backgroundColor="windowBackground" />
-  <widget source="enc" render="Label" position="490,559" size="400,34" zPosition="10" valign="left" font="Bold;32" transparent="1" backgroundColor="windowBackground" />
-  <widget source="IF" render="Label" position="490,609" size="400,34" zPosition="10" font="Bold;32" halign="left" backgroundColor="windowBackground" transparent="1" />
-  <widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="490,667" zPosition="10" size="15,16" transparent="1" alphatest="on" />
-  <eLabel position="35,350" size="1218,50" zPosition="-1" backgroundColor="listBackgroundBarsOne" />
-  <eLabel position="35,450" size="1218,50" zPosition="-1" backgroundColor="listBackgroundBarsOne" />
-  <eLabel position="35,550" size="1218,50" zPosition="-1" backgroundColor="listBackgroundBarsOne" />
-  <eLabel position="35,650" size="1218,50" zPosition="-1" backgroundColor="listBackgroundBarsOne" />
-  <widget text="WlanStatus" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+  <panel name="panel_key_red_source" />
+  <widget text="WlanStatus" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
