@@ -1,7 +1,7 @@
 # MetrixReloaded
 [![GitHub release](https://img.shields.io/github/release/Scrounger/MetrixReloaded.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
 [![GitHub All Releases](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
-[![GitHub Releases (by Release)](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/0.6.40/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
+[![GitHub Releases (by Release)](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/0.7.0/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Scrounger/MetrixReloaded.svg)
 ![GitHub](https://img.shields.io/github/license/Scrounger/MetrixReloaded.svg)
 
@@ -89,6 +89,17 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 </p>
 
 ## Changelog
+
+### 0.7.0 BETA (08.04.2019)
+* constant-widgets durch panels ersetzt -> Skin ist jetzt 100% kompatibel mit dem [OpenSkin-Designer](https://github.com/Humaxx/OpenSkin-Designer) (Version >= 3.2.0). Könnt ihr [hier downloaden](https://github.com/Humaxx/OpenSkin-Designer/releases)
+* [Neues Hauptmenü Design](https://raw.githubusercontent.com/Scrounger/MetrixReloaded/master/screenshots/menu_mainmenu.jpg)
+* Moderne Icons hinzugefügt - Vielen Dank an die Authoren! (Quellen: [iFlatFHD Hauptmenü Icons](https://www.vuplus-support.org/wbb4/index.php?thread/93005-iflatfhd-hauptmen%C3%BC-icons-v6-6-07-04-2019/&pageNo=1), [MyMetrix Hauptmenu Icons gepimpt by rennmaus und kleiner.teufel](https://www.vuplus-support.org/wbb4/index.php?thread/71023-mymetrix-hauptmenu-icons-gepimpt-by-rennmaus-und-kleiner-teufel/), [MetrixHD - simple Icons gepimpt by kleiner.teufel & rennmaus](https://www.vuplus-support.org/wbb4/index.php?thread/82277-metrixhd-simple-icons-gepimpt-by-kleiner-teufel-rennmaus/))
+* Icon unhandled-key geändert - Vielen Dank an maggy (Quelle: [Unhandled Key Icons](https://www.vuplus-support.org/wbb4/index.php?thread/33779-unhandled-key-icons/))
+* Plugin PiconManager hinzugefügt
+* Systeminfos hinzugefügt
+* SkinPart SystemInfo Full hinzugefügt
+* Farbstil colors_Black bug fixes
+* viele kleine Screen bug fixes
 
 ### 0.6.40 BETA (31.03.2019)
 * Fehlende Dependencies hinzugefügt
