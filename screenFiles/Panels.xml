@@ -105,7 +105,7 @@
   <widget alphatest="blend" path="media/logos/resolution" position="1640,1035" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
     <convert type="MetrixReloadedResolutionIcon">ResolutionIcon</convert>
   </widget>
-  <widget alphatest="blend" path="media/logos/resolution" position="1721,1035" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
+  <widget alphatest="blend" path="media/logos/definition" position="1721,1035" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
     <convert type="MetrixReloadedResolutionIcon">DefinitionIcon</convert>
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/fta.png" position="1802,1035" render="Pixmap" backgroundColor="windowBackground" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">
