@@ -25,17 +25,17 @@
   <widget name="config" position="window_small_list_top_pos" transparent="1" size="window_small_list_size" font="font_list" itemHeight="50" textOffset="5,1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- unter der Liste-->
   <eLabel name="Seperator" position="90,530" size="1078,2" zPosition="5" backgroundColor="seperator" />
-  <widget source="introduction" render="Label" position="105,545" size="800,40" foregroundColor="listDescription" font="font_standard" halign="left" transparent="1" backgroundColor="windowBackground" />
+  <widget source="introduction" render="Label" position="105,545" size="1050,40" foregroundColor="listDescription" font="font_standard" halign="left" transparent="1" backgroundColor="windowBackground" />
   <widget source="IPtext" render="Label" position="105,600" size="225,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" />
   <widget source="Netmasktext" render="Label" position="105,650" size="225,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" />
   <widget source="Gatewaytext" render="Label" position="105,700" size="225,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" />
-  <widget source="IP" render="Label" position="800,600" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
-  <widget source="Mask" render="Label" position="800,650" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
-  <widget source="Gateway" render="Label" position="800,700" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="IP" render="Label" position="795,600" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="Mask" render="Label" position="795,650" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="Gateway" render="Label" position="795,700" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
   <widget source="DNS1text" render="Label" position="105,780" size="220,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" />
   <widget source="DNS2text" render="Label" position="105,830" size="220,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" />
-  <widget source="DNS1" render="Label" position="800,780" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
-  <widget source="DNS2" render="Label" position="800,830" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="DNS1" render="Label" position="795,780" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
+  <widget source="DNS2" render="Label" position="795,830" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
   <widget source="introduction2" render="Label" position="window_desc_pos" size="window_desc_size" foregroundColor="foreground" font="font_standard" halign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
@@ -43,10 +43,9 @@
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  
   <panel name="panel_key_red_source" />
   <panel name="panel_key_blue_source" />
-  <widget text="AdapterSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="AdapterSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="AdapterSetupConfiguration" position="center,center" size="1920,1080" title="Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -58,11 +57,11 @@
   <!-- Title Seperator -->
   <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="menulist" position="105,210" size="1020,650" textOffset="5,1" font="font_list" itemHeight="50" transparent="1" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand" />
+  <widget name="menulist" position="105,210" size="1050,650" textOffset="5,1" font="font_list" itemHeight="50" transparent="1" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand" />
   <widget source="IFtext" render="Label" position="105,150" size="150,50" zPosition="10" backgroundColor="windowBackground" font="font_standard" transparent="1" halign="left" />
   <widget source="IF" render="Label" position="275,150" size="600,50" zPosition="10" backgroundColor="windowBackground" font="font_standard" transparent="1" halign="left" />
   <widget source="Statustext" render="Label" position="875,150" size="200,50" zPosition="10" font="font_standard" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="statuspic" pixmaps="MetrixReloaded/buttons/green.png,MetrixReloaded/buttons/button_off.png" position="1095,156" zPosition="10" size="38,38" transparent="1" alphatest="blend" />
+  <widget name="statuspic" pixmaps="MetrixReloaded/skin_default/buttons/key_green.png,MetrixReloaded/skin_default/buttons/key_off.png" position="1105,161" zPosition="10" size="35,26" transparent="1" alphatest="blend" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" />
@@ -71,7 +70,7 @@
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
-  <widget text="AdapterSetupConfiguration" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="AdapterSetupConfiguration" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="addExe" position="center,center" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -93,7 +92,7 @@
   
   <widget text="addExe" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="addJob" position="center,center" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="addJob" position="center,center" size="1920,1080" title="addJob" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -110,7 +109,7 @@
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
   <panel name="panel_key_green_source" />
-  <widget text="addJob" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="addJob" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="AllNews" position="center,center" size="1920,1080" title="VTI News" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -361,19 +360,20 @@
   <panel name="panel_key_red_source" />
   <widget text="AutoMountManager" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="AutoMountView" position="center,center" size="1288,923" title="AutoMountView" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="AutoMountView" position="center,center" size="1920,1080" title="AutoMountView" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="51,68" size="77,77" alphatest="blend" transparent="1" />
+  <!-- Title -->
   <panel name="panel_Title_window" />
-  <constant-widget name="clock_mid" />
-  <panel name="panel_color_buttons_window" />
-  <widget source="key_red" render="Label" position="key_red_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget source="key_yellow" render="Label" position="key_yellow_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) --> 
   <widget source="legend1" render="Label" position="80,280" zPosition="1" size="300,60" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget source="legend2" render="Label" position="380,280" zPosition="1" size="500,60" font="Regular;28" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget source="legend3" render="Label" position="880,280" zPosition="1" size="325,60" font="Regular;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget source="config" render="Listbox" position="80,350" size="1125,425" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20">
+  <widget source="config" render="Listbox" position="105,350" size="1050,425" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20">
     <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (50, 18), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
@@ -383,13 +383,19 @@
 						MultiContentEntryPixmapAlphaTest(pos = (995, 22), size = (48, 48), png = 4), # index 4 is the activepng pixmap
 						MultiContentEntryPixmapAlphaTest(pos = (1025, 18), size = (48, 48), png = 5), # index 4 is the mounttype pixmap
 					],
-				"fonts": [gFont("Regular", 32),gFont("Regular", 26)],
+				"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 26)],
 				"itemHeight": 85
 				}
 			</convert>
   </widget>
-  <widget source="introduction" render="Label" position="230,790" size="825,30" zPosition="10" font="Regular;30" halign="center" foregroundColor="accentColorOne" transparent="1" />
-  <widget text="AutoMountView" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+  <!-- Right Panel (Right Side) -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
+  <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" foregroundColor="foreground"  backgroundColor="windowBackgroundSecond" transparent="1" />
+  <!-- Buttons -->
+  <panel name="panel_color_buttons_window" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_yellow_source" />
+<widget text="AutoMountView" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="AutoShutDownConfiguration" position="center,center" size="1920,1080" title="AutoShutDown" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -411,7 +417,7 @@
   <widget name="buttonyellow" position="key_yellow_pos" size="key_size" valign="top" halign="left" zPosition="2" foregroundColor="foreground" font="font_key_standard" backgroundColor="windowBackground" transparent="1" />
   <widget text="AutoShutDownConfiguration" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="AutoTimerEditor" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="AutoTimerEditor" position="center,center" size="1920,1080" title="AutoTimerEditor" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -433,7 +439,7 @@
   <panel name="panel_key_blue_source" />
   <widget text="AutoTimerEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="AutoTimerFilterEditor" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="AutoTimerFilterEditor" position="center,center" size="1920,1080" title="AutoTimerFilterEditor" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -454,7 +460,7 @@
   <panel name="panel_key_blue_source" />
   <widget text="AutoTimerFilterEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="AutoTimerImporter" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="AutoTimerImporter" position="center,center" size="1920,1080" title="AutoTimerImporter" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -475,7 +481,7 @@
   <panel name="panel_key_blue_source" />
   <widget text="AutoTimerImporter" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="AutoTimerOverview" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="AutoTimerOverview" position="center,center" size="1920,1080" title="AutoTimerOverview" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -497,7 +503,7 @@
   <panel name="panel_key_blue_source" />
   <widget text="AutoTimerOverview" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="AutoTimerPreview" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="AutoTimerPreview" position="center,center" title="AutoTimerPreview" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -528,7 +534,7 @@
   <panel name="panel_key_red_source" />
   <widget text="AutoTimerPreview" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="AutoTimerServiceEditor" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="AutoTimerServiceEditor" position="center,center" size="1920,1080" title="AutoTimerServiceEditor" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -549,7 +555,7 @@
   <panel name="panel_key_blue_source" />
   <widget text="AutoTimerServiceEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="AutoTimerSettings" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="AutoTimerSettings" position="center,center" size="1920,1080" title="AutoTimerSettings" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -3220,7 +3226,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="list" position="127,760" size="1050,100" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showOnDemand" transparent="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <widget text="MessageBoxConfirmCode" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
 </screen>
-<screen name="MetrixReloadedSetup" position="center,center" size="1920,1080" title="Transcoding Setup" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="MetrixReloadedSetup" position="center,center" size="1920,1080" title="MetrixReloaded Configuration" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -6521,8 +6527,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
 
-  <widget source="Event" position="80,685" zPosition="1" size="900,40" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][Title]</convert>
+  <widget source="Event" position="80,685" zPosition="1" size="900,40" foregroundColor="foreground" backgroundColor="windowBackground" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+    <convert type="EventName">Name</convert>
   </widget>
   <widget source="Event" render="Label" position="1600,685" zPosition="1" size="120,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1">
     <convert type="EventTime">StartTime</convert>
