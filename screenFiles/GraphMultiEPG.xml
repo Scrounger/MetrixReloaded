@@ -28,18 +28,18 @@
   <widget name="timeline_now" pixmap="MetrixReloaded/media/timeline_now.png" position="52,105" size="2,730" zPosition="2" alphatest="on" />
   <!-- selected Infos-->
   <widget backgroundColor="windowBackground" font="font_standard" halign="left" position="54,835" render="Label" size="855,54" source="Event" noWrap="1" transparent="1" valign="center">
-    <convert type="EventName">Name  </convert>
+    <convert type="EventName">Name</convert>
   </widget>
   <widget backgroundColor="windowBackground" font="font_standard" halign="right" position="1412,835" render="Label" shadowColor="windowBackground" size="460,54" source="Event" transparent="1" valign="center">
-    <convert type="EventTime">StartTime  </convert>
-    <convert type="ClockToText">Format:%A %d.%m  %H:%M  </convert>
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%A %d.%m  %H:%M</convert>
   </widget>
   <widget backgroundColor="windowBackground" font="font_standard" halign="center" position="899,835" render="Label" size="190,54" source="Event" transparent="1" valign="top">
-    <convert type="EventTime">Remaining  </convert>
-    <convert type="RemainingToText">InMinutes  </convert>
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
   </widget>
   <widget backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixSL;28" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=10000,wrap,always=0" position="54,885" render="VRunningText" shadowColor="windowBackground" size="1820,118" source="Event" transparent="1" valign="top" zPosition="1">
-    <convert type="EventName">ExtendedDescription  </convert>
+    <convert type="EventName">ExtendedDescription</convert>
   </widget>
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="1780,1028" size="window_remote_button_size" transparent="1" zPosition="10" />

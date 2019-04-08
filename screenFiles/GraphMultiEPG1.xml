@@ -47,7 +47,7 @@
     <convert type="EventTime">Progress</convert>
   </widget>
   <widget backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" transparent="1" position="630,140" render="Label" size="1232,268" source="Event" valign="top" zPosition="1">
-    <convert type="EventName">ExtendedDescription  </convert>
+    <convert type="EventName">ExtendedDescription</convert>
   </widget>
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="1780,1028" size="window_remote_button_size" transparent="1" zPosition="10" />

@@ -34,12 +34,14 @@
   <widget itemHeight="110" name="epg_list3" position="792,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
   <widget itemHeight="110" name="epg_list4" position="1148,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
   <widget itemHeight="110" name="epg_list5" position="1504,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
+  
+  
   <widget source="Event" render="Label" position="80,733" zPosition="1" size="1760,211" font="Regular;30" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" valign="top">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
 
-  <widget source="Event" position="80,685" zPosition="1" size="900,40" foregroundColor="foreground" backgroundColor="windowBackground" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
-    <convert type="EventName">Name</convert>
+  <widget source="ExtEvent" position="80,685" zPosition="1" size="900,40" foregroundColor="foreground" backgroundColor="windowBackground" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[Title]</convert>
   </widget>
   <widget source="Event" render="Label" position="1600,685" zPosition="1" size="120,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1">
     <convert type="EventTime">StartTime</convert>

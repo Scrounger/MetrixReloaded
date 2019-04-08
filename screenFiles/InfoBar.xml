@@ -12,7 +12,7 @@
     <convert type="EventName">Name</convert>
   </widget>
   <widget source="session.extEvent_Now" position="412,874" size="1300,40" backgroundColor="windowBackground" foregroundColor="accent1" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="1">
-    <convert type="MetrixReloadedExtEventEPG">EpisodeNum, Subtitle(10), Genre, Year, Category</convert>
+    <convert type="MetrixReloadedExtEventEPG">EpisodeNum, Subtitle(10), Genre, Year</convert>
   </widget>
   <widget source="session.Event_Now" position="1636,835" size="112,56" backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" halign="right" valign="bottom" render="Label" transparent="1">
     <convert type="EventTime">StartTime</convert>
