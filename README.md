@@ -47,6 +47,7 @@ Die Einstellungen (Verzeichnisse) für die Tools müssen in der [settings.cfg](h
 Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://github.com/Scrounger/MetrixReloaded/blob/master/skin/skin.xml) Datei im Verzeichnis [skin](https://github.com/Scrounger/MetrixReloaded/tree/master/skin) erzeugt
 * Genauso sind die SkinParts in das Verzeichnis [skinParts](https://github.com/Scrounger/MetrixReloaded/tree/master/skinparts) ausgelagert worden und werden auch mit dem Tool **Merger.exe** in das [skin](https://github.com/Scrounger/MetrixReloaded/tree/master/skin) Verzeichnis kopiert
 * Mit Hilfe der **Builder.exe** wird der Skin inkl. Converter, Renderer, Plugin, etc. gebaut und alle relvanten Daten in das Verzeichnis kopiert, dass als Build-Verzeichnis in der [settings.cfg](https://github.com/Scrounger/MetrixReloaded/blob/master/settings.cfg) angegeben ist. Mit diesen Dateien kann die *.ipk Datei erstellt werden, z.B. mit dem Tool [IPK Creator 5.0 (Java) By Persian Prince](https://www.vuplus-support.org/wbb4/index.php?thread/111551-ipk-creator-5-0-java-by-persian-prince/)
+* Skin ist zu 100% kompatibel mit dem [OpenSkin-Designer](https://github.com/Humaxx/OpenSkin-Designer) (Version >= 3.2.0). Könnt ihr [hier downloaden](https://github.com/Humaxx/OpenSkin-Designer/releases)
 
 
 ## Screenshots
