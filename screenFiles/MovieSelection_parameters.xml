@@ -52,7 +52,7 @@
   <!-- Datum_Uhrzeit -->
   <parameter name="MovieListMinimalLength" value="1000,3,170,40" />
   <!-- Einzeilige Listenansicht VTI -->
-  <parameter name="MovieListMinimalVTITitle" value="0,0,1165,42" />
+  <parameter name="MovieListMinimalVTITitle" value="10,0,1165,42" />
   <parameter name="MovieListMinimalVTIBegin" value="1150,3,0,40" />
   <parameter name="MovieListMinimalVTILength" value="1150,3,0,40" />
   <parameter name="MovieListMinimalVTISize" value="1150,3,0,40" />
