@@ -3470,7 +3470,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Datum_Uhrzeit -->
   <parameter name="MovieListMinimalLength" value="1000,3,170,40" />
   <!-- Einzeilige Listenansicht VTI -->
-  <parameter name="MovieListMinimalVTITitle" value="0,0,1165,42" />
+  <parameter name="MovieListMinimalVTITitle" value="10,0,1165,42" />
   <parameter name="MovieListMinimalVTIBegin" value="1150,3,0,40" />
   <parameter name="MovieListMinimalVTILength" value="1150,3,0,40" />
   <parameter name="MovieListMinimalVTISize" value="1150,3,0,40" />
@@ -4781,59 +4781,59 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 
 <!-- Misc -->
 <screen name="panel_system_infos_menu">
-  <widget source="Title" render="Label" position="1120,598" size="150,30" font="font_standard_extra_small" halign="left" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1120,598" size="150,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">temperature</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,598" size="230,30" halign="right" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,598" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedTempFanInfo">TempInfo</convert>
   </widget>
 
-  <widget source="Title" render="Label" position="1120,638" size="150,30" font="font_standard_extra_small" halign="left" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1120,638" size="150,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">fanspeed</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,638" size="230,30" halign="right" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,638" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedTempFanInfo">FanInfo</convert>
   </widget>
 
-  <widget source="Title" render="Label" position="1120,678" size="150,30" font="font_standard_extra_small" halign="left" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1120,678" size="150,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">cpuload</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,678" size="230,30" halign="right" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,678" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedCpuUsage">$0</convert>
   </widget>
 
-  <widget source="Title" render="Label" position="1120,718" size="150,30" font="font_standard_extra_small" halign="left" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1120,718" size="150,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">avgload</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,718" size="230,30" halign="right" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,718" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedLayoutInfo">LoadAvg</convert>
   </widget>
 
-  <widget source="session.CurrentService" render="Label" position="1120,758" size="75,30" font="font_standard_extra_small" halign="left" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1120,758" size="75,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">flash</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,758" size="230,30" halign="right" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,758" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedLayoutInfo">FlashInfo,FreeOnly</convert>
   </widget>
 
-  <widget source="session.CurrentService" render="Label" position="1120,798" size="75,30" font="font_standard_extra_small" halign="left" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1120,798" size="75,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">ram</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,798" size="230,30" halign="right" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,798" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedLayoutInfo">MemTotal,FreeOnly</convert>
   </widget>
 
-  <widget source="session.CurrentService" render="Label" position="1120,838" size="75,30" font="font_standard_extra_small" halign="left" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1120,838" size="75,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">hdd</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,838" size="230,30" halign="right" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,838" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedLayoutInfo">HddInfo,FreeOnly</convert>
   </widget>
 
-  <widget source="session.CurrentService" render="Label" position="1120,878" size="75,30" font="font_standard_extra_small" halign="left" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1120,878" size="75,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">usb</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,878" size="230,30" halign="right" valign="bottom" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,878" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedLayoutInfo">UsbInfo,FreeOnly</convert>
   </widget>
 </screen>
@@ -6523,12 +6523,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget itemHeight="110" name="epg_list3" position="792,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
   <widget itemHeight="110" name="epg_list4" position="1148,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
   <widget itemHeight="110" name="epg_list5" position="1504,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
+  
+  
   <widget source="Event" render="Label" position="80,733" zPosition="1" size="1760,211" font="Regular;30" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" valign="top">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
 
-  <widget source="Event" position="80,685" zPosition="1" size="900,40" foregroundColor="foreground" backgroundColor="windowBackground" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
-    <convert type="EventName">Name</convert>
+  <widget source="ExtEvent" position="80,685" zPosition="1" size="900,40" foregroundColor="foreground" backgroundColor="windowBackground" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[Title]</convert>
   </widget>
   <widget source="Event" render="Label" position="1600,685" zPosition="1" size="120,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1">
     <convert type="EventTime">StartTime</convert>
