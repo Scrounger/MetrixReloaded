@@ -1,25 +1,22 @@
-﻿<screen name="InfoPanel" position="center,center" size="1820,980" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="InfoPanel" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="40,72" size="77,77" alphatest="blend" transparent="1" />
-  <panel name="panel_title_window" />
-  <constant-widget name="clock_big" />
-  <panel name="panel_color_buttons_window" />
-  <eLabel position="860,300" size="2,325" zPosition="10" backgroundColor="gray" />
-  <eLabel position="55,430" size="800,2" zPosition="10" backgroundColor="gray" />
-  <eLabel position="865,430" size="835,2" zPosition="10" backgroundColor="gray" />
-  <eLabel position="55,630" size="1700,2" zPosition="10" backgroundColor="gray" />
-  <eLabel position="50,211" size="590,198" zPosition="-10" backgroundColor="gray" />
-  <eLabel position="645,211" size="585,119" zPosition="-10" backgroundColor="gray" />
-  <eLabel position="645,335" size="585,74" zPosition="-10" backgroundColor="gray" />
-  <eLabel position="50,414" size="1180,211" zPosition="-10" backgroundColor="gray" />
-  <widget name="vtiversion" position="55,300" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="kernel" position="55,330" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="uptime" position="55,360" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="load" position="55,390" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="temp" position="1400,440" size="370,30" font="Regular;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="fan" position="1400,470" size="370,30" font="Regular;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget source="proclist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,440" size="800,210" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <panel name="panel_background_wide" />
+  <!-- Title -->
+  <panel name="panel_Title_window" />
+  <!-- Title Seperator -->
+  <eLabel name="Seperator" position="90,135" size="1740,2" zPosition="5" backgroundColor="seperator" />
+  <!-- Clock -->
+  <panel name="panel_clock_wide" />
+
+
+
+  <widget name="vtiversion" position="95,170" size="800,30" font="SetrixHD;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="kernel" position="95,200" size="800,30" font="SetrixHD;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="uptime" position="95,230" size="800,30" font="SetrixHD;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="load" position="95,260" size="800,30" font="SetrixHD;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="temp" position="1445,340" size="370,30" font="SetrixHD;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="fan" position="1445,370" size="370,30" font="SetrixHD;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget source="proclist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="95,340" size="800,210" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (220, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -27,13 +24,13 @@
 						MultiContentEntryText(pos = (440, 1), size = (180, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
 						MultiContentEntryText(pos = (620, 1), size = (180, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 3),
 					],
-				"fonts": [gFont("Regular", 28),gFont("Regular", 22)],
+				"fonts": [gFont("SetrixHD", 28),gFont("SetrixSL", 22)],
 				"itemHeight": 30,
 				"selectionEnabled": False
 				}
 			</convert>
   </widget>
-  <widget source="storagelist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,640" size="1710,270" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" enableWrapAround="1">
+  <widget source="storagelist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="95,610" size="1710,270" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 			{"template": [
 					MultiContentEntryText(pos = (0, 1), size = (550, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -42,39 +39,42 @@
 					MultiContentEntryText(pos = (1300, 1), size = (200, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 3),
 					MultiContentEntryText(pos = (1500, 1), size = (200, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 4),
 				],
-			"fonts": [gFont("Regular", 28),gFont("Regular", 22)],
+			"fonts": [gFont("SetrixHD", 28),gFont("SetrixSL", 22)],
 			"itemHeight": 30,
 			"selectionEnabled": False
 			}
 		</convert>
   </widget>
-  <widget source="netdev" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,300" size="800,120" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="netdev" render="Listbox" backgroundColor="windowBackground" transparent="1" position="925,170" size="885,120" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (150, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 						MultiContentEntryText(pos = (150, 1), size = (325, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
 						MultiContentEntryText(pos = (475, 1), size = (325, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
 					],
-				"fonts": [gFont("Regular", 28),gFont("Regular", 22)],
+				"fonts": [gFont("SetrixHD", 28),gFont("SetrixSL", 22)],
 				"itemHeight": 30,
 				"selectionEnabled": False
 				}
 			</convert>
   </widget>
-  <widget source="memory" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,440" size="800,210" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="memory" render="Listbox" backgroundColor="windowBackground" transparent="1" position="925,340" size="800,210" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (150, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 						MultiContentEntryText(pos = (150, 1), size = (150, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
 						MultiContentEntryText(pos = (300, 1), size = (150, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
 					],
-				"fonts": [gFont("Regular", 28),gFont("Regular", 22)],
+				"fonts": [gFont("SetrixHD", 28),gFont("SetrixSL", 22)],
 				"itemHeight": 30,
 				"selectionEnabled": False
 				}
 			</convert>
   </widget>
-  <widget font="Regular;31" halign="left" valign="center" source="key_red" render="Label" position="key_red_pos" size="key_size" zPosition="1" backgroundColor="windowBackground" transparent="1" />
-  <widget font="Regular;31" halign="left" valign="center" source="key_green" render="Label" position="key_green_pos" size="key_size" zPosition="1" backgroundColor="windowBackground" transparent="1" />
-  <widget text="InfoPanel" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
+
+  <!-- Buttons -->
+  <panel name="panel_color_buttons_window" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <widget text="InfoPanel" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
