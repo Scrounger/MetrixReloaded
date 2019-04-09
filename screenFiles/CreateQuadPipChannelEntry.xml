@@ -1,21 +1,28 @@
-﻿<screen name="CreateQuadPipChannelEntry" position="center,center" size="1820,980" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="CreateQuadPipChannelEntry" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/media/icons/ico_Chlist_title.png" position="40,72" size="84,84" />
-  <constant-widget name="clock_big" />
+  <!-- Title -->
   <panel name="panel_Title_window" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget name="list" position="window_list_pos" size="window_list_size" serviceItemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <!-- Right Panel (Right Side) -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
+  
+  <widget name="textChannels" position="1218,120" size="610,40" font="Regular;34" transparent="1" />
+  <widget name="selectedList" position="1218,175" size="610,160" font="Regular;30" itemHeight="40" transparent="1" />
+
+<widget name="description" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
+  
+  
+  <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />
   <panel name="panel_key_green_name" />
   <panel name="panel_key_yellow_name" />
   <panel name="panel_key_blue_name" />
-  <widget name="key_red" position="209,196" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="key_green" position="466,196" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="key_yellow" position="723,196" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="key_blue" position="989,198" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="list" position="35,300" size="1100,560" serviceItemHeight="40" serviceNumberFont="Regular;28" serviceNameFont="Regular;28" serviceInfoFont="Bold;24" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
-  <widget name="textChannels" position="1200,300" size="585,40" font="Regular;34" transparent="1" />
-  <widget name="selectedList" position="1220,350" size="565,160" font="Regular;30" itemHeight="40" transparent="1" />
-  <widget name="description" position="1200,800" size="650,170" font="Regular;28" halign="left" transparent="1" />
-  <widget text="CreateQuadPipChannelEntry" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
+  <widget text="CreateQuadPipChannelEntry" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
