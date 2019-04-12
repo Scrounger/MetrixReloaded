@@ -341,6 +341,10 @@ class MetrixReloadedExtEventEPG(Converter, object):
 		desc = event.getExtendedDescription()
 
 		if(desc != "" and desc != None):
+
+			if(desc == self.getSubtitleFromDescription(event,10)):
+				desc = None
+
 			prefix = self.getPrefixParser(type)
 			if(desc != None and prefix != None):
 				desc = '%s%s' % (prefix, desc)
