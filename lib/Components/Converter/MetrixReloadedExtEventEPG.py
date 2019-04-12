@@ -266,7 +266,11 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				else:
 					input = str(input).replace(type, "")
 
-			return input
+			#falls input mit newline beginnt -> entfernen
+			if(input.startswith('\\n')):
+				return input[2:]
+			else:
+				return input
 
 		else:
 			return "Wrong format: %s" %(input)
@@ -509,7 +513,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 		#Falls Subtitle = Title -> dann nichts zurück geben
 		if (subtitle != None and subtitle.rstrip('.') == self.getTitle(event, values)):
 			subtitle = None
-		
+
 		return subtitle
 		
 	def getSubtitleFromDescription(self, event, maxWords):
