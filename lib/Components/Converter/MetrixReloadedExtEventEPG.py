@@ -291,6 +291,8 @@ class MetrixReloadedExtEventEPG(Converter, object):
 			#falls input mit newline beginnt -> entfernen
 			if(input.startswith('\\n')):
 				return input[2:]
+			elif(input.startswith('\\n\\n')):
+				return input[4:]
 			else:
 				return input
 
