@@ -62,7 +62,10 @@ class MetrixReloadedExtEventEPG(Converter, object):
 		try:
 			event = self.source.event[0]
 		except:
-			event = None
+			try:
+				event = self.source.event
+			except:
+				event = None
 		
 		values = self.deserializeJson(extraData)
 		#values = None
@@ -331,23 +334,24 @@ class MetrixReloadedExtEventEPG(Converter, object):
 					
 		prefix = self.getPrefixParser(type)
 		if(country != None and prefix != None):
-			country = '%s %s' % (prefix, country)
+			country = '%s%s' % (prefix, country)
 			
 		return country
 	
 	def getExtendedDescription(self, type, values, event):
 		desc = None
 
-		desc = event.getExtendedDescription()
+		if(event != None):
+			desc = event.getExtendedDescription()
 
-		if(desc != "" and desc != None):
+			if(desc != "" and desc != None):
 
-			if(desc == self.getSubtitleFromDescription(event,10)):
-				desc = None
+				if(desc == self.getSubtitleFromDescription(event,10)):
+					desc = None
 
-			prefix = self.getPrefixParser(type)
-			if(desc != None and prefix != None):
-				desc = '%s%s' % (prefix, desc)
+				prefix = self.getPrefixParser(type)
+				if(desc != None and prefix != None):
+					desc = '%s%s' % (prefix, desc)
 
 		return desc
 	
@@ -381,7 +385,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 		
 		prefix = self.getPrefixParser(type)
 		if(year != None and prefix != None):
-			year = '%s %s' % (prefix, year)
+			year = '%s%s' % (prefix, year)
 	
 		return year
 	
@@ -411,7 +415,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 
 		prefix = self.getPrefixParser(type)
 		if(genre != None and prefix != None):
-			genre = '%s %s' % (prefix, genre)
+			genre = '%s%s' % (prefix, genre)
 		
 		return genre
 
@@ -426,7 +430,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 					
 		prefix = self.getPrefixParser(type)
 		if(category != None and prefix != None):
-			category = '%s %s' % (prefix, category)
+			category = '%s%s' % (prefix, category)
 		
 		return category
 	
@@ -451,7 +455,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 
 		prefix = self.getPrefixParser(type)
 		if(rating != None and prefix != None):
-			rating = '%s %s' % (prefix, rating)
+			rating = '%s%s' % (prefix, rating)
 					
 		return rating
 
@@ -494,7 +498,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 		
 		prefix = self.getPrefixParser(type)
 		if(parentialRating != None and prefix != None):
-			parentialRating = '%s %s' % (prefix, parentialRating)
+			parentialRating = '%s%s' % (prefix, parentialRating)
 		
 		return parentialRating		
 			
@@ -518,7 +522,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 
 		prefix = self.getPrefixParser(type)
 		if(title != None and prefix != None):
-			title = '%s %s' % (prefix, title)				
+			title = '%s%s' % (prefix, title)				
 				
 		return title		
 	
@@ -903,7 +907,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 		return False
 		
 	AVAILABLE_GENRES_EPG =[
-                        "Actionfilm", "Abenteuerfilm", "Animationsfilm", "Animationsserie", "Abenteuer", "Animations-Serie", "Actiondrama", "Abenteuer-Serie", "Actionthriller", "Actionkomödie", "Actionserie", "Animation", "Action", "Actionfilm",
+                        "Actionfilm", "Abenteuerfilm", "Animationsfilm", "Animationsserie", "Abenteuer", "Animations-Serie", "Actiondrama", "Abenteuer-Serie", "Actionthriller", "Actionkomödie", "Actionserie", "Animation", "Action", "Actionfilm", "Arztreihe",
 						"Beziehungskomödie", "Biographie", "Biografie",
 						"Comedy", "Clipshow", "Comedy-Serie", "Comedy Show", 
     					"Doku-Reihe", "Doku-Serie", "Dramaserie", "Dokutainment-Reihe", "Dokumentationsreihe", "Dokumentarserie", "Dokumentation", "Drama", "Dokumentarfilm", "Doku-Experiment", "Deutsche Komödie", "Dramedy", "Dokumentarreihe", "Dokureihe",
