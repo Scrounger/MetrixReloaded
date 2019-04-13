@@ -2382,29 +2382,38 @@
   <widget alphatest="on" name="timeline_now" position="103,170" size="2,740" pixmap="MetrixReloaded/media/timeline_now.png" zPosition="2" />
   <!-- Right Panel (Right Side) -->
   <!-- EpgShare Image -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
-  <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_gmepg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_gmepg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  <widget source="Event" position="window_gmepg_name_pos" size="window_gmepg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
+  <widget source="Event" render="Label" position="window_gmepg_startTime_pos" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText" />
   </widget>
-  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
+  <widget source="Event" render="Label" position="window_gmepg_endTime_pos" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText" />
   </widget>
-  <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_epg_progressBar_bg_pos" size="window_epg_progressBar_bg_size" />
-  <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
+  <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_gmepg_progressBar_bg_pos" size="window_gmepg_progressBar_bg_size" zPosition="1"/>
+  <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_gmepg_progressBar_pos" render="Progress" size="window_gmepg_progressBar_size" source="Event" transparent="1" zPosition="2">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget backgroundColor="windowBackground" font="font_standard_extra_small" halign="center" position="1325,370" render="Label" size="382,30" source="Event" transparent="1" valign="top" zPosition="2">
+  <widget backgroundColor="windowBackground" font="font_standard_extra_small" halign="center" position="window_gmepg_remainig_pos" render="Label" size="window_gmepg_remainig_size" source="Event" transparent="1" valign="top">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
-  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_epg_desc_pos" size="622,475" source="Event" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
-    <convert type="EventName">ExtendedDescription</convert>
+
+  <!-- Image vorhanden-->
+  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_pos" size="622,475" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
   </widget>
+
+  <!-- Image vorhanden-->
+  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_no_image_pos" size="622,691" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
+  </widget>
+
+
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/epg.png" position="window_remote_button_middle_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
@@ -6494,6 +6503,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <variable name="window_searchbar_size" value="200,200" />
   <!-- InfoBar-->
   <variable name="infoBar_tuner_size" value="30,40" />
+  
+  <!-- GraphMultiEPG-->
+  <variable name="window_gmepg_name_pos" value="1216,118" />
+  <variable name="window_gmepg_name_size" value="622,75" />
+  <variable name="window_gmepg_picon_pos" value="1350,233" />
+  <variable name="window_gmepg_picon_size" value="330,198" />
+  <variable name="window_gmepg_progressBar_pos" value="1325,202" />
+  <variable name="window_gmepg_progressBar_size" value="382,5" />
+  <variable name="window_gmepg_progressBar_bg_pos" value="1325,205" />
+  <variable name="window_gmepg_progressBar_bg_size" value="382,1" />
+  <variable name="window_gmepg_startTime_pos" value="1216,185" />
+  <variable name="window_gmepg_endTime_pos" value="1726,185" />
+  <variable name="window_gmepg_remainig_pos" value="1325,168" />
+  <variable name="window_gmepg_remainig_size" value="382,30" />
+  <variable name="window_gmepg_desc_pos" value="1216,439" />
+  <variable name="window_gmepg_desc_no_image_pos" value="1216,223" />
+  
   <!-- TODO: Kommentar einfügen-->
   <variable name="window_small_list_top_pos" value="105,217" />
   <variable name="window_text_small_list_top_pos" value="105,150" />
@@ -6501,6 +6527,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <variable name="window_text_small_list_bottom_pos" value="105,540" />
   <variable name="window_small_list_size" value="1050,300" />
   <variable name="window_text_small_list_size" value="1050,45" />
+
 </variables>
 <screen name="vEditor" position="center,center" size="1920,1080" title="">
   <!-- Backgrounds -->

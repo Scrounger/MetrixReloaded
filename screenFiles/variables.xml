@@ -81,6 +81,23 @@
   <variable name="window_searchbar_size" value="200,200" />
   <!-- InfoBar-->
   <variable name="infoBar_tuner_size" value="30,40" />
+  
+  <!-- GraphMultiEPG-->
+  <variable name="window_gmepg_name_pos" value="1216,118" />
+  <variable name="window_gmepg_name_size" value="622,75" />
+  <variable name="window_gmepg_picon_pos" value="1350,233" />
+  <variable name="window_gmepg_picon_size" value="330,198" />
+  <variable name="window_gmepg_progressBar_pos" value="1325,202" />
+  <variable name="window_gmepg_progressBar_size" value="382,5" />
+  <variable name="window_gmepg_progressBar_bg_pos" value="1325,205" />
+  <variable name="window_gmepg_progressBar_bg_size" value="382,1" />
+  <variable name="window_gmepg_startTime_pos" value="1216,185" />
+  <variable name="window_gmepg_endTime_pos" value="1726,185" />
+  <variable name="window_gmepg_remainig_pos" value="1325,168" />
+  <variable name="window_gmepg_remainig_size" value="382,30" />
+  <variable name="window_gmepg_desc_pos" value="1216,439" />
+  <variable name="window_gmepg_desc_no_image_pos" value="1216,223" />
+  
   <!-- TODO: Kommentar einfügen-->
   <variable name="window_small_list_top_pos" value="105,217" />
   <variable name="window_text_small_list_top_pos" value="105,150" />
@@ -88,4 +105,5 @@
   <variable name="window_text_small_list_bottom_pos" value="105,540" />
   <variable name="window_small_list_size" value="1050,300" />
   <variable name="window_text_small_list_size" value="1050,45" />
+
 </variables>
