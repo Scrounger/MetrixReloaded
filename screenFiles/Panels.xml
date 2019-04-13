@@ -423,8 +423,8 @@
   <widget backgroundColor="windowBackground" font="font_window_time" halign="right" position="1680,5" render="Label" size="180,60" source="global.CurrentTime" transparent="1" valign="top">
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget backgroundColor="windowBackground" font="font_window_date" halign="right" position="1400,30" render="Label" size="257,40" source="global.CurrentTime" transparent="1">
-    <convert type="ClockToText">Format:%a %e. %B</convert>
+  <widget backgroundColor="windowBackground" font="font_window_date" halign="right" position="1485,30" render="Label" size="257,40" source="global.CurrentTime" transparent="1">
+    <convert type="ClockToText">Format:%A %e. %B</convert>
   </widget>
 </screen>
 <screen name="panel_clock_infoBar">
