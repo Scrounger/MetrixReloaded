@@ -12,22 +12,11 @@
   <widget name="config" textOffset="5,3" position="window_list_pos" size="window_list_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/browser.png" position="window_image_pos" size="window_image_size" />
-
-
-  <ePixmap pixmap="MetrixReloaded/buttons/green.png" position="50,360" size="31,31" alphatest="blend" />
-  <ePixmap pixmap="MetrixReloaded/buttons/blue.png" position="50,410" size="31,31" alphatest="blend" />
-  <ePixmap pixmap="MetrixReloaded/buttons/yellow.png" position="50,460" size="31,31" alphatest="blend" />
-  
-  
-  <widget name="startdesc" position="90,350" size="1118,50" font="Regular;34" valign="center" halign="left" transparent="1" backgroundColor="windowBackground" />
-  <widget name="settingdesc" position="90,400" size="1118,50" font="Regular;34" valign="center" halign="left" transparent="1" backgroundColor="windowBackground" />
-  <widget name="helpdesc" position="90,450" size="1118,50" font="Regular;34" valign="center" halign="left" transparent="1" backgroundColor="windowBackground" />
-  
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <panel name="panel_key_red_source" />
-  <panel name="panel_key_green_source" />
-  <panel name="panel_key_blue_source" />
-  
-  <widget text="ChromiumOSWindow" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget name="startdesc" position="key_green_pos" size="key_size" font="font_key_standard" valign="top" halign="left" transparent="1" backgroundColor="windowBackground" />
+  <widget name="settingdesc" position="key_blue_pos" size="key_size" font="font_key_standard" valign="top" halign="left" transparent="1" backgroundColor="windowBackground" />
+  <widget name="helpdesc" position="key_yellow_pos" size="key_size" font="font_key_standard" valign="top" halign="left" transparent="1" backgroundColor="windowBackground" />
+
+  <widget text="ChromiumOSWindow" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
