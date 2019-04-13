@@ -8,19 +8,19 @@
   <!-- Clock -->
   <panel name="panel_clock_wide" />
   <!-- Logos -->
-  <widget position="80,140" size="336,95" source="Service1" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
+  <widget position="80,140" size="336,85" source="Service1" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget position="436,140" size="336,95" source="Service2" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
+  <widget position="436,140" size="336,85" source="Service2" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget position="792,140" size="336,95" source="Service3" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
+  <widget position="792,140" size="336,85" source="Service3" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget position="1148,140" size="336,95" source="Service4" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
+  <widget position="1148,140" size="336,85" source="Service4" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget position="1504,140" size="336,95" source="Service5" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
+  <widget position="1504,140" size="336,85" source="Service5" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!--<widget font="Bold;30" halign="center" valign="center" name="currCh1" position="150,299" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
@@ -34,20 +34,29 @@
   <widget itemHeight="110" name="epg_list3" position="792,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
   <widget itemHeight="110" name="epg_list4" position="1148,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
   <widget itemHeight="110" name="epg_list5" position="1504,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
-  
-  
-  <widget source="Event" render="Label" position="80,733" zPosition="1" size="1760,211" font="Regular;30" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" valign="top">
-    <convert type="EventName">ExtendedDescription</convert>
-  </widget>
 
-  <widget source="ExtEvent" position="80,685" zPosition="1" size="900,40" foregroundColor="foreground" backgroundColor="windowBackground" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+  <widget source="ExtEvent" position="80,680" zPosition="1" size="1390,50" foregroundColor="foreground" backgroundColor="windowBackground" font="SetrixHD; 36" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0" valign="top">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[Title]</convert>
   </widget>
-  <widget source="Event" render="Label" position="1600,685" zPosition="1" size="120,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1">
+  <!-- EpgShare Image -->
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="80,737" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+<!-- Image vorhanden-->
+  <widget source="ExtEvent" render="MetrixReloadedVRunningText" position="430,737" zPosition="1" size="1410,198" font="SetrixSL;28" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" valign="top" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=10000,wrap,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\,)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n)]</convert>
+  </widget>
+<!-- Kein Image vorhanden-->
+  <widget source="ExtEvent" render="MetrixReloadedVRunningText" position="80,737" zPosition="1" size="1760,198" font="SetrixSL;28" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" valign="top" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=10000,wrap,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\,)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n)]</convert>
+  </widget>
+  <widget backgroundColor="windowBackground" font="font_standard_small" halign="right" position="1474,684" render="Label" size="190,42" source="Event" transparent="1" valign="top" foregroundColor="accent1" zPosition="1">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <widget source="Event" render="Label" position="1665,685" zPosition="1" size="80,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1" valign="top" foregroundColor="accent1">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget source="Event" render="Label" position="1720,685" zPosition="1" size="120,42" halign="left" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1">
+  <widget source="Event" render="Label" position="1740,685" zPosition="1" size="100,42" halign="left" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1" valign="top" foregroundColor="accent1">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:- %H:%M</convert>
   </widget>
