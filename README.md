@@ -18,6 +18,13 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 * [EPGRefresh](https://wiki.vuplus-support.org/index.php?title=EPGrefresh)
 * [SerienRecorder](https://github.com/einfall/serienrecorder)
 * [EPGImport](https://github.com/oe-alliance/XMLTV-Import)
+* Filebrowser VTI
+* Chromium
+* AutoTimer
+* Multi QuickButton
+* EPGSearch
+* PiconManager
+* FFC
 
 ## Installation
 

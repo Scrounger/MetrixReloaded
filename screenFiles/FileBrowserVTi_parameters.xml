@@ -1,0 +1,10 @@
+<parameters name="FileBrowserVTi_parameters">
+  <!-- Filebrowser VTi -->
+  <parameter name="FileListmodName" value="50,5,1750,50" />
+  <parameter name="FileListmodIcon" value="5,8,34,34" />
+  <parameter name="FileListmodFont" value="SetrixHD;30" />
+  <parameter name="FileListmodItemHeight" value="50" />
+  <parameter name="FileListmodMultiName" value="70,5,1750,50" />
+  <parameter name="FileListmodMultiIcon" value="40,8,34,34" />
+  <parameter name="FileListmodMultiLock" value="10,13,35,35" />
+</parameters>

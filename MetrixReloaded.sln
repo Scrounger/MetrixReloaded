@@ -144,6 +144,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles"
 		screenFiles\FileBrowser.xml = screenFiles\FileBrowser.xml
 		screenFiles\FilebrowserConfigScreenVTi.xml = screenFiles\FilebrowserConfigScreenVTi.xml
 		screenFiles\FilebrowserVTi_hor.xml = screenFiles\FilebrowserVTi_hor.xml
+		screenFiles\FileBrowserVTi_parameters.xml = screenFiles\FileBrowserVTi_parameters.xml
 		screenFiles\FilebrowserVTi_unpack.xml = screenFiles\FilebrowserVTi_unpack.xml
 		screenFiles\FilebrowserVTi_unpack_info.xml = screenFiles\FilebrowserVTi_unpack_info.xml
 		screenFiles\FilebrowserVTi_ver.xml = screenFiles\FilebrowserVTi_ver.xml

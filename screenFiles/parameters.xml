@@ -42,14 +42,9 @@
   <parameter name="CoverFindListFont" value="Regular;34" />
   <parameter name="CoverFindListIcon" value="5,12,25,25" />
   <parameter name="CoverFindListName" value="40,7,1000,36" />
-  <!-- Filebrowser VTi -->
-  <parameter name="FileListmodName" value="40,10,1750,50" />
-  <parameter name="FileListmodIcon" value="5,15,35,35" />
-  <parameter name="FileListmodFont" value="Regular;30" />
-  <parameter name="FileListmodItemHeight" value="50" />
-  <parameter name="FileListmodMultiName" value="70,10,1750,50" />
-  <parameter name="FileListmodMultiIcon" value="40,15,35,35" />
-  <parameter name="FileListmodMultiLock" value="10,13,35,35" />
+
+  
+  
   <parameter name="SelectionListmodDescription" value="55, 10, 1900, 45" />
   <parameter name="SelectionListmodFont" value="Regular;30" />
   <parameter name="SelectionListmodItemHeight" value="50" />

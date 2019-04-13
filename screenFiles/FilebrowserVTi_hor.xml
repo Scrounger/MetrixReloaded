@@ -1,23 +1,31 @@
-﻿<screen name="FilebrowserVTi_hor" position="center,center" size="1820,980" title="" flags="wfNoBorder" backgroundColor="transparent" NoAnimationAfter="1">
+﻿<screen name="FilebrowserVTi_hor" position="center,center" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent" NoAnimationAfter="1">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="40,72" size="77,77" alphatest="blend" transparent="1" />
-  <constant-widget name="clock_big" />
+  <!-- Title -->
   <panel name="panel_Title_window" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget name="list_left_head_name" position="1218,150" size="630,80" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="SetrixHD;30" transparent="1" />
+  <widget name="list_left_head_state" position="1218,250" size="630,80" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="SetrixHD;30" transparent="1" />
+  <widget name="list_left" position="105,150" size="1050,350" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+  <eLabel position="100,535" size="1720,2" backgroundColor="gray" />
+  <widget name="list_right_head_name" position="1218,570" size="630,80" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="SetrixHD;30" transparent="1" />
+  <widget name="list_right_head_state" position="1218,670" size="630,80" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="SetrixHD;30" transparent="1" />
+  <widget name="list_right" position="105,570" size="1050,350" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"  scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
+
+
+  <widget name="help" position="825,200" size="900,750" zPosition="5" font="SetrixHD;30" foregroundColor="accentColorOne" backgroundColor="windowBackground" />
+  <widget name="helpBack" position="822,197" size="906,756" zPosition="4" font="SetrixHD;30" backgroundColor="foreground" />
+  <widget name="helpShadow" position="837,212" size="906,756" zPosition="3" font="SetrixHD;30" backgroundColor="black" />
+  
+  <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />
   <panel name="panel_key_green_name" />
   <panel name="panel_key_yellow_name" />
   <panel name="panel_key_blue_name" />
-  <widget name="list_left_head_name" position="10,300" size="1780,35" foregroundColor="accentColorOne" backgroundColor="windowBackground" font="Regular;30" transparent="1" />
-  <widget name="list_left_head_state" position="10,340" size="1780,35" foregroundColor="accentColorOne" backgroundColor="windowBackground" font="Regular;30" transparent="1" />
-  <widget name="list_left" position="10,400" size="1780,200" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showNever" enableWrapAround="1" transparent="1" />
-  <eLabel position="10,620" size="1780,2" backgroundColor="gray" />
-  <widget name="list_right_head_name" position="10,640" size="1780,35" foregroundColor="accentColorOne" backgroundColor="windowBackground" font="Regular;30" transparent="1" />
-  <widget name="list_right_head_state" position="10,680" size="1780,35" foregroundColor="accentColorOne" backgroundColor="windowBackground" font="Regular;30" transparent="1" />
-  <widget name="list_right" position="10,720" size="1780,250" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showNever" enableWrapAround="1" transparent="1" />
-  <widget name="help" position="825,200" size="900,750" zPosition="5" font="Regular;30" foregroundColor="accentColorOne" backgroundColor="windowBackground" />
-  <widget name="helpBack" position="822,197" size="906,756" zPosition="4" font="Regular;30" backgroundColor="foreground" />
-  <widget name="helpShadow" position="837,212" size="906,756" zPosition="3" font="Regular;30" backgroundColor="black" />
-  <widget text="FilebrowserVTi_hor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
+  <widget text="FilebrowserVTi_hor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
