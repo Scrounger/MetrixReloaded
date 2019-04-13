@@ -14,7 +14,7 @@
   <!-- Message Text -->
   <widget backgroundColor="windowBackground" font="font_standard_small" name="text" position="20,70" size="860,0" />
   <!-- Message Buttons -->
-  <widget itemHeight="50" name="list" font="font_list" textOffset="10,0" position="30,142" size="900,480" transparent="1" />
+  <widget itemHeight="50" name="list" font="font_list" textOffset="10,0" position="30,142" size="840,480" transparent="1" />
   <applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
 from enigma import eSize,ePoint
