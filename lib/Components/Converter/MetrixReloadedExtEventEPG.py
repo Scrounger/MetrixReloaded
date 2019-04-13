@@ -49,6 +49,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 		Converter.__init__(self, type)
 		
 		self.log = initializeLog("MetrixReloadedExtEventEPG")
+		self.logMissingGenre = initializeLog("MetrixReloadedExtEventEPG_MissingGenre")
 
 		self.inputString = type
 		self.types = str(type).split(",")
@@ -861,7 +862,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 			#Genre herausfiltern
 			#if(genre in desc):
 				#return genre
-
+		self.logMissingGenre.info(descWordList)
 		return None
 		
 	def getParsedCountryOrYear(self, resultTyp, desc, event):
@@ -910,18 +911,18 @@ class MetrixReloadedExtEventEPG(Converter, object):
                         "Actionfilm", "Abenteuerfilm", "Animationsfilm", "Animationsserie", "Abenteuer", "Animations-Serie", "Actiondrama", "Abenteuer-Serie", "Actionthriller", "Actionkomödie", "Actionserie", "Animation", "Action", "Actionfilm", "Arztreihe",
 						"Beziehungskomödie", "Biographie", "Biografie",
 						"Comedy", "Clipshow", "Comedy-Serie", "Comedy Show", 
-    					"Doku-Reihe", "Doku-Serie", "Dramaserie", "Dokutainment-Reihe", "Dokumentationsreihe", "Dokumentarserie", "Dokumentation", "Drama", "Dokumentarfilm", "Doku-Experiment", "Deutsche Komödie", "Dramedy", "Dokumentarreihe", "Dokureihe",
+    					"Doku-Reihe", "Doku-Serie", "Dramaserie", "Dokutainment-Reihe", "Dokumentationsreihe", "Dokumentarserie", "Dokumentation", "Drama", "Dokumentarfilm", "Doku-Experiment", "Deutsche Komödie", "Dramedy", "Dokumentarreihe", "Dokureihe", "Dokutainment",
     					"Ermittler-Doku",
     					"Familienserie", "Familienkomödie", "Familienfilm", "Fantasyfilm", "Fantasy-Abenteuerfilm", "Familien-Serie", "Fantasy", "Familiendrama", "Fantasy-Action",
     					"Horrorfilm", "Horror-Serie", "Horrorthriller", "Heimatserie", "Horrorkomödie", 
     					"Infotainment", "Informationssendung", "Information",
-    					"Kinderserie", "Krimi", "Kochshow", "Kinder-Komödie", "Krimiserie", "Komödie", "Koch-Doku", "Krimikömödie", "Krimikomödie", "Kriegsdrama", "Kriminalfilm", "Krankenhaus-Soap", "Kriegsfilm", 
+    					"Kinderserie", "Krimi", "Kochshow", "Kinder-Komödie", "Krimiserie", "Komödie", "Koch-Doku", "Krimikömödie", "Krimikomödie", "Kriegsdrama", "Kriminalfilm", "Krankenhaus-Soap", "Kriegsfilm", "Kinderfilm", 
 						"Liebeskomödie", "Liebesgeschichte", "Liebesdrama", "Liebesfilm", "Liebesdramödie",
     					"Mysterythriller", "Magazin", "Mysteryfilm",
 						"Naturdokumentarreihe",
 						"Polizeiserie", "Psychothriller",
 						"Quizshow",
-    					"Romanze", "Reportagemagazin", "Reportagereihe", "Reportage", "Romantikkomödie", "Romantic Comedy", "Reisedoku", "Reality-TV", "Real Life Doku", "Romantische Komödie", 
+    					"Romanze", "Reportagemagazin", "Reportagereihe", "Reportage", "Romantikkomödie", "Romantic Comedy", "Reisedoku", "Reality-TV", "Real Life Doku", "Romantische Komödie", "Romance", 
     					"Sitcom", "Show", "Science-Fiction-Komödie", "Science-Fiction-Film", "Science-Fiction-Horror", "Scripted Reality", "Sketch-Comedy", "Spielfilm", "Sport", "Science-Fiction-Serie", "Sci-Fi-Serie", 
     					"Teleshopping", "Thriller", "Talkshow", "Telenovela", "Thrillerkomödie", "Tragikomödie", 
 						"Unterhaltungs-Show", 
