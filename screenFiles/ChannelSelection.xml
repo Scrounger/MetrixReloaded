@@ -33,8 +33,8 @@
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="ServiceEvent" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget source="ServiceEvent" position="window_epg_desc_pos" zPosition="1" size="622,360" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
-    <convert type="EventName">FullDescription</convert>
+  <widget source="ServiceEvent" position="window_epg_desc_pos" zPosition="1" size="622,360" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" valign="top" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
   </widget>
   <widget name="epglist" backgroundColorRows="windowBackgroundSecond" backgroundColorSelected="channelSelectionEpgListSelected" position="1216,818" zPosition="10" size="622,96" itemHeight="32" backgroundColor="windowBackgroundSecond" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- List: über Parameters -->

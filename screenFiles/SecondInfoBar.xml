@@ -13,22 +13,23 @@
     <convert type="MetrixReloadedCompareString">!0</convert>
   </widget>-->
   <!-- Image vorhanden-->
-  <widget source="session.extEvent_Now" position="660,60" size="1000,600" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="bottom" render="Label" transparent="1" noWrap="0">
+  <widget source="session.extEvent_Now" position="660,60" size="1110,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][Title]</convert>
   </widget>
-  <widget source="session.extEvent_Now" position="660,120" size="1000,600" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="1">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(Staffel [s], Episode [e] - )Subtitle(10)Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
+  <widget source="session.extEvent_Now" position="660,120" size="1110,229" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(Staffel [s], Episode [e]\,)Subtitle(10)Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
   </widget>
   <!-- Kein Image vorhanden -->
-  <widget source="session.extEvent_Now" position="150,60" size="1000,600" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="bottom" render="Label" transparent="1" noWrap="0">
+  <widget source="session.extEvent_Now" position="150,60" size="1620,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][Title]</convert>
   </widget>
-  <widget source="session.extEvent_Now" position="150,120" size="1620,600" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="1">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][EpisodeNum(Staffel [s], Episode [e] - )Subtitle(10)Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
+  <widget source="session.extEvent_Now" position="150,120" size="1620,229" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][EpisodeNum(Staffel [s], Episode [e]\,)Subtitle(10)Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
   </widget>
   <widget backgroundColor="windowBackground" font="font_standard" transparent="1" halign="left" valign="top" position="150,360" size="1620,400" render="Label" source="session.Event_Now" zPosition="1">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
+  
   <!--<widget font="BoldItalic;40" position="45,20" render="Label" size="960,50" valign="center" backgroundColor="windowBackground" transparent="1" source="session.CurrentService" zPosition="1">
     <convert type="ServiceName">Name</convert>
   </widget>
@@ -68,10 +69,7 @@
     <convert type="MetrixReloadedExtEventEPG">ParentalRating</convert>
     <convert type="MetrixReloadedCompareString"></convert>
     <convert type="ConditionalShowHide" />
-  </widget>
-
-
-
--->
+  </widget>-->
+  
   <widget text="SecondInfoBar" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,775" />
 </screen>

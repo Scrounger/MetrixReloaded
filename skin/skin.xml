@@ -951,8 +951,8 @@
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="ServiceEvent" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget source="ServiceEvent" position="window_epg_desc_pos" zPosition="1" size="622,360" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
-    <convert type="EventName">FullDescription</convert>
+  <widget source="ServiceEvent" position="window_epg_desc_pos" zPosition="1" size="622,360" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" valign="top" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
   </widget>
   <widget name="epglist" backgroundColorRows="windowBackgroundSecond" backgroundColorSelected="channelSelectionEpgListSelected" position="1216,818" zPosition="10" size="622,96" itemHeight="32" backgroundColor="windowBackgroundSecond" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- List: über Parameters -->
@@ -1089,7 +1089,7 @@
   <!-- Title Seperator -->
   <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/browser.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
@@ -1098,24 +1098,28 @@
   <panel name="panel_key_green_source" />
   <widget text="ChromiumOSSettings" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="ChromiumOSWindow" position="center,center" size="1288,923" title="Start ChromiumOS" flags="wfNoBorder" backgroundColor="transparent">
+
+<screen name="ChromiumOSWindow" position="center,center" size="1920,1080" title="Start ChromiumOS" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Start ChromiumOS" position="title_mid_pos" valign="center" size="title_mid_size" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
-  <constant-widget name="clock_mid" />
+  <!-- Title -->
+  <!-- <panel name="panel_Title_window" />-->
+  <eLabel text="Start ChromiumOS" position="window_title_pos" valign="center" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget name="config" textOffset="5,3" position="window_list_pos" size="window_list_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <!-- Right Panel (Right Side) -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/browser.png" position="window_image_pos" size="window_image_size" />
+  <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
-  <ePixmap pixmap="MetrixReloaded/buttons/green.png" position="50,360" size="31,31" alphatest="blend" />
-  <ePixmap pixmap="MetrixReloaded/buttons/blue.png" position="50,410" size="31,31" alphatest="blend" />
-  <ePixmap pixmap="MetrixReloaded/buttons/yellow.png" position="50,460" size="31,31" alphatest="blend" />
-  <widget source="key_green" render="Label" position="key_green_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget source="key_yellow" render="Label" position="key_yellow_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget source="key_blue" render="Label" position="key_blue_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget name="config" textOffset="25,9" position="35,250" zPosition="10" size="1118,100" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showNever" />
-  <widget name="startdesc" position="90,350" size="1118,50" font="Regular;34" valign="center" halign="left" transparent="1" backgroundColor="windowBackground" />
-  <widget name="settingdesc" position="90,400" size="1118,50" font="Regular;34" valign="center" halign="left" transparent="1" backgroundColor="windowBackground" />
-  <widget name="helpdesc" position="90,450" size="1118,50" font="Regular;34" valign="center" halign="left" transparent="1" backgroundColor="windowBackground" />
-  <widget text="ChromiumOSWindow" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+  <widget name="startdesc" position="key_green_pos" size="key_size" font="font_key_standard" valign="top" halign="left" transparent="1" backgroundColor="windowBackground" />
+  <widget name="settingdesc" position="key_blue_pos" size="key_size" font="font_key_standard" valign="top" halign="left" transparent="1" backgroundColor="windowBackground" />
+  <widget name="helpdesc" position="key_yellow_pos" size="key_size" font="font_key_standard" valign="top" halign="left" transparent="1" backgroundColor="windowBackground" />
+
+  <widget text="ChromiumOSWindow" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="CIconfigMenu" position="center,center" size="1920,1080" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
@@ -1348,27 +1352,35 @@
   <panel name="panel_key_blue_name" />
   <widget text="CoverFindScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="CreateQuadPipChannelEntry" position="center,center" size="1820,980" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="CreateQuadPipChannelEntry" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/media/icons/ico_Chlist_title.png" position="40,72" size="84,84" />
-  <constant-widget name="clock_big" />
+  <!-- Title -->
   <panel name="panel_Title_window" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget name="list" position="window_list_pos" size="window_list_size" serviceItemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <!-- Right Panel (Right Side) -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
+  
+  <widget name="textChannels" position="1218,120" size="610,40" font="Regular;34" transparent="1" />
+  <widget name="selectedList" position="1218,175" size="610,160" font="Regular;30" itemHeight="40" transparent="1" />
+
+<widget name="description" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
+  
+  
+  <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />
   <panel name="panel_key_green_name" />
   <panel name="panel_key_yellow_name" />
   <panel name="panel_key_blue_name" />
-  <widget name="key_red" position="209,196" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="key_green" position="466,196" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="key_yellow" position="723,196" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="key_blue" position="989,198" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="list" position="35,300" size="1100,560" serviceItemHeight="40" serviceNumberFont="Regular;28" serviceNameFont="Regular;28" serviceInfoFont="Bold;24" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
-  <widget name="textChannels" position="1200,300" size="585,40" font="Regular;34" transparent="1" />
-  <widget name="selectedList" position="1220,350" size="565,160" font="Regular;30" itemHeight="40" transparent="1" />
-  <widget name="description" position="1200,800" size="650,170" font="Regular;28" halign="left" transparent="1" />
-  <widget text="CreateQuadPipChannelEntry" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
+  <widget text="CreateQuadPipChannelEntry" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
+
 <screen name="CronManager" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
@@ -1721,7 +1733,7 @@
   <!-- Title Seperator -->
   <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" zPosition="10" size="window_list_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" zPosition="10" itemHeight="50" size="window_list_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Parameters: EPGlistText1OffSet, EPGlistText2OffSet, EPGlistNonRecTextOffset-->
   <!-- Fonts: EPGList0, EPGList1 -->
   <!-- Right Panel (Right Side) -->
@@ -1745,8 +1757,8 @@
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_epg_desc_pos" size="622,475" source="Event" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
-    <convert type="EventName">FullDescription</convert>
+  <widget source="ExtEvent" position="window_epg_desc_pos" zPosition="1" size="622,470" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" valign="top" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
   </widget>
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
@@ -1826,8 +1838,8 @@
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget source="Event" position="window_epg_desc_pos" zPosition="1" size="622,475" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
-    <convert type="EventName">FullDescription</convert>
+  <widget source="ExtEvent" position="window_epg_desc_pos" zPosition="1" size="622,470" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" valign="top" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
   </widget>
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
@@ -1956,7 +1968,7 @@
   <!-- Title Seperator -->
   <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="filelist" position="80,350" size="1128,500" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
+  <widget name="filelist" position="window_list_pos" size="window_list_size" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
   <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" valign="center" halign="center" />
@@ -1965,8 +1977,9 @@
   <panel name="panel_key_red_source" />
   <panel name="panel_key_green_source" />
   <widget name="keyblue" position="key_blue_mid_pos" zPosition="1" size="key_size_mid" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget text="ExeManagerFile" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="ExeManagerFile" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
+
 <screen name="FastScanScreen" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
@@ -2031,15 +2044,16 @@
   <!-- Title Seperator -->
   <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="filelist" position="80,300" size="1128,550" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
+  <widget name="filelist" position="window_list_pos" size="window_list_size" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/dvd.png" position="window_image_pos" size="window_image_size" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
   <panel name="panel_key_green_source" />
-  <widget text="FileBrowser" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="FileBrowser" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
+
 <screen name="FilebrowserConfigScreenVTi" position="center,center" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
@@ -2637,28 +2651,25 @@
   </widget>
   <widget text="InfoBarZapHistory" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="850,725" />
 </screen>
-<screen name="InfoPanel" position="center,center" size="1820,980" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="InfoPanel" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
-  <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="40,72" size="77,77" alphatest="blend" transparent="1" />
-  <panel name="panel_title_window" />
-  <constant-widget name="clock_big" />
-  <panel name="panel_color_buttons_window" />
-  <eLabel position="860,300" size="2,325" zPosition="10" backgroundColor="gray" />
-  <eLabel position="55,430" size="800,2" zPosition="10" backgroundColor="gray" />
-  <eLabel position="865,430" size="835,2" zPosition="10" backgroundColor="gray" />
-  <eLabel position="55,630" size="1700,2" zPosition="10" backgroundColor="gray" />
-  <eLabel position="50,211" size="590,198" zPosition="-10" backgroundColor="gray" />
-  <eLabel position="645,211" size="585,119" zPosition="-10" backgroundColor="gray" />
-  <eLabel position="645,335" size="585,74" zPosition="-10" backgroundColor="gray" />
-  <eLabel position="50,414" size="1180,211" zPosition="-10" backgroundColor="gray" />
-  <widget name="vtiversion" position="55,300" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="kernel" position="55,330" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="uptime" position="55,360" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="load" position="55,390" size="800,30" font="Regular;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="temp" position="1400,440" size="370,30" font="Regular;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget name="fan" position="1400,470" size="370,30" font="Regular;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
-  <widget source="proclist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,440" size="800,210" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <panel name="panel_background_wide" />
+  <!-- Title -->
+  <panel name="panel_Title_window" />
+  <!-- Title Seperator -->
+  <eLabel name="Seperator" position="90,135" size="1740,2" zPosition="5" backgroundColor="seperator" />
+  <!-- Clock -->
+  <panel name="panel_clock_wide" />
+
+
+
+  <widget name="vtiversion" position="95,170" size="800,30" font="SetrixHD;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="kernel" position="95,200" size="800,30" font="SetrixHD;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="uptime" position="95,230" size="800,30" font="SetrixHD;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="load" position="95,260" size="800,30" font="SetrixHD;28" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="temp" position="1445,340" size="370,30" font="SetrixHD;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget name="fan" position="1445,370" size="370,30" font="SetrixHD;28" halign="right" valign="center" backgroundColor="windowBackground" transparent="1" />
+  <widget source="proclist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="95,340" size="800,210" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (220, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -2666,13 +2677,13 @@
 						MultiContentEntryText(pos = (440, 1), size = (180, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
 						MultiContentEntryText(pos = (620, 1), size = (180, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 3),
 					],
-				"fonts": [gFont("Regular", 28),gFont("Regular", 22)],
+				"fonts": [gFont("SetrixHD", 28),gFont("SetrixSL", 22)],
 				"itemHeight": 30,
 				"selectionEnabled": False
 				}
 			</convert>
   </widget>
-  <widget source="storagelist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="55,640" size="1710,270" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" enableWrapAround="1">
+  <widget source="storagelist" render="Listbox" backgroundColor="windowBackground" transparent="1" position="95,610" size="1710,270" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 			{"template": [
 					MultiContentEntryText(pos = (0, 1), size = (550, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -2681,42 +2692,46 @@
 					MultiContentEntryText(pos = (1300, 1), size = (200, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 3),
 					MultiContentEntryText(pos = (1500, 1), size = (200, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 4),
 				],
-			"fonts": [gFont("Regular", 28),gFont("Regular", 22)],
+			"fonts": [gFont("SetrixHD", 28),gFont("SetrixSL", 22)],
 			"itemHeight": 30,
 			"selectionEnabled": False
 			}
 		</convert>
   </widget>
-  <widget source="netdev" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,300" size="800,120" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="netdev" render="Listbox" backgroundColor="windowBackground" transparent="1" position="925,170" size="885,120" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (150, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 						MultiContentEntryText(pos = (150, 1), size = (325, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
 						MultiContentEntryText(pos = (475, 1), size = (325, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
 					],
-				"fonts": [gFont("Regular", 28),gFont("Regular", 22)],
+				"fonts": [gFont("SetrixHD", 28),gFont("SetrixSL", 22)],
 				"itemHeight": 30,
 				"selectionEnabled": False
 				}
 			</convert>
   </widget>
-  <widget source="memory" render="Listbox" backgroundColor="windowBackground" transparent="1" position="900,440" size="800,210" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
+  <widget source="memory" render="Listbox" backgroundColor="windowBackground" transparent="1" position="925,340" size="800,210" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent" transparent="0">
 				{"template": [
 						MultiContentEntryText(pos = (0, 1), size = (150, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 						MultiContentEntryText(pos = (150, 1), size = (150, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
 						MultiContentEntryText(pos = (300, 1), size = (150, 30), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
 					],
-				"fonts": [gFont("Regular", 28),gFont("Regular", 22)],
+				"fonts": [gFont("SetrixHD", 28),gFont("SetrixSL", 22)],
 				"itemHeight": 30,
 				"selectionEnabled": False
 				}
 			</convert>
   </widget>
-  <widget font="Regular;31" halign="left" valign="center" source="key_red" render="Label" position="key_red_pos" size="key_size" zPosition="1" backgroundColor="windowBackground" transparent="1" />
-  <widget font="Regular;31" halign="left" valign="center" source="key_green" render="Label" position="key_green_pos" size="key_size" zPosition="1" backgroundColor="windowBackground" transparent="1" />
-  <widget text="InfoPanel" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
+
+  <!-- Buttons -->
+  <panel name="panel_color_buttons_window" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <widget text="InfoPanel" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
+
 <screen name="InputBox" position="center,center" size="1400,150" title="Input" flags="wfNoBorder">
   <widget name="text" position="15,30" size="1370,38" font="Bold;34" transparent="1" backgroundColor="windowBackground" />
   <ePixmap pixmap="MetrixReloaded/media/vkey_text.png" position="10,83" zPosition="100" size="1380,52" alphatest="on" scale="1" />
@@ -2784,32 +2799,47 @@
   <!-- TODO: Layout anpassen -->
   <widget text="Ipkg" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="JobView" title="Job View" flags="wfNoBorder" position="center,center" size="1288,923" backgroundColor="transparent">
-  <!-- Backgrounds -->
+<screen name="JobView" title="Job View" flags="wfNoBorder" position="center,center" size="1920,1080" backgroundColor="transparent">
+    <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Subtitles.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Job View" position="168,100" size="900,65" font="BoldItalic; 52" backgroundColor="windowBackground" transparent="1" />
-  <constant-widget name="clock_mid" />
+  <!-- Title -->
+  <!-- <panel name="panel_Title_window" />-->
+  <eLabel text="Job View" position="window_title_pos" valign="center" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  
+  
+
   <panel name="panel_color_buttons_window" />
-  <widget source="job_name" render="Label" position="127,250" size="1034,64" font="Regular;30" backgroundColor="windowBackground" transparent="1" />
-  <widget source="job_task" render="Label" position="127,325" size="1034,64" font="Regular;30" backgroundColor="windowBackground" transparent="1" />
-  <widget source="job_progress" render="Progress" position="127,400" size="1034,15" borderWidth="1" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" />
-  <widget source="job_progress" render="Label" position="127,430" size="1034,32" font="Regular;30" foregroundColor="accentColorOne" backgroundColor="windowBackground" transparent="1" zPosition="2" valign="center" halign="center">
+  <widget source="job_name" render="Label" position="105,170" size="1050,64" font="SetrixHD;30" backgroundColor="windowBackground" transparent="1" />
+  <widget source="job_task" render="Label" position="105,250" size="1050,64" font="SetrixHD;30" backgroundColor="windowBackground" transparent="1" />
+  <widget source="job_progress" render="Progress" position="105,340" size="1050,15" borderWidth="1" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" />
+  <widget source="job_progress" render="Label" position="105,380" size="1050,32" font="SetrixHD;30" foregroundColor="accentColorOne" backgroundColor="windowBackground" transparent="1" zPosition="2" valign="center" halign="center">
     <convert type="ProgressToText" />
   </widget>
-  <widget source="job_status" render="Label" position="127,480" size="1034,64" font="Regular;28" foregroundColor="gray" backgroundColor="windowBackground" transparent="1" />
-  <widget itemHeight="50" font="Regular;32" secondfont="SimpleBold;32" textOffset="25,9" name="config" position="127,560" backgroundColor="windowBackground" transparent="1" size="1034,150" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
-  <widget font="Regular;24" halign="left" valign="top" source="cancelable" render="FixedLabel" text="Cancel" position="key_red_mid_pos" size="key_size_mid" zPosition="1" backgroundColor="windowBackground" transparent="1">
+  <widget source="job_status" render="Label" position="105,430" size="1050,64" font="SetrixHD;28" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" />
+  <widget name="config" itemHeight="50" font="font_list" secondfont="font_list_second" textOffset="5,3" position="105,520" backgroundColor="windowBackground" size="1050,300" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+<!-- Right Panel (Right Side) -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
+
+  <!-- Buttons -->
+  <panel name="panel_color_buttons_window" />
+  <widget font="font_key_standard" halign="left" valign="top" source="cancelable" render="FixedLabel" text="Cancel" position="key_red_mid_pos" size="key_size_mid" zPosition="1" backgroundColor="windowBackground" transparent="1">
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget font="Regular;24" halign="left" valign="top" source="finished" render="FixedLabel" text="OK" position="key_green_mid_pos" size="key_size_mid" zPosition="1" backgroundColor="windowBackground" transparent="1">
+  <widget font="font_key_standard" halign="left" valign="top" source="finished" render="FixedLabel" text="OK" position="key_green_mid_pos" size="key_size_mid" zPosition="1" backgroundColor="windowBackground" transparent="1">
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget font="Regular;24" halign="left" valign="top" source="backgroundable" render="FixedLabel" text="Continue in background" position="key_blue_mid_pos" size="key_size_mid" zPosition="1" backgroundColor="windowBackground" transparent="1">
+  <widget font="font_key_standard" halign="left" valign="top" source="backgroundable" render="FixedLabel" text="Continue in background" position="key_blue_mid_pos" size="key_size_mid" zPosition="1" backgroundColor="windowBackground" transparent="1">
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget text="JobView" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+  
+  <widget text="JobView" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
+
 <screen name="LanguageSelection" position="0,0" size="1920,1080" title="Language selection" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
@@ -5533,22 +5563,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     <convert type="MetrixReloadedCompareString">!0</convert>
   </widget>-->
   <!-- Image vorhanden-->
-  <widget source="session.extEvent_Now" position="660,60" size="1000,600" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="bottom" render="Label" transparent="1" noWrap="0">
+  <widget source="session.extEvent_Now" position="660,60" size="1110,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][Title]</convert>
   </widget>
-  <widget source="session.extEvent_Now" position="660,120" size="1000,600" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="1">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(Staffel [s], Episode [e] - )Subtitle(10)Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
+  <widget source="session.extEvent_Now" position="660,120" size="1110,229" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(Staffel [s], Episode [e]\,)Subtitle(10)Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
   </widget>
   <!-- Kein Image vorhanden -->
-  <widget source="session.extEvent_Now" position="150,60" size="1000,600" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="bottom" render="Label" transparent="1" noWrap="0">
+  <widget source="session.extEvent_Now" position="150,60" size="1620,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][Title]</convert>
   </widget>
-  <widget source="session.extEvent_Now" position="150,120" size="1620,600" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="bottom" render="Label" transparent="1" noWrap="1">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][EpisodeNum(Staffel [s], Episode [e] - )Subtitle(10)Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
+  <widget source="session.extEvent_Now" position="150,120" size="1620,229" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][EpisodeNum(Staffel [s], Episode [e]\,)Subtitle(10)Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
   </widget>
   <widget backgroundColor="windowBackground" font="font_standard" transparent="1" halign="left" valign="top" position="150,360" size="1620,400" render="Label" source="session.Event_Now" zPosition="1">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
+  
   <!--<widget font="BoldItalic;40" position="45,20" render="Label" size="960,50" valign="center" backgroundColor="windowBackground" transparent="1" source="session.CurrentService" zPosition="1">
     <convert type="ServiceName">Name</convert>
   </widget>
@@ -5588,11 +5619,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     <convert type="MetrixReloadedExtEventEPG">ParentalRating</convert>
     <convert type="MetrixReloadedCompareString"></convert>
     <convert type="ConditionalShowHide" />
-  </widget>
-
-
-
--->
+  </widget>-->
+  
   <widget text="SecondInfoBar" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,775" />
 </screen>
 <screen name="SelectCountry" position="center,center" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">

@@ -38,8 +38,8 @@
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget source="Event" position="window_epg_desc_pos" zPosition="1" size="622,475" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
-    <convert type="EventName">FullDescription</convert>
+  <widget source="ExtEvent" position="window_epg_desc_pos" zPosition="1" size="622,470" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" valign="top" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
   </widget>
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
