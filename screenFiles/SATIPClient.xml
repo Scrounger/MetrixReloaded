@@ -19,7 +19,7 @@
       MultiContentEntryText(pos = (50, 46), size = (600, 40), font=1, flags = RT_HALIGN_LEFT, text = 4),
       ]),
       },
-      "fonts": [gFont("SetrixHD", 35),gFont("SetrixHD", 28)],
+      "fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
       "itemHeight": 90
       }
     </convert>

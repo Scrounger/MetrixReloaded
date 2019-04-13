@@ -45,7 +45,7 @@
   <variable name="window_title_size" value="880,90" />
   <variable name="window_list_pos" value="105,150" />
   <variable name="window_list_size" value="1050,795" />
-  <variable name="window_list_setup_size" value="1050,760" />
+  <variable name="window_list_setup_size" value="1050,750" />
   <variable name="window_list_setup_two_rows_size" value="1050,750" />
   <!-- ContextMenu / SmallWindow -->
   <variable name="contextMenu_title_pos" value="20,5" />

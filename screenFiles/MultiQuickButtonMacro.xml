@@ -11,9 +11,9 @@
   <widget source="menu" render="Listbox" position="window_list_pos" size="window_list_setup_size" scrollbarMode="showOnDemand" transparent="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1">
     <convert type="TemplatedMultiContent" transparent="0">
 				{"template": [
-						MultiContentEntryText(pos = (10, 7), size = (1720, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (10, 5), size = (1720, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 					],
-				"fonts": [gFont("SetrixHD", 32)],
+				"fonts": [gFont("SetrixHD", 30)],
 				"itemHeight": 50
 				}
 			</convert>

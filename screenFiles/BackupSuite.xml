@@ -12,7 +12,7 @@
     <convert type="TemplatedMultiContent">
       {"template": [	MultiContentEntryText(pos = (20, 7), size = (1010, 49), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, font = 0 ),
       MultiContentEntryText(pos = (20, 46), size = (1010, 39), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2, font = 1 )],
-      "fonts": [gFont("SetrixHD", 32), gFont("SetrixSL", 24)],
+      "fonts": [gFont("SetrixHD", 30), gFont("SetrixSL", 24)],
       "itemHeight": 90
       }
     </convert>

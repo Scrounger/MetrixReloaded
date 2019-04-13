@@ -11,11 +11,11 @@
   <widget source="config" render="Listbox" position="window_list_pos" size="window_list_setup_size" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20">
     <convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (100, 22), size = (950, 40), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0), # index 1 is the interfacename
+						MultiContentEntryText(pos = (100, 5), size = (950, 40), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0), # index 1 is the interfacename
 						MultiContentEntryPixmapAlphaTest(pos = (15, 14), size = (54, 54), png = 3), # index 3 is the interface pixmap
 					],
-				"fonts": [gFont("SetrixHD", 32),],
-				"itemHeight": 85
+				"fonts": [gFont("SetrixHD", 30),],
+				"itemHeight": 50
 				}
 			</convert>
   </widget>

@@ -57,7 +57,7 @@
   <!-- Title Seperator -->
   <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="menulist" position="105,210" size="1050,650" textOffset="5,1" font="font_list" itemHeight="50" transparent="1" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand" />
+  <widget name="menulist" position="105,210" size="1050,700" textOffset="5,1" font="font_list" itemHeight="50" transparent="1" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand" />
   <widget source="IFtext" render="Label" position="105,150" size="150,50" zPosition="10" backgroundColor="windowBackground" font="font_standard" transparent="1" halign="left" />
   <widget source="IF" render="Label" position="275,150" size="600,50" zPosition="10" backgroundColor="windowBackground" font="font_standard" transparent="1" halign="left" />
   <widget source="Statustext" render="Label" position="875,150" size="200,50" zPosition="10" font="font_standard" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
@@ -128,7 +128,7 @@
       MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (48, 48), png = 2), # index 4 is the status pixmap
       MultiContentEntryText(pos = (52, 2), size = (600, 44), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 0 is the MenuText,
       ],
-      "fonts": [gFont("SetrixHD", 32)],
+      "fonts": [gFont("SetrixHD", 30)],
       "itemHeight": 50
       }
     </convert>
@@ -202,7 +202,7 @@
 						MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (38, 38), png = 2),
 						MultiContentEntryText(pos = (70, 7), size = (640, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
 					],
-				"fonts": [gFont("SetrixHD", 32)],
+				"fonts": [gFont("SetrixHD", 30)],
 				"itemHeight": 50,
 				"scrollbarMode": "showOnDemand",
 				}
@@ -347,7 +347,7 @@
 						MultiContentEntryText(pos = (85, 53), size = (1030, 26), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
 						MultiContentEntryPixmapAlphaTest(pos = (2, 14), size = (54, 54), png = 3), # index 3 is the interface pixmap
 					],
-				"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+				"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
 				"itemHeight": 90
 				}
 			</convert>
@@ -522,7 +522,7 @@
 						MultiContentEntryText(pos=(10,70), size=(500,32), text = 4, font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
 						MultiContentEntryText(pos=(510,70), size=(500,32), text = 2, font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
 					],
-				 "fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+				 "fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
 				 "itemHeight": 105
 				}
 			</convert>
@@ -610,7 +610,7 @@
     <convert type="TemplatedMultiContent">
       {"template": [	MultiContentEntryText(pos = (20, 7), size = (1010, 49), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, font = 0 ),
       MultiContentEntryText(pos = (20, 46), size = (1010, 39), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2, font = 1 )],
-      "fonts": [gFont("SetrixHD", 32), gFont("SetrixSL", 24)],
+      "fonts": [gFont("SetrixHD", 30), gFont("SetrixSL", 24)],
       "itemHeight": 90
       }
     </convert>
@@ -718,7 +718,7 @@
 						MultiContentEntryPixmapAlphaTest(pos = (5, 23), size = (48, 48), png = 1),
 						MultiContentEntryText(pos = (70, 2), size = (988, 34), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 					],
-				"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+				"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
 				"itemHeight": 90
 				}
 			</convert>
@@ -751,7 +751,7 @@
 						MultiContentEntryPixmapAlphaTest(pos = (5, 23), size = (48, 48), png = 1),
 						MultiContentEntryText(pos = (70, 2), size = (988, 34), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 					],
-				"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+				"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
 				"itemHeight": 100
 				}
 			</convert>
@@ -805,7 +805,7 @@
 						MultiContentEntryText(pos = (70, 36), size = (510, 28), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
 						MultiContentEntryText(pos = (70, 64), size = (510, 28), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
 					],
-				"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+				"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
 				"itemHeight": 90
 				}
 			</convert>
@@ -887,11 +887,11 @@
   <widget source="list" render="Listbox" transparent="1" position="window_list_pos" size="window_list_size" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [
-      MultiContentEntryText(pos = (60, 7), size = (865, 75), font=0, flags = RT_HALIGN_LEFT, text = 0),
-      MultiContentEntryPixmapAlphaTest(pos = (25, 25), size = (24, 24), png = 2) # index 4 is the status pixmap
+      MultiContentEntryText(pos = (60, 5), size = (865, 75), font=0, flags = RT_HALIGN_LEFT, text = 0),
+      MultiContentEntryPixmapAlphaTest(pos = (25, 13), size = (24, 24), png = 2) # index 4 is the status pixmap
       ],
-      "fonts": [gFont("SetrixHD", 35),gFont("SetrixSL", 24)],
-      "itemHeight": 74
+      "fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
+      "itemHeight": 50
       }
     </convert>
   </widget>
@@ -1511,7 +1511,7 @@
 						MultiContentEntryText(pos = (70, 64), size = (510, 28), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4),
 						MultiContentEntryText(pos = (530, 36), size = (510, 28), font=1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 5),
 					],
-				"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+				"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
 				"itemHeight": 100
 				}
 			</convert>
@@ -1564,7 +1564,7 @@
 						MultiContentEntryText(pos = (15, 8), size = (1020, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
 						MultiContentEntryText(pos = (15, 58), size = (1020, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
 					],
-				"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+				"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
 				"itemHeight": 100
 				}
 			</convert>
@@ -2881,7 +2881,7 @@
       MultiContentEntryText(pos = (70, 0), size = (900, 50), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
       MultiContentEntryPixmap(pos = (10, 9), size = (45, 30), png = 2), # index 2 is the pixmap
       ],
-      "fonts": [gFont("SetrixHD", 32)],
+      "fonts": [gFont("SetrixHD", 30)],
       "itemHeight": 50
       }
     </convert>
@@ -3602,9 +3602,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="menu" render="Listbox" position="window_list_pos" size="window_list_setup_size" scrollbarMode="showOnDemand" transparent="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1">
     <convert type="TemplatedMultiContent" transparent="0">
 				{"template": [
-						MultiContentEntryText(pos = (10, 7), size = (1720, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (10, 5), size = (1720, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 					],
-				"fonts": [gFont("SetrixHD", 32)],
+				"fonts": [gFont("SetrixHD", 30)],
 				"itemHeight": 50
 				}
 			</convert>
@@ -3685,7 +3685,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 						MultiContentEntryText(pos = (100, 40), size = (860, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 						MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5),
 					],
-					"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+					"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
 					"itemHeight": 70
 				}
 			</convert>
@@ -3716,7 +3716,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
       MultiContentEntryText(pos = (105, 76), size = (900, 24), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 2 is the description
       MultiContentEntryPixmapAlphaTest(pos = (34, 20), size = (48, 48), png = 4), # index 4 is the status pixmap
       ],
-      "fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+      "fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
       "itemHeight": 106,
       "scrollbarMode": "showOnDemand"
       }
@@ -3965,12 +3965,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="list" render="Listbox" position="window_list_pos" size="window_list_setup_size" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand">
     <convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (85, 6), size = (740, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
+						MultiContentEntryText(pos = (85, 5), size = (740, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
 						MultiContentEntryText(pos = (85, 40), size = (740, 26), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
 						MultiContentEntryPixmapAlphaBlend(pos = (10, 14), size = (54, 54), png = 3), # index 3 is the interface pixmap
 						MultiContentEntryPixmapAlphaBlend(pos = (63, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
 					],
-				"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+				"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
 				"itemHeight": 85
 				}
 			</convert>
@@ -4046,13 +4046,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     <convert type="TemplatedMultiContent">
 					{"template": [
 							MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
-							MultiContentEntryText(pos = (60, 6), size = (820, 36), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
+							MultiContentEntryText(pos = (60, 5), size = (820, 36), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
 							MultiContentEntryText(pos = (145, 2), size = (820, 30), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
 							MultiContentEntryText(pos = (145, 28), size = (820, 30), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
 							MultiContentEntryPixmapAlphaTest(pos = (55, 0), size = (48, 48), png = 5), # index 5 is the nfs/cifs icon
 							MultiContentEntryPixmapAlphaTest(pos = (100, 0), size = (48, 48), png = 6), # index 6 is the isMounted icon
 						],
-					"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+					"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
 					"itemHeight": 50
 					}
 			</convert>
@@ -5136,7 +5136,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
       {
       "template": [ MultiContentEntryText(pos = (10, 5), size = (450, 40), flags = RT_HALIGN_LEFT, text = 0),
       MultiContentEntryText(pos = (470, 5), size = (450, 40), flags = RT_HALIGN_LEFT, text = 1)],
-      "fonts": [gFont("SetrixHD", 32)],
+      "fonts": [gFont("SetrixHD", 30)],
       "itemHeight": 50
       }
     </convert>
@@ -5222,7 +5222,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 						MultiContentEntryText(pos = (550, 41), size = (450, 30), font=2, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
 						MultiContentEntryText(pos = (550, 71), size = (450, 30), font=2, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4),
 					],
-					"fonts": [gFont("SetrixHD", 32), gFont("SetrixHD", 28) ,gFont("SetrixSL", 22), gFont("SetrixSL", 16)],
+					"fonts": [gFont("SetrixHD", 30), gFont("SetrixHD", 28) ,gFont("SetrixSL", 22), gFont("SetrixSL", 16)],
 					"itemHeight": 105
 				}
 			</convert>
@@ -5357,7 +5357,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 						MultiContentEntryPixmapAlphaTest(pos = (18, 11), size = (48, 48), png = 2),
 						MultiContentEntryText(pos = (90, 17), size = (870, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 					],
-					"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 22)],
+					"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 22)],
 					"itemHeight": 70
 				}
 			</convert>
@@ -5480,7 +5480,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
       MultiContentEntryText(pos = (50, 46), size = (600, 40), font=1, flags = RT_HALIGN_LEFT, text = 4),
       ]),
       },
-      "fonts": [gFont("SetrixHD", 35),gFont("SetrixHD", 28)],
+      "fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
       "itemHeight": 90
       }
     </convert>
@@ -6055,8 +6055,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 						MultiContentEntryProgress(pos = (270, 36), size = (390, 24), percent = -3), # progress
 						MultiContentEntryText(pos = (700, 32), size = (200, 30), font=1, flags = RT_HALIGN_RIGHT, text = 4), # percentage
 					],
-				"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
-				"itemHeight": 70
+				"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
+				"itemHeight": 50
 				}
 			</convert>
   </widget>
@@ -6410,11 +6410,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="config" render="Listbox" position="window_list_pos" size="window_list_setup_size" backgroundColor="windowBackground" zPosition="10" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20">
     <convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (100, 22), size = (950, 40), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0), # index 1 is the interfacename
+						MultiContentEntryText(pos = (100, 5), size = (950, 40), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0), # index 1 is the interfacename
 						MultiContentEntryPixmapAlphaTest(pos = (15, 14), size = (54, 54), png = 3), # index 3 is the interface pixmap
 					],
-				"fonts": [gFont("SetrixHD", 32),],
-				"itemHeight": 85
+				"fonts": [gFont("SetrixHD", 30),],
+				"itemHeight": 50
 				}
 			</convert>
   </widget>
@@ -6474,7 +6474,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <variable name="window_title_size" value="880,90" />
   <variable name="window_list_pos" value="105,150" />
   <variable name="window_list_size" value="1050,795" />
-  <variable name="window_list_setup_size" value="1050,760" />
+  <variable name="window_list_setup_size" value="1050,750" />
   <variable name="window_list_setup_two_rows_size" value="1050,750" />
   <!-- ContextMenu / SmallWindow -->
   <variable name="contextMenu_title_pos" value="20,5" />
@@ -6742,7 +6742,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
       MultiContentEntryText(pos = (162, 46), size = (658, 39), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is the description
       MultiContentEntryPixmapAlphaTest(pos = (30, 20), size = (100, 75), png = 3), # index 4 is the status pixmap
       ],
-      "fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+      "fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
       "itemHeight": 90
       }
     </convert>
@@ -6794,7 +6794,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
       [
       MultiContentEntryText(pos = (10, 17), size = (870, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
       ],
-      "fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+      "fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
       "itemHeight": 72,
       "scrollbarMode": "showOnDemand",
       }
@@ -6827,7 +6827,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
       MultiContentEntryText(pos = (90, 3), size = (700, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 0 is the MenuText,
       MultiContentEntryText(pos = (90, 39), size = (707, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the MenuText,
       ],
-      "fonts": [gFont("SetrixHD", 33),gFont("SetrixSL", 24)],
+      "fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
       "itemHeight": 72
       }
     </convert>
@@ -6956,7 +6956,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 						MultiContentEntryText(pos = (265,43), size = (260, 36), font=1, flags = RT_HALIGN_CENTER|RT_VALIGN_TOP, text = 4),
 						MultiContentEntryText(pos = (525,43), size = (290, 36), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 3),
 					],
-				"fonts": [gFont("SetrixHD", 34),gFont("SetrixHD", 28)],
+				"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
 				"itemHeight": 85,
 				"scrollbarMode": "showAlways"
 				}

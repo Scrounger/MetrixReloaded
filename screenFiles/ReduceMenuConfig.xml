@@ -15,7 +15,7 @@
 						MultiContentEntryPixmapAlphaTest(pos = (18, 11), size = (48, 48), png = 2),
 						MultiContentEntryText(pos = (90, 17), size = (870, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 					],
-					"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 22)],
+					"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 22)],
 					"itemHeight": 70
 				}
 			</convert>

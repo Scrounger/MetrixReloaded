@@ -15,7 +15,7 @@
       MultiContentEntryText(pos = (90, 3), size = (700, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 0 is the MenuText,
       MultiContentEntryText(pos = (90, 39), size = (707, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the MenuText,
       ],
-      "fonts": [gFont("SetrixHD", 33),gFont("SetrixSL", 24)],
+      "fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
       "itemHeight": 72
       }
     </convert>

@@ -14,7 +14,7 @@
       MultiContentEntryText(pos = (70, 0), size = (900, 50), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
       MultiContentEntryPixmap(pos = (10, 9), size = (45, 30), png = 2), # index 2 is the pixmap
       ],
-      "fonts": [gFont("SetrixHD", 32)],
+      "fonts": [gFont("SetrixHD", 30)],
       "itemHeight": 50
       }
     </convert>

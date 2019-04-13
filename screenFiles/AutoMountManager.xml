@@ -15,7 +15,7 @@
 						MultiContentEntryText(pos = (85, 53), size = (1030, 26), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
 						MultiContentEntryPixmapAlphaTest(pos = (2, 14), size = (54, 54), png = 3), # index 3 is the interface pixmap
 					],
-				"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+				"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
 				"itemHeight": 90
 				}
 			</convert>

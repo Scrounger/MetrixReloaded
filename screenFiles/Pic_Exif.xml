@@ -14,7 +14,7 @@
       {
       "template": [ MultiContentEntryText(pos = (10, 5), size = (450, 40), flags = RT_HALIGN_LEFT, text = 0),
       MultiContentEntryText(pos = (470, 5), size = (450, 40), flags = RT_HALIGN_LEFT, text = 1)],
-      "fonts": [gFont("SetrixHD", 32)],
+      "fonts": [gFont("SetrixHD", 30)],
       "itemHeight": 50
       }
     </convert>

@@ -11,11 +11,11 @@
   <widget source="list" render="Listbox" transparent="1" position="window_list_pos" size="window_list_size" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [
-      MultiContentEntryText(pos = (60, 7), size = (865, 75), font=0, flags = RT_HALIGN_LEFT, text = 0),
-      MultiContentEntryPixmapAlphaTest(pos = (25, 25), size = (24, 24), png = 2) # index 4 is the status pixmap
+      MultiContentEntryText(pos = (60, 5), size = (865, 75), font=0, flags = RT_HALIGN_LEFT, text = 0),
+      MultiContentEntryPixmapAlphaTest(pos = (25, 13), size = (24, 24), png = 2) # index 4 is the status pixmap
       ],
-      "fonts": [gFont("SetrixHD", 35),gFont("SetrixSL", 24)],
-      "itemHeight": 74
+      "fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
+      "itemHeight": 50
       }
     </convert>
   </widget>

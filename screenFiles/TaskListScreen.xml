@@ -16,8 +16,8 @@
 						MultiContentEntryProgress(pos = (270, 36), size = (390, 24), percent = -3), # progress
 						MultiContentEntryText(pos = (700, 32), size = (200, 30), font=1, flags = RT_HALIGN_RIGHT, text = 4), # percentage
 					],
-				"fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
-				"itemHeight": 70
+				"fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
+				"itemHeight": 50
 				}
 			</convert>
   </widget>

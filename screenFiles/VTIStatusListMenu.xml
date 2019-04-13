@@ -14,7 +14,7 @@
       [
       MultiContentEntryText(pos = (10, 17), size = (870, 36), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
       ],
-      "fonts": [gFont("SetrixHD", 32),gFont("SetrixSL", 24)],
+      "fonts": [gFont("SetrixHD", 30),gFont("SetrixSL", 24)],
       "itemHeight": 72,
       "scrollbarMode": "showOnDemand",
       }

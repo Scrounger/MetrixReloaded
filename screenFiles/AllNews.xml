@@ -15,7 +15,7 @@
       MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (48, 48), png = 2), # index 4 is the status pixmap
       MultiContentEntryText(pos = (52, 2), size = (600, 44), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 0 is the MenuText,
       ],
-      "fonts": [gFont("SetrixHD", 32)],
+      "fonts": [gFont("SetrixHD", 30)],
       "itemHeight": 50
       }
     </convert>
