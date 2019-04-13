@@ -284,6 +284,10 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				else:
 					input = str(input).replace(type, "")
 
+			# '\,' in MiddleDot umwandeln
+			sep = ' %s ' % str(self.htmlParser.unescape('&#xB7;'))
+			input = input.replace('\\,', sep)
+
 			#falls input mit newline beginnt -> entfernen
 			if(input.startswith('\\n')):
 				return input[2:]
