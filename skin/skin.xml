@@ -4925,9 +4925,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <parameter name="SelectionListmodItemHeight" value="50" />
   <parameter name="SelectionListmodIcon" value="10,10,25,25" />
   <!-- ServiceInfo -->
-  <parameter name="ServiceInfo" value="0,9,400,32" />
-  <parameter name="ServiceInfoLeft" value="0,9,400,32" />
-  <parameter name="ServiceInfoRight" value="450,9,5500,32" />
+  <parameter name="ServiceInfo" value="0,3,400,50" />
+  <parameter name="ServiceInfoLeft" value="0,3,400,50" />
+  <parameter name="ServiceInfoRight" value="450,3,5500,50" />
   <!-- Audio selection -->
   <parameter name="AudioSelectionSliderSeparation" value="500" />
   <!-- Plugin browser -->
