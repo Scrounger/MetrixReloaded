@@ -3459,14 +3459,26 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="Service" render="VRunningText" position="1216,380" zPosition="1" size="622,50" font="font_epg_name" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="MovieInfo">MetaDescription</convert>
   </widget>
-  <widget source="Service" render="Label" position="1450,340" zPosition="1" size="165,34" font="font_standard_small" halign="center" backgroundColor="windowBackgroundSecond" transparent="1">
+  <widget source="Service" render="Label" position="1687,338" zPosition="0" size="88,40" font="font_standard_extra_small" halign="right" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="accent1" valign="top">
     <convert type="ServiceTime">Duration</convert>
     <convert type="ClockToText">AsLength</convert>
   </widget>
-  <widget source="Service" render="Label" position="1615,340" zPosition="1" size="165,34" font="font_standard_small" halign="center" backgroundColor="windowBackgroundSecond" transparent="1">
+  
+  <!--<eLabel name="" text="min" position="1745,338" size="50,40" backgroundColor="windowBackgroundSecond" foregroundColor="accent1" font="font_standard_extra_small" zPosition="1" valign="top" halign="right" />-->
+  
+  <widget source="Service" render="Label" position="1745,338" zPosition="1" size="50,40" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" foregroundColor="accent1" valign="top">
+    <convert type="MovieInfo">FileSize</convert>
+    <convert type="MetrixReloadedCompareString">[NotEmpty( min)]</convert>
+  </widget>
+  
+  <widget source="Service" position="1535,338" size="150,40" render="Label" font="font_standard_extra_small" foregroundColor="accent1" backgroundColor="windowBackgroundSecond" transparent="1" valign="top" halign="right">
+    <convert type="ServiceTime">StartTime</convert>
+    <convert type="ClockToText">Format:%a %d.%m.%Y</convert>
+  </widget>
+  <widget source="Service" render="Label" position="1435,338" zPosition="1" size="100,40" font="font_standard_extra_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="accent1" valign="top">
     <convert type="MovieInfo">FileSize</convert>
   </widget>
-  <widget source="Service" render="Label" position="1216,434" size="622,480" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" valign="top">
+  <widget source="Service" render="Label" position="1216,433" size="622,480" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" valign="top">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
   <!-- Remote Buttons -->
@@ -3485,6 +3497,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <panel name="panel_key_yellow_name_long" />
   <panel name="panel_key_blue_name_long" />
   <widget text="MovieSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
+  
 </screen>
 <fonts name="MovieSelection_fonts">
   <alias name="MovieListCompactFont1" font="SetrixHD" size="28" height="70" />
