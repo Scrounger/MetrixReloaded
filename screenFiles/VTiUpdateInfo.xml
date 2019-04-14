@@ -11,7 +11,7 @@
   <widget name="update" position="window_list_pos" size="window_list_size" font="font_list" backgroundColor="windowBackground" transparent="1" halign="left" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" />
   <widget name="header" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />

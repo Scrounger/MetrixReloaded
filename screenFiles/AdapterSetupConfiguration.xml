@@ -14,7 +14,7 @@
   <widget source="Statustext" render="Label" position="875,150" size="200,50" zPosition="10" font="font_standard" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="statuspic" pixmaps="MetrixReloaded/skin_default/buttons/key_green.png,MetrixReloaded/skin_default/buttons/key_off.png" position="1105,161" zPosition="10" size="35,26" transparent="1" alphatest="blend" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/network_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />

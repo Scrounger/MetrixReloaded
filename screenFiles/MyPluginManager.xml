@@ -23,7 +23,7 @@
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/paket.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="searchchar" position="window_searchbar_pos" size="window_searchbar_size" valign="center" halign="center" zPosition="100" backgroundColor="windowBackgroundSecond" transparent="0" font="SetrixHD;140" foregroundColor="foreground" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />

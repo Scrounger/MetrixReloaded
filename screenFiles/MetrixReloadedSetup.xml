@@ -14,7 +14,7 @@
   <eLabel text="created by scrounger" position="1216,160" size="622,50" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" font="SetrixHD;26" halign="center" transparent="1" />
   <eLabel text="https://github.com/Scrounger/MetrixReloaded" position="1216,200" size="622,50" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" font="SetrixHD;24" halign="center" transparent="1" />
   <widget name="Picture" position="1216,320" size="622,350" alphatest="blend" backgroundColor="windowBackground" zPosition="1" />
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/metrixreloaded.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="help" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />

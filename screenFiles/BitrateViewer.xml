@@ -27,7 +27,7 @@
   <widget source="cur" render="Label" position="105,570" zPosition="1" size="200,32" font="font_standard" transparent="1" backgroundColor="windowBackground" />
   <widget name="acur" position="400,570" size="315,32" font="font_standard" transparent="1" backgroundColor="windowBackground" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <widget name="cancel" position="key_red_mid_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />

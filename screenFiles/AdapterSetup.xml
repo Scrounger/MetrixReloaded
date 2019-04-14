@@ -25,7 +25,7 @@
   <widget source="DNS1" render="Label" position="795,780" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
   <widget source="DNS2" render="Label" position="795,830" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/network_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="introduction2" render="Label" position="window_desc_pos" size="window_desc_size" foregroundColor="foreground" font="font_standard" halign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />

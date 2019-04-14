@@ -11,7 +11,7 @@
     <!-- Left Panel (Left Side) -->
 		<widget name="config" position="window_list_pos" size="window_list_size" itemHeight="50" font="font_list" secondfont="font_list_second" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
     <!-- Right Panel (Right Side) -->
-    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/plugin.png" position="window_image_pos" size="window_image_size" scale="1" />		
+    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/epgimport.png" position="window_image_pos" size="window_image_size" scale="1" />		
     
     <!--TODO: anpassen-->
     <widget name="status" position="30,855" size="900,100" font="Regular; 28" halign="center" valign="center" backgroundColor="background" transparent="1" />

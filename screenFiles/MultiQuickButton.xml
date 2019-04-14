@@ -10,7 +10,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="list" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/multi_quickbutton.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />

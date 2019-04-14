@@ -37,7 +37,7 @@
   <widget source="DNS1" render="Label" position="795,780" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
   <widget source="DNS2" render="Label" position="795,830" size="360,40" zPosition="1" font="font_standard" transparent="1" backgroundColor="windowBackground" halign="right" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/network_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="introduction2" render="Label" position="window_desc_pos" size="window_desc_size" foregroundColor="foreground" font="font_standard" halign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
@@ -63,7 +63,7 @@
   <widget source="Statustext" render="Label" position="875,150" size="200,50" zPosition="10" font="font_standard" halign="left" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="statuspic" pixmaps="MetrixReloaded/skin_default/buttons/key_green.png,MetrixReloaded/skin_default/buttons/key_off.png" position="1105,161" zPosition="10" size="35,26" transparent="1" alphatest="blend" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/network_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/help.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
@@ -84,7 +84,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -104,7 +104,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -134,7 +134,7 @@
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -209,7 +209,7 @@
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="Picture" position="1216,320" size="622,350" alphatest="blend" backgroundColor="windowBackground" zPosition="1"/>
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -240,7 +240,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" position="window_list_pos" size="window_list_size" font="font_list" itemHeight="50" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />  
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="Picture" position="1216,320" size="622,350" alphatest="blend" backgroundColor="windowBackground" zPosition="1"/>
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -429,7 +429,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="help" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -451,7 +451,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -472,7 +472,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="list" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -493,7 +493,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="entries" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <!-- Buttons -->
@@ -528,7 +528,7 @@
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -546,7 +546,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -567,7 +567,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/autotimer.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="help" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -588,7 +588,7 @@
   <widget name="checkList" position="window_list_pos" size="window_list_size" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- ListParameter: FileListMulti-->
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -616,7 +616,7 @@
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -636,7 +636,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="filelist" position="window_list_pos" size="window_list_size" itemHeight="50" font="font_list" transparent="1" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -673,7 +673,7 @@
   <widget source="cur" render="Label" position="105,570" zPosition="1" size="200,32" font="font_standard" transparent="1" backgroundColor="windowBackground" />
   <widget name="acur" position="400,570" size="315,32" font="font_standard" transparent="1" backgroundColor="windowBackground" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <widget name="cancel" position="key_red_mid_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
@@ -724,7 +724,7 @@
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/bluetooth_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -757,7 +757,7 @@
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/bluetooth_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -779,7 +779,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/bluetooth_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -811,7 +811,7 @@
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/bluetooth_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -1014,7 +1014,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="list" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />
@@ -1159,7 +1159,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="entries" backgroundColorRows="listBackgroundBarsOne" zPosition="2" position="window_list_pos" size="window_list_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/ci_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="text" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground" />
   <widget text="CiSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -1175,7 +1175,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="CiList" backgroundColorRows="listBackgroundBarsOne" zPosition="2" position="window_list_pos" size="window_list_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/ci_assign.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -1393,7 +1393,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="showjobs" itemHeight="70" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="window_list_pos" size="window_list_setup_size" font="font_list" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -1414,7 +1414,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="filelist" position="window_list_pos" size="window_list_setup_size" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -1517,7 +1517,7 @@
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/device_manager.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -1540,7 +1540,7 @@
   <widget name="messagetype" position="180,150" size="900,50" font="font_standard" halign="center" valign="center" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" />
   <widget name="messagetext" position="180,200" size="900,500" font="font_standard" halign="center" valign="Top" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -1570,7 +1570,7 @@
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -1949,7 +1949,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="showexe" itemHeight="70" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="window_list_pos" size="window_list_setup_size" font="font_list" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -1970,7 +1970,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="filelist" position="window_list_pos" size="window_list_size" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" valign="center" halign="center" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -2554,7 +2554,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="hddlist" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="window_list_pos" font="font_list" itemHeight="50" size="window_list_setup_size" scrollbarMode="showOnDemand" transparent="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap pixmap="MetrixReloaded/media/icons/hdd.png" position="window_image_pos" size="window_image_size" scale="1" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="MetrixReloaded/media/icons/menu/harddisk_init.png" position="window_image_pos" size="window_image_size" scale="1" alphatest="blend" transparent="1" />
   <widget text="HarddiskSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="HdmiCecPlugin" position="center,center" size="1920,1080" title="HDMI CEC" flags="wfNoBorder" backgroundColor="transparent">
@@ -2569,7 +2569,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap pixmap="MetrixReloaded/media/icons/hdmicec.png" position="window_image_pos" size="window_image_size" scale="1" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="MetrixReloaded/media/icons/menu/vti_hdmi-cec.png" position="window_image_pos" size="window_image_size" scale="1" alphatest="blend" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -2910,7 +2910,7 @@
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/languages.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/language_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget text="LanguageSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="LanguageWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder">
@@ -3320,7 +3320,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <eLabel text="created by scrounger" position="1216,160" size="622,50" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" font="SetrixHD;26" halign="center" transparent="1" />
   <eLabel text="https://github.com/Scrounger/MetrixReloaded" position="1216,200" size="622,50" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" font="SetrixHD;24" halign="center" transparent="1" />
   <widget name="Picture" position="1216,320" size="622,350" alphatest="blend" backgroundColor="windowBackground" zPosition="1" />
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/metrixreloaded.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="help" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -3354,7 +3354,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -3373,7 +3373,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColor="windowBackground" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -3587,7 +3587,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget font="Regular;34" name="detailtext" position="window_list_pos" size="window_list_setup_size" halign="center" transparent="1" backgroundColor="windowBackground" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -3608,7 +3608,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="list" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/multi_quickbutton.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />
@@ -3646,7 +3646,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/multi_quickbutton.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <widget name="buttonred" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
@@ -3667,7 +3667,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="filelist" position="window_list_pos" size="window_list_setup_size" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/multi_quickbutton.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="executable" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" valign="center" halign="center" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -3727,7 +3727,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -3759,7 +3759,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/paket.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="searchchar" position="window_searchbar_pos" size="window_searchbar_size" valign="center" halign="center" zPosition="100" backgroundColor="windowBackgroundSecond" transparent="0" font="SetrixHD;140" foregroundColor="foreground" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -4012,7 +4012,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/network_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -4151,7 +4151,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/tuner_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -4171,7 +4171,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/tuner_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -4312,7 +4312,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -5022,7 +5022,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/look.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/parental_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget text="ParentalControlChangePin" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="ParentalControlEditor" position="center,center" size="1920,1080" title="Parental control services Editor" flags="wfNoBorder" backgroundColor="transparent">
@@ -5038,7 +5038,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="servicelist" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" font="font_list" itemHeight="50" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/look.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/parental_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget text="ParentalControlEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="ParentalControlSetup" position="center,center" size="1920,1080" title="Parental control setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -5054,7 +5054,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/look.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/parental_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget text="ParentalControlSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="PiconManagerFolderScreen" position="center,center" size="1050,750" flags="wfNoBorder" backgroundColor="transparent">
@@ -5584,7 +5584,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/manual_scan.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="introduction" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <widget text="ScanSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -5600,7 +5600,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" zPosition="10" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/auto_scan.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="footer" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <widget text="ScanSimple" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
@@ -6092,7 +6092,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/task_list.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />
@@ -6324,7 +6324,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="1050,737" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/transkodierungseinstellungen.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" transparent="1" />
   <widget source="text" render="Label" position="105,895" size="1050,40" font="font_standard_small; 34" valign="center" halign="center" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" />
   <!-- Buttons -->
@@ -6779,7 +6779,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -6800,7 +6800,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="passwd" position="window_list_pos" size="window_list_setup_size" textOffset="5,3" secondfont="font_list_second" font="font_list" itemHeight="50" transparent="1" zPosition="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -6832,7 +6832,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />
@@ -6864,7 +6864,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     </convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -6883,7 +6883,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="update" position="window_list_pos" size="window_list_size" font="font_list" backgroundColor="windowBackground" transparent="1" halign="left" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="4" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" />
   <widget name="header" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" transparent="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/vti_panel.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -6949,7 +6949,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" position="window_list_pos" size="window_list_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="ipaddresstext" render="Label" position="1216,720" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />
   <widget source="ipaddress" render="Label" position="1518,720" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" valign="center" transparent="1" halign="right" />
   <widget source="netmasktext" render="Label" position="1216,765" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />
@@ -6994,7 +6994,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="info" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="foreground" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -7016,7 +7016,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="aplist" position="window_list_pos" size="1050,720" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget source="Status" render="Label" position="105,889" zPosition="1" size="1050,45" font="font_standard_small; 30" foregroundColor="accent1" backgroundColor="windowBackground" halign="center" valign="center" transparent="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="ESSID" render="Label" position="1218,110" zPosition="1" size="622,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <widget source="Address" render="Label" position="1218,160" zPosition="1" size="622,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <widget source="Protocol" render="Label" position="1218,210" zPosition="1" size="622,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
@@ -7044,7 +7044,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="menulist" position="window_list_pos" size="window_list_setup_size" font="font_list" itemHeight="40" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -7065,7 +7065,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="menulist" position="window_list_pos" size="window_list_setup_size" font="font_list" itemHeight="40" transparent="1" backgroundColor="windowBackground" scrollbarMode="showOnDemand" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="description" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -7100,7 +7100,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="IF" render="Label" position="505,450" size="650,40" zPosition="10" font="font_standard_small" halign="right" backgroundColor="windowBackground" transparent="1" />
   <widget name="statuspic" pixmaps="MetrixReloaded/skin_default/buttons/key_green.png,MetrixReloaded/skin_default/buttons/key_off.png" position="1120,507" zPosition="10" size="35,26" transparent="1" alphatest="on" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
@@ -7172,7 +7172,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/zapping-modus.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
