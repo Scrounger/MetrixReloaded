@@ -24,7 +24,7 @@ class MetrixReloadedCompareString(Converter, object):
 
 		if(self.value == "[NotEmpty]"):
 			if(self.source.text.lower() != None and self.source.text.lower() != ''):
-				return self.source.text.lower()
+				return self.source.text
 
 		if(self.source.text.lower() == self.value.lower()):
 			return self.source.text
