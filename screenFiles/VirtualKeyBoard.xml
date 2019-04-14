@@ -16,7 +16,7 @@
   <!-- Keyboard-->
   <widget name="list" position="220,310" size="1132,900" foregroundColor="foreground" selectionDisabled="1" transparent="0" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/keyb.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/keyb.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="country" render="Label" position="window_desc_pos" size="window_desc_size" halign="center" font="font_standard" transparent="1" noWrap="1" />
   <widget text="VirtualKeyBoard" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

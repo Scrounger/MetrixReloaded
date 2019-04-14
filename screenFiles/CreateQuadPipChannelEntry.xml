@@ -10,7 +10,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="list" position="window_list_pos" size="window_list_size" serviceItemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   
   <widget name="textChannels" position="1218,120" size="610,40" font="Regular;34" transparent="1" />
   <widget name="selectedList" position="1218,175" size="610,160" font="Regular;30" itemHeight="40" transparent="1" />

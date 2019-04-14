@@ -11,7 +11,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="ServiceList" position="window_list_pos" size="window_list_setup_size" font="font_list" itemHeight="50" zPosition="1" scrollbarMode="showOnDemand" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camd.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="ServiceList_info" render="Label" position="window_desc_pos" size="window_desc_size" zPosition="2" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" />
   <widget source="ServiceList_desc" render="Label" position="233,300" size="825,33" font="Regular;30" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->

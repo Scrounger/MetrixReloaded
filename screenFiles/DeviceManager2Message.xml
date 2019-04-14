@@ -12,7 +12,7 @@
   <widget name="messagetype" position="180,150" size="900,50" font="font_standard" halign="center" valign="center" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" />
   <widget name="messagetext" position="180,200" size="900,500" font="font_standard" halign="center" valign="Top" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/vti.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />

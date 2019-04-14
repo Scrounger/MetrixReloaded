@@ -10,7 +10,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="list" position="window_list_pos" size="window_list_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="timer1" position="1218,115" size="610,200" scrollbarMode="showNever" transparent="1" backgroundColor="windowBackgroundSecond" />
   <widget name="timer2" position="1218,730" size="610,200" scrollbarMode="showNever" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->

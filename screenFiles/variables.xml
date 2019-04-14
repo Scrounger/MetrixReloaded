@@ -65,10 +65,10 @@
   <variable name="window_epg_progressBar_size" value="382,5" />
   <variable name="window_epg_progressBar_bg_pos" value="1325,407" />
   <variable name="window_epg_progressBar_bg_size" value="382,1" />
-  <variable name="window_image_pos" value="1333,333" />
-  <variable name="window_image_size" value="384,384" />
-  <variable name="window_desc_pos" value="1216,700" />
-  <variable name="window_desc_size" value="622,200" />
+  <variable name="window_image_pos" value="1397,397" />
+  <variable name="window_image_size" value="256,256" />
+  <variable name="window_desc_pos" value="1216,670" />
+  <variable name="window_desc_size" value="622,230" />
   <variable name="window_vert_epg_picon_size" value="160,95" />
   <!-- Remote Buttons -->
   <variable name="window_remote_button_right_pos" value="1760,926" />

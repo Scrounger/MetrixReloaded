@@ -12,7 +12,7 @@
   <widget name="ServiceList" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="1050,380" textOffset="5,3" backgroundColor="windowBackground" itemHeight="50" font="font_list" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <widget source="ServiceList_info" render="Label" position="105,547" size="1050,380" zPosition="2" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/search.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="ServiceList_desc" render="Label" position="window_desc_pos" size="window_desc_size" valign="center" halign="center" font="font_standard" backgroundColor="windowBackgroundSecond" transparent="1" />
 
   <!-- Buttons -->

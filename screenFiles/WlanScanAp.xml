@@ -11,7 +11,7 @@
   <widget name="aplist" position="window_list_pos" size="1050,720" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget source="Status" render="Label" position="105,889" zPosition="1" size="1050,45" font="font_standard_small; 30" foregroundColor="accent1" backgroundColor="windowBackground" halign="center" valign="center" transparent="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="ESSID" render="Label" position="1218,110" zPosition="1" size="622,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <widget source="Address" render="Label" position="1218,160" zPosition="1" size="622,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <widget source="Protocol" render="Label" position="1218,210" zPosition="1" size="622,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />

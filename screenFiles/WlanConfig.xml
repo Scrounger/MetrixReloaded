@@ -10,7 +10,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" position="window_list_pos" size="window_list_size" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/wlan.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="ipaddresstext" render="Label" position="1216,720" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />
   <widget source="ipaddress" render="Label" position="1518,720" zPosition="1" size="320,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" valign="center" transparent="1" halign="right" />
   <widget source="netmasktext" render="Label" position="1216,765" zPosition="1" size="300,40" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" />

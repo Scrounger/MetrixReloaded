@@ -20,7 +20,7 @@
 			</convert>
   </widget>
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/net.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" valign="center" halign="center" foregroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />

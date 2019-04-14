@@ -10,7 +10,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="loglist" position="window_list_pos" size="window_list_setup_size" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/timer.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="logentry" position="window_desc_pos" size="window_desc_size" font="font_standard" backgroundColor="windowBackgroundSecond" halign="center" valign="center" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />

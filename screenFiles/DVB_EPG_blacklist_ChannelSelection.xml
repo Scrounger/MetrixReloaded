@@ -10,7 +10,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="50" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="accentColorOne" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />

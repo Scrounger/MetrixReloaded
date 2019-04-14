@@ -10,7 +10,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="filelist" position="window_list_pos" size="window_list_setup_size" itemHeight="50" transparent="1" font="font_list" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camera.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/camera.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="thn" position="window_desc_pos" size="window_desc_size" alphatest="on" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />

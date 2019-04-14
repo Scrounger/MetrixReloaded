@@ -22,7 +22,7 @@
   <widget source="job_status" render="Label" position="105,430" size="1050,64" font="SetrixHD;28" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" />
   <widget name="config" itemHeight="50" font="font_list" secondfont="font_list_second" textOffset="5,3" position="105,520" backgroundColor="windowBackground" size="1050,300" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
 <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
 
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />

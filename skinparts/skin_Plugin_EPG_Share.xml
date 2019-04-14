@@ -34,7 +34,7 @@
 	  <ePixmap alphatest="blend" 
 		  pixmap="MetrixReloaded/media/icons/plugin.png" 
 		  position="window_image_pos" 
-		  size="window_image_size" /> 
+		  size="window_image_size" scale="1" /> 
 	  <widget name="info" 
 		  position="window_desc_pos" 
 		  size="window_desc_size" 
@@ -81,7 +81,7 @@
 	  <ePixmap alphatest="blend" 
 		  pixmap="MetrixReloaded/media/icons/plugin.png" 
 		  position="window_image_pos" 
-		  size="window_image_size" /> 
+		  size="window_image_size" scale="1" /> 
 	  <widget name="info" 
 		  position="window_desc_pos" 
 		  size="window_desc_size" 

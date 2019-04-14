@@ -11,7 +11,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="list" position="window_list_pos" backgroundColorRows="listBackgroundBarsOne" size="window_list_setup_size" zPosition="3" backgroundColor="windowBackground" colorServiceDescription="gray" foregroundColorServiceNotAvail="ServiceNotAvail" serviceItemHeight="60" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_list_ServiceInfo" colorEventProgressbarBorder="foreground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="listSelectedForeground" colorServiceDescriptionSelected="listSelectedForeground" colorEventProgressbarBorderSelected="foreground" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/mqb.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget source="introduction" render="Label" position="window_desc_pos" size="window_desc_size" font="font_standard" halign="center" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="foreground" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
