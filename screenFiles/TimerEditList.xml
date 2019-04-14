@@ -11,25 +11,26 @@
   <widget name="timerlist" position="window_list_pos" size="window_list_setup_size" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" itemHeight="110" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Font über Parameter-->
   <!-- Right Panel (Right Side) -->
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3" />
   <widget source="ServiceEvent" alphatest="blend" position="window_epg_picon_pos" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="ServiceEvent" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+  <widget source="Event" position="1216,385" zPosition="1" size="622,50" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0" valign="top">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
+  <widget source="Event" render="Label" position="1649,335" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard_small" foregroundColor="accent1" backgroundColor="windowBackgroundSecond" transparent="1" valign="top">
     <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText"></convert>
-  </widget>
-  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
-    <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
-  <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_epg_progressBar_bg_pos" size="window_epg_progressBar_bg_size" />
-  <widget source="Event" backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" transparent="1" zPosition="1">
-    <convert type="EventTime">Progress</convert>
+  <widget source="Event" render="Label" position="1719,335" zPosition="1" halign="right" size="120,36" font="font_standard_small" foregroundColor="accent1" backgroundColor="windowBackgroundSecond" transparent="1" valign="top">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:- %H:%M</convert>
   </widget>
-  <widget source="Event" position="window_epg_desc_pos" zPosition="1" size="622,460" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <widget source="Event" position="1218,335" size="300,40" render="Label" font="font_standard_small" foregroundColor="accent1" backgroundColor="windowBackgroundSecond" transparent="1" valign="top" halign="left">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%A %d.%m.</convert>
+  </widget>
+  <widget source="Event" position="window_epg_desc_pos" zPosition="1" size="622,460" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0" valign="top">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <!-- Remote Buttons -->
@@ -40,5 +41,5 @@
   <panel name="panel_key_green_name" />
   <panel name="panel_key_yellow_name" />
   <panel name="panel_key_blue_name" />
-  <widget text="TimerEditList" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="TimerEditList" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
