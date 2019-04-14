@@ -19,14 +19,17 @@
   <widget alphatest="blend" position="1450,138" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
     <convert type="MovieInfo">Reference</convert>
   </widget>
-  <widget source="Service" render="Label" position="1216,380" zPosition="1" size="window_epg_name_size" font="font_epg_name" backgroundColor="windowBackgroundSecond" transparent="1">
-    <convert type="MovieInfo">ShortDescription</convert>
+  <widget source="Service" render="VRunningText" position="1216,380" zPosition="1" size="622,50" font="font_epg_name" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+    <convert type="MovieInfo">MetaDescription</convert>
   </widget>
-  <widget source="Service" render="Label" position="1216,420" zPosition="1" size="100,34" font="font_standard_small" halign="left" backgroundColor="windowBackgroundSecond" transparent="1">
+  <widget source="Service" render="Label" position="1450,340" zPosition="1" size="165,34" font="font_standard_small" halign="center" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="ServiceTime">Duration</convert>
     <convert type="ClockToText">AsLength</convert>
   </widget>
-  <widget source="Service" render="Label" position="1216,469" size="622,445" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1">
+  <widget source="Service" render="Label" position="1615,340" zPosition="1" size="165,34" font="font_standard_small" halign="center" backgroundColor="windowBackgroundSecond" transparent="1">
+    <convert type="MovieInfo">FileSize</convert>
+  </widget>
+  <widget source="Service" render="Label" position="1216,434" size="622,480" font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" valign="top">
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
   <!-- Remote Buttons -->
@@ -44,5 +47,5 @@
   <panel name="panel_key_green_name_long" />
   <panel name="panel_key_yellow_name_long" />
   <panel name="panel_key_blue_name_long" />
-  <widget text="MovieSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="MovieSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
