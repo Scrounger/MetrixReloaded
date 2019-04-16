@@ -30,10 +30,10 @@
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
   
-  <!--<widget font="BoldItalic;40" position="45,20" render="Label" size="960,50" valign="center" backgroundColor="windowBackground" transparent="1" source="session.CurrentService" zPosition="1">
+  <!--<widget font="SetrixHD;40" position="45,20" render="Label" size="960,50" valign="center" backgroundColor="windowBackground" transparent="1" source="session.CurrentService" zPosition="1">
     <convert type="ServiceName">Name</convert>
   </widget>
-  <widget backgroundColor="windowBackground" font="BoldItalic;36" noWrap="1" transparent="1" foregroundColor="accentColorOne" halign="left" valign="top" position="45,90" render="Label" size="820,50" source="session.Event_Now" zPosition="1">
+  <widget backgroundColor="windowBackground" font="SetrixHD;36" noWrap="1" transparent="1" foregroundColor="accentColorOne" halign="left" valign="top" position="45,90" render="Label" size="820,50" source="session.Event_Now" zPosition="1">
     <convert type="EventName">Name</convert>
   </widget>
   <widget backgroundColor="windowBackground" font="Bold;34" position="45,145" render="Label" size="100,40" halign="left" source="session.Event_Now" zPosition="1" transparent="1">
@@ -51,7 +51,7 @@
   <widget backgroundColor="windowBackground" font="Regular;34" transparent="1" halign="left" valign="top" position="45,195" size="820,470" render="Label" source="session.Event_Now" zPosition="1">
     <convert type="EventName">FullDescription</convert>
   </widget>
-  <widget backgroundColor="windowBackground" font="BoldItalic;36" noWrap="1" transparent="1" foregroundColor="accentColorTwo" halign="left" valign="top" position="955,90" render="Label" size="820,50" source="session.Event_Next" zPosition="1">
+  <widget backgroundColor="windowBackground" font="SetrixHD;36" noWrap="1" transparent="1" foregroundColor="accentColorTwo" halign="left" valign="top" position="955,90" render="Label" size="820,50" source="session.Event_Next" zPosition="1">
     <convert type="EventName">Name</convert>
   </widget>
 

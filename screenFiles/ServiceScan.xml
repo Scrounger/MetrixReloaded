@@ -2,7 +2,7 @@
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Service Scan" position="173,90" size="1000,84" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
+  <eLabel text="Service Scan" position="173,90" size="1000,84" font="SetrixHD; 58" backgroundColor="windowBackground" transparent="1" />
   <constant-widget name="clock_mid" />
   <widget source="FrontendInfo" render="Pixmap" pixmap="MetrixReloaded/media/icons/scan-s.png" position="344,265" size="96,96" transparent="1" alphatest="blend">
     <convert type="FrontendInfo">TYPE</convert>

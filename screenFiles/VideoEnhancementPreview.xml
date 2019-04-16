@@ -4,7 +4,7 @@
   <widget source="key_red" render="Label" position="53,15" zPosition="1" size="210,38" font="Regular;30" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget source="key_green" render="Label" position="473,15" zPosition="1" size="210,38" font="Regular;30" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="config" position="8,75" size="825,120" font="Regular;28" itemHeight="32" scrollbarMode="showOnDemand" />
-  <eLabel text=" " position="0,195" size="840,3" font="BoldItalic;48" backgroundColor="windowBackground" />
+  <eLabel text=" " position="0,195" size="840,3" font="SetrixHD;48" backgroundColor="windowBackground" />
   <widget source="introduction" render="Label" position="0,210" size="825,38" zPosition="10" font="Regular;31" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget text="VideoEnhancementPreview" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="640,230" />
 </screen>

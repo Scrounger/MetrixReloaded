@@ -2,7 +2,7 @@
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <widget name="channel_icon" position="50,100" zPosition="4" size="232,132" transparent="1" alphatest="blend" />
-  <widget name="channel_name" position="1542,122" size="289,70" font="BoldItalic;34" valign="top" halign="center" foregroundColor="InfobarFgL" backgroundColor="infobarBgL" transparent="1" />
+  <widget name="channel_name" position="1542,122" size="289,70" font="SetrixHD;34" valign="top" halign="center" foregroundColor="InfobarFgL" backgroundColor="infobarBgL" transparent="1" />
   <widget name="channel_uri" position="305,194" zPosition="1" valign="top" halign="left" size="1000,44" noWrap="1" font="Regular; 28" backgroundColor="infobarBgR" transparent="1" />
   <ePixmap pixmap="MetrixReloaded/media/icons/Info-progress-white.png" position="1542,192" size="289,27" transparent="1" alphatest="on" />
   <widget name="eventProgressbar" position="1542,192" size="289,27" pixmap="MetrixReloaded/media/icons/Info-progress.png" backgroundColor="accentColorOne" zPosition="1" transparent="1" />

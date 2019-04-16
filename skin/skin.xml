@@ -1057,6 +1057,10 @@
   <parameter name="ServicelistRecordServicePixmap100" value="0,7,40,40" />
   <parameter name="ServicelistServiceName100" value="5,0,800,40" />
   <parameter name="ServicelistServiceInfo100" value="5,0,800,40" />
+   
+  <!-- ChannelSelection - Ein- / Zweizeilig --> 
+  <parameter name="ServicelistCustomPiconSize" value="100,60"/>
+   
   <!-- ChannelSelection - epglist-->
   <parameter name="EPGServicelistText0OffSet" value="10, 0" />
   <parameter name="EPGServicelistText1OffSet" value="-10, 0" />
@@ -1065,6 +1069,7 @@
   <parameter name="EPGServicelistRecTextOffset" value="-30, 0" />
   <parameter name="EPGServicelistNonRecTextOffset" value="-20, 0" />
 </parameters>
+
 <screen name="ChoiceBox" position="center,center" size="1050,750" title="Input" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_contextMenu" />
@@ -2959,7 +2964,7 @@
   <panel name="panel_key_green_name" />
   <panel name="panel_key_yellow_name" />
   <panel name="panel_key_blue_name" />
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1100,450" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1100,450" secondfont="SetrixHD;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget source="introduction" render="Label" position="35,770" size="1100,70" font="Regular;32" halign="center" valign="center" foregroundColor="accentColorOne" backgroundColor="windowBackground" transparent="1" />
   <widget source="Version" render="Label" position="35,850" size="280,30" font="Regular;28" halign="left" valign="center" foregroundColor="gray" backgroundColor="windowBackground" transparent="1" />
   <widget source="LibUSB" render="Label" position="35,880" size="280,30" font="Regular;28" halign="left" valign="center" foregroundColor="gray" backgroundColor="windowBackground" transparent="1" />
@@ -3032,12 +3037,12 @@
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Media.png" position="65,48" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Media Player" position="169,58" size="550,74" font="BoldItalic; 64" backgroundColor="windowBackground" transparent="1" />
+  <eLabel text="Media Player" position="169,58" size="550,74" font="SetrixHD; 64" backgroundColor="windowBackground" transparent="1" />
   <ePixmap pixmap="MetrixReloaded/media/icons/clock.png" position="1092,86" zPosition="1" size="31,31" alphatest="blend" />
   <widget source="global.CurrentTime" render="Label" position="1125,86" zPosition="1" size="87,30" font="Regular; 30" backgroundColor="windowBackground" halign="right" transparent="1">
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
-  <widget name="title" position="98,145" size="900,45" font="BoldItalic;38" valign="top" backgroundColor="windowBackground" transparent="1" />
+  <widget name="title" position="98,145" size="900,45" font="SetrixHD;38" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget name="artist" position="104,212" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget name="album" position="104,263" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget name="year" position="702,263" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowBackground" transparent="1" />
@@ -3046,16 +3051,16 @@
   <ePixmap pixmap="MetrixReloaded/media/icons/mp_buttons.png" position="73,326" size="228,27" alphatest="blend" backgroundColor="windowBackground" />
   <ePixmap pixmap="MetrixReloaded/media/icons/media-progress-background.png" zPosition="2" position="326,326" size="844,23" alphatest="blend" />
   <widget name="PositionGauge" zPosition="3" position="326,317" size="844,32" pointer="MetrixReloaded/media/icons/media-progress.png:844,0" seek_pointer="MetrixReloaded/media/icons/media-progress.png:844,0" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="335,366" size="100,30" font="BoldItalic;27" halign="right" valign="center" backgroundColor="windowBackground" transparent="1">
+  <widget source="session.CurrentService" render="Label" position="335,366" size="100,30" font="SetrixHD;27" halign="right" valign="center" backgroundColor="windowBackground" transparent="1">
     <convert type="ServicePosition">Position</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="1066,366" size="100,30" font="BoldItalic;27" halign="left" valign="center" backgroundColor="windowBackground" transparent="1">
+  <widget source="session.CurrentService" render="Label" position="1066,366" size="100,30" font="SetrixHD;27" halign="left" valign="center" backgroundColor="windowBackground" transparent="1">
     <convert type="ServicePosition">Remaining</convert>
   </widget>
   <widget name="repeat" position="1198,366" size="33,27" pixmaps="MetrixReloaded/media/icons/ico_noreplay.png,MetrixReloaded/media/icons/ico_replay.png" transparent="1" alphatest="blend" />
-  <eLabel name="Filelist" position="67,441" size="165,33" text="File List" font="BoldItalic;33" backgroundColor="windowBackground" transparent="1" />
+  <eLabel name="Filelist" position="67,441" size="165,33" text="File List" font="SetrixHD;33" backgroundColor="windowBackground" transparent="1" />
   <widget name="filelist" position="64,491" transparent="1" size="565,350" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
-  <eLabel name="Playlist" position="669,441" size="165,33" text="Play List" font="BoldItalic;33" backgroundColor="windowBackground" transparent="1" />
+  <eLabel name="Playlist" position="669,441" size="165,33" text="Play List" font="SetrixHD;33" backgroundColor="windowBackground" transparent="1" />
   <widget name="playlist" position="666,491" transparent="1" size="565,360" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" selectionDisabled="1" />
   <widget name="currenttext" position="65,80" size="0,0" />
   <widget name="titletext" position="65,80" size="0,0" />
@@ -3311,7 +3316,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 <screen name="MessageBoxConfirmCode" title="MessageBox" position="center,center" size="1288,923" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <eLabel text="Message" position="title_mid_pos" valign="center" size="title_mid_size" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
+  <eLabel text="Message" position="title_mid_pos" valign="center" size="title_mid_size" font="SetrixHD; 58" backgroundColor="windowBackground" transparent="1" />
   <constant-widget name="clock_mid" />
   <widget alphatest="blend" name="ErrorPixmap" pixmap="MetrixReloaded/media/icons/input_error.png" position="70,94" size="54,54" />
   <widget alphatest="blend" name="QuestionPixmap" pixmap="MetrixReloaded/media/icons/input_question.png" position="70,94" size="54,54" />
@@ -3915,7 +3920,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />
   <panel name="panel_key_green_name" />
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="SetrixHD;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget text="MyTubeSettingsScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
 </screen>
 <screen name="MyTubeSuggestionsListScreen" title="MyTube - Search" position="1100,430" zPosition="10" size="740,500" flags="wfNoBorder" backgroundColor="windowBackground" Animation="off">
@@ -3958,7 +3963,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 <screen name="MyTubeVideoHelpScreen" title="MyTube - Help" position="center,center" size="1288,923" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <eLabel text="Help" position="title_mid_pos" valign="center" size="title_mid_size" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
+  <eLabel text="Help" position="title_mid_pos" valign="center" size="title_mid_size" font="SetrixHD; 58" backgroundColor="windowBackground" transparent="1" />
   <constant-widget name="clock_mid" />
   <widget font="Regular;34" name="detailtext" position="127,250" size="1050,500" halign="center" transparent="1" backgroundColor="windowBackground" />
   <widget text="MyTubeVideoHelpScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
@@ -4042,7 +4047,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="44,47" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Network test..." position="145,60" size="500,65" font="BoldItalic;51" backgroundColor="windowBackground" transparent="1" />
+  <eLabel text="Network test..." position="145,60" size="500,65" font="SetrixHD;51" backgroundColor="windowBackground" transparent="1" />
   <widget render="Label" source="key_red" position="key_red_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget render="Label" source="key_green" position="key_green_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget render="Label" source="key_yellow" position="key_yellow_mid_pos" zPosition="1" size="key_size" font="Regular;31" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
@@ -4054,28 +4059,28 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <eLabel position="70,600" size="1148,50" zPosition="-1" backgroundColor="listBackgroundBarsOne" />
   <eLabel position="70,700" size="1148,50" zPosition="-1" backgroundColor="listBackgroundBarsOne" />
   <eLabel position="70,800" size="1148,50" zPosition="-1" backgroundColor="listBackgroundBarsOne" />
-  <widget name="Adaptertext" position="90,250" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowBackground" transparent="1" />
-  <widget name="Adapter" position="390,250" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
+  <widget name="Adaptertext" position="90,250" size="300,39" zPosition="1" font="SetrixHD;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowBackground" transparent="1" />
+  <widget name="Adapter" position="390,250" size="405,39" zPosition="1" font="SetrixHD;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
   <widget name="AdapterInfo" pixmaps="MetrixReloaded/buttons/button_off.png,MetrixReloaded/buttons/blue.png" position="920,250" zPosition="1" size="31,31" transparent="1" alphatest="blend" />
   <widget name="AdapterInfo_Text" position="980,250" size="225,39" zPosition="2" font="Bold;36" foregroundColors="gray,dodgerblue,white" backgroundColor="windowBackground" transparent="1" />
   <widget name="AdapterInfo_OK" pixmap="MetrixReloaded/media/icons/lock_on.png" position="825,250" size="57,47" alphatest="blend" zPosition="2" />
-  <widget name="Networktext" position="90,360" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowBackground" transparent="1" />
-  <widget name="Network" position="390,360" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
+  <widget name="Networktext" position="90,360" size="300,39" zPosition="1" font="SetrixHD;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowBackground" transparent="1" />
+  <widget name="Network" position="390,360" size="405,39" zPosition="1" font="SetrixHD;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
   <widget name="NetworkInfo" pixmaps="MetrixReloaded/buttons/button_off.png,MetrixReloaded/buttons/blue.png" position="920,360" zPosition="1" size="31,31" transparent="1" alphatest="blend" />
   <widget name="NetworkInfo_Text" position="980,360" size="225,39" zPosition="2" font="Bold;36" foregroundColors="gray,dodgerblue,white" backgroundColor="windowBackground" transparent="1" />
   <widget name="NetworkInfo_Check" pixmaps="MetrixReloaded/media/icons/lock_on.png,MetrixReloaded/media/icons/lock_error.png" position="825,360" size="57,47" alphatest="blend" zPosition="2" />
-  <widget name="Dhcptext" position="90,460" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowBackground" transparent="1" />
-  <widget name="Dhcp" position="390,460" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
+  <widget name="Dhcptext" position="90,460" size="300,39" zPosition="1" font="SetrixHD;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowBackground" transparent="1" />
+  <widget name="Dhcp" position="390,460" size="405,39" zPosition="1" font="SetrixHD;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
   <widget name="DhcpInfo" pixmaps="MetrixReloaded/buttons/button_off.png,MetrixReloaded/buttons/blue.png" position="920,460" zPosition="1" size="31,31" transparent="1" alphatest="blend" />
   <widget name="DhcpInfo_Text" position="980,460" size="225,39" zPosition="2" font="Bold;36" foregroundColors="gray,dodgerblue,white" backgroundColor="windowBackground" transparent="1" />
   <widget name="DhcpInfo_Check" pixmaps="MetrixReloaded/media/icons/lock_on.png,MetrixReloaded/media/icons/lock_error.png" position="825,460" size="57,47" alphatest="blend" zPosition="2" />
-  <widget name="IPtext" position="90,560" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowBackground" transparent="1" />
-  <widget name="IP" position="390,560" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
+  <widget name="IPtext" position="90,560" size="300,39" zPosition="1" font="SetrixHD;36" foregroundColors="#fcfcfc,#2c9902" backgroundColor="windowBackground" transparent="1" />
+  <widget name="IP" position="390,560" size="405,39" zPosition="1" font="SetrixHD;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
   <widget name="IPInfo" pixmaps="MetrixReloaded/buttons/button_off.png,MetrixReloaded/buttons/blue.png" position="920,560" zPosition="1" size="31,31" transparent="1" alphatest="blend" />
   <widget name="IPInfo_Text" position="980,560" size="225,39" zPosition="2" font="Bold;36" foregroundColors="gray,dodgerblue,white" backgroundColor="windowBackground" transparent="1" />
   <widget name="IPInfo_Check" pixmaps="MetrixReloaded/media/icons/lock_on.png,MetrixReloaded/media/icons/lock_error.png" position="825,560" size="57,47" alphatest="blend" zPosition="2" />
-  <widget name="DNStext" position="90,660" size="300,39" zPosition="1" font="BoldItalic;36" foregroundColors="#fcfcfc,#2c9902" transparent="1" backgroundColor="windowBackground" />
-  <widget name="DNS" position="390,660" size="405,39" zPosition="1" font="BoldItalic;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
+  <widget name="DNStext" position="90,660" size="300,39" zPosition="1" font="SetrixHD;36" foregroundColors="#fcfcfc,#2c9902" transparent="1" backgroundColor="windowBackground" />
+  <widget name="DNS" position="390,660" size="405,39" zPosition="1" font="SetrixHD;36" halign="right" foregroundColors="#fcfcfc,#eb0000,#2c9902" backgroundColor="windowBackground" transparent="1" />
   <widget name="DNSInfo" pixmaps="MetrixReloaded/buttons/button_off.png,MetrixReloaded/buttons/blue.png" position="920,660" zPosition="1" size="31,31" transparent="1" alphatest="blend" />
   <widget name="DNSInfo_Text" position="980,660" size="225,39" zPosition="2" font="Bold;36" foregroundColors="gray,dodgerblue,white" backgroundColor="windowBackground" transparent="1" />
   <widget name="DNSInfo_Check" pixmaps="MetrixReloaded/media/icons/lock_on.png,MetrixReloaded/media/icons/lock_error.png" position="825,660" size="57,47" alphatest="blend" zPosition="2" />
@@ -4214,7 +4219,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 <screen name="NumberZap" position="center,center" size="255, 70" title="QuickZap" backgroundColor="transparent">
   <eLabel position="0,0" size="255,70" backgroundColor="windowBackground" zPosition="-1" />
   <widget name="channel" position="5,5" size="120,64" font="Regular;38" halign="left" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" />
-  <widget name="number" position="130,5" size="120,64" font="BoldItalic;38" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" />
+  <widget name="number" position="130,5" size="120,64" font="SetrixHD;38" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" />
   <widget text="NumberZap" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="55,45" />
 </screen>
 <screen name="NumberZapWithName" position="center,center" size="1920,1080" title="Kanal" backgroundColor="transparent">
@@ -5643,10 +5648,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     <convert type="EventName">ExtendedDescription</convert>
   </widget>
   
-  <!--<widget font="BoldItalic;40" position="45,20" render="Label" size="960,50" valign="center" backgroundColor="windowBackground" transparent="1" source="session.CurrentService" zPosition="1">
+  <!--<widget font="SetrixHD;40" position="45,20" render="Label" size="960,50" valign="center" backgroundColor="windowBackground" transparent="1" source="session.CurrentService" zPosition="1">
     <convert type="ServiceName">Name</convert>
   </widget>
-  <widget backgroundColor="windowBackground" font="BoldItalic;36" noWrap="1" transparent="1" foregroundColor="accentColorOne" halign="left" valign="top" position="45,90" render="Label" size="820,50" source="session.Event_Now" zPosition="1">
+  <widget backgroundColor="windowBackground" font="SetrixHD;36" noWrap="1" transparent="1" foregroundColor="accentColorOne" halign="left" valign="top" position="45,90" render="Label" size="820,50" source="session.Event_Now" zPosition="1">
     <convert type="EventName">Name</convert>
   </widget>
   <widget backgroundColor="windowBackground" font="Bold;34" position="45,145" render="Label" size="100,40" halign="left" source="session.Event_Now" zPosition="1" transparent="1">
@@ -5664,7 +5669,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget backgroundColor="windowBackground" font="Regular;34" transparent="1" halign="left" valign="top" position="45,195" size="820,470" render="Label" source="session.Event_Now" zPosition="1">
     <convert type="EventName">FullDescription</convert>
   </widget>
-  <widget backgroundColor="windowBackground" font="BoldItalic;36" noWrap="1" transparent="1" foregroundColor="accentColorTwo" halign="left" valign="top" position="955,90" render="Label" size="820,50" source="session.Event_Next" zPosition="1">
+  <widget backgroundColor="windowBackground" font="SetrixHD;36" noWrap="1" transparent="1" foregroundColor="accentColorTwo" halign="left" valign="top" position="955,90" render="Label" size="820,50" source="session.Event_Next" zPosition="1">
     <convert type="EventName">Name</convert>
   </widget>
 
@@ -5751,7 +5756,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Service Scan" position="173,90" size="1000,84" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
+  <eLabel text="Service Scan" position="173,90" size="1000,84" font="SetrixHD; 58" backgroundColor="windowBackground" transparent="1" />
   <constant-widget name="clock_mid" />
   <widget source="FrontendInfo" render="Pixmap" pixmap="MetrixReloaded/media/icons/scan-s.png" position="344,265" size="96,96" transparent="1" alphatest="blend">
     <convert type="FrontendInfo">TYPE</convert>
@@ -5974,7 +5979,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <widget name="channel_icon" position="50,100" zPosition="4" size="232,132" transparent="1" alphatest="blend" />
-  <widget name="channel_name" position="1542,122" size="289,70" font="BoldItalic;34" valign="top" halign="center" foregroundColor="InfobarFgL" backgroundColor="infobarBgL" transparent="1" />
+  <widget name="channel_name" position="1542,122" size="289,70" font="SetrixHD;34" valign="top" halign="center" foregroundColor="InfobarFgL" backgroundColor="infobarBgL" transparent="1" />
   <widget name="channel_uri" position="305,194" zPosition="1" valign="top" halign="left" size="1000,44" noWrap="1" font="Regular; 28" backgroundColor="infobarBgR" transparent="1" />
   <ePixmap pixmap="MetrixReloaded/media/icons/Info-progress-white.png" position="1542,192" size="289,27" transparent="1" alphatest="on" />
   <widget name="eventProgressbar" position="1542,192" size="289,27" pixmap="MetrixReloaded/media/icons/Info-progress.png" backgroundColor="accentColorOne" zPosition="1" transparent="1" />
@@ -6137,7 +6142,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="timerlist" position="window_list_pos" size="window_list_setup_size" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" itemHeight="110" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Font über Parameter-->
   <!-- Right Panel (Right Side) -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3" />
   <widget source="ServiceEvent" alphatest="blend" position="window_epg_picon_pos" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
@@ -6383,7 +6388,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap pixmap="MetrixReloaded/buttons/green.png" position="1050,200" size="31,31" alphatest="blend" />
   <widget source="key_red" render="Label" position="695,200" zPosition="1" size="key_size" font="Regular;32" halign="left" valign="top" transparent="1" backgroundColor="windowBackground" />
   <widget source="key_green" render="Label" position="1085,200" zPosition="1" size="key_size" font="Regular;32" halign="left" valign="top" transparent="1" backgroundColor="windowBackground" />
-  <widget name="config" textOffset="25,9" position="660,350" zPosition="10" size="600,650" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showNever" />
+  <widget name="config" textOffset="25,9" position="660,350" zPosition="10" size="600,650" secondfont="SetrixHD;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showNever" />
   <eLabel position="0,0" size="200,5" zPosition="1" backgroundColor="red" />
   <eLabel position="0,5" size="200,20" zPosition="1" backgroundColor="blue" />
   <eLabel position="0,0" size="5,200" zPosition="1" backgroundColor="red" />
@@ -6687,7 +6692,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget source="key_red" render="Label" position="53,15" zPosition="1" size="210,38" font="Regular;30" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget source="key_green" render="Label" position="473,15" zPosition="1" size="210,38" font="Regular;30" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="config" position="8,75" size="825,120" font="Regular;28" itemHeight="32" scrollbarMode="showOnDemand" />
-  <eLabel text=" " position="0,195" size="840,3" font="BoldItalic;48" backgroundColor="windowBackground" />
+  <eLabel text=" " position="0,195" size="840,3" font="SetrixHD;48" backgroundColor="windowBackground" />
   <widget source="introduction" render="Label" position="0,210" size="825,38" zPosition="10" font="Regular;31" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget text="VideoEnhancementPreview" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="640,230" />
 </screen>
@@ -7141,18 +7146,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="40,72" size="77,77" alphatest="blend" transparent="1" />
   <constant-widget name="clock_big" />
-  <eLabel text="YouTube TV Settings" position="title_big_pos" valign="center" size="title_big_size" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
+  <eLabel text="YouTube TV Settings" position="title_big_pos" valign="center" size="title_big_size" font="SetrixHD; 58" backgroundColor="windowBackground" transparent="1" />
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
   <panel name="panel_key_green_source" />
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="BoldItalic;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="SetrixHD;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <widget text="YoutubeTVSettings" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
 </screen>
 <screen name="YoutubeTVWindow" position="center,center" size="1288,923" title="Start YouTube TV" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Start YouTube TV" position="title_mid_pos" valign="center" size="title_mid_size" font="BoldItalic; 58" backgroundColor="windowBackground" transparent="1" />
+  <eLabel text="Start YouTube TV" position="title_mid_pos" valign="center" size="title_mid_size" font="SetrixHD; 58" backgroundColor="windowBackground" transparent="1" />
   <constant-widget name="clock_mid" />
   <panel name="panel_color_buttons_window" />
   <ePixmap pixmap="MetrixReloaded/buttons/green.png" position="50,360" size="31,31" alphatest="blend" />
