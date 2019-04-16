@@ -1,13 +1,17 @@
-﻿<screen name="ChannelSelectionHorizontal" position="0,625" size="1920,455" flags="wfNoBorder" backgroundColor="transparent">
-  <ePixmap pixmap="MetrixReloaded/media/Bg_channelselection_hor.png" position="0,20" size="1920,390" zPosition="-2" alphatest="off" />
-  <widget source="Title" render="Label" position="25,355" size="1920,55" halign="left" valign="center" font="SimpleBold; 38" backgroundColor="windowBackground" transparent="1" />
-  <widget name="list" position="20,0" size="1880,315" itemWidth="235" zPosition="3" backgroundColorSelected="listBackgroundBarsOne" foregroundColorSelected="accentColorOne" colorServiceDescriptionSelected="foreground" serviceNumberAlign="left" serviceNameAlign="center" serviceTimeAlign="center" serviceInfoAlign="center" onlyFullListEntries="true" boxOrientation="horizontal" scrollbarOrientation="horizontal" selectionOffset="-20" backgroundColor="windowBackground" transparent="1" colorServiceDescription="gray" foregroundColorServiceNotAvail="gray" serviceNumberFont="SimpleBold;34" serviceNameFont="SimpleBold;34" serviceInfoFont="Regular;32" colorEventProgressbarBorder="foreground" colorEventProgressbarBorderSelected="accentColorOne" scrollbarMode="showAlways" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="10" enableWrapAround="1" progressbarHeight="10" progressbarBorderWidth="2" />
-  <widget source="ServiceEvent" render="Label" position="225,325" zPosition="1" size="940,36" foregroundColor="accentColorOne" backgroundColor="windowBackground" font="Regular;34" noWrap="1" transparent="1">
+﻿<screen name="ChannelSelectionHorizontal" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+  <eLabel backgroundColor="windowBackground" position="0,680" size="1920,400" zPosition="-10" />
+  
+  <widget source="Title" render="MetrixReloadedClearFavName" position="25,355" size="1920,55" halign="left" valign="center" font="font_window_title" backgroundColor="windowBackground" transparent="1" />
+  
+  <widget name="list" position="0,660" size="1920,400" itemWidth="320" zPosition="3" backgroundColorSelected="listSelectedBackground" foregroundColorSelected="foreground" colorServiceDescriptionSelected="foreground" serviceNumberAlign="left" serviceNameAlign="center" serviceTimeAlign="center" serviceInfoAlign="center" onlyFullListEntries="true" boxOrientation="horizontal" scrollbarOrientation="horizontal" selectionOffset="-20" backgroundColor="windowBackground" transparent="1" colorServiceDescription="gray" foregroundColorServiceNotAvail="gray" serviceNumberFont="font_list_ServiceNumber" serviceNameFont="font_list_ServiceName" serviceInfoFont="font_second_standard_small" colorEventProgressbarBorder="foreground" colorEventProgressbarBorderSelected="accentColorOne" scrollbarMode="showAlways" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="10" enableWrapAround="1" progressbarHeight="5" progressbarBorderWidth="2" />
+  
+    <!--<widget source="ServiceEvent" render="Label" position="225,325" zPosition="1" size="940,36" foregroundColor="accentColorOne" backgroundColor="windowBackground" font="Regular;34" noWrap="1" transparent="1">
     <convert type="EventName">Name</convert>
   </widget>
   <widget source="ServiceEvent" render="Label" halign="left" position="25,325" zPosition="1" size="95,39" font="Regular; 34" foregroundColor="accentColorOne" backgroundColor="windowBackground" transparent="1">
     <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText"></convert>
+    <convert type="ClockToText">
+    </convert>
   </widget>
   <widget source="ServiceEvent" render="Label" halign="right" position="110,325" zPosition="1" size="110,36" font="Regular; 34" foregroundColor="accentColorOne" backgroundColor="windowBackground" transparent="1">
     <convert type="EventTime">EndTime</convert>
@@ -15,9 +19,9 @@
   </widget>
   <widget position="1255,325" size="620,180" source="ServiceEvent" render="NextEvents" lines="2" noWrap="1" font="Regular;30" foregroundColor="channelListDescFg" backgroundColor="windowBackground" transparent="1">
     <convert type="ServiceName">Reference</convert>
-  </widget>
+  </widget>-->
   <widget name="searchchar" position="center,center" size="200,200" valign="center" halign="center" zPosition="100" backgroundColor="transparent" transparent="1" font="SimpleBold;140" foregroundColor="accentColorOne" />
-  <eLabel position="0,20" size="20,279" backgroundColor="unff000000" />
+  <!--<eLabel position="0,20" size="20,279" backgroundColor="unff000000" />
   <eLabel position="254,20" size="2,279" backgroundColor="unff000000" />
   <eLabel position="489,20" size="2,279" backgroundColor="unff000000" />
   <eLabel position="724,20" size="2,279" backgroundColor="unff000000" />
@@ -26,6 +30,6 @@
   <eLabel position="1429,20" size="2,279" backgroundColor="unff000000" />
   <eLabel position="1664,20" size="2,279" backgroundColor="unff000000" />
   <eLabel position="1899,20" size="21,279" backgroundColor="unff000000" />
-  <eLabel position="0,299" size="1920,2" backgroundColor="unff000000" />
-  <widget text="ChannelSelectionHorizontal" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,430" />
+  <eLabel position="0,299" size="1920,2" backgroundColor="unff000000" />-->
+  <widget text="ChannelSelectionHorizontal" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>

@@ -103,6 +103,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles"
 		screenFiles\ChannelSelection.xml = screenFiles\ChannelSelection.xml
 		screenFiles\ChannelSelection_parameters.xml = screenFiles\ChannelSelection_parameters.xml
 		screenFiles\ChannelSelectionHorizontal.xml = screenFiles\ChannelSelectionHorizontal.xml
+		screenFiles\ChannelSelectionHorizontal_parameters.xml = screenFiles\ChannelSelectionHorizontal_parameters.xml
 		screenFiles\ChannelSelectionRadio.xml = screenFiles\ChannelSelectionRadio.xml
 		screenFiles\ChoiceBox.xml = screenFiles\ChoiceBox.xml
 		screenFiles\ChoiceBox_parameters.xml = screenFiles\ChoiceBox_parameters.xml

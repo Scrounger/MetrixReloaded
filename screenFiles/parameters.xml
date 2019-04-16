@@ -1,14 +1,5 @@
 ﻿<parameters>
-  <!-- Kanalliste - Horizontal -->
-  <parameter name="ServicelistHorServiceTypeIcon" value="0,0,0,0" />
-  <parameter name="ServicelistHorServiceTime" value="0,0,0,0" />
-  <parameter name="ServicelistHorProgressbar" value="50,210,135,10" />
-  <parameter name="ServicelistHorPreViewPic" value="0,0,0,0" />
-  <parameter name="ServicelistHorPicon" value="7,23,220,132" />
-  <parameter name="ServicelistHorNumber" value="0,0,0,0" />
-  <parameter name="ServicelistHorName" value="5,160,225,40" />
-  <parameter name="ServicelistHorServiceInfo" value="5,225,225,70" />
-  <parameter name="ServicelistHorCustomPiconSize" value="220,132" />
+  <!-- PluginBrowser -->
   <parameter name="PluginBrowserName" value="130, 5, 28" />
   <parameter name="PluginBrowserDescr" value="130, 33, 20" />
   <parameter name="PluginBrowserIcon" value="10, 10, 100, 40" />
