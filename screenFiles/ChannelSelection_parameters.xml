@@ -16,6 +16,10 @@
   <parameter name="ServicelistRecordServicePixmap100" value="0,7,40,40" />
   <parameter name="ServicelistServiceName100" value="5,0,800,40" />
   <parameter name="ServicelistServiceInfo100" value="5,0,800,40" />
+   
+  <!-- ChannelSelection - Ein- / Zweizeilig --> 
+  <parameter name="ServicelistCustomPiconSize" value="100,60"/>
+   
   <!-- ChannelSelection - epglist-->
   <parameter name="EPGServicelistText0OffSet" value="10, 0" />
   <parameter name="EPGServicelistText1OffSet" value="-10, 0" />
