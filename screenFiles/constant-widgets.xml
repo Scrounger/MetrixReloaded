@@ -1,13 +1,13 @@
 ﻿<constant-widgets>
   <constant-widget name="clock_big">
     <ePixmap pixmap="MetrixReloaded/media/icons/clock.png" position="1650,20" zPosition="1" size="31,31" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="1690,20" zPosition="1" size="100,34" font="Bold; 32" backgroundColor="windowBackground" halign="left" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="1690,20" zPosition="1" size="100,34" font="SetrixHD; 32" backgroundColor="windowBackground" halign="left" transparent="1">
       <convert type="ClockToText"></convert>
     </widget>
   </constant-widget>
   <constant-widget name="clock_mid">
     <ePixmap pixmap="MetrixReloaded/media/icons/clock.png" position="1118,20" zPosition="1" size="31,31" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="1160,20" zPosition="1" size="100,34" font="Bold; 32" backgroundColor="windowBackground" halign="left" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="1160,20" zPosition="1" size="100,34" font="SetrixHD; 32" backgroundColor="windowBackground" halign="left" transparent="1">
       <convert type="ClockToText"></convert>
     </widget>
   </constant-widget>

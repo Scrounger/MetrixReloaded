@@ -16,11 +16,11 @@
   <widget alphatest="blend" position="1588,120" render="Picon" size="220,132" source="Service" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget font="Bold;38" foregroundColor="accentColorOne" valign="center" halign="center" position="1539,270" render="Label" size="320,100" backgroundColor="infobarBgR" source="Service" zPosition="1" transparent="1">
+  <widget font="SetrixHD;38" foregroundColor="accentColorOne" valign="center" halign="center" position="1539,270" render="Label" size="320,100" backgroundColor="infobarBgR" source="Service" zPosition="1" transparent="1">
     <convert type="ServiceName">Name</convert>
   </widget>
   <ePixmap pixmap="MetrixReloaded/media/icons/clock.png" position="1625,65" zPosition="1" size="31,31" alphatest="blend" />
-  <widget source="global.CurrentTime" render="Label" position="1665,60" zPosition="1" size="100,40" font="Bold; 38" halign="right" valign="center" backgroundColor="infobarBgR" transparent="1">
+  <widget source="global.CurrentTime" render="Label" position="1665,60" zPosition="1" size="100,40" font="SetrixHD; 38" halign="right" valign="center" backgroundColor="infobarBgR" transparent="1">
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
   <widget text="EPGSelectionEPGBar_HD" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,415" />

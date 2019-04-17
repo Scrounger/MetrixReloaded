@@ -21,14 +21,14 @@
   <widget name="subtitleLabel" position="1192,60" size="190,32" font="Regular; 28" backgroundColor="infobarBgR" transparent="1" />
   <widget name="anglePix" pixmap="MetrixReloaded/media/icons/icon_view.png" position="915,60" size="26,25" alphatest="on" />
   <widget name="angleLabel" position="949,60" size="190,32" font="Regular; 28" backgroundColor="infobarBgR" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="1500,85" size="150,50" font="Bold;40" halign="left" valign="left" backgroundColor="infobarBgR" transparent="1">
+  <widget source="session.CurrentService" render="Label" position="1500,85" size="150,50" font="SetrixHD;40" halign="left" valign="left" backgroundColor="infobarBgR" transparent="1">
     <convert type="ServicePosition">Position,ShowHours</convert>
   </widget>
   <ePixmap position="789,142" size="844,23" pixmap="MetrixReloaded/media/icons/media-progress-background.png" zPosition="1" alphatest="blend" />
   <widget source="session.CurrentService" render="PositionGauge" position="788,132" size="844,32" zPosition="2" pointer="MetrixReloaded/media/icons/media-progress.png:844,0" transparent="1">
     <convert type="ServicePosition">Gauge</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="1500,169" size="150,50" font="Bold; 40" halign="left" valign="center" backgroundColor="infobarBgR" transparent="1">
+  <widget source="session.CurrentService" render="Label" position="1500,169" size="150,50" font="SetrixHD; 40" halign="left" valign="center" backgroundColor="infobarBgR" transparent="1">
     <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
   </widget>
   <widget text="DVDPlayer" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,254" />

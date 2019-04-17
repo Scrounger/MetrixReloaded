@@ -1,5 +1,5 @@
 ﻿<screen name="ServiceScanMinimal" position="50,30" size="960,100" title="Service Scan" backgroundColor="transparent" flags="wfNoBorder">
   <widget name="scan_state" position="10,5" zPosition="2" size="920,40" font="Regular;34" backgroundColor="transparent" />
-  <widget name="pass" position="10,50" size="920,40" font="Bold;32" halign="center" valign="center" backgroundColor="transparent" />
+  <widget name="pass" position="10,50" size="920,40" font="SetrixHD;32" halign="center" valign="center" backgroundColor="transparent" />
   <widget text="ServiceScanMinimal" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="760,75" />
 </screen>

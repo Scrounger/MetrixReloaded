@@ -29,6 +29,6 @@
   <widget name="playlist" position="666,491" transparent="1" size="565,360" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" selectionDisabled="1" />
   <widget name="currenttext" position="65,80" size="0,0" />
   <widget name="titletext" position="65,80" size="0,0" />
-  <widget name="searchchar" position="center,550" size="150,150" valign="center" halign="center" zPosition="100" backgroundColor="transparent" transparent="1" font="SimpleBold;100" foregroundColor="accentColorOne" />
+  <widget name="searchchar" position="center,550" size="150,150" valign="center" halign="center" zPosition="100" backgroundColor="transparent" transparent="1" font="SetrixHD;100" foregroundColor="accentColorOne" />
   <widget text="MediaPlayer" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1090,894" />
 </screen>

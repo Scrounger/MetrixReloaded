@@ -99,6 +99,14 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 
 ## Changelog
 
+### 0.8.0 BETA (xx.xx.2019)
+* EPG Info Anzeige erweitert (SxxExx, Genre, Land, etc.)
+* Plugin ChromiumOS, FileBrowserVTi skinned
+* Moderne Logos in den einzelnen Screens hinzugefügt
+* VerticalEPGView_FHD, GraphMultiEPG bug fixes
+* Converter bug fixes
+* viele kleine Screen bug fixes
+
 ### 0.7.0 BETA (08.04.2019)
 * constant-widgets durch panels ersetzt -> Skin ist jetzt 100% kompatibel mit dem [OpenSkin-Designer](https://github.com/Humaxx/OpenSkin-Designer) (Version >= 3.2.0). Könnt ihr [hier downloaden](https://github.com/Humaxx/OpenSkin-Designer/releases)
 * [Neues Hauptmenü Design](https://raw.githubusercontent.com/Scrounger/MetrixReloaded/master/screenshots/menu_mainmenu.jpg)

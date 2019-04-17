@@ -11,7 +11,7 @@
   <widget source="key_green" render="Label" position="key_green_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget source="key_yellow" render="Label" position="key_yellow_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget source="key_blue" render="Label" position="key_blue_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget name="infomation" position="80,250" size="1128,100" font="Bold;38" valign="center" halign="center" transparent="1" backgroundColor="windowBackground" foregroundColor="accentColorOne" />
+  <widget name="infomation" position="80,250" size="1128,100" font="SetrixHD;38" valign="center" halign="center" transparent="1" backgroundColor="windowBackground" foregroundColor="accentColorOne" />
   <widget name="startdesc" position="90,350" size="1118,50" font="Regular;34" valign="center" halign="left" transparent="1" backgroundColor="windowBackground" />
   <!--<widget name="settingdesc" position="90,400" size="1118,50" font="Regular;34" valign="center" halign="left" transparent="1" backgroundColor="windowBackground" />-->
   <widget name="helpdesc" position="90,450" size="1118,50" font="Regular;34" valign="center" halign="left" transparent="1" backgroundColor="windowBackground" />

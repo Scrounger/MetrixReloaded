@@ -1,5 +1,5 @@
 ﻿<screen name="PinInput" position="center,center" size="1000,450" title="Pin code needed">
-  <widget name="service" position="15,15" size="970,80" font="SimpleBold;40" foregroundColor="accentColorOne" halign="center" valign="center" />
+  <widget name="service" position="15,15" size="970,80" font="SetrixHD;40" foregroundColor="accentColorOne" halign="center" valign="center" />
   <widget name="text" position="17,100" size="970,80" font="Regular;34" halign="center" valign="center" />
   <widget name="tries" position="16,185" size="970,80" font="Regular;34" halign="center" valign="center" />
   <widget name="input" position="15,270" size="970,60" font="Regular;75" halign="center" valign="center" />

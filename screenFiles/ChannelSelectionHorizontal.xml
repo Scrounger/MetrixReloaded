@@ -20,7 +20,7 @@
   <widget position="1255,325" size="620,180" source="ServiceEvent" render="NextEvents" lines="2" noWrap="1" font="Regular;30" foregroundColor="channelListDescFg" backgroundColor="windowBackground" transparent="1">
     <convert type="ServiceName">Reference</convert>
   </widget>-->
-  <widget name="searchchar" position="center,center" size="200,200" valign="center" halign="center" zPosition="100" backgroundColor="transparent" transparent="1" font="SimpleBold;140" foregroundColor="accentColorOne" />
+  <widget name="searchchar" position="center,center" size="200,200" valign="center" halign="center" zPosition="100" backgroundColor="transparent" transparent="1" font="SetrixHD;140" foregroundColor="accentColorOne" />
   <!--<eLabel position="0,20" size="20,279" backgroundColor="unff000000" />
   <eLabel position="254,20" size="2,279" backgroundColor="unff000000" />
   <eLabel position="489,20" size="2,279" backgroundColor="unff000000" />

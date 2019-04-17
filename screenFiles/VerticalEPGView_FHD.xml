@@ -23,11 +23,11 @@
   <widget position="1504,140" size="336,85" source="Service5" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <!--<widget font="Bold;30" halign="center" valign="center" name="currCh1" position="150,299" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
-  <widget font="Bold;30" halign="center" valign="center" name="currCh2" position="501,300" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
-  <widget font="Bold;30" halign="center" valign="center" name="currCh3" position="852,300" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
-  <widget font="Bold;30" halign="center" valign="center" name="currCh4" position="1203,300" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
-  <widget font="Bold;30" halign="center" valign="center" name="currCh5" position="1554,300" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />-->
+  <!--<widget font="SetrixHD;30" halign="center" valign="center" name="currCh1" position="150,299" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
+  <widget font="SetrixHD;30" halign="center" valign="center" name="currCh2" position="501,300" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
+  <widget font="SetrixHD;30" halign="center" valign="center" name="currCh3" position="852,300" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
+  <widget font="SetrixHD;30" halign="center" valign="center" name="currCh4" position="1203,300" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />
+  <widget font="SetrixHD;30" halign="center" valign="center" name="currCh5" position="1554,300" size="226,60" transparent="1" zPosition="2" backgroundColor="windowBackground" />-->
   <!-- Listen -->
   <widget itemHeight="110" name="epg_list1" position="80,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
   <widget itemHeight="110" name="epg_list2" position="436,235" size="336,440" TimeStringColor="accentColorOne" TimeColor="accentColorOne" transparent="1" zPosition="4" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="5" />
