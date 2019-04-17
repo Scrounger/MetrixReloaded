@@ -1,0 +1,12 @@
+﻿<parameters name="ChannelSelectionHorizontal_parameters">
+  <!-- Kanalliste - Horizontal -->
+  <parameter name="ServicelistHorServiceTypeIcon" value="0,0,0,0" />
+  <parameter name="ServicelistHorServiceTime" value="0,420,100,50" />
+  <parameter name="ServicelistHorProgressbar" value="0,0,0,0" />
+  <parameter name="ServicelistHorPreViewPic" value="0,0,0,0" />
+  <parameter name="ServicelistHorPicon" value="50,0,220,132" />
+  <parameter name="ServicelistHorNumber" value="0,0,0,0" />
+  <parameter name="ServicelistHorName" value="0,160,320,40" />
+  <parameter name="ServicelistHorServiceInfo" value="0,225,320,100" />
+  <parameter name="ServicelistHorCustomPiconSize" value="220,132" />
+</parameters>
