@@ -7139,36 +7139,49 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <panel name="panel_key_blue_source" />
   <widget text="WOLSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="YoutubeTVSettings" position="center,center" size="1820,980" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="YoutubeTVSettings" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="40,72" size="77,77" alphatest="blend" transparent="1" />
-  <constant-widget name="clock_big" />
-  <eLabel text="YouTube TV Settings" position="title_big_pos" valign="center" size="title_big_size" font="SetrixHD; 58" backgroundColor="windowBackground" transparent="1" />
+  <!-- Title -->
+  <eLabel text="YouTube TV Settings" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1"/>
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <!-- Right Panel (Right Side) -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/youtubetv.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
   <panel name="panel_key_green_source" />
-  <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="25,9" position="35,300" zPosition="10" size="1740,650" secondfont="SetrixHD;34" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showAlways" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  
   <widget text="YoutubeTVSettings" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
 </screen>
-<screen name="YoutubeTVWindow" position="center,center" size="1288,923" title="Start YouTube TV" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="YoutubeTVWindow" position="center,center" size="1920,1080" title="Start YouTube TV" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Start YouTube TV" position="title_mid_pos" valign="center" size="title_mid_size" font="SetrixHD; 58" backgroundColor="windowBackground" transparent="1" />
-  <constant-widget name="clock_mid" />
-  <panel name="panel_color_buttons_window" />
-  <ePixmap pixmap="MetrixReloaded/buttons/green.png" position="50,360" size="31,31" alphatest="blend" />
-  <ePixmap pixmap="MetrixReloaded/buttons/blue.png" position="50,410" size="31,31" alphatest="blend" />
-  <ePixmap pixmap="MetrixReloaded/buttons/yellow.png" position="50,460" size="31,31" alphatest="blend" />
-  <widget source="key_green" render="Label" position="key_green_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget source="key_yellow" render="Label" position="key_yellow_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget source="key_blue" render="Label" position="key_blue_mid_pos" zPosition="1" size="key_size_mid" font="Regular;30" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
+  <!-- Title -->
+  <eLabel text="Start YouTube TV" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1"/>
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
   <widget name="infomation" position="80,250" size="1128,100" font="SetrixHD;38" valign="center" halign="center" transparent="1" backgroundColor="windowBackground" foregroundColor="accentColorOne" />
-  <widget name="startdesc" position="90,350" size="1118,50" font="Regular;34" valign="center" halign="left" transparent="1" backgroundColor="windowBackground" />
   <!--<widget name="settingdesc" position="90,400" size="1118,50" font="Regular;34" valign="center" halign="left" transparent="1" backgroundColor="windowBackground" />-->
-  <widget name="helpdesc" position="90,450" size="1118,50" font="Regular;34" valign="center" halign="left" transparent="1" backgroundColor="windowBackground" />
+  <!-- Right Panel (Right Side) -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/youtubetv.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <!-- Buttons -->
+  <panel name="panel_color_buttons_window" />
+  <widget name="startdesc" position="key_green_pos" size="key_size" font="font_key_standard" valign="top" halign="left" transparent="1" backgroundColor="windowBackground" />
+  <widget name="settingdesc" position="key_blue_pos" size="key_size" font="font_key_standard" valign="top" halign="left" transparent="1" backgroundColor="windowBackground" />
+  <widget name="helpdesc" position="key_yellow_pos" size="key_size" font="font_key_standard" valign="top" halign="left" transparent="1" backgroundColor="windowBackground" />
+  
   <widget text="YoutubeTVWindow" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+  
+  
 </screen>
 <screen name="ZappingModeSelection" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
