@@ -2683,7 +2683,7 @@
   <!-- Rec Icon -->
   <panel name="panel_recIcon_top" />
   
-  <widget text="InfoBar" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget render="MetrixReloadedScreenNameLabel" size="0,0" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="0,0" />
 </screen>
 <screen name="InfoBarZapHistory" position="center,center" size="1050,750" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
