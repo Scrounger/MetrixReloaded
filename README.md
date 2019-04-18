@@ -1,7 +1,7 @@
 # MetrixReloaded
 [![GitHub release](https://img.shields.io/github/release/Scrounger/MetrixReloaded.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
 [![GitHub All Releases](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
-[![GitHub Releases (by Release)](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/0.7.0/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
+[![GitHub Releases (by Release)](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/0.8.0/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Scrounger/MetrixReloaded.svg)
 ![GitHub](https://img.shields.io/github/license/Scrounger/MetrixReloaded.svg)
 
@@ -99,9 +99,9 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 
 ## Changelog
 
-### 0.8.0 BETA (xx.xx.2019)
+### 0.8.0 BETA (18.04.2019)
 * EPG Info Anzeige erweitert (SxxExx, Genre, Land, etc.)
-* Plugin ChromiumOS, FileBrowserVTi skinned
+* Plugin ChromiumOS, FileBrowserVTi, YoutubeTv skinned
 * Moderne Logos in den einzelnen Screens hinzugefügt
 * VerticalEPGView_FHD, GraphMultiEPG bug fixes
 * Converter bug fixes
