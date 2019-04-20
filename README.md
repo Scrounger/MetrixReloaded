@@ -28,10 +28,6 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 
 ## Installation
 
-##### benötigte Plugins:
-Achtung! Folgende Plugins müssen auf Eurem System installiert sein, damit der Skin funktioniert:
-* ExtendedEventInfoHandler >= Version 2.3<br>(Installieren über *Erweiterungen -> rote Taste -> Systemerweiterungen -> exteventinfohandler*)
-
 1. Ladet euch die [aktuelle Version](https://github.com/Scrounger/MetrixReloaded/releases) herunter.
 2. Kopiert die heruntergeladene *.ipk Datei in das /tmp/ Vereichnis auf Euren VU+ Receiver
 3. Öffne das VtiPanel (Blaue Taste) -> *Manuelle Installation von Paketen* -> *IPKG-Pakete installieren*
@@ -41,6 +37,15 @@ Achtung! Folgende Plugins müssen auf Eurem System installiert sein, damit der S
 <img src="screenshots/MetrixReloadedSetup.jpg?sanitize=true&raw=true" title="MetrixReloadedSetup" width="600"/>
 
 Unter *Erweiterungen* -> *MetrixReloaded* findest du zusätzliche Einstellungen für den Skin. Die Einstellungen sind dort ausführlich beschrieben, sobald du diese anwählst
+
+#### Picons
+Der Skin ist für Picons mit einer Auflösung von 330x198px ausgelegt (XHDPicons). Ich verwende diese hier -> [MetrixFHD Pro XHDPicons](https://www.vuplus-support.org/wbb4/index.php?thread/101261-metrixfhd-pro-xhdpicons/)
+* Einstellung GUI muss Picons auf vorgegebene SKingröße skalieren auf 'Ja' stehen
+<br/> *(Menu -> VTI -> Einstellung GUI -> 'Picons auf vorgegebene Skingröße skalieren': Ja)* 
+* Einstellung für Einzeilig & zweizeilige Kanaliste: 100x60 px 
+<br/> *(Menu -> VTI -> Einstellung - Kanalliste -> 'Picons in Kanalliste anzeigen': 100x60 px)*
+* Einstellung für horizontale Kanalliste: Benutzerdefiniert
+<br/> *(Menu -> VTI -> Einstellung - Kanalliste -> 'Picons in Kanalliste anzeigen': Benutzerdefiniert)* 
 
 ## Fehlerbehebung / Verbesserungen
 Für Fehlerbehebung, Verbesserungen oder von Euch erstellten screenFiles bzw. skinParts ein [Issue](https://github.com/Scrounger/MetrixReloaded/issues) erstellen.
