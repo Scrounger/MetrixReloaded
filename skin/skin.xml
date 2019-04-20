@@ -5157,7 +5157,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget text="picshow" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="PictureInPicture" position="0,0" zPosition="-1" size="1980,1080" flags="wfNoBorder" backgroundColor="transparent">
-  <widget name="zap_focus" position="0,0" zPosition="10" size="250,250" font="Regular;35" halign="left" backgroundColor="transparent" />
+  <widget name="zap_focus" position="0,0" zPosition="10" size="800,50" font="font_standard" halign="center" backgroundColor="windowBackground" />
   <widget name="video" position="0,0" size="400,220" backgroundColor="transparent" />
   <widget text="PictureInPicture" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1780,1055" />
 </screen>
@@ -5993,7 +5993,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   </widget>
   <widget text="StalkerClient_Player" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,254" />
 </screen>
-<screen name="Standby" flags="wfNoBorder" position="0,0" size="1920,1080" title="Standby">
+<screen name="Standby" flags="wfNoBorder" position="0,0" size="1920,1080" title="Standby" backgroundColor="#00000000">
   <widget text="Standby" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="StartWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder">
