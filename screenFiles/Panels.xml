@@ -39,7 +39,7 @@
 
 <!-- Icons / Images -->
 <screen name="panel_icons_menu">
-  <widget alphatest="blend" path="media/icons/menu" position="menu_icon_pos" render="MetrixReloadedIcon" size="menu_icon_size" source="menu" zPosition="3" scale="1">
+  <widget alphatest="blend" path="MetrixReloaded/media/icons/menu" position="menu_icon_pos" render="MetrixReloadedIcon" size="menu_icon_size" source="menu" zPosition="3" scale="1">
     <convert type="MetrixReloadedMenuEntryID"></convert>
   </widget>
 </screen>
@@ -49,7 +49,7 @@
   </widget>
 </screen>
 <screen name="panel_infoBar_Icons">
-  <widget alphatest="blend" path="media/logos/tunertypes" position="410,1043" render="MetrixReloadedIcon" size="84,22" source="session.CurrentService" zPosition="3">
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/tunertypes" position="410,1043" render="MetrixReloadedIcon" size="84,22" source="session.CurrentService" zPosition="3">
     <convert type="MetrixReloadedServiceInfoEx">ttype</convert>
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/hbbtv.png" position="1147,1035" render="Pixmap" size="91,34" source="HbbtvApplication" zPosition="10">
@@ -102,10 +102,10 @@
     <convert type="MetrixReloadedCompareBoolean">true</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget alphatest="blend" path="media/logos/resolution" position="1640,1035" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/resolution" position="1640,1035" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
     <convert type="MetrixReloadedResolutionIcon">ResolutionIcon</convert>
   </widget>
-  <widget alphatest="blend" path="media/logos/definition" position="1721,1035" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/definition" position="1721,1035" render="MetrixReloadedIcon" size="61,34" source="session.CurrentService" zPosition="3">
     <convert type="MetrixReloadedResolutionIcon">DefinitionIcon</convert>
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/fta.png" position="1802,1035" render="Pixmap" backgroundColor="windowBackground" transparent="0" size="52,34" source="session.CurrentService" zPosition="2">

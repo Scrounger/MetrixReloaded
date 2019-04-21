@@ -4,11 +4,11 @@
   <!-- Image-->
   <widget backgroundColor="windowBackground" foregroundColor="foreground" position="150,70" size="490,280" scale="3" render="MetrixReloadedEventImage" source="session.extEvent_Now" transparent="1" zPosition="3" />
   <!-- ParentalRating Image-->
-  <widget alphatest="blend" path="media/logos/parentalrating" position="580,290" render="MetrixReloadedIcon" size="60,60" source="session.extEvent_Now" zPosition="3">
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/parentalrating" position="580,290" render="MetrixReloadedIcon" size="60,60" source="session.extEvent_Now" zPosition="3">
     <convert type="MetrixReloadedExtEventEPG">ParentalRating</convert>
   </widget>
   <!-- Rating Stars -->
-  <widget alphatest="blend" path="media/logos/stars" position="160,300" render="MetrixReloadedIcon" size="600,40" source="session.extEvent_Now" zPosition="10">
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="160,300" render="MetrixReloadedIcon" size="600,40" source="session.extEvent_Now" zPosition="10">
     <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
   </widget>
   <!-- Image vorhanden-->

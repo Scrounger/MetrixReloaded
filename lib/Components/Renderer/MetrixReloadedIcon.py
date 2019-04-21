@@ -5,7 +5,7 @@ import os
 
 class MetrixReloadedIcon(Renderer):
 	searchPaths = (resolveFilename(SCOPE_CURRENT_SKIN), '/usr/share/enigma2/skin_default/')
-	skinpath = '/usr/share/enigma2/MetrixReloaded/'
+	skinpath = '/usr/share/enigma2/'
 	
 	def __init__(self):
 		Renderer.__init__(self)
