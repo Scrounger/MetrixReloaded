@@ -853,9 +853,6 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				return False
 		
 	def getCompareGenreWithGenreList(self, desc, splitChar):
-		
-		# wegen Umlauten in unicode umwandeln
-		desc = desc.decode("iso-8859-1")
 
 		if(splitChar == None):
 			desc = re.sub('[.,]', '', desc)			#Hinter Genre kann direkt ein Zeichen folgen
@@ -869,14 +866,19 @@ class MetrixReloadedExtEventEPG(Converter, object):
 		if (os.path.isfile(fileName)):
 			with open(fileName) as file:
 				jsonString = str(file.read())
-				
-				test = json.loads(jsonString, 'cp1250')
+
+				# in Uncode umwandeln, da sonst json parsing nicht möglich
+				jsonString = jsonString.decode("iso-8859-1")
+				genreData = json.loads(jsonString)
 
 				#exakten Treffer suchen
-				for genre in test:
-					# in Unicode wegen umlauten
-					setGenre = set([genre.decode("iso-8859-1")])
+				for genre in genreData:
+					# in utf-8 zurück wandeln
+					genre = genre.encode('utf-8')
+
+					setGenre = set([genre])
 					if setGenre & setWordList:
+						#zurück in utf-8 umwandeln
 						return genre
 		else:
 			self.log.Error("File not exist! %s" % fileName)		
@@ -897,8 +899,8 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				#return genre
 
 		if(len(descWordList) == 1):
-			# Fehlende Genre in log schreiben, int uft-8 wegen Umlauten
-			self.logMissingGenre.info(str(descWordList).encode("utf-8"))
+			# Fehlende Genre in log schreiben, in uft-8
+			self.logMissingGenre.info(str(descWordList))
 
 		return None
 		
