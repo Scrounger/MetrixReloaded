@@ -29,6 +29,7 @@
   <alias name="font_standard" font="SetrixHD" size="30" />
   <alias name="font_standard_small" font="SetrixHD" size="28" />
   <alias name="font_standard_extra_small" font="SetrixHD" size="24" />
+  <alias name="font_standard_extra_very_small" font="SetrixHD" size="20" />
   <alias name="font_standard_header" font="SetrixHD" size="32" />
   <alias name="font_second_standard" font="SetrixSL" size="30" />
   <alias name="font_second_standard_small" font="SetrixSL" size="28" />

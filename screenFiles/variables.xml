@@ -70,6 +70,10 @@
   <variable name="window_desc_pos" value="1216,670" />
   <variable name="window_desc_size" value="622,230" />
   <variable name="window_vert_epg_picon_size" value="160,95" />
+  <variable name="window_epg_ratingStars_pos" value="1422,378" />
+  <variable name="window_epg_ratingStars_size" value="187,18" />
+  <variable name="window_epg_remaining_pos" value="1325,410" />
+  <variable name="window_epg_remaining_size" value="382,25" />
   <!-- Remote Buttons -->
   <variable name="window_remote_button_right_pos" value="1760,926" />
   <variable name="window_remote_button_middle_pos" value="1660,926" />
