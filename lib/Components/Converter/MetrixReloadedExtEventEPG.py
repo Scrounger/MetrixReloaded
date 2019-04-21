@@ -158,8 +158,8 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				sep = ' %s ' % str(self.htmlParser.unescape('&#xB7;'))
 				return sep.join(result)					
 			except Exception as e:
-				self.log.exception("getText: '%s'  %s", self.logType, str(e))
-				return "[Error] getText: '%s'  %s" % (self.logType, str(e))					
+				self.log.exception("getText: '%s' %s", self.logType, str(e))
+				return "[Error] getText: '%s' %s" % (self.logType, str(e))					
 					
 		return ""
 		
@@ -854,19 +854,38 @@ class MetrixReloadedExtEventEPG(Converter, object):
 		
 	def getCompareGenreWithGenreList(self, desc, splitChar):
 		
+		# wegen Umlauten in unicode umwandeln
+		desc = desc.decode("iso-8859-1")
+
 		if(splitChar == None):
 			desc = re.sub('[.,]', '', desc)			#Hinter Genre kann direkt ein Zeichen folgen
 			descWordList = desc.split(' ')
 		else:
 			descWordList = desc.split(splitChar)		#WortList zum Vergleichen erzeugen
-		
+
 		setWordList = set(descWordList)
 		
-		#exakten Treffer suchen
-		for genre in self.AVAILABLE_GENRES_EPG:
-			setGenre = set([genre])
-			if setGenre & setWordList:
-				return genre
+		fileName = "/usr/lib/enigma2/python/Components/Converter/MetrixReloadedExtEventEPG_Genre.json"
+		if (os.path.isfile(fileName)):
+			with open(fileName) as file:
+				jsonString = str(file.read())
+				
+				test = json.loads(jsonString, 'cp1250')
+
+				#exakten Treffer suchen
+				for genre in test:
+					# in Unicode wegen umlauten
+					setGenre = set([genre.decode("iso-8859-1")])
+					if setGenre & setWordList:
+						return genre
+		else:
+			self.log.Error("File not exist! %s" % fileName)		
+
+		# #exakten Treffer suchen
+		# for genre in self.AVAILABLE_GENRES_EPG:
+		# 	setGenre = set([genre])
+		# 	if setGenre & setWordList:
+		# 		return genre
 		
 		#if(desc in self.AVAILABLE_GENRES_EPG):
 		#Description ist Genre (ein Wort)
@@ -878,8 +897,8 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				#return genre
 
 		if(len(descWordList) == 1):
-			# Fehlende Genre in log schreiben
-			self.logMissingGenre.info(descWordList)
+			# Fehlende Genre in log schreiben, int uft-8 wegen Umlauten
+			self.logMissingGenre.info(str(descWordList).encode("utf-8"))
 
 		return None
 		
@@ -924,27 +943,3 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				return True
 		
 		return False
-		
-	AVAILABLE_GENRES_EPG =[
-                        "Actionfilm", "Abenteuerfilm", "Animationsfilm", "Animationsserie", "Abenteuer", "Animations-Serie", "Actiondrama", "Abenteuer-Serie", "Actionthriller", "Actionkomödie", "Actionserie", "Animation", "Action", "Actionfilm", "Arztreihe", "Agentenfilm", "Agentenkomödie",
-						"Beziehungskomödie", "Biographie", "Biografie",
-						"Comedy", "Clipshow", "Comedy-Serie", "Comedy Show", 
-    					"Doku-Reihe", "Doku-Serie", "Dramaserie", "Dokutainment-Reihe", "Dokumentationsreihe", "Dokumentarserie", "Dokumentation", "Drama", "Dokumentarfilm", "Doku-Experiment", "Deutsche Komödie", "Dramedy", "Dokumentarreihe", "Dokureihe", "Dokutainment",
-    					"Ermittler-Doku",
-    					"Familienserie", "Familienkomödie", "Familienfilm", "Fantasyfilm", "Fantasy-Abenteuerfilm", "Familien-Serie", "Fantasy", "Familiendrama", "Fantasy-Action", "Fernsehfilm", "Fernsehserie", 
-						"Geschichtliches Drama", 
-    					"Horrorfilm", "Horror-Serie", "Horrorthriller", "Heimatserie", "Horrorkomödie", "Historiendrama", "Historisches Drama", 
-    					"Infotainment", "Informationssendung", "Information",
-    					"Kinderserie", "Krimi", "Kochshow", "Kinder-Komödie", "Krimiserie", "Komödie", "Koch-Doku", "Krimikömödie", "Krimikomödie", "Kriegsdrama", "Kriminalfilm", "Krankenhaus-Soap", "Kriegsfilm", "Kinderfilm", "Kinder-Fantasyfilm", "Kulturmagazin", 
-						"Liebeskomödie", "Liebesgeschichte", "Liebesdrama", "Liebesfilm", "Liebesdramödie", "Live Shopping",
-    					"Mysterythriller", "Magazin", "Mysteryfilm", "Musical", "Monumentalfilm", 
-						"Naturdokumentarreihe",
-						"Polizeiserie", "Psychothriller",
-						"Quizshow",
-    					"Romanze", "Reportagemagazin", "Reportagereihe", "Reportage", "Romantikkomödie", "Romantic Comedy", "Reisedoku", "Reality-TV", "Real Life Doku", "Romantische Komödie", "Romance", 
-    					"Sitcom", "Show", "Science-Fiction-Komödie", "Science-Fiction-Film", "Science-Fiction-Horror", "Scripted Reality", "Sketch-Comedy", "Spielfilm", "Sport", "Science-Fiction-Serie", "Sci-Fi-Serie", "Science-Fiction-Thriller", 
-    					"Teleshopping", "Thriller", "Talkshow", "Telenovela", "Thrillerkomödie", "Tragikomödie", 
-						"Unterhaltungs-Show", "Unterhaltungsshow", 
-    					"Werbesendung", "Western", "Wissensmagazin", "Wissenschaftsmagazin", "Westernkomödie", 
-						"Zeichentrick-Serie", "Zeichentrickfilm",
-                    ]
