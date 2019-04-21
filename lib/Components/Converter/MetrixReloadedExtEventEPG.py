@@ -876,7 +876,11 @@ class MetrixReloadedExtEventEPG(Converter, object):
 			#Genre herausfiltern
 			#if(genre in desc):
 				#return genre
-		self.logMissingGenre.info(descWordList)
+
+		if(len(descWordList) == 1):
+			# Fehlende Genre in log schreiben
+			self.logMissingGenre.info(descWordList)
+
 		return None
 		
 	def getParsedCountryOrYear(self, resultTyp, desc, event):
@@ -922,24 +926,24 @@ class MetrixReloadedExtEventEPG(Converter, object):
 		return False
 		
 	AVAILABLE_GENRES_EPG =[
-                        "Actionfilm", "Abenteuerfilm", "Animationsfilm", "Animationsserie", "Abenteuer", "Animations-Serie", "Actiondrama", "Abenteuer-Serie", "Actionthriller", "Actionkomödie", "Actionserie", "Animation", "Action", "Actionfilm", "Arztreihe",
+                        "Actionfilm", "Abenteuerfilm", "Animationsfilm", "Animationsserie", "Abenteuer", "Animations-Serie", "Actiondrama", "Abenteuer-Serie", "Actionthriller", "Actionkomödie", "Actionserie", "Animation", "Action", "Actionfilm", "Arztreihe", "Agentenfilm", "Agentenkomödie",
 						"Beziehungskomödie", "Biographie", "Biografie",
 						"Comedy", "Clipshow", "Comedy-Serie", "Comedy Show", 
     					"Doku-Reihe", "Doku-Serie", "Dramaserie", "Dokutainment-Reihe", "Dokumentationsreihe", "Dokumentarserie", "Dokumentation", "Drama", "Dokumentarfilm", "Doku-Experiment", "Deutsche Komödie", "Dramedy", "Dokumentarreihe", "Dokureihe", "Dokutainment",
     					"Ermittler-Doku",
-    					"Familienserie", "Familienkomödie", "Familienfilm", "Fantasyfilm", "Fantasy-Abenteuerfilm", "Familien-Serie", "Fantasy", "Familiendrama", "Fantasy-Action",
-    					"Horrorfilm", "Horror-Serie", "Horrorthriller", "Heimatserie", "Horrorkomödie", 
+    					"Familienserie", "Familienkomödie", "Familienfilm", "Fantasyfilm", "Fantasy-Abenteuerfilm", "Familien-Serie", "Fantasy", "Familiendrama", "Fantasy-Action", "Fernsehfilm", "Fernsehserie", 
+    					"Horrorfilm", "Horror-Serie", "Horrorthriller", "Heimatserie", "Horrorkomödie", "Historiendrama", "Historisches Drama", 
     					"Infotainment", "Informationssendung", "Information",
-    					"Kinderserie", "Krimi", "Kochshow", "Kinder-Komödie", "Krimiserie", "Komödie", "Koch-Doku", "Krimikömödie", "Krimikomödie", "Kriegsdrama", "Kriminalfilm", "Krankenhaus-Soap", "Kriegsfilm", "Kinderfilm", 
-						"Liebeskomödie", "Liebesgeschichte", "Liebesdrama", "Liebesfilm", "Liebesdramödie",
-    					"Mysterythriller", "Magazin", "Mysteryfilm",
+    					"Kinderserie", "Krimi", "Kochshow", "Kinder-Komödie", "Krimiserie", "Komödie", "Koch-Doku", "Krimikömödie", "Krimikomödie", "Kriegsdrama", "Kriminalfilm", "Krankenhaus-Soap", "Kriegsfilm", "Kinderfilm", "Kinder-Fantasyfilm", "Kulturmagazin", 
+						"Liebeskomödie", "Liebesgeschichte", "Liebesdrama", "Liebesfilm", "Liebesdramödie", "Live Shopping",
+    					"Mysterythriller", "Magazin", "Mysteryfilm", "Musical", "Monumentalfilm", 
 						"Naturdokumentarreihe",
 						"Polizeiserie", "Psychothriller",
 						"Quizshow",
     					"Romanze", "Reportagemagazin", "Reportagereihe", "Reportage", "Romantikkomödie", "Romantic Comedy", "Reisedoku", "Reality-TV", "Real Life Doku", "Romantische Komödie", "Romance", 
-    					"Sitcom", "Show", "Science-Fiction-Komödie", "Science-Fiction-Film", "Science-Fiction-Horror", "Scripted Reality", "Sketch-Comedy", "Spielfilm", "Sport", "Science-Fiction-Serie", "Sci-Fi-Serie", 
+    					"Sitcom", "Show", "Science-Fiction-Komödie", "Science-Fiction-Film", "Science-Fiction-Horror", "Scripted Reality", "Sketch-Comedy", "Spielfilm", "Sport", "Science-Fiction-Serie", "Sci-Fi-Serie", "Science-Fiction-Thriller", 
     					"Teleshopping", "Thriller", "Talkshow", "Telenovela", "Thrillerkomödie", "Tragikomödie", 
-						"Unterhaltungs-Show", 
+						"Unterhaltungs-Show", "Unterhaltungsshow", 
     					"Werbesendung", "Western", "Wissensmagazin", "Wissenschaftsmagazin", "Westernkomödie", 
 						"Zeichentrick-Serie", "Zeichentrickfilm",
                     ]
