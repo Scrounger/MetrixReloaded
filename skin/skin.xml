@@ -5157,7 +5157,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget text="picshow" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
 <screen name="PictureInPicture" position="0,0" zPosition="-1" size="1980,1080" flags="wfNoBorder" backgroundColor="transparent">
-  <widget name="zap_focus" position="0,0" zPosition="10" size="800,50" font="font_standard" halign="center" backgroundColor="windowBackground" />
+  <widget name="zap_focus" position="0,0" zPosition="10" size="250,250" font="font_standard" halign="left" backgroundColor="windowBackground" />
   <widget name="video" position="0,0" size="400,220" backgroundColor="transparent" />
   <widget text="PictureInPicture" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1780,1055" />
 </screen>
@@ -5624,10 +5624,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     <convert type="MetrixReloadedExtEventEPG">ParentalRating</convert>
   </widget>
   <!-- Rating Stars -->
-  <!--<widget alphatest="blend" path="media/logos/stars" position="160,300" render="MetrixReloadedIcon" size="600,40" source="session.extEvent_Now" zPosition="10">
+  <widget alphatest="blend" path="media/logos/stars" position="160,300" render="MetrixReloadedIcon" size="600,40" source="session.extEvent_Now" zPosition="10">
     <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
-    <convert type="MetrixReloadedCompareString">!0</convert>
-  </widget>-->
+  </widget>
   <!-- Image vorhanden-->
   <widget source="session.extEvent_Now" position="660,60" size="1110,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][Title]</convert>

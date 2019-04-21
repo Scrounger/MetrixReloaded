@@ -8,10 +8,9 @@
     <convert type="MetrixReloadedExtEventEPG">ParentalRating</convert>
   </widget>
   <!-- Rating Stars -->
-  <!--<widget alphatest="blend" path="media/logos/stars" position="160,300" render="MetrixReloadedIcon" size="600,40" source="session.extEvent_Now" zPosition="10">
+  <widget alphatest="blend" path="media/logos/stars" position="160,300" render="MetrixReloadedIcon" size="600,40" source="session.extEvent_Now" zPosition="10">
     <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
-    <convert type="MetrixReloadedCompareString">!0</convert>
-  </widget>-->
+  </widget>
   <!-- Image vorhanden-->
   <widget source="session.extEvent_Now" position="660,60" size="1110,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][Title]</convert>

@@ -484,10 +484,10 @@ class MetrixReloadedExtEventEPG(Converter, object):
 					return strRating.replace(".", ",")
 			else:
 				if(isStars):
-					return str(0)
+					return ""
 		else:
 			if(isStars):
-				return str(0)		
+				return ""
 	
 	def getParentalRating(self, type, event, values):				
 		parentialRating = None
@@ -932,6 +932,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
     					"Doku-Reihe", "Doku-Serie", "Dramaserie", "Dokutainment-Reihe", "Dokumentationsreihe", "Dokumentarserie", "Dokumentation", "Drama", "Dokumentarfilm", "Doku-Experiment", "Deutsche Komödie", "Dramedy", "Dokumentarreihe", "Dokureihe", "Dokutainment",
     					"Ermittler-Doku",
     					"Familienserie", "Familienkomödie", "Familienfilm", "Fantasyfilm", "Fantasy-Abenteuerfilm", "Familien-Serie", "Fantasy", "Familiendrama", "Fantasy-Action", "Fernsehfilm", "Fernsehserie", 
+						"Geschichtliches Drama", 
     					"Horrorfilm", "Horror-Serie", "Horrorthriller", "Heimatserie", "Horrorkomödie", "Historiendrama", "Historisches Drama", 
     					"Infotainment", "Informationssendung", "Information",
     					"Kinderserie", "Krimi", "Kochshow", "Kinder-Komödie", "Krimiserie", "Komödie", "Koch-Doku", "Krimikömödie", "Krimikomödie", "Kriegsdrama", "Kriminalfilm", "Krankenhaus-Soap", "Kriegsfilm", "Kinderfilm", "Kinder-Fantasyfilm", "Kulturmagazin", 
