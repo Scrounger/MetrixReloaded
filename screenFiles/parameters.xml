@@ -61,11 +61,12 @@
   <parameter name="EPGlistRecImageOffset" value="-105, 15" />
   <parameter name="EPGlistRecTextOffset" value="-95, 4" />
   <parameter name="EPGlistNonRecTextOffset" value="-70, 4" />
-  <parameter name="EPGlistMultiRecTextOffset" value="10, 10" />
+  <!-- EPGSelectionMulti -->
+  <parameter name="EPGlistMultiRecTextOffset" value="10, 1" />
   <parameter name="EPGlistMultiRecIconOffset" value="0, 10" />
-  <parameter name="EPGlistMultiNonRecTextOffset" value="10, 10" />
+  <parameter name="EPGlistMultiNonRecTextOffset" value="10, 1" />
   <parameter name="EPGlistMultiBeginText1Offset" value="0, 0" />
-  <parameter name="EPGlistMultiBeginText2Offset" value="0, 10" />
+  <parameter name="EPGlistMultiBeginText2Offset" value="0, 1" />
   <parameter name="EPGlistMultiProgressOffset" value="0, 0" />
-  <parameter name="EPGlistMultiProgressTextOffset" value="0, 10" />
+  <parameter name="EPGlistMultiProgressTextOffset" value="0, 1" />
 </parameters>
