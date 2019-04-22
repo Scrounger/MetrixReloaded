@@ -2336,6 +2336,10 @@
   <widget backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixSL;28" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=10000,wrap,always=0" position="54,813" render="MetrixReloadedVRunningText" size="1820,190" source="ExtEvent" transparent="1" valign="top">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\,)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n)]</convert>
   </widget>
+  <!-- Rating Stars -->
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="1660,750" size="window_epg_ratingStars_size" render="MetrixReloadedIcon" source="ExtEvent" zPosition="1" scale="1">
+    <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
+  </widget>
   <widget source="Event" render="Label" position="1685,770" zPosition="1" size="80,42" halign="right" font="font_standard_small" noWrap="1" backgroundColor="windowBackground" transparent="1" foregroundColor="accent1" valign="top">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
@@ -2392,9 +2396,13 @@
   <widget backgroundColor="windowBackground" font="SetrixHD; 36" halign="left" position="630,82" render="Label" size="850,54" source="Event" transparent="1" valign="center" noWrap="1">
     <convert type="EventName">Name</convert>
   </widget>
-  <widget backgroundColor="windowBackground" font="font_standard_small" halign="right" position="1676,98" render="Label" shadowColor="windowBackground" size="80,42" source="Event" transparent="1" foregroundColor="accent1" valign="top">
+  <widget backgroundColor="windowBackground" font="font_standard_small" halign="right" position="1686,98" render="Label" shadowColor="windowBackground" size="80,42" source="Event" transparent="1" foregroundColor="accent1" valign="top">
     <convert type="EventTime">StartTime  </convert>
     <convert type="ClockToText">Default</convert>
+  </widget>
+  <!-- Rating Stars -->
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="1670,80" size="window_epg_ratingStars_size" render="MetrixReloadedIcon" source="ExtEvent" zPosition="1" scale="1">
+    <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
   </widget>
   <widget source="Event" render="Label" position="1760,98" zPosition="1" size="100,42" font="font_standard_small" backgroundColor="windowBackground" transparent="1" halign="right" foregroundColor="accent1" valign="top">
     <convert type="EventTime">EndTime</convert>
