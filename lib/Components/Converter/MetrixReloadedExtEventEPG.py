@@ -500,6 +500,8 @@ class MetrixReloadedExtEventEPG(Converter, object):
 					
 					if(tmp == 'OhneAltersbeschränkung'):
 						parentialRating = str(0)
+					elif(tmp != 'KeineJugendfreigabe'):
+						parentialRating = str(18)
 					elif(tmp != 'Unbekannt'):
 						parentialRating = tmp
 		
@@ -515,7 +517,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 		if(parentialRating != None and prefix != None):
 			parentialRating = '%s%s' % (prefix, parentialRating)
 		
-		return parentialRating		
+		return parentialRating
 			
 	def getTitle(self, event, values):
 		#Nur Title ohne Prefix, wird zum vergleichen benötigt
