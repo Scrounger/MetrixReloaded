@@ -34,9 +34,19 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
+  <!-- Rating Stars -->
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="window_epg_ratingStars_pos" size="window_epg_ratingStars_size" render="MetrixReloadedIcon"  source="ExtEvent" zPosition="1" scale="1">
+    <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
+  </widget>
+  <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_epg_progressBar_bg_pos" size="window_epg_progressBar_bg_size" />
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
+  </widget>
+  <!-- Remaining Time-->
+  <widget backgroundColor="windowBackgroundSecond" font="font_standard_extra_very_small" halign="center" position="window_epg_remaining_pos" render="Label" size="window_epg_remaining_size" source="Event" transparent="1" valign="top">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
   </widget>
   <widget source="ExtEvent" position="window_epg_desc_pos" zPosition="1" size="622,470" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" valign="top" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
