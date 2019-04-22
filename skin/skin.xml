@@ -952,11 +952,12 @@
   <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="window_epg_ratingStars_pos" size="window_epg_ratingStars_size" render="MetrixReloadedIcon"  source="ServiceEvent" zPosition="1" scale="1">
     <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
   </widget>
+  <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_epg_progressBar_bg_pos" size="window_epg_progressBar_bg_size" />
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="ServiceEvent" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-
+  <!-- Remaining Time-->
   <widget backgroundColor="windowBackgroundSecond" font="font_standard_extra_very_small" halign="center" position="window_epg_remaining_pos" render="Label" size="window_epg_remaining_size" source="ServiceEvent" transparent="1" valign="top">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
@@ -1788,11 +1789,12 @@
   <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="window_epg_ratingStars_pos" size="window_epg_ratingStars_size" render="MetrixReloadedIcon"  source="ExtEvent" zPosition="1" scale="1">
     <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
   </widget>
+  <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_epg_progressBar_bg_pos" size="window_epg_progressBar_bg_size" />
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-
+  <!-- Remaining Time-->
   <widget backgroundColor="windowBackgroundSecond" font="font_standard_extra_very_small" halign="center" position="window_epg_remaining_pos" render="Label" size="window_epg_remaining_size" source="Event" transparent="1" valign="top">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
@@ -2457,22 +2459,28 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText" />
   </widget>
+  <!-- Rating Stars -->
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="window_gmepg_ratingStar_pos" size="window_epg_ratingStars_size" render="MetrixReloadedIcon" source="ExtEvent" zPosition="1" scale="1">
+    <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
+  </widget>
+  <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_gmepg_progressBar_bg_pos" size="window_gmepg_progressBar_bg_size" zPosition="1"/>
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_gmepg_progressBar_pos" render="Progress" size="window_gmepg_progressBar_size" source="Event" transparent="1" zPosition="2">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget backgroundColor="windowBackground" font="font_standard_extra_small" halign="center" position="window_gmepg_remainig_pos" render="Label" size="window_gmepg_remainig_size" source="Event" transparent="1" valign="top">
+  <!-- Remaining Time-->
+  <widget backgroundColor="windowBackground" font="font_standard_extra_very_small" halign="center" position="window_gmepg_remainig_pos" render="Label" size="window_gmepg_remainig_size" source="Event" transparent="1" valign="top">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
 
   <!-- Image vorhanden-->
-  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_pos" size="622,475" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_pos" size="window_gmepg_desc_size" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
   </widget>
 
-  <!-- Image vorhanden-->
-  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_no_image_pos" size="622,691" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <!-- kein Image vorhanden-->
+  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_no_image_pos" size="window_gmepg_desc_no_image_size" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
   </widget>
 
@@ -2532,22 +2540,28 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText" />
   </widget>
+  <!-- Rating Stars -->
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="window_gmepg_ratingStar_pos" size="window_epg_ratingStars_size" render="MetrixReloadedIcon" source="ExtEvent" zPosition="1" scale="1">
+    <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
+  </widget>
+  <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_gmepg_progressBar_bg_pos" size="window_gmepg_progressBar_bg_size" zPosition="1"/>
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_gmepg_progressBar_pos" render="Progress" size="window_gmepg_progressBar_size" source="Event" transparent="1" zPosition="2">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget backgroundColor="windowBackground" font="font_standard_extra_small" halign="center" position="window_gmepg_remainig_pos" render="Label" size="window_gmepg_remainig_size" source="Event" transparent="1" valign="top">
+  <!-- Remaining Time-->
+  <widget backgroundColor="windowBackground" font="font_standard_extra_very_small" halign="center" position="window_gmepg_remainig_pos" render="Label" size="window_gmepg_remainig_size" source="Event" transparent="1" valign="top">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
 
   <!-- Image vorhanden-->
-  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_pos" size="622,475" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_pos" size="window_gmepg_desc_size" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
   </widget>
 
-  <!-- Image vorhanden-->
-  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_no_image_pos" size="622,691" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <!-- kein Image vorhanden-->
+  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_no_image_pos" size="window_gmepg_desc_no_image_size" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
   </widget>
   <!-- Remote Buttons -->
@@ -6580,7 +6594,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- GraphMultiEPG-->
   <variable name="window_gmepg_name_pos" value="1216,118" />
   <variable name="window_gmepg_name_size" value="622,75" />
-  <variable name="window_gmepg_picon_pos" value="1350,233" />
+  <variable name="window_gmepg_picon_pos" value="1350,245" />
   <variable name="window_gmepg_picon_size" value="330,198" />
   <variable name="window_gmepg_progressBar_pos" value="1325,202" />
   <variable name="window_gmepg_progressBar_size" value="382,5" />
@@ -6588,10 +6602,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <variable name="window_gmepg_progressBar_bg_size" value="382,1" />
   <variable name="window_gmepg_startTime_pos" value="1216,185" />
   <variable name="window_gmepg_endTime_pos" value="1726,185" />
-  <variable name="window_gmepg_remainig_pos" value="1325,168" />
-  <variable name="window_gmepg_remainig_size" value="382,30" />
-  <variable name="window_gmepg_desc_pos" value="1216,439" />
-  <variable name="window_gmepg_desc_no_image_pos" value="1216,223" />
+  <variable name="window_gmepg_remainig_pos" value="1325,207" />
+  <variable name="window_gmepg_remainig_size" value="382,25" />
+  <variable name="window_gmepg_desc_pos" value="1216,451" />
+  <variable name="window_gmepg_desc_size" value="622,463" />
+  <variable name="window_gmepg_desc_no_image_pos" value="1216,240" />
+  <variable name="window_gmepg_desc_no_image_size" value="622,672" />
+  <variable name="window_gmepg_ratingStar_pos" value="1422,175" />
   
   <!-- TODO: Kommentar einfügen-->
   <variable name="window_small_list_top_pos" value="105,217" />

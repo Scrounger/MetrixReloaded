@@ -34,11 +34,12 @@
   <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="window_epg_ratingStars_pos" size="window_epg_ratingStars_size" render="MetrixReloadedIcon"  source="ServiceEvent" zPosition="1" scale="1">
     <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
   </widget>
+  <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_epg_progressBar_bg_pos" size="window_epg_progressBar_bg_size" />
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="ServiceEvent" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-
+  <!-- Remaining Time-->
   <widget backgroundColor="windowBackgroundSecond" font="font_standard_extra_very_small" halign="center" position="window_epg_remaining_pos" render="Label" size="window_epg_remaining_size" source="ServiceEvent" transparent="1" valign="top">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>

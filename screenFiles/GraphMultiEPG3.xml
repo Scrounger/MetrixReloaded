@@ -41,22 +41,28 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText" />
   </widget>
+  <!-- Rating Stars -->
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="window_gmepg_ratingStar_pos" size="window_epg_ratingStars_size" render="MetrixReloadedIcon" source="ExtEvent" zPosition="1" scale="1">
+    <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
+  </widget>
+  <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_gmepg_progressBar_bg_pos" size="window_gmepg_progressBar_bg_size" zPosition="1"/>
   <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_gmepg_progressBar_pos" render="Progress" size="window_gmepg_progressBar_size" source="Event" transparent="1" zPosition="2">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget backgroundColor="windowBackground" font="font_standard_extra_small" halign="center" position="window_gmepg_remainig_pos" render="Label" size="window_gmepg_remainig_size" source="Event" transparent="1" valign="top">
+  <!-- Remaining Time-->
+  <widget backgroundColor="windowBackground" font="font_standard_extra_very_small" halign="center" position="window_gmepg_remainig_pos" render="Label" size="window_gmepg_remainig_size" source="Event" transparent="1" valign="top">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
 
   <!-- Image vorhanden-->
-  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_pos" size="622,475" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_pos" size="window_gmepg_desc_size" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
   </widget>
 
-  <!-- Image vorhanden-->
-  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_no_image_pos" size="622,691" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+  <!-- kein Image vorhanden-->
+  <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_no_image_pos" size="window_gmepg_desc_no_image_size" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
   </widget>
   <!-- Remote Buttons -->
