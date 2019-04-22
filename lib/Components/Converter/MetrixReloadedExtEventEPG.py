@@ -500,7 +500,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 					
 					if(tmp == 'OhneAltersbeschränkung'):
 						parentialRating = str(0)
-					elif(tmp != 'KeineJugendfreigabe'):
+					elif(tmp == 'KeineJugendfreigabe'):
 						parentialRating = str(18)
 					elif(tmp != 'Unbekannt'):
 						parentialRating = tmp
