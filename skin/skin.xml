@@ -259,7 +259,7 @@
   <panel name="panel_seperator_contextMenu_title" />
   <!-- Context Panel -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="contextMenu_list_pos" size="1020,300" textOffset="5,1" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
-  <eLabel name="Seperator" position="15,350" size="1020,2" zPosition="5" backgroundColor="seperator" />
+  <eLabel name="Seperator" position="15,395" size="1020,2" zPosition="5" backgroundColor="seperator" />
   <widget source="key_red" render="Pixmap" pixmap="MetrixReloaded/media/buttons/key_red_small.png" position="5,88" size="key_size_small" alphatest="blend" zPosition="2">
     <convert type="ConditionalShowHide" />
   </widget>
@@ -272,7 +272,7 @@
   <widget source="key_blue" render="Pixmap" pixmap="MetrixReloaded/media/buttons/key_blue_small.png" position="5,238" size="key_size_small" alphatest="blend" zPosition="2">
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="streams" render="Listbox" position="15,370" size="1020,360" zPosition="3" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
+  <widget source="streams" render="Listbox" position="15,415" size="1020,300" zPosition="3" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"templates":
       {"default": (50, [
@@ -295,8 +295,9 @@
       }
     </convert>
   </widget>
-  <widget text="AudioSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="850,725" />
+  <widget text="AudioSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="850,725" />
 </screen>
+
 <screen backgroundColor="accentColorTwo" flags="wfNoBorder" name="AudioZap" position="0,0" size="1920,1080" zPosition="-1">
   <widget backgroundColor="transparent" font="Regular;60" halign="center" name="zap_focus" position="0,0" size="1920,1080" valign="center" zPosition="10" />
   <eLabel backgroundColor="windowBackground" font="Regular;30" foregroundColor="foreground" halign="left" position="75,30" size="90,27" text="Audio :" transparent="0" zPosition="10" />
@@ -4944,59 +4945,52 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 
 <!-- Misc -->
 <screen name="panel_system_infos_menu">
-  <widget source="Title" render="Label" position="1120,598" size="150,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1110,598" size="150,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">temperature</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,598" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1205,598" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedTempFanInfo">TempInfo</convert>
   </widget>
-
-  <widget source="Title" render="Label" position="1120,638" size="150,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1110,638" size="150,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">fanspeed</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,638" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1205,638" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedTempFanInfo">FanInfo</convert>
   </widget>
-
-  <widget source="Title" render="Label" position="1120,678" size="150,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1110,678" size="150,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">cpuload</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,678" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1205,678" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedCpuUsage">$0</convert>
   </widget>
-
-  <widget source="Title" render="Label" position="1120,718" size="150,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1110,718" size="150,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">avgload</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,718" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1205,718" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedLayoutInfo">LoadAvg</convert>
   </widget>
-
-  <widget source="Title" render="Label" position="1120,758" size="75,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1110,758" size="75,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">flash</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,758" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1185,758" size="250,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedLayoutInfo">FlashInfo,FreeOnly</convert>
   </widget>
-
-  <widget source="Title" render="Label" position="1120,798" size="75,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1110,798" size="75,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">ram</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,798" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1185,798" size="250,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedLayoutInfo">MemTotal,FreeOnly</convert>
   </widget>
-
-  <widget source="Title" render="Label" position="1120,838" size="75,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1110,838" size="75,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">hdd</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,838" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1185,838" size="250,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedLayoutInfo">HddInfo,FreeOnly</convert>
   </widget>
-
-  <widget source="Title" render="Label" position="1120,878" size="75,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
+  <widget source="Title" render="Label" position="1110,878" size="75,30" font="font_standard_extra_small" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" foregroundColor="sysInfo_Label">
     <convert type="MetrixReloadedTextTranslator">usb</convert>
   </widget>
-  <widget source="Title" render="Label" font="font_standard_extra_small" position="1195,878" size="230,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
+  <widget source="Title" render="Label" font="font_standard_extra_small" position="1185,878" size="250,30" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" noWrap="1" foregroundColor="sysInfo_Value">
     <convert type="MetrixReloadedLayoutInfo">UsbInfo,FreeOnly</convert>
   </widget>
 </screen>
@@ -5671,34 +5665,40 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 <screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1920,800" title="SecondInfoBar" backgroundColor="transparent" animationMode="disable" zPosition="2">
   <!-- Background -->
   <eLabel backgroundColor="windowBackground" position="120,37" size="1680,740" zPosition="-10" />
+  <!-- Title -->
+  <widget source="session.extEvent_Now" position="150,60" size="1620,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[Title]</convert>
+  </widget>
+  <!-- Seperators -->
+  <eLabel name="Seperator" position="145,122" size="1630,2" zPosition="5" backgroundColor="seperator" />
+  <eLabel name="Seperator" position="655,135" size="1,620" zPosition="5" backgroundColor="seperator" />
+
+
+  <!-- EpisodeName & Description-->
+  <widget source="session.extEvent_Now" position="670,135" size="1112,625" backgroundColor="windowBackground" font="font_standard" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(Staffel [s], Episode [e]\,)Subtitle(10)ExtendedDescription(\n\n)]</convert>
+  </widget>
+
   <!-- Image-->
-  <widget backgroundColor="windowBackground" foregroundColor="foreground" position="150,70" size="490,280" scale="3" render="MetrixReloadedEventImage" source="session.extEvent_Now" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackground" foregroundColor="foreground" position="150,135" size="490,280" scale="3" render="MetrixReloadedEventImage" source="session.extEvent_Now" transparent="1" zPosition="3" />
+
   <!-- ParentalRating Image-->
-  <widget alphatest="blend" path="MetrixReloaded/media/logos/parentalrating" position="580,290" render="MetrixReloadedIcon" size="60,60" source="session.extEvent_Now" zPosition="3">
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/parentalrating" position="568,695" render="MetrixReloadedIcon" size="60,60" source="session.extEvent_Now" zPosition="3">
     <convert type="MetrixReloadedExtEventEPG">ParentalRating</convert>
   </widget>
   <!-- Rating Stars -->
-  <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="160,300" render="MetrixReloadedIcon" size="600,40" source="session.extEvent_Now" zPosition="10">
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="201,715" render="MetrixReloadedIcon" size="321,40" source="session.extEvent_Now" zPosition="10">
     <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
   </widget>
   <!-- Image vorhanden-->
-  <widget source="session.extEvent_Now" position="660,60" size="1110,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][Title]</convert>
-  </widget>
-  <widget source="session.extEvent_Now" position="660,120" size="1110,229" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(Staffel [s], Episode [e]\,)Subtitle(10)Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
+  <widget source="session.extEvent_Now" position="150,425" size="490,335" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
   </widget>
   <!-- Kein Image vorhanden -->
-  <widget source="session.extEvent_Now" position="150,60" size="1620,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][Title]</convert>
+  <widget source="session.extEvent_Now" position="150,135" size="490,625" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
   </widget>
-  <widget source="session.extEvent_Now" position="150,120" size="1620,229" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][EpisodeNum(Staffel [s], Episode [e]\,)Subtitle(10)Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
-  </widget>
-  <widget backgroundColor="windowBackground" font="font_standard" transparent="1" halign="left" valign="top" position="150,360" size="1620,400" render="Label" source="session.Event_Now" zPosition="1">
-    <convert type="EventName">ExtendedDescription</convert>
-  </widget>
-  
+
   <!--<widget font="SetrixHD;40" position="45,20" render="Label" size="960,50" valign="center" backgroundColor="windowBackground" transparent="1" source="session.CurrentService" zPosition="1">
     <convert type="ServiceName">Name</convert>
   </widget>
@@ -5739,8 +5739,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     <convert type="MetrixReloadedCompareString"></convert>
     <convert type="ConditionalShowHide" />
   </widget>-->
-  
-  <widget text="SecondInfoBar" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,775" />
+  <widget text="SecondInfoBar" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,775" />
 </screen>
 <screen name="SelectCountry" position="center,center" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
