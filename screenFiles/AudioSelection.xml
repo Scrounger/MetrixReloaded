@@ -1,4 +1,4 @@
-﻿<screen name="AudioSelection" position="center,center" size="1050,750" title="Audio" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="AudioSelection" position="center,center" size="1050,750" title="Audio" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_contextMenu" />
   <!-- Title -->
@@ -7,7 +7,7 @@
   <panel name="panel_seperator_contextMenu_title" />
   <!-- Context Panel -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" position="contextMenu_list_pos" size="1020,300" textOffset="5,1" font="font_list" itemHeight="50" transparent="1" zPosition="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
-  <eLabel name="Seperator" position="15,350" size="1020,2" zPosition="5" backgroundColor="seperator" />
+  <eLabel name="Seperator" position="15,395" size="1020,2" zPosition="5" backgroundColor="seperator" />
   <widget source="key_red" render="Pixmap" pixmap="MetrixReloaded/media/buttons/key_red_small.png" position="5,88" size="key_size_small" alphatest="blend" zPosition="2">
     <convert type="ConditionalShowHide" />
   </widget>
@@ -20,7 +20,7 @@
   <widget source="key_blue" render="Pixmap" pixmap="MetrixReloaded/media/buttons/key_blue_small.png" position="5,238" size="key_size_small" alphatest="blend" zPosition="2">
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="streams" render="Listbox" position="15,370" size="1020,360" zPosition="3" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
+  <widget source="streams" render="Listbox" position="15,415" size="1020,300" zPosition="3" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"templates":
       {"default": (50, [
@@ -43,5 +43,5 @@
       }
     </convert>
   </widget>
-  <widget text="AudioSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="850,725" />
+  <widget text="AudioSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="850,725" />
 </screen>
