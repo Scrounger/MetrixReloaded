@@ -79,6 +79,8 @@
     "Kulturmagazin",
     "Katastrophenfilm",
     "Krimireihe",
+    "Kinder-Abenteuerfilm",
+    "Kinder-Animationsfilm",
     "Liebeskomödie",
     "Liebesgeschichte",
     "Liebesdrama",
@@ -109,6 +111,7 @@
     "Romantische Komödie",
     "Romance",
     "Romanverfilmung",
+    "Reality-Doku",
     "Sitcom",
     "Show",
     "Science-Fiction-Komödie",
@@ -128,6 +131,7 @@
     "Telenovela",
     "Thrillerkomödie",
     "Tragikomödie",
+    "Tanzfilm",
     "Unterhaltungs-Show",
     "Unterhaltungsshow",
     "Werbesendung",
@@ -136,5 +140,6 @@
     "Wissenschaftsmagazin",
     "Westernkomödie",
     "Zeichentrick-Serie",
-    "Zeichentrickfilm"
+    "Zeichentrickfilm",
+    "Zeichentrick-Special"
 ]

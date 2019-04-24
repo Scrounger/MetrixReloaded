@@ -321,10 +321,10 @@ class MetrixReloadedExtEventEPG(Converter, object):
 
 		return type
 	
-	def getCountry(self, type, values, event):
+	def getCountry(self, type, values, event, useEPGShare = True):
 		country = None
 		
-		if(values != None and len(values) > 0):
+		if(values != None and len(values) > 0 and useEPGShare):
 		#EpgShare Daten in DB vorhanden
 			if 'country' in values:
 				if len(str(values['country']).strip()) > 0:
@@ -370,12 +370,33 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				if(desc != None and prefix != None):
 					desc = '%s%s' % (prefix, desc)
 
+		# Episoden Nummer entfernen
+		if(desc != None and ". Staffel, Folge" in desc):
+			episodeNum = self.getEpisodeNum("EpisodeNum([s]. Staffel, Folge [e]: )", event, values)
+			if (episodeNum != None):
+				desc = desc.replace(episodeNum, "")
+		
+		# ParentalRating entfernen
+		if(desc != None and (" Jahren" in desc or " Jahre" in desc)):
+			parentialRating = self.getParentalRating("ParentalRating", event, values, False)
+			if (parentialRating != None):
+				desc = desc.replace("Ab %s Jahren" % (parentialRating), "")
+				desc = desc.replace("Ab %s Jahre" % (parentialRating), "")
+		
+		# Country und Year entfernen
+		if(desc != None):
+			country = self.getCountry("Country", values, event, False)
+			year = self.getYear("Year", values, event, False)
+			if(country != None and year != None):
+				desc = desc.replace("%s %s. " % (country, year), "")
+				desc = desc.replace("%s %s" % (country, year), "")
+
 		return desc
 	
-	def getYear(self, type, values, event):
+	def getYear(self, type, values, event, useEPGShare = True):
 		year = None
 
-		if(values != None and len(values) > 0):
+		if(values != None and len(values) > 0 and useEPGShare):
 		#EpgShare Daten in DB vorhanden
 			if 'year' in values:
 				if len(str(values['year']).strip()) > 0:
@@ -491,10 +512,10 @@ class MetrixReloadedExtEventEPG(Converter, object):
 			if(isStars):
 				return ""
 	
-	def getParentalRating(self, type, event, values):				
+	def getParentalRating(self, type, event, values, useEPGShare = True):				
 		parentialRating = None
 		
-		if(values != None and len(values) > 0):
+		if(values != None and len(values) > 0 and useEPGShare):
 		#EpgShare Daten in DB vorhanden
 			if 'ageRating' in values:
 				if len(str(values['ageRating']).strip()) > 0:
