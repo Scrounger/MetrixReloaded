@@ -5664,41 +5664,36 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
 </screen>
 <screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1920,800" title="SecondInfoBar" backgroundColor="transparent" animationMode="disable" zPosition="2">
   <!-- Background -->
-  <eLabel backgroundColor="windowBackground" position="120,37" size="1680,740" zPosition="-10" />
+  <eLabel backgroundColor="windowBackground" position="120,37" size="1050,740" zPosition="-10" />
+  <eLabel backgroundColor="windowBackgroundSecond" position="1170,57" size="630,700" zPosition="-10" />
   <!-- Title -->
-  <widget source="session.extEvent_Now" position="150,60" size="1620,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+  <widget source="session.extEvent_Now" position="150,60" size="1000,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[Title]</convert>
   </widget>
   <!-- Seperators -->
-  <eLabel name="Seperator" position="145,122" size="1630,2" zPosition="5" backgroundColor="seperator" />
-  <eLabel name="Seperator" position="655,135" size="1,620" zPosition="5" backgroundColor="seperator" />
-
-
+  <eLabel name="Seperator" position="145,122" size="1010,2" zPosition="5" backgroundColor="seperator" />
   <!-- EpisodeName & Description-->
-  <widget source="session.extEvent_Now" position="670,135" size="1112,625" backgroundColor="windowBackground" font="font_standard" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+  <widget source="session.extEvent_Now" position="150,136" size="1000,625" backgroundColor="windowBackground" font="font_standard" halign="left" valign="top" render="Label" transparent="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(Staffel [s], Episode [e]\,)Subtitle(10)ExtendedDescription(\n\n)]</convert>
   </widget>
-
   <!-- Image-->
-  <widget backgroundColor="windowBackground" foregroundColor="foreground" position="150,135" size="490,280" scale="3" render="MetrixReloadedEventImage" source="session.extEvent_Now" transparent="1" zPosition="3" />
-
+  <widget backgroundColor="windowBackground" foregroundColor="foreground" position="1240,78" size="490,280" scale="3" render="MetrixReloadedEventImage" source="session.extEvent_Now" transparent="1" zPosition="3" />
   <!-- ParentalRating Image-->
-  <widget alphatest="blend" path="MetrixReloaded/media/logos/parentalrating" position="568,695" render="MetrixReloadedIcon" size="60,60" source="session.extEvent_Now" zPosition="3">
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/parentalrating" position="1660,687" render="MetrixReloadedIcon" size="60,60" source="session.extEvent_Now" zPosition="3">
     <convert type="MetrixReloadedExtEventEPG">ParentalRating</convert>
   </widget>
   <!-- Rating Stars -->
-  <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="201,715" render="MetrixReloadedIcon" size="321,40" source="session.extEvent_Now" zPosition="10">
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="1322,697" render="MetrixReloadedIcon" size="321,40" source="session.extEvent_Now" zPosition="10">
     <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
   </widget>
   <!-- Image vorhanden-->
-  <widget source="session.extEvent_Now" position="150,425" size="490,335" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+  <widget source="session.extEvent_Now" position="1240,371" size="490,335" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
   </widget>
   <!-- Kein Image vorhanden -->
-  <widget source="session.extEvent_Now" position="150,135" size="490,625" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+  <widget source="session.extEvent_Now" position="1239,80" size="490,625" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
   </widget>
-
   <!--<widget font="SetrixHD;40" position="45,20" render="Label" size="960,50" valign="center" backgroundColor="windowBackground" transparent="1" source="session.CurrentService" zPosition="1">
     <convert type="ServiceName">Name</convert>
   </widget>
@@ -5741,6 +5736,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   </widget>-->
   <widget text="SecondInfoBar" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,775" />
 </screen>
+
 <screen name="SelectCountry" position="center,center" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />

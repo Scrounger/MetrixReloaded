@@ -9,7 +9,7 @@
   <!-- Seperators -->
   <eLabel name="Seperator" position="145,122" size="1010,2" zPosition="5" backgroundColor="seperator" />
   <!-- EpisodeName & Description-->
-  <widget source="session.extEvent_Now" position="150,136" size="1000,625" backgroundColor="windowBackground" font="font_standard" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+  <widget source="session.extEvent_Now" position="150,136" size="1000,625" backgroundColor="windowBackground" font="font_standard" halign="left" valign="top" render="Label" transparent="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(Staffel [s], Episode [e]\,)Subtitle(10)ExtendedDescription(\n\n)]</convert>
   </widget>
   <!-- Image-->
@@ -23,11 +23,11 @@
     <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
   </widget>
   <!-- Image vorhanden-->
-  <widget source="session.extEvent_Now" position="1240,371" size="490,335" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+  <widget source="session.extEvent_Now" position="1240,371" size="490,335" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
   </widget>
   <!-- Kein Image vorhanden -->
-  <widget source="session.extEvent_Now" position="1239,80" size="490,625" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
+  <widget source="session.extEvent_Now" position="1239,80" size="490,625" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
   </widget>
   <!--<widget font="SetrixHD;40" position="45,20" render="Label" size="960,50" valign="center" backgroundColor="windowBackground" transparent="1" source="session.CurrentService" zPosition="1">
