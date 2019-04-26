@@ -4,6 +4,8 @@ from Components.Sources.ExtEvent import ExtEvent
 from Components.Sources.extEventInfo import extEventInfo
 from ServiceReference import ServiceReference
 from Components.config import config
+from enigma import iPlayableServicePtr
+from ServiceReference import ServiceReference
 
 import json
 import os
@@ -126,6 +128,26 @@ def getVersion():
         pFile.close()
 
     return version
+
+def getChannelName(source):
+    service = source.service
+    if isinstance(service, iPlayableServicePtr):
+        info = service and service.info()
+        ref = None
+    elif type(source) == ExtEvent:
+        ref = service
+    elif str(type(source)) == "<class 'Components.Sources.extEventInfo.extEventInfo'>":
+        ref = service
+    else:  # reference
+        info = service and source.info
+        ref = service
+
+    try:
+        name = ref and info.getName(ref)
+    except Exception:
+        name = ServiceReference(str(ref)).getServiceName()
+
+    return name.replace('\xc2\x86', '').replace('\xc2\x87', '')
 
 def initializeLog(fileName):
     logger = logging.getLogger(fileName)
