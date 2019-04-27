@@ -7,42 +7,45 @@ from Components.config import config
 from enigma import iPlayableServicePtr
 from ServiceReference import ServiceReference
 
+from Tools.Alternatives import GetWithAlternative
+
 import json
 import os
 import time
 import base64
 import logging
 
-def getExtraData(source, logger):
+def getExtraData(source, logger, logPrefix =""):
     if source.event:
         if type(source) == ExtEvent:
             try:
                 starttime = source.event.getBeginTime()
                 title = source.event.getEventName()
-                return json.dumps(getDataFromDatabase(str(source.service), str(source.event.getEventId()), logger, starttime, title))
+                
+                return json.dumps(getDataFromDatabase(str(source.service), str(source.event.getEventId()), logger, logPrefix, starttime, title))
             except Exception as ex:
-                logger.exception("getExtraData (1): %s", str(ex))
+                logger.exception("%sgetExtraData (1): %s", logPrefix, str(ex))
                 return "Error1: %s" % str(ex)
         elif str(type(source)) == "<class 'Components.Sources.extEventInfo.extEventInfo'>":
             try:
-                return json.dumps(getDataFromDatabase(str(source.service), str(source.eventid), logger))
+                return json.dumps(getDataFromDatabase(str(source.service), str(source.eventid), logger, logPrefix))
             except Exception as ex:
-                logger.exception("getExtraData (2): %s", str(ex))
+                logger.exception("%sgetExtraData (2): %s", logPrefix, str(ex))
                 return "Error2: %s" % str(ex)
         elif hasattr(source, 'service'):
             try:
                 service = source.getCurrentService()
                 servicereference = ServiceReference(service)
-                return json.dumps(getDataFromDatabase(str(servicereference), str(source.event.getEventId()), logger))
+                return json.dumps(getDataFromDatabase(str(servicereference), str(source.event.getEventId()), logger, logPrefix))
             except Exception as ex:
-                logger.exception("getExtraData (3): %s", str(ex))
+                logger.exception("%sgetExtraData (3): %s", logPrefix, str(ex))
                 return "Error3: %s" % str(ex)
         elif type(source) == Event:
             return source.event.getExtraEventData()
     return ""
 
 
-def getDataFromDatabase(service, eventid, logger, beginTime=None, EventName=None):
+def getDataFromDatabase(service, eventid, logger, logPrefix = "", beginTime=None, EventName=None):
     try:
         from Plugins.Extensions.EpgShare.main import getEPGDB
         data = None
@@ -50,11 +53,22 @@ def getDataFromDatabase(service, eventid, logger, beginTime=None, EventName=None
             service = service.split("::")[0] + ":"
         if "http" in str(service):
             service = service.split("http")[0]
+
+        # Bug Fix, if channel has alternatives
+        if str(service).startswith("1:134"):
+            service = GetWithAlternative(str(service))
+
         if not "1:0:0:0:0:0:0:0:0:0:" in service and not "4097:0:0:0:0:0:0:0:0:0:" in service:
             if beginTime and EventName:
+                queryPara = "ref: %s, eventId: %s, title:: %s, beginTime: %s" % (str(service), str(eventid), str(EventName.lower()).decode("utf-8"), str(int(beginTime)))
+                logger.debug("%sgetDataFromDatabase: %s", logPrefix, queryPara)
+
                 data = getEPGDB().selectSQL("SELECT * FROM epg_extradata WHERE ref = ? AND (eventid = ? or (LOWER(title) = ? and airtime BETWEEN ? AND ?))",
                                             [str(service), str(eventid), str(EventName.lower()).decode("utf-8"), str(int(beginTime) - 120), str(int(beginTime) + 120)])
             else:
+                queryPara = "ref: %s, eventId: %s" % (str(service), str(eventid))
+                logger.debug("%sgetDataFromDatabase: %s", logPrefix, queryPara)
+
                 data = getEPGDB().selectSQL("SELECT * FROM epg_extradata WHERE ref = ? AND eventid = ?",
                                             [str(service), str(eventid)])
             if data and len(data) > 0:
@@ -64,7 +78,7 @@ def getDataFromDatabase(service, eventid, logger, beginTime=None, EventName=None
         else:
             return None
     except Exception as ex:
-        logger.exception("getDataFromDatabase: %s", str(ex))
+        logger.exception("%sgetDataFromDatabase: %s", logPrefix, str(ex))
         return None
 
 
@@ -146,7 +160,7 @@ def getChannelName(source):
         name = ref and info.getName(ref)
     except Exception:
         name = ServiceReference(str(ref)).getServiceName()
-
+    
     return name.replace('\xc2\x86', '').replace('\xc2\x87', '')
 
 def initializeLog(fileName):
