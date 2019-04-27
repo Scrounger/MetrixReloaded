@@ -104,6 +104,17 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 
 ## Changelog
 
+### 0.9.0 BETA (xx.xx.2019)
+* EPGImport bug fix
+* progressBarForeground zu colors hinzugefügt
+* EPGSearch skinned
+* AudioSelection bug fixed
+* SystemInfos mehr Platz hinzugefügt
+* Converter bug fixes und Verbesserungen
+* EPG Info Anzeige erweitert (RatingsStars, RemainingTime)
+* SecondInfoBar neues Layout
+* 2 SkinParts für SecondInfoBar Layout
+
 ### 0.8.0 BETA (18.04.2019)
 * EPG Info Anzeige erweitert (SxxExx, Genre, Land, etc.)
 * Plugin ChromiumOS, FileBrowserVTi, YoutubeTv skinned
