@@ -47,7 +47,7 @@
   </widget>
   <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_gmepg_progressBar_bg_pos" size="window_gmepg_progressBar_bg_size" zPosition="1"/>
-  <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_gmepg_progressBar_pos" render="Progress" size="window_gmepg_progressBar_size" source="Event" transparent="1" zPosition="2">
+  <widget backgroundColor="progressBarBackground" foregroundColor="progressBarForeground" borderWidth="0" position="window_gmepg_progressBar_pos" render="Progress" size="window_gmepg_progressBar_size" source="Event" transparent="1" zPosition="2">
     <convert type="EventTime">Progress</convert>
   </widget>
   <!-- Remaining Time-->

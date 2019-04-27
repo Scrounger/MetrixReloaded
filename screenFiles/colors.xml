@@ -32,7 +32,8 @@
   
   <!-- ProgressBar -->
   <color name="progressBarSmallBackground" value="lightgrey" />
-  <color name="progressBarBackground" value="#40000000" />  
+  <color name="progressBarBackground" value="#40000000" />
+  <color name="progressBarForeground" value="foreground" />
   <color name="infoBar_moviePlayer_progressBar_background" value="accent1" />
   <color name="infoBar_moviePlayer_progressBar_foreground" value="backgroundSecond" />
   <color name="slider_background" value="windowBackground" />
