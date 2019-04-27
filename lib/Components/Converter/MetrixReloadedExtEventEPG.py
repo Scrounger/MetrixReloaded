@@ -58,16 +58,18 @@ class MetrixReloadedExtEventEPG(Converter, object):
 	def getText(self):
 		#self.log.info('getText: inputString: %s (%s)', str(self.inputString), len(self.types))
 		
+		if hasattr(self.source, 'getEvent'):
+			# source is 'extEventInfo'
+			event = self.source.getEvent()
+		else:
+			# source is 'ServiceEvent' / 'ExtEvent'
+			event = self.source.event
+
+		# Prüfen ob event tuple ist
+		if (isinstance(event, tuple)):
+			event = event[0]
+
 		extraData = getExtraData(self.source, self.log)
-		
-		try:
-			event = self.source.event[0]
-		except:
-			try:
-				event = self.source.event
-			except:
-				event = None
-		
 		values = self.deserializeJson(extraData)
 		#values = None
 		
