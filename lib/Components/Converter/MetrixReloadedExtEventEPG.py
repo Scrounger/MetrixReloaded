@@ -25,8 +25,8 @@ class MetrixReloadedExtEventEPG(Converter, object):
 	GENRE = "Genre"									# optional mit Prefix angabe -> z.B. Genre oder Genre(Genre:)
 	YEAR = "Year"									# optional mit Prefix angabe -> z.B. Year oder Year(Jahr:)
 	COUNTRY = "Country"								# optional mit Prefix angabe -> z.B. Country oder Country(Land:)
-	RATING = "Rating"								# (nur EpgShare) optional mit Prefix angabe -> z.B. Rating(Bewertung)
-	RATING_STARS = "RatingStars"					# (nur EpgShare) optional mit Prefix angabe -> z.B. RatingStars(star) -> Output: 65 -> kann für Images verwendet werden
+	RATING = "Rating"								# optional mit Prefix angabe -> z.B. Rating(Bewertung)
+	RATING_STARS = "RatingStars"					# optional mit Prefix angabe -> z.B. RatingStars(star) -> Output: 65 -> kann für Images verwendet werden
 	CATEGORY = "Category"							# (nur EpgShare) optional mit Prefix angabe -> z.B. Category(Kategorie:)
 	EXTENDED_DESCRIPTION = "ExtendedDescription"	# optional mit Prefix angabe -> z.B. ExtendedDescription oder ExtendedDescription(Land:)
 	POWER_DESCRIPTION = "PowerDescription"		
