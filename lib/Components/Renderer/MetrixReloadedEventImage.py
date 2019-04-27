@@ -12,8 +12,9 @@ from skin import parseColor, parseFont
 from twisted.web.client import downloadPage, getPage
 from Components.Sources.ExtEvent import ExtEvent
 from Components.Sources.ServiceEvent import ServiceEvent
-from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, getEpgShareImagePath, initializeLog
+from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, getEpgShareImagePath, getChannelName, initializeLog
 import logging
+
 
 class MetrixReloadedEventImage(Renderer):
     DOWNOAD_IMAGE = "DOWNOAD_IMAGE"
@@ -24,6 +25,7 @@ class MetrixReloadedEventImage(Renderer):
 
         # Log initialisieren
         self.log = initializeLog("MetrixReloadedEventImage")
+        self.logPrefix = ""
 
         self.eventid = None
         self.downloads = []
@@ -41,6 +43,12 @@ class MetrixReloadedEventImage(Renderer):
     GUI_WIDGET = eWidget
 
     def applySkin(self, desktop, screen):
+
+        if (isinstance(screen.skinName, str)):
+            self.screenName = screen.skinName
+        else:
+            self.screenName = ', '.join(screen.skinName)
+
         if self.skinAttributes:
             attribs = []
             for attrib, value in self.skinAttributes:
@@ -89,13 +97,16 @@ class MetrixReloadedEventImage(Renderer):
 
             self.hideimage()
 
-            event = self.source.event
-            try:
-                #Prüfen ob eventId vorhanden ist
-                eventid = event.getEventId()
-            except Exception as e:
-                #Fehler, dann ist event ggf. ein array
-                event = self.source.event[0]
+            if hasattr(self.source, 'getEvent'):
+                # source is 'extEventInfo'
+                event = self.source.getEvent()
+            else:
+                # source is 'ServiceEvent' / 'ExtEvent'
+                event = self.source.event
+
+            # Prüfen ob event tuple ist
+            if (isinstance(event, tuple)):
+                event = event[0]
 
             if event is None:
                 self.eventid = None
@@ -104,16 +115,24 @@ class MetrixReloadedEventImage(Renderer):
             if what[0] == self.CHANGED_CLEAR:
                 self.eventid = None
             if what[0] != self.CHANGED_CLEAR:
+                self.logPrefix = "[%s, %s, %s] " % (self.screenName, type(
+                    self.source).__name__, getChannelName(self.source))
 
                 if event:
+                    if hasattr(self.source, 'getEvent'):
+                        eventid = self.source.getEventId()
+                    else:
+                        eventid = event.getEventId()
+
                     self.smallptr = False
-                    eventid = event.getEventId()
                     startTime = event.getBeginTime()
                     title = event.getEventName()
 
                     # Default Image aus Folder 'Default' über Title
                     defaultImage = getDefaultImage(self, title)
                     if (defaultImage != None):
+                        self.log.debug(
+                            "%schanged: load default image for '%s'", self.logPrefix, title)
                         self.smallptr = True
                         self.image.setPixmap(loadJPG(defaultImage))
                         self.image.setScale(self.scaletype)
@@ -121,17 +140,20 @@ class MetrixReloadedEventImage(Renderer):
                         return
 
                     # ExtraDaten aus db holen
-                    values = self.deserializeJson(getExtraData(self.source, self.log))
+                    values = self.deserializeJson(
+                        getExtraData(self.source, self.log, self.logPrefix))
 
                     if(values != None and len(values) > 0 and eventid):
                         try:
                             if eventid != self.eventid:
                                 self.id = str(values['id'])
 
-                                sizedImage = getEventImage(self, 
-                                    startTime, self.id, True)
+                                sizedImage = getEventImage(self,
+                                                           startTime, self.id, True)
                                 if (sizedImage != None):
                                     # Image mit size des Widgets laden, sofern verfügbar
+                                    self.log.debug(
+                                        "%schanged: load local image for '%s' (size: %sx%s)", self.logPrefix, title, self.WCover, self.HCover)
                                     self.image.setPixmap(loadJPG(sizedImage))
                                     self.image.setScale(self.scaletype)
                                     self.showimage()
@@ -146,13 +168,14 @@ class MetrixReloadedEventImage(Renderer):
 
                             return
                         except Exception as e:
-                            self.log.exception("changed: %s", str(e))
+                            self.log.exception(
+                                "%schanged (1): %s", self.logPrefix, str(e))
                             self.hideimage()
 
         except Exception as e:
-            self.log.exception("changed: %s", str(e))
+            self.log.exception("%schanged: %s", self.logPrefix, str(e))
             self.hideimage()
-        
+
         return
 
     def GUIcreate(self, parent):
@@ -181,15 +204,17 @@ class MetrixReloadedEventImage(Renderer):
         onlineMode = True
         try:
             onlineMode = config.plugins.MetrixReloaded.onlineMode.value
-            self.log.debug("onlineMode: %s" % (str(config.plugins.MetrixReloaded.onlineMode.value)))
         except Exception as e:
-            self.log.exception("getEpgShareImagePath: %s", str(e))
+            self.log.exception("%sgetEpgShareImagePath: %s",
+                               self.logPrefix, str(e))
 
         if(onlineMode):
+            self.log.debug("%schanged: searching online image for '%s'",
+                           self.logPrefix, event.getEventName())
             url = 'http://capi.tvmovie.de/v1/broadcast/%s?fields=images.id,previewImage.id' % str(
                 eventId)
             getPage(url).addCallback(self.response, self.DOWNOAD_IMAGE, eventId, startTime,
-                                    event).addErrback(self.responseError, self.DOWNOAD_IMAGE, startTime)
+                                     event).addErrback(self.responseError, self.DOWNOAD_IMAGE, startTime)
 
     def response(self, data, response, eventId, startTime, event):
         # Antwort für Async Task
@@ -217,16 +242,22 @@ class MetrixReloadedEventImage(Renderer):
                             str(self.WCover), str(self.HCover), url)
 
                         # Image downloaden
+                        self.log.debug("%schanged: download image for '%s' (size: %sx%s)",
+                                       self.logPrefix, event.getEventName(), self.WCover, self.HCover)
+
                         downloadPage(url, imageFileName).addCallback(
                             self.response, self.SHOW_IMAGE, eventId, startTime, event).addErrback(self.responseError, response, startTime)
                     else:
                         # Kein Bild zum donwload vorhanden, auf Platte zurück greifen
+                        self.log.debug(
+                            "%schanged: no online image exist for '%s'", self.logPrefix, event.getEventName())
                         self.showSmallImage(startTime, eventId)
 
                     # TODO: Hier noch als alternative wenn Daten nicht vefügbar sind, smallImage von Platte laden
 
             except Exception as e:
-                self.log.exception("response: [%s] %s", response, str(e))
+                self.log.exception(
+                    "%sresponse: [%s] %s", self.logPrefix, response, str(e))
                 self.hideimage()
 
         if (response == self.SHOW_IMAGE):
@@ -234,6 +265,8 @@ class MetrixReloadedEventImage(Renderer):
             try:
                 if (os.path.exists(imageFileName)):
                     if (eventId == self.id):
+                        self.log.debug("%schanged: load downloaded image for '%s' (size: %sx%s)",
+                                       self.logPrefix, event.getEventName(), self.WCover, self.HCover)
                         self.image.setPixmap(loadJPG(imageFileName))
                         self.image.setScale(self.scaletype)
                         self.showimage()
@@ -241,11 +274,13 @@ class MetrixReloadedEventImage(Renderer):
                         # Kein Bild vorhanden, auf Platte zurück greifen
                         self.showSmallImage(startTime, eventId)
             except Exception as e:
-                self.log.exception("response: [%s] %s", response, str(e))
+                self.log.exception(
+                    "%sresponse: [%s] %s", self.logPrefix, response, str(e))
                 self.hideimage()
 
     def responseError(self, e, response, startTime):
-        self.log.exception("response: [%s] %s", response, str(e))
+        self.log.exception(
+            "%sresponse: [%s] %s", self.logPrefix, response, str(e))
         self.showSmallImage(startTime, self.id)
 
     def showSmallImage(self, startTime, eventId):
@@ -258,18 +293,11 @@ class MetrixReloadedEventImage(Renderer):
         else:
             self.hideimage()
 
-    def checkEpgShareAvailable(self):
-        try:
-            from Plugins.Extensions.EpgShare.main import getEPGDB
-            return True
-        except:
-            return False
-
     def deserializeJson(self, data):
         # Daten aus DB deserializieren
         try:
             if str(data) != '':
                 return json.loads(data)
         except Exception as e:
-            self.log.exception("deserializeJson: %s", str(e))
+            self.log.exception("%sdeserializeJson: %s", self.logPrefix, str(e))
             return None
