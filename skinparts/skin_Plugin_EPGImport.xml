@@ -1,4 +1,7 @@
 <skin>
+  <parameters>
+    <parameter name="SelectionListDescr" value="5, 1, 1050, 40" />
+  </parameters>
 	<screen name="EPGImportConfig" position="0,0" size="1920,1080" title="EPG Import Configuration" backgroundColor="transparent" flags="wfNoBorder">
     <!-- Backgrounds -->
     <panel name="panel_background_window" />
@@ -41,8 +44,6 @@
 		<widget name="list" position="window_list_pos" size="window_list_size" itemHeight="50" font="font_list" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />			
     <!-- Right Panel (Right Side) -->
     <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/plugin.png" position="window_image_pos" size="window_image_size" scale="1" />
-    <!-- Remote Buttons -->
-    <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
     <!-- Buttons -->
     <panel name="panel_color_buttons_window" />
     <panel name="panel_key_red_name" />
