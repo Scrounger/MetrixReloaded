@@ -1731,6 +1731,65 @@
   <panel name="panel_key_green_source" />
   <widget text="EPGPanel" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
+<screen name="EPGSearch" position="center,center" size="1920,1080" title="EPGSearch" flags="wfNoBorder" backgroundColor="transparent" NoAnimationAfter="1">
+  <!-- Backgrounds -->
+  <panel name="panel_background_window" />
+  <!-- Title -->
+  <panel name="panel_Title_window" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <!-- Parameters: EPGlistText1OffSet, EPGlistText2OffSet, EPGlistNonRecTextOffset-->
+  <!-- Fonts: EPGList0, EPGList1 -->
+  <!-- Right Panel (Right Side) -->
+  <widget position="window_epg_picon_pos" size="window_epg_picon_size" source="Service" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <!-- EpgShare Image -->
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="Event" render="Label" position="window_epg_startTime_pos" zPosition="1" halign="right" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText" />
+  </widget>
+  <widget source="Event" render="Label" position="window_epg_endTime_pos" zPosition="1" halign="left" size="window_epg_startendTime_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText" />
+  </widget>
+  <!-- Rating Stars -->
+  <widget alphatest="blend" path="MetrixReloaded/media/logos/stars" position="window_epg_ratingStars_pos" size="window_epg_ratingStars_size" render="MetrixReloadedIcon"  source="ExtEvent" zPosition="1" scale="1">
+    <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
+  </widget>
+  <!-- ProgressBar -->
+  <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_epg_progressBar_bg_pos" size="window_epg_progressBar_bg_size" />
+  <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <!-- Remaining Time-->
+  <widget backgroundColor="windowBackgroundSecond" font="font_standard_extra_very_small" halign="center" position="window_epg_remaining_pos" render="Label" size="window_epg_remaining_size" source="Event" transparent="1" valign="top">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  
+  <widget source="ExtEvent" position="window_epg_desc_pos" zPosition="1" size="622,470" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" valign="top" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
+  </widget>
+  <!-- Remote Buttons -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/epg.png" position="window_remote_button_middle_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
+  <!-- Buttons -->
+  <panel name="panel_color_buttons_window" />
+  <panel name="panel_key_red_name" />
+  <panel name="panel_key_green_name" />
+  <panel name="panel_key_yellow_name" />
+  <panel name="panel_key_blue_name" />
+  <widget text="EPGSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+</screen>
 <screen name="EPGSearchSetup" position="center,center" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
@@ -1757,16 +1816,12 @@
   <widget font="font_window_title" position="window_title_pos" render="Label" size="window_title_size" source="Service" transparent="1" backgroundColor="windowBackground">
     <convert type="ServiceName">Name</convert>
   </widget>
-  <!-- Title bei Verwendung als EPG-Suche-->
-  <widget source="Title" render="Label" position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" noWrap="1">
-    <convert type="MetrixReloadedCompareString">EPG-Suche</convert>
-  </widget>
   <!-- Clock -->
   <panel name="panel_clock_window" />
   <!-- Title Seperator -->
   <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" zPosition="10" itemHeight="50" size="window_list_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" itemHeight="50" size="window_list_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Parameters: EPGlistText1OffSet, EPGlistText2OffSet, EPGlistNonRecTextOffset-->
   <!-- Fonts: EPGList0, EPGList1 -->
   <!-- Right Panel (Right Side) -->
@@ -5052,12 +5107,20 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <parameter name="EPGlistEPGBarIconOffset" value="5,6" />
   <!-- EPGSelection - Single -->
   <parameter name="EPGListItemHeight" value="50" />
-  <parameter name="EPGSearchItemHeightBig" value="65" />
-  <parameter name="EPGlistText1OffSet" value="-40, 4" />
-  <parameter name="EPGlistText2OffSet" value="-110, 4" />
+  <parameter name="EPGlistText1OffSet" value="-120, 0" />
+  <parameter name="EPGlistText2OffSet" value="60, -39" />
   <parameter name="EPGlistRecImageOffset" value="-105, 15" />
   <parameter name="EPGlistRecTextOffset" value="-95, 4" />
-  <parameter name="EPGlistNonRecTextOffset" value="-70, 4" />
+  <parameter name="EPGlistNonRecTextOffset" value="60, 0" />
+
+  <!-- EPGSearch -->
+  <parameter name="EPGSearchItemHeightDefault" value="90" />
+  <parameter name="EPGSearchItemHeightBig" value="90" />
+  <parameter name="EPGlistText1" value="10,1,160,40" />
+  <parameter name="EPGlistText2" value="10,40,160,40" />
+  <parameter name="EPGlistText3" value="200,-5,850,40" />
+  <parameter name="EPGlistNonRecText" value="200,1,850,40" />
+  
   <!-- EPGSelectionMulti -->
   <parameter name="EPGlistMultiRecTextOffset" value="10, 1" />
   <parameter name="EPGlistMultiRecIconOffset" value="0, 10" />

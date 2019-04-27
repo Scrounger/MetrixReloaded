@@ -55,12 +55,20 @@
   <parameter name="EPGlistEPGBarIconOffset" value="5,6" />
   <!-- EPGSelection - Single -->
   <parameter name="EPGListItemHeight" value="50" />
-  <parameter name="EPGSearchItemHeightBig" value="65" />
-  <parameter name="EPGlistText1OffSet" value="-40, 4" />
-  <parameter name="EPGlistText2OffSet" value="-110, 4" />
+  <parameter name="EPGlistText1OffSet" value="-120, 0" />
+  <parameter name="EPGlistText2OffSet" value="60, -39" />
   <parameter name="EPGlistRecImageOffset" value="-105, 15" />
   <parameter name="EPGlistRecTextOffset" value="-95, 4" />
-  <parameter name="EPGlistNonRecTextOffset" value="-70, 4" />
+  <parameter name="EPGlistNonRecTextOffset" value="60, 0" />
+
+  <!-- EPGSearch -->
+  <parameter name="EPGSearchItemHeightDefault" value="90" />
+  <parameter name="EPGSearchItemHeightBig" value="90" />
+  <parameter name="EPGlistText1" value="10,1,160,40" />
+  <parameter name="EPGlistText2" value="10,40,160,40" />
+  <parameter name="EPGlistText3" value="200,-5,850,40" />
+  <parameter name="EPGlistNonRecText" value="200,1,850,40" />
+  
   <!-- EPGSelectionMulti -->
   <parameter name="EPGlistMultiRecTextOffset" value="10, 1" />
   <parameter name="EPGlistMultiRecIconOffset" value="0, 10" />
