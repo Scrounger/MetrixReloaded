@@ -955,7 +955,7 @@
   </widget>
   <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_epg_progressBar_bg_pos" size="window_epg_progressBar_bg_size" />
-  <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="ServiceEvent" transparent="1" zPosition="1">
+  <widget backgroundColor="progressBarBackground" foregroundColor="progressBarForeground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="ServiceEvent" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
   <!-- Remaining Time-->
@@ -1249,7 +1249,8 @@
   
   <!-- ProgressBar -->
   <color name="progressBarSmallBackground" value="lightgrey" />
-  <color name="progressBarBackground" value="#40000000" />  
+  <color name="progressBarBackground" value="#40000000" />
+  <color name="progressBarForeground" value="foreground" />
   <color name="infoBar_moviePlayer_progressBar_background" value="accent1" />
   <color name="infoBar_moviePlayer_progressBar_foreground" value="backgroundSecond" />
   <color name="slider_background" value="windowBackground" />
@@ -1741,7 +1742,7 @@
   <!-- Title Seperator -->
   <panel name="panel_seperator_window_title" />
   <!-- Left Panel (Left Side) -->
-  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="window_list_size" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="list" backgroundColorRows="listBackgroundBarsOne" position="window_list_pos" size="1050,720" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Parameters: EPGlistText1OffSet, EPGlistText2OffSet, EPGlistNonRecTextOffset-->
   <!-- Fonts: EPGList0, EPGList1 -->
   <!-- Right Panel (Right Side) -->
@@ -1767,7 +1768,7 @@
   </widget>
   <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_epg_progressBar_bg_pos" size="window_epg_progressBar_bg_size" />
-  <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
+  <widget backgroundColor="progressBarBackground" foregroundColor="progressBarForeground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
   <!-- Remaining Time-->
@@ -1847,7 +1848,7 @@
   </widget>
   <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_epg_progressBar_bg_pos" size="window_epg_progressBar_bg_size" />
-  <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
+  <widget backgroundColor="progressBarBackground" foregroundColor="progressBarForeground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
   <!-- Remaining Time-->
@@ -1939,7 +1940,7 @@
   </widget>
   <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_epg_progressBar_bg_pos" size="window_epg_progressBar_bg_size" />
-  <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
+  <widget backgroundColor="progressBarBackground" foregroundColor="progressBarForeground" borderWidth="0" position="window_epg_progressBar_pos" render="Progress" size="window_epg_progressBar_size" source="Event" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
   <!-- Remaining Time-->
@@ -1981,7 +1982,7 @@
   <widget backgroundColor="windowBackgroundSecond" font="SetrixHD;40" halign="center" name="channel" position="1274,350" size="480,75" transparent="1" />
   <widget backgroundColor="windowBackgroundSecond" font="SetrixHD;36" halign="center" name="datetime" position="1309,485" size="405,60" transparent="1" />
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="1325,437" size="382,1" />
-  <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="1325,435" render="Progress" size="382,5" source="session.Event_Now" transparent="1" zPosition="1">
+  <widget backgroundColor="progressBarBackground" foregroundColor="progressBarForeground" borderWidth="0" position="1325,435" render="Progress" size="382,5" source="session.Event_Now" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
   <widget backgroundColor="windowBackgroundSecond" font="SetrixHD;36" halign="center" name="duration" position="1309,568" size="405,60" transparent="1" />
@@ -2539,7 +2540,7 @@
   </widget>
   <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_gmepg_progressBar_bg_pos" size="window_gmepg_progressBar_bg_size" zPosition="1"/>
-  <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_gmepg_progressBar_pos" render="Progress" size="window_gmepg_progressBar_size" source="Event" transparent="1" zPosition="2">
+  <widget backgroundColor="progressBarBackground" foregroundColor="progressBarForeground" borderWidth="0" position="window_gmepg_progressBar_pos" render="Progress" size="window_gmepg_progressBar_size" source="Event" transparent="1" zPosition="2">
     <convert type="EventTime">Progress</convert>
   </widget>
   <!-- Remaining Time-->
@@ -2620,7 +2621,7 @@
   </widget>
   <!-- ProgressBar -->
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_gmepg_progressBar_bg_pos" size="window_gmepg_progressBar_bg_size" zPosition="1"/>
-  <widget backgroundColor="progressBarBackground" foregroundColor="foreground" borderWidth="0" position="window_gmepg_progressBar_pos" render="Progress" size="window_gmepg_progressBar_size" source="Event" transparent="1" zPosition="2">
+  <widget backgroundColor="progressBarBackground" foregroundColor="progressBarForeground" borderWidth="0" position="window_gmepg_progressBar_pos" render="Progress" size="window_gmepg_progressBar_size" source="Event" transparent="1" zPosition="2">
     <convert type="EventTime">Progress</convert>
   </widget>
   <!-- Remaining Time-->
