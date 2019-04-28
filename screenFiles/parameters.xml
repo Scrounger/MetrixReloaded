@@ -26,13 +26,21 @@
   <parameter name="MultiQuickButtonListPic1" value="45,7,1650,36" />
   <parameter name="MultiQuickButtonListPic2" value="5,12,35,25" />
 
-  <parameter name="CoverFindListFont" value="SetrixHD;30" />
+  <!--<parameter name="CoverFindListFont" value="SetrixHD;30" />
   <parameter name="CoverFindItemHeight" value="150" />
   <parameter name="CoverFindCover" value="10,6,92,138" />
   <parameter name="CoverFindName" value="110,55,1620,40" />
   <parameter name="CoverFindListFont" value="SetrixHD;30" />
   <parameter name="CoverFindListIcon" value="5,12,25,25" />
-  <parameter name="CoverFindListName" value="40,7,1000,36" />
+  <parameter name="CoverFindListName" value="40,7,1000,36" />-->
+
+  <!-- CoverFind -->
+  <parameter name="CoverFindListFont" value="SetrixHD;30" />
+  <parameter name="CoverFindItemHeight" value="150" />
+  <parameter name="CoverFindName" value="150,60,1920,40" />
+  <parameter name="CoverFindCover" value="0,0,100,150" />
+  <parameter name="CoverFindListIcon" value="5,4,25,25" />
+  <parameter name="CoverFindListName" value="40,2,1920,35" />
 
   
   

@@ -117,6 +117,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles"
 		screenFiles\constant-widgets.xml = screenFiles\constant-widgets.xml
 		screenFiles\CoverFindAll.xml = screenFiles\CoverFindAll.xml
 		screenFiles\CoverFindConfigScreen.xml = screenFiles\CoverFindConfigScreen.xml
+		screenFiles\CoverFindFile.xml = screenFiles\CoverFindFile.xml
 		screenFiles\CoverFindScreen.xml = screenFiles\CoverFindScreen.xml
 		screenFiles\CreateQuadPipChannelEntry.xml = screenFiles\CreateQuadPipChannelEntry.xml
 		screenFiles\CronManager.xml = screenFiles\CronManager.xml

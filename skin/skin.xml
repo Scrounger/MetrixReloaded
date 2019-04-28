@@ -1320,7 +1320,7 @@
   <!-- Meine Clocks-->
 
 </constant-widgets>
-<screen name="CoverFindAll" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="CoverFindAll" title="CoverFind" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -1342,7 +1342,7 @@
   <panel name="panel_key_blue_name" />
   <widget text="CoverFindAll" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="CoverFindConfigScreen" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="CoverFindConfigScreen" title="CoverFind" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -1354,7 +1354,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="config" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/coverfind.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="info" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -1364,7 +1364,28 @@
   <panel name="panel_key_blue_name" />
   <widget text="CoverFindConfigScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="CoverFindScreen" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="CoverFindFile" title="CoverFind" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+  <!-- Backgrounds -->
+  <panel name="panel_background_window" />
+  <!-- Title -->
+  <panel name="panel_Title_window" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget name="filelist" position="105,200" size="1050,700" itemHeight="50" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <widget name="media" backgroundColor="windowBackground" foregroundColor="yellow" position="105,150" size="1065,40" zPosition="5" transparent="1" halign="left" valign="top" font="font_second_standard_small" />
+  <!-- Right Panel (Right Side) -->
+  <widget name="picture" alphatest="blend" position="1336,258" size="375,562" zPosition="2" />
+  <!-- Buttons -->
+  <panel name="panel_color_buttons_window" />
+  <panel name="panel_key_red_name" />
+  <panel name="panel_key_green_name" />
+  <panel name="panel_key_yellow_name" />
+  <widget text="CoverFindAll" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
+</screen>
+<screen name="CoverFindScreen" title="CoverFind" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
@@ -1376,7 +1397,7 @@
   <!-- Left Panel (Left Side) -->
   <widget name="list" position="window_list_pos" size="window_list_setup_size" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
   <!-- Right Panel (Right Side) -->
-  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/movie.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/coverfind.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget name="searchinfo" position="window_desc_pos" size="window_desc_size" font="font_standard" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" transparent="1" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
@@ -5085,13 +5106,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <parameter name="MultiQuickButtonListPic1" value="45,7,1650,36" />
   <parameter name="MultiQuickButtonListPic2" value="5,12,35,25" />
 
-  <parameter name="CoverFindListFont" value="SetrixHD;30" />
+  <!--<parameter name="CoverFindListFont" value="SetrixHD;30" />
   <parameter name="CoverFindItemHeight" value="150" />
   <parameter name="CoverFindCover" value="10,6,92,138" />
   <parameter name="CoverFindName" value="110,55,1620,40" />
   <parameter name="CoverFindListFont" value="SetrixHD;30" />
   <parameter name="CoverFindListIcon" value="5,12,25,25" />
-  <parameter name="CoverFindListName" value="40,7,1000,36" />
+  <parameter name="CoverFindListName" value="40,7,1000,36" />-->
+
+  <!-- CoverFind -->
+  <parameter name="CoverFindListFont" value="SetrixHD;30" />
+  <parameter name="CoverFindItemHeight" value="150" />
+  <parameter name="CoverFindName" value="150,60,1920,40" />
+  <parameter name="CoverFindCover" value="0,0,100,150" />
+  <parameter name="CoverFindListIcon" value="5,4,25,25" />
+  <parameter name="CoverFindListName" value="40,2,1920,35" />
 
   
   

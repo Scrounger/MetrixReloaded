@@ -25,6 +25,8 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 * EPGSearch
 * PiconManager
 * FFC
+* CoverFind
+* Multi QuickButton
 
 ## Installation
 
@@ -114,6 +116,7 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 * EPG Info Anzeige erweitert (RatingsStars, RemainingTime)
 * SecondInfoBar neues Layout
 * 2 SkinParts für SecondInfoBar Layout
+* Plugin CoverFind skinned
 
 ### 0.8.0 BETA (18.04.2019)
 * EPG Info Anzeige erweitert (SxxExx, Genre, Land, etc.)

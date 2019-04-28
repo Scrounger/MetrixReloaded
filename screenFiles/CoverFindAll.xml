@@ -1,4 +1,4 @@
-﻿<screen name="CoverFindAll" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+﻿<screen name="CoverFindAll" title="CoverFind" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
   <!-- Title -->
