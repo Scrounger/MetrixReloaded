@@ -339,6 +339,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles"
 		screenFiles\VTISubMenu.xml = screenFiles\VTISubMenu.xml
 		screenFiles\VTiUpdateInfo.xml = screenFiles\VTiUpdateInfo.xml
 		screenFiles\VuRcuOtaUpdate.xml = screenFiles\VuRcuOtaUpdate.xml
+		screenFiles\VWeather3Setup.xml = screenFiles\VWeather3Setup.xml
 		screenFiles\windowstyle.xml = screenFiles\windowstyle.xml
 		screenFiles\windowstyle_1.xml = screenFiles\windowstyle_1.xml
 		screenFiles\WlanConfig.xml = screenFiles\WlanConfig.xml

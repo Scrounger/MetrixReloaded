@@ -3168,39 +3168,39 @@
   <panel name="panel_key_blue_name" />
   <widget text="LocationBox" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
-<screen name="MediaPlayer" position="center,center" size="1290,919" title="MediaPlayer" flags="wfNoBorder" backgroundColor="transparent">
+<screen name="MediaPlayer" position="center,center" size="1920,1080" title="MediaPlayer" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Media.png" position="65,48" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Media Player" position="169,58" size="550,74" font="SetrixHD; 64" backgroundColor="windowBackground" transparent="1" />
-  <ePixmap pixmap="MetrixReloaded/media/icons/clock.png" position="1092,86" zPosition="1" size="31,31" alphatest="blend" />
-  <widget source="global.CurrentTime" render="Label" position="1125,86" zPosition="1" size="87,30" font="Regular; 30" backgroundColor="windowBackground" halign="right" transparent="1">
-    <convert type="ClockToText">Format:%H:%M</convert>
-  </widget>
-  <widget name="title" position="98,145" size="900,45" font="SetrixHD;38" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget name="artist" position="104,212" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget name="album" position="104,263" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget name="year" position="702,263" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget name="genre" position="702,216" size="400,33" font="Regular; 30" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget name="coverArt" pixmap="MetrixReloaded/media/no_coverArt.png" position="1143,147" size="102,102" transparent="1" alphatest="blend" />
-  <ePixmap pixmap="MetrixReloaded/media/icons/mp_buttons.png" position="73,326" size="228,27" alphatest="blend" backgroundColor="windowBackground" />
-  <ePixmap pixmap="MetrixReloaded/media/icons/media-progress-background.png" zPosition="2" position="326,326" size="844,23" alphatest="blend" />
-  <widget name="PositionGauge" zPosition="3" position="326,317" size="844,32" pointer="MetrixReloaded/media/icons/media-progress.png:844,0" seek_pointer="MetrixReloaded/media/icons/media-progress.png:844,0" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="335,366" size="100,30" font="SetrixHD;27" halign="right" valign="center" backgroundColor="windowBackground" transparent="1">
+  <!-- Title -->
+  <panel name="panel_Title_window" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <eLabel name="Filelist" position="105,150" size="165,40" text="File List" font="font_second_standard_small" backgroundColor="windowBackground" transparent="1" valign="top" foregroundColor="yellow" />
+  <widget name="filelist" position="105,200" transparent="1" size="1050,350" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
+  <widget name="searchchar" position="551,313" size="150,150" valign="center" halign="center" zPosition="100" backgroundColor="transparent" transparent="1" font="SetrixHD;100" foregroundColor="accentColorOne" />
+  <eLabel name="Playlist" position="101,562" size="165,40" text="Play List" font="font_second_standard_small" backgroundColor="windowBackground" transparent="1" foregroundColor="yellow" valign="top" />
+  <widget name="playlist" position="105,610" transparent="1" size="1050,360" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" selectionDisabled="1" />
+  <!-- Right Panel (Right Side) -->
+  <widget name="title" position="1216,118" size="620,45" font="font_epg_name" valign="top" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget name="artist" position="1216,360" size="620,40" font="font_standard" valign="top" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget name="album" position="1216,420" size="620,40" font="font_standard" valign="top" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget name="year" position="1216,300" size="620,40" font="font_standard" valign="top" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <widget name="genre" position="1216,240" size="620,40" font="font_standard" valign="top" backgroundColor="windowBackgroundSecond" transparent="1" />
+  <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="window_gmepg_progressBar_bg_pos" size="window_gmepg_progressBar_bg_size" zPosition="1" />
+  <widget name="PositionGauge" zPosition="3" position="1325,197" size="382,12" pointer="MetrixReloaded/media/media-progress.png:844,0" seek_pointer="MetrixReloaded/media/media-progress.png:844,0" transparent="1" />
+  <widget source="session.CurrentService" render="Label" position="window_gmepg_startTime_pos" size="window_epg_startendTime_size" font="font_standard" halign="right" valign="center" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="ServicePosition">Position</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="1066,366" size="100,30" font="SetrixHD;27" halign="left" valign="center" backgroundColor="windowBackground" transparent="1">
+  <widget source="session.CurrentService" render="Label" position="window_gmepg_endTime_pos" size="window_epg_startendTime_size" font="font_standard" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1">
     <convert type="ServicePosition">Remaining</convert>
   </widget>
-  <widget name="repeat" position="1198,366" size="33,27" pixmaps="MetrixReloaded/media/icons/ico_noreplay.png,MetrixReloaded/media/icons/ico_replay.png" transparent="1" alphatest="blend" />
-  <eLabel name="Filelist" position="67,441" size="165,33" text="File List" font="SetrixHD;33" backgroundColor="windowBackground" transparent="1" />
-  <widget name="filelist" position="64,491" transparent="1" size="565,350" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
-  <eLabel name="Playlist" position="669,441" size="165,33" text="Play List" font="SetrixHD;33" backgroundColor="windowBackground" transparent="1" />
-  <widget name="playlist" position="666,491" transparent="1" size="565,360" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" selectionDisabled="1" />
-  <widget name="currenttext" position="65,80" size="0,0" />
+  <widget name="repeat" position="1120,575" size="33,27" pixmaps="MetrixReloaded/media/icons/ico_noreplay.png,MetrixReloaded/media/icons/ico_replay.png" transparent="1" alphatest="blend" />
+  <widget name="currenttext" position="1216,480" size="0,0" backgroundColor="windowBackgroundSecond" transparent="1" />
   <widget name="titletext" position="65,80" size="0,0" />
-  <widget name="searchchar" position="center,550" size="150,150" valign="center" halign="center" zPosition="100" backgroundColor="transparent" transparent="1" font="SetrixHD;100" foregroundColor="accentColorOne" />
-  <widget text="MediaPlayer" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1090,894" />
+  <widget text="MediaPlayer" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <screen name="Menu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent" NoAnimationAfter="1">
   <!-- Background -->
@@ -7080,6 +7080,30 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="text" position="90,470" size="1118,90" font="Regular;30" halign="center" valign="center" backgroundColor="windowBackground" transparent="1" />
   <widget name="progress" position="90,430" size="1118,35" borderWidth="2" borderColor="foreground" />
   <widget text="VuRcuOtaUpdate" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+</screen>
+<screen name="VWeather3SetupScreen" size="1920,1080" position="0,0" title="VWeather3Setup" backgroundColor="transparent">
+  <widget name="Info" position="1218,660" size="620,107" zPosition="11" valign="center" halign="center" font="SetrixSL;26" transparent="1" foregroundColor="accent1" backgroundColor="windowBackgroundSecond" />
+  <widget name="Status" position="1218,782" size="620,90" zPosition="11" valign="center" halign="center" font="SetrixSL;26" transparent="1" foregroundColor="accent1" backgroundColor="windowBackgroundSecond" />
+  <!-- Backgrounds -->
+  <panel name="panel_background_window" />
+  <!-- Title -->
+  <!--<panel name="panel_Title_window" />-->
+  <eLabel text="VWeather3 Einstellungen " position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget name="config" transparent="1" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" zPosition="10" descriptionColor="listDescription" descriptionfont="font_list_description" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <!-- Right Panel (Right Side) -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <!-- Buttons -->
+  <panel name="panel_color_buttons_window" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
+  <widget text="SimpleList" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
 <windowstyle type="skinned" id="0">
   <!-- Main screen colors (id=0 Framebuffer) -->
