@@ -1,35 +1,30 @@
-﻿<screen name="DVDPlayer" flags="wfNoBorder" position="0,801" size="1920,279" title="DVDPlayer" backgroundColor="transparent">
-  <!-- Backgrounds -->
-  <panel name="panel_background_window" />
-  <ePixmap position="80,65" size="75,24" pixmap="MetrixReloaded/menu/ico_title_media-info.png" alphatest="blend" />
-  <ePixmap position="438,132" pixmap="MetrixReloaded/media/icons/ico_player.png" size="334,31" alphatest="blend" />
-  <ePixmap pixmap="MetrixReloaded/media/icons/clock.png" position="1698,121" zPosition="1" size="31,31" alphatest="blend" />
-  <widget source="global.CurrentTime" render="Label" position="1729,121" zPosition="1" size="90,35" font="Regular; 32" backgroundColor="infobarBgR" halign="right" transparent="1">
-    <convert type="ClockToText">Format:%H:%M</convert>
+﻿<screen backgroundColor="transparent" flags="wfNoBorder" name="DVDPlayer" position="0,0" size="1920,1080" title="InfoBar">
+  <!-- Background -->
+  <eLabel backgroundColor="windowBackground" position="0,800" size="1920,280" zPosition="-10" />
+  <!-- Clock -->
+  <panel name="panel_clock_infoBar" />
+  <!-- Logo -->
+  <widget alphatest="blend" position="40,841" render="MetrixReloadedXHDPicon" size="330,198" source="session.CurrentService" transparent="1" zPosition="4">
+    <convert type="ServiceName">Reference</convert>
   </widget>
-  <ePixmap pixmap="MetrixReloaded/media/icons/icon_event.png" position="412,60" zPosition="1" size="15,10" alphatest="on" />
-  <widget source="session.CurrentService" render="Label" position="62,114" size="312,90" font="Regular;32" foregroundColor="InfobarFgL" backgroundColor="infobarBgL" transparent="1">
+  <widget source="session.CurrentService" position="410,820" size="1490,56" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" render="VRunningText" halign="left" valign="top" options="movetype=running,startpoint=0,direction=left,steptime=50,startdelay=2000,always=0,noWrap" transparent="1">
     <convert type="ServiceName">Name</convert>
   </widget>
-  <widget name="chapterLabel" position="432,60" size="470,40" font="Regular; 32" backgroundColor="infobarBgR" transparent="1" />
-  <ePixmap pixmap="MetrixReloaded/media/icons/icon_dolby.png" position="1398,60" zPosition="1" size="35,25" alphatest="blend" />
-  <widget name="audioLabel" position="1442,60" size="200,32" font="Regular; 28" backgroundColor="infobarBgR" transparent="1" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixReloaded/media/icons/icon_txt.png" position="1152,60" zPosition="1" size="32,25" alphatest="blend">
-    <convert type="ServiceInfo">HasTelext</convert>
-    <convert type="ConditionalShowHide" />
+  <widget backgroundColor="windowBackground" font="font_second_standard_small" foregroundColor="accent1" name="chapterLabel" position="410,1024" size="1490,33" transparent="1" />
+  <widget backgroundColor="windowBackground" font="font_second_standard_small" foregroundColor="accent1" name="audioLabel" position="410,883" size="1490,33" transparent="1" />
+  <widget backgroundColor="windowBackground" font="font_second_standard_small" foregroundColor="accent1" name="subtitleLabel" position="410,921" size="1490,33" transparent="1" />
+  <widget backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" halign="right" position="410,965" render="Label" size="100,42" source="session.CurrentService" transparent="1" valign="top">
+    <convert type="ServicePosition">Position</convert>
   </widget>
-  <widget name="subtitleLabel" position="1192,60" size="190,32" font="Regular; 28" backgroundColor="infobarBgR" transparent="1" />
-  <widget name="anglePix" pixmap="MetrixReloaded/media/icons/icon_view.png" position="915,60" size="26,25" alphatest="on" />
-  <widget name="angleLabel" position="949,60" size="190,32" font="Regular; 28" backgroundColor="infobarBgR" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="1500,85" size="150,50" font="SetrixHD;40" halign="left" valign="left" backgroundColor="infobarBgR" transparent="1">
-    <convert type="ServicePosition">Position,ShowHours</convert>
+  <eLabel backgroundColor="infoBar_moviePlayer_progressBar_background" foregroundColor="infoBar_moviePlayer_progressBar_background" name="new eLabel" position="530,982" size="1220,1" zPosition="-1" />
+  <widget backgroundColor="infoBar_moviePlayer_progressBar_foreground" position="530,980" render="Progress" size="1220,5" source="session.CurrentService" transparent="1">
+    <convert type="ServicePosition">Position</convert>
   </widget>
-  <ePixmap position="789,142" size="844,23" pixmap="MetrixReloaded/media/icons/media-progress-background.png" zPosition="1" alphatest="blend" />
-  <widget source="session.CurrentService" render="PositionGauge" position="788,132" size="844,32" zPosition="2" pointer="MetrixReloaded/media/icons/media-progress.png:844,0" transparent="1">
-    <convert type="ServicePosition">Gauge</convert>
+  <widget backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" halign="left" position="1762,965" render="Label" size="100,42" source="session.CurrentService" transparent="1" valign="top">
+    <convert type="ServicePosition">Remaining</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="1500,169" size="150,50" font="SetrixHD; 40" halign="left" valign="center" backgroundColor="infobarBgR" transparent="1">
-    <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+  <widget backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" halign="center" position="530,988" render="Label" size="1220,36" source="session.CurrentService" transparent="1" valign="center">
+    <convert type="ServicePosition">Length</convert>
   </widget>
-  <widget text="DVDPlayer" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,254" />
+  
 </screen>
