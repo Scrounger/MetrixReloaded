@@ -2036,6 +2036,17 @@
     <convert type="MetrixReloadedCompareBoolean">true</convert>
     <convert type="ConditionalShowHide" />
   </widget>
+  
+  <widget source="ExtEvent" position="1218,800" zPosition="10" size="622,470" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" valign="top" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
+  </widget>
+
+  <widget position="100,800" size="window_epg_picon_size" source="Service" render="MetrixReloadedXHDPicon" alphatest="blend" zPosition="1">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/epg.png" position="window_remote_button_middle_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
@@ -5075,8 +5086,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <parameter name="SelectionListIcon" value="0,0,50,50" />
   <!-- MultiQuickButton -->
   <parameter name="MultiQuickButtonListFont" value="SetrixHD;30" />
-  <parameter name="MultiQuickButtonList" value="5,3,1040,40" />
-  <parameter name="MultiQuickButtonListPic1" value="5,3,1040,40" />
+  <parameter name="MultiQuickButtonList" value="45,7,1650,36" />
+  <parameter name="MultiQuickButtonListPic1" value="45,7,1650,36" />
   <parameter name="MultiQuickButtonListPic2" value="5,12,35,25" />
 
   <parameter name="CoverFindListFont" value="SetrixHD;30" />
@@ -5106,14 +5117,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <parameter name="EPGlistEPGBarText1Offset" value="5,0" />
   <parameter name="EPGlistEPGBarText2Offset" value="5,0" />
   <parameter name="EPGlistEPGBarIconOffset" value="5,6" />
-  <!-- EPGSelection - Single -->
+
+  <!-- EPGSelection - Single (Offset zu EPGSearch parametern)-->
   <parameter name="EPGListItemHeight" value="50" />
   <parameter name="EPGlistText1OffSet" value="-120, 0" />
   <parameter name="EPGlistText2OffSet" value="60, -39" />
-  <parameter name="EPGlistRecImageOffset" value="-105, 15" />
-  <parameter name="EPGlistRecTextOffset" value="-95, 4" />
+  <parameter name="EPGlistRecImageOffset" value="160, 4" />
+  <parameter name="EPGlistRecTextOffset" value="90, 4" />
   <parameter name="EPGlistNonRecTextOffset" value="60, 0" />
-
   <!-- EPGSearch -->
   <parameter name="EPGSearchItemHeightDefault" value="90" />
   <parameter name="EPGSearchItemHeightBig" value="90" />
@@ -5121,6 +5132,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <parameter name="EPGlistText2" value="10,40,160,40" />
   <parameter name="EPGlistText3" value="200,-5,850,40" />
   <parameter name="EPGlistNonRecText" value="200,1,850,40" />
+  <parameter name="EPGlistRecText" value="200,1,820,40" />
+  <parameter name="EPGlistRecImage" value="100,12,21,21" />
   
   <!-- EPGSelectionMulti -->
   <parameter name="EPGlistMultiRecTextOffset" value="10, 1" />
@@ -5468,10 +5481,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget source="RdsDecoder" render="Label" position="10,230" size="600,450" font="LCD;30" foregroundColor="accentColorOne" transparent="1">
+  <widget source="RdsDecoder" render="Label" position="10,230" size="600,450" font="Regular;30" foregroundColor="accentColorOne" transparent="1">
     <convert type="RdsInfo">RadioText</convert>
   </widget>
   <widget text="RadioInfoBar" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="420,575" />
+</screen>
+<screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="-118,0" size="1920,1080" zPosition="-2">
+  <eLabel backgroundColor="windowBackground" position="150,840" size="1620,210" zPosition="-10" />
+  <widget backgroundColor="windowBackground" font="font_menu_title" name="RadioText" noWrap="1" position="520,885" size="1240,70" valign="top" transparent="1" />
+  <widget backgroundColor="windowBackground" font="font_second_standard" halign="left" name="RtpText" noWrap="1" position="520,965" size="1240,45" transparent="1" />
+  <widget alphatest="blend" position="160,846" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" source="session.CurrentService" transparent="1" zPosition="1">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
 </screen>
 <screen name="RecordPathsSettings" title="Recording paths" position="center,center" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->

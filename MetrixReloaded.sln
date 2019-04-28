@@ -249,6 +249,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles"
 		screenFiles\QuickButton.xml = screenFiles\QuickButton.xml
 		screenFiles\QuickSubtitlesConfigMenu.xml = screenFiles\QuickSubtitlesConfigMenu.xml
 		screenFiles\RadioInfoBar.xml = screenFiles\RadioInfoBar.xml
+		screenFiles\RdsInfoDisplay.xml = screenFiles\RdsInfoDisplay.xml
 		screenFiles\RecordPathsSettings.xml = screenFiles\RecordPathsSettings.xml
 		screenFiles\ReduceMenuConfig.xml = screenFiles\ReduceMenuConfig.xml
 		screenFiles\RemoteControlCode.xml = screenFiles\RemoteControlCode.xml

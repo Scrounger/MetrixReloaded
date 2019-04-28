@@ -1,0 +1,8 @@
+﻿<screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="-118,0" size="1920,1080" zPosition="-2">
+  <eLabel backgroundColor="windowBackground" position="150,840" size="1620,210" zPosition="-10" />
+  <widget backgroundColor="windowBackground" font="font_menu_title" name="RadioText" noWrap="1" position="520,885" size="1240,70" valign="top" transparent="1" />
+  <widget backgroundColor="windowBackground" font="font_second_standard" halign="left" name="RtpText" noWrap="1" position="520,965" size="1240,45" transparent="1" />
+  <widget alphatest="blend" position="160,846" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" source="session.CurrentService" transparent="1" zPosition="1">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+</screen>
