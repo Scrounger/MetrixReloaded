@@ -5249,8 +5249,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Right Panel (Right Side) -->
   <widget name="picon" position="window_epg_picon_pos" size="window_epg_picon_size" zPosition="2" transparent="1" backgroundColor="windowBackground" alphatest="blend" />
   <widget name="piconcount" position="105,900" size="400,40" font="font_standard_small" foregroundColor="lightgrey" backgroundColor="windowBackground" valign="top" halign="left" transparent="1" />
-  <widget name="picondownload" position="1212,590" size="350,36" font="font_standard" valign="left" transparent="1" backgroundColor="windowBackground" />
-  <widget name="piconerror" position="1212,640" size="350,36" font="font_standard" valign="left" transparent="1" backgroundColor="windowBackground" />
+  <widget name="picondownload" position="1212,590" size="350,40" font="font_standard" valign="bottom" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <widget name="piconerror" position="1212,640" size="350,40" font="font_standard" valign="left" transparent="1" backgroundColor="windowBackgroundSecond" />
   <widget name="selectedname" position="1212,360" size="200,36" font="font_standard" halign="left" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <ePixmap alphatest="blend" position="1427,366" size="36,26" pixmap="MetrixReloaded/skin_default/buttons/key_ch_minus.png" zPosition="3" />
   <widget name="selected" position="1470,360" size="330,36" font="font_standard" halign="center" valign="center" foregroundColor="accent1" transparent="1" backgroundColor="windowBackgroundSecond" noWrap="1" />
@@ -5267,10 +5267,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <ePixmap alphatest="blend" position="1427,516" size="36,26" pixmap="MetrixReloaded/skin_default/buttons/key_7.png" zPosition="3" />
   <widget name="bit" position="1470,510" size="330,36" font="font_standard" halign="center" foregroundColor="accent1" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
   <ePixmap alphatest="blend" position="1807,516" size="36,26" pixmap="MetrixReloaded/skin_default/buttons/key_9.png" zPosition="3" />
-  <widget name="piconslidername" position="1212,740" size="300,36" font="font_standard" valign="left" transparent="1" backgroundColor="windowBackgroundSecond" />
-  <widget name="piconslider" position="1519,740" size="310,36" zPosition="2" transparent="1" backgroundColor="slider_background" foregroundColor="slider_foreground" />
-  <widget name="spiconname" position="1212,690" size="250,36" font="font_standard" halign="left" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
-  <widget name="spicon" position="1481,690" size="350,36" font="font_standard" halign="left" valign="center" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <widget name="piconslidername" position="1212,740" size="300,40" font="font_standard" valign="left" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <widget name="piconslider" position="1519,740" size="310,40" zPosition="2" transparent="1" backgroundColor="slider_background" foregroundColor="slider_foreground" />
+  <widget name="spiconname" position="1212,690" size="250,40" font="font_standard" halign="left" valign="bottom" transparent="1" backgroundColor="windowBackgroundSecond" />
+  <widget name="spicon" position="1481,690" size="350,40" font="font_standard" halign="left" valign="bottom" transparent="1" backgroundColor="windowBackgroundSecond" />
   <!-- Buttons -->
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_name" />
