@@ -1,0 +1,62 @@
+<skin>
+  <screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="transparent" animationMode="disable_onhide">
+  <!-- Background -->
+  <eLabel backgroundColor="windowBackground" position="0,800" size="1920,280" zPosition="-10" />
+  <!-- Clock -->
+  <panel name="panel_clock_infoBar" />
+  <!-- Logo -->
+  <widget alphatest="blend" position="40,841" render="MetrixReloadedXHDPicon" size="330,198" source="session.CurrentService" transparent="1" zPosition="4">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <!-- Now: Title, Subtitle, Times -->
+  <widget source="session.Event_Now" position="690,850" size="1208,56" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" render="VRunningText" halign="left" valign="top" options="movetype=running,startpoint=0,direction=left,steptime=50,startdelay=2000,always=0,noWrap" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" position="382,850" size="132,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="right" valign="bottom" render="Label" transparent="1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel position="530,850" size="22,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="center" valign="bottom" text="-" transparent="1" />
+  <widget source="session.Event_Now" position="536,850" size="132,60" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" halign="right" valign="bottom" render="Label" transparent="1">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="session.Event_Now" position="1640,850" size="210,60" backgroundColor="windowBackground" foregroundColor="accent1" font="SetrixHD;35" halign="right" valign="bottom" render="Label" transparent="1">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <!-- ProgressBar-->
+  <eLabel backgroundColor="infoBar_moviePlayer_progressBar_background" foregroundColor="infoBar_moviePlayer_progressBar_background" position="410,923" size="1448,10" />
+  <widget foregroundColor="infoBar_moviePlayer_progressBar_foreground" position="410,921" render="Progress" size="1448,15" source="session.Event_Now" transparent="1" zPosition="7">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <!-- Next: Title, Subtitle, Times -->
+  <widget source="session.Event_Next" position="690,944" size="1208,56" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="SetrixHD;42" render="VRunningText" halign="left" valign="top" options="movetype=running,startpoint=0,direction=left,steptime=50,startdelay=2000,always=0,noWrap" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+
+  <widget source="session.Event_Next" position="382,944" size="132,60" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="SetrixHD;42" halign="right" valign="bottom" render="Label" transparent="1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel position="530,944" size="22,60" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="SetrixHD;42" halign="center" valign="bottom" text="-" transparent="1" />
+  <widget source="session.Event_Next" position="536,944" size="132,60" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="SetrixHD;42" halign="right" valign="bottom" render="Label" transparent="1">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="session.Event_Next" position="1640,944" size="210,60" backgroundColor="windowBackground" foregroundColor="infoBar_next_event" font="SetrixHD;35" halign="right" valign="bottom" render="Label" transparent="1">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <!--<widget source="session.extEvent_Now" position="412,100" size="1000,600" backgroundColor="windowBackground" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="bottom" render="Label" noWrap="0">
+    <convert type="MetrixReloadedExtEventEPG">EpgShareRaw</convert>
+  </widget>-->
+  <!-- Icons -->
+  <panel name="panel_infoBar_tuner" />
+  <panel name="panel_infoBar_Icons" />
+  <panel name="panel_infoBar_movieplayer_Icons" />
+  <!-- Rec Icon -->
+  <panel name="panel_recIcon_top" />
+  <widget render="MetrixReloadedScreenNameLabel" size="0,0" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="0,0" />
+</screen>
+</skin>
