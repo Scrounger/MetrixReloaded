@@ -13,6 +13,11 @@ import os
 import logging
 
 import MetrixReloadedSetup
+from MyScreens import MetrixReloadedEventView
+
+# Screens für Mods
+from Screens.EventView import EventViewBase
+
 
 # Configuration
 config.plugins.MetrixReloaded = ConfigSubsection()
@@ -28,9 +33,7 @@ config.plugins.MetrixReloaded.showMenuEntryNames = ConfigOnOff(default=False)
 # MyLog
 log = initializeLog("Plugin")
 
-
 session = None
-
 
 def Plugins(**kwargs):
     return [PluginDescriptor(
@@ -109,3 +112,14 @@ def checkNewVersion(session):
             log.info("checkNewVersionOnStartUp: %s" %str(config.plugins.MetrixReloaded.checkNewVersionOnStartUp.value))
     else:
         log.debug("Primary skin is not MetrixReloaded")
+
+if("MetrixReloaded" in config.skin.primary_skin.value):
+    try:
+        # Screen EventView Mod
+        log.info("Initialize EventView Mod")
+        EventViewBase.__init__ = MetrixReloadedEventView.init_new
+        EventViewBase.setService = MetrixReloadedEventView.setService
+        EventViewBase.setEvent = MetrixReloadedEventView.setEvent
+
+    except Exception as e:
+        log.exception("MetrixReloadedSetup: %s", str(e))
