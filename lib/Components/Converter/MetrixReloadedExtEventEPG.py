@@ -34,7 +34,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 	
 	
 	EXTENDED_DESCRIPTION = "ExtendedDescription"				# optional mit Prefix angabe -> z.B. ExtendedDescription oder ExtendedDescription(Land:)
-	EXTENDED_DESCRIPTION_CLEAN = "ExtendedDescriptionClean"		# optional mit Prefix angabe -> z.B. ExtendedDescription oder ExtendedDescription(Land:), ohne Episode, Rating, etc. Infos
+	EXTENDED_DESCRIPTION_CLEAN = "ExtendedDescriptionClean"		# optional mit Prefix angabe -> z.B. ExtendedDescriptionClean oder ExtendedDescriptionClean(Land:), ohne Episode, Rating, etc. Infos
 	
 	POWER_DESCRIPTION = "PowerDescription"	
 	
@@ -442,7 +442,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				if(rating != None):
 					rating = rating.replace(",",".")
 					desc = desc.replace(" IMDb rating: %s/10." % (rating), "")
-					
+
 		return desc
 	
 	def getYear(self, type, values, event, useEPGShare = True):
