@@ -82,7 +82,7 @@ def getDataFromDatabase(service, eventid, logger, logPrefix = "", beginTime=None
         return None
 
 
-def getEventImage(self, timestamp, eventId, withSize=False):
+def getEventImage(self, timestamp, eventId, logger, logPrefix = "", withSize=False, existCheck=False):
     # FileName für Image aus EpgShare Download Folder zurück geben
     try:
         path = os.path.join(getEpgShareImagePath(self), str(
@@ -97,6 +97,17 @@ def getEventImage(self, timestamp, eventId, withSize=False):
 
         if (os.path.exists(imageFileName)):
             return imageFileName
+
+        if(existCheck):
+            #Falls kein size mitgeliefert wird (z.B. bei Converter)
+            files = [i for i in os.listdir(path) if os.path.isfile(os.path.join(path,i)) and \
+                    i.startswith("%s_" % eventId)]
+            
+            if(len(files) > 0):
+                imageFileName = '%s/%s' % (path, files[0])
+
+                if (os.path.exists(imageFileName)):
+                    return imageFileName
 
     except Exception as e:
         self.log.exception("getEventImage: %s", str(e))

@@ -1045,8 +1045,8 @@ class MetrixReloadedExtEventEPG(Converter, object):
 			image = getDefaultImage(self, event.getEventName())
 
 			if(image == None and values != None):
-				#Schauen ob Image existiert
-				image = getEventImage(self, event.getBeginTime(), str(values['id']))
+				#Schauen ob Image existiert mit Size
+				image = getEventImage(self, event.getBeginTime(), str(values['id']), self.log, '', False, True)
 
 			if(image != None):
 				return True

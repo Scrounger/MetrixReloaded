@@ -149,7 +149,7 @@ class MetrixReloadedEventImage(Renderer):
                                 self.id = str(values['id'])
 
                                 sizedImage = getEventImage(self,
-                                                           startTime, self.id, True)
+                                                           startTime, self.id, self.log, self.logPrefix, True)
                                 if (sizedImage != None):
                                     # Image mit size des Widgets laden, sofern verfügbar
                                     self.log.debug(
@@ -284,7 +284,7 @@ class MetrixReloadedEventImage(Renderer):
         self.showSmallImage(startTime, self.id)
 
     def showSmallImage(self, startTime, eventId):
-        smallImage = getEventImage(self, startTime, eventId)
+        smallImage = getEventImage(self, startTime, eventId, self.log, self.logPrefix)
         if (smallImage != None):
             # Bild bis Download abgeschlossen ist
             self.image.setPixmap(loadJPG(smallImage))
