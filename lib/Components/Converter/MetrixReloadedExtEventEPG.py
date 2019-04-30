@@ -582,10 +582,10 @@ class MetrixReloadedExtEventEPG(Converter, object):
 					return strRating.replace(".", ",")
 			else:
 				if(isStars):
-					return ""
+					return None
 		else:
 			if(isStars):
-				return ""
+				return None
 	
 	def getParentalRating(self, type, event, values, useEPGShare = True):				
 		parentialRating = None
