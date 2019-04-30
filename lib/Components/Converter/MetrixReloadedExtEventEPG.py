@@ -18,18 +18,20 @@ class MetrixReloadedExtEventEPG(Converter, object):
 	IS_IMAGE_AVAILABLE = "IsImageAvailable"
 	IS_EPGSHARE_AVAILABLE = "IsEpgShareAvailable"
 	EPGSHARE_RAW = "EpgShareRaw"
-	EPISODE_NUM = "EpisodeNum"						# optional formatierung angeben -> z.B. EpisodeNum(Staffel [s] Episode[ee])
-	TITLE = "Title"									# optional mit Prefix angabe -> z.B. Titel oder Titel(Titel:)
-	SUBTITLE = "Subtitle"							# mit MaxWord angabe -> z.B. Subtitle(10)
-	PARENTAL_RATING = "ParentalRating"				# optional mit Prefix angabe -> z.B. ParentalRating oder ParentalRating(FSK)
-	GENRE = "Genre"									# optional mit Prefix angabe -> z.B. Genre oder Genre(Genre:)
-	YEAR = "Year"									# optional mit Prefix angabe -> z.B. Year oder Year(Jahr:)
-	COUNTRY = "Country"								# optional mit Prefix angabe -> z.B. Country oder Country(Land:)
-	RATING = "Rating"								# optional mit Prefix angabe -> z.B. Rating(Bewertung)
-	RATING_STARS = "RatingStars"					# optional mit Prefix angabe -> z.B. RatingStars(star) -> Output: 65 -> kann für Images verwendet werden
-	CATEGORY = "Category"							# (nur EpgShare) optional mit Prefix angabe -> z.B. Category(Kategorie:)
-	EXTENDED_DESCRIPTION = "ExtendedDescription"	# optional mit Prefix angabe -> z.B. ExtendedDescription oder ExtendedDescription(Land:)
-	POWER_DESCRIPTION = "PowerDescription"		
+	EPISODE_NUM = "EpisodeNum"									# optional formatierung angeben -> z.B. EpisodeNum(Staffel [s] Episode[ee])
+	TITLE = "Title"												# optional mit Prefix angabe -> z.B. Titel oder Titel(Titel:)
+	SUBTITLE = "Subtitle"										# mit MaxWord angabe -> z.B. Subtitle(10)
+	PARENTAL_RATING = "ParentalRating"							# optional mit Prefix angabe -> z.B. ParentalRating oder ParentalRating(FSK)
+	GENRE = "Genre"												# optional mit Prefix angabe -> z.B. Genre oder Genre(Genre:)
+	YEAR = "Year"												# optional mit Prefix angabe -> z.B. Year oder Year(Jahr:)
+	COUNTRY = "Country"											# optional mit Prefix angabe -> z.B. Country oder Country(Land:)
+	RATING = "Rating"											# optional mit Prefix angabe -> z.B. Rating(Bewertung)
+	RATING_STARS = "RatingStars"								# optional mit Prefix angabe -> z.B. RatingStars(star) -> Output: 65 -> kann für Images verwendet werden
+	CATEGORY = "Category"										# (nur EpgShare) optional mit Prefix angabe -> z.B. Category(Kategorie:)
+	EXTENDED_DESCRIPTION = "ExtendedDescription"				# optional mit Prefix angabe -> z.B. ExtendedDescription oder ExtendedDescription(Land:)
+	EXTENDED_DESCRIPTION_CLEAN = "ExtendedDescriptionClean"		# optional mit Prefix angabe -> z.B. ExtendedDescription oder ExtendedDescription(Land:), ohne Episode, Rating, etc. Infos
+	
+	POWER_DESCRIPTION = "PowerDescription"	
 	
 	#Parser fuer Serien- und Episodennummer
 	seriesNumParserList = [('(\d+)[.]\sStaffel[,]\sFolge\s(\d+)'), 
@@ -150,7 +152,11 @@ class MetrixReloadedExtEventEPG(Converter, object):
 						if(country != None):
 							result.append(country)
 					elif self.EXTENDED_DESCRIPTION in type:
-						extendedDescription = self.getExtendedDescription(type, values, event)
+						if(self.EXTENDED_DESCRIPTION_CLEAN in type):
+							extendedDescription = self.getExtendedDescription(type, values, event, True)
+						else:	
+							extendedDescription = self.getExtendedDescription(type, values, event, False)
+
 						if(extendedDescription != None):
 							result.append(extendedDescription)
 
@@ -278,9 +284,13 @@ class MetrixReloadedExtEventEPG(Converter, object):
 					input = str(input).replace(type, "")
 			
 			if(self.EXTENDED_DESCRIPTION in input):
-				type = self.getParsedTyp(self.EXTENDED_DESCRIPTION, input)
+				if(self.EXTENDED_DESCRIPTION_CLEAN in input):
+					type = self.getParsedTyp(self.EXTENDED_DESCRIPTION_CLEAN, input)
+					extendedDescription = self.getExtendedDescription(type, values, event, True)
+				else:
+					type = self.getParsedTyp(self.EXTENDED_DESCRIPTION, input)
+					extendedDescription = self.getExtendedDescription(type, values, event, False)
 
-				extendedDescription = self.getExtendedDescription(type, values, event)
 				if (extendedDescription != None):
 					input = input.replace(type, extendedDescription)
 				else:
@@ -357,7 +367,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 			
 		return country
 	
-	def getExtendedDescription(self, type, values, event):
+	def getExtendedDescription(self, type, values, event, clean):
 		desc = None
 
 		if(event != None):
@@ -372,26 +382,28 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				if(desc != None and prefix != None):
 					desc = '%s%s' % (prefix, desc)
 
-		# Episoden Nummer entfernen
-		if(desc != None and ". Staffel, Folge" in desc):
-			episodeNum = self.getEpisodeNum("EpisodeNum([s]. Staffel, Folge [e]: )", event, values)
-			if (episodeNum != None):
-				desc = desc.replace(episodeNum, "")
-		
-		# ParentalRating entfernen
-		if(desc != None and (" Jahren" in desc or " Jahre" in desc)):
-			parentialRating = self.getParentalRating("ParentalRating", event, values, False)
-			if (parentialRating != None):
-				desc = desc.replace("Ab %s Jahren" % (parentialRating), "")
-				desc = desc.replace("Ab %s Jahre" % (parentialRating), "")
-		
-		# Country und Year entfernen
-		if(desc != None):
-			country = self.getCountry("Country", values, event, False)
-			year = self.getYear("Year", values, event, False)
-			if(country != None and year != None):
-				desc = desc.replace("%s %s. " % (country, year), "")
-				desc = desc.replace("%s %s" % (country, year), "")
+		if(clean):
+			# Episoden Nummer entfernen
+			if(desc != None and ". Staffel, Folge" in desc):
+				episodeNum = self.getEpisodeNum("EpisodeNum([s]. Staffel, Folge [e]: )", event, values)
+				if (episodeNum != None):
+					desc = desc.replace(episodeNum, "")
+			
+			# ParentalRating entfernen
+			if(desc != None and (" Jahren" in desc or " Jahre" in desc)):
+				parentialRating = self.getParentalRating("ParentalRating", event, values, False)
+				if (parentialRating != None):
+					desc = desc.replace("Ab %s Jahren" % (parentialRating), "")
+					desc = desc.replace("Ab %s Jahre" % (parentialRating), "")
+			
+			# Country und Year entfernen
+			if(desc != None):
+				country = self.getCountry("Country", values, event, False)
+				year = self.getYear("Year", values, event, False)
+				if(country != None and year != None):
+					desc = desc.replace("%s %s. " % (country, year), "")
+					desc = desc.replace("%s %s." % (country, year), "")
+					desc = desc.replace("%s %s" % (country, year), "")
 
 		return desc
 	
