@@ -58,12 +58,12 @@
 
   <!-- Image vorhanden-->
   <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_pos" size="window_gmepg_desc_size" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescriptionClean(\n\n)]</convert>
   </widget>
 
   <!-- kein Image vorhanden-->
   <widget font="font_standard_small" backgroundColor="windowBackgroundSecond" transparent="1" position="window_gmepg_desc_no_image_pos" size="window_gmepg_desc_no_image_size" source="ExtEvent" render="MetrixReloadedVRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescription(\n\n)]</convert>
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescriptionClean(\n\n)]</convert>
   </widget>
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
