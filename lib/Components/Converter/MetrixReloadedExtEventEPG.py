@@ -27,7 +27,11 @@ class MetrixReloadedExtEventEPG(Converter, object):
 	COUNTRY = "Country"											# optional mit Prefix angabe -> z.B. Country oder Country(Land:)
 	RATING = "Rating"											# optional mit Prefix angabe -> z.B. Rating(Bewertung)
 	RATING_STARS = "RatingStars"								# optional mit Prefix angabe -> z.B. RatingStars(star) -> Output: 65 -> kann für Images verwendet werden
+
 	CATEGORY = "Category"										# (nur EpgShare) optional mit Prefix angabe -> z.B. Category(Kategorie:)
+	LEADTEXT = "Leadtext"										# (nur EpgShare) optional mit Prefix angabe -> z.B. Leadtext(Kritik:)
+	LEADTEXT = "Leadtext"										# (nur EpgShare) optional mit Prefix angabe -> z.B. Leadtext(Kritik:)
+	
 	EXTENDED_DESCRIPTION = "ExtendedDescription"				# optional mit Prefix angabe -> z.B. ExtendedDescription oder ExtendedDescription(Land:)
 	EXTENDED_DESCRIPTION_CLEAN = "ExtendedDescriptionClean"		# optional mit Prefix angabe -> z.B. ExtendedDescription oder ExtendedDescription(Land:), ohne Episode, Rating, etc. Infos
 	
@@ -151,6 +155,10 @@ class MetrixReloadedExtEventEPG(Converter, object):
 						country = self.getCountry(type, values, event)
 						if(country != None):
 							result.append(country)
+					elif self.LEADTEXT in type:
+						leadtext = self.getLeadText(type, values)
+						if(leadtext != None):
+							result.append(leadtext)
 					elif self.EXTENDED_DESCRIPTION in type:
 						if(self.EXTENDED_DESCRIPTION_CLEAN in type):
 							extendedDescription = self.getExtendedDescription(type, values, event, True)
@@ -280,6 +288,15 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				country = self.getCountry(type, values, event)
 				if (country != None):
 					input = input.replace(type, country)
+				else:
+					input = str(input).replace(type, "")
+
+			if(self.LEADTEXT in input):
+				type = self.getParsedTyp(self.LEADTEXT, input)
+				
+				leadtext = self.getLeadText(type, values)
+				if(leadtext != None):
+					input = input.replace(type, leadtext)
 				else:
 					input = str(input).replace(type, "")
 			
@@ -485,6 +502,21 @@ class MetrixReloadedExtEventEPG(Converter, object):
 			category = '%s%s' % (prefix, category)
 		
 		return category
+	
+	def getLeadText(self, type, values):
+		leadtext = None
+
+		if(values != None and len(values) > 0):
+		#EpgShare Daten in DB vorhanden
+			if 'leadText' in values:
+				if len(str(values['leadText']).strip()) > 0:
+					leadtext = str(values['leadText']).strip()
+
+		prefix = self.getPrefixParser(type)
+		if(leadtext != None and prefix != None):
+			leadtext = '%s%s' % (prefix, leadtext)
+		
+		return leadtext
 	
 	def getRating(self, type, values, event, isStars):
 		rating = None
