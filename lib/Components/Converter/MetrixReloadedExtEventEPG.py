@@ -435,7 +435,14 @@ class MetrixReloadedExtEventEPG(Converter, object):
 					desc = desc.replace("%s %s. " % (country, year), "")
 					desc = desc.replace("%s %s." % (country, year), "")
 					desc = desc.replace("%s %s" % (country, year), "")
-
+			
+			# Rating entfernen
+			if(desc != None and 'IMDb rating:' in desc):
+				rating = self.getRating(self.RATING, values, event, False)
+				if(rating != None):
+					rating = rating.replace(",",".")
+					desc = desc.replace(" IMDb rating: %s/10." % (rating), "")
+					
 		return desc
 	
 	def getYear(self, type, values, event, useEPGShare = True):
