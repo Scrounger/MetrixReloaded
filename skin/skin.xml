@@ -5667,7 +5667,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Right Panel (Right Side) -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/tuner_setup.png" position="window_image_pos" size="window_image_size" scale="1" />
   <widget backgroundColor="windowBackground" font="font_standard" halign="center" position="1216,140" render="Label" size="620,40" source="Frontend" transparent="1" zPosition="2">
-    <convert type="FrontendInfo">SNRdB      </convert>
+    <convert type="FrontendInfo">SNRdB</convert>
   </widget>
   <eLabel backgroundColor="windowBackgroundSecond" font="font_standard" halign="right" name="snr" position="1216,205" size="120,37" text="SNR:" transparent="1" />
   <widget borderColor="accent1" borderWidth="1" position="1345,210" render="Progress" size="360,30" source="Frontend" transparent="1" backgroundColor="windowBackgroundSecond">
@@ -5838,7 +5838,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <eLabel name="Seperator" position="145,122" size="1010,2" zPosition="5" backgroundColor="seperator" />
   <!-- EpisodeName & Description-->
   <widget source="session.extEvent_Now" position="150,136" size="1000,625" backgroundColor="windowBackground" font="font_standard" halign="left" valign="top" render="Label" transparent="1">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(Staffel [s], Episode [e]\,)Subtitle(10)ExtendedDescription(\n\n)]</convert>
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(Staffel [s], Episode [e]\,)Subtitle(10)Leadtext(\n\n)ExtendedDescriptionClean(\n\n)]</convert>
   </widget>
   <!-- Image-->
   <widget backgroundColor="windowBackground" foregroundColor="foreground" position="1240,78" size="490,280" scale="3" render="MetrixReloadedEventImage" source="session.extEvent_Now" transparent="1" zPosition="3" />
@@ -5851,12 +5851,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     <convert type="MetrixReloadedExtEventEPG">RatingStars</convert>
   </widget>
   <!-- Image vorhanden-->
-  <widget source="session.extEvent_Now" position="1240,371" size="490,335" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
+  <widget source="session.extEvent_Now" position="1240,371" size="490,335" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" font="font_standard_small" halign="left" valign="top" render="Label" transparent="1">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)Conclusion(\n\n)]</convert>
   </widget>
   <!-- Kein Image vorhanden -->
-  <widget source="session.extEvent_Now" position="1239,80" size="490,625" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" font="font_second_standard_small" halign="left" valign="top" render="Label" transparent="1" noWrap="1">
-    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)]</convert>
+  <widget source="session.extEvent_Now" position="1239,80" size="490,625" backgroundColor="windowBackgroundSecond" foregroundColor="foreground" font="font_standard_small" halign="left" valign="top" render="Label" transparent="1">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[false][Genre(\nGenre:\t)Category(\nKategorie:\t)Rating(\nBewertung:\t)Year(\nJahr:\t)Country(\nLand:\t)Conclusion(\n\n)]</convert>
   </widget>
   <!--<widget font="SetrixHD;40" position="45,20" render="Label" size="960,50" valign="center" backgroundColor="windowBackground" transparent="1" source="session.CurrentService" zPosition="1">
     <convert type="ServiceName">Name</convert>
