@@ -434,6 +434,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				if(country != None and year != None):
 					desc = desc.replace("%s %s. " % (country, year), "")
 					desc = desc.replace("%s %s." % (country, year), "")
+					desc = desc.replace("%s %s, " % (country, year), "")
 					desc = desc.replace("%s %s" % (country, year), "")
 			
 			# Rating entfernen
