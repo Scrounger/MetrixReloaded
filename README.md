@@ -1,7 +1,7 @@
 # MetrixReloaded
 [![GitHub release](https://img.shields.io/github/release/Scrounger/MetrixReloaded.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
 [![GitHub All Releases](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
-[![GitHub Releases (by Release)](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/0.8.0/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
+[![GitHub Releases (by Release)](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/0.9.0/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Scrounger/MetrixReloaded.svg)
 [![GitHub](https://img.shields.io/github/license/Scrounger/MetrixReloaded.svg)](https://github.com/Scrounger/MetrixReloaded/blob/master/LICENSE)
 
@@ -108,20 +108,21 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 
 ## Changelog
 
-### 0.9.0 BETA (xx.xx.2019)
+### 0.9.0 BETA (04.05.2019)
 * EPGImport bug fix
 * progressBarForeground zu colors hinzugefügt
 * EPGSearch skinned
 * AudioSelection bug fixed
 * SystemInfos mehr Platz hinzugefügt
 * Converter bug fixes und Verbesserungen
-* EPG Info Anzeige erweitert (RatingsStars, RemainingTime)
+* EPG Info Anzeige erweitert (RatingsStars, RemainingTime, LeadText, Conclusion, etc.)
 * SecondInfoBar neues Layout
 * 2 SkinParts für SecondInfoBar Layout
 * Skinpart für InfoBar von SleepyHellow
 * Plugin CoverFind skinned
 * Plugin MediaPlayer skinned
 * Plugin Satfinder skinned
+* viele kleine Screen bug fixes
 
 ### 0.8.0 BETA (18.04.2019)
 * EPG Info Anzeige erweitert (SxxExx, Genre, Land, etc.)
