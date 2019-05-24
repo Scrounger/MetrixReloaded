@@ -28,10 +28,15 @@ class MetrixReloadedMenuEntryID(Poll,Converter,object):
 
 	@cached
 	def getText(self):
-		cur = self.source.current
-		if cur and len(cur) > 2:
-			selectedMenu = cur[2]
-		return selectedMenu
+		try:
+			cur = self.source.current
+			if cur and len(cur) > 2:
+				selectedMenu = cur[2]
+
+			return selectedMenu
+		
+		except Exception:
+			return ''		
 	
 	text = property(getText)
 
