@@ -12,8 +12,8 @@
   <widget source="cutlist" render="Listbox" position="135,248" size="480,600" zPosition="1" backgroundColor="backgroundSecond" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
       {"template": [
-      MultiContentEntryText(pos=(5,2), size=(286, 40), , font = 0, text = 1),
-      MultiContentEntryText(pos=(286,2), size=(130, 40), , font = 1, text = 2, flags = RT_HALIGN_RIGHT)
+      MultiContentEntryText(pos=(5,2), size=(286, 40), font = 0, text = 1),
+      MultiContentEntryText(pos=(286,9), size=(130, 40), font = 1, text = 2, flags = RT_HALIGN_RIGHT)
       ],
       "fonts": [gFont("SetrixHD", 30), gFont("SetrixSL", 24)],
       "itemHeight": 50
