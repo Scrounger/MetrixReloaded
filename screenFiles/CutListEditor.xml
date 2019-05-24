@@ -1,33 +1,35 @@
-﻿<screen name="CutListEditor" position="0,0" size="1920,1080" title="Cutlist editor" flags="wfNoBorder">
-  <widget source="global.CurrentTime" render="Label" position="1695,60" size="120,39" font="Regular;39" halign="right" transparent="1">
-    <convert type="ClockToText">Default</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Label" position="1500,108" size="315,33" font="Regular;30" halign="right" transparent="1">
-    <convert type="ClockToText">Format:%d.%m.%Y</convert>
-  </widget>
-  <eLabel text="Cutlist editor" position="135,180" size="480,48" font="Regular;40" transparent="1" />
-  <eLabel position="120,233" size="510,630" zPosition="1" backgroundColor="black" />
-  <eLabel position="122,234" size="507,627" zPosition="2" backgroundColor="gray" />
-  <widget source="cutlist" render="Listbox" position="135,248" zPosition="3" size="480,600" scrollbarMode="showOnDemand" backgroundColor="foreground" transparent="1">
+﻿<screen name="CutListEditor" position="0,0" size="1920,1080" title="Cutlist editor" flags="wfNoBorder" backgroundColor="transparent">
+  <!-- Backgrounds -->
+  <eLabel backgroundColor="windowBackground" position="0,3" size="1920,1080" zPosition="-10" />
+  <!-- Title -->
+  <panel name="panel_Title_graphMultiEpg_Fullscreen" />
+  <!-- Clock -->
+  <panel name="panel_clock_graphMultiEpg_Fullscreen" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_graphMultiEpg_Fullscreen" /> 
+  
+  <eLabel position="122,234" size="507,627" backgroundColor="backgroundSecond" />
+  <widget source="cutlist" render="Listbox" position="135,248" size="480,600" zPosition="1" backgroundColor="backgroundSecond" transparent="1" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarKeepGapColor="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="ScrollBarFG" scrollbarSliderBorderColor="ScrollBarBorder" enableWrapAround="1">
     <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(size=(286, 28), text = 1),
-						MultiContentEntryText(pos=(286,2), size=(130, 28), text = 2, flags = RT_HALIGN_RIGHT)
-					],
-					"fonts": [gFont("Regular", 28)],
-					"itemHeight": 32
-				}
-			</convert>
+      {"template": [
+      MultiContentEntryText(pos=(5,2), size=(286, 40), , font = 0, text = 1),
+      MultiContentEntryText(pos=(286,2), size=(130, 40), , font = 1, text = 2, flags = RT_HALIGN_RIGHT)
+      ],
+      "fonts": [gFont("SetrixHD", 30), gFont("SetrixSL", 24)],
+      "itemHeight": 50
+      }
+    </convert>
   </widget>
-  <eLabel position="719,186" zPosition="3" size="1044,566" backgroundColor="unff000000" />
-  <widget name="Video" position="737,195" zPosition="-10" size="1008,548" />
+  
+  <widget name="Video" position="737,195" size="1008,548" backgroundColor="transparent" />
   <widget source="session.CurrentService" render="Label" position="675,765" size="1185,45" zPosition="3" font="Regular;36" backgroundColor="windowBackground" halign="center" valign="center" transparent="1">
     <convert type="ServiceName">Name</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="675,825" size="1185,38" zPosition="3" font="Regular;30" halign="center" valign="center" transparent="1">
     <convert type="ServicePosition">Position,Detailed</convert>
   </widget>
-  <widget name="Timeline" position="719,881" size="1044,30" zPosition="3" pointer="MetrixReloaded/media/position_arrow.png:3,5" backgroundColor="windowBackground" />
+  <widget name="Timeline" position="719,881" size="1044,30" zPosition="3" pointer="MetrixReloaded/media/position_arrow.png:3,5" backgroundColor="foreground" />
+  
   <eLabel text="OK = Menu" position="1590,945" size="210,33" zPosition="1" font="Regular;30" backgroundColor="windowBackground" transparent="1" />
-  <widget text="CutListEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="CutListEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>
