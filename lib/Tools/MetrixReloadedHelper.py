@@ -185,6 +185,15 @@ def isconnected(logger, logPrefix = "", host = '8.8.8.8', port = 53, timeout = 1
         logger.warn("%s no internet connection!", logPrefix)
         return False
 
+def createPosterPaths():
+    dir = '/mnt/hdd/MetrixReloaded/poster/movies/'
+    if not os.path.exists(dir):
+        os.makedirs(dir)
+
+    dir = '/mnt/hdd/MetrixReloaded/poster/series/'
+    if not os.path.exists(dir):
+        os.makedirs(dir)    
+
 def initializeLog(fileName):
     logger = logging.getLogger(fileName)
 
