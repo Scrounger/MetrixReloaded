@@ -14,6 +14,7 @@ import os
 import time
 import base64
 import logging
+import socket
 
 def getExtraData(source, logger, logPrefix =""):
     if source.event:
@@ -173,6 +174,16 @@ def getChannelName(source):
         name = ServiceReference(str(ref)).getServiceName()
     
     return name.replace('\xc2\x86', '').replace('\xc2\x87', '')
+
+def isconnected(logger, logPrefix = "", host = '8.8.8.8', port = 53, timeout = 1):
+    try:
+        socket.setdefaulttimeout(timeout)
+        host = socket.gethostbyname('www.google.com')
+        socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((host, port))
+        return True
+    except Exception:
+        logger.warn("%s no internet connection!", logPrefix)
+        return False
 
 def initializeLog(fileName):
     logger = logging.getLogger(fileName)
