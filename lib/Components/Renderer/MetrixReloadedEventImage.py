@@ -105,7 +105,7 @@ class MetrixReloadedEventImage(Renderer):
             if not self.instance:
                 return
 
-            #self.hideimage()
+            # self.hideimage()
 
             if hasattr(self.source, 'getEvent'):
                 # source is 'extEventInfo'
@@ -152,20 +152,22 @@ class MetrixReloadedEventImage(Renderer):
                     # ExtraDaten aus db holen
                     values = self.deserializeJson(
                         getExtraData(self.source, self.log, self.logPrefix))
+                    try:
+                        if(self.imageType == self.IMAGE):
 
-                    if(values != None and len(values) > 0 and eventid):
-                        try:
-                            if eventid != self.eventid:
-                                self.id = str(values['id'])
+                            if(values != None and len(values) > 0 and eventid):
+                                # EpgShare Daten sind vorhanden
+                                if eventid != self.eventid:
+                                    self.id = str(values['id'])
 
-                                if(self.imageType == self.IMAGE):
                                     sizedImage = getEventImage(self,
-                                                            startTime, self.id, self.log, self.logPrefix, True)
+                                                               startTime, self.id, self.log, self.logPrefix, True)
                                     if (sizedImage != None):
                                         # Image mit size des Widgets laden, sofern verfügbar
                                         self.log.debug(
                                             "%schanged: load local image for '%s' (size: %sx%s)", self.logPrefix, title, self.WCover, self.HCover)
-                                        self.image.setPixmap(loadJPG(sizedImage))
+                                        self.image.setPixmap(
+                                            loadJPG(sizedImage))
                                         self.image.setScale(self.scaletype)
                                         self.showimage()
                                         return
@@ -176,38 +178,42 @@ class MetrixReloadedEventImage(Renderer):
 
                                         # Bild bis Download abgeschlossen ist
                                         self.showSmallImage(startTime, self.id)
-                                elif(self.imageType == self.POSTER):
-                                    createPosterPaths()
+                            else:
+                                self.hideimage()
+                        elif(self.imageType == self.POSTER):
+                            createPosterPaths()
 
-                                    url = str(values['search'])
-                                    genre = str(values['categoryName'])
-                                    year = str(values['year'])
-                                    
-                                    self.log.debug("%schanged: poster lookup: url: %s" % (self.logPrefix, url))
+                            if(values != None and len(values) > 0 and eventid):
+                                # EpgShareDaten vorhanden
+                                url = str(values['search'])
+                                genre = str(values['categoryName'])
+                                year = str(values['year'])
 
-                                    if url != '' and genre != '':
-                                        if url.startswith('http://api.themoviedb.org'):
-                                            # language und jahr anhängen
-                                            if year != None and year != '':
-                                                url += '&year=%s' % year
-                                            url += '&language=de'
+                                if url != '' and genre != '':
+                                    if url.startswith('http://api.themoviedb.org'):
+                                        # language und jahr anhängen
+                                        if year != None and year != '':
+                                            url += '&year=%s' % year
+                                        url += '&language=de'
 
-                                        self.downloadPosterInfos(url, genre, event)
-                                    else:
-                                        self.log.debug("%schanged: poster lookup: no url or genre avaiable for '%s'" % (self.logPrefix, event.getEventName()))
-                                        self.hideimage()
+                                    self.downloadPosterInfos(url, genre, event)
                                 else:
-                                    self.log.warn("%schanged: imageType '%s' is unknown!", self.logPrefix, self.imageType)
+                                    self.log.debug("%schanged: poster lookup: no url or genre avaiable for '%s'" % (
+                                    self.logPrefix, event.getEventName()))
                                     self.hideimage()
+                            else:
+                                self.hideimage()
 
-                            return
-                        except Exception as e:
-                            self.log.exception(
-                                "%schanged (1): %s", self.logPrefix, str(e))
+                        else:
+                            self.log.warn(
+                                "%schanged: imageType '%s' is unknown!", self.logPrefix, self.imageType)
                             self.hideimage()
-                    
-                    else:
+                            
+                    except Exception as e:
+                        self.log.exception(
+                            "%schanged (1): %s", self.logPrefix, str(e))
                         self.hideimage()
+
                 else:
                     self.hideimage()
 
@@ -246,11 +252,13 @@ class MetrixReloadedEventImage(Renderer):
         except Exception as e:
             self.log.exception("%sgetEpgShareImagePath: %s",
                                self.logPrefix, str(e))
-        
-        if(onlineMode):
-            self.log.debug("%sdownloadPoster: searching online poster for '%s', url: %s", self.logPrefix, event.getEventName(), url)
 
-            getPage(url).addCallback(self.responsePosterInfo, self.DOWNLOAD_POSTER_INFOS, genre).addErrback(self.reponsePosterError, self.DOWNLOAD_POSTER_INFOS)
+        if(onlineMode):
+            self.log.debug("%sdownloadPoster: searching online poster for '%s', url: %s",
+                           self.logPrefix, event.getEventName(), url)
+
+            getPage(url).addCallback(self.responsePosterInfo, self.DOWNLOAD_POSTER_INFOS,
+                                     genre).addErrback(self.reponsePosterError, self.DOWNLOAD_POSTER_INFOS)
 
     def responsePosterInfo(self, data, response, genre):
 
@@ -259,59 +267,72 @@ class MetrixReloadedEventImage(Renderer):
                 seriesId = re.findall('<seriesid>(.*?)</seriesid>', data, re.I)
 
                 if seriesId:
-                    self.downloadPoster(str(seriesId[0]), self.DOWNLOAD_POSTER_SERIES)
+                    self.downloadPoster(
+                        str(seriesId[0]), self.DOWNLOAD_POSTER_SERIES)
 
             elif genre == 'Spielfilm':
                 jsonData = json.loads(data)
-                
+
                 movieId = str(jsonData['results'][0]['id'])
                 moviePosterPath = str(jsonData['results'][0]['poster_path'])
 
                 if moviePosterPath and movieId:
-                    self.log.debug("%sresponsePosterInfos: movieId '%s'", self.logPrefix, movieId)
-                    self.downloadPoster(movieId, self.DOWNLOAD_POSTER_MOVIE, moviePosterPath)
+                    self.log.debug(
+                        "%sresponsePosterInfos: movieId '%s'", self.logPrefix, movieId)
+                    self.downloadPoster(
+                        movieId, self.DOWNLOAD_POSTER_MOVIE, moviePosterPath)
 
     def downloadPoster(self, id, posterTyp, moviePosterPath=None):
         posterFileName = '%s/%s.jpg'
-        
+
         if(posterTyp == self.DOWNLOAD_POSTER_SERIES):
-            posterFileName = posterFileName % ('/mnt/hdd/MetrixReloaded/poster/series/', id)
+            posterFileName = posterFileName % (
+                '/mnt/hdd/MetrixReloaded/poster/series/', id)
 
             # Prüfen ob bereits herunter geladen
             if (os.path.exists(posterFileName)):
-                self.log.debug("%sdownloadPoster: poster for seriesId '%s' exist local", self.logPrefix, id)
+                self.log.debug(
+                    "%sdownloadPoster: poster for seriesId '%s' exist local", self.logPrefix, id)
                 self.image.setPixmap(loadJPG(posterFileName))
                 self.image.setScale(self.scaletype)
                 self.showimage()
             else:
                 posterUrl = 'https://www.thetvdb.com/banners/posters/%s-1.jpg' % id
-                self.log.debug("%sdownloadPoster: download poster for seriesId '%s', url: %s", self.logPrefix, id, posterUrl)
+                self.log.debug(
+                    "%sdownloadPoster: download poster for seriesId '%s', url: %s", self.logPrefix, id, posterUrl)
 
-                downloadPage(posterUrl, posterFileName).addCallback(self.responsePosterDownload, self.DOWNLOAD_POSTER_SERIES, id, posterFileName).addErrback(self.reponsePosterError, self.DOWNLOAD_POSTER_SERIES)
-        
+                downloadPage(posterUrl, posterFileName).addCallback(self.responsePosterDownload, self.DOWNLOAD_POSTER_SERIES,
+                                                                    id, posterFileName).addErrback(self.reponsePosterError, self.DOWNLOAD_POSTER_SERIES)
+
         elif(posterTyp == self.DOWNLOAD_POSTER_MOVIE):
-            posterFileName = posterFileName % ('/mnt/hdd/MetrixReloaded/poster/movies/', id)
+            posterFileName = posterFileName % (
+                '/mnt/hdd/MetrixReloaded/poster/movies/', id)
 
             # Prüfen ob bereits herunter geladen
             if (os.path.exists(posterFileName)):
-                self.log.debug("%sdownloadPoster: poster for movieId '%s' exist local", self.logPrefix, id)
+                self.log.debug(
+                    "%sdownloadPoster: poster for movieId '%s' exist local", self.logPrefix, id)
                 self.image.setPixmap(loadJPG(posterFileName))
                 self.image.setScale(self.scaletype)
                 self.showimage()
             else:
                 posterUrl = 'http://image.tmdb.org/t/p/w500%s' % moviePosterPath
-                self.log.debug("%sdownloadPoster: download poster for movieId '%s', url: %s", self.logPrefix, id, posterUrl)
+                self.log.debug(
+                    "%sdownloadPoster: download poster for movieId '%s', url: %s", self.logPrefix, id, posterUrl)
 
-                downloadPage(posterUrl, posterFileName).addCallback(self.responsePosterDownload, self.DOWNLOAD_POSTER_MOVIE, id, posterFileName).addErrback(self.reponsePosterError, self.DOWNLOAD_POSTER_MOVIE)
+                downloadPage(posterUrl, posterFileName).addCallback(self.responsePosterDownload, self.DOWNLOAD_POSTER_MOVIE,
+                                                                    id, posterFileName).addErrback(self.reponsePosterError, self.DOWNLOAD_POSTER_MOVIE)
 
     def responsePosterDownload(self, data, response, id, posterFileName):
 
         if (response == self.DOWNLOAD_POSTER_SERIES):
-            self.log.debug("%sresponsePoster: download poster for seriesId '%s' successful", self.logPrefix, id)
+            self.log.debug(
+                "%sresponsePoster: download poster for seriesId '%s' successful", self.logPrefix, id)
 
         if (response == self.DOWNLOAD_POSTER_MOVIE):
-            self.log.debug("%sresponsePoster: download poster for movieId '%s' successful", self.logPrefix, id)
-        
+            self.log.debug(
+                "%sresponsePoster: download poster for movieId '%s' successful", self.logPrefix, id)
+
         if(response == self.DOWNLOAD_POSTER_SERIES or response == self.DOWNLOAD_POSTER_MOVIE):
             if (os.path.exists(posterFileName)):
                 self.image.setPixmap(loadJPG(posterFileName))
@@ -402,10 +423,12 @@ class MetrixReloadedEventImage(Renderer):
         self.showSmallImage(startTime, self.id)
 
     def reponsePosterError(self, e, response):
-        self.log.exception("%sresponse: [%s] %s", self.logPrefix, response, str(e))        
+        self.log.exception(
+            "%sresponse: [%s] %s", self.logPrefix, response, str(e))
 
     def showSmallImage(self, startTime, eventId):
-        smallImage = getEventImage(self, startTime, eventId, self.log, self.logPrefix)
+        smallImage = getEventImage(
+            self, startTime, eventId, self.log, self.logPrefix)
         if (smallImage != None):
             # Bild bis Download abgeschlossen ist
             self.image.setPixmap(loadJPG(smallImage))
