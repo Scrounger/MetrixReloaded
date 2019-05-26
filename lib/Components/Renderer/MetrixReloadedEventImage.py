@@ -105,7 +105,7 @@ class MetrixReloadedEventImage(Renderer):
             if not self.instance:
                 return
 
-            self.hideimage()
+            #self.hideimage()
 
             if hasattr(self.source, 'getEvent'):
                 # source is 'extEventInfo'
@@ -183,6 +183,8 @@ class MetrixReloadedEventImage(Renderer):
                                     genre = str(values['categoryName'])
                                     year = str(values['year'])
                                     
+                                    self.log.debug("%schanged: poster lookup: url: %s" % (self.logPrefix, url))
+
                                     if url != '' and genre != '':
                                         if url.startswith('http://api.themoviedb.org'):
                                             # language und jahr anhängen
@@ -203,6 +205,11 @@ class MetrixReloadedEventImage(Renderer):
                             self.log.exception(
                                 "%schanged (1): %s", self.logPrefix, str(e))
                             self.hideimage()
+                    
+                    else:
+                        self.hideimage()
+                else:
+                    self.hideimage()
 
         except Exception as e:
             self.log.exception("%schanged: %s", self.logPrefix, str(e))

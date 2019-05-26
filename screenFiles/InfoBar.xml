@@ -8,7 +8,7 @@
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- Now: Title, Subtitle, Times -->
-  <widget backgroundColor="windowBackground" foregroundColor="foreground" position="30,578" size="350,492" scale="3" render="MetrixReloadedEventImage" imageType="Poster" source="session.extEvent_Now" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackground" foregroundColor="foreground" position="30,293" size="350,492" scale="3" render="MetrixReloadedEventImage" imageType="Poster" source="session.extEvent_Now" transparent="1" zPosition="3" />
   
   <widget source="session.Event_Now" position="410,820" size="1208,56" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" render="VRunningText" halign="left" valign="top" options="movetype=running,startpoint=0,direction=left,steptime=50,startdelay=2000,always=0,noWrap" transparent="1">
     <convert type="EventName">Name</convert>
