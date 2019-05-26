@@ -4,6 +4,8 @@ import os
 import time
 import base64
 import re
+import urllib
+
 import skin
 from Components.config import config
 from Components.Sources.Event import Event
@@ -14,6 +16,7 @@ from twisted.web.client import downloadPage, getPage
 from Components.Sources.ExtEvent import ExtEvent
 from Components.Sources.ServiceEvent import ServiceEvent
 from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, getEpgShareImagePath, getChannelName, createPosterPaths, initializeLog
+from Components.Converter.MetrixReloadedExtEventEPG import MetrixReloadedExtEventEPG
 import logging
 
 
@@ -26,6 +29,8 @@ class MetrixReloadedEventImage(Renderer):
 
     IMAGE = "Image"
     POSTER = "Poster"
+
+    tmDbApiKey = "8789cfd3fbab7dccf1269c3d7d867aff"
 
     def __init__(self):
         Renderer.__init__(self)
@@ -119,10 +124,12 @@ class MetrixReloadedEventImage(Renderer):
                 event = event[0]
 
             if event is None:
+                self.hideimage()
                 self.eventid = None
                 self.instance.hide()
                 return
             if what[0] == self.CHANGED_CLEAR:
+                self.hideimage()
                 self.eventid = None
             if what[0] != self.CHANGED_CLEAR:
                 self.logPrefix = "[%s, %s, %s] " % (self.screenName, type(
@@ -189,26 +196,28 @@ class MetrixReloadedEventImage(Renderer):
                                 genre = str(values['categoryName'])
                                 year = str(values['year'])
 
-                                if url != '' and genre != '':
+                                if (url != '' and genre != ''):
                                     if url.startswith('http://api.themoviedb.org'):
                                         # language und jahr anhängen
                                         if year != None and year != '':
                                             url += '&year=%s' % year
                                         url += '&language=de'
 
-                                    self.downloadPosterInfos(url, genre, event)
+                                    self.downloadPosterInfos(
+                                        url, genre, event, event.getEventName(), values)
                                 else:
-                                    self.log.debug("%schanged: poster lookup: no url or genre avaiable for '%s'" % (
-                                    self.logPrefix, event.getEventName()))
-                                    self.hideimage()
+                                    # keine url und genre in EpgShare Daten vorhanden -> MetrixReloadedExtEventEpg parser benutzen
+                                    self.useMetrixReloadedExtEventEpg(
+                                        values, event, event.getEventName())
                             else:
-                                self.hideimage()
-
+                                # keine EpgShare Daten vorhanden -> MetrixReloadedExtEventEpg parser benutzen
+                                self.useMetrixReloadedExtEventEpg(
+                                    values, event, event.getEventName())
                         else:
                             self.log.warn(
                                 "%schanged: imageType '%s' is unknown!", self.logPrefix, self.imageType)
                             self.hideimage()
-                            
+
                     except Exception as e:
                         self.log.exception(
                             "%schanged (1): %s", self.logPrefix, str(e))
@@ -245,7 +254,56 @@ class MetrixReloadedEventImage(Renderer):
     def onHide(self):
         self.suspended = True
 
-    def downloadPosterInfos(self, url, genre, event):
+    def useMetrixReloadedExtEventEpg(self, values, event, title, genre=None):
+
+        if(genre == None):
+            # Prüfen ob wir eine Serie sind
+            episodeNum = MetrixReloadedExtEventEPG(
+                "EpisodeNum").getEpisodeNum("EpisodeNum", event, values)
+            if(episodeNum != None):
+                genre = 'Serien'
+                self.log.debug("%suseMetrixReloadedExtEventEpg: 'EpisodeNum' exist for '%s' -> using tvdb.com" %
+                               (self.logPrefix, event.getEventName()))
+
+        # Genre holen und in 'Serie' oder 'Spielfilm' umwandeln
+        if(genre == None):
+            genre = MetrixReloadedExtEventEPG(
+                "Genre").getGenre("Genre", values, event)
+            if(genre != None):
+                self.log.debug("genre: " + genre)
+                if('serie' in genre.lower()):
+                    self.log.debug("%suseMetrixReloadedExtEventEpg: genre '%s' exist for '%s' -> using tvdb.com" %
+                                   (self.logPrefix, genre, event.getEventName()))
+                    genre = 'Serien'
+                else:
+                    self.log.debug("%suseMetrixReloadedExtEventEpg: genre '%s' exist for '%s' -> using themoviedb.org" %
+                                   (self.logPrefix, genre, event.getEventName()))
+                    genre = 'Spielfilm'
+
+        if(genre != None):
+            url = None
+            # url bauen
+            if(genre == 'Serien'):
+                url = "http://thetvdb.com/api/GetSeries.php?seriesname=%s&language=de" % (
+                    urllib.quote(title))
+            else:
+                url = "http://api.themoviedb.org/3/search/movie?api_key=%s&query=%s&language=de" % (
+                    self.tmDbApiKey, urllib.quote(title))
+
+                # schauen ob Jahr verfügbar
+                year = MetrixReloadedExtEventEPG(
+                    "Year").getYear("Year", values, event)
+                if(year != None):
+                    url += '&primary_release_year=%s&year=%s' % (year, year)
+
+            self.downloadPosterInfos(url, genre, event, title, values)
+
+        else:
+            self.log.debug("%schanged: poster lookup: no url or genre avaiable for '%s'" % (
+                self.logPrefix, event.getEventName()))
+            self.hideimage()
+
+    def downloadPosterInfos(self, url, genre, event, title, values):
         onlineMode = True
         try:
             onlineMode = config.plugins.MetrixReloaded.onlineMode.value
@@ -254,33 +312,56 @@ class MetrixReloadedEventImage(Renderer):
                                self.logPrefix, str(e))
 
         if(onlineMode):
-            self.log.debug("%sdownloadPoster: searching online poster for '%s', url: %s",
-                           self.logPrefix, event.getEventName(), url)
+            if(url != None):
+                self.log.debug("%sdownloadPoster: searching online poster for '%s', url: %s",
+                               self.logPrefix, event.getEventName(), url)
 
-            getPage(url).addCallback(self.responsePosterInfo, self.DOWNLOAD_POSTER_INFOS,
-                                     genre).addErrback(self.reponsePosterError, self.DOWNLOAD_POSTER_INFOS)
+                getPage(url).addCallback(self.responsePosterInfo, self.DOWNLOAD_POSTER_INFOS,
+                                         genre, title, values, event).addErrback(self.reponsePosterError, self.DOWNLOAD_POSTER_INFOS)
+            else:
+                self.log.warn("%sdownloadPoster: no url for '%s'",
+                              self.logPrefix, event.getEventName())
 
-    def responsePosterInfo(self, data, response, genre):
+    def responsePosterInfo(self, data, response, genre, title, values, event):
 
         if (response == self.DOWNLOAD_POSTER_INFOS):
-            if genre == 'Serien':
+            if (genre == 'Serien' or genre == 'Reportage'):
                 seriesId = re.findall('<seriesid>(.*?)</seriesid>', data, re.I)
 
                 if seriesId:
                     self.downloadPoster(
                         str(seriesId[0]), self.DOWNLOAD_POSTER_SERIES)
+                else:
+                    self.log.debug(
+                        "%sresponsePosterInfos: no infos found on tvdb.com for '%s'", self.logPrefix, title)
 
             elif genre == 'Spielfilm':
                 jsonData = json.loads(data)
 
-                movieId = str(jsonData['results'][0]['id'])
-                moviePosterPath = str(jsonData['results'][0]['poster_path'])
+                if(jsonData['results']):
+                    movieId = str(jsonData['results'][0]['id'])
+                    moviePosterPath = str(
+                        jsonData['results'][0]['poster_path'])
 
-                if moviePosterPath and movieId:
+                    if moviePosterPath and movieId:
+                        self.log.debug(
+                            "%sresponsePosterInfos: movieId '%s'", self.logPrefix, movieId)
+                        self.downloadPoster(
+                            movieId, self.DOWNLOAD_POSTER_MOVIE, moviePosterPath)
+                    else:
+                        self.log.debug(
+                            "%sresponsePosterInfos: no infos found on themoviedb.org for '%s', retry with tvdb.com", self.logPrefix, title)
+
+                        # Nochmal mit tvdb.com probieren
+                        self.useMetrixReloadedExtEventEpg(
+                            values, event, event.getEventName(), 'Serien')
+                else:
                     self.log.debug(
-                        "%sresponsePosterInfos: movieId '%s'", self.logPrefix, movieId)
-                    self.downloadPoster(
-                        movieId, self.DOWNLOAD_POSTER_MOVIE, moviePosterPath)
+                        "%sresponsePosterInfos: no infos found on themoviedb.org for '%s', retry with tvdb.com", self.logPrefix, title)
+
+                    # Nochmal mit tvdb.com probieren
+                    self.useMetrixReloadedExtEventEpg(
+                        values, event, event.getEventName(), 'Serien')
 
     def downloadPoster(self, id, posterTyp, moviePosterPath=None):
         posterFileName = '%s/%s.jpg'
@@ -425,6 +506,7 @@ class MetrixReloadedEventImage(Renderer):
     def reponsePosterError(self, e, response):
         self.log.exception(
             "%sresponse: [%s] %s", self.logPrefix, response, str(e))
+        self.hideimage()
 
     def showSmallImage(self, startTime, eventId):
         smallImage = getEventImage(
