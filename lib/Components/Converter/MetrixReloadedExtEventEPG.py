@@ -976,7 +976,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 				jsonString = str(file.read())
 
 				# in Uncode umwandeln, da sonst json parsing nicht möglich
-				jsonString = jsonString.decode("iso-8859-1")
+				#jsonString = jsonString.decode("iso-8859-1")
 				genreData = json.loads(jsonString)
 
 				#exakten Treffer suchen
@@ -985,6 +985,7 @@ class MetrixReloadedExtEventEPG(Converter, object):
 					genre = genre.encode('utf-8')
 
 					setGenre = set([genre])
+					#self.log.info(str(setGenre) + " : " + str(setWordList))
 					if setGenre & setWordList:
 						#zurück in utf-8 umwandeln
 						return genre
