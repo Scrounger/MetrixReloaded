@@ -210,7 +210,7 @@ def initializeLog(fileName):
         else:
             logger.setLevel(logging.INFO)
 
-        dir = '/mnt/hdd/MetrixReloaded/log/'
+        dir = '/tmp/MetrixReloaded/log/'
         try:
             dir = config.plugins.MetrixReloaded.logDirectory.value
         except:
