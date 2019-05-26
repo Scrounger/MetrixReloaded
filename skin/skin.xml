@@ -1493,7 +1493,7 @@
     <convert type="TemplatedMultiContent">
       {"template": [
       MultiContentEntryText(pos=(5,2), size=(286, 40), font = 0, text = 1),
-      MultiContentEntryText(pos=(286,2), size=(130, 40), font = 1, text = 2, flags = RT_HALIGN_RIGHT)
+      MultiContentEntryText(pos=(286,9), size=(130, 40), font = 1, text = 2, flags = RT_HALIGN_RIGHT)
       ],
       "fonts": [gFont("SetrixHD", 30), gFont("SetrixSL", 24)],
       "itemHeight": 50
@@ -2772,6 +2772,8 @@
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- Now: Title, Subtitle, Times -->
+  <widget backgroundColor="windowBackground" foregroundColor="foreground" position="30,578" size="350,492" scale="3" render="MetrixReloadedEventImage" imageType="Poster" source="session.extEvent_Now" transparent="1" zPosition="3" />
+  
   <widget source="session.Event_Now" position="410,820" size="1208,56" backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixHD;42" render="VRunningText" halign="left" valign="top" options="movetype=running,startpoint=0,direction=left,steptime=50,startdelay=2000,always=0,noWrap" transparent="1">
     <convert type="EventName">Name</convert>
   </widget>
