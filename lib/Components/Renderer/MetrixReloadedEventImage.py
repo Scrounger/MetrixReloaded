@@ -279,6 +279,10 @@ class MetrixReloadedEventImage(Renderer):
                     self.log.debug("%suseMetrixReloadedExtEventEpg: genre '%s' exist for '%s' -> using themoviedb.org" %
                                    (self.logPrefix, genre, event.getEventName()))
                     genre = 'Spielfilm'
+            
+            else:
+                # mit tmdb probieren
+                genre = 'Spielfilm'
 
         if(genre != None):
             url = None
