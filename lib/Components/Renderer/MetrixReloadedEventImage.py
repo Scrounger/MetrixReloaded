@@ -271,7 +271,7 @@ class MetrixReloadedEventImage(Renderer):
                 "Genre").getGenre("Genre", values, event)
             if(genre != None):
                 self.log.debug("genre: " + genre)
-                if('serie' in genre.lower()):
+                if('serie' in genre.lower() or 'soap' in genre.lower() or 'reihe' in genre.lower()):
                     self.log.debug("%suseMetrixReloadedExtEventEpg: genre '%s' exist for '%s' -> using tvdb.com" %
                                    (self.logPrefix, genre, event.getEventName()))
                     genre = 'Serien'
@@ -334,6 +334,7 @@ class MetrixReloadedEventImage(Renderer):
                 else:
                     self.log.debug(
                         "%sresponsePosterInfos: no infos found on tvdb.com for '%s'", self.logPrefix, title)
+                    self.hideimage()
 
             elif genre == 'Spielfilm':
                 jsonData = json.loads(data)
@@ -355,6 +356,7 @@ class MetrixReloadedEventImage(Renderer):
                         # Nochmal mit tvdb.com probieren
                         self.useMetrixReloadedExtEventEpg(
                             values, event, event.getEventName(), 'Serien')
+                        self.hideimage()
                 else:
                     self.log.debug(
                         "%sresponsePosterInfos: no infos found on themoviedb.org for '%s', retry with tvdb.com", self.logPrefix, title)
@@ -362,6 +364,7 @@ class MetrixReloadedEventImage(Renderer):
                     # Nochmal mit tvdb.com probieren
                     self.useMetrixReloadedExtEventEpg(
                         values, event, event.getEventName(), 'Serien')
+                    self.hideimage()
 
     def downloadPoster(self, id, posterTyp, moviePosterPath=None):
         posterFileName = '%s/%s.jpg'
