@@ -110,7 +110,7 @@ class MetrixReloadedEventImage(Renderer):
             if not self.instance:
                 return
 
-            # self.hideimage()
+            #self.hideimage()
 
             if hasattr(self.source, 'getEvent'):
                 # source is 'extEventInfo'
@@ -299,7 +299,7 @@ class MetrixReloadedEventImage(Renderer):
             self.downloadPosterInfos(url, genre, event, title, values)
 
         else:
-            self.log.debug("%schanged: poster lookup: no url or genre avaiable for '%s'" % (
+            self.log.debug("%suseMetrixReloadedExtEventEpg: poster lookup: no url or genre avaiable for '%s'" % (
                 self.logPrefix, event.getEventName()))
             self.hideimage()
 
