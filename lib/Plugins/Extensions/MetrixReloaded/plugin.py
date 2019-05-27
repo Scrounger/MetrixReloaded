@@ -7,7 +7,7 @@ from threading import Thread
 from time import sleep
 
 # Config
-from Components.config import config, ConfigSubsection, ConfigOnOff, ConfigDirectory
+from Components.config import config, ConfigSubsection, ConfigOnOff, ConfigDirectory, ConfigNumber
 
 import os
 import logging
@@ -28,6 +28,9 @@ config.plugins.MetrixReloaded.debug = ConfigOnOff(default=False)
 config.plugins.MetrixReloaded.logDirectory = ConfigDirectory(default='/tmp/MetrixReloaded/log/')
 config.plugins.MetrixReloaded.showScreenNames = ConfigOnOff(default=False)
 config.plugins.MetrixReloaded.showMenuEntryNames = ConfigOnOff(default=False)
+config.plugins.MetrixReloaded.posterDownload = ConfigOnOff(default=True)
+config.plugins.MetrixReloaded.posterDirectory = ConfigDirectory(default='/mnt/hdd/MetrixReloaded/poster/')
+config.plugins.MetrixReloaded.posterAutoRemove = ConfigNumber(default=30)
 
 # MyLog
 # MyLog
