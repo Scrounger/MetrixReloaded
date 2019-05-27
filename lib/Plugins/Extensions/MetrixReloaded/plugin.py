@@ -14,6 +14,7 @@ import logging
 
 import MetrixReloadedSetup
 from MyScreens import MetrixReloadedEventView
+from Tools.MetrixReloadedHelper import createPosterPaths
 
 # Screens für Mods
 from Screens.EventView import EventViewBase
@@ -75,6 +76,8 @@ def autoStart(reason, **kwargs):
 			config.misc.standbyCounter.addNotifier(
 				onEnterStandby, initial_call=False)
 
+			createPosterPaths()
+
 			#auf anderem Thread damit sleep nicht blockt
 			Thread(target=checkNewVersion, args=(session,)).start()
 
@@ -88,6 +91,8 @@ def autoStart(reason, **kwargs):
 def onLeaveStandby():
     log.debug("leaving standy")
     if(session != None):
+        createPosterPaths()
+
         #auf anderem Thread damit sleep nicht blockt
         Thread(target=checkNewVersion, args=(session,)).start()
     else:

@@ -186,13 +186,35 @@ def isconnected(logger, logPrefix = "", host = '8.8.8.8', port = 53, timeout = 1
         return False
 
 def createPosterPaths():
-    dir = '/mnt/hdd/MetrixReloaded/poster/movies/'
+    dir = os.path.join(getPosterDircetory(), "movies/")
     if not os.path.exists(dir):
         os.makedirs(dir)
 
-    dir = '/mnt/hdd/MetrixReloaded/poster/series/'
+    dir = os.path.join(getPosterDircetory(), "series/")
     if not os.path.exists(dir):
-        os.makedirs(dir)    
+        os.makedirs(dir)
+
+def isOnlineMode():
+    try:
+        return config.plugins.MetrixReloaded.onlineMode.value
+    except Exception:
+        # falls nicht von MetrixReloaded skin verwendet wird
+        return True
+
+def isDownloadPoster():
+    try:
+        return config.plugins.MetrixReloaded.posterDownload.value
+    except Exception:
+        # falls nicht von MetrixReloaded skin verwendet wird
+        return True
+
+def getPosterDircetory():
+    try:
+        return config.plugins.MetrixReloaded.posterDirectory.value
+    except Exception:
+        # falls nicht von MetrixReloaded skin verwendet wird
+        createPosterPaths()
+        return '/tmp/MetrixReloaded/poster/'
 
 def initializeLog(fileName):
     logger = logging.getLogger(fileName)

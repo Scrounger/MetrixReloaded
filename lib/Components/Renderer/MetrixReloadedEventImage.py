@@ -15,7 +15,7 @@ from skin import parseColor, parseFont
 from twisted.web.client import downloadPage, getPage
 from Components.Sources.ExtEvent import ExtEvent
 from Components.Sources.ServiceEvent import ServiceEvent
-from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, getEpgShareImagePath, getChannelName, createPosterPaths, initializeLog
+from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, getEpgShareImagePath, getChannelName, createPosterPaths, isOnlineMode, isDownloadPoster, getPosterDircetory, initializeLog
 from Components.Converter.MetrixReloadedExtEventEPG import MetrixReloadedExtEventEPG
 import logging
 
@@ -110,7 +110,7 @@ class MetrixReloadedEventImage(Renderer):
             if not self.instance:
                 return
 
-            #self.hideimage()
+            # self.hideimage()
 
             if hasattr(self.source, 'getEvent'):
                 # source is 'extEventInfo'
@@ -180,39 +180,55 @@ class MetrixReloadedEventImage(Renderer):
                                         return
                                     else:
                                         # Image downloaden
-                                        self.downloadImage(
-                                            str(values['id']), int(startTime), event)
+                                        if(isOnlineMode()):
+                                            self.downloadImage(
+                                                str(values['id']), int(startTime), event)
 
-                                        # Bild bis Download abgeschlossen ist
-                                        self.showSmallImage(startTime, self.id)
+                                            # Bild bis Download abgeschlossen ist
+                                            self.showSmallImage(
+                                                startTime, self.id)
+                                        else:
+                                            self.showSmallImage(
+                                                startTime, self.id)
+                                            self.log.debug(
+                                                "%schanged: image: online mode is deactivated", self.logPrefix)
                             else:
                                 self.hideimage()
                         elif(self.imageType == self.POSTER):
-                            createPosterPaths()
+                            if(isOnlineMode()):
+                                if(isDownloadPoster()):
+                                    if(values != None and len(values) > 0 and eventid):
+                                        # EpgShareDaten vorhanden
+                                        url = str(values['search'])
+                                        genre = str(values['categoryName'])
+                                        year = str(values['year'])
 
-                            if(values != None and len(values) > 0 and eventid):
-                                # EpgShareDaten vorhanden
-                                url = str(values['search'])
-                                genre = str(values['categoryName'])
-                                year = str(values['year'])
+                                        if (url != '' and genre != ''):
+                                            if url.startswith('http://api.themoviedb.org'):
+                                                # language und jahr anhängen
+                                                if year != None and year != '':
+                                                    url += '&year=%s' % year
+                                                url += '&language=de'
 
-                                if (url != '' and genre != ''):
-                                    if url.startswith('http://api.themoviedb.org'):
-                                        # language und jahr anhängen
-                                        if year != None and year != '':
-                                            url += '&year=%s' % year
-                                        url += '&language=de'
-
-                                    self.downloadPosterInfos(
-                                        url, genre, event, event.getEventName(), values)
+                                            self.downloadPosterInfos(
+                                                url, genre, event, event.getEventName(), values)
+                                        else:
+                                            # keine url und genre in EpgShare Daten vorhanden -> MetrixReloadedExtEventEpg parser benutzen
+                                            self.useMetrixReloadedExtEventEpg(
+                                                values, event, event.getEventName())
+                                    else:
+                                        # keine EpgShare Daten vorhanden -> MetrixReloadedExtEventEpg parser benutzen
+                                        self.useMetrixReloadedExtEventEpg(
+                                            values, event, event.getEventName())
                                 else:
-                                    # keine url und genre in EpgShare Daten vorhanden -> MetrixReloadedExtEventEpg parser benutzen
-                                    self.useMetrixReloadedExtEventEpg(
-                                        values, event, event.getEventName())
+                                    self.log.debug(
+                                    "%schanged: poster: download posters is deactivated", self.logPrefix)
+                                    self.hideimage()
                             else:
-                                # keine EpgShare Daten vorhanden -> MetrixReloadedExtEventEpg parser benutzen
-                                self.useMetrixReloadedExtEventEpg(
-                                    values, event, event.getEventName())
+                                self.log.debug(
+                                    "%schanged: poster: online mode is deactivated", self.logPrefix)
+                                self.hideimage()
+
                         else:
                             self.log.warn(
                                 "%schanged: imageType '%s' is unknown!", self.logPrefix, self.imageType)
@@ -279,7 +295,7 @@ class MetrixReloadedEventImage(Renderer):
                     self.log.debug("%suseMetrixReloadedExtEventEpg: genre '%s' exist for '%s' -> using themoviedb.org" %
                                    (self.logPrefix, genre, event.getEventName()))
                     genre = 'Spielfilm'
-            
+
             else:
                 # mit tmdb probieren
                 genre = 'Spielfilm'
@@ -308,14 +324,7 @@ class MetrixReloadedEventImage(Renderer):
             self.hideimage()
 
     def downloadPosterInfos(self, url, genre, event, title, values):
-        onlineMode = True
-        try:
-            onlineMode = config.plugins.MetrixReloaded.onlineMode.value
-        except Exception as e:
-            self.log.exception("%sgetEpgShareImagePath: %s",
-                               self.logPrefix, str(e))
-
-        if(onlineMode):
+        if(isOnlineMode()):
             if(url != None):
                 self.log.debug("%sdownloadPoster: searching online poster for '%s', url: %s",
                                self.logPrefix, event.getEventName(), url)
@@ -371,11 +380,9 @@ class MetrixReloadedEventImage(Renderer):
                     self.hideimage()
 
     def downloadPoster(self, id, posterTyp, moviePosterPath=None):
-        posterFileName = '%s/%s.jpg'
 
         if(posterTyp == self.DOWNLOAD_POSTER_SERIES):
-            posterFileName = posterFileName % (
-                '/mnt/hdd/MetrixReloaded/poster/series/', id)
+            posterFileName = os.path.join(getPosterDircetory() + 'series/', id + ".jpg")
 
             # Prüfen ob bereits herunter geladen
             if (os.path.exists(posterFileName)):
@@ -393,8 +400,7 @@ class MetrixReloadedEventImage(Renderer):
                                                                     id, posterFileName).addErrback(self.reponsePosterError, self.DOWNLOAD_POSTER_SERIES)
 
         elif(posterTyp == self.DOWNLOAD_POSTER_MOVIE):
-            posterFileName = posterFileName % (
-                '/mnt/hdd/MetrixReloaded/poster/movies/', id)
+            posterFileName = os.path.join(getPosterDircetory() + 'movies/', id + ".jpg")
 
             # Prüfen ob bereits herunter geladen
             if (os.path.exists(posterFileName)):
@@ -428,20 +434,12 @@ class MetrixReloadedEventImage(Renderer):
                 self.showimage()
 
     def downloadImage(self, eventId, startTime, event):
-        onlineMode = True
-        try:
-            onlineMode = config.plugins.MetrixReloaded.onlineMode.value
-        except Exception as e:
-            self.log.exception("%sgetEpgShareImagePath: %s",
-                               self.logPrefix, str(e))
-
-        if(onlineMode):
-            self.log.debug("%sdownloadImage: searching online image for '%s'",
-                           self.logPrefix, event.getEventName())
-            url = 'http://capi.tvmovie.de/v1/broadcast/%s?fields=images.id,previewImage.id' % str(
-                eventId)
-            getPage(url).addCallback(self.response, self.DOWNOAD_IMAGE, eventId, startTime,
-                                     event).addErrback(self.responseError, self.DOWNOAD_IMAGE, startTime)
+        self.log.debug("%sdownloadImage: searching online image for '%s'",
+                       self.logPrefix, event.getEventName())
+        url = 'http://capi.tvmovie.de/v1/broadcast/%s?fields=images.id,previewImage.id' % str(
+            eventId)
+        getPage(url).addCallback(self.response, self.DOWNOAD_IMAGE, eventId, startTime,
+                                 event).addErrback(self.responseError, self.DOWNOAD_IMAGE, startTime)
 
     def response(self, data, response, eventId, startTime, event):
         # Antwort für Async Task
