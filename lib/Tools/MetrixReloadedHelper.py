@@ -223,7 +223,14 @@ def getPosterDircetory():
         return config.plugins.MetrixReloaded.posterDirectory.value
     except Exception:
         # falls nicht von MetrixReloaded skin verwendet wird
-        createPosterPaths()
+        dir = '/tmp/MetrixReloaded/poster/movies/'
+        if not os.path.exists(dir):
+            os.makedirs(dir)
+
+        dir = '/tmp/MetrixReloaded/poster/series/'
+        if not os.path.exists(dir):
+            os.makedirs(dir)
+
         return '/tmp/MetrixReloaded/poster/'
 
 
