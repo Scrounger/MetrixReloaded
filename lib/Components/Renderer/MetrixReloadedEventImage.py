@@ -145,22 +145,22 @@ class MetrixReloadedEventImage(Renderer):
                     startTime = event.getBeginTime()
                     title = event.getEventName()
 
-                    # Default Image aus Folder 'Default' über Title
-                    defaultImage = getDefaultImage(self, title)
-                    if (defaultImage != None and self.imageType == self.IMAGE):
-                        self.log.debug(
-                            "%schanged: load default image for '%s'", self.logPrefix, title)
-                        self.smallptr = True
-                        self.image.setPixmap(loadJPG(defaultImage))
-                        self.image.setScale(self.scaletype)
-                        self.showimage()
-                        return
-
                     # ExtraDaten aus db holen
                     values = self.deserializeJson(
                         getExtraData(self.source, self.log, self.logPrefix))
                     try:
                         if(self.imageType == self.IMAGE):
+
+                            # Default Image aus Folder 'Default' über Title
+                            defaultImage = getDefaultImage(self, title)
+                            if (defaultImage != None):
+                                self.log.debug(
+                                    "%schanged: load default image for '%s'", self.logPrefix, title)
+                                self.smallptr = True
+                                self.image.setPixmap(loadJPG(defaultImage))
+                                self.image.setScale(self.scaletype)
+                                self.showimage()
+                                return
 
                             if(values != None and len(values) > 0 and eventid):
                                 # EpgShare Daten sind vorhanden
