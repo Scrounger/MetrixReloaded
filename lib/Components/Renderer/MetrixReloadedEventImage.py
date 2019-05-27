@@ -222,7 +222,7 @@ class MetrixReloadedEventImage(Renderer):
                                             values, event, event.getEventName())
                                 else:
                                     self.log.debug(
-                                    "%schanged: poster: download posters is deactivated", self.logPrefix)
+                                        "%schanged: poster: download posters is deactivated", self.logPrefix)
                                     self.hideimage()
                             else:
                                 self.log.debug(
@@ -382,7 +382,8 @@ class MetrixReloadedEventImage(Renderer):
     def downloadPoster(self, id, posterTyp, moviePosterPath=None):
 
         if(posterTyp == self.DOWNLOAD_POSTER_SERIES):
-            posterFileName = os.path.join(getPosterDircetory() + 'series/', id + ".jpg")
+            posterFileName = os.path.join(
+                getPosterDircetory() + 'series/', id + ".jpg")
 
             # Prüfen ob bereits herunter geladen
             if (os.path.exists(posterFileName)):
@@ -397,10 +398,11 @@ class MetrixReloadedEventImage(Renderer):
                     "%sdownloadPoster: download poster for seriesId '%s', url: %s", self.logPrefix, id, posterUrl)
 
                 downloadPage(posterUrl, posterFileName).addCallback(self.responsePosterDownload, self.DOWNLOAD_POSTER_SERIES,
-                                                                    id, posterFileName).addErrback(self.reponsePosterError, self.DOWNLOAD_POSTER_SERIES)
+                                                                    id, posterFileName).addErrback(self.reponsePosterTvDbError, self.DOWNLOAD_POSTER_SERIES, posterUrl, posterFileName, id)
 
         elif(posterTyp == self.DOWNLOAD_POSTER_MOVIE):
-            posterFileName = os.path.join(getPosterDircetory() + 'movies/', id + ".jpg")
+            posterFileName = os.path.join(
+                getPosterDircetory() + 'movies/', id + ".jpg")
 
             # Prüfen ob bereits herunter geladen
             if (os.path.exists(posterFileName)):
@@ -510,8 +512,22 @@ class MetrixReloadedEventImage(Renderer):
 
     def reponsePosterError(self, e, response):
         self.log.exception(
-            "%sresponse: [%s] %s", self.logPrefix, response, str(e))
+            "%sreponsePosterError: [%s] %s", self.logPrefix, response, str(e))
         self.hideimage()
+
+    def reponsePosterTvDbError(self, e, response, url, posterFileName, id):
+        self.log.exception(
+            "%sreponsePosterTvDbError: [%s] %s", self.logPrefix, response, str(e))
+
+        if("404 Not Found" in str(e)):
+            posterUrl = url.replace("-1.jpg", "-2.jpg")
+
+            self.log.debug("%sdownloadPoster: retry download poster for '%s' with other url: %s", self.logPrefix, id, posterUrl)
+
+            downloadPage(posterUrl, posterFileName).addCallback(self.responsePosterDownload, self.DOWNLOAD_POSTER_SERIES,
+                                                                id, posterFileName).addErrback(self.reponsePosterError, self.DOWNLOAD_POSTER_SERIES)
+        else:
+            self.hideimage()
 
     def showSmallImage(self, startTime, eventId):
         smallImage = getEventImage(
