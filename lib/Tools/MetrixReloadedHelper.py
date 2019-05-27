@@ -16,13 +16,14 @@ import base64
 import logging
 import socket
 
-def getExtraData(source, logger, logPrefix =""):
+
+def getExtraData(source, logger, logPrefix=""):
     if source.event:
         if type(source) == ExtEvent:
             try:
                 starttime = source.event.getBeginTime()
                 title = source.event.getEventName()
-                
+
                 return json.dumps(getDataFromDatabase(str(source.service), str(source.event.getEventId()), logger, logPrefix, starttime, title))
             except Exception as ex:
                 logger.exception("%sgetExtraData (1): %s", logPrefix, str(ex))
@@ -46,7 +47,7 @@ def getExtraData(source, logger, logPrefix =""):
     return ""
 
 
-def getDataFromDatabase(service, eventid, logger, logPrefix = "", beginTime=None, EventName=None):
+def getDataFromDatabase(service, eventid, logger, logPrefix="", beginTime=None, EventName=None):
     try:
         from Plugins.Extensions.EpgShare.main import getEPGDB
         data = None
@@ -61,13 +62,15 @@ def getDataFromDatabase(service, eventid, logger, logPrefix = "", beginTime=None
 
         if not "1:0:0:0:0:0:0:0:0:0:" in service and not "4097:0:0:0:0:0:0:0:0:0:" in service:
             if beginTime and EventName:
-                queryPara = "ref: %s, eventId: %s, title:: %s, beginTime: %s" % (str(service), str(eventid), str(EventName.lower()).decode("utf-8"), str(int(beginTime)))
+                queryPara = "ref: %s, eventId: %s, title:: %s, beginTime: %s" % (str(service), str(
+                    eventid), str(EventName.lower()).decode("utf-8"), str(int(beginTime)))
                 logger.debug("%sgetDataFromDatabase: %s", logPrefix, queryPara)
 
                 data = getEPGDB().selectSQL("SELECT * FROM epg_extradata WHERE ref = ? AND (eventid = ? or (LOWER(title) = ? and airtime BETWEEN ? AND ?))",
                                             [str(service), str(eventid), str(EventName.lower()).decode("utf-8"), str(int(beginTime) - 120), str(int(beginTime) + 120)])
             else:
-                queryPara = "ref: %s, eventId: %s" % (str(service), str(eventid))
+                queryPara = "ref: %s, eventId: %s" % (
+                    str(service), str(eventid))
                 logger.debug("%sgetDataFromDatabase: %s", logPrefix, queryPara)
 
                 data = getEPGDB().selectSQL("SELECT * FROM epg_extradata WHERE ref = ? AND eventid = ?",
@@ -83,7 +86,7 @@ def getDataFromDatabase(service, eventid, logger, logPrefix = "", beginTime=None
         return None
 
 
-def getEventImage(self, timestamp, eventId, logger, logPrefix = "", withSize=False, existCheck=False):
+def getEventImage(self, timestamp, eventId, logger, logPrefix="", withSize=False, existCheck=False):
     # FileName für Image aus EpgShare Download Folder zurück geben
     try:
         path = os.path.join(getEpgShareImagePath(self), str(
@@ -100,10 +103,10 @@ def getEventImage(self, timestamp, eventId, logger, logPrefix = "", withSize=Fal
             return imageFileName
 
         if(existCheck):
-            #Falls kein size mitgeliefert wird (z.B. bei Converter)
-            files = [i for i in os.listdir(path) if os.path.isfile(os.path.join(path,i)) and \
-                    i.startswith("%s_" % eventId)]
-            
+            # Falls kein size mitgeliefert wird (z.B. bei Converter)
+            files = [i for i in os.listdir(path) if os.path.isfile(os.path.join(path, i)) and
+                     i.startswith("%s_" % eventId)]
+
             if(len(files) > 0):
                 imageFileName = '%s/%s' % (path, files[0])
 
@@ -143,17 +146,19 @@ def getEpgShareImagePath(self):
 
     return None
 
+
 def getVersion():
     versFile = "/usr/share/enigma2/MetrixReloaded/version.info"
     version = "Error: version file not exist!"
 
     if (os.path.exists(versFile)):
-        pFile = open(versFile,"r")
+        pFile = open(versFile, "r")
         for line in pFile:
             version = line.rstrip()
         pFile.close()
 
     return version
+
 
 def getChannelName(source):
     service = source.service
@@ -172,10 +177,11 @@ def getChannelName(source):
         name = ref and info.getName(ref)
     except Exception:
         name = ServiceReference(str(ref)).getServiceName()
-    
+
     return name.replace('\xc2\x86', '').replace('\xc2\x87', '')
 
-def isconnected(logger, logPrefix = "", host = '8.8.8.8', port = 53, timeout = 1):
+
+def isconnected(logger, logPrefix="", host='8.8.8.8', port=53, timeout=1):
     try:
         socket.setdefaulttimeout(timeout)
         host = socket.gethostbyname('www.google.com')
@@ -184,6 +190,7 @@ def isconnected(logger, logPrefix = "", host = '8.8.8.8', port = 53, timeout = 1
     except Exception:
         logger.warn("%s no internet connection!", logPrefix)
         return False
+
 
 def createPosterPaths():
     dir = os.path.join(getPosterDircetory(), "movies/")
@@ -194,12 +201,14 @@ def createPosterPaths():
     if not os.path.exists(dir):
         os.makedirs(dir)
 
+
 def isOnlineMode():
     try:
         return config.plugins.MetrixReloaded.onlineMode.value
     except Exception:
         # falls nicht von MetrixReloaded skin verwendet wird
         return True
+
 
 def isDownloadPoster():
     try:
@@ -208,6 +217,7 @@ def isDownloadPoster():
         # falls nicht von MetrixReloaded skin verwendet wird
         return True
 
+
 def getPosterDircetory():
     try:
         return config.plugins.MetrixReloaded.posterDirectory.value
@@ -215,6 +225,29 @@ def getPosterDircetory():
         # falls nicht von MetrixReloaded skin verwendet wird
         createPosterPaths()
         return '/tmp/MetrixReloaded/poster/'
+
+
+def removePosters(logger):
+    try:
+        removeFilesFromPath(getPosterDircetory() + 'series/',
+                            config.plugins.MetrixReloaded.posterAutoRemove.value)
+        removeFilesFromPath(getPosterDircetory() + 'movies/',
+                            config.plugins.MetrixReloaded.posterAutoRemove.value)
+    except Exception as e:
+        logger.exception(str(e))
+
+
+def removeFilesFromPath(path, days, useCreationDate=False):
+    path = getPosterDircetory() + path
+    now = time.time()
+
+    for filename in os.listdir(path):
+        # if os.stat(os.path.join(path, filename)).st_mtime < now - 7 * 86400:
+        if os.path.getmtime(os.path.join(path, filename)) < now - days * 86400:
+            if os.path.isfile(os.path.join(path, filename)):
+                print(filename)
+                os.remove(os.path.join(path, filename))
+
 
 def initializeLog(fileName):
     logger = logging.getLogger(fileName)

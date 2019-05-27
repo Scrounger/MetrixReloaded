@@ -14,7 +14,7 @@ import logging
 
 import MetrixReloadedSetup
 from MyScreens import MetrixReloadedEventView
-from Tools.MetrixReloadedHelper import createPosterPaths
+from Tools.MetrixReloadedHelper import createPosterPaths, removePosters
 
 # Screens für Mods
 from Screens.EventView import EventViewBase
@@ -77,6 +77,7 @@ def autoStart(reason, **kwargs):
 				onEnterStandby, initial_call=False)
 
 			createPosterPaths()
+			removePosters(log)
 
 			#auf anderem Thread damit sleep nicht blockt
 			Thread(target=checkNewVersion, args=(session,)).start()
@@ -92,6 +93,7 @@ def onLeaveStandby():
     log.debug("leaving standy")
     if(session != None):
         createPosterPaths()
+        removePosters(log)
 
         #auf anderem Thread damit sleep nicht blockt
         Thread(target=checkNewVersion, args=(session,)).start()
@@ -131,3 +133,5 @@ if("MetrixReloaded" in config.skin.primary_skin.value):
 
     except Exception as e:
         log.exception("MetrixReloadedSetup: %s", str(e))
+
+
