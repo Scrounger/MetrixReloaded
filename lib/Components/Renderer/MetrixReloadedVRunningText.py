@@ -54,8 +54,6 @@ class MetrixReloadedVRunningText(Renderer):
 		self.mLoopTimeout = self.mOneShot = 0
 		self.mRepeat = 0
 
-		self.log = initializeLog("MetrixReloadedVRunningText")
-
 	GUI_WIDGET = eCanvas
 
 	def postWidgetCreate(self, instance):
@@ -211,8 +209,6 @@ class MetrixReloadedVRunningText(Renderer):
 			fcolor = self.scolor
 		else:
 			fcolor = self.fcolor
-
-		self.log.info(self.txtext)
 
 		if(self.txtext != None and self.txtext != ''):
 			self.instance.show()
