@@ -164,7 +164,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
                     "choose the directory where posters are stored")))
 
                 self.list.append(getConfigListEntry(self.htmlParser.unescape(
-                    _("            &#8226;  auto remove posters after x days")), config.plugins.MetrixReloaded.posterAutoRemove))
+                    _("            &#8226;  auto remove posters after x days")), config.plugins.MetrixReloaded.posterAutoRemove, _("use 0 for deactivation")))
 
         self.list.append(self.checkForUpdates)
 
@@ -179,6 +179,8 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
                                             config.plugins.MetrixReloaded.debug, _("show additional log informations")))
         self.list.append(getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  log files directory")), config.plugins.MetrixReloaded.logDirectory, _(
             "choose the directory where log files of skin, components, etc are stored")))
+        self.list.append(getConfigListEntry(self.htmlParser.unescape(
+                    _("  &#8226;  auto remove log files after x days")), config.plugins.MetrixReloaded.logAutoRemove, _("use 0 for deactivation")))            
         self.list.append(getConfigListEntry("", NoSave(ConfigNothing())))
         self.list.append(getConfigListEntry(
             _("developer options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())))

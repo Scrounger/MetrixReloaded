@@ -14,7 +14,7 @@ import logging
 
 import MetrixReloadedSetup
 from MyScreens import MetrixReloadedEventView
-from Tools.MetrixReloadedHelper import createPosterPaths, removePosters
+from Tools.MetrixReloadedHelper import createPosterPaths, removePosters, removeLogs
 
 # Screens für Mods
 from Screens.EventView import EventViewBase
@@ -27,6 +27,7 @@ config.plugins.MetrixReloaded.checkNewVersionOnStartUp = ConfigOnOff(default=Tru
 config.plugins.MetrixReloaded.autoDownloadNewVersion = ConfigOnOff(default=True)
 config.plugins.MetrixReloaded.debug = ConfigOnOff(default=False)
 config.plugins.MetrixReloaded.logDirectory = ConfigDirectory(default='/tmp/MetrixReloaded/log/')
+config.plugins.MetrixReloaded.logAutoRemove = ConfigNumber(default=10)
 config.plugins.MetrixReloaded.showScreenNames = ConfigOnOff(default=False)
 config.plugins.MetrixReloaded.showMenuEntryNames = ConfigOnOff(default=False)
 config.plugins.MetrixReloaded.posterDownload = ConfigOnOff(default=True)
@@ -77,7 +78,8 @@ def autoStart(reason, **kwargs):
 				onEnterStandby, initial_call=False)
 
 			createPosterPaths()
-			removePosters(log)
+			removePosters()
+			removeLogs()
 
 			#auf anderem Thread damit sleep nicht blockt
 			Thread(target=checkNewVersion, args=(session,)).start()
@@ -93,7 +95,8 @@ def onLeaveStandby():
     log.debug("leaving standy")
     if(session != None):
         createPosterPaths()
-        removePosters(log)
+        removePosters()
+        removeLogs()
 
         #auf anderem Thread damit sleep nicht blockt
         Thread(target=checkNewVersion, args=(session,)).start()

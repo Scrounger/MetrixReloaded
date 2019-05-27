@@ -227,23 +227,23 @@ def getPosterDircetory():
         return '/tmp/MetrixReloaded/poster/'
 
 
-def removePosters(logger):
-    try:
-        removeFilesFromPath(getPosterDircetory() + 'series/',
-                            config.plugins.MetrixReloaded.posterAutoRemove.value)
-        removeFilesFromPath(getPosterDircetory() + 'movies/',
-                            config.plugins.MetrixReloaded.posterAutoRemove.value)
-    except Exception as e:
-        logger.exception(str(e))
+def removePosters():
+    removeFilesFromPath(getPosterDircetory() + 'series/',
+                        config.plugins.MetrixReloaded.posterAutoRemove.value)
+    removeFilesFromPath(getPosterDircetory() + 'movies/',
+                        config.plugins.MetrixReloaded.posterAutoRemove.value)
 
 
-def removeFilesFromPath(path, days, useCreationDate=False):
-    path = getPosterDircetory() + path
+def removeLogs():
+    removeFilesFromPath(config.plugins.MetrixReloaded.logDirectory.value,
+                        config.plugins.MetrixReloaded.logAutoRemove.value)
+
+
+def removeFilesFromPath(path, days):
     now = time.time()
 
     for filename in os.listdir(path):
-        # if os.stat(os.path.join(path, filename)).st_mtime < now - 7 * 86400:
-        if os.path.getmtime(os.path.join(path, filename)) < now - days * 86400:
+        if os.path.getctime(os.path.join(path, filename)) < now - days * 86400:
             if os.path.isfile(os.path.join(path, filename)):
                 print(filename)
                 os.remove(os.path.join(path, filename))
