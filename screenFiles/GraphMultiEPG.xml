@@ -30,7 +30,7 @@
   <widget backgroundColor="windowBackground" font="SetrixHD; 36" halign="left" position="54,755" render="Label" size="1400,54" source="ExtEvent" noWrap="1" transparent="1" valign="center" zPosition="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[Title]</convert>
   </widget>
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="54,810" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="54,802" scale="3" render="MetrixReloadedEventImage" size="window_epg_image_size" source="ExtEvent" transparent="1" zPosition="3" />
   <!-- Image vorhanden-->
   <widget backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixSL;28" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=10000,wrap,always=0" position="400,813" render="MetrixReloadedVRunningText" size="1474,190" source="ExtEvent" transparent="1" valign="top">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\,)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescriptionClean(\n)]</convert>

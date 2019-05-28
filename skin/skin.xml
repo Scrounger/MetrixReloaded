@@ -936,7 +936,7 @@
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- EpgShare Image -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_image_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_image_size" source="ServiceEvent" transparent="1" zPosition="3" />
   <widget source="ServiceEvent" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
@@ -1768,7 +1768,7 @@
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- EpgShare Image -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_image_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_image_size" source="ExtEvent" transparent="1" zPosition="3" />
   <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
@@ -1848,7 +1848,7 @@
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- EpgShare Image -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_image_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_image_size" source="ExtEvent" transparent="1" zPosition="3" />
   <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
@@ -1940,7 +1940,7 @@
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- EpgShare Image -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_image_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_image_size" source="ExtEvent" transparent="1" zPosition="3" />
   <widget source="Event" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
@@ -1996,7 +1996,7 @@
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- EpgShare Image -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_image_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_image_size" source="ExtEvent" transparent="1" zPosition="3" />
 
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/left.png" position="1270,494" size="36,36" transparent="1" zPosition="10" />
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/right.png" position="1718,494" size="36,36" transparent="1" zPosition="10" />
@@ -2427,7 +2427,7 @@
   <widget backgroundColor="windowBackground" font="SetrixHD; 36" halign="left" position="54,755" render="Label" size="1400,54" source="ExtEvent" noWrap="1" transparent="1" valign="center" zPosition="1">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[Title]</convert>
   </widget>
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="54,810" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="54,802" scale="3" render="MetrixReloadedEventImage" size="window_epg_image_size" source="ExtEvent" transparent="1" zPosition="3" />
   <!-- Image vorhanden-->
   <widget backgroundColor="windowBackground" foregroundColor="foreground" font="SetrixSL;28" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=10000,wrap,always=0" position="400,813" render="MetrixReloadedVRunningText" size="1474,190" source="ExtEvent" transparent="1" valign="top">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\,)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescriptionClean(\n)]</convert>
@@ -2555,7 +2555,7 @@
   <widget alphatest="on" name="timeline_now" position="103,170" size="2,740" pixmap="MetrixReloaded/media/timeline_now.png" zPosition="2" />
   <!-- Right Panel (Right Side) -->
   <!-- EpgShare Image -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_gmepg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_gmepg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_gmepg_image_pos" scale="3" render="MetrixReloadedEventImage" size="window_gmepg_image_size" source="ExtEvent" transparent="1" zPosition="3" />
   <widget source="Event" position="window_gmepg_name_pos" size="window_gmepg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
@@ -2636,7 +2636,7 @@
   <widget alphatest="on" name="timeline_now" position="103,170" size="2,740" pixmap="MetrixReloaded/media/timeline_now.png" zPosition="2" />
   <!-- Right Panel (Right Side) -->
   <!-- EpgShare Image -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_gmepg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_gmepg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_gmepg_image_pos" scale="3" render="MetrixReloadedEventImage" size="window_gmepg_image_size" source="ExtEvent" transparent="1" zPosition="3" />
   <widget source="Event" position="window_gmepg_name_pos" size="window_gmepg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>
@@ -6360,7 +6360,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <widget name="timerlist" position="window_list_pos" size="window_list_setup_size" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" itemHeight="110" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Font über Parameter-->
   <!-- Right Panel (Right Side) -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_image_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_image_size" source="ServiceEvent" transparent="1" zPosition="3" />
   <widget source="ServiceEvent" alphatest="blend" position="window_epg_picon_pos" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
@@ -6746,6 +6746,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!-- Window EPG -->
   <variable name="window_epg_picon_pos" value="1350,118" />
   <variable name="window_epg_picon_size" value="330,198" />
+  <variable name="window_epg_image_pos" value="1350,110" />
+  <variable name="window_epg_image_size" value="330,213" />
   <variable name="window_epg_name_pos" value="1216,330" />
   <variable name="window_epg_name_size" value="622,75" />
   <variable name="window_epg_startTime_pos" value="1216,387" />
@@ -6782,6 +6784,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <variable name="window_gmepg_name_size" value="622,75" />
   <variable name="window_gmepg_picon_pos" value="1350,245" />
   <variable name="window_gmepg_picon_size" value="330,198" />
+  <variable name="window_gmepg_image_pos" value="1350,237" />
+  <variable name="window_gmepg_image_size" value="330,213" />
   <variable name="window_gmepg_progressBar_pos" value="1325,202" />
   <variable name="window_gmepg_progressBar_size" value="382,5" />
   <variable name="window_gmepg_progressBar_bg_pos" value="1325,205" />
@@ -6790,8 +6794,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <variable name="window_gmepg_endTime_pos" value="1726,185" />
   <variable name="window_gmepg_remainig_pos" value="1325,207" />
   <variable name="window_gmepg_remainig_size" value="382,25" />
-  <variable name="window_gmepg_desc_pos" value="1216,451" />
-  <variable name="window_gmepg_desc_size" value="622,463" />
+  <variable name="window_gmepg_desc_pos" value="1216,455" />
+  <variable name="window_gmepg_desc_size" value="622,459" />
   <variable name="window_gmepg_desc_no_image_pos" value="1216,240" />
   <variable name="window_gmepg_desc_no_image_size" value="622,672" />
   <variable name="window_gmepg_ratingStar_pos" value="1422,175" />
@@ -6868,7 +6872,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[Title]</convert>
   </widget>
   <!-- EpgShare Image -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="80,737" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="80,730" scale="3" render="MetrixReloadedEventImage" size="window_epg_image_size" source="ExtEvent" transparent="1" zPosition="3" />
   <!-- Image vorhanden-->
   <widget source="ExtEvent" render="MetrixReloadedVRunningText" position="430,737" zPosition="1" size="1410,198" font="SetrixSL;28" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" valign="top" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=10000,wrap,always=0">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\,)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescriptionClean(\n)]</convert>

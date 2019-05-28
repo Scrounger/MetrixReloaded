@@ -39,7 +39,7 @@
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[Title]</convert>
   </widget>
   <!-- EpgShare Image -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="80,737" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ExtEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="80,730" scale="3" render="MetrixReloadedEventImage" size="window_epg_image_size" source="ExtEvent" transparent="1" zPosition="3" />
   <!-- Image vorhanden-->
   <widget source="ExtEvent" render="MetrixReloadedVRunningText" position="430,737" zPosition="1" size="1410,198" font="SetrixSL;28" backgroundColor="windowBackground" foregroundColor="foreground" transparent="1" valign="top" options="movetype=running,startpoint=0,direction=top,steptime=100,repeat=5,startdelay=10000,wrap,always=0">
     <convert type="MetrixReloadedExtEventEPG">PowerDescription[true][EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\,)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescriptionClean(\n)]</convert>

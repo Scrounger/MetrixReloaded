@@ -17,7 +17,7 @@
     <convert type="ServiceName">Reference</convert>
   </widget>
   <!-- EpgShare Image -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_image_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_image_size" source="ServiceEvent" transparent="1" zPosition="3" />
   <widget source="ServiceEvent" position="window_epg_name_pos" zPosition="1" size="window_epg_name_size" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" font="font_epg_name" noWrap="1" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0">
     <convert type="EventName">Name</convert>
   </widget>

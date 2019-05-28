@@ -11,7 +11,7 @@
   <widget name="timerlist" position="window_list_pos" size="window_list_setup_size" transparent="1" backgroundColorRows="listBackgroundBarsOne" backgroundColor="windowBackground" itemHeight="110" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" />
   <!-- Font über Parameter-->
   <!-- Right Panel (Right Side) -->
-  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_picon_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_picon_size" source="ServiceEvent" transparent="1" zPosition="3" />
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_image_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_image_size" source="ServiceEvent" transparent="1" zPosition="3" />
   <widget source="ServiceEvent" alphatest="blend" position="window_epg_picon_pos" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>

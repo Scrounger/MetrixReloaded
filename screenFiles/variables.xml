@@ -55,6 +55,8 @@
   <!-- Window EPG -->
   <variable name="window_epg_picon_pos" value="1350,118" />
   <variable name="window_epg_picon_size" value="330,198" />
+  <variable name="window_epg_image_pos" value="1350,110" />
+  <variable name="window_epg_image_size" value="330,213" />
   <variable name="window_epg_name_pos" value="1216,330" />
   <variable name="window_epg_name_size" value="622,75" />
   <variable name="window_epg_startTime_pos" value="1216,387" />
@@ -91,6 +93,8 @@
   <variable name="window_gmepg_name_size" value="622,75" />
   <variable name="window_gmepg_picon_pos" value="1350,245" />
   <variable name="window_gmepg_picon_size" value="330,198" />
+  <variable name="window_gmepg_image_pos" value="1350,237" />
+  <variable name="window_gmepg_image_size" value="330,213" />
   <variable name="window_gmepg_progressBar_pos" value="1325,202" />
   <variable name="window_gmepg_progressBar_size" value="382,5" />
   <variable name="window_gmepg_progressBar_bg_pos" value="1325,205" />
@@ -99,8 +103,8 @@
   <variable name="window_gmepg_endTime_pos" value="1726,185" />
   <variable name="window_gmepg_remainig_pos" value="1325,207" />
   <variable name="window_gmepg_remainig_size" value="382,25" />
-  <variable name="window_gmepg_desc_pos" value="1216,451" />
-  <variable name="window_gmepg_desc_size" value="622,463" />
+  <variable name="window_gmepg_desc_pos" value="1216,455" />
+  <variable name="window_gmepg_desc_size" value="622,459" />
   <variable name="window_gmepg_desc_no_image_pos" value="1216,240" />
   <variable name="window_gmepg_desc_no_image_size" value="622,672" />
   <variable name="window_gmepg_ratingStar_pos" value="1422,175" />
