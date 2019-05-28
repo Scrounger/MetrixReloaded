@@ -210,29 +210,8 @@ class MetrixReloadedEventImage(Renderer):
                                 # Poster muss heruntergeladen werden
                                 if(isOnlineMode()):
                                     if(isDownloadPoster()):
-                                        if(values != None and len(values) > 0 and eventid):
-                                            # EpgShareDaten vorhanden
-                                            url = str(values['search'])
-                                            genre = str(values['categoryName'])
-                                            year = str(values['year'])
-
-                                            if (url != '' and genre != ''):
-                                                if url.startswith('http://api.themoviedb.org'):
-                                                    # language und jahr anhängen
-                                                    if year != None and year != '':
-                                                        url += '&year=%s' % year
-                                                    url += '&language=de'
-
-                                                self.downloadPosterInfos(
-                                                    url, genre, event, event.getEventName(), values)
-                                            else:
-                                                # keine url und genre in EpgShare Daten vorhanden -> MetrixReloadedExtEventEpg parser benutzen
-                                                self.useMetrixReloadedExtEventEpg(
-                                                    values, event, event.getEventName())
-                                        else:
-                                            # keine EpgShare Daten vorhanden -> MetrixReloadedExtEventEpg parser benutzen
-                                            self.useMetrixReloadedExtEventEpg(
-                                                values, event, event.getEventName())
+                                        self.useMetrixReloadedExtEventEpg(
+                                            values, event, event.getEventName())
                                     else:
                                         self.log.debug(
                                             "%schanged: poster: download posters is deactivated", self.logPrefix)
