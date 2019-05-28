@@ -151,14 +151,14 @@ def checkNewVersion(session):
     if("MetrixReloaded" in config.skin.primary_skin.value):
         if(config.plugins.MetrixReloaded.checkNewVersionOnStartUp.value == True):
             try:
-                log.debug("waiting")
+                log.debug("checkNewVersion: waiting")
                 sleep(30)
-                log.info("Call new version check")
+                log.info("checkNewVersion: Call new version check")
                 MetrixReloadedUpdater(session)
             except Exception as e:
-                log.exception("MetrixReloadedSetup: %s", str(e))
+                log.exception("checkNewVersion: %s", str(e))
         else:
-            log.info("checkNewVersionOnStartUp: %s" % str(
+            log.info("checkNewVersion: %s" % str(
                 config.plugins.MetrixReloaded.checkNewVersionOnStartUp.value))
     else:
         log.debug("Primary skin is not MetrixReloaded")
@@ -167,15 +167,15 @@ def checkNewVersion(session):
 def newVersionInstalled(session):
     if("MetrixReloaded" in config.skin.primary_skin.value):
         try:
-            log.debug("waiting")
+            log.debug("newVersionInstalled: waiting")
             sleep(200)
-            log.info("new version installed")
+            log.info("newVersionInstalled: load info screen")
 
             msg = _("MetrixReloaded has been successfully updated to version %s\n\nYou like the MetrixReloaded Skin?\n\nThen support the development in which you actively cooperate. All information can be found under the following link\nhttps://github.com/Scrounger/MetrixReloaded\n\nOr support the MetrixReloaded team with a small donation\n- by Paypal to:\tscrounger@gmx.net\n- via the website:\thttps://github.com/Scrounger/MetrixReloaded\n\nHave fun!\nYour MetrixReloaded Team")
             msg = msg % getVersion()
 
             session.open(
-                MessageBox, msg, MessageBox.TYPE_INFO, timeout=60)
+                MessageBox, msg, MessageBox.TYPE_INFO)
 
             config.plugins.MetrixReloaded.updated.value = False
             config.plugins.MetrixReloaded.updated.save()

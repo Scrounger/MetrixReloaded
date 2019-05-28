@@ -115,7 +115,7 @@ class MetrixReloadedUpdater:
     
     def downloadNewVersion(self):
             #Donwload der neuen Version
-            fileName = "enigma2-plugin-skin-metrixreloaded_%s_all.ipk" % (self.releasedVersion)
+            fileName = "enigma2-skin-metrixreloaded_%s_all.ipk" % (self.releasedVersion)
             url = "https://github.com/Scrounger/MetrixReloaded/releases/download/%s/%s" % (self.releasedVersion, fileName)
             self.log.debug("download url: %s" % url)
 
