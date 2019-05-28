@@ -109,13 +109,13 @@ class MetrixReloadedUpdater:
         if self.targetFileName and self.session:
             config.plugins.MetrixReloaded.updated.value = True
             config.plugins.MetrixReloaded.updated.save()
-            
+
             cmdList.append((IpkgComponent.CMD_INSTALL, {"package": self.targetFileName}))
             self.session.openWithCallback(self.restartGUI, Ipkg, cmdList = cmdList)
     
     def downloadNewVersion(self):
             #Donwload der neuen Version
-            fileName = "enigma2-skin-metrixreloaded_%s_all.ipk" % (self.releasedVersion)
+            fileName = "enigma2-plugin-skin-metrixreloaded_%s_all.ipk" % (self.releasedVersion)
             url = "https://github.com/Scrounger/MetrixReloaded/releases/download/%s/%s" % (self.releasedVersion, fileName)
             self.log.debug("download url: %s" % url)
 
