@@ -1,7 +1,7 @@
 # MetrixReloaded
 [![GitHub release](https://img.shields.io/github/release/Scrounger/MetrixReloaded.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
 [![GitHub All Releases](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
-[![GitHub Releases (by Release)](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/0.9.0/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
+[![GitHub Releases (by Release)](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/0.9.5/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Scrounger/MetrixReloaded.svg)
 [![GitHub](https://img.shields.io/github/license/Scrounger/MetrixReloaded.svg)](https://github.com/Scrounger/MetrixReloaded/blob/master/LICENSE)
 
@@ -29,6 +29,7 @@ MetrixReloaded ist ein HD Skin für VU+ Receiver mit [VTI Image](https://www.vup
 * Multi QuickButton
 * MediaPlayer
 * Satfinder
+* [InfoBarTunerState](https://github.com/betonme/e2openplugin-InfoBarTunerState)
 
 ## Installation
 
@@ -107,6 +108,15 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 </p>
 
 ## Changelog
+
+### 0.9.5 BETA (28.05.2019)
+* CutListeEditor skinned
+* TaskListScreen bug fix
+* SkinPart Poster in InfoBar anzeigen
+* Einstellungen für Poster hinzugefügt
+* SkinPart Plugin InfoBarTunerState by vu13
+* Converter und zugehörige log Ausgabe optimiert 
+* viele kleine Screen bug fixes
 
 ### 0.9.0 BETA (04.05.2019)
 * EPGImport bug fix
