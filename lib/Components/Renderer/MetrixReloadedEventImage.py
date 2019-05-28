@@ -283,6 +283,8 @@ class MetrixReloadedEventImage(Renderer):
                     "Year").getYear("Year", values, event)
                 if(year != None):
                     url += '&primary_release_year=%s&year=%s' % (year, year)
+                
+                url += '&language=de'
 
             self.downloadPosterInfos(url, genre, event, title, values)
 

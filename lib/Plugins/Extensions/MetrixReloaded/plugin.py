@@ -38,7 +38,7 @@ config.plugins.MetrixReloaded.posterDownload = ConfigOnOff(default=True)
 config.plugins.MetrixReloaded.posterDirectory = ConfigDirectory(
     default='/mnt/hdd/MetrixReloaded/poster/')
 config.plugins.MetrixReloaded.posterAutoRemove = ConfigNumber(default=30)
-config.plugins.MetrixReloaded.updated = ConfigOnOff(default=False)
+config.plugins.MetrixReloaded.updated = ConfigOnOff(default=True)
 
 #Language #########################################################################################################################################
 from Components.Language import language
