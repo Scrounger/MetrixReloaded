@@ -365,19 +365,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "skinParts", "skinParts", "{68B36529-5F60-4BAB-9754-C1F4111BD39A}"
 	ProjectSection(SolutionItems) = preProject
-		\\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_InfoBar_by_SleepyHellow.xml = \\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_InfoBar_by_SleepyHellow.xml
-		..\Vu+\MetrixReloaded\skinparts\skin_Menu_SystemInfo_Full.xml = ..\Vu+\MetrixReloaded\skinparts\skin_Menu_SystemInfo_Full.xml
-		\\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_Menu_SystemInfo_Full.xml = \\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_Menu_SystemInfo_Full.xml
+		skinparts\skin_InfoBar_by_SleepyHellow.xml = skinparts\skin_InfoBar_by_SleepyHellow.xml
+		skinparts\skin_InfoBar_Poster.xml = skinparts\skin_InfoBar_Poster.xml
+		skinparts\skin_Menu_SystemInfo_Full.xml = skinparts\skin_Menu_SystemInfo_Full.xml
 		skinparts\skin_Plugin_EPG_Share.xml = skinparts\skin_Plugin_EPG_Share.xml
-		\\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_Plugin_EPG_Share.xml = \\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_Plugin_EPG_Share.xml
 		skinparts\skin_Plugin_EPGImport.xml = skinparts\skin_Plugin_EPGImport.xml
-		\\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_Plugin_EPGImport.xml = \\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_Plugin_EPGImport.xml
 		skinparts\skin_Plugin_EPGRefresh.xml = skinparts\skin_Plugin_EPGRefresh.xml
-		\\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_Plugin_EPGRefresh.xml = \\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_Plugin_EPGRefresh.xml
 		skinparts\skin_Plugin_Serienrecorder.xml = skinparts\skin_Plugin_Serienrecorder.xml
-		\\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_Plugin_Serienrecorder.xml = \\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_Plugin_Serienrecorder.xml
-		\\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_SecondInfoBar_Layout_1.xml = \\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_SecondInfoBar_Layout_1.xml
-		\\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_SecondInfoBar_Layout_2.xml = \\10.0.124.198\rootfs\share\enigma2\MetrixReloaded\allScreens\skin_SecondInfoBar_Layout_2.xml
+		skinparts\skin_SecondInfoBar_Layout_1.xml = skinparts\skin_SecondInfoBar_Layout_1.xml
+		skinparts\skin_SecondInfoBar_Layout_2.xml = skinparts\skin_SecondInfoBar_Layout_2.xml
 	EndProjectSection
 EndProject
 Global

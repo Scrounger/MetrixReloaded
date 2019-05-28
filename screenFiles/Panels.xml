@@ -48,6 +48,7 @@
     <convert type="ConditionalShowHide" />
   </widget>
 </screen>
+<screen name="panel_infoBar_Poster" />
 <screen name="panel_infoBar_Icons">
   <widget alphatest="blend" path="MetrixReloaded/media/logos/tunertypes" position="410,1043" render="MetrixReloadedIcon" size="84,22" source="session.CurrentService" zPosition="3">
     <convert type="MetrixReloadedServiceInfoEx">ttype</convert>
