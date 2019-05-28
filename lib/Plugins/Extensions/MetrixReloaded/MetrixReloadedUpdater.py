@@ -107,6 +107,9 @@ class MetrixReloadedUpdater:
         cmdList = []
 
         if self.targetFileName and self.session:
+            config.plugins.MetrixReloaded.updated.value = True
+            config.plugins.MetrixReloaded.updated.save()
+            
             cmdList.append((IpkgComponent.CMD_INSTALL, {"package": self.targetFileName}))
             self.session.openWithCallback(self.restartGUI, Ipkg, cmdList = cmdList)
     
