@@ -4,7 +4,8 @@ import os
 import time
 import base64
 import re
-import urllib
+import urllib2
+import codecs
 
 import skin
 from Components.config import config
@@ -315,10 +316,10 @@ class MetrixReloadedEventImage(Renderer):
             # url bauen
             if(genre == 'Serien'):
                 url = "http://thetvdb.com/api/GetSeries.php?seriesname=%s&language=de" % (
-                    urllib.quote(title))
+                    urllib2.quote(codecs.encode(title,'utf-8')))
             else:
                 url = "http://api.themoviedb.org/3/search/movie?api_key=%s&query=%s&language=de" % (
-                    self.tmDbApiKey, urllib.quote(title))
+                    self.tmDbApiKey, urllib2.quote(codecs.encode(title,'utf-8')))
 
                 # schauen ob Jahr verfügbar
                 year = MetrixReloadedExtEventEPG(
@@ -367,9 +368,9 @@ class MetrixReloadedEventImage(Renderer):
                     moviePosterPath = str(
                         jsonData['results'][0]['poster_path'])
 
-                    if moviePosterPath and movieId:
+                    if moviePosterPath and moviePosterPath != "None" and movieId:
                         self.log.debug(
-                            "%sresponsePosterInfos: movieId '%s'", self.logPrefix, movieId)
+                            "%sresponsePosterInfos: movieId '%s', path: %s", self.logPrefix, movieId, moviePosterPath)
                         self.downloadPoster(
                             movieId, self.DOWNLOAD_POSTER_MOVIE, title, moviePosterPath)
                     else:
