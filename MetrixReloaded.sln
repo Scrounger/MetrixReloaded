@@ -371,6 +371,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "skinParts", "skinParts", "{
 		skinparts\skin_Plugin_EPG_Share.xml = skinparts\skin_Plugin_EPG_Share.xml
 		skinparts\skin_Plugin_EPGImport.xml = skinparts\skin_Plugin_EPGImport.xml
 		skinparts\skin_Plugin_EPGRefresh.xml = skinparts\skin_Plugin_EPGRefresh.xml
+		skinparts\skin_Plugin_InfobarTunerstate_by_vu13.xml = skinparts\skin_Plugin_InfobarTunerstate_by_vu13.xml
 		skinparts\skin_Plugin_Serienrecorder.xml = skinparts\skin_Plugin_Serienrecorder.xml
 		skinparts\skin_SecondInfoBar_Layout_1.xml = skinparts\skin_SecondInfoBar_Layout_1.xml
 		skinparts\skin_SecondInfoBar_Layout_2.xml = skinparts\skin_SecondInfoBar_Layout_2.xml

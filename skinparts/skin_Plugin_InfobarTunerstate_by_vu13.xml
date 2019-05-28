@@ -1,0 +1,16 @@
+<skin>
+  <screen name="TunerState" title="Tuner State" flags="wfNoBorder" position="0,0" size="1820,40" zPosition="5" padding="30" spacing="20" backgroundColor="windowBackground" Animation="off">
+    <widget name="Type" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/InfoBarTunerState/record.png,/usr/lib/enigma2/python/Plugins/Extensions/InfoBarTunerState/stream.png,/usr/lib/enigma2/python/Plugins/Extensions/InfoBarTunerState/finished.png,/usr/lib/enigma2/python/Plugins/Extensions/InfoBarTunerState/info.png" position="screen_full_pos" size="32,32" zPosition="1" transparent="1" alphatest="on" />
+    <widget name="Progress" position="0,00" size="80,10" zPosition="1" borderWidth="2" borderColor="foreground" backgroundColor="infobarBgR" foregroundColor="foreground" transparent="1" />
+    <widget name="Field0" font="SetrixHD;30" noWrap="1" halign="left" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" zPosition="1" />
+    <widget name="Field1" font="SetrixHD;30" noWrap="1" halign="left" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" zPosition="1" />
+    <widget name="Field2" font="SetrixHD;30" noWrap="1" halign="left" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" zPosition="1" />
+    <widget name="Field3" font="SetrixHD;30" noWrap="1" halign="left" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" zPosition="1" />
+    <widget name="Field4" font="SetrixHD;30" noWrap="1" halign="left" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" zPosition="1" />
+    <widget name="Field5" font="SetrixHD;30" noWrap="1" halign="left" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" zPosition="1" />
+    <widget name="Field6" font="SetrixHD;30" noWrap="1" halign="left" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" zPosition="1" />
+    <widget name="Field7" font="SetrixHD;30" noWrap="1" halign="left" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" zPosition="1" />
+    <widget name="Field8" font="SetrixHD;30" noWrap="1" halign="left" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" zPosition="1" />
+    <widget name="Field9" font="SetrixHD;30" noWrap="1" halign="left" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" transparent="1" zPosition="1" />
+  </screen>
+</skin>  
