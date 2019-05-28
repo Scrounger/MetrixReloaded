@@ -203,9 +203,7 @@ class MetrixReloadedEventImage(Renderer):
                             if (os.path.exists(posterFileName)):
                                 self.log.debug(
                                     "%schanged: poster exist local ('%s')", self.logPrefix, posterFileName)
-                                self.image.setPixmap(loadJPG(posterFileName))
-                                self.image.setScale(self.scaletype)
-                                self.showimage()
+                                self.showPoster(posterFileName)
                             else:
                                 # Poster muss heruntergeladen werden
                                 if(isOnlineMode()):
@@ -295,10 +293,10 @@ class MetrixReloadedEventImage(Renderer):
             # url bauen
             if(genre == 'Serien'):
                 url = "http://thetvdb.com/api/GetSeries.php?seriesname=%s&language=de" % (
-                    urllib2.quote(codecs.encode(title,'utf-8')))
+                    urllib2.quote(codecs.encode(title, 'utf-8')))
             else:
                 url = "http://api.themoviedb.org/3/search/movie?api_key=%s&query=%s&language=de" % (
-                    self.tmDbApiKey, urllib2.quote(codecs.encode(title,'utf-8')))
+                    self.tmDbApiKey, urllib2.quote(codecs.encode(title, 'utf-8')))
 
                 # schauen ob Jahr verfügbar
                 year = MetrixReloadedExtEventEPG(
@@ -401,9 +399,7 @@ class MetrixReloadedEventImage(Renderer):
 
         if(response == self.DOWNLOAD_POSTER_SERIES or response == self.DOWNLOAD_POSTER_MOVIE):
             if (os.path.exists(posterFileName)):
-                self.image.setPixmap(loadJPG(posterFileName))
-                self.image.setScale(self.scaletype)
-                self.showimage()
+                self.showPoster(posterFileName)
 
     def downloadImage(self, eventId, startTime, event):
         self.log.debug("%sdownloadImage: searching online image for '%s'",
@@ -510,6 +506,12 @@ class MetrixReloadedEventImage(Renderer):
             self.showimage()
         else:
             self.hideimage()
+
+    def showPoster(self, posterFileName):
+
+        self.image.setPixmap(loadJPG(posterFileName))
+        self.image.setScale(self.scaletype)
+        self.showimage()
 
     def deserializeJson(self, data):
         # Daten aus DB deserializieren
