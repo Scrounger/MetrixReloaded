@@ -15,7 +15,7 @@ from skin import parseColor, parseFont
 from twisted.web.client import downloadPage, getPage
 from Components.Sources.ExtEvent import ExtEvent
 from Components.Sources.ServiceEvent import ServiceEvent
-from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, getEpgShareImagePath, getChannelName, createPosterPaths, isOnlineMode, isDownloadPoster, getPosterDircetory, initializeLog
+from Tools.MetrixReloadedHelper import getDataFromDatabase, getExtraData, getDefaultImage, getEventImage, getEpgShareImagePath, getChannelName, createPosterPaths, isOnlineMode, isDownloadPoster, getPosterDircetory, getPosterFileName, initializeLog
 from Components.Converter.MetrixReloadedExtEventEPG import MetrixReloadedExtEventEPG
 import logging
 
@@ -195,6 +195,17 @@ class MetrixReloadedEventImage(Renderer):
                             else:
                                 self.hideimage()
                         elif(self.imageType == self.POSTER):
+
+                            # Prüfen ob Poster lokal existiert
+                            posterFileName = os.path.join(getPosterDircetory(), getPosterFileName(title))
+                            if (os.path.exists(posterFileName)):
+                                self.log.debug(
+                                    "%schanged: poster exist local ('%s')", self.logPrefix, posterFileName)
+                                self.image.setPixmap(loadJPG(posterFileName))
+                                self.image.setScale(self.scaletype)
+                                self.showimage()
+                                return
+
                             if(isOnlineMode()):
                                 if(isDownloadPoster()):
                                     if(values != None and len(values) > 0 and eventid):
@@ -343,7 +354,7 @@ class MetrixReloadedEventImage(Renderer):
 
                 if seriesId:
                     self.downloadPoster(
-                        str(seriesId[0]), self.DOWNLOAD_POSTER_SERIES)
+                        str(seriesId[0]), self.DOWNLOAD_POSTER_SERIES, title)
                 else:
                     self.log.debug(
                         "%sresponsePosterInfos: no infos found on tvdb.com for '%s'", self.logPrefix, title)
@@ -361,7 +372,7 @@ class MetrixReloadedEventImage(Renderer):
                         self.log.debug(
                             "%sresponsePosterInfos: movieId '%s'", self.logPrefix, movieId)
                         self.downloadPoster(
-                            movieId, self.DOWNLOAD_POSTER_MOVIE, moviePosterPath)
+                            movieId, self.DOWNLOAD_POSTER_MOVIE, title, moviePosterPath)
                     else:
                         self.log.debug(
                             "%sresponsePosterInfos: no infos found on themoviedb.org for '%s', retry with tvdb.com", self.logPrefix, title)
@@ -379,16 +390,16 @@ class MetrixReloadedEventImage(Renderer):
                         values, event, event.getEventName(), 'Serien')
                     self.hideimage()
 
-    def downloadPoster(self, id, posterTyp, moviePosterPath=None):
+    def downloadPoster(self, id, posterTyp, title, moviePosterPath=None):
 
         if(posterTyp == self.DOWNLOAD_POSTER_SERIES):
             posterFileName = os.path.join(
-                getPosterDircetory() + 'series/', id + ".jpg")
+                getPosterDircetory(), getPosterFileName(title))
 
             # Prüfen ob bereits herunter geladen
             if (os.path.exists(posterFileName)):
                 self.log.debug(
-                    "%sdownloadPoster: poster for seriesId '%s' exist local", self.logPrefix, id)
+                    "%sdownloadPoster: poster for seriesId '%s' exist local ('%s')", self.logPrefix, id, posterFileName)
                 self.image.setPixmap(loadJPG(posterFileName))
                 self.image.setScale(self.scaletype)
                 self.showimage()
@@ -402,12 +413,12 @@ class MetrixReloadedEventImage(Renderer):
 
         elif(posterTyp == self.DOWNLOAD_POSTER_MOVIE):
             posterFileName = os.path.join(
-                getPosterDircetory() + 'movies/', id + ".jpg")
+                getPosterDircetory(), getPosterFileName(title))
 
             # Prüfen ob bereits herunter geladen
             if (os.path.exists(posterFileName)):
                 self.log.debug(
-                    "%sdownloadPoster: poster for movieId '%s' exist local", self.logPrefix, id)
+                    "%sdownloadPoster: poster for movieId '%s' exist local ('%s')", self.logPrefix, id, posterFileName)
                 self.image.setPixmap(loadJPG(posterFileName))
                 self.image.setScale(self.scaletype)
                 self.showimage()
@@ -522,7 +533,8 @@ class MetrixReloadedEventImage(Renderer):
         if("404 Not Found" in str(e)):
             posterUrl = url.replace("-1.jpg", "-2.jpg")
 
-            self.log.debug("%sdownloadPoster: retry download poster for '%s' with other url: %s", self.logPrefix, id, posterUrl)
+            self.log.debug(
+                "%sdownloadPoster: retry download poster for '%s' with other url: %s", self.logPrefix, id, posterUrl)
 
             downloadPage(posterUrl, posterFileName).addCallback(self.responsePosterDownload, self.DOWNLOAD_POSTER_SERIES,
                                                                 id, posterFileName).addErrback(self.reponsePosterError, self.DOWNLOAD_POSTER_SERIES)

@@ -193,11 +193,7 @@ def isconnected(logger, logPrefix="", host='8.8.8.8', port=53, timeout=1):
 
 
 def createPosterPaths():
-    dir = os.path.join(getPosterDircetory(), "movies/")
-    if not os.path.exists(dir):
-        os.makedirs(dir)
-
-    dir = os.path.join(getPosterDircetory(), "series/")
+    dir = getPosterDircetory()
     if not os.path.exists(dir):
         os.makedirs(dir)
 
@@ -218,26 +214,24 @@ def isDownloadPoster():
         return True
 
 
+def getPosterFileName(title):
+    return base64.b64encode(title.decode('utf-8').lower().split('(')[0].strip()) + ".jpg"
+
+
 def getPosterDircetory():
     try:
         return config.plugins.MetrixReloaded.posterDirectory.value
     except Exception:
         # falls nicht von MetrixReloaded skin verwendet wird
-        dir = '/tmp/MetrixReloaded/poster/movies/'
+        dir = '/tmp/MetrixReloaded/poster/'
         if not os.path.exists(dir):
             os.makedirs(dir)
 
-        dir = '/tmp/MetrixReloaded/poster/series/'
-        if not os.path.exists(dir):
-            os.makedirs(dir)
-
-        return '/tmp/MetrixReloaded/poster/'
+        return dir
 
 
 def removePosters():
-    removeFilesFromPath(getPosterDircetory() + 'series/',
-                        config.plugins.MetrixReloaded.posterAutoRemove.value)
-    removeFilesFromPath(getPosterDircetory() + 'movies/',
+    removeFilesFromPath(getPosterDircetory(),
                         config.plugins.MetrixReloaded.posterAutoRemove.value)
 
 
