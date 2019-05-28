@@ -48,7 +48,7 @@ class MetrixReloadedEventImage(Renderer):
         self.imageheight = 0
         self.smallptr = False
         self.labeltop = 0
-        self.scaletype = 2
+        self.scaletype = 1
         self.imageType = self.IMAGE
         self.WCover = self.HCover = self.TCover = self.LCover = self.WPreview = self.HPreview = self.TPreview = self.LPreview = 0
 
@@ -87,22 +87,6 @@ class MetrixReloadedEventImage(Renderer):
 
         self.image.resize(eSize(self.WCover, self.HCover))
 
-        self.labelheight = self.HCover - (10 + self.labeltop)
-        self.text.resize(
-            eSize(self.WCover, self.HCover - (10 + self.labeltop)))
-        self.test_label.resize(
-            eSize(self.WCover, self.HCover - (10 + self.labeltop)))
-        self.text.move(ePoint(0, self.labeltop + 10))
-
-        self.text.setVAlign(eLabel.alignTop)
-        self.test_label.setVAlign(eLabel.alignTop)
-        self.text.setHAlign(eLabel.alignCenter)
-        self.test_label.setHAlign(eLabel.alignCenter)
-        self.test_label.setNoWrap(0)
-        self.test_label.hide()
-        self.text.setBackgroundColor(self.bg)
-        self.text.setForegroundColor(self.fg)
-        self.text.setTransparent(1)
         ret = Renderer.applySkin(self, desktop, screen)
         return ret
 
@@ -240,8 +224,6 @@ class MetrixReloadedEventImage(Renderer):
     def GUIcreate(self, parent):
         self.instance = eWidget(parent)
         self.image = ePixmap(self.instance)
-        self.text = eLabel(self.instance)
-        self.test_label = eLabel(self.instance)
 
     def showimage(self):
         self.instance.show()
@@ -250,8 +232,6 @@ class MetrixReloadedEventImage(Renderer):
     def hideimage(self):
         self.labelheight = self.HCover
         self.image.hide()
-        self.text.resize(eSize(self.WCover, self.HCover))
-        self.text.move(ePoint(0, 0))
 
     def onShow(self):
         self.suspended = False
