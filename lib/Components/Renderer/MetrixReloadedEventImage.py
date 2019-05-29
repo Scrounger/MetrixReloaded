@@ -26,12 +26,13 @@ class MetrixReloadedEventImage(Renderer):
     SHOW_IMAGE = "SHOW_IMAGE"
     DOWNLOAD_POSTER_INFOS = "DOWNLOAD_POSTER_INFOS"
     DOWNLOAD_POSTER_SERIES = "DOWNLOAD_POSTER_SERIES"
+    DOWNLOAD_POSTER_SERIES_TVDB = "DOWNLOAD_POSTER_SERIES_TVDB"
     DOWNLOAD_POSTER_MOVIE = "DOWNLOAD_POSTER_MOVIE"
 
     IMAGE = "Image"
     POSTER = "Poster"
 
-    tmDbApiKey = "8789cfd3fbab7dccf1269c3d7d867aff"
+    tmDbApiKey = "e47c3fc2dc4e1c07e14a8975b291155b"
 
     def __init__(self):
         Renderer.__init__(self)
@@ -272,10 +273,16 @@ class MetrixReloadedEventImage(Renderer):
             url = None
             # url bauen
             if(genre == 'Serien'):
+                # Serie bei tmdb als erstes suchen
+                url = "http://api.themoviedb.org/3/search/tv?api_key=%s&query=%s&language=de" % (
+                    self.tmDbApiKey, urllib2.quote(codecs.encode(title, 'utf-8')))
+
+            elif(genre == 'Serien_tvdb'):
+                # Rückfalllösung über tvDb versuchen, falls nichts gefunden wurde
                 url = "http://thetvdb.com/api/GetSeries.php?seriesname=%s&language=de" % (
                     urllib2.quote(codecs.encode(title, 'utf-8')))
             else:
-                url = "http://api.themoviedb.org/3/search/movie?api_key=%s&query=%s&language=de" % (
+                url = "http://api.themoviedb.org/3/search/movie?api_key=%s&query=%s&language=de&region=DE" % (
                     self.tmDbApiKey, urllib2.quote(codecs.encode(title, 'utf-8')))
 
                 # schauen ob Jahr verfügbar
@@ -283,8 +290,6 @@ class MetrixReloadedEventImage(Renderer):
                     "Year").getYear("Year", values, event)
                 if(year != None):
                     url += '&primary_release_year=%s&year=%s' % (year, year)
-                
-                url += '&language=de'
 
             self.downloadPosterInfos(url, genre, event, title, values)
 
@@ -308,12 +313,41 @@ class MetrixReloadedEventImage(Renderer):
     def responsePosterInfo(self, data, response, genre, title, values, event):
 
         if (response == self.DOWNLOAD_POSTER_INFOS):
-            if (genre == 'Serien' or genre == 'Reportage'):
+            if (genre == 'Serien'):
+                jsonData = json.loads(data)
+
+                if(jsonData['results']):
+                    seriesId = str(jsonData['results'][0]['id'])
+                    seriesPosterPath = str(jsonData['results'][0]['poster_path'])
+
+                    if seriesPosterPath and seriesPosterPath != "None" and seriesId:
+                        self.log.debug(
+                            "%sresponsePosterInfos: seriesId '%s', path: %s", self.logPrefix, seriesId, seriesPosterPath)
+                        self.downloadPoster(
+                            seriesId, self.DOWNLOAD_POSTER_SERIES, title, seriesPosterPath)
+                    else:
+                        self.log.debug(
+                            "%sresponsePosterInfos: no series infos found on themoviedb.org for '%s', retry with tvdb.com", self.logPrefix, title)
+
+                        # Nochmal mit tvdb.com probieren
+                        self.useMetrixReloadedExtEventEpg(
+                            values, event, event.getEventName(), 'Serien_tvdb')
+                        self.hideimage()                    
+                else:
+                    self.log.debug(
+                        "%sresponsePosterInfos: no series infos found on themoviedb.org for '%s', retry with tvdb.com", self.logPrefix, title)
+
+                    # Nochmal mit tvdb.com probieren
+                    self.useMetrixReloadedExtEventEpg(
+                        values, event, event.getEventName(), 'Serien_tvdb')
+                    self.hideimage()
+
+            elif (genre == 'Serien_tvdb'):
                 seriesId = re.findall('<seriesid>(.*?)</seriesid>', data, re.I)
 
                 if seriesId:
                     self.downloadPoster(
-                        str(seriesId[0]), self.DOWNLOAD_POSTER_SERIES, title)
+                        str(seriesId[0]), self.DOWNLOAD_POSTER_SERIES_TVDB, title)
                 else:
                     self.log.debug(
                         "%sresponsePosterInfos: no infos found on tvdb.com for '%s'", self.logPrefix, title)
@@ -342,16 +376,16 @@ class MetrixReloadedEventImage(Renderer):
                         self.hideimage()
                 else:
                     self.log.debug(
-                        "%sresponsePosterInfos: no infos found on themoviedb.org for '%s', retry with tvdb.com", self.logPrefix, title)
+                        "%sresponsePosterInfos: no movie infos found on themoviedb.org for '%s', retry with series", self.logPrefix, title)
 
                     # Nochmal mit tvdb.com probieren
                     self.useMetrixReloadedExtEventEpg(
                         values, event, event.getEventName(), 'Serien')
                     self.hideimage()
 
-    def downloadPoster(self, id, posterTyp, title, moviePosterPath=None):
+    def downloadPoster(self, id, posterTyp, title, posterPath=None):
 
-        if(posterTyp == self.DOWNLOAD_POSTER_SERIES):
+        if(posterTyp == self.DOWNLOAD_POSTER_SERIES_TVDB):
             posterFileName = os.path.join(
                 getPosterDircetory(), getPosterFileName(title))
 
@@ -360,14 +394,14 @@ class MetrixReloadedEventImage(Renderer):
             downloadPage(posterUrl, posterFileName).addCallback(self.responsePosterDownload, self.DOWNLOAD_POSTER_SERIES,
                                                                 id, posterFileName, posterUrl).addErrback(self.reponsePosterTvDbError, self.DOWNLOAD_POSTER_SERIES, posterUrl, posterFileName, id)
 
-        elif(posterTyp == self.DOWNLOAD_POSTER_MOVIE):
+        elif(posterTyp == self.DOWNLOAD_POSTER_MOVIE or posterTyp == self.DOWNLOAD_POSTER_SERIES):
             posterFileName = os.path.join(
                 getPosterDircetory(), getPosterFileName(title))
 
-            posterUrl = 'http://image.tmdb.org/t/p/w500%s' % moviePosterPath
+            posterUrl = 'http://image.tmdb.org/t/p/w500%s' % posterPath
 
-            downloadPage(posterUrl, posterFileName).addCallback(self.responsePosterDownload, self.DOWNLOAD_POSTER_MOVIE,
-                                                                id, posterFileName, posterUrl).addErrback(self.reponsePosterError, self.DOWNLOAD_POSTER_MOVIE, posterUrl)
+            downloadPage(posterUrl, posterFileName).addCallback(self.responsePosterDownload, posterTyp,
+                                                                id, posterFileName, posterUrl).addErrback(self.reponsePosterError, posterTyp, posterUrl)
 
     def responsePosterDownload(self, data, response, id, posterFileName, posterUrl):
 
