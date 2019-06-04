@@ -226,6 +226,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screenFiles", "screenFiles"
 		screenFiles\NumberZapWithName.xml = screenFiles\NumberZapWithName.xml
 		screenFiles\NumericalTextInputHelpDialog.xml = screenFiles\NumericalTextInputHelpDialog.xml
 		screenFiles\NumericalTextInputHelpDialogVKB.xml = screenFiles\NumericalTextInputHelpDialogVKB.xml
+		screenFiles\OpenConverter.xml = screenFiles\OpenConverter.xml
 		screenFiles\OpenWebifConfig.xml = screenFiles\OpenWebifConfig.xml
 		screenFiles\OscamButler.xml = screenFiles\OscamButler.xml
 		screenFiles\output.xml = screenFiles\output.xml

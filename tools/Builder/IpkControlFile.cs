@@ -21,14 +21,14 @@ namespace Builder
         public void Generate()
         {
             string content =
-                "Package: " + "enigma2-skin-metrixreloaded" + "\n" +
+                "Package: " + "enigma2-plugin-skin-metrixreloaded" + "\n" +
                 "Version: " + version + "\n" +
                 "Description: " + "Skin MetrixReloaded" + "\n" +
                 "Section: " + "skin" + "\n" +
                 "Priority: " + "optional" + "\n" +
                 "Maintainer: " + "scrounger" + "\n" +
                 "Architecture: " + "all" + "\n" +
-                "License: " + "Apache License 2.0" + "\n" +
+                "License: " + "GNU GPLv3" + "\n" +
                 "Homepage: " + "https://github.com/Scrounger/MetrixReloaded" + "\n" +
                 "Source: " + "https://github.com/Scrounger/MetrixReloaded" + "\n" +
                 "Depends: " + "enigma2-python (>=vti-14)" + "," + "enigma2-plugin-systemplugins-exteventinfohandler";

@@ -1,7 +1,7 @@
 # MetrixReloaded
 [![GitHub release](https://img.shields.io/github/release/Scrounger/MetrixReloaded.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
 [![GitHub All Releases](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
-[![GitHub Releases (by Release)](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/0.9.5/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
+[![GitHub Releases (by Release)](https://img.shields.io/github/downloads/Scrounger/MetrixReloaded/0.9.6/total.svg)](https://github.com/Scrounger/MetrixReloaded/releases)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Scrounger/MetrixReloaded.svg)
 [![GitHub](https://img.shields.io/github/license/Scrounger/MetrixReloaded.svg)](https://github.com/Scrounger/MetrixReloaded/blob/master/LICENSE)
 
@@ -108,6 +108,11 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 </p>
 
 ## Changelog
+
+### 0.9.6 BETA (04.06.2019)
+* Updater bug fixes
+* Poster bug fixes
+* ipk package bug fixes
 
 ### 0.9.5 BETA (28.05.2019)
 * CutListeEditor skinned
