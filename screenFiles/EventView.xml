@@ -10,17 +10,24 @@
   <!-- Left Panel (Left Side) -->
   <widget name="epg_description" position="window_list_pos" size="window_list_size" font="font_list" backgroundColor="windowBackground" transparent="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" />
   <!-- Right Panel (Right Side) -->
-  <widget alphatest="blend" position="window_epg_picon_pos" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" source="Title" transparent="1" zPosition="5">
-    <convert type="MetrixReloadedRefString">CurrentRef</convert>
+  <widget alphatest="blend" position="window_epg_picon_pos" render="MetrixReloadedXHDPicon" size="window_epg_picon_size" source="Service" transparent="1" zPosition="1">
+    <convert type="ServiceName">Reference</convert>
   </widget>
+  <!-- EpgShare Image -->
+  <widget backgroundColor="windowBackgroundSecond" foregroundColor="foreground" position="window_epg_image_pos" scale="3" render="MetrixReloadedEventImage" size="window_epg_image_size" source="ExtEvent" transparent="1" zPosition="3" />
+
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/left.png" position="1270,494" size="36,36" transparent="1" zPosition="10" />
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/right.png" position="1718,494" size="36,36" transparent="1" zPosition="10" />
-  <widget backgroundColor="windowBackgroundSecond" font="SetrixHD;40" halign="center" name="channel" position="1274,350" size="480,75" transparent="1" />
+  
+  
+  
   <widget backgroundColor="windowBackgroundSecond" font="SetrixHD;36" halign="center" name="datetime" position="1309,485" size="405,60" transparent="1" />
   <eLabel backgroundColor="progressBarSmallBackground" foregroundColor="progressBarSmallBackground" position="1325,437" size="382,1" />
   <widget backgroundColor="progressBarBackground" foregroundColor="progressBarForeground" borderWidth="0" position="1325,435" render="Progress" size="382,5" source="session.Event_Now" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
+  
+  
   <widget backgroundColor="windowBackgroundSecond" font="SetrixHD;36" halign="center" name="duration" position="1309,568" size="405,60" transparent="1" />
   <!-- Icons -->
   <widget alphatest="blend" pixmap="MetrixReloaded/media/logos/nosubtitles.png" position="1282,690" render="Pixmap" size="33,34" source="session.CurrentService" zPosition="1">
@@ -72,6 +79,14 @@
     <convert type="MetrixReloadedCompareBoolean">true</convert>
     <convert type="ConditionalShowHide" />
   </widget>
+  
+  <widget source="ExtEvent" position="1218,800" zPosition="10" size="622,470" font="font_standard_small" foregroundColor="foreground" backgroundColor="windowBackgroundSecond" valign="top" transparent="1" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=6500,wrap,always=0">
+    <convert type="MetrixReloadedExtEventEPG">PowerDescription[EpisodeNum(S[ss]E[ee]\,)Subtitle(10)Genre(\n)Rating(\,Bewertung )Country(\,)Year(\,)ExtendedDescriptionClean(\n\n)]</convert>
+  </widget>
+
+  <!-- Not visible elements -->
+  <widget backgroundColor="windowBackgroundSecond" font="SetrixHD;40" halign="center" name="channel" position="-10,-10" size="0,0" transparent="1" />
+  
   <!-- Remote Buttons -->
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/menu.png" position="window_remote_button_right_pos" size="window_remote_button_size" transparent="1" zPosition="10" />
   <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/buttons/epg.png" position="window_remote_button_middle_pos" size="window_remote_button_size" transparent="1" zPosition="10" />

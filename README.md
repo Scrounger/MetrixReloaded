@@ -109,6 +109,9 @@ Mit Hilfe der **Merger.exe** wird aus den screenFiles die [skin.xml](https://git
 
 ## Changelog
 
+### 0.9.7 BETA (05.06.2019)
+* Poster Position bug fix
+
 ### 0.9.6 BETA (04.06.2019)
 * Updater bug fixes
 * Poster bug fixes

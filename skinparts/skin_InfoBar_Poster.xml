@@ -1,5 +1,6 @@
 <skin>
   <screen name="panel_infoBar_Poster">
+    <!--<widget backgroundColor="windowBackground" foregroundColor="foreground" position="30,293" size="350,492" scale="3" render="OpenConverterEventImage" imageType="Poster" source="session.extEvent_Now" transparent="1" zPosition="3" />-->
     <widget backgroundColor="windowBackground" foregroundColor="foreground" position="30,293" size="350,492" scale="3" render="MetrixReloadedEventImage" imageType="Poster" source="session.extEvent_Now" transparent="1" zPosition="3" />
   </screen>
 </skin>
