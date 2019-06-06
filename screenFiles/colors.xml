@@ -12,6 +12,7 @@
   <color name="green" value="#00389416" />
   <color name="lightgrey" value="#00bbbbbb" />
   <color name="orange" value="#00ffa500" />
+  <color name="dark" value="#2d000000" />
   <!-- Color Zuweisungen -->
   <color name="windowBackground" value="background" />
   <color name="windowBackgroundSecond" value="backgroundSecond" />

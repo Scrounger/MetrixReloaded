@@ -1,29 +1,36 @@
-﻿<screen name="ServiceScan" position="center,center" size="1288,923" title="Service Scan" flags="wfNoBorder" backgroundColor="transparent">
+﻿<screen name="ServiceScan" position="center,center" size="1920,1080" title="Service Scan" flags="wfNoBorder" backgroundColor="transparent">
   <!-- Backgrounds -->
   <panel name="panel_background_window" />
-  <ePixmap pixmap="MetrixReloaded/menu/ico_title_Setup.png" position="70,74" size="77,77" alphatest="blend" transparent="1" />
-  <eLabel text="Service Scan" position="173,90" size="1000,84" font="SetrixHD; 58" backgroundColor="windowBackground" transparent="1" />
-  <constant-widget name="clock_mid" />
-  <widget source="FrontendInfo" render="Pixmap" pixmap="MetrixReloaded/media/icons/scan-s.png" position="344,265" size="96,96" transparent="1" alphatest="blend">
+  <!-- Title -->
+  <eLabel text="Service Scan" position="window_title_pos" size="window_title_size" zPosition="3" font="font_window_title" backgroundColor="windowBackground" transparent="1" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget source="FrontendInfo" render="Pixmap" pixmap="MetrixReloaded/media/logos/tunertypes/dvbs.png" position="105,150" size="220,96" transparent="1" alphatest="blend">
     <convert type="FrontendInfo">TYPE</convert>
     <convert type="ValueRange">0,0</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="FrontendInfo" render="Pixmap" pixmap="MetrixReloaded/media/icons/scan-c.png" position="344,265" size="96,96" transparent="1" alphatest="on">
+  <widget source="FrontendInfo" render="Pixmap" pixmap="MetrixReloaded/media/logos/tunertypes/dvbc.png" position="105,150" size="220,96" transparent="1" alphatest="on">
     <convert type="FrontendInfo">TYPE</convert>
     <convert type="ValueRange">1,1</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="FrontendInfo" render="Pixmap" pixmap="MetrixReloaded/media/icons/scan-t.png" position="344,265" size="96,96" transparent="1" alphatest="on">
+  <widget source="FrontendInfo" render="Pixmap" pixmap="MetrixReloaded/media/logos/tunertypes/dvbt.png" position="105,150" size="220,96" transparent="1" alphatest="on">
     <convert type="FrontendInfo">TYPE</convert>
     <convert type="ValueRange">2,2</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget name="network" position="449,273" size="495,30" font="Regular;30" backgroundColor="windowBackground" transparent="1" />
-  <widget name="transponder" position="449,310" size="495,30" font="Regular;30" backgroundColor="windowBackground" transparent="1" />
-  <widget name="scan_state" position="344,370" zPosition="2" size="600,35" font="Regular;30" backgroundColor="windowBackground" transparent="1" />
-  <widget name="pass" position="344,370" size="600,35" font="Regular;30" backgroundColor="windowBackground" transparent="1" />
-  <widget name="scan_progress" position="344,408" size="600,23" borderWidth="2" borderColor="foreground" backgroundColor="windowBackground" transparent="1" />
-  <widget name="servicelist" position="344,453" size="600,408" font="Regular;30" itemHeight="34" selectionDisabled="1" backgroundColor="windowBackground" transparent="1" />
-  <widget text="ServiceScan" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+  <widget name="network" position="340,153" size="810,40" font="SetrixHD; 30" backgroundColor="windowBackground" transparent="1" />
+  <widget name="transponder" position="340,192" size="810,40" font="SetrixHD; 30" backgroundColor="windowBackground" transparent="1" />
+  <widget name="scan_state" position="105,260" zPosition="2" size="1050,40" font="SetrixHD; 30" backgroundColor="windowBackground" transparent="1" halign="center" />
+  <widget name="pass" position="105,260" size="1050,40" font="SetrixHD; 30" backgroundColor="windowBackground" transparent="1" halign="center" />
+  <widget name="scan_progress" position="105,310" size="1050,23" borderWidth="2" borderColor="foreground" backgroundColor="windowBackground" transparent="1" foregroundColor="backgroundSecond" />
+  <widget name="servicelist" position="105,345" size="1050,650" font="SetrixHD;30" itemHeight="50" selectionDisabled="1" backgroundColor="windowBackground" transparent="1" />
+
+  <!-- Right Panel (Right Side) -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/menu/manual_scan.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <widget text="ServiceScan" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>
