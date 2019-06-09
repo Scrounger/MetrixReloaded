@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from os import listdir, remove, rename, system, path, symlink, chdir, makedirs
 from twisted.web.client import downloadPage, getPage
-import HTMLParser
 
 # GUI (Screens)
 from Screens.Screen import Screen
@@ -11,7 +10,7 @@ from Screens.FileDirBrowser import FileDirBrowser
 from Screens.Standby import TryQuitMainloop
 
 # Configuration
-from Components.config import config, getConfigListEntry, NoSave, ConfigNothing, ConfigSelection
+from Components.config import config, getConfigListEntry, NoSave, ConfigNothing, ConfigSelection, ConfigDescription
 
 # GUI (Components)
 from Components.ActionMap import ActionMap
@@ -33,8 +32,6 @@ cur_skin = config.skin.primary_skin.value.replace('/skin.xml', '')
 class MetrixReloadedSetup(Screen, ConfigListScreen):
     TYPE_COLOR = 1
     TYPE_FONT = 2
-
-    htmlParser = HTMLParser.HTMLParser()
 
     def __init__(self, session):
         Screen.__init__(self, session)
@@ -112,23 +109,22 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
         self.list = []
 
         # Liste Einträge als var, die später gebracuht werden
-        self.set_color = getConfigListEntry(self.htmlParser.unescape(
-            _("  &#8226;  Color scheme:")), self.myColorScheme, _("Choose your color scheme"))
-        self.set_font = getConfigListEntry(self.htmlParser.unescape(
-            _("  &#8226;  Font")), self.myFont)
+        self.set_color = getConfigListEntry(_("Color scheme:"), self.myColorScheme, _("Choose your color scheme"))
+        self.set_font = getConfigListEntry(_("Font"), self.myFont)
 
-        self.onlineMode = getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Download additional data")),
+        self.onlineMode = getConfigListEntry(_("Download additional data"),
                                             config.plugins.MetrixReloaded.onlineMode, _("Download additional data such as images. Requires internet connection!"))
 
-        self.posterDownload = getConfigListEntry(self.htmlParser.unescape(_("       &#8226;  download posters")), config.plugins.MetrixReloaded.posterDownload, _(
+        self.posterDownload = getConfigListEntry(_("download posters"), config.plugins.MetrixReloaded.posterDownload, _(
                 "Download addtional posters from themoviedb.org or thetvddb.com"))
 
-        self.checkForUpdates = getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  Check for skin update on startup")), config.plugins.MetrixReloaded.checkNewVersionOnStartUp, _(
+        self.checkForUpdates = getConfigListEntry(_("Check for skin update on startup"), config.plugins.MetrixReloaded.checkNewVersionOnStartUp, _(
             "Checks on startup (boot or standby) if a new skin version is available to download. Requires internet connection!"))
 
         # Listen Einträge erstellen
         self.list.append(getConfigListEntry(
-            _("skin options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())))
+            _('skin options'), ConfigDescription(), None))
+
         self.list.append(self.set_color)
         self.list.append(self.set_font)
         self.list.append(self.onlineMode)
@@ -137,33 +133,39 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             self.list.append(self.posterDownload)
 
             if(config.plugins.MetrixReloaded.posterDownload.value):
-                self.list.append(getConfigListEntry(self.htmlParser.unescape(_("            &#8226;  poster dircetory")), config.plugins.MetrixReloaded.posterDirectory, _(
+                self.list.append(getConfigListEntry(_("poster dircetory"), config.plugins.MetrixReloaded.posterDirectory, _(
                     "choose the directory where posters are stored")))
 
-                self.list.append(getConfigListEntry(self.htmlParser.unescape(
-                    _("            &#8226;  auto remove posters after x days")), config.plugins.MetrixReloaded.posterAutoRemove, _("use 0 for deactivation")))
+                self.list.append(getConfigListEntry(_("posters older than x days remove"), config.plugins.MetrixReloaded.posterAutoRemove, _("use 0 for deactivation")))
 
+
+        # Updates
+        self.list.append(getConfigListEntry(
+            _('update options'), ConfigDescription(), None))
+        
         self.list.append(self.checkForUpdates)
 
         if(config.plugins.MetrixReloaded.checkNewVersionOnStartUp.value):
-            self.list.append(getConfigListEntry(self.htmlParser.unescape(_("       &#8226;  Auto download new version")), config.plugins.MetrixReloaded.autoDownloadNewVersion, _(
+            self.list.append(getConfigListEntry(_("Auto download new version"), config.plugins.MetrixReloaded.autoDownloadNewVersion, _(
                 "New version of MetrixReloaded skin will be automatically downloaded. You will get an information if new version is ready to install")))
 
-        self.list.append(getConfigListEntry("", NoSave(ConfigNothing())))
+
+        # Debug Options
         self.list.append(getConfigListEntry(
-            _("debug options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())))
-        self.list.append(getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  enable debug")),
+            _('debug options'), ConfigDescription(), None))
+        self.list.append(getConfigListEntry(_("enable debug"),
                                             config.plugins.MetrixReloaded.debug, _("show additional log informations")))
-        self.list.append(getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  log files directory")), config.plugins.MetrixReloaded.logDirectory, _(
+        self.list.append(getConfigListEntry(_("log files directory"), config.plugins.MetrixReloaded.logDirectory, _(
             "choose the directory where log files of skin, components, etc are stored")))
-        self.list.append(getConfigListEntry(self.htmlParser.unescape(
-                    _("  &#8226;  auto remove log files after x days")), config.plugins.MetrixReloaded.logAutoRemove, _("use 0 for deactivation")))            
-        self.list.append(getConfigListEntry("", NoSave(ConfigNothing())))
         self.list.append(getConfigListEntry(
-            _("developer options -------------------------------------------------------------------------------------------------------------"), NoSave(ConfigNothing())))
-        self.list.append(getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  show screen names")), config.plugins.MetrixReloaded.showScreenNames, _(
+                    _("log files older than x days remove"), config.plugins.MetrixReloaded.logAutoRemove, _("use 0 for deactivation")))            
+
+        # Developer Options
+        self.list.append(getConfigListEntry(
+            _('developer options'), ConfigDescription(), None))
+        self.list.append(getConfigListEntry(_("show screen names"), config.plugins.MetrixReloaded.showScreenNames, _(
             "Shows the name of the current screen in the bottom right corner")))
-        self.list.append(getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  show selected menu entry name")), config.plugins.MetrixReloaded.showMenuEntryNames, _(
+        self.list.append(getConfigListEntry(_("show selected menu entry name"), config.plugins.MetrixReloaded.showMenuEntryNames, _(
             "Shows the name of the current selected menu entry")))
 
         self.list.append(getConfigListEntry(

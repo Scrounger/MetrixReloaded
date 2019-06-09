@@ -54,8 +54,7 @@ class MetrixReloadedUpdater:
                     # AutoUpdate ist aktiviert und kein manueller aufruf
                     self.downloadNewVersion()
                 else:
-                    msg = _("A new version of MetrixReloaded skin is available!\n\nInstalled version:\t%s\nNew version:\t%s\n\nWould you like to download the new version in the background?") % (
-                        self.currentVersion, self.releasedVersion)
+                    msg = _("A new version of MetrixReloaded skin is available!\n\nInstalled version:\t%s\nNew version:\t%s\n\nWould you like to download the new version in the background?") % (self.currentVersion, self.releasedVersion)
 
                     # User fragen ob version heruntergeladen werden soll
                     self.session.openWithCallback(
@@ -83,7 +82,8 @@ class MetrixReloadedUpdater:
     def responseError(self, e, response):
         self.log.exception("response: [%s] %s", response, str(e))
 
-        msg = _("Error: [%s] %s") % response, str(e)
+        msg = _("Error: [%s] %s") % (response, str(e))
+
         self.session.open(MessageBox, msg, MessageBox.TYPE_ERROR, timeout=30)
 
     def msgBoxResponseStartDownload(self, answer):
