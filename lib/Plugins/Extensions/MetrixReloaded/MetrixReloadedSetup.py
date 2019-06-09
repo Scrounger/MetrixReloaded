@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+from os import listdir, remove, rename, system, path, symlink, chdir, makedirs
+from twisted.web.client import downloadPage, getPage
+import HTMLParser
 
 # GUI (Screens)
 from Screens.Screen import Screen
@@ -16,42 +19,16 @@ from Components.Sources.StaticText import StaticText
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 
-from twisted.web.client import downloadPage, getPage
-
-from os import listdir, remove, rename, system, path, symlink, chdir, makedirs
-import HTMLParser
-
 # MetrixReloaded imports
+from MetrixReloadedTranslation import _
 from MetrixReloadedUpdater import MetrixReloadedUpdater
 from Tools.MetrixReloadedHelper import initializeLog, getVersion
 
-
-#Language #########################################################################################################################################
-from Components.Language import language
-import gettext
-from Tools.Directories import resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
-from os import environ
-
-# language
-lang = language.getLanguage()
-environ["LANGUAGE"] = lang[:2]
-gettext.bindtextdomain("enigma2", resolveFilename(SCOPE_LANGUAGE))
-gettext.textdomain("enigma2")
-gettext.bindtextdomain("MetrixReloaded", "%s%s" % (
-    resolveFilename(SCOPE_PLUGINS), "Extensions/MetrixReloaded/locale/"))
-
-
-def _(txt):
-    t = gettext.dgettext("MetrixReloaded", txt)
-    if t == txt:
-        t = gettext.gettext(txt)
-    return t
-
-###########################################################################################################################################
+#OpenConverter
+from Plugins.Extensions.OpenConverter.OpenConverterSetup import OpenConverterSetup
 
 
 cur_skin = config.skin.primary_skin.value.replace('/skin.xml', '')
-
 
 class MetrixReloadedSetup(Screen, ConfigListScreen):
     TYPE_COLOR = 1
@@ -189,6 +166,9 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
         self.list.append(getConfigListEntry(self.htmlParser.unescape(_("  &#8226;  show selected menu entry name")), config.plugins.MetrixReloaded.showMenuEntryNames, _(
             "Shows the name of the current selected menu entry")))
 
+        self.list.append(getConfigListEntry(
+            _('OpenConverter'), config.plugins.MetrixReloaded.openConverter))
+
         # Liste anzeigen
         self['config'].setList(self.list)
 
@@ -298,6 +278,9 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             start_dir = config.plugins.MetrixReloaded.posterDirectory.value
             self.session.openWithCallback(self.fileDirBrowserResponse, FileDirBrowser, initDir=start_dir, title=_(
                 "Choose folder"), getFile=False, getDir=True, showDirectories=True, showFiles=False)
+        
+        if (self['config'].getCurrent()[1] == config.plugins.MetrixReloaded.openConverter):
+            self.session.open(OpenConverterSetup)
 
     def showMsgBoxCancelConfirm(self):
         self.session.openWithCallback(

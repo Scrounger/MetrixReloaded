@@ -1,42 +1,19 @@
 # -*- coding: utf-8 -*-
-
-from Tools.MetrixReloadedHelper import initializeLog, getVersion
+import json
+import os
+import re
 from twisted.web.client import downloadPage, getPage
+
 
 from Screens.MessageBox import MessageBox
 from Screens.Ipkg import Ipkg, PackageSelection
 from Screens.Standby import TryQuitMainloop
-
-# Configuration
 from Components.config import config, getConfigListEntry
-
 from Components.Ipkg import IpkgComponent
 
-#Language #########################################################################################################################################
-from Components.Language import language
-import gettext
-from Tools.Directories import resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
-from os import environ, path
-import re
-import json
 
-# language
-lang = language.getLanguage()
-environ["LANGUAGE"] = lang[:2]
-gettext.bindtextdomain("enigma2", resolveFilename(SCOPE_LANGUAGE))
-gettext.textdomain("enigma2")
-gettext.bindtextdomain("MetrixReloaded", "%s%s" % (
-    resolveFilename(SCOPE_PLUGINS), "Extensions/MetrixReloaded/locale/"))
-
-
-def _(txt):
-    t = gettext.dgettext("MetrixReloaded", txt)
-    if t == txt:
-        t = gettext.gettext(txt)
-    return t
-
-###########################################################################################################################################
-
+from Tools.MetrixReloadedHelper import initializeLog, getVersion
+from MetrixReloadedTranslation import _
 
 class MetrixReloadedUpdater:
     CHECK_VERSION = "CHECK_VERSION"
@@ -93,7 +70,7 @@ class MetrixReloadedUpdater:
 
         elif(response == self.DOWNLOAD):
             # Zum Ipkg Screen gehen -> Installation
-            if (path.exists(self.targetFileName)):
+            if (os.path.exists(self.targetFileName)):
                 self.log.info("new version successful downloaded! filename: %s" % (
                     self.targetFileName))
 

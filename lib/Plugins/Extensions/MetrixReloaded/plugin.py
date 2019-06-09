@@ -1,69 +1,24 @@
 # -*- coding: utf-8 -*-
-from MetrixReloadedUpdater import MetrixReloadedUpdater
-from Tools.MetrixReloadedHelper import initializeLog, getVersion
-from Plugins.Plugin import PluginDescriptor
-
+import os
+import logging
 from threading import Thread
 from time import sleep
 
-# Config
-from Components.config import config, ConfigSubsection, ConfigOnOff, ConfigDirectory, ConfigNumber
+from Components.config import config
+from Plugins.Plugin import PluginDescriptor
 from Screens.MessageBox import MessageBox
-
-import os
-import logging
-
-import MetrixReloadedSetup
-from MyScreens import MetrixReloadedEventView
-from Tools.MetrixReloadedHelper import createPosterPaths, removePosters, removeLogs
 
 # Screens für Mods
 from Screens.EventView import EventViewBase
 
 
-# Configuration
-config.plugins.MetrixReloaded = ConfigSubsection()
-config.plugins.MetrixReloaded.onlineMode = ConfigOnOff(default=True)
-config.plugins.MetrixReloaded.checkNewVersionOnStartUp = ConfigOnOff(
-    default=True)
-config.plugins.MetrixReloaded.autoDownloadNewVersion = ConfigOnOff(
-    default=True)
-config.plugins.MetrixReloaded.debug = ConfigOnOff(default=False)
-config.plugins.MetrixReloaded.logDirectory = ConfigDirectory(
-    default='/mnt/hdd/MetrixReloaded/log/')
-config.plugins.MetrixReloaded.logAutoRemove = ConfigNumber(default=10)
-config.plugins.MetrixReloaded.showScreenNames = ConfigOnOff(default=False)
-config.plugins.MetrixReloaded.showMenuEntryNames = ConfigOnOff(default=False)
-config.plugins.MetrixReloaded.posterDownload = ConfigOnOff(default=True)
-config.plugins.MetrixReloaded.posterDirectory = ConfigDirectory(
-    default='/mnt/hdd/MetrixReloaded/poster/')
-config.plugins.MetrixReloaded.posterAutoRemove = ConfigNumber(default=30)
-config.plugins.MetrixReloaded.updated = ConfigOnOff(default=True)
+import MetrixReloadedSetup
+import MetrixReloadedConfig
+from MetrixReloadedTranslation import _
+from MetrixReloadedUpdater import MetrixReloadedUpdater
+from MyScreens import MetrixReloadedEventView
+from Tools.MetrixReloadedHelper import createPosterPaths, removePosters, removeLogs, initializeLog, getVersion
 
-#Language #########################################################################################################################################
-from Components.Language import language
-import gettext
-from Tools.Directories import resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
-from os import environ
-
-# language
-lang = language.getLanguage()
-environ["LANGUAGE"] = lang[:2]
-gettext.bindtextdomain("enigma2", resolveFilename(SCOPE_LANGUAGE))
-gettext.textdomain("enigma2")
-gettext.bindtextdomain("MetrixReloaded", "%s%s" % (
-    resolveFilename(SCOPE_PLUGINS), "Extensions/MetrixReloaded/locale/"))
-
-
-def _(txt):
-    t = gettext.dgettext("MetrixReloaded", txt)
-    if t == txt:
-        t = gettext.gettext(txt)
-    return t
-
-###########################################################################################################################################
-
-# MyLog
 # MyLog
 log = initializeLog("Plugin")
 
