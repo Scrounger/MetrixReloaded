@@ -1,0 +1,24 @@
+<screen name="VWeather3SetupScreen" size="1920,1080" position="0,0" title="VWeather3Setup" backgroundColor="transparent">
+  <widget name="Info" position="1218,660" size="620,107" zPosition="11" valign="center" halign="center" font="SetrixSL;26" transparent="1" foregroundColor="accent1" backgroundColor="windowBackgroundSecond" />
+  <widget name="Status" position="1218,782" size="620,90" zPosition="11" valign="center" halign="center" font="SetrixSL;26" transparent="1" foregroundColor="accent1" backgroundColor="windowBackgroundSecond" />
+  <!-- Backgrounds -->
+  <panel name="panel_background_window" />
+  <!-- Title -->
+  <!--<panel name="panel_Title_window" />-->
+  <eLabel text="VWeather3 Einstellungen " position="window_title_pos" size="window_title_size" font="font_window_title" backgroundColor="windowBackground" transparent="1" />
+  <!-- Clock -->
+  <panel name="panel_clock_window" />
+  <!-- Title Seperator -->
+  <panel name="panel_seperator_window_title" />
+  <!-- Left Panel (Left Side) -->
+  <widget name="config" transparent="1" backgroundColorRows="listBackgroundBarsOne" textOffset="5,3" position="window_list_pos" size="window_list_setup_size" zPosition="10" descriptionColor="listDescription" descriptionfont="font_list_description" secondfont="font_list_second" font="font_list" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showOnDemand" scrollbarBackgroundPicture="MetrixReloaded/media/scrollbar_bg.png" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarKeepGapColor="1" scrollbarGap="20" enableWrapAround="1" />
+  <!-- Right Panel (Right Side) -->
+  <ePixmap alphatest="blend" pixmap="MetrixReloaded/media/icons/setup.png" position="window_image_pos" size="window_image_size" scale="1" />
+  <!-- Buttons -->
+  <panel name="panel_color_buttons_window" />
+  <panel name="panel_key_red_source" />
+  <panel name="panel_key_green_source" />
+  <panel name="panel_key_yellow_source" />
+  <panel name="panel_key_blue_source" />
+  <widget text="SimpleList" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
+</screen>

@@ -18,6 +18,14 @@ namespace Helper
             set { this.projectPath = value; }
         }
 
+        private bool isSkin;
+        [JsonProperty(PropertyName = "isSkin")]
+        public bool IsSkin
+        {
+            get { return this.isSkin; }
+            set { this.isSkin = value; }
+        }
+
         private string skinPath;
 
         [JsonProperty(PropertyName = "skinPath")]

@@ -64,16 +64,28 @@ namespace Builder
                 Console.WriteLine(String.Format("Building version: {0}....", myVersion.Get()));
                 Console.WriteLine();
 
-                ScreenMerger.Run(false, false, false);
+                if (settings.IsSkin)
+                {
+                    ScreenMerger.Run(false, false, false);
+                }
+                
 
                 string libPath = settings.BuildPath + libPathPrefix;
                 string skinPath = settings.BuildPath + skinPathPrefix;
 
                 ClearFolder(libPath);
-                ClearFolder(skinPath);
+
+                if (settings.IsSkin)
+                {
+                    ClearFolder(skinPath);
+                }
 
                 Functions.CopyAll(settings.LibPath, libPath, true);
-                Functions.CopyAll(settings.SkinPath, skinPath, true);
+
+                if (settings.IsSkin)
+                {
+                    Functions.CopyAll(settings.SkinPath, skinPath, true);
+                }
 
                 Console.WriteLine();
 
