@@ -1,0 +1,13 @@
+{
+    "package": "enigma2-plugin-skin-metrixreloaded",
+    "version": "./skin",
+    "description": "Skin MetrixReloaded",
+    "section": "skin",
+    "priority": "optional",
+    "maintainer": "scrounger",
+    "architecture": "all",
+    "license": "GNU GPLv3",
+    "homepage": "https://github.com/Scrounger/MetrixReloaded",
+    "source": "https://github.com/Scrounger/MetrixReloaded",
+    "depends": "enigma2-python (>=vti-14),enigma2-plugin-systemplugins-exteventinfohandler"
+}

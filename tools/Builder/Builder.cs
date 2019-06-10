@@ -103,6 +103,8 @@ namespace Builder
             Directory.CreateDirectory(folder);
         }
 
-
+        internal class Control
+        {
+        }
     }
 }

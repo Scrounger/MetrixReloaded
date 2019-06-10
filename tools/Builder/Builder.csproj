@@ -48,6 +48,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,11 +63,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builder.cs" />
+    <Compile Include="Control.cs" />
     <Compile Include="IpkControlFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="control.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +97,7 @@
     <PostBuildEvent>xcopy /y "$(TargetPath)" "$(SolutionDir)"
 xcopy /y "$(TargetDir)Helper.dll" "$(SolutionDir)"
 xcopy /y "$(TargetDir)Newtonsoft.Json.dll" "$(SolutionDir)"
-xcopy /y "$(TargetDir)settings.cfg" "$(SolutionDir)"</PostBuildEvent>
+xcopy /y "$(TargetDir)settings.cfg" "$(SolutionDir)"
+xcopy /y "$(TargetDir)control.json" "$(SolutionDir)"</PostBuildEvent>
   </PropertyGroup>
 </Project>

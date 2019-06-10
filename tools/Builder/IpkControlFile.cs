@@ -20,18 +20,20 @@ namespace Builder
 
         public void Generate()
         {
+            Control control = Control.Load();
+
             string content =
-                "Package: " + "enigma2-plugin-skin-metrixreloaded" + "\n" +
+                "Package: " + control.Package + "\n" +
                 "Version: " + version + "\n" +
-                "Description: " + "Skin MetrixReloaded" + "\n" +
-                "Section: " + "skin" + "\n" +
-                "Priority: " + "optional" + "\n" +
-                "Maintainer: " + "scrounger" + "\n" +
-                "Architecture: " + "all" + "\n" +
-                "License: " + "GNU GPLv3" + "\n" +
-                "Homepage: " + "https://github.com/Scrounger/MetrixReloaded" + "\n" +
-                "Source: " + "https://github.com/Scrounger/MetrixReloaded" + "\n" +
-                "Depends: " + "enigma2-python (>=vti-14)" + "," + "enigma2-plugin-systemplugins-exteventinfohandler";
+                "Description: " + control.Description + "\n" +
+                "Section: " + control.Section + "\n" +
+                "Priority: " + control.Priority + "\n" +
+                "Maintainer: " + control.Maintainer + "\n" +
+                "Architecture: " + control.Architecture + "\n" +
+                "License: " + control.License + "\n" +
+                "Homepage: " + control.Homepage + "\n" +
+                "Source: " + control.Source + "\n" +
+                "Depends: " + control.Depends;
 
             System.IO.File.WriteAllText(filename, content);
         }
