@@ -48,7 +48,7 @@ namespace Helper
         {
             //Prüfen ob version.info schon existiert
             Settings settings = Settings.Load();
-            fullFileName = settings.SkinPath + fileName;
+            fullFileName = settings.ProjectPath + fileName;
 
             Load();
         }
