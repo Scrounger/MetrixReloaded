@@ -24,10 +24,13 @@ namespace Builder
                 MyVersion myVersion = new MyVersion();
 
                 Console.WriteLine("(1) Do nothing, stay at version {0}", myVersion.Get());
+                myVersion.IncreaseBuild();
+                Console.WriteLine(String.Format("(2) Increase build version to {0}", myVersion.Get()));
                 myVersion.IncreaseMinor();
-                Console.WriteLine(String.Format("(2) Increase minor version to {0}", myVersion.Get()));
+                Console.WriteLine(String.Format("(3) Increase minor version to {0}", myVersion.Get()));
                 myVersion.IncreaseMajor();
-                Console.WriteLine(String.Format("(3) Increase major version to {0}", myVersion.Get()));
+                Console.WriteLine(String.Format("(4) Increase major version to {0}", myVersion.Get()));
+
                 Console.WriteLine("---------------------------------------------------------------------------------------------------");
                 Console.Write("-> ");
 
@@ -40,10 +43,15 @@ namespace Builder
                         break;
                     case ConsoleKey.D2:
                         myVersion.Load();
-                        myVersion.IncreaseMinor();
+                        myVersion.IncreaseBuild();
                         myVersion.Save();
                         break;
                     case ConsoleKey.D3:
+                        myVersion.Load();
+                        myVersion.IncreaseMinor();
+                        myVersion.Save();
+                        break;
+                    case ConsoleKey.D4:
                         myVersion.Load();
                         myVersion.IncreaseMajor();
                         myVersion.Save();
