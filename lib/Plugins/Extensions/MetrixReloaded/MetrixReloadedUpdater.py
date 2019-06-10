@@ -12,8 +12,9 @@ from Components.config import config, getConfigListEntry
 from Components.Ipkg import IpkgComponent
 
 
-from Tools.MetrixReloadedHelper import initializeLog, getVersion
+from Tools.MetrixReloadedHelper import initializeLog
 from MetrixReloadedTranslation import _
+import MetrixReloadedHelper as myHelper
 
 class MetrixReloadedUpdater:
     CHECK_VERSION = "CHECK_VERSION"
@@ -22,7 +23,7 @@ class MetrixReloadedUpdater:
     def __init__(self, session, manualMode=False):
         self.log = initializeLog("MetrixReloadedUpdater")
         self.session = session
-        self.currentVersion = getVersion()
+        self.currentVersion = myHelper.getVersion()
         self.manualMode = manualMode
 
         self.checkVersion()

@@ -1,6 +1,7 @@
 from Components.Converter.Converter import Converter
 from Components.Element import cached
-from Tools.MetrixReloadedHelper import getVersion
+
+from Plugins.Extensions.MetrixReloaded.MetrixReloadedHelper import getVersion
 
 class MetrixReloadedVersion(Converter, object):
 	def __init__(self, type):

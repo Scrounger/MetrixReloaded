@@ -15,9 +15,10 @@ from Screens.EventView import EventViewBase
 import MetrixReloadedSetup
 import MetrixReloadedConfig
 from MetrixReloadedTranslation import _
+import MetrixReloadedHelper as myHelper
 from MetrixReloadedUpdater import MetrixReloadedUpdater
 from MyScreens import MetrixReloadedEventView
-from Tools.MetrixReloadedHelper import createPosterPaths, removePosters, removeLogs, initializeLog, getVersion
+from Tools.MetrixReloadedHelper import createPosterPaths, removePosters, removeLogs, initializeLog
 
 # MyLog
 log = initializeLog("Plugin")
@@ -127,7 +128,7 @@ def newVersionInstalled(session):
             log.info("newVersionInstalled: load info screen")
 
             msg = _("MetrixReloaded has been successfully updated to version %s\n\nYou like the MetrixReloaded Skin?\n\nThen support the development in which you actively cooperate. All information can be found under the following link\nhttps://github.com/Scrounger/MetrixReloaded\n\nOr support the MetrixReloaded team with a small donation\n- by Paypal to:\tscrounger@gmx.net\n- via the website:\thttps://github.com/Scrounger/MetrixReloaded\n\nHave fun!\nYour MetrixReloaded Team")
-            msg = msg % getVersion()
+            msg = msg % myHelper.getVersion()
 
             session.open(
                 MessageBox, msg, MessageBox.TYPE_INFO)

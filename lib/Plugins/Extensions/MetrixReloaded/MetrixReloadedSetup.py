@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from os import listdir, remove, rename, system, path, symlink, chdir, makedirs
+from os import listdir, remove, rename, system, path, symlink, chdir, makedirs, popen
 from twisted.web.client import downloadPage, getPage
 
 # GUI (Screens)
@@ -20,8 +20,9 @@ from Components.Pixmap import Pixmap
 
 # MetrixReloaded imports
 from MetrixReloadedTranslation import _
+import MetrixReloadedHelper as myHelper
 from MetrixReloadedUpdater import MetrixReloadedUpdater
-from Tools.MetrixReloadedHelper import initializeLog, getVersion
+from Tools.MetrixReloadedHelper import initializeLog
 
 #OpenConverter
 from Plugins.Extensions.OpenConverter.OpenConverterSetup import OpenConverterSetup
@@ -80,7 +81,7 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             self["key_blue"] = StaticText(_("Check for updates"))
 
             self["help"] = StaticText()
-            self["version"] = StaticText(_("version: %s") % getVersion())
+            self["version"] = StaticText(_("version: %s") % myHelper.getVersion())
 
             # Define Actions
             self["actions"] = ActionMap(["SetupActions", "ColorActions", "ChannelSelectEPGActions", "HelpActions"],
