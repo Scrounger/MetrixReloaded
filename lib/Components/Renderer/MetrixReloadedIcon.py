@@ -53,17 +53,20 @@ class MetrixReloadedIcon(Renderer):
 				self.pngname = pngname
 
 	def findIcon(self, resName):
-		pngname = self.skinpath + self.path + resName + ".png"
-		if os.path.exists(pngname):
-			return pngname
-		else:
-			if("media/logos/resolution" in self.path):
-				pngname = self.skinpath + self.path + resName.replace("i", "").replace("p", "") + ".png"
-				if os.path.exists(pngname):
-					return pngname
-			elif("media/icons/menu" in self.path):
-				pngname = self.skinpath + self.path + "no_image.png"
-				if os.path.exists(pngname):
-					return pngname				
+		try:
+			pngname = self.skinpath + self.path + resName + ".png"
+			if os.path.exists(pngname):
+				return pngname
+			else:
+				if("media/logos/resolution" in self.path):
+					pngname = self.skinpath + self.path + resName.replace("i", "").replace("p", "") + ".png"
+					if os.path.exists(pngname):
+						return pngname
+				elif("media/icons/menu" in self.path):
+					pngname = self.skinpath + self.path + "no_image.png"
+					if os.path.exists(pngname):
+						return pngname
+		except Exception:
+			pass	
 		
 		return ""
