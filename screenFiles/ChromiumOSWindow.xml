@@ -18,5 +18,5 @@
   <widget name="settingdesc" position="key_blue_pos" size="key_size" font="font_key_standard" valign="top" halign="left" transparent="1" backgroundColor="windowBackground" />
   <widget name="helpdesc" position="key_yellow_pos" size="key_size" font="font_key_standard" valign="top" halign="left" transparent="1" backgroundColor="windowBackground" />
 
-  <widget text="ChromiumOSWindow" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
+  <widget text="ChromiumOSWindow" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>

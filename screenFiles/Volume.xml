@@ -1,5 +1,5 @@
 ﻿<screen name="Volume" position="center,60" zPosition="1" size="627,81" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
   <ePixmap pixmap="MetrixReloaded/media/volume_background.png" position="0,0" size="627,81" />
   <widget name="Volume" pixmap="MetrixReloaded/media/volume_up.png" position="95,10" zPosition="1" size="512,61" transparent="1" />
-  <widget text="Volume" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="427,56" />
+  <widget text="Volume" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="427,56" />
 </screen>

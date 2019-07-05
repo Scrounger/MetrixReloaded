@@ -50,5 +50,5 @@ self["list" ].instance.resize(eSize(*listsize))
 newwidth=wsize[0 ]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - wsize[1] / 2 - 100))
   </applet>
-  <widget text="MessageBox" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="700,1055" />
+  <widget text="MessageBox" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="700,1055" />
 </screen>

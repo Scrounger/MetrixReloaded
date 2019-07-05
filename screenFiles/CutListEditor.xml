@@ -31,5 +31,5 @@
   <widget name="Timeline" position="719,881" size="1044,30" zPosition="3" pointer="MetrixReloaded/media/position_arrow.png:3,5" backgroundColor="foreground" />
   
   <eLabel text="OK = Menu" position="1590,945" size="210,33" zPosition="1" font="Regular;30" backgroundColor="windowBackground" transparent="1" />
-  <widget text="CutListEditor" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
+  <widget text="CutListEditor" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>

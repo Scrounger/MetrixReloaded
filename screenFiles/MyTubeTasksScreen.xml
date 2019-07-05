@@ -18,5 +18,5 @@
 				}
 			</convert>
   </widget>
-  <widget text="MyTubeTasksScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+  <widget text="MyTubeTasksScreen" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
 </screen>

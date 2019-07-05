@@ -74,5 +74,5 @@
   <panel name="panel_key_green_name_long" />
   <panel name="panel_key_yellow_name_long" />
   <panel name="panel_key_blue_name_long" />
-  <widget text="VerticalEPGView_FHD" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
+  <widget text="VerticalEPGView_FHD" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>

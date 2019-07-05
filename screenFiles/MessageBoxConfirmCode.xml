@@ -8,5 +8,5 @@
   <widget alphatest="blend" name="InfoPixmap" pixmap="MetrixReloaded/media/icons/input_info.png" position="70,94" size="54,54" />
   <widget font="Regular;34" name="text" position="127,250" size="1050,500" halign="center" transparent="1" backgroundColor="windowBackground" />
   <widget name="list" position="127,760" size="1050,100" font="Regular;34" itemHeight="50" backgroundColor="windowBackground" scrollbarMode="showOnDemand" transparent="1" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarGap="20" scrollbarKeepGapColor="1" />
-  <widget text="MessageBoxConfirmCode" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+  <widget text="MessageBoxConfirmCode" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
 </screen>

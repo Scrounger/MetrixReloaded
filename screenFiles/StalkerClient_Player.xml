@@ -16,5 +16,5 @@
   <widget source="global.CurrentTime" render="Label" position="140,50" zPosition="1" size="100,40" font="SetrixHD; 38" valign="center" halign="left" backgroundColor="infobarBgR" transparent="1">
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
-  <widget text="StalkerClient_Player" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,254" />
+  <widget text="StalkerClient_Player" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,254" />
 </screen>

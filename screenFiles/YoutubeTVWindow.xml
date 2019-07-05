@@ -18,7 +18,7 @@
   <widget name="settingdesc" position="key_blue_pos" size="key_size" font="font_key_standard" valign="top" halign="left" transparent="1" backgroundColor="windowBackground" />
   <widget name="helpdesc" position="key_yellow_pos" size="key_size" font="font_key_standard" valign="top" halign="left" transparent="1" backgroundColor="windowBackground" />
   
-  <widget text="YoutubeTVWindow" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+  <widget text="YoutubeTVWindow" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
   
   
 </screen>

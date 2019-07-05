@@ -1,5 +1,5 @@
 ﻿<screen name="PictureInPicture" position="0,0" zPosition="-1" size="1980,1080" flags="wfNoBorder" backgroundColor="transparent">
   <widget name="zap_focus" position="0,0" zPosition="10" size="250,250" font="font_standard" halign="left" backgroundColor="windowBackground" />
   <widget name="video" position="0,0" size="400,220" backgroundColor="transparent" />
-  <widget text="PictureInPicture" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1780,1055" />
+  <widget text="PictureInPicture" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1780,1055" />
 </screen>

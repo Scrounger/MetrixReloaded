@@ -20,5 +20,5 @@
     <convert type="ConditionalShowHide" />
   </widget>
   <widget name="HelpWindow" pixmap="MetrixReloaded/buttons/key_text.png" position="200,800" zPosition="1" size="2,2" transparent="1" alphatest="on" />
-  <widget text="NetworkWizard" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="NetworkWizard" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

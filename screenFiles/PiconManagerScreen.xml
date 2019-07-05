@@ -43,5 +43,5 @@
   <panel name="panel_key_green_name" />
   <panel name="panel_key_yellow_name" />
   <panel name="panel_key_blue_name" />
-  <widget text="PiconManagerScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
+  <widget text="PiconManagerScreen" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>

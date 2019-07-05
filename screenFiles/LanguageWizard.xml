@@ -15,5 +15,5 @@
   <widget name="arrowdown" pixmap="MetrixReloaded/media/arrowdown2.png" position="1584,376" zPosition="11" size="37,70" alphatest="blend" />
   <widget name="arrowup" pixmap="MetrixReloaded/media/arrowup2.png" position="1584,515" zPosition="11" size="37,70" alphatest="blend" />
   <widget name="arrowup2" pixmap="MetrixReloaded/media/arrowup2.png" position="1584,515" zPosition="11" size="37,70" alphatest="blend" />
-  <widget text="LanguageWizard" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="LanguageWizard" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

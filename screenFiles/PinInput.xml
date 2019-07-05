@@ -3,5 +3,5 @@
   <widget name="text" position="17,100" size="970,80" font="Regular;34" halign="center" valign="center" />
   <widget name="tries" position="16,185" size="970,80" font="Regular;34" halign="center" valign="center" />
   <widget name="input" position="15,270" size="970,60" font="Regular;75" halign="center" valign="center" />
-  <widget text="PinInput" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="800,425" />
+  <widget text="PinInput" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="800,425" />
 </screen>

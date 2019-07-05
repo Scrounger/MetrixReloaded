@@ -2,5 +2,5 @@
   <eLabel position="0,0" size="255,70" backgroundColor="windowBackground" zPosition="-1" />
   <widget name="channel" position="5,5" size="120,64" font="Regular;38" halign="left" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" />
   <widget name="number" position="130,5" size="120,64" font="SetrixHD;38" halign="center" valign="center" foregroundColor="foreground" backgroundColor="windowBackground" />
-  <widget text="NumberZap" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="55,45" />
+  <widget text="NumberZap" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="55,45" />
 </screen>

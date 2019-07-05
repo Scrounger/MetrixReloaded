@@ -20,5 +20,5 @@
   <eLabel position="1720,1055" size="200,20" zPosition="1" backgroundColor="blue" />
   <eLabel position="1915,880" size="5,200" zPosition="1" backgroundColor="red" />
   <eLabel position="1895,880" size="20,195" zPosition="1" backgroundColor="blue" />
-  <widget text="UIPositionSetup" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="UIPositionSetup" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

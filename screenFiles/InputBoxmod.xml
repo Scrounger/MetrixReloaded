@@ -1,5 +1,5 @@
 ﻿<screen name="InputBoxmod" position="center,center" size=" 1600, 95" title="Input">
   <widget name="text" position="10,10" size="1560,34" font="Regular;28" />
   <widget name="input" position="10,50" size="1560,40" font="Regular;34" />
-  <widget text="InputBoxmod" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1400,70" />
+  <widget text="InputBoxmod" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1400,70" />
 </screen>

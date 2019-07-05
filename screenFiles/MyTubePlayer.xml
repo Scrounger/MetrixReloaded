@@ -42,5 +42,5 @@
     <convert type="ServiceInfo">IsMultichannel</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget text="MyTubePlayer" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,253" />
+  <widget text="MyTubePlayer" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,253" />
 </screen>

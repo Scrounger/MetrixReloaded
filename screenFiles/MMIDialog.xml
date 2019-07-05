@@ -3,5 +3,5 @@
   <widget name="subtitle" position="15,56" size="645,38" font="Regular; 34" backgroundColor="windowBackground" />
   <widget name="entries" position="15,106" size="645,225" scrollbarMode="showOnDemand" font="Regular; 24" backgroundColor="windowBackground" />
   <widget name="bottom" position="15,346" size="645,38" font="Regular; 34" backgroundColor="windowBackground" />
-  <widget text="MMIDialog" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="475,380" />
+  <widget text="MMIDialog" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="475,380" />
 </screen>

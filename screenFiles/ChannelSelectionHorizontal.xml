@@ -31,5 +31,5 @@
   <eLabel position="1664,20" size="2,279" backgroundColor="unff000000" />
   <eLabel position="1899,20" size="21,279" backgroundColor="unff000000" />
   <eLabel position="0,299" size="1920,2" backgroundColor="unff000000" />-->
-  <widget text="ChannelSelectionHorizontal" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
+  <widget text="ChannelSelectionHorizontal" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
 </screen>

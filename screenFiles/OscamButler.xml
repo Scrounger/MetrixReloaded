@@ -17,5 +17,5 @@
   <widget name="buttonred" position="key_red_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" />
   <widget name="buttongreen" position="key_green_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" />
   <widget name="buttonblue" position="key_blue_pos" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="center" backgroundColor="windowBackgroundSecond" transparent="1" />
-  <widget text="OscamButler" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="OscamButler" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

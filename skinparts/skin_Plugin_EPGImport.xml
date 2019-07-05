@@ -28,7 +28,7 @@
     <panel name="panel_key_green_name" />
     <panel name="panel_key_yellow_name" />
     <panel name="panel_key_blue_name" />
-    <widget text="EPGImportConfig" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+    <widget text="EPGImportConfig" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 	</screen>
 
 	<screen name="EPGImportSources" position="0,0" size="1920,1080" title="EPG Import Sources" backgroundColor="transparent" flags="wfNoBorder">
@@ -50,7 +50,7 @@
     <panel name="panel_key_green_name" />
     <panel name="panel_key_yellow_name" />
     <panel name="panel_key_blue_name" />
-    <widget text="EPGImportSources" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+    <widget text="EPGImportSources" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
   </screen>
 	
 	<screen name="EPGImportProfile" position="0,0" size="1920,1080" title="EPGImportProfile" backgroundColor="transparent" flags="wfNoBorder">
@@ -72,7 +72,7 @@
     <panel name="panel_color_buttons_window" />
     <panel name="panel_key_red_name" />
     <panel name="panel_key_green_name" />
-    <widget text="EPGImportProfile" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+    <widget text="EPGImportProfile" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 	</screen>
 
 	<screen name="EPGImportLog" position="0,0" size="1920,1080" title="EPG Import Log" backgroundColor="transparent" flags="wfNoBorder">
@@ -96,6 +96,6 @@
     <panel name="panel_key_green_name" />
     <panel name="panel_key_yellow_name" />
     <panel name="panel_key_blue_name" />
-    <widget text="EPGImportLog" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+    <widget text="EPGImportLog" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 	</screen>
 </skin>

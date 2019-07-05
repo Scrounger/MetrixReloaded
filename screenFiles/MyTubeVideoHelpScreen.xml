@@ -4,5 +4,5 @@
   <eLabel text="Help" position="title_mid_pos" valign="center" size="title_mid_size" font="SetrixHD; 58" backgroundColor="windowBackground" transparent="1" />
   <constant-widget name="clock_mid" />
   <widget font="Regular;34" name="detailtext" position="127,250" size="1050,500" halign="center" transparent="1" backgroundColor="windowBackground" />
-  <widget text="MyTubeVideoHelpScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
+  <widget text="MyTubeVideoHelpScreen" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1088,898" />
 </screen>

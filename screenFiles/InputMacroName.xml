@@ -15,5 +15,5 @@
   <panel name="panel_color_buttons_window" />
   <panel name="panel_key_red_source" />
   <panel name="panel_key_green_source" />
-  <widget text="InputMacroName" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
+  <widget text="InputMacroName" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1720,1055" />
 </screen>

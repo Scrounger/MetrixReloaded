@@ -57,6 +57,6 @@
   <panel name="panel_infoBar_movieplayer_Icons" />
   <!-- Rec Icon -->
   <panel name="panel_recIcon_top" />
-  <widget render="MetrixReloadedScreenNameLabel" size="0,0" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="0,0" />
+  <widget render="OpenSkinLibraryScreenName" size="0,0" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="0,0" />
 </screen>
 </skin>

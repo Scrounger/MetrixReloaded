@@ -12,5 +12,5 @@
   <panel name="panel_color_two_buttons_contextMenu" />
   <widget source="key_red" render="Label" position="54,690" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
   <widget source="key_green" render="Label" position="334,690" zPosition="1" size="key_size" font="font_key_standard" halign="left" valign="top" backgroundColor="windowBackground" transparent="1" />
-  <widget text="PiconManagerFolderScreen" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="850,725" />
+  <widget text="PiconManagerFolderScreen" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="850,725" />
 </screen>

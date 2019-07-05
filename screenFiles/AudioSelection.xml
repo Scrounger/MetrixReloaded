@@ -43,5 +43,5 @@
       }
     </convert>
   </widget>
-  <widget text="AudioSelection" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="850,725" />
+  <widget text="AudioSelection" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="850,725" />
 </screen>

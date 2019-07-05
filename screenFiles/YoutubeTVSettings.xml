@@ -16,5 +16,5 @@
   <panel name="panel_key_red_source" />
   <panel name="panel_key_green_source" />
   
-  <widget text="YoutubeTVSettings" render="MetrixReloadedScreenNameLabel" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
+  <widget text="YoutubeTVSettings" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="#2d000000" source="Title" position="1620,955" />
 </screen>
