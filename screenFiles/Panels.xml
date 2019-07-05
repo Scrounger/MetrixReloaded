@@ -5,7 +5,7 @@
   <!--<ePixmap pixmap="MetrixReloaded/media/background_menu_list.png" position="345,208" size="615,740" alphatest="blend" transparent="1" />-->
   <!-- Debug: Menu Entry anzeigen -->
   <widget backgroundColor="windowBackgroundSecond" font="SetrixSL;16" foregroundColor="foreground" render="Label" source="menu" position="1320,500" size="250,27" halign="right" valign="center" transparent="1" zPosition="9">
-    <convert type="MetrixReloadedMenuEntryLabel"></convert>
+    <convert type="OpenSkinLibrarySelectedMenuItemName" />
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/background_isRecording.png" position="887,0" render="Pixmap" size="146,37" source="session.RecordState" zPosition="2">
     <convert type="ConditionalShowHide" />

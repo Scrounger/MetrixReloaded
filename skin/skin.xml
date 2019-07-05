@@ -3658,7 +3658,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <panel name="panel_key_green_name_long" />
   <panel name="panel_key_yellow_name_long" />
   <panel name="panel_key_blue_name_long" />
-  <widget text="MovieSelection" render="OpenSkinLibraryScreenName" size="200,25" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" position="1720,1055" />
+  <widget render="OpenSkinLibraryScreenName" valign="center" halign="right" font="SetrixSL;16" foregroundColor="foreground" backgroundColor="background" source="Title" />
   
 </screen>
 <fonts name="MovieSelection_fonts">
@@ -4516,7 +4516,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgheight / 2 - 
   <!--<ePixmap pixmap="MetrixReloaded/media/background_menu_list.png" position="345,208" size="615,740" alphatest="blend" transparent="1" />-->
   <!-- Debug: Menu Entry anzeigen -->
   <widget backgroundColor="windowBackgroundSecond" font="SetrixSL;16" foregroundColor="foreground" render="Label" source="menu" position="1320,500" size="250,27" halign="right" valign="center" transparent="1" zPosition="9">
-    <convert type="MetrixReloadedMenuEntryLabel"></convert>
+    <convert type="OpenSkinLibrarySelectedMenuItemName" />
   </widget>
   <widget alphatest="blend" pixmap="MetrixReloaded/media/background_isRecording.png" position="887,0" render="Pixmap" size="146,37" source="session.RecordState" zPosition="2">
     <convert type="ConditionalShowHide" />
