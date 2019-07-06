@@ -21,13 +21,15 @@ def createPosterPaths():
 
 
 def removePosters():
-    removeFilesFromPath(myConfig.getPosterDircetory(),
-                        myConfig.getPosterAutoRemove())
+    if(myConfig.getPosterAutoRemove() > 0):
+        removeFilesFromPath(myConfig.getPosterDircetory(),
+                            myConfig.getPosterAutoRemove())
 
 
 def removeLogs():
-    removeFilesFromPath(myConfig.getLogDirectory(),
-                        myConfig.getLogAutoRemove())
+    if(myConfig.getLogAutoRemove() > 0):
+        removeFilesFromPath(myConfig.getLogDirectory(),
+                            myConfig.getLogAutoRemove())
 
 
 def removeFilesFromPath(path, days):
