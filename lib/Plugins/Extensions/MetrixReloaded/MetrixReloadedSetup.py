@@ -25,7 +25,7 @@ from MetrixReloadedUpdater import MetrixReloadedUpdater
 from Tools.MetrixReloadedHelper import initializeLog
 
 #OpenConverter
-from Plugins.Extensions.OpenConverter.OpenConverterSetup import OpenConverterSetup
+#from Plugins.Extensions.OpenConverter.OpenConverterSetup import OpenConverterSetup
 
 
 cur_skin = config.skin.primary_skin.value.replace('/skin.xml', '')
@@ -282,8 +282,8 @@ class MetrixReloadedSetup(Screen, ConfigListScreen):
             self.session.openWithCallback(self.fileDirBrowserResponse, FileDirBrowser, initDir=start_dir, title=_(
                 "Choose folder"), getFile=False, getDir=True, showDirectories=True, showFiles=False)
         
-        if (self['config'].getCurrent()[1] == config.plugins.MetrixReloaded.openConverter):
-            self.session.open(OpenConverterSetup)
+        # if (self['config'].getCurrent()[1] == config.plugins.MetrixReloaded.openConverter):
+        #     self.session.open(OpenConverterSetup)
 
     def showMsgBoxCancelConfirm(self):
         self.session.openWithCallback(

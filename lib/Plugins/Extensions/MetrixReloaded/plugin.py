@@ -20,10 +20,13 @@ from MetrixReloadedUpdater import MetrixReloadedUpdater
 from MyScreens import MetrixReloadedEventView
 from Tools.MetrixReloadedHelper import createPosterPaths, removePosters, removeLogs, initializeLog
 
+session = None
+
 # MyLog
 log = initializeLog("Plugin")
-
-session = None
+log.info("")
+log.info("VU+ startUp --------------------------------------------------------")
+log.info("verison: %s", myHelper.getVersion())
 
 
 def Plugins(**kwargs):
@@ -58,14 +61,15 @@ def autoStart(reason, **kwargs):
     try:
         global session
         if kwargs.has_key("session") and reason == 0:
-            log.info("VU+ startUp")
             session = kwargs.get("session")
             config.misc.standbyCounter.addNotifier(
                 onEnterStandby, initial_call=False)
 
-            createPosterPaths()
-            removePosters()
-            removeLogs()
+            MetrixReloadedConfig.logConfig(log)
+
+            myHelper.createPosterPaths()
+            myHelper.removePosters()
+            myHelper.removeLogs()
 
             # auf anderem Thread damit sleep nicht blockt
             Thread(target=checkNewVersion, args=(session,)).start()
@@ -74,7 +78,8 @@ def autoStart(reason, **kwargs):
                 Thread(target=newVersionInstalled, args=(session,)).start()
 
         elif reason == 1:
-            log.debug("VU+ shutdown / restart")
+            log.debug(
+                "VU+ shutdown / restart --------------------------------------------------------")
             session = None
     except Exception as e:
         log.exception("MetrixReloadedSetup: %s", str(e))
@@ -143,10 +148,10 @@ def newVersionInstalled(session):
 if("MetrixReloaded" in config.skin.primary_skin.value):
     try:
         # Screen EventView Mod
-        log.info("Initialize EventView Mod")
+        log.info("Initialize Screen Mod for 'EventView'")
         EventViewBase.__init__ = MetrixReloadedEventView.init_new
         EventViewBase.setService = MetrixReloadedEventView.setService
         EventViewBase.setEvent = MetrixReloadedEventView.setEvent
 
     except Exception as e:
-        log.exception("MetrixReloadedSetup: %s", str(e))
+        log.exception("%s", str(e))

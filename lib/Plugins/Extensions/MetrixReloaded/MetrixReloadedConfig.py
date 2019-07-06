@@ -23,3 +23,27 @@ config.plugins.MetrixReloaded.posterDirectory = ConfigDirectory(
 config.plugins.MetrixReloaded.posterAutoRemove = ConfigNumber(default=30)
 config.plugins.MetrixReloaded.updated = ConfigOnOff(default=True)
 config.plugins.MetrixReloaded.openConverter = ConfigNothing()
+
+
+def getPosterDircetory():
+    return config.plugins.MetrixReloaded.posterDirectory.value
+
+def getPosterAutoRemove():
+    return config.plugins.MetrixReloaded.posterAutoRemove.value
+
+def getLogDirectory():
+    return config.plugins.MetrixReloaded.logDirectory.value
+
+def getLogAutoRemove():
+    return config.plugins.MetrixReloaded.logAutoRemove.value
+
+
+def logConfig(logger):
+    logger.debug("")
+
+    dic = config.plugins.MetrixReloaded.content
+    for key in dic.items.keys():
+        if(dic.items[key].__class__.__name__ != "ConfigNothing"):
+            logger.debug("{config} %s %s", key.ljust(40), dic.items[key].value)
+
+    logger.debug("")
