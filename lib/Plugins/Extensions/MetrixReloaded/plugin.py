@@ -18,7 +18,7 @@ from MetrixReloadedTranslation import _
 import MetrixReloadedHelper as myHelper
 from MetrixReloadedUpdater import MetrixReloadedUpdater
 from MyScreens import MetrixReloadedEventView
-from Tools.MetrixReloadedHelper import createPosterPaths, removePosters, removeLogs, initializeLog
+from Tools.MetrixReloadedHelper import initializeLog
 
 session = None
 
@@ -88,9 +88,9 @@ def autoStart(reason, **kwargs):
 def onLeaveStandby():
     log.debug("leaving standy")
     if(session != None):
-        createPosterPaths()
-        removePosters()
-        removeLogs()
+        myHelper.createPosterPaths()
+        myHelper.removePosters()
+        myHelper.removeLogs()
 
         # auf anderem Thread damit sleep nicht blockt
         Thread(target=checkNewVersion, args=(session,)).start()
